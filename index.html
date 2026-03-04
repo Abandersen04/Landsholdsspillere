@@ -126,9 +126,9 @@
         </div>
       </div>
 
-      <!-- Min. spillere per klub (kun i klub-visning) -->
+      <!-- Min. spillere per sted (klub- og fødested-visning) -->
       <div class="control-group" id="club-players-group">
-        <label class="control-label">Min. spillere pr. klub: <span id="club-players-label">1</span></label>
+        <label class="control-label" id="club-players-group-label">Min. spillere pr. klub: <span id="club-players-label">1</span></label>
         <div class="range-slider-single">
           <input type="range" id="min-club-players" class="slider slider-single"
                  min="1" max="20" value="1" step="1">
@@ -143,17 +143,6 @@
       <div class="control-group">
         <label class="control-label">Søg efter spiller eller klub</label>
         <input type="text" id="search" class="text-input" placeholder="Indtast navn eller klub...">
-      </div>
-
-      <hr class="divider">
-
-      <!-- Lokationssøgning -->
-      <div class="control-group">
-        <label class="control-label">Find sted på kort</label>
-        <div class="search-row">
-          <input type="text" id="location-search" class="text-input" placeholder="By eller adresse...">
-          <button id="search-location-btn" class="btn-primary">Søg</button>
-        </div>
       </div>
 
       <hr class="divider">

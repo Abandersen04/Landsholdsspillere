@@ -2,7 +2,6 @@
 let allPlayers = [];
 let map;
 let markersLayer;
-let searchMarkerLayer;
 let debounceTimer;
 
 // ===== Init =====
@@ -33,8 +32,6 @@ function initMap() {
 
   markersLayer = L.layerGroup();
   map.addLayer(markersLayer);
-
-  searchMarkerLayer = L.layerGroup().addTo(map);
 }
 
 // ===== Sidebar Mobile Toggle =====
@@ -89,11 +86,18 @@ function initControls() {
     el.addEventListener('change', () => updateMap());
   });
 
-  // Vis/skjul klub-spillere filter afhængigt af visningstype
+  // Vis/skjul min-spillere filter: vist i klub + fødested, skjult i region
   function updateClubPlayersVisibility() {
     const mapType = document.querySelector('input[name="map_type"]:checked').value;
     const group = document.getElementById('club-players-group');
-    group.style.display = mapType === 'club' ? '' : 'none';
+    const groupLabel = document.getElementById('club-players-group-label');
+    const label = document.getElementById('club-players-label');
+    group.style.display = (mapType === 'club' || mapType === 'birth') ? '' : 'none';
+    if (mapType === 'birth') {
+      groupLabel.childNodes[0].textContent = 'Min. spillere pr. fødested: ';
+    } else {
+      groupLabel.childNodes[0].textContent = 'Min. spillere pr. klub: ';
+    }
   }
   updateClubPlayersVisibility(); // Sæt initial tilstand
 
@@ -194,11 +198,6 @@ function initControls() {
   // Search
   document.getElementById('search').addEventListener('input', debouncedUpdate);
 
-  // Location search
-  document.getElementById('search-location-btn').addEventListener('click', searchLocation);
-  document.getElementById('location-search').addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') searchLocation();
-  });
 }
 
 function debouncedUpdate() {
@@ -270,13 +269,12 @@ function updateMap() {
   // Group by location
   let groups = groupPlayers(players, mapType);
 
-  // Filtrer på minimum spillere per klub (kun i klub-visning)
-  if (mapType === 'club') {
+  // Filtrer på minimum spillere per sted (klub- og fødested-visning)
+  if (mapType === 'club' || mapType === 'birth') {
     const minCP = parseInt(document.getElementById('min-club-players').value, 10);
     if (minCP > 1) {
       groups = groups.filter(g => g.players.length >= minCP);
     }
-    // Opdatér tæller til antal spillere i kvalificerende klubber
     const qualifyingCount = groups.reduce((sum, g) => sum + g.players.length, 0);
     document.getElementById('player-count').textContent = qualifyingCount;
   } else {
@@ -543,34 +541,6 @@ function buildPopupHtml(group, mapType) {
       ${headerHtml}
       <div class="popup-players">${playersHtml}</div>
     </div>`;
-}
-
-// ===== Location Search =====
-async function searchLocation() {
-  const query = document.getElementById('location-search').value.trim();
-  if (!query) return;
-
-  try {
-    const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1`;
-    const resp = await fetch(url, {
-      headers: { 'User-Agent': 'DBU-Landsholdskort/1.0' }
-    });
-    const results = await resp.json();
-
-    if (results.length > 0) {
-      const { lat, lon, display_name } = results[0];
-      searchMarkerLayer.clearLayers();
-      L.marker([parseFloat(lat), parseFloat(lon)])
-        .bindPopup(`<b>${escapeHtml(display_name)}</b>`)
-        .addTo(searchMarkerLayer)
-        .openPopup();
-      map.setView([parseFloat(lat), parseFloat(lon)], 12);
-    } else {
-      alert('Ingen resultater fundet for: ' + query);
-    }
-  } catch (err) {
-    alert('Fejl ved søgning: ' + err.message);
-  }
 }
 
 // ===== SVG Badge (curved text like DBU logo) =====
