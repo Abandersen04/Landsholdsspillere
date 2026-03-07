@@ -400,15 +400,28 @@ function groupAllClubs(players, searchTerm) {
     return `${(c.klubnavn || '').toUpperCase()}|${c.latitude},${c.longitude}`;
   }
 
+  // Haversine-afstand i km
+  function distKm(lat1, lng1, lat2, lng2) {
+    const R = 6371, dLat = (lat2 - lat1) * Math.PI / 180, dLng = (lng2 - lng1) * Math.PI / 180;
+    const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180) * Math.cos(lat2*Math.PI/180) * Math.sin(dLng/2)**2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  }
+
   for (const player of players) {
     // Start med allClubs (kan være tom for preserved spillere)
     const clubs = player.allClubs ? [...player.allClubs] : [];
 
-    // Første klub garanteres altid med – også hvis allClubs mangler den
-    // (dækker preserved spillere og edge cases hvor første klub ikke nåede allClubs)
+    // Første klub garanteres altid med – også hvis allClubs mangler den.
+    // Tjek på navn (case-insensitiv) for at undgå dubletter når allClubs allerede
+    // har samme klub under et andet nøgle-skema (fx QID vs. klub_id).
     if (player.latitude && player.longitude && player.klubnavn) {
-      const firstKey = clubKey(player);
-      if (!clubs.some(c => clubKey(c) === firstKey)) {
+      const firstName = (player.klubnavn || '').toLowerCase();
+      const firstKey  = clubKey(player);
+      const alreadyIn = clubs.some(c =>
+        clubKey(c) === firstKey ||
+        (c.klubnavn || '').toLowerCase() === firstName
+      );
+      if (!alreadyIn) {
         clubs.push({
           klub_id: player.klub_id,
           klubnavn: player.klubnavn,
@@ -426,16 +439,28 @@ function groupAllClubs(players, searchTerm) {
     if (searchTerm) {
       const matchingClubs = clubs.filter(c => (c.klubnavn || '').toLowerCase().includes(searchTerm));
       if (matchingClubs.length > 0) visibleClubs = matchingClubs;
-      // Hvis ingen klub matcher søgningen (spiller matchede på navn), vis alle klubber
     }
 
     for (const club of visibleClubs) {
       if (!club.latitude || !club.longitude) continue;
 
-      const key = clubKey(club);
+      const lat = typeof club.latitude === 'number' ? club.latitude : parseFloat(club.latitude);
+      const lng = typeof club.longitude === 'number' ? club.longitude : parseFloat(club.longitude);
+
+      // Merge-check: find eksisterende pin med samme navn inden for 10 km.
+      // Fanger tilfælde som Silkeborg IF der har lidt forskellige koordinater
+      // fra DBU-databasen og Wikidata, men er samme klub.
+      const clubName = (club.klubnavn || '').toLowerCase();
+      let existingKey = null;
+      for (const [k, g] of clubMap) {
+        if ((g.locName || '').toLowerCase() === clubName && distKm(g.lat, g.lng, lat, lng) < 10) {
+          existingKey = k;
+          break;
+        }
+      }
+
+      const key = existingKey ?? clubKey(club);
       if (!clubMap.has(key)) {
-        const lat = typeof club.latitude === 'number' ? club.latitude : parseFloat(club.latitude);
-        const lng = typeof club.longitude === 'number' ? club.longitude : parseFloat(club.longitude);
         clubMap.set(key, {
           locName: club.klubnavn,
           lat,
@@ -453,7 +478,27 @@ function groupAllClubs(players, searchTerm) {
   }
 
   clubMap.forEach(g => g.players.sort((a, b) => b.n_matches - a.n_matches));
-  return Array.from(clubMap.values());
+  const groups = Array.from(clubMap.values());
+
+  // Jitter: spred pins der sidder på præcis samme koordinat i en cirkel.
+  // Radius ~400m (0.004°) – lille nok til at det ser samlet ud, stor nok til at alle er klikbare.
+  const coordGroups = new Map();
+  for (const g of groups) {
+    const key = `${g.lat},${g.lng}`;
+    if (!coordGroups.has(key)) coordGroups.set(key, []);
+    coordGroups.get(key).push(g);
+  }
+  for (const stack of coordGroups.values()) {
+    if (stack.length < 2) continue;
+    const r = 0.004; // grader ≈ 400 m
+    stack.forEach((g, i) => {
+      const angle = (2 * Math.PI * i) / stack.length;
+      g.lat += r * Math.cos(angle);
+      g.lng += r * Math.sin(angle);
+    });
+  }
+
+  return groups;
 }
 
 // ===== Markers =====
