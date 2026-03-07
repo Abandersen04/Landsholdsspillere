@@ -82,17 +82,17 @@ function initControls() {
       updateMap();
     });
   });
+
   document.querySelectorAll('input[name="gender"]').forEach(el => {
     el.addEventListener('change', () => updateMap());
   });
 
-  // Vis/skjul min-spillere filter: vist i klub + fødested, skjult i region
+  // Vis/skjul min-spillere filter
   function updateClubPlayersVisibility() {
     const mapType = document.querySelector('input[name="map_type"]:checked').value;
     const group = document.getElementById('club-players-group');
     const groupLabel = document.getElementById('club-players-group-label');
-    const label = document.getElementById('club-players-label');
-    group.style.display = (mapType === 'club' || mapType === 'birth') ? '' : 'none';
+    group.style.display = (mapType === 'club' || mapType === 'birth' || mapType === 'all_clubs') ? '' : 'none';
     if (mapType === 'birth') {
       groupLabel.childNodes[0].textContent = 'Min. spillere pr. fødested: ';
     } else {
@@ -247,14 +247,22 @@ function getFilteredPlayers() {
       if (!p.lat || !p.lon || !p.birthPlaceLabel) return false;
     } else if (mapType === 'region') {
       if (!p.region || !p.lat || !p.lon) return false;
+    } else if (mapType === 'all_clubs') {
+      const hasAllClubs = p.allClubs && p.allClubs.length > 0;
+      const hasFirstClub = p.latitude && p.longitude && p.klubnavn;
+      if (!hasAllClubs && !hasFirstClub) return false;
     } else {
       if (!p.latitude || !p.longitude || !p.klubnavn) return false;
     }
 
     if (searchTerm) {
-      const hay = [p.playerLabel, p.klubnavn]
-        .filter(Boolean).join(' ').toLowerCase();
-      if (!hay.includes(searchTerm)) return false;
+      const baseHay = [p.playerLabel, p.klubnavn].filter(Boolean).join(' ').toLowerCase();
+      if (mapType === 'all_clubs' && p.allClubs && p.allClubs.length > 0) {
+        const clubNames = p.allClubs.map(c => c.klubnavn || '').join(' ').toLowerCase();
+        if (!baseHay.includes(searchTerm) && !clubNames.includes(searchTerm)) return false;
+      } else {
+        if (!baseHay.includes(searchTerm)) return false;
+      }
     }
 
     return true;
@@ -267,7 +275,13 @@ function updateMap() {
   const players = getFilteredPlayers();
 
   // Group by location
-  let groups = groupPlayers(players, mapType);
+  let groups;
+  if (mapType === 'all_clubs') {
+    const searchTerm = document.getElementById('search').value.trim().toLowerCase();
+    groups = groupAllClubs(players, searchTerm);
+  } else {
+    groups = groupPlayers(players, mapType);
+  }
 
   // Filtrer på minimum spillere per sted (klub- og fødested-visning)
   if (mapType === 'club' || mapType === 'birth') {
@@ -277,6 +291,14 @@ function updateMap() {
     }
     const qualifyingCount = groups.reduce((sum, g) => sum + g.players.length, 0);
     document.getElementById('player-count').textContent = qualifyingCount;
+  } else if (mapType === 'all_clubs') {
+    const minCP = parseInt(document.getElementById('min-club-players').value, 10);
+    if (minCP > 1) {
+      groups = groups.filter(g => g.players.length >= minCP);
+    }
+    // Tæl unikke spillere (en spiller kan have pins ved flere klubber)
+    const uniquePlayers = new Set(groups.flatMap(g => g.players.map(p => p.dbuID)));
+    document.getElementById('player-count').textContent = uniquePlayers.size;
   } else {
     document.getElementById('player-count').textContent = players.length;
   }
@@ -364,6 +386,76 @@ function groupPlayers(players, mapType) {
   return Array.from(map.values());
 }
 
+// ===== All Clubs Grouping =====
+function groupAllClubs(players, searchTerm) {
+  const clubMap = new Map();
+
+  // Klub-nøgle (prioritetsrækkefølge):
+  //  1. Wikidata QID → semantisk korrekt gruppering (FC Bayern München = FC Bayern Munich)
+  //  2. DBU klub_id  → præcis dansk klub
+  //  3. navn|coords  → fallback (undgår falsk sammensmeltning, fx PSG + Stade Français)
+  function clubKey(c) {
+    if (c.team_qid != null) return `qid:${c.team_qid}`;
+    if (c.klub_id != null)  return `id:${c.klub_id}`;
+    return `${(c.klubnavn || '').toUpperCase()}|${c.latitude},${c.longitude}`;
+  }
+
+  for (const player of players) {
+    // Start med allClubs (kan være tom for preserved spillere)
+    const clubs = player.allClubs ? [...player.allClubs] : [];
+
+    // Første klub garanteres altid med – også hvis allClubs mangler den
+    // (dækker preserved spillere og edge cases hvor første klub ikke nåede allClubs)
+    if (player.latitude && player.longitude && player.klubnavn) {
+      const firstKey = clubKey(player);
+      if (!clubs.some(c => clubKey(c) === firstKey)) {
+        clubs.push({
+          klub_id: player.klub_id,
+          klubnavn: player.klubnavn,
+          latitude: player.latitude,
+          longitude: player.longitude,
+          klub_logo: player.klub_logo,
+          is_earliest: true
+        });
+      }
+    }
+
+    // Søgefilter: når der søges på en klubnavn-streng, vis kun matchende klubber for denne spiller.
+    // Hvis søgningen matcher spillerens navn (ikke en klubnavn), vis alle klubber som normalt.
+    let visibleClubs = clubs;
+    if (searchTerm) {
+      const matchingClubs = clubs.filter(c => (c.klubnavn || '').toLowerCase().includes(searchTerm));
+      if (matchingClubs.length > 0) visibleClubs = matchingClubs;
+      // Hvis ingen klub matcher søgningen (spiller matchede på navn), vis alle klubber
+    }
+
+    for (const club of visibleClubs) {
+      if (!club.latitude || !club.longitude) continue;
+
+      const key = clubKey(club);
+      if (!clubMap.has(key)) {
+        const lat = typeof club.latitude === 'number' ? club.latitude : parseFloat(club.latitude);
+        const lng = typeof club.longitude === 'number' ? club.longitude : parseFloat(club.longitude);
+        clubMap.set(key, {
+          locName: club.klubnavn,
+          lat,
+          lng,
+          klub_logo: club.klub_logo,
+          klub_dbu_url: club.klub_id ? `https://www.dbu.dk/resultater/klub/${club.klub_id}/klubinfo` : null,
+          players: []
+        });
+      }
+      const g = clubMap.get(key);
+      if (!g.players.some(pl => pl.dbuID === player.dbuID)) {
+        g.players.push(player);
+      }
+    }
+  }
+
+  clubMap.forEach(g => g.players.sort((a, b) => b.n_matches - a.n_matches));
+  return Array.from(clubMap.values());
+}
+
 // ===== Markers =====
 function createMarker(group, mapType) {
   const { lat, lng, locName, players } = group;
@@ -371,7 +463,7 @@ function createMarker(group, mapType) {
 
   let marker;
 
-  if (mapType === 'club') {
+  if (mapType === 'club' || mapType === 'all_clubs') {
     const logoUrl = group.klub_logo;
     const hasLogo = logoUrl && logoUrl.length > 0;
 
@@ -481,7 +573,7 @@ function buildPopupHtml(group, mapType) {
 
   // Header
   let headerHtml = '';
-  if (mapType === 'club') {
+  if (mapType === 'club' || mapType === 'all_clubs') {
     const logoUrl = group.klub_logo;
     const logoHtml = logoUrl
       ? `<img class="club-logo" src="${escapeHtml(logoUrl)}" onerror="this.style.display='none'" alt="">`
