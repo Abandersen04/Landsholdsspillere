@@ -228,6 +228,28 @@ function parseBirthYear(dateStr) {
   return parts.length === 3 ? parseInt(parts[2], 10) : null;
 }
 
+// ===== Hjælpefunktioner =====
+
+// Fjerner kønsindikatorer fra klubnavne (bruges både til display og søgning)
+function stripGender(name) {
+  return (name || '')
+    .replace(/\s*(femenino|f[eé]minine|femminile|vrouwen|\(women\)|\(kvinder\)|\(damer\)|\(kvindefodbold\))\s*/gi, ' ')
+    .replace(/\s+\b(women|kvinder|damer|dam)\b\s*$/gi, '')
+    .replace(/\s+/g, ' ').trim();
+}
+
+// Søge-match: substring ELLER word-prefix for flerords-termer.
+// "inter milan" finder "FC Internazionale Milano" fordi:
+//   "inter" er prefix af "internazionale" OG "milan" er prefix af "milano"
+function matchesSearch(term, texts) {
+  const hay = texts.join(' ');
+  if (hay.includes(term)) return true;
+  const termWords = term.split(/\s+/).filter(w => w.length >= 4);
+  if (termWords.length < 2) return false;
+  const hayWords = hay.split(/\s+/).filter(w => w.length >= 4);
+  return termWords.every(tw => hayWords.some(hw => hw.startsWith(tw) || tw.startsWith(hw)));
+}
+
 // ===== Filter =====
 function getFilteredPlayers() {
   const mapType = document.querySelector('input[name="map_type"]:checked').value;
@@ -256,13 +278,11 @@ function getFilteredPlayers() {
     }
 
     if (searchTerm) {
-      const baseHay = [p.playerLabel, p.klubnavn].filter(Boolean).join(' ').toLowerCase();
-      if (mapType === 'all_clubs' && p.allClubs && p.allClubs.length > 0) {
-        const clubNames = p.allClubs.map(c => c.klubnavn || '').join(' ').toLowerCase();
-        if (!baseHay.includes(searchTerm) && !clubNames.includes(searchTerm)) return false;
-      } else {
-        if (!baseHay.includes(searchTerm)) return false;
-      }
+      // Søg i: spillernavn + stripped første klub + stripped allClubs (alle modes)
+      const nameHay = (p.playerLabel || '').toLowerCase();
+      const firstClub = stripGender(p.klubnavn || '').toLowerCase();
+      const allClubHay = (p.allClubs || []).map(c => stripGender(c.klubnavn || '').toLowerCase()).join(' ');
+      if (!matchesSearch(searchTerm, [nameHay, firstClub, allClubHay])) return false;
     }
 
     return true;
@@ -407,14 +427,6 @@ function groupAllClubs(players, searchTerm) {
     return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
   }
 
-  // Fjern kønsindikatorer fra klubnavn for at matche kvindehold med herrehold
-  function stripGender(name) {
-    return name
-      .replace(/\s*(femenino|f[eé]minine|femminile|vrouwen|\(women\)|\(kvinder\)|\(damer\)|\(kvindefodbold\))\s*/gi, ' ')
-      .replace(/\s+\b(women|kvinder|damer|dam)\b\s*$/gi, '')
-      .replace(/\s+/g, ' ').trim();
-  }
-
   for (const player of players) {
     // Start med allClubs (kan være tom for preserved spillere)
     const clubs = player.allClubs ? [...player.allClubs] : [];
@@ -441,11 +453,13 @@ function groupAllClubs(players, searchTerm) {
       }
     }
 
-    // Søgefilter: når der søges på en klubnavn-streng, vis kun matchende klubber for denne spiller.
-    // Hvis søgningen matcher spillerens navn (ikke en klubnavn), vis alle klubber som normalt.
+    // Søgefilter: vis kun matchende klubber for denne spiller.
+    // Søgning matcher mod stripped klubnavn (konsistent med det der vises på pin).
+    // Bruger matchesSearch → word-prefix fanger fx "inter milan" → "fc internazionale milano".
+    // Hvis søgningen matcher spillerens navn (ikke en klub), vis alle klubber som normalt.
     let visibleClubs = clubs;
     if (searchTerm) {
-      const matchingClubs = clubs.filter(c => (c.klubnavn || '').toLowerCase().includes(searchTerm));
+      const matchingClubs = clubs.filter(c => matchesSearch(searchTerm, [stripGender((c.klubnavn || '').toLowerCase())]));
       if (matchingClubs.length > 0) visibleClubs = matchingClubs;
     }
 
@@ -466,10 +480,17 @@ function groupAllClubs(players, searchTerm) {
         const dist = distKm(g.lat, g.lng, lat, lng);
         // Exact-name merge within 10 km
         if (gName === clubName && dist < 10) { existingKey = k; break; }
-        // Partial-name merge within 50 km (fx "real madrid" ⊂ "real madrid c.f.")
-        if (dist < 50 && clubName.length >= 5 && gName.length >= 5 &&
-            (gName.includes(clubName) || clubName.includes(gName))) {
-          existingKey = k; break;
+        // Partial-name merge within 50 km:
+        // 1) Substring: "real madrid" ⊂ "real madrid c.f."
+        // 2) Word-prefix: "inter" er prefix af "internazionale" → Inter Milan ↔ FC Internazionale Milano
+        if (dist < 50 && clubName.length >= 5 && gName.length >= 5) {
+          if (gName.includes(clubName) || clubName.includes(gName)) { existingKey = k; break; }
+          const wordsA = clubName.split(/\s+/).filter(w => w.length >= 4);
+          const wordsB = gName.split(/\s+/).filter(w => w.length >= 4);
+          if (wordsA.length > 0 && wordsB.length > 0 &&
+              wordsA.every(wa => wordsB.some(wb => wb.startsWith(wa) || wa.startsWith(wb)))) {
+            existingKey = k; break;
+          }
         }
       }
 
