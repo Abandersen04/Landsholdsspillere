@@ -50979,14 +50979,13 @@
     "playerLabel": "Helle Hjorth",
     "wikipediaURL_da": null,
     "wikipediaURL_en": null,
-    "birthPlaceLabel": null,
-    "lat": null,
-    "lon": null,
+    "birthPlaceLabel": "Rødovre",
+    "lat": "55.6735431643954",
+    "lon": "12.4674884573486",
     "dbuID": "4484",
     "birthday_dbu": "27-02-1964",
     "n_matches": "3",
     "n_goals": "0",
-    "image": null,
     "gender": "kvinde",
     "firstClubName_original": null,
     "firstClubName": null,
@@ -51004,11 +51003,20 @@
     "klub_logo": null,
     "klub_website": null,
     "klub_dbu_url": null,
-    "region": null,
+    "region": "Region Hovedstaden",
     "haslund_url": null,
     "prev_estimated": false,
     "is_preserved": true,
-    "birthplace_estimated": false
+    "birthplace_estimated": false,
+    "allClubs": [
+      {
+        "klub_id": "1578",
+        "klubnavn": "Boldklubben Rødovre",
+        "latitude": 55.6947,
+        "longitude": 12.4615,
+        "is_earliest": true
+      }
+    ]
   },
   {
     "playerLabel": "Karen Leth Hansen",
@@ -59855,14 +59863,13 @@
     "playerLabel": "Louise Seier-Hansen",
     "wikipediaURL_da": null,
     "wikipediaURL_en": null,
-    "birthPlaceLabel": null,
-    "lat": null,
-    "lon": null,
+    "birthPlaceLabel": "Gadstrup",
+    "lat": "55.5706288084232",
+    "lon": "12.093648710606",
     "dbuID": "5571",
     "birthday_dbu": "30-01-1984",
     "n_matches": "1",
     "n_goals": "0",
-    "image": null,
     "gender": "kvinde",
     "firstClubName_original": null,
     "firstClubName": null,
@@ -59880,7 +59887,7 @@
     "klub_logo": null,
     "klub_website": null,
     "klub_dbu_url": null,
-    "region": null,
+    "region": "Region Sjælland",
     "haslund_url": null,
     "prev_estimated": false,
     "is_preserved": false,
@@ -59894,6 +59901,14 @@
         "is_earliest": false,
         "klub_logo": "https://bsfodbold.dk/images/logo.png",
         "team_qid": "Q4993422"
+      },
+      {
+        "klub_id": "99053",
+        "klubnavn": "Gadstrup IF",
+        "latitude": 55.5686,
+        "longitude": 12.0854,
+        "is_earliest": true,
+        "klub_logo": "https://gadstrup-if.dk/wp-content/uploads/jubileum2-1024x1024.jpg"
       }
     ]
   },
