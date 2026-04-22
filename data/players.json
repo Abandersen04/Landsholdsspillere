@@ -7151,13 +7151,22 @@
         "team_qid": null
       },
       {
-        "klub_id": null,
-        "klubnavn": "Q388746",
-        "latitude": 55.5782,
-        "longitude": 9.7286,
+        "klub_id": "1532",
+        "klubnavn": "Boldklubben af 1893",
+        "latitude": 55.7134,
+        "longitude": 12.5825,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/8/81/FC_Fredericia.png",
-        "team_qid": "Q388746"
+        "klub_logo": "logos/klub_1532.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "494",
+        "klubnavn": "Fredericia FF",
+        "latitude": 55.5731,
+        "longitude": 9.7366,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_494.png",
+        "team_qid": null
       }
     ]
   },
