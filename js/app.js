@@ -18,12 +18,25 @@ document.addEventListener('DOMContentLoaded', async () => {
   updateMap();
 });
 
+// ===== Title Case helper =====
+function toTitleCase(str) {
+  if (!str) return '';
+  return str.replace(/\w\S*/g, txt =>
+    txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+  );
+}
+
 // ===== Map Setup =====
 function initMap() {
+  const isMobile = window.innerWidth <= 768;
+
   map = L.map('map', {
     zoomControl: false,
     minZoom: 2,
-    maxZoom: 18
+    maxZoom: 18,
+    tap: true,
+    tapTolerance: 15,
+    scrollWheelZoom: !isMobile
   }).setView([56, 10.5], 7);
 
   L.control.zoom({ position: 'topright' }).addTo(map);
@@ -34,25 +47,104 @@ function initMap() {
     maxZoom: 20
   }).addTo(map);
 
-  markersLayer = L.layerGroup();
+  markersLayer = L.markerClusterGroup({
+    spiderfyOnMaxZoom: true,
+    zoomToBoundsOnClick: false,
+    disableClusteringAtZoom: 8,
+    spiderfyDistanceMultiplier: 1.5,
+    showCoverageOnHover: false,
+    maxClusterRadius: 40,
+    iconCreateFunction: cluster => {
+      const count = cluster.getChildCount();
+      return L.divIcon({
+        html: `<div style="background:var(--red,#C8102E);color:white;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-family:Inter,sans-serif;font-weight:700;font-size:13px;box-shadow:0 2px 6px rgba(0,0,0,0.3);border:2px solid white;">${count}</div>`,
+        className: '',
+        iconSize: [36, 36],
+        iconAnchor: [18, 18]
+      });
+    }
+  });
   map.addLayer(markersLayer);
 }
 
-// ===== Sidebar Mobile Toggle =====
+// ===== Sidebar / Bottomsheet =====
 function initSidebar() {
   const sidebar = document.getElementById('sidebar');
   const toggle = document.getElementById('sidebar-toggle');
   const close = document.getElementById('sidebar-close');
+  const handle = document.getElementById('sidebar-drag-handle');
 
-  toggle.addEventListener('click', () => sidebar.classList.toggle('open'));
-  close.addEventListener('click', () => sidebar.classList.remove('open'));
+  const openSheet = () => sidebar.classList.add('open');
+  const closeSheet = () => sidebar.classList.remove('open');
 
-  // Close sidebar when clicking on map (mobile)
-  map.on('click', () => {
+  toggle.addEventListener('click', () => {
     if (window.innerWidth <= 768) {
-      sidebar.classList.remove('open');
+      openSheet();
+    } else {
+      sidebar.classList.toggle('open');
     }
   });
+
+  close.addEventListener('click', closeSheet);
+
+  // Tap on drag handle or peek area (when closed) → open
+  if (handle) {
+    handle.addEventListener('click', () => {
+      if (!sidebar.classList.contains('open')) {
+        openSheet();
+      } else {
+        closeSheet();
+      }
+    });
+  }
+
+  // Swipe gesture on sidebar (mobile)
+  let touchStartY = 0;
+  let touchStartTime = 0;
+
+  sidebar.addEventListener('touchstart', e => {
+    touchStartY = e.touches[0].clientY;
+    touchStartTime = Date.now();
+  }, { passive: true });
+
+  sidebar.addEventListener('touchend', e => {
+    const dy = e.changedTouches[0].clientY - touchStartY;
+    const dt = Date.now() - touchStartTime;
+    const velocity = Math.abs(dy) / dt; // px/ms
+    // Fast swipe or large drag
+    if (dy < -40 || (dy < -10 && velocity > 0.3)) {
+      openSheet();
+    } else if (dy > 40 || (dy > 10 && velocity > 0.3)) {
+      closeSheet();
+    }
+  }, { passive: true });
+
+  // Tap on peek area (when sidebar is closed) opens it
+  sidebar.addEventListener('click', e => {
+    if (window.innerWidth <= 768 && !sidebar.classList.contains('open')) {
+      openSheet();
+    }
+  });
+
+  // Close when clicking on map (mobile)
+  map.on('click', () => {
+    if (window.innerWidth <= 768) {
+      closeSheet();
+    }
+  });
+
+  // Sync mobile search bar with sidebar search
+  const searchDesktop = document.getElementById('search');
+  const searchMobile = document.getElementById('search-mobile');
+  if (searchMobile) {
+    searchMobile.addEventListener('input', () => {
+      searchDesktop.value = searchMobile.value;
+      debouncedUpdate();
+    });
+    searchDesktop.addEventListener('input', () => {
+      searchMobile.value = searchDesktop.value;
+    });
+  }
 }
 
 // ===== Slider fill helpers =====
@@ -761,11 +853,11 @@ function groupPlayers(players, mapType, birthLevel, clubLevel) {
       lng = center[1];
       locName = r;
     } else {
-      const klubKey = p.klubnavn.toUpperCase();
+      const klubKey = (p.klubnavn || '').toUpperCase();
       key = `${klubKey}|${p.latitude}|${p.longitude}`;
       lat = p.latitude;
       lng = p.longitude;
-      locName = klubKey;
+      locName = toTitleCase(p.klubnavn || '');
     }
 
     if (!map.has(key)) {
@@ -899,8 +991,8 @@ function groupAllClubs(players, searchTerm) {
         }
       }
 
-      // Display-navn: originalt klubnavn men uden gender-suffiks
-      const displayName = stripGender(club.klubnavn || '');
+      // Display-navn: title case, uden gender-suffiks
+      const displayName = toTitleCase(stripGender(club.klubnavn || ''));
       const key = existingKey ?? clubKey(club);
       if (!clubMap.has(key)) {
         clubMap.set(key, {

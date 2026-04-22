@@ -25,6 +25,8 @@
   --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
   --sidebar-width: 360px;
   --transition: 0.2s ease;
+  --bottomsheet-peek: 88px;
+  --bottomsheet-height: 70vh;
 }
 
 html, body {
@@ -81,6 +83,70 @@ html, body {
   cursor: pointer;
   padding: 0 4px;
   line-height: 1;
+}
+
+/* ===== Drag Handle (mobile only) ===== */
+.sidebar-drag-handle {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 0 12px;
+  cursor: grab;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.drag-pill {
+  width: 36px;
+  height: 4px;
+  background: var(--gray-300);
+  border-radius: 2px;
+}
+
+.drag-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ===== Mobile search bar (fixed top, hidden on desktop) ===== */
+.mobile-search-bar {
+  display: none;
+}
+
+/* ===== Search input wrapper (desktop: with icon) ===== */
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon-inline {
+  position: absolute;
+  left: 12px;
+  color: var(--gray-400);
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.search-with-icon {
+  padding-left: 36px !important;
+  font-size: 14px !important;
+  height: 44px;
+}
+
+/* Desktop search group: shadow + larger font for prominence */
+.search-group .control-label {
+  font-size: 14px;
+  color: var(--gray-800);
+}
+
+.search-group .search-input-wrapper {
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
 }
 
 /* ===== Stats Box ===== */
@@ -143,6 +209,7 @@ html, body {
   border: 1px solid var(--gray-200);
   transition: all var(--transition);
   user-select: none;
+  min-height: 36px;
 }
 
 .radio-option:hover {
@@ -172,14 +239,14 @@ html, body {
   border-radius: 3px;
   outline: none;
   margin-top: 4px;
-  background: var(--gray-200); /* Fallback; overrides nedenfor */
+  background: var(--gray-200);
 }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background: var(--red);
   cursor: pointer;
@@ -195,8 +262,8 @@ html, body {
 }
 
 .slider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background: var(--red);
   cursor: pointer;
@@ -204,9 +271,14 @@ html, body {
   box-shadow: var(--shadow);
 }
 
+/* Slider touch target wrapper: ensures 44px touch height */
+.range-slider,
+.range-slider-single {
+  padding: 10px 0;
+}
+
 /* Single-handle slider: rød fill fra venstre til thumb */
 .slider-single {
-  /* --fill-pct sættes fra JavaScript */
   background: linear-gradient(
     to right,
     var(--red)      0%,
@@ -219,8 +291,7 @@ html, body {
 /* Dual-handle range slider */
 .range-slider {
   position: relative;
-  height: 30px;
-  margin-top: 4px;
+  height: 44px;
   /* --fill-lo og --fill-hi sættes fra JavaScript */
   --fill-lo: 0%;
   --fill-hi: 100%;
@@ -232,7 +303,7 @@ html, body {
   position: absolute;
   left: 0;
   right: 0;
-  top: 12px;
+  top: 21px;
   height: 6px;
   background: var(--gray-200);
   border-radius: 3px;
@@ -246,7 +317,7 @@ html, body {
   position: absolute;
   left: var(--fill-lo);
   right: calc(100% - var(--fill-hi));
-  top: 12px;
+  top: 21px;
   height: 6px;
   background: var(--red);
   border-radius: 3px;
@@ -256,7 +327,7 @@ html, body {
 
 .range-slider .slider-dual {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   width: 100%;
   pointer-events: none;
@@ -275,7 +346,7 @@ html, body {
   pointer-events: auto;
 }
 
-/* Ensure the correct thumb is grabbable when both overlap */
+/* Ensure the correct thumb is grabbable when both thumbs overlap */
 .range-slider .slider-dual:last-child {
   z-index: 2;
 }
@@ -419,11 +490,6 @@ html, body {
   box-shadow: 0 4px 12px rgba(200,16,46,0.15);
 }
 
-@media (max-width: 640px) {
-  .correction-fab span { display: none; }
-  .correction-fab { padding: 11px; border-radius: 50%; }
-}
-
 /* ===== Map ===== */
 .map-container {
   flex: 1;
@@ -513,6 +579,7 @@ html, body {
 .popup-players {
   max-height: 320px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 8px 0;
 }
 
@@ -521,6 +588,8 @@ html, body {
   gap: 10px;
   padding: 10px 16px;
   border-bottom: 1px solid var(--gray-100);
+  min-height: 44px;
+  align-items: flex-start;
 }
 
 .popup-player:last-child {
@@ -566,6 +635,7 @@ html, body {
   color: var(--red);
   text-decoration: none;
   font-weight: 500;
+  padding: 2px 0;
 }
 
 .popup-player-links a:hover {
@@ -594,7 +664,7 @@ html, body {
   filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
 }
 
-/* ===== Mobile Toggle ===== */
+/* ===== Mobile Toggle (hidden on desktop, shown on mobile for fallback) ===== */
 .sidebar-toggle {
   display: none;
   position: fixed;
@@ -621,31 +691,153 @@ html, body {
 
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
-  .sidebar-toggle {
+
+  /* Fixed search bar at top of screen */
+  .mobile-search-bar {
     display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1002;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--gray-200);
+  }
+
+  .mobile-search-bar .search-icon {
+    color: var(--gray-400);
+    flex-shrink: 0;
+  }
+
+  .mobile-search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px; /* ≥16px prevents iOS auto-zoom */
+    color: var(--gray-800);
+    background: transparent;
+    min-height: 48px;
+  }
+
+  .mobile-search-input::placeholder {
+    color: var(--gray-400);
+  }
+
+  /* Hide desktop search in sidebar on mobile */
+  .search-group {
+    display: none;
+  }
+
+  /* Sidebar becomes bottomsheet */
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: none;
+    height: var(--bottomsheet-height);
+    top: auto;
+    border-right: none;
+    border-top: 1px solid var(--gray-200);
+    border-radius: 16px 16px 0 0;
+    transform: translateY(calc(var(--bottomsheet-height) - var(--bottomsheet-peek)));
+    transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+    box-shadow: 0 -4px 24px rgba(0,0,0,0.12);
+    padding: 0 20px 24px;
+    /* push down when map is tapped */
+    will-change: transform;
+  }
+
+  .sidebar.open {
+    transform: translateY(0);
+  }
+
+  /* Show drag handle on mobile */
+  .sidebar-drag-handle {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+    padding: 10px 0 8px;
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 16px 16px 0 0;
   }
 
   .sidebar-close {
     display: block;
   }
 
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-width: 400px;
-    height: 100vh;
-    transform: translateX(-100%);
-    box-shadow: var(--shadow-lg);
-  }
-
-  .sidebar.open {
-    transform: translateX(0);
-  }
-
   .map-container {
     width: 100vw;
+    /* Push map down below mobile search bar */
+    padding-top: 64px;
+    height: calc(100vh - 64px);
+  }
+
+  /* The leaflet map fills the map-container */
+  #map {
+    height: 100%;
+  }
+
+  /* Correction FAB: above bottomsheet peek area */
+  .correction-fab {
+    bottom: calc(var(--bottomsheet-peek) + 12px);
+    right: 12px;
+    padding: 11px;
+    border-radius: 50%;
+  }
+
+  .correction-fab span {
+    display: none;
+  }
+
+  /* Sliders: larger touch targets */
+  .slider::-webkit-slider-thumb {
+    width: 28px;
+    height: 28px;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Radio options: taller touch targets */
+  .radio-option {
+    min-height: 44px;
+    padding: 8px 14px;
+  }
+
+  /* Buttons: 44px min height */
+  .btn-secondary {
+    min-height: 44px;
+    font-size: 14px;
+  }
+
+  /* Popup: limited height on mobile, scrollable */
+  .popup-wrapper {
+    max-width: 90vw;
+    width: 90vw;
+    min-width: 0;
+  }
+
+  .popup-players {
+    max-height: 60vh;
+  }
+
+  /* Popup player rows: taller for easy tap */
+  .popup-player {
+    min-height: 56px;
+    padding: 12px 14px;
   }
 }
 
@@ -814,6 +1006,11 @@ html, body {
   cursor: pointer;
   padding: 0 4px;
   line-height: 1;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-close:hover {
@@ -954,6 +1151,17 @@ html, body {
 /* Push Leaflet bottom-right controls above the FAB */
 .leaflet-bottom.leaflet-right {
   bottom: 60px;
+}
+
+/* On mobile, push controls above bottomsheet peek */
+@media (max-width: 768px) {
+  .leaflet-bottom.leaflet-right {
+    bottom: calc(var(--bottomsheet-peek) + 60px);
+  }
+
+  .leaflet-top.leaflet-right {
+    top: 76px; /* below mobile search bar */
+  }
 }
 
 /* ===== Choropleth Legend ===== */
