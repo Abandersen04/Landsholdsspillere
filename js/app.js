@@ -19,11 +19,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 // ===== Title Case helper =====
+const FOOTBALL_ABBR = new Set(['fc', 'fk', 'bk', 'ik', 'if', 'gf', 'sf', 'ff', 'af', 'ab', 'kb', 'agf', 'aab', 'ob', 'hb', 'tb', 'sb', 'nb', 'vb', 'fb', 'fs', 'if', 'jfk', 'dfb', 'afc', 'rfc', 'sfc']);
+
 function toTitleCase(str) {
   if (!str) return '';
-  return str.replace(/\w\S*/g, txt =>
-    txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-  );
+  return str.replace(/\w\S*/g, txt => {
+    const lower = txt.toLowerCase();
+    if (FOOTBALL_ABBR.has(lower)) return txt.toUpperCase();
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
 }
 
 // ===== Map Setup =====
