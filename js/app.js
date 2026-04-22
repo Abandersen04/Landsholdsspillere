@@ -50,19 +50,14 @@ function initMap() {
   markersLayer = L.markerClusterGroup({
     spiderfyOnMaxZoom: true,
     zoomToBoundsOnClick: false,
-    disableClusteringAtZoom: 8,
-    spiderfyDistanceMultiplier: 1.5,
     showCoverageOnHover: false,
-    maxClusterRadius: 40,
-    iconCreateFunction: cluster => {
-      const count = cluster.getChildCount();
-      return L.divIcon({
-        html: `<div style="background:var(--red,#C8102E);color:white;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-family:Inter,sans-serif;font-weight:700;font-size:13px;box-shadow:0 2px 6px rgba(0,0,0,0.3);border:2px solid white;">${count}</div>`,
-        className: '',
-        iconSize: [36, 36],
-        iconAnchor: [18, 18]
-      });
-    }
+    maxClusterRadius: 1,
+    spiderfyDistanceMultiplier: 2.0,
+    iconCreateFunction: () => L.divIcon({
+      html: '',
+      className: '',
+      iconSize: [0, 0]
+    })
   });
   map.addLayer(markersLayer);
 }
