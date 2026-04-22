@@ -45052,7 +45052,7 @@
     "firstClubName_original": "Vallensbæk IF",
     "firstClubName": "Vallensbæk IF",
     "klubnavn": "Vallensbæk IF",
-    "klubnavn_original": null,
+    "klubnavn_original": "Vallensbæk IF",
     "geo_afstand_km": "0",
     "match_type": "exact_dbu",
     "klub_id": "1292",
@@ -45078,6 +45078,51 @@
         "longitude": 12.4979,
         "is_earliest": false,
         "klub_logo": "",
+        "team_qid": null
+      },
+      {
+        "klub_id": "1292",
+        "klubnavn": "Vallensbæk IF",
+        "latitude": 55.6317,
+        "longitude": 12.3697,
+        "is_earliest": true,
+        "klub_logo": null,
+        "team_qid": null
+      },
+      {
+        "klub_id": "3700",
+        "klubnavn": "Brøndby IF",
+        "latitude": 55.6491,
+        "longitude": 12.4176,
+        "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
+      },
+      {
+        "klub_id": "1073",
+        "klubnavn": "Hillerød Fodbold",
+        "latitude": 55.9446,
+        "longitude": 12.2951,
+        "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
+      },
+      {
+        "klub_id": "2131",
+        "klubnavn": "Ballerup-Skovlunde Fodbold",
+        "latitude": 55.7161,
+        "longitude": 12.3734,
+        "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "RKSV Braakhuizen Geldrop",
+        "latitude": 51.4337,
+        "longitude": 5.5608,
+        "is_earliest": false,
+        "klub_logo": "https://www.braakhuizen.eu/wp-content/uploads/braakhuizen/Logo-Huisstijl/logo-512.png",
         "team_qid": null
       }
     ]
@@ -45508,15 +45553,15 @@
     "gender": "kvinde",
     "firstClubName_original": "FV København",
     "firstClubName": "FV København",
-    "klubnavn": "Kjøbenhavns Boldklub",
-    "klubnavn_original": "Kjøbenhavns Boldklub",
+    "klubnavn": "FV København",
+    "klubnavn_original": "FV København",
     "geo_afstand_km": "0",
     "match_type": "manual",
-    "klub_id": "1567",
+    "klub_id": "4045",
     "adresse": "Peter Bangs Vej 147",
     "by": "Frederiksberg",
-    "latitude": "55.678209",
-    "longitude": "12.494827",
+    "latitude": "55.6801237089542",
+    "longitude": "12.4978987109989",
     "valideret": null,
     "confidence": "høj",
     "klub_logo": "logos/klub_1567.png",
@@ -45526,7 +45571,18 @@
     "haslund_url": null,
     "prev_estimated": true,
     "is_preserved": true,
-    "birthplace_estimated": true
+    "birthplace_estimated": true,
+    "allClubs": [
+      {
+        "klub_id": "4045",
+        "klubnavn": "FV København",
+        "latitude": 55.6801,
+        "longitude": 12.4979,
+        "is_earliest": true,
+        "klub_logo": "",
+        "team_qid": null
+      }
+    ]
   },
   {
     "playerLabel": "Ulla Knudsen",
@@ -53273,15 +53329,6 @@
         "team_qid": "Q211906"
       },
       {
-        "klub_id": "3710",
-        "klubnavn": "FC København",
-        "latitude": 55.7036,
-        "longitude": 12.5718,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_3710.png",
-        "team_qid": null
-      },
-      {
         "klub_id": "5453",
         "klubnavn": "Hillerød IF",
         "latitude": 55.9446,
@@ -53297,6 +53344,15 @@
         "longitude": 9.2812,
         "is_earliest": true,
         "klub_logo": "logos/klub_910.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "4045",
+        "klubnavn": "FV København",
+        "latitude": 55.6801,
+        "longitude": 12.4979,
+        "is_earliest": false,
+        "klub_logo": "",
         "team_qid": null
       }
     ]
