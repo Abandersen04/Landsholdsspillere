@@ -45069,7 +45069,18 @@
     "haslund_url": null,
     "prev_estimated": true,
     "is_preserved": true,
-    "birthplace_estimated": true
+    "birthplace_estimated": true,
+    "allClubs": [
+      {
+        "klub_id": "4045",
+        "klubnavn": "FV København",
+        "latitude": 55.6801,
+        "longitude": 12.4979,
+        "is_earliest": false,
+        "klub_logo": "",
+        "team_qid": null
+      }
+    ]
   },
   {
     "playerLabel": "Tine Cederkvist",
@@ -59873,15 +59884,15 @@
     "gender": "kvinde",
     "firstClubName_original": null,
     "firstClubName": null,
-    "klubnavn": null,
-    "klubnavn_original": null,
+    "klubnavn": "Gadstrup IF",
+    "klubnavn_original": "Gadstrup IF",
     "geo_afstand_km": null,
     "match_type": null,
-    "klub_id": null,
+    "klub_id": "99053",
     "adresse": null,
     "by": null,
-    "latitude": null,
-    "longitude": null,
+    "latitude": "55.5685657822281",
+    "longitude": "12.0853768678052",
     "valideret": null,
     "confidence": null,
     "klub_logo": null,
@@ -63619,15 +63630,15 @@
     "gender": "kvinde",
     "firstClubName_original": null,
     "firstClubName": null,
-    "klubnavn": null,
-    "klubnavn_original": null,
+    "klubnavn": "Odense Boldklub",
+    "klubnavn_original": "Odense Boldklub",
     "geo_afstand_km": null,
     "match_type": null,
-    "klub_id": null,
+    "klub_id": "1458",
     "adresse": null,
     "by": null,
-    "latitude": null,
-    "longitude": null,
+    "latitude": "55.384575",
+    "longitude": "10.374329",
     "valideret": null,
     "confidence": null,
     "klub_logo": null,
@@ -63637,7 +63648,18 @@
     "haslund_url": null,
     "prev_estimated": false,
     "is_preserved": false,
-    "birthplace_estimated": false
+    "birthplace_estimated": false,
+    "allClubs": [
+      {
+        "klub_id": "1458",
+        "klubnavn": "Odense Boldklub",
+        "latitude": 55.3846,
+        "longitude": 10.3743,
+        "is_earliest": true,
+        "klub_logo": null,
+        "team_qid": null
+      }
+    ]
   },
   {
     "playerLabel": "Simone Hagelskjær",
