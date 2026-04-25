@@ -26940,15 +26940,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "KB Football",
-        "latitude": 55.6786,
-        "longitude": 12.5015,
-        "is_earliest": false,
-        "klub_logo": null,
-        "team_qid": "Q17518600"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "FC Basel",
         "latitude": 47.5606,
         "longitude": 7.5906,
@@ -55803,18 +55794,17 @@
     "gender": "kvinde",
     "firstClubName_original": "Fladså",
     "firstClubName": "fladså",
-    "klubnavn": "fladså",
-    "klubnavn_original": "Fladså",
+    "klubnavn": "Fladså Fodbold",
+    "klubnavn_original": "Fladså Fodbold",
     "geo_afstand_km": null,
     "match_type": null,
-    "klub_id": null,
+    "klub_id": "13151679",
     "adresse": null,
     "by": null,
-    "latitude": "55.1827533",
-    "longitude": "11.7811778",
+    "latitude": "55.17857760078",
+    "longitude": "11.8707908107216",
     "valideret": null,
     "confidence": "lav",
-    "klub_logo": null,
     "klub_website": null,
     "klub_dbu_url": null,
     "region": "Region Sjælland",
@@ -55858,6 +55848,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Asker_SK_logo.svg/120px-Asker_SK_logo.svg.png",
         "team_qid": "Q731372"
+      },
+      {
+        "klub_id": "13151679",
+        "klubnavn": "Fladså Fodbold",
+        "latitude": 55.1786,
+        "longitude": 11.8708,
+        "is_earliest": true,
+        "klub_logo": null,
+        "team_qid": null
       }
     ]
   },
@@ -77382,13 +77381,12 @@
         "team_qid": "Q795173"
       },
       {
-        "klub_id": "",
-        "klubnavn": "Boldklubben Olympia",
-        "latitude": 55.6833,
-        "longitude": 12.55,
+        "klub_id": "1572",
+        "klubnavn": "Boldklubben Olympia 1921",
+        "latitude": 55.6503,
+        "longitude": 12.6,
         "is_earliest": false,
-        "klub_logo": "https://file.dbu.dk/images/club/1572/Boldklubben_Olympia_1921.png",
-        "team_qid": "Q12304026"
+        "klub_logo": "https://file.dbu.dk/images/club/1572/Boldklubben_Olympia_1921.png"
       }
     ]
   },
