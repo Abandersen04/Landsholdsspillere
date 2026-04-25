@@ -55430,6 +55430,15 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_3715.png",
         "team_qid": "Q289286"
+      },
+      {
+        "klub_id": "1528",
+        "klubnavn": "Aarslev BK",
+        "latitude": 55.3077,
+        "longitude": 10.4895,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_1528.png",
+        "team_qid": null
       }
     ]
   },
