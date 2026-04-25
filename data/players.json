@@ -37641,7 +37641,6 @@
     "birthday_dbu": "03-09-1960",
     "n_matches": "2",
     "n_goals": "0",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Nepalese_Election_Symbol_Star.svg/960px-Nepalese_Election_Symbol_Star.svg.png",
     "gender": "mand",
     "firstClubName_original": "Standard",
     "firstClubName": "standard",
@@ -37652,8 +37651,8 @@
     "klub_id": "29955719",
     "adresse": null,
     "by": null,
-    "latitude": "55.6718160998401",
-    "longitude": "12.6087657948395",
+    "latitude": "55.6718",
+    "longitude": "12.6088",
     "valideret": null,
     "confidence": "krydsvalideret",
     "klub_website": null,
@@ -37697,10 +37696,10 @@
         "latitude": 55.6718,
         "longitude": 12.6088,
         "is_earliest": true,
-        "klub_logo": null,
-        "team_qid": null
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Nepalese_Election_Symbol_Star.svg/960px-Nepalese_Election_Symbol_Star.svg.png"
       }
-    ]
+    ],
+    "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Nepalese_Election_Symbol_Star.svg/960px-Nepalese_Election_Symbol_Star.svg.png"
   },
   {
     "playerLabel": "Frank Løndal",
