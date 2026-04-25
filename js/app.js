@@ -856,7 +856,7 @@ function groupPlayers(players, mapType, birthLevel, clubLevel) {
       key = `${klubKey}|${p.latitude}|${p.longitude}`;
       lat = p.latitude;
       lng = p.longitude;
-      locName = toTitleCase(p.klubnavn || '');
+      locName = stripGender(p.klubnavn || '');
     }
 
     if (!map.has(key)) {
@@ -991,7 +991,7 @@ function groupAllClubs(players, searchTerm) {
       }
 
       // Display-navn: title case, uden gender-suffiks
-      const displayName = toTitleCase(stripGender(club.klubnavn || ''));
+      const displayName = stripGender(club.klubnavn || '');
       const key = existingKey ?? clubKey(club);
       if (!clubMap.has(key)) {
         clubMap.set(key, {
