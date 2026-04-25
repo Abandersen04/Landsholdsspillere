@@ -77382,12 +77382,12 @@
         "team_qid": "Q795173"
       },
       {
-        "klub_id": null,
+        "klub_id": "",
         "klubnavn": "Boldklubben Olympia",
         "latitude": 55.6833,
         "longitude": 12.55,
         "is_earliest": false,
-        "klub_logo": null,
+        "klub_logo": "https://file.dbu.dk/images/club/1572/Boldklubben_Olympia_1921.png",
         "team_qid": "Q12304026"
       }
     ]
