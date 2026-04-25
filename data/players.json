@@ -2868,6 +2868,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Blackburn_Rovers.svg/330px-Blackburn_Rovers.svg.png",
         "team_qid": "Q19446"
+      },
+      {
+        "klub_id": "1444",
+        "klubnavn": "Boldklubben Marienlyst",
+        "latitude": 55.4225,
+        "longitude": 10.3972,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_1444.png",
+        "team_qid": null
       }
     ]
   },
@@ -23634,17 +23643,16 @@
     "firstClubName_original": "Boldklubben \"Frem\" Skelhøje",
     "firstClubName": "boldklub \"frem\" skelhøje",
     "klubnavn": "Boldklubben Frem Skelhøje",
-    "klubnavn_original": "Boldklubben \"Frem\" Skelhøje",
+    "klubnavn_original": "Boldklubben Frem Skelhøje",
     "geo_afstand_km": "170.3",
     "match_type": "core_name",
-    "klub_id": "90002",
+    "klub_id": "21311410",
     "adresse": null,
     "by": null,
-    "latitude": "56.44",
-    "longitude": "9.96",
+    "latitude": "56.3610966887268",
+    "longitude": "9.29657540011574",
     "valideret": null,
     "confidence": "høj",
-    "klub_logo": null,
     "klub_website": null,
     "klub_dbu_url": null,
     "region": "Region Syddanmark",
@@ -23672,15 +23680,6 @@
         "team_qid": "Q1779108"
       },
       {
-        "klub_id": "90002",
-        "klubnavn": "Boldklubben Frem Skelhøje",
-        "latitude": 56.44,
-        "longitude": 9.96,
-        "is_earliest": true,
-        "klub_logo": null,
-        "team_qid": null
-      },
-      {
         "klub_id": null,
         "klubnavn": "Västerås SK Fotboll",
         "latitude": 59.6275,
@@ -23688,6 +23687,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a0/Vasteras_SK_logo.svg/330px-Vasteras_SK_logo.svg.png",
         "team_qid": "Q1680249"
+      },
+      {
+        "klub_id": "21311410",
+        "klubnavn": "Boldklubben Frem Skelhøje",
+        "latitude": 56.3611,
+        "longitude": 9.2966,
+        "is_earliest": true,
+        "klub_logo": null,
+        "team_qid": null
       }
     ]
   },
@@ -27595,6 +27603,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/1/12/N%C3%A6stved_Boldklub_logo.png",
         "team_qid": "Q924353"
+      },
+      {
+        "klub_id": "1111",
+        "klubnavn": "Kalundborg GB",
+        "latitude": 55.6844,
+        "longitude": 11.0784,
+        "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
       }
     ]
   },
@@ -37567,18 +37584,17 @@
     "gender": "mand",
     "firstClubName_original": "Standard",
     "firstClubName": "standard",
-    "klubnavn": "standard",
-    "klubnavn_original": "Standard",
+    "klubnavn": "Boldklubben Standard Kammeraterne",
+    "klubnavn_original": "Boldklubben Standard Kammeraterne",
     "geo_afstand_km": null,
     "match_type": null,
-    "klub_id": null,
+    "klub_id": "29955719",
     "adresse": null,
     "by": null,
-    "latitude": "55.6806004",
-    "longitude": "12.5790847",
+    "latitude": "55.6718160998401",
+    "longitude": "12.6087657948395",
     "valideret": null,
     "confidence": "krydsvalideret",
-    "klub_logo": null,
     "klub_website": null,
     "klub_dbu_url": null,
     "region": "Region Hovedstaden",
@@ -37613,6 +37629,15 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_1566.png",
         "team_qid": "Q2442398"
+      },
+      {
+        "klub_id": "29955719",
+        "klubnavn": "Boldklubben Standard Kammeraterne",
+        "latitude": 55.6718,
+        "longitude": 12.6088,
+        "is_earliest": true,
+        "klub_logo": null,
+        "team_qid": null
       }
     ]
   },
