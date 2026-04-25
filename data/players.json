@@ -13312,18 +13312,17 @@
     "gender": "mand",
     "firstClubName_original": "[[Odense Boldklub",
     "firstClubName": "odense boldklub",
-    "klubnavn": "Odense Boldklub",
-    "klubnavn_original": "[[Odense Boldklub",
+    "klubnavn": "Lumby IF 88",
+    "klubnavn_original": "Lumby IF 88",
     "geo_afstand_km": "7.8",
     "match_type": "exact",
-    "klub_id": "1458",
+    "klub_id": "1442",
     "adresse": "Sdr. Boulevard 172",
     "by": "Odense C",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.454531",
+    "longitude": "10.371967",
     "valideret": null,
     "confidence": "høj",
-    "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "region": "Region Syddanmark",
@@ -13337,7 +13336,7 @@
         "klubnavn": "Odense Boldklub",
         "latitude": 55.3846,
         "longitude": 10.3743,
-        "is_earliest": true,
+        "is_earliest": false,
         "klub_logo": "logos/klub_1458.png",
         "team_qid": "Q211912"
       },
@@ -13367,6 +13366,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/500px-Logo_of_AC_Milan.svg.png",
         "team_qid": "Q55602896"
+      },
+      {
+        "klub_id": "1442",
+        "klubnavn": "Lumby IF 88",
+        "latitude": 55.4545,
+        "longitude": 10.372,
+        "is_earliest": true,
+        "klub_logo": null,
+        "team_qid": null
       }
     ]
   },
@@ -15806,7 +15814,7 @@
     "firstClubName_original": "[[Boldklubben af 1893",
     "firstClubName": "boldklubben af 1893",
     "klubnavn": "Bedsted IF",
-    "klubnavn_original": "[[Boldklubben af 1893",
+    "klubnavn_original": "Bedsted IF",
     "geo_afstand_km": "282.4",
     "match_type": "manuel",
     "klub_id": "202",
@@ -15833,6 +15841,33 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_1532.png",
         "team_qid": "Q795173"
+      },
+      {
+        "klub_id": "202",
+        "klubnavn": "Bedsted IF",
+        "latitude": 56.8091,
+        "longitude": 8.3998,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_202.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "350",
+        "klubnavn": "Tarm IF",
+        "latitude": 55.9041,
+        "longitude": 8.5309,
+        "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
+      },
+      {
+        "klub_id": "1021",
+        "klubnavn": "Fredensborg BI",
+        "latitude": 55.9774,
+        "longitude": 12.4135,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_1021.png",
+        "team_qid": null
       }
     ]
   },
@@ -33715,6 +33750,15 @@
         "is_earliest": true,
         "klub_logo": "logos/klub_1458.png",
         "team_qid": "Q211912"
+      },
+      {
+        "klub_id": "1461",
+        "klubnavn": "OKS",
+        "latitude": 55.3898,
+        "longitude": 10.4083,
+        "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
       }
     ]
   },
@@ -47482,8 +47526,8 @@
     "klub_id": "81",
     "adresse": "Børge Christensens Vej 5",
     "by": "Hjørring",
-    "latitude": "",
-    "longitude": "",
+    "latitude": "57.3125823428354",
+    "longitude": "9.71257773532374",
     "valideret": null,
     "confidence": "høj",
     "klub_website": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -47506,11 +47550,9 @@
       {
         "klub_id": "81",
         "klubnavn": "Ingstrup SF",
-        "latitude": null,
-        "longitude": null,
-        "is_earliest": true,
-        "klub_logo": null,
-        "team_qid": null
+        "latitude": 57.3126,
+        "longitude": 9.7126,
+        "is_earliest": true
       }
     ]
   },
@@ -48601,18 +48643,17 @@
     "gender": "kvinde",
     "firstClubName_original": "HEI Århus",
     "firstClubName": "hei aarhus",
-    "klubnavn": "HEI Aarhus",
-    "klubnavn_original": "HEI Århus",
+    "klubnavn": "Skælskør Boldklub og Idrætsforening",
+    "klubnavn_original": "Skælskør Boldklub og Idrætsforening",
     "geo_afstand_km": "124.9",
     "match_type": "exact",
-    "klub_id": "533",
+    "klub_id": "1225",
     "adresse": "Skæring Skolevej 200",
     "by": "Egå",
-    "latitude": "56.22668",
-    "longitude": "10.298241",
+    "latitude": "55.262931",
+    "longitude": "11.313206",
     "valideret": null,
     "confidence": "krydsvalideret",
-    "klub_logo": "logos/klub_533.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/533/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/533/klubinfo",
     "region": "Region Sjælland",
@@ -48626,8 +48667,17 @@
         "klubnavn": "HEI Aarhus",
         "latitude": 56.2267,
         "longitude": 10.2982,
-        "is_earliest": true,
+        "is_earliest": false,
         "klub_logo": "logos/klub_533.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "1225",
+        "klubnavn": "Skælskør Boldklub og Idrætsforening",
+        "latitude": 55.2629,
+        "longitude": 11.3132,
+        "is_earliest": true,
+        "klub_logo": null,
         "team_qid": null
       }
     ]
@@ -63751,6 +63801,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/250px-Liverpool_FC.svg.png",
         "team_qid": "Q588085"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "ASA Tel Aviv University",
+        "latitude": 32.1137,
+        "longitude": 34.8035,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/he/1/18/ASA-TA.png",
+        "team_qid": null
       }
     ]
   },
