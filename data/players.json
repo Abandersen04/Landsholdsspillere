@@ -29800,18 +29800,17 @@
     "gender": "mand",
     "firstClubName_original": "Køge Boldklub",
     "firstClubName": "køge boldklub",
-    "klubnavn": "Køge BK",
-    "klubnavn_original": "Køge Boldklub",
+    "klubnavn": "Hedehusene Idræts Klub",
+    "klubnavn_original": "Hedehusene Idræts Klub",
     "geo_afstand_km": "20.8",
     "match_type": "core_name",
-    "klub_id": "1133",
+    "klub_id": "",
     "adresse": "Ved Stadion 6",
     "by": "Køge",
-    "latitude": "55.468212",
-    "longitude": "12.177224",
+    "latitude": "55.6450609213684",
+    "longitude": "12.192835976174",
     "valideret": null,
     "confidence": "krydsvalideret",
-    "klub_logo": "logos/klub_1133.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1133/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1133/klubinfo",
     "region": "Region Hovedstaden",
@@ -29825,7 +29824,7 @@
         "klubnavn": "Køge BK",
         "latitude": 55.4682,
         "longitude": 12.1772,
-        "is_earliest": true,
+        "is_earliest": false,
         "klub_logo": "logos/klub_1133.png",
         "team_qid": "Q1048007"
       },
@@ -29846,6 +29845,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Sparta_Rotterdam_logo.svg/250px-Sparta_Rotterdam_logo.svg.png",
         "team_qid": "Q209895"
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "Hedehusene Idræts Klub",
+        "latitude": 55.6451,
+        "longitude": 12.1928,
+        "is_earliest": true,
+        "klub_logo": null,
+        "team_qid": null
       }
     ]
   },
