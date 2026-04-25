@@ -57554,15 +57554,6 @@
         "team_qid": null
       },
       {
-        "klub_id": "844",
-        "klubnavn": "Lunde B",
-        "latitude": 55.7573,
-        "longitude": 8.3667,
-        "is_earliest": false,
-        "klub_logo": "https://file.dbu.dk/images/club/844/Lunde_B.png",
-        "team_qid": null
-      },
-      {
         "klub_id": null,
         "klubnavn": "1. FC Köln (women)",
         "latitude": 50.9422,
@@ -57605,6 +57596,15 @@
         "longitude": 10.4895,
         "is_earliest": true,
         "klub_logo": "logos/klub_1528.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "1443",
+        "klubnavn": "Lunde G & IF",
+        "latitude": 55.4842,
+        "longitude": 10.3412,
+        "is_earliest": false,
+        "klub_logo": null,
         "team_qid": null
       }
     ]
