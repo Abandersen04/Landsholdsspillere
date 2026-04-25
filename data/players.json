@@ -30498,11 +30498,11 @@
     "klub_id": "2312312",
     "adresse": "Bregnevej 57",
     "by": "Nakskov",
-    "latitude": "54.8358473807113",
-    "longitude": "11.1356218388542",
+    "latitude": "54.8358",
+    "longitude": "11.1356",
     "valideret": null,
     "confidence": "høj",
-    "klub_logo": "https://agf-statistik.dk/logo/nakskov.gif",
+    "klub_logo": "/klub_2312312.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3851/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3851/klubinfo",
     "region": "Region Sjælland",
@@ -30517,8 +30517,7 @@
         "latitude": 54.8358,
         "longitude": 11.1356,
         "is_earliest": true,
-        "klub_logo": "https://agf-statistik.dk/logo/nakskov.gif",
-        "team_qid": null
+        "klub_logo": "/klub_2312312.png"
       }
     ]
   },
