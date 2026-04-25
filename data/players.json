@@ -27548,18 +27548,17 @@
     "gender": "mand",
     "firstClubName_original": "Slagelse B&I",
     "firstClubName": "slagelse b&i",
-    "klubnavn": "Slagelse B&I",
-    "klubnavn_original": "Slagelse B&I",
+    "klubnavn": "Svallerup-Bjerge Gymnastik- og Idrætsforening",
+    "klubnavn_original": "Svallerup-Bjerge Gymnastik- og Idrætsforening",
     "geo_afstand_km": "25.9",
     "match_type": "exact",
-    "klub_id": "1229",
+    "klub_id": "123131241",
     "adresse": "Parkvej 41",
     "by": "Slagelse",
-    "latitude": "55.399502",
-    "longitude": "11.364299",
+    "latitude": "55.6080003761303",
+    "longitude": "11.1761678507725",
     "valideret": null,
     "confidence": "høj",
-    "klub_logo": "logos/klub_1229.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1229/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1229/klubinfo",
     "region": "Region Sjælland",
@@ -27573,7 +27572,7 @@
         "klubnavn": "Slagelse B&I",
         "latitude": 55.3995,
         "longitude": 11.3643,
-        "is_earliest": true,
+        "is_earliest": false,
         "klub_logo": "logos/klub_1229.png",
         "team_qid": "Q7538494"
       },
@@ -27610,6 +27609,24 @@
         "latitude": 55.6844,
         "longitude": 11.0784,
         "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
+      },
+      {
+        "klub_id": "234124112",
+        "klubnavn": "Ubby Idræts Forening",
+        "latitude": 55.0782,
+        "longitude": 11.9484,
+        "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
+      },
+      {
+        "klub_id": "123131241",
+        "klubnavn": "Svallerup-Bjerge Gymnastik- og Idrætsforening",
+        "latitude": 55.608,
+        "longitude": 11.1762,
+        "is_earliest": true,
         "klub_logo": null,
         "team_qid": null
       }
@@ -30448,18 +30465,18 @@
     "gender": "mand",
     "firstClubName_original": "Nakskov BK",
     "firstClubName": "fc nakskov",
-    "klubnavn": "FC Nakskov",
-    "klubnavn_original": "Nakskov BK",
+    "klubnavn": "Nakskov Boldklub",
+    "klubnavn_original": "Nakskov Boldklub",
     "geo_afstand_km": "9.6",
     "match_type": "exact",
-    "klub_id": "3851",
+    "klub_id": "2312312",
     "adresse": "Bregnevej 57",
     "by": "Nakskov",
-    "latitude": "54.839075",
-    "longitude": "11.13599",
+    "latitude": "54.8358473807113",
+    "longitude": "11.1356218388542",
     "valideret": null,
     "confidence": "høj",
-    "klub_logo": "logos/klub_3851.png",
+    "klub_logo": "https://agf-statistik.dk/logo/nakskov.gif",
     "klub_website": "https://www.dbu.dk/resultater/klub/3851/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3851/klubinfo",
     "region": "Region Sjælland",
@@ -30469,12 +30486,12 @@
     "birthplace_estimated": false,
     "allClubs": [
       {
-        "klub_id": "3851",
-        "klubnavn": "FC Nakskov",
-        "latitude": 54.8391,
-        "longitude": 11.136,
+        "klub_id": "2312312",
+        "klubnavn": "Nakskov Boldklub",
+        "latitude": 54.8358,
+        "longitude": 11.1356,
         "is_earliest": true,
-        "klub_logo": "logos/klub_3851.png",
+        "klub_logo": "https://agf-statistik.dk/logo/nakskov.gif",
         "team_qid": null
       }
     ]
@@ -50639,12 +50656,12 @@
         "team_qid": null
       },
       {
-        "klub_id": "3851",
-        "klubnavn": "FC Nakskov",
-        "latitude": 54.8391,
-        "longitude": 11.136,
+        "klub_id": "2312312",
+        "klubnavn": "Nakskov Boldklub",
+        "latitude": 54.8358,
+        "longitude": 11.1356,
         "is_earliest": false,
-        "klub_logo": "logos/klub_3851.png",
+        "klub_logo": "https://agf-statistik.dk/logo/nakskov.gif",
         "team_qid": null
       }
     ]
