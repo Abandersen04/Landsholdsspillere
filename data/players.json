@@ -43164,10 +43164,10 @@
         "latitude": 55.6521,
         "longitude": 11.1165,
         "is_earliest": true,
-        "klub_logo": null,
-        "team_qid": null
+        "klub_logo": "https://file.dbu.dk/images/club/1330/%C3%85rby_GI.png"
       }
-    ]
+    ],
+    "klub_logo": "https://file.dbu.dk/images/club/1330/%C3%85rby_GI.png"
   },
   {
     "playerLabel": "Peter Skov-Jensen",
