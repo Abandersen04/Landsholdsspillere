@@ -44022,15 +44022,6 @@
         "team_qid": "Q211912"
       },
       {
-        "klub_id": "1685",
-        "klubnavn": "Viking Fodbold",
-        "latitude": 55.1107,
-        "longitude": 14.7122,
-        "is_earliest": false,
-        "klub_logo": "https://file.dbu.dk/images/club/1685/Viking_Fodbold.png",
-        "team_qid": "Q211177"
-      },
-      {
         "klub_id": "3699",
         "klubnavn": "AGF",
         "latitude": 56.1322,
@@ -44047,6 +44038,15 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_3707.png",
         "team_qid": "Q729560"
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "Viking Fotballklubb",
+        "latitude": 58.9147,
+        "longitude": 5.7309,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Viking_FK_logo_2020.svg/500px-Viking_FK_logo_2020.svg.png",
+        "team_qid": null
       }
     ]
   },
@@ -54837,15 +54837,6 @@
         "team_qid": "Q211912"
       },
       {
-        "klub_id": "1685",
-        "klubnavn": "Viking Fodbold",
-        "latitude": 55.1107,
-        "longitude": 14.7122,
-        "is_earliest": false,
-        "klub_logo": "https://file.dbu.dk/images/club/1685/Viking_Fodbold.png",
-        "team_qid": "Q211177"
-      },
-      {
         "klub_id": "3702",
         "klubnavn": "FC Nordsjælland",
         "latitude": 55.8161,
@@ -54862,6 +54853,15 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_944.png",
         "team_qid": "Q287851"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "Viking Fotballklubb",
+        "latitude": 58.9147,
+        "longitude": 5.7309,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Viking_FK_logo_2020.svg/500px-Viking_FK_logo_2020.svg.png",
+        "team_qid": null
       }
     ]
   },
