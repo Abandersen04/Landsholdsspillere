@@ -6655,7 +6655,7 @@
     "firstClubName_original": "ØB",
     "firstClubName": "øb",
     "klubnavn": "Østerbros Boldklub",
-    "klubnavn_original": "ØB",
+    "klubnavn_original": "Østerbros Boldklub",
     "geo_afstand_km": "138.8",
     "match_type": "manuel",
     "klub_id": "99999",
@@ -6675,12 +6675,12 @@
     "birthplace_estimated": false,
     "allClubs": [
       {
-        "klub_id": "1527",
-        "klubnavn": "ØB",
-        "latitude": 55.4124,
-        "longitude": 10.4178,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1527.png",
+        "klub_id": "99999",
+        "klubnavn": "Østerbros Boldklub",
+        "latitude": 55.6997,
+        "longitude": 12.57,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_99999.jpg",
         "team_qid": null
       }
     ]
@@ -12229,15 +12229,6 @@
     "birthplace_estimated": false,
     "allClubs": [
       {
-        "klub_id": "1527",
-        "klubnavn": "ØB",
-        "latitude": 55.4124,
-        "longitude": 10.4178,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1527.png",
-        "team_qid": null
-      },
-      {
         "klub_id": "99999",
         "klubnavn": "Østerbros Boldklub",
         "latitude": 55.6997,
@@ -12347,15 +12338,6 @@
     "is_preserved": false,
     "birthplace_estimated": false,
     "allClubs": [
-      {
-        "klub_id": "1527",
-        "klubnavn": "ØB",
-        "latitude": 55.4124,
-        "longitude": 10.4178,
-        "is_earliest": true,
-        "klub_logo": "logos/klub_1527.png",
-        "team_qid": null
-      },
       {
         "klub_id": "1532",
         "klubnavn": "Boldklubben af 1893",
@@ -23214,15 +23196,6 @@
         "team_qid": null
       },
       {
-        "klub_id": "1364",
-        "klubnavn": "B 1909",
-        "latitude": 55.4109,
-        "longitude": 10.4281,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1364.png",
-        "team_qid": null
-      },
-      {
         "klub_id": "944",
         "klubnavn": "AB",
         "latitude": 55.7626,
@@ -24632,15 +24605,6 @@
         "longitude": 10.5772,
         "is_earliest": false,
         "klub_logo": "logos/klub_1497.png",
-        "team_qid": null
-      },
-      {
-        "klub_id": "1527",
-        "klubnavn": "ØB",
-        "latitude": 55.4124,
-        "longitude": 10.4178,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1527.png",
         "team_qid": null
       },
       {
@@ -67386,15 +67350,6 @@
     "is_preserved": false,
     "birthplace_estimated": false,
     "allClubs": [
-      {
-        "klub_id": "1365",
-        "klubnavn": "B1913",
-        "latitude": 55.3686,
-        "longitude": 10.4282,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1365.png",
-        "team_qid": "Q2693"
-      },
       {
         "klub_id": "1553",
         "klubnavn": "Boldklubben Fremad Amager",
