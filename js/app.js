@@ -294,6 +294,37 @@ function initControls() {
     debouncedUpdate();
   });
 
+  // Active year range slider
+  const activeYearMin = document.getElementById('active-year-min');
+  const activeYearMax = document.getElementById('active-year-max');
+  const activeYearLabel = document.getElementById('active-year-range-label');
+  const activeYearContainer = activeYearMin.parentElement;
+  setupRangeSlider(activeYearMin, activeYearMax);
+  updateDualSliderFill(activeYearContainer, activeYearMin, activeYearMax);
+
+  function updateActiveYearLabel() {
+    const lo = Math.min(parseInt(activeYearMin.value), parseInt(activeYearMax.value));
+    const hi = Math.max(parseInt(activeYearMin.value), parseInt(activeYearMax.value));
+    activeYearLabel.textContent = `${lo} – ${hi}`;
+    updateDualSliderFill(activeYearContainer, activeYearMin, activeYearMax);
+  }
+
+  activeYearMin.addEventListener('input', () => {
+    if (parseInt(activeYearMin.value) > parseInt(activeYearMax.value)) {
+      activeYearMin.value = activeYearMax.value;
+    }
+    updateActiveYearLabel();
+    debouncedUpdate();
+  });
+
+  activeYearMax.addEventListener('input', () => {
+    if (parseInt(activeYearMax.value) < parseInt(activeYearMin.value)) {
+      activeYearMax.value = activeYearMin.value;
+    }
+    updateActiveYearLabel();
+    debouncedUpdate();
+  });
+
   // Matches range slider
   const matchesMin = document.getElementById('matches-min');
   const matchesMax = document.getElementById('matches-max');
@@ -360,6 +391,7 @@ async function loadData() {
   allPlayers = data.map(p => ({
     ...p,
     birthYear: p.birthday_dbu ? parseBirthYear(p.birthday_dbu) : null,
+    years_played: Array.isArray(p.years_played) ? p.years_played : [],
     n_matches: parseInt(p.n_matches, 10) || 0,
     n_goals: parseInt(p.n_goals, 10) || 0,
     lat: p.lat ? parseFloat(p.lat) : null,
@@ -404,12 +436,18 @@ function getFilteredPlayers() {
   const gender = document.querySelector('input[name="gender"]:checked').value;
   const minBirthYear = Math.min(parseInt(document.getElementById('birth-year-min').value, 10), parseInt(document.getElementById('birth-year-max').value, 10));
   const maxBirthYear = Math.max(parseInt(document.getElementById('birth-year-min').value, 10), parseInt(document.getElementById('birth-year-max').value, 10));
+  const minActiveYear = Math.min(parseInt(document.getElementById('active-year-min').value, 10), parseInt(document.getElementById('active-year-max').value, 10));
+  const maxActiveYear = Math.max(parseInt(document.getElementById('active-year-min').value, 10), parseInt(document.getElementById('active-year-max').value, 10));
   const minMatches = Math.min(parseInt(document.getElementById('matches-min').value, 10), parseInt(document.getElementById('matches-max').value, 10));
   const maxMatches = Math.max(parseInt(document.getElementById('matches-min').value, 10), parseInt(document.getElementById('matches-max').value, 10));
   const searchTerm = document.getElementById('search').value.trim().toLowerCase();
 
   return allPlayers.filter(p => {
     if (p.birthYear !== null && (p.birthYear < minBirthYear || p.birthYear > maxBirthYear)) return false;
+    if (minActiveYear > 1908 || maxActiveYear < 2026) {
+      if (p.years_played.length === 0) return false;
+      if (!p.years_played.some(y => y >= minActiveYear && y <= maxActiveYear)) return false;
+    }
     if (p.n_matches < minMatches || p.n_matches > maxMatches) return false;
     if (gender !== 'alle' && p.gender !== gender) return false;
 
