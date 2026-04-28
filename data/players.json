@@ -15839,8 +15839,7 @@
         "latitude": 55.9041,
         "longitude": 8.5309,
         "is_earliest": false,
-        "klub_logo": null,
-        "team_qid": null
+        "klub_logo": "https://file.dbu.dk/images/club/350/Tarm_IF.png"
       },
       {
         "klub_id": "1021",
@@ -18361,18 +18360,17 @@
     "gender": "mand",
     "firstClubName_original": "Sejerslev",
     "firstClubName": "sejerslev",
-    "klubnavn": "sejerslev",
+    "klubnavn": "Sejerslev",
     "klubnavn_original": "Sejerslev",
     "geo_afstand_km": null,
     "match_type": null,
-    "klub_id": null,
+    "klub_id": "123333320",
     "adresse": null,
     "by": null,
-    "latitude": "56.9250049",
-    "longitude": "8.8652645",
+    "latitude": "56.9228869968307",
+    "longitude": "8.8684921675571",
     "valideret": null,
     "confidence": "lav",
-    "klub_logo": null,
     "klub_website": null,
     "klub_dbu_url": null,
     "region": "Region Nordjylland",
@@ -18424,6 +18422,24 @@
         "longitude": 8.859,
         "is_earliest": false,
         "klub_logo": "logos/klub_6878.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "123333320",
+        "klubnavn": "Sejerslev",
+        "latitude": 56.9229,
+        "longitude": 8.8685,
+        "is_earliest": true,
+        "klub_logo": null,
+        "team_qid": null
+      },
+      {
+        "klub_id": "12333333",
+        "klubnavn": "Karby",
+        "latitude": 56.754,
+        "longitude": 8.5601,
+        "is_earliest": false,
+        "klub_logo": null,
         "team_qid": null
       }
     ]
@@ -28239,18 +28255,18 @@
     "gender": "mand",
     "firstClubName_original": "Knabstrup",
     "firstClubName": "knabstrup",
-    "klubnavn": "knabstrup",
-    "klubnavn_original": "Knabstrup",
+    "klubnavn": "Knabstrup Idrætsforening",
+    "klubnavn_original": "Knabstrup Idrætsforening",
     "geo_afstand_km": null,
     "match_type": null,
-    "klub_id": null,
+    "klub_id": "123333322",
     "adresse": null,
     "by": null,
-    "latitude": "55.6651276",
-    "longitude": "11.551759",
+    "latitude": "55.6703658327391",
+    "longitude": "11.5604279993364",
     "valideret": null,
     "confidence": "krydsvalideret",
-    "klub_logo": null,
+    "klub_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCoKsVyfAqY6d1YBHZnqHtFLL8nV_uHdGh2g&s",
     "klub_website": null,
     "klub_dbu_url": null,
     "region": "Region Sjælland",
@@ -28276,6 +28292,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/960px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png",
         "team_qid": "Q15789"
+      },
+      {
+        "klub_id": "123333322",
+        "klubnavn": "Knabstrup Idrætsforening",
+        "latitude": 55.6704,
+        "longitude": 11.5604,
+        "is_earliest": true,
+        "klub_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCoKsVyfAqY6d1YBHZnqHtFLL8nV_uHdGh2g&s",
+        "team_qid": null
       }
     ]
   },
@@ -42351,15 +42376,6 @@
         "team_qid": "Q389879"
       },
       {
-        "klub_id": "829",
-        "klubnavn": "Janderup FS",
-        "latitude": 55.6284,
-        "longitude": 8.3679,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_829.png",
-        "team_qid": null
-      },
-      {
         "klub_id": "899",
         "klubnavn": "Varde IF",
         "latitude": 55.6327,
@@ -56252,17 +56268,17 @@
     "firstClubName_original": "Lunde GIF",
     "firstClubName": "lunde gif",
     "klubnavn": "Lunde B",
-    "klubnavn_original": "Lunde GIF",
+    "klubnavn_original": "Lunde B",
     "geo_afstand_km": "0",
     "match_type": "core_name",
     "klub_id": "844",
     "adresse": "Skolegade 20",
     "by": "Nørre Nebel",
-    "latitude": "55.757285",
-    "longitude": "8.366738",
+    "latitude": "55.7573",
+    "longitude": "8.3667",
     "valideret": null,
     "confidence": "høj",
-    "klub_logo": "https://file.dbu.dk/images/club/844/Lunde_B.png",
+    "klub_logo": "logos/klub_844.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/844/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/844/klubinfo",
     "region": null,
@@ -56295,8 +56311,7 @@
         "latitude": 55.7573,
         "longitude": 8.3667,
         "is_earliest": true,
-        "klub_logo": "https://file.dbu.dk/images/club/844/Lunde_B.png",
-        "team_qid": null
+        "klub_logo": "logos/klub_844.png"
       }
     ]
   },
