@@ -67369,15 +67369,6 @@
         "team_qid": null
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": null,
         "klubnavn": "FC Girondins de Bordeaux",
         "latitude": 44.8378,
@@ -77454,9 +77445,9 @@
     "playerLabel": "Nils Middelboe",
     "wikipediaURL_da": "https://da.wikipedia.org/wiki/Nils_Middelboe",
     "wikipediaURL_en": "https://en.wikipedia.org/wiki/Nils_Middelboe",
-    "birthPlaceLabel": "Brunnby kyrkby",
-    "lat": "56.26083333",
-    "lon": "12.57444444",
+    "birthPlaceLabel": "Brunnby",
+    "lat": "56.2489",
+    "lon": "12.56",
     "dbuID": "966",
     "birthday_dbu": "05-10-1887",
     "n_matches": "15",
@@ -77479,7 +77470,7 @@
     "klub_logo": "logos/klub_1567.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1567/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1567/klubinfo",
-    "region": null,
+    "region": "",
     "haslund_url": "https://www.haslund.info/10_danmark/20_spillere/midnil.asp",
     "prev_estimated": false,
     "is_preserved": false,
