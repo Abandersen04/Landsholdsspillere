@@ -2384,15 +2384,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "F.C. Svendborg",
-        "latitude": 55.1,
-        "longitude": 10.6,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/a6/SfB-Oure_FA_Logo.png",
-        "team_qid": "Q617659"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "Melbourne City",
         "latitude": -37.8142,
         "longitude": 144.9631,
@@ -25097,15 +25088,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "F.C. Svendborg",
-        "latitude": 55.1,
-        "longitude": 10.6,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/a6/SfB-Oure_FA_Logo.png",
-        "team_qid": "Q617659"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "FC Chiasso",
         "latitude": 45.8341,
         "longitude": 9.0167,
@@ -34164,15 +34146,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "F.C. Svendborg",
-        "latitude": 55.1,
-        "longitude": 10.6,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/a6/SfB-Oure_FA_Logo.png",
-        "team_qid": "Q617659"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "FC Mulhouse",
         "latitude": 47.7364,
         "longitude": 7.3218,
@@ -42225,15 +42198,6 @@
         "team_qid": "Q2660060"
       },
       {
-        "klub_id": "1497",
-        "klubnavn": "SfB",
-        "latitude": 55.0563,
-        "longitude": 10.5772,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1497.png",
-        "team_qid": null
-      },
-      {
         "klub_id": "1781",
         "klubnavn": "FC Helsingør",
         "latitude": 56.0456,
@@ -42306,12 +42270,12 @@
         "team_qid": "Q549650"
       },
       {
-        "klub_id": null,
+        "klub_id": "",
         "klubnavn": "F.C. Svendborg",
         "latitude": 55.1,
         "longitude": 10.6,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/a6/SfB-Oure_FA_Logo.png",
+        "klub_logo": "https://www.fckfc.dk/sites/default/files/klublogoer/klublogo-Svendborg.png",
         "team_qid": "Q617659"
       }
     ],
