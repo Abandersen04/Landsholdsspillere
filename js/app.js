@@ -443,7 +443,7 @@ function getFilteredPlayers() {
   const searchTerm = document.getElementById('search').value.trim().toLowerCase();
 
   return allPlayers.filter(p => {
-    if (minBirthYear > 1850 || maxBirthYear < 2010) {
+    if (minBirthYear > 1870 || maxBirthYear < 2010) {
       if (p.birthYear === null) return false;
       if (p.birthYear < minBirthYear || p.birthYear > maxBirthYear) return false;
     }
