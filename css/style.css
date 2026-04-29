@@ -245,12 +245,12 @@ html, body {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 24px;
-  height: 24px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background: var(--red);
   cursor: pointer;
-  border: 3px solid white;
+  border: 2px solid white;
   box-shadow: var(--shadow);
   transition: transform var(--transition);
   position: relative;
@@ -258,12 +258,12 @@ html, body {
 }
 
 .slider::-webkit-slider-thumb:hover {
-  transform: scale(1.15);
+  transform: scale(1.2);
 }
 
 .slider::-moz-range-thumb {
-  width: 24px;
-  height: 24px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background: var(--red);
   cursor: pointer;
