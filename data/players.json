@@ -85771,5 +85771,74 @@
     "years_played": [
       1996
     ]
+  },
+  {
+    "playerLabel": "Mette Bjerg",
+    "dbuID": "4885",
+    "birthday_dbu": "24-02-1976",
+    "gender": "kvinde",
+    "n_matches": "6",
+    "n_goals": "0",
+    "birthPlaceLabel": "Varde",
+    "lat": "55.6327",
+    "lon": "8.4720",
+    "klubnavn": "Varde IF",
+    "klubnavn_original": "Varde IF",
+    "klub_id": "899",
+    "latitude": "55.632705",
+    "longitude": "8.472006",
+    "klub_logo": null,
+    "region": "Region Syddanmark",
+    "birthplace_estimated": true,
+    "allClubs": [
+      {
+        "klub_id": "899",
+        "klubnavn": "Varde IF",
+        "latitude": 55.6327,
+        "longitude": 8.472,
+        "is_earliest": true,
+        "klub_logo": null
+      }
+    ],
+    "years_played": [
+      2005,
+      2006
+    ],
+    "image": null
+  },
+  {
+    "playerLabel": "Tanja Mejer Christensen",
+    "dbuID": "4886",
+    "birthday_dbu": "22-03-1985",
+    "gender": "kvinde",
+    "n_matches": "7",
+    "n_goals": "0",
+    "birthPlaceLabel": "Hjørring",
+    "lat": "57.4641",
+    "lon": "10.0053",
+    "klubnavn": "Fortuna Hjørring",
+    "klubnavn_original": "Fortuna Hjørring",
+    "klub_id": "47",
+    "latitude": "57.464077",
+    "longitude": "10.005278",
+    "klub_logo": null,
+    "region": "Region Nordjylland",
+    "birthplace_estimated": true,
+    "allClubs": [
+      {
+        "klub_id": "47",
+        "klubnavn": "Fortuna Hjørring",
+        "latitude": 57.464077,
+        "longitude": 10.005278,
+        "is_earliest": true,
+        "klub_logo": null
+      }
+    ],
+    "years_played": [
+      2004,
+      2005,
+      2008
+    ],
+    "image": null
   }
 ]
