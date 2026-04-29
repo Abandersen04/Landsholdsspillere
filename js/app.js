@@ -443,7 +443,10 @@ function getFilteredPlayers() {
   const searchTerm = document.getElementById('search').value.trim().toLowerCase();
 
   return allPlayers.filter(p => {
-    if (p.birthYear !== null && (p.birthYear < minBirthYear || p.birthYear > maxBirthYear)) return false;
+    if (minBirthYear > 1850 || maxBirthYear < 2010) {
+      if (p.birthYear === null) return false;
+      if (p.birthYear < minBirthYear || p.birthYear > maxBirthYear) return false;
+    }
     if (minActiveYear > 1908 || maxActiveYear < 2026) {
       if (p.years_played.length === 0) return false;
       if (!p.years_played.some(y => y >= minActiveYear && y <= maxActiveYear)) return false;
