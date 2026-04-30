@@ -18,6 +18,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   updateMap();
 });
 
+// ===== Normalize helper (æøå → ae/oe/aa) =====
+function normalize(s) {
+  return (s || '').toLowerCase()
+    .replace(/æ/g, 'ae').replace(/ø/g, 'oe').replace(/å/g, 'aa')
+    .replace(/é|è|ê|ë/g, 'e').replace(/ö/g, 'oe').replace(/ä/g, 'ae')
+    .replace(/ü|ú|ù/g, 'u').replace(/ñ/g, 'n');
+}
+
 // ===== Title Case helper =====
 const FOOTBALL_ABBR = new Set(['fc', 'fk', 'bk', 'ik', 'if', 'gf', 'sf', 'ff', 'af', 'ab', 'kb', 'agf', 'aab', 'ob', 'hb', 'tb', 'sb', 'nb', 'vb', 'fb', 'fs', 'if', 'jfk', 'dfb', 'afc', 'rfc', 'sfc']);
 
@@ -392,6 +400,9 @@ async function loadData() {
     ...p,
     birthYear: p.birthday_dbu ? parseBirthYear(p.birthday_dbu) : null,
     years_played: Array.isArray(p.years_played) ? p.years_played : [],
+    _nameHay:  normalize(p.playerLabel),
+    _birthHay: normalize(p.birthPlaceLabel || ''),
+    _clubHay:  normalize([stripGender(p.klubnavn || ''), ...(p.allClubs || []).map(c => stripGender(c.klubnavn || ''))].join(' ')),
     n_matches: parseInt(p.n_matches, 10) || 0,
     n_goals: parseInt(p.n_goals, 10) || 0,
     lat: p.lat ? parseFloat(p.lat) : null,
@@ -421,13 +432,24 @@ function stripGender(name) {
 // Søge-match: substring ELLER word-prefix for flerords-termer.
 // "inter milan" finder "FC Internazionale Milano" fordi:
 //   "inter" er prefix af "internazionale" OG "milan" er prefix af "milano"
-function matchesSearch(term, texts) {
-  const hay = texts.join(' ');
-  if (hay.includes(term)) return true;
-  const termWords = term.split(/\s+/).filter(w => w.length >= 4);
-  if (termWords.length < 2) return false;
-  const hayWords = hay.split(/\s+/).filter(w => w.length >= 4);
-  return termWords.every(tw => hayWords.some(hw => hw.startsWith(tw) || tw.startsWith(hw)));
+// nameHay: søg altid i navn (normaliseret)
+// secondaryHay: fødested eller klubber (kun i relevante views)
+function matchesSearch(normTerm, nameHay, secondaryHay) {
+  // 1. Eksakt match i navn
+  if (nameHay.includes(normTerm)) return true;
+
+  // 2. Multi-word: alle søgeord skal være prefix af et navneord
+  //    "jesper kristensen" → finder "Jesper Juelsgård Kristensen"
+  const termWords = normTerm.split(/\s+/).filter(w => w.length >= 2);
+  if (termWords.length >= 2) {
+    const nameWords = nameHay.split(/\s+/).filter(w => w.length >= 2);
+    if (termWords.every(tw => nameWords.some(hw => hw.startsWith(tw)))) return true;
+  }
+
+  // 3. Sekundær søgning (fødested / klubber) — KUN hvis term ikke matchede navn
+  if (secondaryHay && secondaryHay.includes(normTerm)) return true;
+
+  return false;
 }
 
 // ===== Filter =====
@@ -472,16 +494,13 @@ function getFilteredPlayers() {
     }
 
     if (searchTerm) {
-      const nameHay = (p.playerLabel || '').toLowerCase();
-      const firstClub = stripGender(p.klubnavn || '').toLowerCase();
+      const normTerm = normalize(searchTerm);
       if (mapType === 'all_clubs') {
-        // Alle klubber: søg i alle klubber spilleren har spillet for
-        const allClubHay = (p.allClubs || []).map(c => stripGender(c.klubnavn || '').toLowerCase()).join(' ');
-        if (!matchesSearch(searchTerm, [nameHay, firstClub, allClubHay])) return false;
+        // Alle klubber: søg i navn + alle klubber
+        if (!matchesSearch(normTerm, p._nameHay, p._clubHay)) return false;
       } else {
-        // Barndomsklub / Fødested / Region: søg i spillernavn + klub + fødested
-        const birthHay = (p.birthPlaceLabel || '').toLowerCase();
-        if (!matchesSearch(searchTerm, [nameHay, firstClub, birthHay])) return false;
+        // Barndomsklub / Fødested / Region: søg i navn + fødested (IKKE klubnavn)
+        if (!matchesSearch(normTerm, p._nameHay, p._birthHay)) return false;
       }
     }
 
@@ -987,7 +1006,8 @@ function groupAllClubs(players, searchTerm) {
     // Hvis søgningen matcher spillerens navn (ikke en klub), vis alle klubber som normalt.
     let visibleClubs = clubs;
     if (searchTerm) {
-      const matchingClubs = clubs.filter(c => matchesSearch(searchTerm, [stripGender((c.klubnavn || '').toLowerCase())]));
+      const normTerm = normalize(searchTerm);
+      const matchingClubs = clubs.filter(c => matchesSearch(normTerm, normalize(stripGender(c.klubnavn || '')), ''));
       if (matchingClubs.length > 0) visibleClubs = matchingClubs;
     }
 
