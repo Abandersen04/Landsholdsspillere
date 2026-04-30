@@ -1293,7 +1293,7 @@ function buildPopupHtml(group, mapType) {
       <div class="popup-player">
         ${imgHtml}
         <div class="popup-player-info">
-          <div class="popup-player-name"><a href="/spiller/${slugify(p.playerLabel)}-${p.dbuID}/" style="color:inherit;text-decoration:none;font-weight:inherit" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${escapeHtml(p.playerLabel)}</a></div>
+          <div class="popup-player-name"><a href="/spiller/${slugify(p.playerLabel)}-${p.dbuID}/" style="color:#C0392B;text-decoration:none;font-weight:inherit;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${escapeHtml(p.playerLabel)}<svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="flex-shrink:0;opacity:.7"><path d="M3 9L9 3M9 3H5M9 3V7" stroke="#C0392B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
           <div class="popup-player-detail">Født: ${escapeHtml(birth)}</div>
           <div class="popup-player-detail">${stats}</div>
           ${links.length ? `<div class="popup-player-links">${links.join(' ')}</div>` : ''}
