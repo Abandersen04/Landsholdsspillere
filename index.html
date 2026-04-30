@@ -3,23 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  <title>Landsholdskortet</title>
-  <meta name="description" content="Udforsk alle danske landsholdsspillere på et interaktivt kort. Se fødselssteder, første klubber, statistik og mere for over 1100 spillere fra 1870 til i dag.">
+  <title>Landsholdskortet – Alle danske A-landsholdsspillere</title>
+  <meta name="description" content="Interaktivt kort over alle 1.144 danske A-landsholdsspillere siden 1908. Find spillere efter barndomsklub, fødested, antal kampe og mål.">
   <meta name="keywords" content="danske landsholdsspillere, DBU, dansk fodbold, landshold, fodboldkort, Danmark, fodboldhistorie">
   <meta name="author" content="Aksel Bandersen">
   <meta name="robots" content="index, follow">
+  <meta name="language" content="da">
+  <meta name="geo.region" content="DK">
   <meta name="google-site-verification" content="y7X9uF7MemiIcslss_odIGgXvoF8yNj3SyXXqPdOv_4" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Landsholdskortet">
-  <meta property="og:description" content="Udforsk alle danske landsholdsspillere på et interaktivt kort. Fødselssteder, klubber og statistik for over 1100 spillere.">
+  <meta property="og:url" content="https://landsholdskortet.dk/">
+  <meta property="og:title" content="Landsholdskortet – Alle danske A-landsholdsspillere">
+  <meta property="og:description" content="Interaktivt kort over alle 1.144 danske A-landsholdsspillere siden 1908. Find din lokale klub, dit fødested og dine fodboldlegender.">
   <meta property="og:locale" content="da_DK">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Landsholdskortet – interaktivt kort over danske landsholdsspillere">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Landsholdskortet">
-  <meta name="twitter:description" content="Udforsk alle danske landsholdsspillere på et interaktivt kort. Fødselssteder, klubber og statistik for over 1100 spillere.">
+  <meta name="twitter:title" content="Landsholdskortet – Alle danske A-landsholdsspillere">
+  <meta name="twitter:description" content="Interaktivt kort over alle 1.144 danske A-landsholdsspillere siden 1908.">
+  <meta name="twitter:image" content="https://landsholdskortet.dk/og-image.png">
+  <meta name="twitter:image:alt" content="Landsholdskortet – interaktivt kort over danske landsholdsspillere">
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -37,6 +46,26 @@
 
   <!-- App CSS -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Landsholdskortet",
+    "url": "https://landsholdskortet.dk/",
+    "description": "Interaktivt kort over alle danske A-landsholdsspillere siden 1908 fordelt på barndomsklub og fødested",
+    "inLanguage": "da",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://landsholdskortet.dk/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 <body>
   <!-- Mobile sticky search bar (hidden on desktop) -->
@@ -313,6 +342,28 @@
       <div id="map"></div>
     </main>
   </div>
+
+  <!-- SEO: Statisk tekstindhold – synligt for Google, skjult visuelt -->
+  <section id="om-landsholdskortet" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
+    <h2>Om Landsholdskortet</h2>
+    <p>
+      Landsholdskortet viser alle <strong>1.144 danske A-landsholdsspillere</strong> siden det
+      første officielle landsholdsopgør i 1908. Kortet er baseret på DBUs landsholdsdatabase
+      og beriget med oplysninger fra Wikipedia og haslund.info.
+    </p>
+    <p>
+      Find spillere efter <strong>barndomsklub</strong>, <strong>fødested</strong>, kommune
+      eller region. Filtrer på køn, kampår, antal kampe og mål. Siden hylder de lokale
+      fodboldklubber, hvor Danmarks landsholdsspillere begyndte deres karriere.
+    </p>
+    <p>
+      Blandt de mest kendte spillere finder du <strong>Michael Laudrup</strong>,
+      <strong>Peter Schmeichel</strong>, <strong>Brian Laudrup</strong>,
+      <strong>Christian Eriksen</strong>, <strong>Preben Elkjær</strong> og
+      <strong>Jon Dahl Tomasson</strong> – og hundredvis af andre spillere fra dansk
+      fodboldhistorie.
+    </p>
+  </section>
 
   <!-- Floating correction button -->
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSfihPXtuif_-GwYUC0R-JG7sMlCsVgpl1JfWvsUvqoW3EYMFw/viewform"

@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 // ===== Normalize helper (æøå → ae/oe/aa) =====
+function slugify(s) {
+  return normalize(s).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
 function normalize(s) {
   return (s || '').toLowerCase()
     .replace(/æ/g, 'ae').replace(/ø/g, 'oe').replace(/å/g, 'aa')
@@ -410,6 +414,36 @@ async function loadData() {
     longitude: p.longitude ? parseFloat(p.longitude) : null
   }));
 
+  injectSEOPlayerList(allPlayers);
+}
+
+function injectSEOPlayerList(players) {
+  if (document.getElementById('seo-player-list')) return;
+
+  const wrapper = document.createElement('div');
+  wrapper.id = 'seo-player-list';
+  wrapper.setAttribute('aria-hidden', 'true');
+  wrapper.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden';
+
+  const ul = document.createElement('ul');
+  players.forEach(p => {
+    const li = document.createElement('li');
+    const text = `${p.playerLabel || ''} – ${p.n_matches || 0} A-landskampe, ${p.n_goals || 0} mål. Barndomsklub: ${p.klubnavn || ''}. Født: ${p.birthPlaceLabel || ''}.`;
+    const wikiUrl = p.wikipediaURL_da || p.wikipediaURL_en || null;
+    if (wikiUrl) {
+      const a = document.createElement('a');
+      a.href = wikiUrl;
+      a.rel = 'noopener';
+      a.textContent = text;
+      li.appendChild(a);
+    } else {
+      li.textContent = text;
+    }
+    ul.appendChild(li);
+  });
+
+  wrapper.appendChild(ul);
+  document.body.appendChild(wrapper);
 }
 
 function parseBirthYear(dateStr) {
@@ -1259,7 +1293,7 @@ function buildPopupHtml(group, mapType) {
       <div class="popup-player">
         ${imgHtml}
         <div class="popup-player-info">
-          <div class="popup-player-name">${escapeHtml(p.playerLabel)}</div>
+          <div class="popup-player-name"><a href="/spiller/${slugify(p.playerLabel)}-${p.dbuID}/" style="color:inherit;text-decoration:none;font-weight:inherit" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${escapeHtml(p.playerLabel)}</a></div>
           <div class="popup-player-detail">Født: ${escapeHtml(birth)}</div>
           <div class="popup-player-detail">${stats}</div>
           ${links.length ? `<div class="popup-player-links">${links.join(' ')}</div>` : ''}
