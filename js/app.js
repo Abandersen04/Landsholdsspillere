@@ -22,8 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 function normalize(s) {
   return (s || '').toLowerCase()
     .replace(/æ/g, 'ae').replace(/ø/g, 'oe').replace(/å/g, 'aa')
-    .replace(/é|è|ê|ë/g, 'e').replace(/ö/g, 'oe').replace(/ä/g, 'ae')
-    .replace(/ü|ú|ù/g, 'u').replace(/ñ/g, 'n');
+    .normalize('NFD').replace(/[̀-ͯ]/g, '');
 }
 
 // ===== Title Case helper =====
