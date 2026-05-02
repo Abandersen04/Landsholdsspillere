@@ -709,7 +709,8 @@ function buildChoropleth(groups, geoData, nameKey, perCapita) {
       layer.bindPopup(() => buildPopupHtml(group, 'birth'), {
         maxWidth: 340,
         minWidth: 260,
-        closeButton: true
+        closeButton: true,
+        autoPan: false
       });
       layer.on('mouseover', () => layer.setStyle({ weight: 3, color: '#333' }));
       layer.on('mouseout', () => geoLayer.resetStyle(layer));
@@ -1233,7 +1234,8 @@ function createMarker(group, mapType, birthLevel, perCapita) {
   marker.bindPopup(() => buildPopupHtml(group, mapType), {
     maxWidth: 340,
     minWidth: 260,
-    closeButton: true
+    closeButton: true,
+    autoPan: false
   });
 
   return marker;
@@ -1270,7 +1272,12 @@ function buildPopupHtml(group, mapType) {
   }
 
   // Players list
-  const playersHtml = players.map(p => {
+  const isMobile = window.innerWidth <= 768;
+  const maxVisible = isMobile ? 10 : players.length;
+  const visiblePlayers = players.slice(0, maxVisible);
+  const hiddenCount = players.length - visiblePlayers.length;
+
+  const playersHtml = visiblePlayers.map(p => {
     const imgHtml = p.image
       ? `<img class="popup-player-img" src="${escapeHtml(p.image)}" onerror="this.style.display='none'" alt="">`
       : '';
@@ -1304,7 +1311,7 @@ function buildPopupHtml(group, mapType) {
   return `
     <div class="popup-wrapper">
       ${headerHtml}
-      <div class="popup-players">${playersHtml}</div>
+      <div class="popup-players">${playersHtml}${hiddenCount > 0 ? `<div style="padding:8px 12px;color:#888;font-size:13px;text-align:center">... og ${hiddenCount} flere spillere</div>` : ''}</div>
     </div>`;
 }
 
