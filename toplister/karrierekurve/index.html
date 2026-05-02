@@ -208,6 +208,13 @@ function setGender(g, btn) {
   draw();
 }
 
+const playerById = Object.fromEntries(RAW.map(p => [p.id, p]));
+
+function selectById(id) {
+  const p = playerById[id];
+  if (p) selectPlayer(p);
+}
+
 function selectPlayer(p) {
   selected = p;
   document.getElementById('selected-info').textContent = p.navn + ' (' + p.total + ' kampe)';
@@ -235,7 +242,7 @@ searchEl.addEventListener('input', () => {
   const hits = getFiltered().filter(p => norm(p.navn).includes(term)).slice(0, 10);
   if (!hits.length) { suggestEl.style.display = 'none'; return; }
   suggestEl.innerHTML = hits.map(p =>
-    `<div class="suggestion" onclick="selectPlayer(${JSON.stringify(p).replace(/"/g,'&quot;')})">
+    `<div class="suggestion" data-id="${p.id}" onclick="selectById('${p.id}')">
       ${p.navn} <span style="color:#aaa;font-size:12px">(${p.total} kampe)</span>
     </div>`
   ).join('');
