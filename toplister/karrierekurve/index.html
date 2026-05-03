@@ -124,7 +124,7 @@ const GRAY    = '#DDDDDD';
 function norm(s) {
   return (s || '').toLowerCase()
     .replace(/æ/g,'ae').replace(/ø/g,'oe').replace(/å/g,'aa')
-    .normalize('NFD').replace(/[̀-ͯ]/g,'');
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'');
 }
 
 function getFiltered() {
@@ -281,11 +281,16 @@ searchEl.addEventListener('input', () => {
   const hits = getFiltered().filter(p => norm(p.navn).includes(term) && !selectedIds.has(p.id)).slice(0, 10);
   if (!hits.length) { suggestEl.style.display = 'none'; return; }
   suggestEl.innerHTML = hits.map(p =>
-    `<div class="suggestion" data-id="${p.id}" onclick="selectById('${p.id}')">
+    `<div class="suggestion" data-id="${p.id}">
       ${p.navn} <span style="color:#aaa;font-size:12px">(${p.total} kampe)</span>
     </div>`
   ).join('');
   suggestEl.style.display = '';
+});
+
+suggestEl.addEventListener('mousedown', e => {
+  const div = e.target.closest('.suggestion');
+  if (div) { e.preventDefault(); selectById(div.dataset.id); }
 });
 
 document.addEventListener('click', e => {
