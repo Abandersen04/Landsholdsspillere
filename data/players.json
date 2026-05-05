@@ -142,15 +142,6 @@
         "team_qid": null
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": null,
         "klubnavn": "SV Waldhof Mannheim",
         "latitude": 49.4878,
@@ -517,15 +508,6 @@
     "birthplace_estimated": false,
     "allClubs": [
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3699",
         "klubnavn": "AGF",
         "latitude": 56.1322,
@@ -822,15 +804,6 @@
     "is_preserved": false,
     "birthplace_estimated": false,
     "allClubs": [
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
       {
         "klub_id": "2",
         "klubnavn": "Aalborg Boldklub",
@@ -1167,15 +1140,6 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_1458.png",
         "team_qid": "Q211912"
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
       },
       {
         "klub_id": "3700",
@@ -1728,15 +1692,6 @@
     "is_preserved": false,
     "birthplace_estimated": false,
     "allClubs": [
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
       {
         "klub_id": "2",
         "klubnavn": "Aalborg Boldklub",
@@ -2913,15 +2868,6 @@
         "team_qid": "Q795173"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "99014",
         "klubnavn": "Fulham F.C.",
         "latitude": 51.3761,
@@ -3023,15 +2969,6 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_1146.png",
         "team_qid": "Q635654"
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
       },
       {
         "klub_id": null,
@@ -3253,15 +3190,6 @@
     "birthplace_estimated": false,
     "allClubs": [
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3700",
         "klubnavn": "Brøndby IF",
         "latitude": 55.6491,
@@ -3393,15 +3321,6 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/250px-Liverpool_FC.svg.png",
         "team_qid": "Q1130849"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png",
-        "team_qid": "Q188430"
       }
     ],
     "years_played": [
@@ -3829,15 +3748,6 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_1552.png",
         "team_qid": "Q780735"
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
       },
       {
         "klub_id": "3700",
@@ -10096,15 +10006,6 @@
         "team_qid": "Q259454"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3702",
         "klubnavn": "FC Nordsjælland",
         "latitude": 55.8161,
@@ -10193,6 +10094,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png",
         "team_qid": "Q635654"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "FC Græsrødderne",
+        "latitude": 55.7573,
+        "longitude": 12.5258,
+        "is_earliest": false,
+        "klub_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolql_-VRepVNCDdmgGNYZXnt8_DdhHM04cA&s",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -18424,18 +18334,18 @@
     "gender": "mand",
     "firstClubName_original": "F.C. København",
     "firstClubName": "f.c. københavn",
-    "klubnavn": "FC København",
-    "klubnavn_original": "FC København",
+    "klubnavn": "Boldklubben af 1893",
+    "klubnavn_original": "Boldklubben af 1893",
     "geo_afstand_km": "3.1",
     "match_type": "core_name",
-    "klub_id": "",
+    "klub_id": "1532",
     "adresse": "Per Henrik Lings Allé 2",
     "by": "København Ø",
-    "latitude": "55.6761",
-    "longitude": "12.5689",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "valideret": null,
     "confidence": "høj",
-    "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png",
+    "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3710/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3710/klubinfo",
     "region": "Region Hovedstaden",
@@ -18449,7 +18359,7 @@
         "klubnavn": "Boldklubben af 1893",
         "latitude": 55.7138,
         "longitude": 12.5825,
-        "is_earliest": false,
+        "is_earliest": true,
         "klub_logo": "logos/klub_1532.png",
         "team_qid": "Q795173"
       },
@@ -18461,15 +18371,6 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_944.png",
         "team_qid": null
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
-        "is_earliest": true,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png",
-        "team_qid": "Q188430"
       },
       {
         "klub_id": null,
@@ -40047,18 +39948,18 @@
     "gender": "mand",
     "firstClubName_original": "Fredericia KFUM + Vejle boldklub",
     "firstClubName": "vejle boldklub",
-    "klubnavn": "Vejle Boldklub",
-    "klubnavn_original": "Fredericia KFUM + Vejle boldklub",
+    "klubnavn": "Fredericia KFUM",
+    "klubnavn_original": "Fredericia KFUM",
     "geo_afstand_km": "21",
     "match_type": "exact",
-    "klub_id": "3718",
+    "klub_id": "496",
     "adresse": "Roms Hule 6",
     "by": "Vejle",
-    "latitude": "55.714215",
-    "longitude": "9.5561",
+    "latitude": "55.5813",
+    "longitude": "9.759234",
     "valideret": null,
     "confidence": "høj",
-    "klub_logo": "logos/klub_3718.png",
+    "klub_logo": "logos/klub_496.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3718/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3718/klubinfo",
     "region": "Region Syddanmark",
@@ -40077,15 +39978,6 @@
         "team_qid": null
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3713",
         "klubnavn": "FC Fredericia",
         "latitude": 55.5769,
@@ -40099,18 +39991,27 @@
         "klubnavn": "Vejle Boldklub",
         "latitude": 55.7142,
         "longitude": 9.5561,
-        "is_earliest": true,
+        "is_earliest": false,
         "klub_logo": "logos/klub_3718.png",
         "team_qid": "Q737936"
       },
       {
-        "klub_id": null,
-        "klubnavn": "Fredericia HK",
-        "latitude": 55.5833,
-        "longitude": 9.7667,
+        "klub_id": "496",
+        "klubnavn": "Fredericia KFUM",
+        "latitude": 55.5813,
+        "longitude": 9.7592,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_496.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "685",
+        "klubnavn": "Vejle FC",
+        "latitude": 55.7142,
+        "longitude": 9.5198,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/1/12/Fredericia_handball_club.png",
-        "team_qid": "Q3752724"
+        "klub_logo": "logos/klub_685.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -40299,15 +40200,6 @@
         "team_qid": null
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3718",
         "klubnavn": "Vejle Boldklub",
         "latitude": 55.7142,
@@ -40323,6 +40215,15 @@
         "longitude": 9.5302,
         "is_earliest": true,
         "klub_logo": "logos/klub_706.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "3710",
+        "klubnavn": "FC København",
+        "latitude": 55.7036,
+        "longitude": 12.5718,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_3710.png",
         "team_qid": null
       }
     ],
@@ -40422,15 +40323,6 @@
         "team_qid": "Q797322"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": null,
         "klubnavn": "Avarta",
         "latitude": 55.6814,
@@ -40447,6 +40339,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/1/12/N%C3%A6stved_Boldklub_logo.png",
         "team_qid": "Q924353"
+      },
+      {
+        "klub_id": "3710",
+        "klubnavn": "FC København",
+        "latitude": 55.7036,
+        "longitude": 12.5718,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_3710.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -40514,15 +40415,6 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_1552.png",
         "team_qid": "Q780735"
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
       },
       {
         "klub_id": "944",
@@ -41790,24 +41682,6 @@
         "is_earliest": true,
         "klub_logo": "logos/klub_1543.png",
         "team_qid": "Q246902"
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
-        "klub_id": "3710",
-        "klubnavn": "FC København",
-        "latitude": 55.7036,
-        "longitude": 12.5718,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_3710.png",
-        "team_qid": null
       }
     ],
     "years_played": [
@@ -41857,15 +41731,6 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_1552.png",
         "team_qid": "Q780735"
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
       },
       {
         "klub_id": "949",
@@ -41951,15 +41816,6 @@
         "is_earliest": true,
         "klub_logo": "logos/klub_1559.png",
         "team_qid": null
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
       },
       {
         "klub_id": null,
@@ -42261,10 +42117,10 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "firstClubName_original": "<nowiki>Brændekilde-Bellinge Boldklub</nowiki>",
+    "firstClubName_original": "<nowiki>Brændekilde-Bellinge Boldklub<\/nowiki>",
     "firstClubName": "bbb",
     "klubnavn": "BBB",
-    "klubnavn_original": "<nowiki>Brændekilde-Bellinge Boldklub</nowiki>",
+    "klubnavn_original": "<nowiki>Brændekilde-Bellinge Boldklub<\/nowiki>",
     "geo_afstand_km": "8.5",
     "match_type": "exact",
     "klub_id": "1373",
@@ -42309,15 +42165,6 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_1458.png",
         "team_qid": "Q211912"
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
       },
       {
         "klub_id": "3699",
@@ -42626,15 +42473,6 @@
     "is_preserved": false,
     "birthplace_estimated": false,
     "allClubs": [
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
       {
         "klub_id": "296",
         "klubnavn": "Møldrup/Tostrup IF",
@@ -43566,15 +43404,6 @@
         "team_qid": "Q211912"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3718",
         "klubnavn": "Vejle Boldklub",
         "latitude": 55.7142,
@@ -43817,15 +43646,6 @@
         "team_qid": "Q795173"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3707",
         "klubnavn": "Randers FC",
         "latitude": 56.4656,
@@ -44022,15 +43842,6 @@
         "team_qid": null
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3700",
         "klubnavn": "Brøndby IF",
         "latitude": 55.6491,
@@ -44154,15 +43965,6 @@
     "is_preserved": false,
     "birthplace_estimated": false,
     "allClubs": [
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
       {
         "klub_id": "274",
         "klubnavn": "Kjellerup IF",
@@ -44631,15 +44433,6 @@
         "team_qid": "Q1624308"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "5594",
         "klubnavn": "Nordvest FC",
         "latitude": 55.7,
@@ -44781,15 +44574,6 @@
         "team_qid": "Q211912"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": null,
         "klubnavn": "1. FC Nürnberg",
         "latitude": 49.4539,
@@ -44851,15 +44635,6 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png",
         "team_qid": "Q5794"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "En Avant Guingamp",
-        "latitude": 48.5625,
-        "longitude": -3.1511,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/En_Avant_Guingamp_logo.svg/330px-En_Avant_Guingamp_logo.svg.png",
-        "team_qid": "Q930072"
       }
     ],
     "years_played": [
@@ -44995,15 +44770,6 @@
         "is_earliest": true,
         "klub_logo": "logos/klub_1532.png",
         "team_qid": "Q795173"
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
       },
       {
         "klub_id": null,
@@ -45774,15 +45540,6 @@
     "birthplace_estimated": false,
     "allClubs": [
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3700",
         "klubnavn": "Brøndby IF",
         "latitude": 55.6491,
@@ -46383,15 +46140,6 @@
         "team_qid": "Q211912"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "2",
         "klubnavn": "Aalborg Boldklub",
         "latitude": 57.0434,
@@ -46806,15 +46554,6 @@
         "is_earliest": true,
         "klub_logo": "logos/klub_1458.png",
         "team_qid": "Q211912"
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
       },
       {
         "klub_id": null,
@@ -47354,15 +47093,6 @@
     "is_preserved": false,
     "birthplace_estimated": false,
     "allClubs": [
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
       {
         "klub_id": "2",
         "klubnavn": "Aalborg Boldklub",
@@ -53752,15 +53482,6 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/F.C._Hansa_Rostock_Logo.svg/960px-F.C._Hansa_Rostock_Logo.svg.png",
         "team_qid": "Q142005"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Boldklubben Skjold",
-        "latitude": 55.6833,
-        "longitude": 12.55,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Boldklubben_Skjold_-_Logo.svg/960px-Boldklubben_Skjold_-_Logo.svg.png",
-        "team_qid": "Q787363"
       }
     ],
     "years_played": [
@@ -55507,15 +55228,6 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_1533.jpg",
         "team_qid": "Q797322"
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
       },
       {
         "klub_id": "3731",
@@ -58702,15 +58414,6 @@
         "team_qid": "Q211912"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3700",
         "klubnavn": "Brøndby IF",
         "latitude": 55.6491,
@@ -58803,15 +58506,6 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_1532.png",
         "team_qid": "Q795173"
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
       },
       {
         "klub_id": "2",
@@ -59341,15 +59035,6 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_1378.png",
         "team_qid": "Q750801"
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
       },
       {
         "klub_id": "3702",
@@ -62145,15 +61830,6 @@
         "team_qid": null
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3702",
         "klubnavn": "FC Nordsjælland",
         "latitude": 55.8161,
@@ -62979,15 +62655,6 @@
         "team_qid": "Q549650"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3699",
         "klubnavn": "AGF",
         "latitude": 56.1322,
@@ -63092,15 +62759,6 @@
     "is_preserved": false,
     "birthplace_estimated": false,
     "allClubs": [
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
       {
         "klub_id": "3707",
         "klubnavn": "Randers FC",
@@ -63503,6 +63161,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png",
         "team_qid": "Q5794"
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "Huddersfield Town A.F.C.",
+        "latitude": 53.6542,
+        "longitude": -1.7683,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Huddersfield_Town_AFC_crest.svg/330px-Huddersfield_Town_AFC_crest.svg.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -65317,15 +64984,6 @@
         "is_earliest": true,
         "klub_logo": "logos/klub_1532.png",
         "team_qid": "Q795173"
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
       },
       {
         "klub_id": null,
@@ -67348,15 +67006,6 @@
         "team_qid": null
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "1781",
         "klubnavn": "FC Helsingør",
         "latitude": 56.0456,
@@ -68356,15 +68005,6 @@
     "is_preserved": false,
     "birthplace_estimated": false,
     "allClubs": [
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
       {
         "klub_id": "3700",
         "klubnavn": "Brøndby IF",
@@ -69801,15 +69441,6 @@
         "team_qid": null
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3702",
         "klubnavn": "FC Nordsjælland",
         "latitude": 55.8161,
@@ -70026,15 +69657,6 @@
         "team_qid": "Q795173"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3707",
         "klubnavn": "Randers FC",
         "latitude": 56.4656,
@@ -70060,6 +69682,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Minnesota_United_FC_%28MLS%29_Primary_logo.svg/250px-Minnesota_United_FC_%28MLS%29_Primary_logo.svg.png",
         "team_qid": "Q19828435"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "Al-Fateh FC",
+        "latitude": 25.306,
+        "longitude": 49.6128,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Fateh_SC_Logo.svg/500px-Al_Fateh_SC_Logo.svg.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -70326,15 +69957,6 @@
     "birthplace_estimated": false,
     "allClubs": [
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3699",
         "klubnavn": "AGF",
         "latitude": 56.1322,
@@ -70477,15 +70099,6 @@
         "is_earliest": true,
         "klub_logo": "logos/klub_1039.png",
         "team_qid": null
-      },
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
       },
       {
         "klub_id": "3700",
@@ -70684,15 +70297,6 @@
     "birthplace_estimated": false,
     "allClubs": [
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3703",
         "klubnavn": "SønderjyskE",
         "latitude": 55.2615,
@@ -70736,15 +70340,6 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png",
         "team_qid": "Q188430"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Q388746",
-        "latitude": 55.5782,
-        "longitude": 9.7286,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/8/81/FC_Fredericia.png",
-        "team_qid": "Q388746"
       }
     ],
     "years_played": [
@@ -72201,15 +71796,6 @@
         "team_qid": "Q795173"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "2",
         "klubnavn": "Aalborg Boldklub",
         "latitude": 57.0434,
@@ -72902,15 +72488,6 @@
     "is_preserved": false,
     "birthplace_estimated": false,
     "allClubs": [
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
       {
         "klub_id": "2",
         "klubnavn": "Aalborg Boldklub",
@@ -74001,15 +73578,6 @@
         "team_qid": "Q795173"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "2",
         "klubnavn": "Aalborg Boldklub",
         "latitude": 57.0434,
@@ -74112,15 +73680,6 @@
     "is_preserved": false,
     "birthplace_estimated": false,
     "allClubs": [
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
       {
         "klub_id": "376",
         "klubnavn": "Viborg FF",
@@ -75239,15 +74798,6 @@
     "is_preserved": false,
     "birthplace_estimated": false,
     "allClubs": [
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
       {
         "klub_id": "3702",
         "klubnavn": "FC Nordsjælland",
@@ -78051,6 +77601,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/SSC_Napoli_2025_%28white_and_azure%29.svg/960px-SSC_Napoli_2025_%28white_and_azure%29.svg.png",
         "team_qid": "Q2641"
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "Huddersfield Town A.F.C.",
+        "latitude": 53.6542,
+        "longitude": -1.7683,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Huddersfield_Town_AFC_crest.svg/330px-Huddersfield_Town_AFC_crest.svg.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -84774,15 +84333,6 @@
         "team_qid": "Q211912"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "3707",
         "klubnavn": "Randers FC",
         "latitude": 56.4656,
@@ -85046,15 +84596,6 @@
         "team_qid": "Q797322"
       },
       {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
-      {
         "klub_id": "1581",
         "klubnavn": "Boldklubben Skjold",
         "latitude": 55.7037,
@@ -85247,15 +84788,6 @@
     "is_preserved": false,
     "birthplace_estimated": false,
     "allClubs": [
-      {
-        "klub_id": "1567",
-        "klubnavn": "Kjøbenhavns Boldklub",
-        "latitude": 55.6782,
-        "longitude": 12.4948,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1567.png",
-        "team_qid": "Q1359341"
-      },
       {
         "klub_id": "99004",
         "klubnavn": "Nykøbing Falster Boldklub af 1901",
