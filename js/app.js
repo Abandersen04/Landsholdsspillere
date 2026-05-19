@@ -531,8 +531,12 @@ function getFilteredPlayers() {
       if (mapType === 'all_clubs') {
         // Alle klubber: søg i navn + alle klubber
         if (!matchesSearch(normTerm, p._nameHay, p._clubHay)) return false;
+      } else if (mapType === 'club') {
+        // Barndomsklub: søg i navn + første klub (ikke fødested, ikke alle klubber)
+        const firstClubHay = normalize(stripGender(p.klubnavn || ''));
+        if (!matchesSearch(normTerm, p._nameHay, firstClubHay)) return false;
       } else {
-        // Barndomsklub / Fødested / Region: søg i navn + fødested (IKKE klubnavn)
+        // Fødested / Region: søg i navn + fødested
         if (!matchesSearch(normTerm, p._nameHay, p._birthHay)) return false;
       }
     }
