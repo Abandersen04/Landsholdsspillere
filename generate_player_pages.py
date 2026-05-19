@@ -416,7 +416,6 @@ def career_kurve(dbu_id, player_name):
         for sc in (kamp.get("scoringer") or []):
             if name_matches_k(player_name, sc.get("spiller","")):
                 maal_pr_alder[age] += 1
-                break
 
         kt = kamp.get("kamptype","")
         if any(t in kt for t in EM_VM):
