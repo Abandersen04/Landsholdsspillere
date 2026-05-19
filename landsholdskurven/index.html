@@ -151,6 +151,15 @@ function getKurve(p) {
   return p.kurve;
 }
 
+function trimKurve(kurve) {
+  // Find sidst aktive indeks (hvor kurven stiger) og klip resten
+  let last = 0;
+  for (let i = 1; i < kurve.length; i++) {
+    if (kurve[i] > kurve[i - 1]) last = i;
+  }
+  return kurve.slice(0, last + 1);
+}
+
 function getTotal(p) {
   if (mode === 'maal')       return p.total_m;
   if (mode === 'slutrunder') return p.kurve_sl[p.kurve_sl.length - 1];
@@ -213,7 +222,8 @@ function draw() {
   // Grå linjer
   for (const p of data) {
     if (selectedIds.has(p.id)) continue;
-    const kurve = getKurve(p);
+    const kurve = trimKurve(getKurve(p));
+    if (!kurve.length) continue;
     ctx.beginPath(); ctx.strokeStyle = GRAY; ctx.lineWidth = 1; ctx.globalAlpha = 0.7;
     kurve.forEach((v, i) => {
       const x = xOf(15 + i), y = yOf(v);
@@ -225,7 +235,8 @@ function draw() {
 
   // Valgte spillere
   for (const sp of selectedPlayers) {
-    const kurve = getKurve(sp);
+    const kurve = trimKurve(getKurve(sp));
+    if (!kurve.length) continue;
     ctx.beginPath(); ctx.strokeStyle = sp.color; ctx.lineWidth = 3;
     kurve.forEach((v, i) => {
       const x = xOf(15 + i), y = yOf(v);
