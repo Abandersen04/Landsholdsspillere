@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Flemming Nielsen – Landsholdskortet</title>
-  <meta name="description" content="Flemming Nielsen spillede 26 A-landskampe og scorede 4 mål for Danmark. Barndomsklub: FC København. Fødested: København.">
+  <meta name="description" content="Flemming Nielsen spillede 26 A-landskampe og scorede 4 mål for Danmark. Barndomsklub: Boldklubben af 1893. Fødested: København.">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Flemming Nielsen – Landsholdskortet">
-  <meta property="og:description" content="Flemming Nielsen spillede 26 A-landskampe og scorede 4 mål for Danmark. Barndomsklub: FC København. Fødested: København.">
+  <meta property="og:description" content="Flemming Nielsen spillede 26 A-landskampe og scorede 4 mål for Danmark. Barndomsklub: Boldklubben af 1893. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/flemming-nielsen-2934/">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/flemming-nielsen-2934/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
@@ -17,7 +17,7 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Flemming Nielsen",
-  "description": "Flemming Nielsen spillede 26 A-landskampe og scorede 4 mål for Danmark. Barndomsklub: FC København. Fødested: København.",
+  "description": "Flemming Nielsen spillede 26 A-landskampe og scorede 4 mål for Danmark. Barndomsklub: Boldklubben af 1893. Fødested: København.",
   "url": "https://landsholdskortet.dk/spiller/flemming-nielsen-2934/",
   "sameAs": "https://da.wikipedia.org/wiki/Flemming_Nielsen_(fodboldspiller,_f%C3%B8dt_1934)",
   "birthDate": "24-02-1934",
@@ -95,7 +95,7 @@
   <div id="player-map"></div>
 
   <!-- Bio-tekst -->
-  <p style="background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:20px;font-size:15px;line-height:1.65;color:#333">Flemming Nielsen kom til verden den 24. februar 1934 i København. Flemming Nielsen startede sin fodboldkarriere i FC København. I 1954 fik Flemming sin A-landsholdsdebut mod Norge i Malmö, Sverige. En kamp som Danmark tabte 1-2. Flemming Nielsen har spillet 26 kampe og scoret 4 mål for det danske A-landshold.</p>
+  <p style="background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:20px;font-size:15px;line-height:1.65;color:#333">Flemming Nielsen kom til verden den 24. februar 1934 i København. Flemming Nielsen startede sin fodboldkarriere i Boldklubben af 1893. I 1954 fik Flemming sin A-landsholdsdebut mod Norge i Malmö, Sverige. En kamp som Danmark tabte 1-2. Flemming Nielsen har spillet 26 kampe og scoret 4 mål for det danske A-landshold.</p>
 
   <!-- Landsholdskarriere -->
   <div class="card">
@@ -122,7 +122,7 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
-const clubs = [{"navn": "Boldklubben af 1893", "lat": 55.7138, "lng": 12.5825, "barndom": false, "logo": "logos/klub_1532.png"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": true, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Atalanta B.C.", "lat": 45.695, "lng": 9.67, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/66/AtalantaBC.svg/250px-AtalantaBC.svg.png"}, {"navn": "Greenock Morton F.C.", "lat": 55.95, "lng": -4.7667, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Greenock_Morton_FC_logo.svg/330px-Greenock_Morton_FC_logo.svg.png"}];
+const clubs = [{"navn": "Boldklubben af 1893", "lat": 55.7138, "lng": 12.5825, "barndom": true, "logo": "logos/klub_1532.png"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}, {"navn": "Atalanta B.C.", "lat": 45.695, "lng": 9.67, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/66/AtalantaBC.svg/250px-AtalantaBC.svg.png"}, {"navn": "Greenock Morton F.C.", "lat": 55.95, "lng": -4.7667, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Greenock_Morton_FC_logo.svg/330px-Greenock_Morton_FC_logo.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};
 
 const map = L.map('player-map', { zoomControl: true });

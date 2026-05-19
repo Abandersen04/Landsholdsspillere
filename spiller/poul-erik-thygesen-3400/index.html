@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Poul-Erik Thygesen – Landsholdskortet</title>
-  <meta name="description" content="Poul-Erik Thygesen spillede 3 A-landskampe for Danmark. Barndomsklub: Boldklubben 1903. Fødested: Gentofte Kommune.">
+  <meta name="description" content="Poul-Erik Thygesen spillede 3 A-landskampe for Danmark. Barndomsklub: Gentofte-Vangede Idrætsforening. Fødested: Gentofte Kommune.">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Poul-Erik Thygesen – Landsholdskortet">
-  <meta property="og:description" content="Poul-Erik Thygesen spillede 3 A-landskampe for Danmark. Barndomsklub: Boldklubben 1903. Fødested: Gentofte Kommune.">
+  <meta property="og:description" content="Poul-Erik Thygesen spillede 3 A-landskampe for Danmark. Barndomsklub: Gentofte-Vangede Idrætsforening. Fødested: Gentofte Kommune.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/poul-erik-thygesen-3400/">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/poul-erik-thygesen-3400/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
@@ -17,7 +17,7 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Poul-Erik Thygesen",
-  "description": "Poul-Erik Thygesen spillede 3 A-landskampe for Danmark. Barndomsklub: Boldklubben 1903. Fødested: Gentofte Kommune.",
+  "description": "Poul-Erik Thygesen spillede 3 A-landskampe for Danmark. Barndomsklub: Gentofte-Vangede Idrætsforening. Fødested: Gentofte Kommune.",
   "url": "https://landsholdskortet.dk/spiller/poul-erik-thygesen-3400/",
   "sameAs": "https://en.wikipedia.org/wiki/Poul-Erik_Thygesen",
   "birthDate": "17-07-1950",
@@ -95,7 +95,7 @@
   <div id="player-map"></div>
 
   <!-- Bio-tekst -->
-  <p style="background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:20px;font-size:15px;line-height:1.65;color:#333">Poul-Erik Thygesen er fra Gentofte Kommune og født den 17. juli 1950. Poul-Erik Thygesen startede sin fodboldkarriere i Boldklubben 1903. I 1970 fik Poul-Erik sin A-landsholdsdebut mod Portugal i København, Danmark. Kampen endte med et dansk nederlag på 0-1. Poul-Erik Thygesen har spillet 3 kampe for det danske A-landshold.</p>
+  <p style="background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:20px;font-size:15px;line-height:1.65;color:#333">Poul-Erik Thygesen er fra Gentofte Kommune og født den 17. juli 1950. Poul-Erik Thygesen startede sin fodboldkarriere i Gentofte-Vangede Idrætsforening. I 1970 fik Poul-Erik sin A-landsholdsdebut mod Portugal i København, Danmark. Kampen endte med et dansk nederlag på 0-1. Poul-Erik Thygesen har spillet 3 kampe for det danske A-landshold.</p>
 
   <!-- Landsholdskarriere -->
   <div class="card">
@@ -116,7 +116,7 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
-const clubs = [{"navn": "Boldklubben 1903", "lat": 55.731, "lng": 12.5478, "barndom": true, "logo": "logos/klub_1533.jpg"}, {"navn": "Glostrup FK - IF 32", "lat": 55.6683, "lng": 12.3759, "barndom": false, "logo": "logos/klub_1712.png"}, {"navn": "FC Winterthur", "lat": 47.4992, "lng": 8.7267, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/FC_Winterthur_logo.svg/330px-FC_Winterthur_logo.svg.png"}, {"navn": "SV Werder Bremen", "lat": 53.0664, "lng": 8.8375, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SV-Werder-Bremen-Logo.svg/250px-SV-Werder-Bremen-Logo.svg.png"}];
+const clubs = [{"navn": "Boldklubben 1903", "lat": 55.731, "lng": 12.5478, "barndom": false, "logo": "logos/klub_1533.jpg"}, {"navn": "Glostrup FK - IF 32", "lat": 55.6683, "lng": 12.3759, "barndom": false, "logo": "logos/klub_1712.png"}, {"navn": "FC Winterthur", "lat": 47.4992, "lng": 8.7267, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/FC_Winterthur_logo.svg/330px-FC_Winterthur_logo.svg.png"}, {"navn": "SV Werder Bremen", "lat": 53.0664, "lng": 8.8375, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SV-Werder-Bremen-Logo.svg/250px-SV-Werder-Bremen-Logo.svg.png"}, {"navn": "Gentofte-Vangede Idrætsforening", "lat": 55.7447, "lng": 12.5176, "barndom": true, "logo": "logos/klub_1556.png"}];
 const birthMarker = {"lat": 55.750472, "lng": 12.552073, "navn": "Gentofte Kommune"};
 
 const map = L.map('player-map', { zoomControl: true });

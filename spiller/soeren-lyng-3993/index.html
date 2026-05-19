@@ -95,7 +95,7 @@
   <div id="player-map"></div>
 
   <!-- Bio-tekst -->
-  <p style="background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:20px;font-size:15px;line-height:1.65;color:#333">Søren Lyng er født den 8. juli 1966 i Gentofte Kommune. Karrieren begyndte i Virum-Sorgenfri BK, inden Søren fandt vej til landsholdet. I 1990 fik Søren sin A-landsholdsdebut i Västerås, Sverige. Søren Lyng har spillet 2 kampe for det danske A-landshold.</p>
+  <p style="background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:20px;font-size:15px;line-height:1.65;color:#333">Søren Lyng er født den 8. juli 1966 i Gentofte Kommune. Karrieren begyndte i Virum-Sorgenfri BK, inden Søren fandt vej til landsholdet. I 1990 fik Søren sin A-landsholdsdebut mod Sverige i Västerås. En kamp som Danmark tabte 0-1. Søren Lyng har spillet 2 kampe for det danske A-landshold.</p>
 
   <!-- Landsholdskarriere -->
   <div class="card">
@@ -117,7 +117,7 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
-const clubs = [{"navn": "Virum-Sorgenfri BK", "lat": 55.7856, "lng": 12.4698, "barndom": true, "logo": "logos/klub_1313.png"}, {"navn": "Boldklubben 1903", "lat": 55.731, "lng": 12.5478, "barndom": false, "logo": "logos/klub_1533.jpg"}, {"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "barndom": false, "logo": "logos/klub_1552.png"}, {"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Herfølge Boldklub", "lat": 55.45, "lng": 12.1833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/0/0c/Herf%C3%B8lge_BK.png"}, {"navn": "Lyngby Boldklub", "lat": 55.7821, "lng": 12.5064, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"}];
+const clubs = [{"navn": "Virum-Sorgenfri BK", "lat": 55.7856, "lng": 12.4698, "barndom": true, "logo": "logos/klub_1313.png"}, {"navn": "Boldklubben 1903", "lat": 55.731, "lng": 12.5478, "barndom": false, "logo": "logos/klub_1533.jpg"}, {"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "barndom": false, "logo": "logos/klub_1552.png"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Herfølge Boldklub", "lat": 55.45, "lng": 12.1833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/0/0c/Herf%C3%B8lge_BK.png"}, {"navn": "Lyngby Boldklub", "lat": 55.7821, "lng": 12.5064, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"}];
 const birthMarker = {"lat": 55.750472, "lng": 12.552073, "navn": "Gentofte Kommune"};
 
 const map = L.map('player-map', { zoomControl: true });

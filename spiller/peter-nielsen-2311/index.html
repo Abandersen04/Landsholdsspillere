@@ -95,7 +95,7 @@
   <div id="player-map"></div>
 
   <!-- Bio-tekst -->
-  <p style="background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:20px;font-size:15px;line-height:1.65;color:#333">Peter Nielsen er født den 3. juni 1968 i København. Peter Nielsen startede sin fodboldkarriere i Fremad Amager. A-landsholdskarrieren tog sin begyndelse i 1992 i Ankara, Tyrkiet. I alt nåede Peter at optræde i 10 A-landskampe.</p>
+  <p style="background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:20px;font-size:15px;line-height:1.65;color:#333">Peter Nielsen er født den 3. juni 1968 i København. Peter Nielsen startede sin fodboldkarriere i Fremad Amager. A-landsholdskarrieren tog sin begyndelse i 1992 mod Tyrkiet i Ankara. Danmark sejrede 2-1. Peter Nielsen har spillet 10 kampe for det danske A-landshold og scoret 1 mål.</p>
 
   <!-- Landsholdskarriere -->
   <div class="card">
@@ -126,7 +126,7 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
-const clubs = [{"navn": "Lyngby Boldklub 1921", "lat": 55.7822, "lng": 12.5065, "barndom": false, "logo": "logos/klub_1146.png"}, {"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "Borussia Mönchengladbach", "lat": 51.2, "lng": 6.4333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Borussia_M%C3%B6nchengladbach_logo.svg/960px-Borussia_M%C3%B6nchengladbach_logo.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Fremad Amager", "lat": 55.6493, "lng": 12.6016, "barndom": true, "logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png"}];
+const clubs = [{"navn": "Lyngby Boldklub 1921", "lat": 55.7822, "lng": 12.5065, "barndom": false, "logo": "logos/klub_1146.png"}, {"navn": "Borussia Mönchengladbach", "lat": 51.2, "lng": 6.4333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Borussia_M%C3%B6nchengladbach_logo.svg/960px-Borussia_M%C3%B6nchengladbach_logo.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Fremad Amager", "lat": 55.6493, "lng": 12.6016, "barndom": true, "logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};
 
 const map = L.map('player-map', { zoomControl: true });

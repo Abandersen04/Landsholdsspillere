@@ -95,7 +95,7 @@
   <div id="player-map"></div>
 
   <!-- Bio-tekst -->
-  <p style="background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:20px;font-size:15px;line-height:1.65;color:#333">Thomas Rytter kom til verden den 6. januar 1974 i København. Thomas Rytter startede sin fodboldkarriere i Virum-Sorgenfri BK. Han debuterede for A-landsholdet i 1996 i en Testkamp i Göteborg, Sverige. I alt nåede Thomas at optræde i 4 A-landskampe.</p>
+  <p style="background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:20px;font-size:15px;line-height:1.65;color:#333">Thomas Rytter kom til verden den 6. januar 1974 i København. Thomas Rytter startede sin fodboldkarriere i Virum-Sorgenfri BK. Han debuterede for A-landsholdet i 1996 i en Testkamp mod Sverige i Göteborg. Kampen endte med et dansk nederlag på 0-1. I alt nåede Thomas at optræde i 4 A-landskampe.</p>
 
   <!-- Landsholdskarriere -->
   <div class="card">
@@ -123,7 +123,7 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
-const clubs = [{"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "VfL Wolfsburg", "lat": 52.4231, "lng": 10.7872, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/VfL_Wolfsburg_Logo.svg/500px-VfL_Wolfsburg_Logo.svg.png"}, {"navn": "Sevilla FC", "lat": 37.3886, "lng": -5.9956, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Sevilla_FC_logo.svg/250px-Sevilla_FC_logo.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Lyngby Boldklub", "lat": 55.7821, "lng": 12.5064, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"}];
+const clubs = [{"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "VfL Wolfsburg", "lat": 52.4231, "lng": 10.7872, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/VfL_Wolfsburg_Logo.svg/500px-VfL_Wolfsburg_Logo.svg.png"}, {"navn": "Sevilla FC", "lat": 37.3886, "lng": -5.9956, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Sevilla_FC_logo.svg/250px-Sevilla_FC_logo.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Lyngby Boldklub", "lat": 55.7821, "lng": 12.5064, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};
 
 const map = L.map('player-map', { zoomControl: true });
