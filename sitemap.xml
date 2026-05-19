@@ -6870,4 +6870,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url><loc>https://landsholdskortet.dk/rekordlister/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://landsholdskortet.dk/landsholdskurven/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://landsholdskortet.dk/rekordlister/maal/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://landsholdskortet.dk/rekordlister/kampe/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://landsholdskortet.dk/rekordlister/snit/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://landsholdskortet.dk/rekordlister/sejr/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://landsholdskortet.dk/rekordlister/turneringer/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://landsholdskortet.dk/rekordlister/saesoner/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://landsholdskortet.dk/rekordlister/par/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://landsholdskortet.dk/rekordlister/klubber/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://landsholdskortet.dk/rekordlister/kommuner/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>
