@@ -3321,6 +3321,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/250px-Liverpool_FC.svg.png",
         "team_qid": "Q1130849"
+      },
+      {
+        "klub_id": "3710",
+        "klubnavn": "FC København",
+        "latitude": 55.7036,
+        "longitude": 12.5718,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_3710.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -29229,18 +29238,18 @@
     "gender": "mand",
     "firstClubName_original": "Esbjerg fB",
     "firstClubName": "esbjerg fb",
-    "klubnavn": "Esbjerg fB",
-    "klubnavn_original": "Esbjerg fB",
+    "klubnavn": "Skærbæk Boldklub",
+    "klubnavn_original": "Skærbæk Boldklub",
     "geo_afstand_km": "2",
     "match_type": "exact",
-    "klub_id": "785",
+    "klub_id": "909",
     "adresse": "Gl. Vardevej 88",
     "by": "Esbjerg",
-    "latitude": "55.486786",
-    "longitude": "8.435974",
+    "latitude": "55.158647",
+    "longitude": "8.75984",
     "valideret": null,
     "confidence": "høj",
-    "klub_logo": "logos/klub_785.png",
+    "klub_logo": "https://file.dbu.dk/images/club/878/Sk%C3%A6rb%C3%A6k_B.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/785/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/785/klubinfo",
     "region": "Region Syddanmark",
@@ -29281,7 +29290,7 @@
         "klubnavn": "Esbjerg fB",
         "latitude": 55.4868,
         "longitude": 8.436,
-        "is_earliest": true,
+        "is_earliest": false,
         "klub_logo": "logos/klub_785.png",
         "team_qid": "Q389879"
       },
@@ -29302,6 +29311,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/960px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png",
         "team_qid": "Q15789"
+      },
+      {
+        "klub_id": "909",
+        "klubnavn": "Skærbæk Boldklub",
+        "latitude": 55.1586,
+        "longitude": 8.7598,
+        "is_earliest": true,
+        "klub_logo": "https://file.dbu.dk/images/club/878/Sk%C3%A6rb%C3%A6k_B.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -32007,6 +32025,15 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_1552.png",
         "team_qid": "Q780735"
+      },
+      {
+        "klub_id": "3710",
+        "klubnavn": "FC København",
+        "latitude": 55.7036,
+        "longitude": 12.5718,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_3710.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -40011,6 +40038,15 @@
         "is_earliest": false,
         "klub_logo": "logos/klub_685.png",
         "team_qid": null
+      },
+      {
+        "klub_id": "3710",
+        "klubnavn": "FC København",
+        "latitude": 55.7036,
+        "longitude": 12.5718,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_3710.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -41681,6 +41717,15 @@
         "is_earliest": true,
         "klub_logo": "logos/klub_1543.png",
         "team_qid": "Q246902"
+      },
+      {
+        "klub_id": "3710",
+        "klubnavn": "FC København",
+        "latitude": 55.7036,
+        "longitude": 12.5718,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_3710.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -61330,29 +61375,27 @@
     "playerLabel": "Mia Bak Pedersen",
     "wikipediaURL_da": null,
     "wikipediaURL_en": "https://en.wikipedia.org/wiki/Mia_Bak_Pedersen",
-    "birthPlaceLabel": "Aarhus",
-    "lat": "56.1944301342951",
-    "lon": "10.206791",
+    "birthPlaceLabel": "Øster Jølby",
+    "lat": "56.8364163877529",
+    "lon": "8.71602462550071",
     "dbuID": "4992",
     "birthday_dbu": "08-10-1980",
     "n_matches": "3",
     "n_goals": "0",
-    "image": null,
     "gender": "kvinde",
     "firstClubName_original": "IK Skovbakken",
     "firstClubName": "skovbakken ik ob",
-    "klubnavn": "Skovbakken IK OB",
-    "klubnavn_original": "IK Skovbakken",
+    "klubnavn": "Nordvestmors BK",
+    "klubnavn_original": "Nordvestmors BK",
     "geo_afstand_km": "0",
     "match_type": "exact",
-    "klub_id": "3246",
+    "klub_id": "302",
     "adresse": "Vejlby Centervej 51",
     "by": "Risskov",
-    "latitude": "56.1944301342951",
-    "longitude": "10.206791",
+    "latitude": "56.837317",
+    "longitude": "8.721583",
     "valideret": null,
     "confidence": "høj",
-    "klub_logo": "logos/klub_3246.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
     "region": "Region Midtjylland",
@@ -61375,7 +61418,7 @@
         "klubnavn": "Skovbakken IK OB",
         "latitude": 56.1944,
         "longitude": 10.2068,
-        "is_earliest": true,
+        "is_earliest": false,
         "klub_logo": "logos/klub_3246.png",
         "team_qid": "Q3788496"
       },
@@ -61414,6 +61457,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Asker_SK_logo.svg/120px-Asker_SK_logo.svg.png",
         "team_qid": "Q731372"
+      },
+      {
+        "klub_id": "302",
+        "klubnavn": "Nordvestmors BK",
+        "latitude": 56.8373,
+        "longitude": 8.7216,
+        "is_earliest": true,
+        "klub_logo": null,
+        "team_qid": null
       }
     ],
     "years_played": [
