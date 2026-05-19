@@ -5701,6 +5701,15 @@
         "is_earliest": true,
         "klub_logo": "logos/klub_99004.gif",
         "team_qid": "Q2787938"
+      },
+      {
+        "klub_id": "1532",
+        "klubnavn": "Boldklubben af 1893",
+        "latitude": 55.7134,
+        "longitude": 12.5825,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_1532.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -7331,6 +7340,15 @@
         "longitude": 12.57,
         "is_earliest": true,
         "klub_logo": "logos/klub_99999.jpg",
+        "team_qid": null
+      },
+      {
+        "klub_id": "1532",
+        "klubnavn": "Boldklubben af 1893",
+        "latitude": 55.7134,
+        "longitude": 12.5825,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_1532.png",
         "team_qid": null
       }
     ],
@@ -12396,6 +12414,15 @@
         "is_earliest": true,
         "klub_logo": "logos/klub_1562.png",
         "team_qid": null
+      },
+      {
+        "klub_id": "1532",
+        "klubnavn": "Boldklubben af 1893",
+        "latitude": 55.7134,
+        "longitude": 12.5825,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_1532.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -14862,18 +14889,18 @@
     "gender": "mand",
     "firstClubName_original": "BK Frem",
     "firstClubName": "boldklubben frem",
-    "klubnavn": "Boldklubben Frem",
-    "klubnavn_original": "BK Frem",
+    "klubnavn": "Boldklubben af 1893",
+    "klubnavn_original": "Boldklubben af 1893",
     "geo_afstand_km": "5.6",
     "match_type": "exact",
-    "klub_id": "1552",
+    "klub_id": "1532",
     "adresse": "Julius Andersens Vej 7",
     "by": "København SV",
-    "latitude": "55.648925",
-    "longitude": "12.512152",
+    "latitude": "55.713431",
+    "longitude": "12.582473",
     "valideret": null,
     "confidence": "høj",
-    "klub_logo": "logos/klub_1552.png",
+    "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1552/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1552/klubinfo",
     "region": "Region Hovedstaden",
@@ -14887,9 +14914,18 @@
         "klubnavn": "Boldklubben Frem",
         "latitude": 55.6489,
         "longitude": 12.5122,
-        "is_earliest": true,
+        "is_earliest": false,
         "klub_logo": "logos/klub_1552.png",
         "team_qid": "Q780735"
+      },
+      {
+        "klub_id": "1532",
+        "klubnavn": "Boldklubben af 1893",
+        "latitude": 55.7134,
+        "longitude": 12.5825,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_1532.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -18985,6 +19021,15 @@
         "longitude": 12.5478,
         "is_earliest": true,
         "klub_logo": "logos/klub_1533.jpg",
+        "team_qid": null
+      },
+      {
+        "klub_id": "1532",
+        "klubnavn": "Boldklubben af 1893",
+        "latitude": 55.7134,
+        "longitude": 12.5825,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_1532.png",
         "team_qid": null
       }
     ],
@@ -28488,18 +28533,18 @@
     "gender": "mand",
     "firstClubName_original": "[[Boldklubben 1903",
     "firstClubName": "boldklubben 1903",
-    "klubnavn": "Boldklubben 1903",
-    "klubnavn_original": "[[Boldklubben 1903",
+    "klubnavn": "Gentofte-Vangede Idrætsforening",
+    "klubnavn_original": "Gentofte-Vangede Idrætsforening",
     "geo_afstand_km": "2.2",
     "match_type": "exact",
-    "klub_id": "1533",
+    "klub_id": "1556",
     "adresse": "Lyngbyvej 270",
     "by": "Hellerup",
-    "latitude": "55.73099",
-    "longitude": "12.54777",
+    "latitude": "55.744747",
+    "longitude": "12.517557",
     "valideret": null,
     "confidence": "krydsvalideret",
-    "klub_logo": "logos/klub_1533.jpg",
+    "klub_logo": "logos/klub_1556.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1533/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1533/klubinfo",
     "region": "Region Hovedstaden",
@@ -28513,7 +28558,7 @@
         "klubnavn": "Boldklubben 1903",
         "latitude": 55.731,
         "longitude": 12.5478,
-        "is_earliest": true,
+        "is_earliest": false,
         "klub_logo": "logos/klub_1533.jpg",
         "team_qid": "Q797322"
       },
@@ -28543,6 +28588,15 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SV-Werder-Bremen-Logo.svg/250px-SV-Werder-Bremen-Logo.svg.png",
         "team_qid": "Q51976"
+      },
+      {
+        "klub_id": "1556",
+        "klubnavn": "Gentofte-Vangede Idrætsforening",
+        "latitude": 55.7447,
+        "longitude": 12.5176,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_1556.png",
+        "team_qid": null
       }
     ],
     "years_played": [
