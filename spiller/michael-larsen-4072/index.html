@@ -147,11 +147,11 @@
 
       function draw() {
         const dpr = window.devicePixelRatio || 1;
-        const W = canvas.parentElement.clientWidth;
+        const cs = window.getComputedStyle(canvas.parentElement);
+        const W = canvas.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
         const H = Math.round(W * 0.38);
         canvas.width  = W * dpr;
         canvas.height = H * dpr;
-        canvas.style.width  = W + 'px';
         canvas.style.height = H + 'px';
         ctx.scale(dpr, dpr);
 
