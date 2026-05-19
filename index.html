@@ -96,20 +96,25 @@
 
       <div class="sidebar-header">
         <h1>Landsholdskortet</h1>
-        <div style="display:flex;align-items:center;gap:10px">
-          <a href="/toplister/" style="font-size:13px;font-weight:600;color:#fff;background:var(--red);padding:4px 10px;border-radius:5px;white-space:nowrap;text-decoration:none">Toplister →</a>
-          <button id="sidebar-close" class="sidebar-close" aria-label="Luk filtre">&times;</button>
-        </div>
+        <button id="sidebar-close" class="sidebar-close" aria-label="Luk filtre">&times;</button>
       </div>
-      <button id="om-btn" class="btn-link" style="margin: -8px 0 12px 0; font-size:12px; display:block; text-align:left;">Læs mere om Landsholdskortet</button>
 
-      <div class="stats-box">
-        <span class="stats-number" id="player-count">0</span>
-        <span class="stats-label">spillere vist</span>
-      </div>
-      <div class="stats-box" id="pin-count-box">
-        <span class="stats-number" id="pin-count">0</span>
-        <span class="stats-label" id="count-label">klubber vist</span>
+      <nav class="sidebar-nav">
+        <span class="sidebar-nav-item active" id="nav-kort">Kort</span>
+        <a href="/toplister/" class="sidebar-nav-item">Rekordlister</a>
+        <a href="/toplister/karrierekurve/" class="sidebar-nav-item">Landsholdskurven</a>
+        <button id="om-btn" class="sidebar-nav-item">Om siden</button>
+      </nav>
+
+      <div class="stats-row">
+        <div class="stats-box">
+          <span class="stats-number" id="player-count">0</span>
+          <span class="stats-label">spillere vist</span>
+        </div>
+        <div class="stats-box" id="pin-count-box">
+          <span class="stats-number" id="pin-count">0</span>
+          <span class="stats-label" id="count-label">klubber vist</span>
+        </div>
       </div>
 
       <!-- Søgning – ØVERST som første filter -->
@@ -125,22 +130,19 @@
       </div>
 
       <!-- Vis-type -->
-      <div class="control-group">
-        <label class="control-label">Vis</label>
-        <div class="radio-group">
-          <label class="radio-option">
+      <div class="control-group compact-group">
+        <label class="control-label-small">Vis</label>
+        <div class="pill-group">
+          <label class="pill-option">
             <input type="radio" name="map_type" value="all_clubs" checked>
-            <span class="radio-custom"></span>
             Alle klubber
           </label>
-          <label class="radio-option">
+          <label class="pill-option">
             <input type="radio" name="map_type" value="club">
-            <span class="radio-custom"></span>
             <span class="info-tooltip" data-tooltip="Spillerens første identificerede klub">Barndomsklubber</span>
           </label>
-          <label class="radio-option">
+          <label class="pill-option">
             <input type="radio" name="map_type" value="birth">
-            <span class="radio-custom"></span>
             Fødested
           </label>
         </div>
@@ -198,22 +200,19 @@
       </div>
 
       <!-- Køn -->
-      <div class="control-group">
-        <label class="control-label">Køn</label>
-        <div class="radio-group">
-          <label class="radio-option">
+      <div class="control-group compact-group">
+        <label class="control-label-small">Køn</label>
+        <div class="pill-group">
+          <label class="pill-option">
             <input type="radio" name="gender" value="alle" checked>
-            <span class="radio-custom"></span>
             Alle
           </label>
-          <label class="radio-option">
+          <label class="pill-option">
             <input type="radio" name="gender" value="mand">
-            <span class="radio-custom"></span>
             Mænd
           </label>
-          <label class="radio-option">
+          <label class="pill-option">
             <input type="radio" name="gender" value="kvinde">
-            <span class="radio-custom"></span>
             Kvinder
           </label>
         </div>

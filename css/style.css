@@ -64,7 +64,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .sidebar-header h1 {
@@ -72,6 +72,40 @@ html, body {
   font-weight: 700;
   color: var(--red);
   line-height: 1.2;
+}
+
+/* ===== Sidebar nav tabs ===== */
+.sidebar-nav {
+  display: flex;
+  gap: 0;
+  margin-bottom: 14px;
+  border-bottom: 2px solid var(--gray-200);
+  flex-wrap: wrap;
+}
+
+.sidebar-nav-item {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray-500);
+  padding: 6px 10px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.sidebar-nav-item:hover {
+  color: var(--gray-800);
+}
+
+.sidebar-nav-item.active {
+  color: var(--red);
+  border-bottom-color: var(--red);
 }
 
 .sidebar-close {
@@ -150,29 +184,40 @@ html, body {
 }
 
 /* ===== Stats Box ===== */
+.stats-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.stats-row .stats-box {
+  flex: 1;
+  margin-bottom: 0;
+}
+
 .stats-box {
   background: var(--red-light);
-  padding: 8px 12px;
+  padding: 6px 10px;
   border-radius: var(--radius);
   border-left: 3px solid var(--red);
   display: flex;
   align-items: baseline;
-  gap: 6px;
+  gap: 5px;
   margin-bottom: 6px;
 }
 
 .stats-number {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--red);
   line-height: 1;
 }
 
 .stats-label {
-  font-size: 11px;
+  font-size: 10px;
   color: var(--gray-500);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   font-weight: 500;
 }
 
@@ -181,12 +226,66 @@ html, body {
   margin-bottom: 16px;
 }
 
+.compact-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
 .control-label {
   font-weight: 600;
   font-size: 13px;
   color: var(--gray-700);
   margin-bottom: 8px;
   display: block;
+}
+
+.control-label-small {
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--gray-500);
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Pill-style radio buttons (Vis / Køn) */
+.pill-group {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.pill-option {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--gray-300);
+  background: #fff;
+  color: var(--gray-700);
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  user-select: none;
+}
+
+.pill-option input[type="radio"] {
+  display: none;
+}
+
+.pill-option:has(input:checked) {
+  background: var(--red);
+  color: #fff;
+  border-color: var(--red);
+}
+
+.pill-option:hover:not(:has(input:checked)) {
+  border-color: var(--red);
+  color: var(--red);
 }
 
 /* Radio buttons */
