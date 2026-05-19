@@ -114,46 +114,42 @@
 
   <div class="card">
     <h2>Karrierekurve</h2>
-    <canvas id="kk-canvas" style="width:100%;border-radius:6px;cursor:default"></canvas>
-    <div style="display:flex;gap:12px;margin-top:8px;flex-wrap:wrap;align-items:center">
-      <span style="display:inline-flex;align-items:center;gap:5px;font-size:11px;color:#555"><span style="display:inline-block;width:18px;height:3px;background:#C8102E;border-radius:2px"></span>Kampe</span> <span style="display:inline-flex;align-items:center;gap:5px;font-size:11px;color:#555"><span style="display:inline-block;width:18px;height:3px;background:#1565C0;border-radius:2px"></span>Mål</span>
-      <span style="margin-left:auto;font-size:11px;color:#bbb">alder →</span>
-      <a href="/landsholdskurven/" style="font-size:11px;color:#C8102E">Sammenlign spillere ↗</a>
+    <div style="display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap">
+      <button class="kk-btn active" onclick="kkMode('kampe',this)">Kampe</button>
+      <button class="kk-btn" onclick="kkMode('maal',this)">Mål</button>
+      
     </div>
+    <canvas id="kk-canvas" style="width:100%;border-radius:6px;cursor:default"></canvas>
+    <p style="font-size:12px;color:#999;margin-top:8px;text-align:center">
+      Alder → akkumuleret antal <span id="kk-label">kampe</span>
+      · <a href="/landsholdskurven/" style="color:#C8102E">Se alle spillere</a>
+    </p>
     <script>
     (function(){
       const KURVE    = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2];
       const KURVE_M  = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1];
       const KURVE_SL = [0];
-      const HAS_MAAL = true;
-      const HAS_SL   = false;
-
+      const RED = '#C8102E';
+      let mode = 'kampe';
       const canvas = document.getElementById('kk-canvas');
       const ctx = canvas.getContext('2d');
 
-      function drawLine(kurve, color, dashed, maxY, xOf, yOf) {
-        if (!kurve.length) return;
-        ctx.beginPath();
-        ctx.strokeStyle = color;
-        ctx.lineWidth = 2;
-        if (dashed) ctx.setLineDash([4, 4]); else ctx.setLineDash([]);
-        kurve.forEach((v, i) => {
-          const x = xOf(i), y = yOf(v, maxY);
-          i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
-        });
-        ctx.stroke();
-        ctx.setLineDash([]);
-        // Slutpunkt
-        const lx = xOf(kurve.length - 1), ly = yOf(kurve[kurve.length-1], maxY);
-        ctx.beginPath(); ctx.fillStyle = color;
-        ctx.arc(lx, ly, 3.5, 0, Math.PI*2); ctx.fill();
+      function getKurve() {
+        if (mode === 'maal')       return KURVE_M;
+        if (mode === 'slutrunder') return KURVE_SL;
+        return KURVE;
+      }
+      function yLabel() {
+        if (mode === 'maal')       return 'mål';
+        if (mode === 'slutrunder') return 'slutrunder';
+        return 'kampe';
       }
 
       function draw() {
         const dpr = window.devicePixelRatio || 1;
-        const cs  = window.getComputedStyle(canvas.parentElement);
-        const W   = canvas.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
-        const H   = Math.round(W * 0.4);
+        const cs = window.getComputedStyle(canvas.parentElement);
+        const W = canvas.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+        const H = Math.round(W * 0.38);
         canvas.width  = W * dpr;
         canvas.height = H * dpr;
         canvas.style.height = H + 'px';
@@ -162,15 +158,14 @@
         const PAD = {top:16, right:16, bottom:32, left:38};
         const cW = W - PAD.left - PAD.right;
         const cH = H - PAD.top  - PAD.bottom;
+        const kurve = getKurve();
+        if (!kurve.length) return;
 
-        const maxY = Math.max(...KURVE, 1);
+        const maxY = Math.max(...kurve, 1);
+        const startAge = 15;
 
-        function xOf(i, len) {
-          const l = len !== undefined ? len : KURVE.length;
-          return PAD.left + i / (l - 1 || 1) * cW;
-        }
-        function yOf(v, my) { return PAD.top + cH - (v / (my||1)) * cH; }
-        function xOfK(i, k) { return PAD.left + i / (k.length - 1 || 1) * cW; }
+        function xOf(i) { return PAD.left + i / (kurve.length - 1 || 1) * cW; }
+        function yOf(v)  { return PAD.top  + cH - (v / maxY) * cH; }
 
         ctx.clearRect(0, 0, W, H);
         ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, W, H);
@@ -179,24 +174,42 @@
         const step = Math.ceil(maxY / 5);
         ctx.strokeStyle = '#f0f0f0'; ctx.lineWidth = 1;
         for (let v = 0; v <= maxY; v += step) {
-          const y = yOf(v, maxY);
+          const y = yOf(v);
           ctx.beginPath(); ctx.moveTo(PAD.left, y); ctx.lineTo(PAD.left + cW, y); ctx.stroke();
           ctx.fillStyle = '#bbb'; ctx.font = '10px Inter,sans-serif'; ctx.textAlign = 'right';
           ctx.fillText(v, PAD.left - 4, y + 3);
         }
 
-        // X-labels
+        // X-labels (alder)
         ctx.fillStyle = '#bbb'; ctx.textAlign = 'center'; ctx.font = '10px Inter,sans-serif';
-        for (let i = 0; i < KURVE.length; i++) {
-          const age = 15 + i;
-          if (age % 5 === 0) ctx.fillText(age, xOfK(i, KURVE), H - PAD.bottom + 12);
+        for (let i = 0; i < kurve.length; i++) {
+          const age = startAge + i;
+          if (age % 5 === 0) ctx.fillText(age, xOf(i), H - PAD.bottom + 12);
         }
 
-        // Kurver — alle på samme Y-akse (max = KURVE max)
-        drawLine(KURVE,    '#C8102E', false, maxY, i => xOfK(i, KURVE),    (v,m) => yOf(v,m));
-        if (HAS_MAAL) drawLine(KURVE_M,  '#1565C0', false, maxY, i => xOfK(i, KURVE_M),  (v,m) => yOf(v,m));
-        if (HAS_SL)   drawLine(KURVE_SL, '#2E7D32', true,  maxY, i => xOfK(i, KURVE_SL), (v,m) => yOf(v,m));
+        // Kurve
+        ctx.beginPath(); ctx.strokeStyle = RED; ctx.lineWidth = 2.5;
+        kurve.forEach((v, i) => {
+          const x = xOf(i), y = yOf(v);
+          i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        });
+        ctx.stroke();
+
+        // Slutpunkt
+        const lastX = xOf(kurve.length - 1);
+        const lastY = yOf(kurve[kurve.length - 1]);
+        ctx.beginPath(); ctx.fillStyle = RED;
+        ctx.arc(lastX, lastY, 4, 0, Math.PI * 2); ctx.fill();
+
+        document.getElementById('kk-label').textContent = yLabel();
       }
+
+      window.kkMode = function(m, btn) {
+        mode = m;
+        document.querySelectorAll('.kk-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        draw();
+      };
 
       window.addEventListener('resize', draw);
       draw();
