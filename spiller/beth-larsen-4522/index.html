@@ -63,6 +63,9 @@
     .links { margin-top: 20px; font-size: 14px; display: flex; flex-wrap: wrap; gap: 12px; }
     .btn-map { display: inline-flex; align-items: center; gap: 6px; margin-top: 20px; padding: 10px 20px; background: #c0392b; color: #fff !important; border-radius: 8px; font-weight: 600; font-size: 14px; }
     .btn-map:hover { background: #a93226; text-decoration: none; }
+    .kk-btn { padding: 5px 12px; border-radius: 20px; border: 1px solid #ddd; background: #fff; font-size: 12px; font-weight: 500; cursor: pointer; font-family: inherit; color: #555; transition: all .15s; }
+    .kk-btn.active { background: #C8102E; color: #fff; border-color: #C8102E; }
+    .kk-btn:hover:not(.active) { border-color: #C8102E; color: #C8102E; }
   </style>
 </head>
 <body>
@@ -107,6 +110,11 @@
       
       <a href="https://www.dbu.dk/landshold/landsholdsdatabasen/PlayerInfo/4522" rel="noopener" target="_blank">DBU-profil</a>
     </div>
+  </div>
+
+  
+
+  <div class="card">
     <a href="/?q=Beth Larsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet

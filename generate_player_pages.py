@@ -6,7 +6,7 @@ Genererer statiske HTML-filer for alle spillere med:
 - Karrieretabel: kampe og mål per år
 """
 
-import json, os, re, unicodedata
+import json, os, re, unicodedata, itertools
 from collections import defaultdict
 
 # ── Indlæs data ───────────────────────────────────────────────
@@ -350,6 +350,103 @@ def career_stats(dbu_id, player_name):
         rows.append({"år": år, "starter": s, "indskiftet": i, "mål": g, "total": s + i})
     return rows
 
+def career_kurve(dbu_id, player_name):
+    """Beregner de tre akkumulerede kurver (kampe, mål, slutrunder) fordelt på alder."""
+    maaned_map_k = {"jan":1,"feb":2,"mar":3,"apr":4,"maj":5,"jun":6,
+                    "jul":7,"aug":8,"sep":9,"okt":10,"nov":11,"dec":12}
+
+    def parse_dato_k(s):
+        m = re.search(r'(\d+)[.\s]+(\w+)[.\s]+(\d{4})', str(s or ""))
+        if not m: return None
+        mnd = maaned_map_k.get(m.group(2)[:3].lower(), 0)
+        return (int(m.group(3)), mnd, int(m.group(1))) if mnd else None
+
+    def parse_bday_k(s):
+        m = re.match(r'(\d{2})-(\d{2})-(\d{4})', str(s or ""))
+        return (int(m.group(3)), int(m.group(2)), int(m.group(1))) if m else None
+
+    def alder_k(bday, dato):
+        age = dato[0] - bday[0]
+        if (dato[1], dato[2]) < (bday[1], bday[2]): age -= 1
+        return age
+
+    def name_matches_k(player_label, scorer_str):
+        def norm_k(s):
+            s = (s or "").lower().replace("æ","ae").replace("ø","oe").replace("å","aa")
+            s = unicodedata.normalize("NFD", s)
+            return "".join(c for c in s if unicodedata.category(c) != "Mn")
+        scorer_clean = " ".join(re.sub(r'["""][^""""]+["""]', "", scorer_str).split())
+        pn = norm_k(player_label).split()
+        sn = norm_k(scorer_clean)
+        if len(pn) == 1: return pn[0] in sn
+        for i in range(len(pn)):
+            for j in range(i+2, len(pn)+1):
+                if " ".join(pn[i:j]) in sn: return True
+        if len(pn) >= 3 and pn[0] + " " + pn[-1] in sn: return True
+        return False
+
+    from collections import defaultdict
+
+    pid = str(dbu_id)
+    roller = player_roles.get(pid, {})
+    alle_mids = roller.get("starter",[]) + roller.get("indskiftet",[])
+
+    p_data = next((p for p in players if str(p.get("dbuID","")) == pid), None)
+    if not p_data: return None
+    bday = parse_bday_k(p_data.get("birthday_dbu"))
+    if not bday or not alle_mids: return None
+
+    kampe_pr_alder = defaultdict(int)
+    maal_pr_alder  = defaultdict(int)
+    slutrunder_set = set()
+    slutrunde_pr_alder = defaultdict(set)
+
+    EM_VM = {"EM-slutrunde", "VM-slutrunde"}
+
+    for mid in alle_mids:
+        kamp = kamp_by_id.get(mid)
+        if not kamp: continue
+        dato = parse_dato_k(kamp.get("dato"))
+        if not dato: continue
+        age = alder_k(bday, dato)
+        if not (15 <= age <= 45): continue
+
+        kampe_pr_alder[age] += 1
+
+        for sc in (kamp.get("scoringer") or []):
+            if name_matches_k(player_name, sc.get("spiller","")):
+                maal_pr_alder[age] += 1
+                break
+
+        kt = kamp.get("kamptype","")
+        if any(t in kt for t in EM_VM):
+            yr = dato[0]
+            sl_key = f"{yr}_{kt}"
+            if sl_key not in slutrunder_set:
+                slutrunder_set.add(sl_key)
+                slutrunde_pr_alder[age].add(sl_key)
+
+    if not kampe_pr_alder: return None
+
+    ages = range(15, 46)
+    kurve    = list(itertools.accumulate([kampe_pr_alder.get(a,0) for a in ages]))
+    kurve_m  = list(itertools.accumulate([maal_pr_alder.get(a,0) for a in ages]))
+    kurve_sl = list(itertools.accumulate([len(slutrunde_pr_alder.get(a,set())) for a in ages]))
+
+    # Trim til sidste aktive alder
+    def trim(k):
+        last = 0
+        for i in range(1,len(k)):
+            if k[i] > k[i-1]: last = i
+        return k[:last+1]
+
+    return {
+        "kurve":    trim(kurve),
+        "kurve_m":  trim(kurve_m),
+        "kurve_sl": trim(kurve_sl),
+    }
+
+
 # ── HTML-generator ────────────────────────────────────────────
 def render_page(p):
     navn       = p.get("playerLabel") or ""
@@ -372,6 +469,122 @@ def render_page(p):
 
     # Karrieretabel
     stats = career_stats(dbu_id, navn)
+    kurve_data = career_kurve(dbu_id, navn)
+
+    kurve_html_parts = []
+    if kurve_data:
+        k_json  = json.dumps(kurve_data["kurve"])
+        km_json = json.dumps(kurve_data["kurve_m"])
+        ksl_json = json.dumps(kurve_data["kurve_sl"])
+        has_maal  = kurve_data["kurve_m"][-1] > 0 if kurve_data["kurve_m"] else False
+        has_sl    = kurve_data["kurve_sl"][-1] > 0 if kurve_data["kurve_sl"] else False
+        karrierekurve_html = f"""<div class="card">
+    <h2>Karrierekurve</h2>
+    <div style="display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap">
+      <button class="kk-btn active" onclick="kkMode(\'kampe\',this)">Kampe</button>
+      {"<button class=\"kk-btn\" onclick=\"kkMode(\'maal\',this)\">Mål</button>" if has_maal else ""}
+      {"<button class=\"kk-btn\" onclick=\"kkMode(\'slutrunder\',this)\">EM/VM-slutrunder</button>" if has_sl else ""}
+    </div>
+    <canvas id="kk-canvas" style="width:100%;border-radius:6px;cursor:default"></canvas>
+    <p style="font-size:12px;color:#999;margin-top:8px;text-align:center">
+      Alder → akkumuleret antal <span id="kk-label">kampe</span>
+      · <a href="/landsholdskurven/" style="color:#C8102E">Se alle spillere</a>
+    </p>
+    <script>
+    (function(){{
+      const KURVE    = {k_json};
+      const KURVE_M  = {km_json};
+      const KURVE_SL = {ksl_json};
+      const RED = '#C8102E';
+      let mode = 'kampe';
+      const canvas = document.getElementById('kk-canvas');
+      const ctx = canvas.getContext('2d');
+
+      function getKurve() {{
+        if (mode === 'maal')       return KURVE_M;
+        if (mode === 'slutrunder') return KURVE_SL;
+        return KURVE;
+      }}
+      function yLabel() {{
+        if (mode === 'maal')       return 'mål';
+        if (mode === 'slutrunder') return 'slutrunder';
+        return 'kampe';
+      }}
+
+      function draw() {{
+        const dpr = window.devicePixelRatio || 1;
+        const W = canvas.parentElement.clientWidth;
+        const H = Math.round(W * 0.38);
+        canvas.width  = W * dpr;
+        canvas.height = H * dpr;
+        canvas.style.width  = W + 'px';
+        canvas.style.height = H + 'px';
+        ctx.scale(dpr, dpr);
+
+        const PAD = {{top:16, right:16, bottom:32, left:38}};
+        const cW = W - PAD.left - PAD.right;
+        const cH = H - PAD.top  - PAD.bottom;
+        const kurve = getKurve();
+        if (!kurve.length) return;
+
+        const maxY = Math.max(...kurve, 1);
+        const startAge = 15;
+
+        function xOf(i) {{ return PAD.left + i / (kurve.length - 1 || 1) * cW; }}
+        function yOf(v)  {{ return PAD.top  + cH - (v / maxY) * cH; }}
+
+        ctx.clearRect(0, 0, W, H);
+        ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, W, H);
+
+        // Grid
+        const step = Math.ceil(maxY / 5);
+        ctx.strokeStyle = '#f0f0f0'; ctx.lineWidth = 1;
+        for (let v = 0; v <= maxY; v += step) {{
+          const y = yOf(v);
+          ctx.beginPath(); ctx.moveTo(PAD.left, y); ctx.lineTo(PAD.left + cW, y); ctx.stroke();
+          ctx.fillStyle = '#bbb'; ctx.font = '10px Inter,sans-serif'; ctx.textAlign = 'right';
+          ctx.fillText(v, PAD.left - 4, y + 3);
+        }}
+
+        // X-labels (alder)
+        ctx.fillStyle = '#bbb'; ctx.textAlign = 'center'; ctx.font = '10px Inter,sans-serif';
+        for (let i = 0; i < kurve.length; i++) {{
+          const age = startAge + i;
+          if (age % 5 === 0) ctx.fillText(age, xOf(i), H - PAD.bottom + 12);
+        }}
+
+        // Kurve
+        ctx.beginPath(); ctx.strokeStyle = RED; ctx.lineWidth = 2.5;
+        kurve.forEach((v, i) => {{
+          const x = xOf(i), y = yOf(v);
+          i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        }});
+        ctx.stroke();
+
+        // Slutpunkt
+        const lastX = xOf(kurve.length - 1);
+        const lastY = yOf(kurve[kurve.length - 1]);
+        ctx.beginPath(); ctx.fillStyle = RED;
+        ctx.arc(lastX, lastY, 4, 0, Math.PI * 2); ctx.fill();
+
+        document.getElementById('kk-label').textContent = yLabel();
+      }}
+
+      window.kkMode = function(m, btn) {{
+        mode = m;
+        document.querySelectorAll('.kk-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        draw();
+      }};
+
+      window.addEventListener('resize', draw);
+      draw();
+    }})();
+    </script>
+  </div>"""
+    else:
+        karrierekurve_html = ""
+
 
     title       = f"{navn} – Landsholdskortet"
     description = (
@@ -516,6 +729,9 @@ def render_page(p):
     .links {{ margin-top: 20px; font-size: 14px; display: flex; flex-wrap: wrap; gap: 12px; }}
     .btn-map {{ display: inline-flex; align-items: center; gap: 6px; margin-top: 20px; padding: 10px 20px; background: #c0392b; color: #fff !important; border-radius: 8px; font-weight: 600; font-size: 14px; }}
     .btn-map:hover {{ background: #a93226; text-decoration: none; }}
+    .kk-btn {{ padding: 5px 12px; border-radius: 20px; border: 1px solid #ddd; background: #fff; font-size: 12px; font-weight: 500; cursor: pointer; font-family: inherit; color: #555; transition: all .15s; }}
+    .kk-btn.active {{ background: #C8102E; color: #fff; border-color: #C8102E; }}
+    .kk-btn:hover:not(.active) {{ border-color: #C8102E; color: #C8102E; }}
   </style>
 </head>
 <body>
@@ -558,6 +774,11 @@ def render_page(p):
       {wiki_links}
       {"· " if wiki_links else ""}<a href="{dbu_url}" rel="noopener" target="_blank">DBU-profil</a>
     </div>
+  </div>
+
+  {karrierekurve_html}
+
+  <div class="card">
     <a href="/?q={navn}" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
