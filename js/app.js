@@ -900,13 +900,7 @@ function findNearestKommune(lat, lon) {
     }
     if (bestFeature) return bestFeature.properties.navn;
   }
-  // 2) Fallback: nærmeste centrum
-  let best = null, bestDist = Infinity;
-  for (const [name, k] of Object.entries(KOMMUNE_DATA)) {
-    const d = (lat - k.lat) ** 2 + (lon - k.lon) ** 2;
-    if (d < bestDist) { bestDist = d; best = name; }
-  }
-  return best;
+  return null;
 }
 
 function groupPlayers(players, mapType, birthLevel, clubLevel) {
