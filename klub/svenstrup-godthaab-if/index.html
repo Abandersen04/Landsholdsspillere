@@ -69,7 +69,7 @@
   <div class="header">
     <img src="/logos/klub_132.png" alt="Svenstrup-Godthåb IF logo" style="height:64px;width:auto;object-fit:contain;margin-bottom:12px">
     <h1>Svenstrup-Godthåb IF</h1>
-    <div style="margin-bottom:8px"><a href="http://www.b52.dk/" target="_blank" rel="noopener" style="color:#C8102E;font-size:14px">Klubbens hjemmeside</a> · <a href="https://www.dbu.dk/resultater/klub/3/klubinfo" target="_blank" rel="noopener" style="color:#C8102E;font-size:14px">DBU-profil</a></div>
+    <div style="margin-bottom:8px"><a href="https://www.dbu.dk/resultater/klub/132/klubinfo" target="_blank" rel="noopener" style="color:#C8102E;font-size:14px">DBU-profil</a></div>
     <div class="stats-row">
       <div class="stat"><div class="stat-n">3</div><div class="stat-l">Landsholdsspillere</div></div>
       <div class="stat"><div class="stat-n">97</div><div class="stat-l">Kampe i alt</div></div>
@@ -85,8 +85,8 @@
   const map = L.map("klub-map",{zoomControl:true});
   L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{attribution:"© OpenStreetMap © CARTO",maxZoom:18}).addTo(map);
   const icon = L.divIcon({html:'<div style="width:36px;height:36px;border-radius:50%;border:2px solid #C8102E;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center"><img src="/logos/klub_132.png" style="width:100%;height:100%;object-fit:contain" onerror="this.parentElement.style.background=\'#C8102E\'"></div>',className:'',iconSize:[36,36],iconAnchor:[18,18]});
-  L.marker([56.971602,9.829743],{icon}).addTo(map).bindPopup("<strong>Svenstrup-Godthåb IF</strong>").openPopup();
-  map.setView([56.971602,9.829743],13);
+  L.marker([56.9716,9.8297],{icon}).addTo(map).bindPopup("<strong>Svenstrup-Godthåb IF</strong>").openPopup();
+  map.setView([56.9716,9.8297],13);
 })();
 </script>
 

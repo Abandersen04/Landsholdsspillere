@@ -27,20 +27,21 @@ klub_players = defaultdict(list)
 klub_info    = {}
 
 for p in players:
-    k = (p.get("klubnavn") or "").strip()
-    if not k:
-        continue
-    klub_players[k].append(p)
-    if k not in klub_info:
-        klub_info[k] = {
-            "adresse":  p.get("adresse") or "",
-            "by":       p.get("by") or "",
-            "lat":      p.get("latitude"),
-            "lon":      p.get("longitude"),
-            "logo":     p.get("klub_logo") or "",
-            "website":  p.get("klub_website") or "",
-            "dbu_url":  p.get("klub_dbu_url") or "",
-        }
+    seen_clubs = set()
+    for club in (p.get("allClubs") or []):
+        k = (club.get("klubnavn") or "").strip()
+        if not k or k in seen_clubs:
+            continue
+        seen_clubs.add(k)
+        klub_players[k].append(p)
+        if k not in klub_info:
+            klub_info[k] = {
+                "lat":     club.get("latitude"),
+                "lon":     club.get("longitude"),
+                "logo":    club.get("klub_logo") or "",
+                "website": "",
+                "dbu_url": f"https://www.dbu.dk/resultater/klub/{club['klub_id']}/klubinfo" if club.get("klub_id") else "",
+            }
 
 def format_date(s):
     maaneder = ["januar","februar","marts","april","maj","juni",

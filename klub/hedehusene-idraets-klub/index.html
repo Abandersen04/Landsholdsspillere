@@ -69,7 +69,7 @@
   <div class="header">
     
     <h1>Hedehusene Idræts Klub</h1>
-    <div style="margin-bottom:8px"><a href="https://www.dbu.dk/resultater/klub/1133/klubinfo" target="_blank" rel="noopener" style="color:#C8102E;font-size:14px">DBU-profil</a></div>
+    
     <div class="stats-row">
       <div class="stat"><div class="stat-n">1</div><div class="stat-l">Landsholdsspillere</div></div>
       <div class="stat"><div class="stat-n">3</div><div class="stat-l">Kampe i alt</div></div>
@@ -85,8 +85,8 @@
   const map = L.map("klub-map",{zoomControl:true});
   L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{attribution:"© OpenStreetMap © CARTO",maxZoom:18}).addTo(map);
   const icon = L.divIcon({html:'<div style="width:20px;height:20px;border-radius:50%;background:#C8102E;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,.3)"></div>',className:'',iconSize:[20,20],iconAnchor:[10,10]});
-  L.marker([55.6450609213684,12.192835976174],{icon}).addTo(map).bindPopup("<strong>Hedehusene Idræts Klub</strong>").openPopup();
-  map.setView([55.6450609213684,12.192835976174],13);
+  L.marker([55.6451,12.1928],{icon}).addTo(map).bindPopup("<strong>Hedehusene Idræts Klub</strong>").openPopup();
+  map.setView([55.6451,12.1928],13);
 })();
 </script>
 

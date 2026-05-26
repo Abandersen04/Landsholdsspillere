@@ -69,7 +69,7 @@
   <div class="header">
     <img src="https://file.dbu.dk/images/club/1587/Valby_Boldklub_af_1912.png" alt="Valby Boldklub logo" style="height:64px;width:auto;object-fit:contain;margin-bottom:12px">
     <h1>Valby Boldklub</h1>
-    
+    <div style="margin-bottom:8px"><a href="https://www.dbu.dk/resultater/klub/1587/klubinfo" target="_blank" rel="noopener" style="color:#C8102E;font-size:14px">DBU-profil</a></div>
     <div class="stats-row">
       <div class="stat"><div class="stat-n">1</div><div class="stat-l">Landsholdsspillere</div></div>
       <div class="stat"><div class="stat-n">3</div><div class="stat-l">Kampe i alt</div></div>
@@ -85,8 +85,8 @@
   const map = L.map("klub-map",{zoomControl:true});
   L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{attribution:"© OpenStreetMap © CARTO",maxZoom:18}).addTo(map);
   const icon = L.divIcon({html:'<div style="width:36px;height:36px;border-radius:50%;border:2px solid #C8102E;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center"><img src="https://file.dbu.dk/images/club/1587/Valby_Boldklub_af_1912.png" style="width:100%;height:100%;object-fit:contain" onerror="this.parentElement.style.background=\'#C8102E\'"></div>',className:'',iconSize:[36,36],iconAnchor:[18,18]});
-  L.marker([55.646739,12.508162],{icon}).addTo(map).bindPopup("<strong>Valby Boldklub</strong>").openPopup();
-  map.setView([55.646739,12.508162],13);
+  L.marker([55.6467,12.5082],{icon}).addTo(map).bindPopup("<strong>Valby Boldklub</strong>").openPopup();
+  map.setView([55.6467,12.5082],13);
 })();
 </script>
 

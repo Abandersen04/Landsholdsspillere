@@ -69,7 +69,7 @@
   <div class="header">
     
     <h1>Fladså Fodbold</h1>
-    
+    <div style="margin-bottom:8px"><a href="https://www.dbu.dk/resultater/klub/13151679/klubinfo" target="_blank" rel="noopener" style="color:#C8102E;font-size:14px">DBU-profil</a></div>
     <div class="stats-row">
       <div class="stat"><div class="stat-n">1</div><div class="stat-l">Landsholdsspillere</div></div>
       <div class="stat"><div class="stat-n">12</div><div class="stat-l">Kampe i alt</div></div>
@@ -85,8 +85,8 @@
   const map = L.map("klub-map",{zoomControl:true});
   L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{attribution:"© OpenStreetMap © CARTO",maxZoom:18}).addTo(map);
   const icon = L.divIcon({html:'<div style="width:20px;height:20px;border-radius:50%;background:#C8102E;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,.3)"></div>',className:'',iconSize:[20,20],iconAnchor:[10,10]});
-  L.marker([55.17857760078,11.8707908107216],{icon}).addTo(map).bindPopup("<strong>Fladså Fodbold</strong>").openPopup();
-  map.setView([55.17857760078,11.8707908107216],13);
+  L.marker([55.1786,11.8708],{icon}).addTo(map).bindPopup("<strong>Fladså Fodbold</strong>").openPopup();
+  map.setView([55.1786,11.8708],13);
 })();
 </script>
 
