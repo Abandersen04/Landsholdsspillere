@@ -402,6 +402,9 @@ async function loadData() {
   regionerGeo = await regionerResp.json();
   if (klubResp && klubResp.ok) {
     klubSlugs = new Set(await klubResp.json());
+    console.log('[klubSlugs] loaded', klubSlugs.size, 'slugs, FC København:', klubSlugs.has('fc-koebenhavn'));
+  } else {
+    console.warn('[klubSlugs] failed to load');
   }
 
   allPlayers = data.map(p => ({
