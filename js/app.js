@@ -1251,7 +1251,9 @@ function buildPopupHtml(group, mapType) {
       ? `<img class="club-logo" src="${escapeHtml(logoUrl)}" onerror="this.style.display='none'" alt="">`
       : '';
 
-    const nameHtml = `<a href="/klub/${slugify(locName)}/">${escapeHtml(locName)}</a>`;
+    const nameHtml = group.klub_dbu_url
+      ? `<a href="/klub/${slugify(locName)}/">${escapeHtml(locName)}</a>`
+      : escapeHtml(locName);
 
     headerHtml = `
       <div class="popup-header">
