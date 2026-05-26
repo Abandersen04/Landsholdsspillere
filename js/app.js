@@ -7,6 +7,7 @@ let legendControl = null;  // Leaflet legend control
 let kommunerGeo = null;    // Raw GeoJSON for kommuner
 let regionerGeo = null;    // Raw GeoJSON for regioner
 let debounceTimer;
+let klubSlugs = new Set(); // Genererede klubsider
 
 // ===== Init =====
 document.addEventListener('DOMContentLoaded', async () => {
@@ -390,14 +391,16 @@ function debouncedUpdate() {
 
 // ===== Load Data =====
 async function loadData() {
-  const [playersResp, kommunerResp, regionerResp] = await Promise.all([
+  const [playersResp, kommunerResp, regionerResp, klubResp] = await Promise.all([
     fetch('data/players.json'),
     fetch('data/kommuner.geojson'),
-    fetch('data/regioner.geojson')
+    fetch('data/regioner.geojson'),
+    fetch('data/klub_slugs.json')
   ]);
   const data = await playersResp.json();
   kommunerGeo = await kommunerResp.json();
   regionerGeo = await regionerResp.json();
+  klubSlugs = new Set(await klubResp.json());
 
   allPlayers = data.map(p => ({
     ...p,
@@ -1251,8 +1254,9 @@ function buildPopupHtml(group, mapType) {
       ? `<img class="club-logo" src="${escapeHtml(logoUrl)}" onerror="this.style.display='none'" alt="">`
       : '';
 
-    const nameHtml = group.klub_dbu_url
-      ? `<a href="/klub/${slugify(locName)}/">${escapeHtml(locName)}</a>`
+    const klubSlug = slugify(locName);
+    const nameHtml = klubSlugs.has(klubSlug)
+      ? `<a href="/klub/${klubSlug}/">${escapeHtml(locName)}</a>`
       : escapeHtml(locName);
 
     headerHtml = `

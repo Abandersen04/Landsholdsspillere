@@ -69,7 +69,6 @@
   <div class="header">
     <img src="/logos/klub_1364.png" alt="B 1909 logo" style="height:64px;width:auto;object-fit:contain;margin-bottom:12px">
     <h1>B 1909</h1>
-    <div style="color:#666;font-size:14px;margin-bottom:8px">Gillestedvej 12, Odense Nø</div>
     <div style="margin-bottom:8px"><a href="https://www.dbu.dk/resultater/klub/1364/klubinfo" target="_blank" rel="noopener" style="color:#C8102E;font-size:14px">DBU-profil</a></div>
     <div class="stats-row">
       <div class="stat"><div class="stat-n">21</div><div class="stat-l">Landsholdsspillere</div></div>
@@ -77,6 +76,19 @@
       <div class="stat"><div class="stat-n">29</div><div class="stat-l">Mål i alt</div></div>
     </div>
   </div>
+
+  <div id="klub-map" style="height:260px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.1)"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<script>
+(function(){
+  const map = L.map("klub-map",{zoomControl:true});
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{attribution:"© OpenStreetMap © CARTO",maxZoom:18}).addTo(map);
+  const icon = L.divIcon({html:'<div style="width:36px;height:36px;border-radius:50%;border:2px solid #C8102E;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center"><img src="/logos/klub_1364.png" style="width:100%;height:100%;object-fit:contain" onerror="this.parentElement.style.background=\'#C8102E\'"></div>',className:'',iconSize:[36,36],iconAnchor:[18,18]});
+  L.marker([55.41089,10.428079],{icon}).addTo(map).bindPopup("<strong>B 1909</strong>").openPopup();
+  map.setView([55.41089,10.428079],13);
+})();
+</script>
 
   <div class="card">
     <div class="filter-row">
@@ -155,8 +167,8 @@ function renderTable() {
   visible.sort((a, b) => {
     const av = a.cells[sortCol]?.textContent.trim() || '';
     const bv = b.cells[sortCol]?.textContent.trim() || '';
-    const an = parseFloat(av.replace(/\D/g,'')) || 0;
-    const bn = parseFloat(bv.replace(/\D/g,'')) || 0;
+    const an = parseFloat(av.replace(/[^0-9]/g,'')) || 0;
+    const bn = parseFloat(bv.replace(/[^0-9]/g,'')) || 0;
     if (sortCol === 2 || sortCol === 3) return sortAsc ? an - bn : bn - an;
     return sortAsc ? av.localeCompare(bv, 'da') : bv.localeCompare(av, 'da');
   });

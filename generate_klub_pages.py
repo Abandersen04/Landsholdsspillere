@@ -66,17 +66,48 @@ def render_klub(klubnavn):
     else:
         logo_html = ""
 
-    # Adresse
-    adresse_parts = [x for x in [info["adresse"], info["by"]] if x]
-    adresse_html  = f'<div style="color:#666;font-size:14px;margin-bottom:8px">{", ".join(adresse_parts)}</div>' if adresse_parts else ""
-
-    # Links
+    # Links (ingen adresse)
     links = []
     if info["website"] and info["website"] != info["dbu_url"]:
         links.append(f'<a href="{info["website"]}" target="_blank" rel="noopener" style="color:#C8102E;font-size:14px">Klubbens hjemmeside</a>')
     if info["dbu_url"]:
         links.append(f'<a href="{info["dbu_url"]}" target="_blank" rel="noopener" style="color:#C8102E;font-size:14px">DBU-profil</a>')
     links_html = " · ".join(links)
+
+    # Kort
+    lat, lon = info.get("lat"), info.get("lon")
+    try:
+        lat_f, lon_f = float(lat), float(lon)
+        logo_src = ("/" + logo) if logo.startswith("logos/") else logo
+        if logo:
+            icon_js = (
+                f"L.divIcon({{html:'<div style=\"width:36px;height:36px;border-radius:50%;border:2px solid #C8102E;"
+                f"overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center\">"
+                f"<img src=\"{logo_src}\" style=\"width:100%;height:100%;object-fit:contain\" "
+                f"onerror=\"this.parentElement.style.background=\\'#C8102E\\'\"></div>',"
+                f"className:'',iconSize:[36,36],iconAnchor:[18,18]}})"
+            )
+        else:
+            icon_js = (
+                "L.divIcon({html:'<div style=\"width:20px;height:20px;border-radius:50%;"
+                "background:#C8102E;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,.3)\"></div>',"
+                "className:'',iconSize:[20,20],iconAnchor:[10,10]})"
+            )
+        map_html = (
+            f'<div id="klub-map" style="height:260px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.1)"></div>\n'
+            f'<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>\n'
+            f'<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">\n'
+            f'<script>\n(function(){{\n'
+            f'  const map = L.map("klub-map",{{zoomControl:true}});\n'
+            f'  L.tileLayer("https://{{s}}.basemaps.cartocdn.com/light_all/{{z}}/{{x}}/{{y}}{{r}}.png",'
+            f'{{attribution:"© OpenStreetMap © CARTO",maxZoom:18}}).addTo(map);\n'
+            f'  const icon = {icon_js};\n'
+            f'  L.marker([{lat_f},{lon_f}],{{icon}}).addTo(map).bindPopup("<strong>{klubnavn}</strong>").openPopup();\n'
+            f'  map.setView([{lat_f},{lon_f}],13);\n'
+            f'}})();\n</script>'
+        )
+    except Exception:
+        map_html = ""
 
     # Spillertabel rækker
     rows = ""
@@ -177,7 +208,6 @@ def render_klub(klubnavn):
   <div class="header">
     {logo_html}
     <h1>{klubnavn}</h1>
-    {adresse_html}
     {f'<div style="margin-bottom:8px">{links_html}</div>' if links_html else ""}
     <div class="stats-row">
       <div class="stat"><div class="stat-n">{n}</div><div class="stat-l">Landsholdsspillere</div></div>
@@ -185,6 +215,8 @@ def render_klub(klubnavn):
       <div class="stat"><div class="stat-n">{total_g}</div><div class="stat-l">Mål i alt</div></div>
     </div>
   </div>
+
+  {map_html}
 
   <div class="card">
     <div class="filter-row">
@@ -272,6 +304,11 @@ for klubnavn in klub_players:
 
 print(f"Genereret {generated} klubsider i /klub/")
 
-# Returnér slugs til sitemap-brug
+# Gem slugs til sitemap og JS-opslag
 with open("_klub_slugs.json", "w") as f:
     json.dump(slugs, f)
+
+# Gem som JS-tilgængeligt datasæt
+with open("data/klub_slugs.json", "w") as f:
+    json.dump(slugs, f)
+print(f"data/klub_slugs.json opdateret ({len(slugs)} slugs)")

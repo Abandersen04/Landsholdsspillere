@@ -69,7 +69,6 @@
   <div class="header">
     
     <h1>Ulkebøl Idræts- og Ungdomsforening</h1>
-    <div style="color:#666;font-size:14px;margin-bottom:8px">Sønderborg</div>
     <div style="margin-bottom:8px"><a href="https://www.dbu.dk/resultater/klub/99010/klubinfo" target="_blank" rel="noopener" style="color:#C8102E;font-size:14px">DBU-profil</a></div>
     <div class="stats-row">
       <div class="stat"><div class="stat-n">1</div><div class="stat-l">Landsholdsspillere</div></div>
@@ -77,6 +76,19 @@
       <div class="stat"><div class="stat-n">0</div><div class="stat-l">Mål i alt</div></div>
     </div>
   </div>
+
+  <div id="klub-map" style="height:260px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.1)"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<script>
+(function(){
+  const map = L.map("klub-map",{zoomControl:true});
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{attribution:"© OpenStreetMap © CARTO",maxZoom:18}).addTo(map);
+  const icon = L.divIcon({html:'<div style="width:20px;height:20px;border-radius:50%;background:#C8102E;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,.3)"></div>',className:'',iconSize:[20,20],iconAnchor:[10,10]});
+  L.marker([54.931717,9.813822],{icon}).addTo(map).bindPopup("<strong>Ulkebøl Idræts- og Ungdomsforening</strong>").openPopup();
+  map.setView([54.931717,9.813822],13);
+})();
+</script>
 
   <div class="card">
     <div class="filter-row">
@@ -135,8 +147,8 @@ function renderTable() {
   visible.sort((a, b) => {
     const av = a.cells[sortCol]?.textContent.trim() || '';
     const bv = b.cells[sortCol]?.textContent.trim() || '';
-    const an = parseFloat(av.replace(/\D/g,'')) || 0;
-    const bn = parseFloat(bv.replace(/\D/g,'')) || 0;
+    const an = parseFloat(av.replace(/[^0-9]/g,'')) || 0;
+    const bn = parseFloat(bv.replace(/[^0-9]/g,'')) || 0;
     if (sortCol === 2 || sortCol === 3) return sortAsc ? an - bn : bn - an;
     return sortAsc ? av.localeCompare(bv, 'da') : bv.localeCompare(av, 'da');
   });
