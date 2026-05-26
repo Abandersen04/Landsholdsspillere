@@ -6,6 +6,8 @@ let geoLayer = null;       // Choropleth GeoJSON layer
 let legendControl = null;  // Leaflet legend control
 let kommunerGeo = null;    // Raw GeoJSON for kommuner
 let regionerGeo = null;    // Raw GeoJSON for regioner
+let kommunerPromise = null;
+let regionerPromise = null;
 let debounceTimer;
 let klubSlugs = new Set(); // Genererede klubsider
 
@@ -390,16 +392,24 @@ function debouncedUpdate() {
 }
 
 // ===== Load Data =====
+async function ensureKommuner() {
+  if (kommunerGeo) return;
+  if (!kommunerPromise) kommunerPromise = fetch('data/kommuner.geojson').then(r => r.json()).then(d => { kommunerGeo = d; });
+  await kommunerPromise;
+}
+
+async function ensureRegioner() {
+  if (regionerGeo) return;
+  if (!regionerPromise) regionerPromise = fetch('data/regioner.geojson').then(r => r.json()).then(d => { regionerGeo = d; });
+  await regionerPromise;
+}
+
 async function loadData() {
-  const [playersResp, kommunerResp, regionerResp, klubResp] = await Promise.all([
+  const [playersResp, klubResp] = await Promise.all([
     fetch('data/players.json'),
-    fetch('data/kommuner.geojson'),
-    fetch('data/regioner.geojson'),
     fetch('data/klub_slugs.json').catch(() => null)
   ]);
   const data = await playersResp.json();
-  kommunerGeo = await kommunerResp.json();
-  regionerGeo = await regionerResp.json();
   if (klubResp && klubResp.ok) {
     klubSlugs = new Set(await klubResp.json());
     console.log('[klubSlugs] loaded', klubSlugs.size, 'slugs, FC København:', klubSlugs.has('fc-koebenhavn'));
@@ -554,7 +564,7 @@ function getFilteredPlayers() {
 }
 
 // ===== Update Map =====
-function updateMap() {
+async function updateMap() {
   const mapType = document.querySelector('input[name="map_type"]:checked').value;
   const players = getFilteredPlayers();
 
@@ -569,6 +579,14 @@ function updateMap() {
   const perCapita = ((mapType === 'birth' && (birthLevel === 'kommune' || birthLevel === 'region')) ||
     (mapType === 'club' && (clubLevel === 'kommune' || clubLevel === 'region')))
     && document.getElementById('per-capita-check').checked;
+
+  // Lazy-load geo data if needed before grouping
+  if ((mapType === 'birth' && birthLevel === 'kommune') || (mapType === 'club' && clubLevel === 'kommune')) {
+    await ensureKommuner();
+  }
+  if ((mapType === 'birth' && birthLevel === 'region') || (mapType === 'club' && clubLevel === 'region')) {
+    await ensureRegioner();
+  }
 
   if (mapType === 'all_clubs') {
     const searchTerm = document.getElementById('search').value.trim().toLowerCase();
