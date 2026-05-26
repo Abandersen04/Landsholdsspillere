@@ -395,12 +395,14 @@ async function loadData() {
     fetch('data/players.json'),
     fetch('data/kommuner.geojson'),
     fetch('data/regioner.geojson'),
-    fetch('data/klub_slugs.json')
+    fetch('data/klub_slugs.json').catch(() => null)
   ]);
   const data = await playersResp.json();
   kommunerGeo = await kommunerResp.json();
   regionerGeo = await regionerResp.json();
-  klubSlugs = new Set(await klubResp.json());
+  if (klubResp && klubResp.ok) {
+    klubSlugs = new Set(await klubResp.json());
+  }
 
   allPlayers = data.map(p => ({
     ...p,
