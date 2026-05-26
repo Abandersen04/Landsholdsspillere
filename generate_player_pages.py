@@ -822,7 +822,7 @@ def render_page(p):
     {img_html}
     <div class="hero-info">
       <h1>{navn}</h1>
-      <div class="hero-meta">{gender}{(" · " + region) if region else ""}{(" · Født: " + fødested) if fødested else ""}{(" · " + bday) if bday else ""}</div>
+      <div class="hero-meta">{gender}{(" · " + region) if region else ""}{(f' · Født: <a href="/by/{slugify(fødested)}/" style="color:#c0392b">{fødested}</a>') if fødested else ""}{(" · " + bday) if bday else ""}{(f' · Barndomsklub: <a href="/klub/{slugify(klub)}/" style="color:#c0392b">{klub}</a>') if klub else ""}</div>
       <div class="stats">
         {debut_html}
         <div class="stat"><div class="stat-n">{kampe_n}</div><div class="stat-l">Kampe</div></div>

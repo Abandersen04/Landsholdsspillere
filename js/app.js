@@ -1251,9 +1251,7 @@ function buildPopupHtml(group, mapType) {
       ? `<img class="club-logo" src="${escapeHtml(logoUrl)}" onerror="this.style.display='none'" alt="">`
       : '';
 
-    const nameHtml = group.klub_dbu_url
-      ? `<a href="${escapeHtml(group.klub_dbu_url)}" target="_blank" rel="noopener">${escapeHtml(locName)}</a>`
-      : escapeHtml(locName);
+    const nameHtml = `<a href="/klub/${slugify(locName)}/">${escapeHtml(locName)}</a>`;
 
     headerHtml = `
       <div class="popup-header">
@@ -1264,7 +1262,7 @@ function buildPopupHtml(group, mapType) {
   } else {
     headerHtml = `
       <div class="popup-header">
-        <div class="location-name">${escapeHtml(locName)}</div>
+        <div class="location-name"><a href="/by/${slugify(locName)}/">${escapeHtml(locName)}</a></div>
         <div class="player-total">${players.length} spillere</div>
       </div>`;
   }
