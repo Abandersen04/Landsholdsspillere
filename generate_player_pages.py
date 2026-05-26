@@ -49,14 +49,19 @@ def build_rankings(players):
 build_rankings(players)
 player_by_id = {str(p.get("dbuID") or ""): p for p in players}
 
-# ── Byg klub-index: normaliseret klubnavn → liste af spillere ─────
+# ── Byg klub-index og fødested-index ─────────────────────────────
 from collections import defaultdict as _dd
 _klub_index = _dd(list)
+_birth_index = _dd(list)
 for _p in players:
     _k = (_p.get("klubnavn") or "").strip()
     if _k:
         _klub_index[_k].append(_p)
-KLUB_INDEX = dict(_klub_index)
+    _b = (_p.get("birthPlaceLabel") or "").strip()
+    if _b:
+        _birth_index[_b].append(_p)
+KLUB_INDEX  = dict(_klub_index)
+BIRTH_INDEX = dict(_birth_index)
 
 # ── Hjælpefunktioner ─────────────────────────────────────────
 def slugify(text):
@@ -684,26 +689,39 @@ def render_page(p):
     debut_html  = f'<div class="stat"><div class="stat-n">{debut_år}</div><div class="stat-l">Debut</div></div>' if debut_år else ""
     bio_tekst   = generer_tekst(p)
 
-    # Interne links: andre spillere fra samme barndomsklub (maks 6)
-    klubfæller = [
-        q for q in KLUB_INDEX.get(klub, [])
-        if str(q.get("dbuID") or "") != dbu_id and q.get("playerLabel")
-    ]
-    klubfæller.sort(key=lambda q: -int(q.get("n_matches") or 0))
-    klubfæller = klubfæller[:6]
-    if klubfæller:
-        links_html = "".join(
-            f'<a href="/spiller/{slugify(q["playerLabel"])}-{q["dbuID"]}/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">'
+    def _interne_links_sektion(kandidater, nuværende_id, titel, kort_link, kort_label):
+        andre = [q for q in kandidater if str(q.get("dbuID") or "") != nuværende_id and q.get("playerLabel")]
+        andre.sort(key=lambda q: -int(q.get("n_matches") or 0))
+        andre = andre[:6]
+        if not andre:
+            return ""
+        links = "".join(
+            f'<a href="/spiller/{slugify(q["playerLabel"])}-{q["dbuID"]}/" '
+            f'style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">'
             f'{q["playerLabel"]}</a>'
-            for q in klubfæller
+            for q in andre
         )
-        interne_links_html = f'''<div class="card" style="margin-top:20px">
-    <h2>Andre fra {klub}</h2>
-    <div style="display:flex;flex-wrap:wrap;gap:8px">{links_html}</div>
-    <a href="/?q={klub}" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
-  </div>'''
-    else:
-        interne_links_html = ""
+        return (
+            f'<div class="card" style="margin-top:20px">'
+            f'<h2>{titel}</h2>'
+            f'<div style="display:flex;flex-wrap:wrap;gap:8px">{links}</div>'
+            f'<a href="{kort_link}" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">{kort_label} →</a>'
+            f'</div>'
+        )
+
+    interne_links_html = ""
+    if fødested:
+        interne_links_html += _interne_links_sektion(
+            BIRTH_INDEX.get(fødested, []), dbu_id,
+            f"Andre født i {fødested}",
+            f"/?q={fødested}", "Se på kortet"
+        )
+    if klub:
+        interne_links_html += _interne_links_sektion(
+            KLUB_INDEX.get(klub, []), dbu_id,
+            f"Andre fra {klub}",
+            f"/?q={klub}", "Se alle på kortet"
+        )
 
     return f"""<!DOCTYPE html>
 <html lang="da">
