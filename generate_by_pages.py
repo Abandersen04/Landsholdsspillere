@@ -177,12 +177,12 @@ def render_by(bynavn):
     <table>
       <thead>
         <tr>
-          <th onclick="sortTable(0)">Spiller ↕</th>
-          <th style="text-align:center" onclick="sortTable(1)">Køn ↕</th>
-          <th style="text-align:center" onclick="sortTable(2)">Kampe ↕</th>
-          <th style="text-align:center" onclick="sortTable(3)">Mål ↕</th>
-          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato ↕</th>
-          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub ↕</th>
+          <th onclick="sortTable(0)">Spiller</th>
+          <th style="text-align:center" onclick="sortTable(1)">Køn</th>
+          <th style="text-align:center" onclick="sortTable(2)">Kampe</th>
+          <th style="text-align:center" onclick="sortTable(3)">Mål</th>
+          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato</th>
+          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub</th>
         </tr>
       </thead>
       <tbody id="tbody">

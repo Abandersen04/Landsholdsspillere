@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Landsholdsspillere fra Tårnby – 2 spillere | Landsholdskortet</title>
-  <meta name="description" content="2 danske A-landsholdsspillere er født i Tårnby. Tilsammen har de spillet 90 kampe og scoret 4 mål for Danmark.">
+  <title>Landsholdsspillere fra Tårnby – 3 spillere | Landsholdskortet</title>
+  <meta name="description" content="3 danske A-landsholdsspillere er født i Tårnby. Tilsammen har de spillet 114 kampe og scoret 5 mål for Danmark.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://landsholdskortet.dk/by/taarnby/">
   <meta property="og:title" content="Landsholdsspillere fra Tårnby">
-  <meta property="og:description" content="2 danske A-landsholdsspillere er født i Tårnby. Tilsammen har de spillet 90 kampe og scoret 4 mål for Danmark.">
+  <meta property="og:description" content="3 danske A-landsholdsspillere er født i Tårnby. Tilsammen har de spillet 114 kampe og scoret 5 mål for Danmark.">
   <meta property="og:url" content="https://landsholdskortet.dk/by/taarnby/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
@@ -61,9 +61,9 @@
   <div class="header">
     <h1>Landsholdsspillere fra Tårnby</h1>
     <div class="stats-row">
-      <div class="stat"><div class="stat-n">2</div><div class="stat-l">Spillere</div></div>
-      <div class="stat"><div class="stat-n">90</div><div class="stat-l">Kampe i alt</div></div>
-      <div class="stat"><div class="stat-n">4</div><div class="stat-l">Mål i alt</div></div>
+      <div class="stat"><div class="stat-n">3</div><div class="stat-l">Spillere</div></div>
+      <div class="stat"><div class="stat-n">114</div><div class="stat-l">Kampe i alt</div></div>
+      <div class="stat"><div class="stat-n">5</div><div class="stat-l">Mål i alt</div></div>
     </div>
   </div>
 
@@ -77,7 +77,7 @@
     {attribution:'© OpenStreetMap © CARTO', maxZoom:18}).addTo(map);
   const marker = L.circleMarker([55.6278, 12.6025],
     {radius:10, color:'#C8102E', fillColor:'#C8102E', fillOpacity:0.85, weight:2}).addTo(map);
-  marker.bindPopup('<strong>Tårnby</strong><br>2 landsholdsspillere').openPopup();
+  marker.bindPopup('<strong>Tårnby</strong><br>3 landsholdsspillere').openPopup();
   map.setView([55.6278, 12.6025], 10);
 })();
 </script>
@@ -91,16 +91,17 @@
     <table>
       <thead>
         <tr>
-          <th onclick="sortTable(0)">Spiller ↕</th>
-          <th style="text-align:center" onclick="sortTable(1)">Køn ↕</th>
-          <th style="text-align:center" onclick="sortTable(2)">Kampe ↕</th>
-          <th style="text-align:center" onclick="sortTable(3)">Mål ↕</th>
-          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato ↕</th>
-          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub ↕</th>
+          <th onclick="sortTable(0)">Spiller</th>
+          <th style="text-align:center" onclick="sortTable(1)">Køn</th>
+          <th style="text-align:center" onclick="sortTable(2)">Kampe</th>
+          <th style="text-align:center" onclick="sortTable(3)">Mål</th>
+          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato</th>
+          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub</th>
         </tr>
       </thead>
       <tbody id="tbody">
 <tr data-gender="mand"><td><a href="/spiller/jan-heintze-984/" style="color:#C8102E;font-weight:500">Jan Heintze</a></td><td style="text-align:center">M</td><td style="text-align:center">86</td><td style="text-align:center">4</td><td class="hide-mobile">17. august 1963</td><td class="hide-mobile"><a href="/klub/ab-taarnby/" style="color:#C8102E">AB Tårnby</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/niki-zimling-4691/" style="color:#C8102E;font-weight:500">Niki Zimling</a></td><td style="text-align:center">M</td><td style="text-align:center">24</td><td style="text-align:center">1</td><td class="hide-mobile">19. april 1985</td><td class="hide-mobile"><a href="/klub/ab-taarnby/" style="color:#C8102E">AB Tårnby</a></td></tr>
 <tr data-gender="mand"><td><a href="/spiller/kurt-groenning-3131/" style="color:#C8102E;font-weight:500">Kurt Grønning</a></td><td style="text-align:center">M</td><td style="text-align:center">4</td><td style="text-align:center">–</td><td class="hide-mobile">5. august 1936</td><td class="hide-mobile"><a href="/klub/b1913/" style="color:#C8102E">B1913</a></td></tr>
       </tbody>
     </table>
@@ -140,8 +141,8 @@ function renderTable() {
   visible.sort((a, b) => {
     const av = a.cells[sortCol]?.textContent.trim() || '';
     const bv = b.cells[sortCol]?.textContent.trim() || '';
-    const an = parseFloat(av.replace(/\D/g,'')) || 0;
-    const bn = parseFloat(bv.replace(/\D/g,'')) || 0;
+    const an = parseFloat(av.replace(/[^0-9]/g,'')) || 0;
+    const bn = parseFloat(bv.replace(/[^0-9]/g,'')) || 0;
     if (sortCol === 2 || sortCol === 3) return sortAsc ? an - bn : bn - an;
     return sortAsc ? av.localeCompare(bv, 'da') : bv.localeCompare(av, 'da');
   });

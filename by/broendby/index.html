@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Landsholdsspillere fra Brøndby – 4 spillere | Landsholdskortet</title>
-  <meta name="description" content="4 danske A-landsholdsspillere er født i Brøndby. Tilsammen har de spillet 92 kampe og scoret 9 mål for Danmark.">
+  <title>Landsholdsspillere fra Brøndby – 5 spillere | Landsholdskortet</title>
+  <meta name="description" content="5 danske A-landsholdsspillere er født i Brøndby. Tilsammen har de spillet 94 kampe og scoret 9 mål for Danmark.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://landsholdskortet.dk/by/broendby/">
   <meta property="og:title" content="Landsholdsspillere fra Brøndby">
-  <meta property="og:description" content="4 danske A-landsholdsspillere er født i Brøndby. Tilsammen har de spillet 92 kampe og scoret 9 mål for Danmark.">
+  <meta property="og:description" content="5 danske A-landsholdsspillere er født i Brøndby. Tilsammen har de spillet 94 kampe og scoret 9 mål for Danmark.">
   <meta property="og:url" content="https://landsholdskortet.dk/by/broendby/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
@@ -61,8 +61,8 @@
   <div class="header">
     <h1>Landsholdsspillere fra Brøndby</h1>
     <div class="stats-row">
-      <div class="stat"><div class="stat-n">4</div><div class="stat-l">Spillere</div></div>
-      <div class="stat"><div class="stat-n">92</div><div class="stat-l">Kampe i alt</div></div>
+      <div class="stat"><div class="stat-n">5</div><div class="stat-l">Spillere</div></div>
+      <div class="stat"><div class="stat-n">94</div><div class="stat-l">Kampe i alt</div></div>
       <div class="stat"><div class="stat-n">9</div><div class="stat-l">Mål i alt</div></div>
     </div>
   </div>
@@ -77,7 +77,7 @@
     {attribution:'© OpenStreetMap © CARTO', maxZoom:18}).addTo(map);
   const marker = L.circleMarker([55.649056, 12.417581],
     {radius:10, color:'#C8102E', fillColor:'#C8102E', fillOpacity:0.85, weight:2}).addTo(map);
-  marker.bindPopup('<strong>Brøndby</strong><br>4 landsholdsspillere').openPopup();
+  marker.bindPopup('<strong>Brøndby</strong><br>5 landsholdsspillere').openPopup();
   map.setView([55.649056, 12.417581], 10);
 })();
 </script>
@@ -91,12 +91,12 @@
     <table>
       <thead>
         <tr>
-          <th onclick="sortTable(0)">Spiller ↕</th>
-          <th style="text-align:center" onclick="sortTable(1)">Køn ↕</th>
-          <th style="text-align:center" onclick="sortTable(2)">Kampe ↕</th>
-          <th style="text-align:center" onclick="sortTable(3)">Mål ↕</th>
-          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato ↕</th>
-          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub ↕</th>
+          <th onclick="sortTable(0)">Spiller</th>
+          <th style="text-align:center" onclick="sortTable(1)">Køn</th>
+          <th style="text-align:center" onclick="sortTable(2)">Kampe</th>
+          <th style="text-align:center" onclick="sortTable(3)">Mål</th>
+          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato</th>
+          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub</th>
         </tr>
       </thead>
       <tbody id="tbody">
@@ -104,6 +104,7 @@
 <tr data-gender="kvinde"><td><a href="/spiller/stine-dimun-4388/" style="color:#C8102E;font-weight:500">Stine Dimun</a></td><td style="text-align:center">K</td><td style="text-align:center">30</td><td style="text-align:center">3</td><td class="hide-mobile">15. oktober 1979</td><td class="hide-mobile"><a href="/klub/broendby-if/" style="color:#C8102E">Brøndby IF</a></td></tr>
 <tr data-gender="kvinde"><td><a href="/spiller/hanne-noerregaard-4413/" style="color:#C8102E;font-weight:500">Hanne Nørregaard</a></td><td style="text-align:center">K</td><td style="text-align:center">14</td><td style="text-align:center">5</td><td class="hide-mobile">21. december 1968</td><td class="hide-mobile"><a href="/klub/broendby-if/" style="color:#C8102E">Brøndby IF</a></td></tr>
 <tr data-gender="kvinde"><td><a href="/spiller/cecilie-pedersen-4382/" style="color:#C8102E;font-weight:500">Cecilie Pedersen</a></td><td style="text-align:center">K</td><td style="text-align:center">12</td><td style="text-align:center">–</td><td class="hide-mobile">19. marts 1983</td><td class="hide-mobile"><a href="/klub/broendby-if/" style="color:#C8102E">Brøndby IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/erik-rasmussen-4192/" style="color:#C8102E;font-weight:500">Erik Rasmussen</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">24. december 1960</td><td class="hide-mobile"><a href="/klub/koege-bk/" style="color:#C8102E">Køge BK</a></td></tr>
       </tbody>
     </table>
   </div>
@@ -142,8 +143,8 @@ function renderTable() {
   visible.sort((a, b) => {
     const av = a.cells[sortCol]?.textContent.trim() || '';
     const bv = b.cells[sortCol]?.textContent.trim() || '';
-    const an = parseFloat(av.replace(/\D/g,'')) || 0;
-    const bn = parseFloat(bv.replace(/\D/g,'')) || 0;
+    const an = parseFloat(av.replace(/[^0-9]/g,'')) || 0;
+    const bn = parseFloat(bv.replace(/[^0-9]/g,'')) || 0;
     if (sortCol === 2 || sortCol === 3) return sortAsc ? an - bn : bn - an;
     return sortAsc ? av.localeCompare(bv, 'da') : bv.localeCompare(av, 'da');
   });

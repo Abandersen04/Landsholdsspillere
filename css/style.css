@@ -1256,11 +1256,32 @@ html, body {
 /* On mobile, push controls above bottomsheet peek */
 @media (max-width: 768px) {
   .leaflet-bottom.leaflet-right {
-    bottom: calc(var(--bottomsheet-peek) + 60px);
+    bottom: calc(var(--bottomsheet-peek) + 8px);
+    right: 8px;
+    left: auto;
+    max-width: calc(100vw - 16px);
   }
 
   .leaflet-top.leaflet-right {
     top: 76px; /* below mobile search bar */
+    right: 8px;
+  }
+
+  /* Pin attribution to bottom-right, prevent it from floating */
+  .leaflet-control-attribution {
+    max-width: 200px;
+    font-size: 9px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: none !important;
+    display: block;
+    clear: both;
+  }
+
+  /* Reduce transition weight on low-end devices */
+  .sidebar {
+    transition: transform 0.25s ease-out;
   }
 }
 

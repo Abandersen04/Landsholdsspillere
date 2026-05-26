@@ -91,12 +91,12 @@
     <table>
       <thead>
         <tr>
-          <th onclick="sortTable(0)">Spiller ↕</th>
-          <th style="text-align:center" onclick="sortTable(1)">Køn ↕</th>
-          <th style="text-align:center" onclick="sortTable(2)">Kampe ↕</th>
-          <th style="text-align:center" onclick="sortTable(3)">Mål ↕</th>
-          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato ↕</th>
-          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub ↕</th>
+          <th onclick="sortTable(0)">Spiller</th>
+          <th style="text-align:center" onclick="sortTable(1)">Køn</th>
+          <th style="text-align:center" onclick="sortTable(2)">Kampe</th>
+          <th style="text-align:center" onclick="sortTable(3)">Mål</th>
+          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato</th>
+          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub</th>
         </tr>
       </thead>
       <tbody id="tbody">
@@ -108,7 +108,7 @@
 <tr data-gender="mand"><td><a href="/spiller/peter-ankersen-7004/" style="color:#C8102E;font-weight:500">Peter Ankersen</a></td><td style="text-align:center">M</td><td style="text-align:center">27</td><td style="text-align:center">1</td><td class="hide-mobile">22. september 1990</td><td class="hide-mobile"><a href="/klub/esbjerg-fb/" style="color:#C8102E">Esbjerg fB</a></td></tr>
 <tr data-gender="mand"><td><a href="/spiller/jens-petersen-3124/" style="color:#C8102E;font-weight:500">Jens Petersen</a></td><td style="text-align:center">M</td><td style="text-align:center">21</td><td style="text-align:center">1</td><td class="hide-mobile">22. december 1941</td><td class="hide-mobile"><a href="/klub/esbjerg-fb/" style="color:#C8102E">Esbjerg fB</a></td></tr>
 <tr data-gender="mand"><td><a href="/spiller/john-madsen-3090/" style="color:#C8102E;font-weight:500">John Madsen</a></td><td style="text-align:center">M</td><td style="text-align:center">20</td><td style="text-align:center">–</td><td class="hide-mobile">14. maj 1937</td><td class="hide-mobile"><a href="/klub/esbjerg-fb/" style="color:#C8102E">Esbjerg fB</a></td></tr>
-<tr data-gender="mand"><td><a href="/spiller/ole-kirketerp-madsen-3792/" style="color:#C8102E;font-weight:500">Ole Kirketerp Madsen</a></td><td style="text-align:center">M</td><td style="text-align:center">18</td><td style="text-align:center">–</td><td class="hide-mobile">14. november 1958</td><td class="hide-mobile"><a href="/klub/esbjerg-fb/" style="color:#C8102E">Esbjerg fB</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/ole-kirketerp-madsen-3792/" style="color:#C8102E;font-weight:500">Ole Kirketerp Madsen</a></td><td style="text-align:center">M</td><td style="text-align:center">18</td><td style="text-align:center">–</td><td class="hide-mobile">14. november 1958</td><td class="hide-mobile"><a href="/klub/spangsbjerg-if/" style="color:#C8102E">Spangsbjerg IF</a></td></tr>
 <tr data-gender="mand"><td><a href="/spiller/erik-terkelsen-2867/" style="color:#C8102E;font-weight:500">Erik Terkelsen</a></td><td style="text-align:center">M</td><td style="text-align:center">17</td><td style="text-align:center">–</td><td class="hide-mobile">3. juli 1926</td><td class="hide-mobile"><a href="/klub/esbjerg-fb/" style="color:#C8102E">Esbjerg fB</a></td></tr>
 <tr data-gender="mand"><td><a href="/spiller/viggo-jensen-3436/" style="color:#C8102E;font-weight:500">Viggo Jensen</a></td><td style="text-align:center">M</td><td style="text-align:center">8</td><td style="text-align:center">–</td><td class="hide-mobile">15. september 1947</td><td class="hide-mobile"><a href="/klub/skaerbaek-boldklub/" style="color:#C8102E">Skærbæk Boldklub</a></td></tr>
 <tr data-gender="mand"><td><a href="/spiller/jonas-knudsen-6782/" style="color:#C8102E;font-weight:500">Jonas Knudsen</a></td><td style="text-align:center">M</td><td style="text-align:center">7</td><td style="text-align:center">–</td><td class="hide-mobile">16. september 1992</td><td class="hide-mobile"><a href="/klub/hjerting-if/" style="color:#C8102E">Hjerting IF</a></td></tr>
@@ -160,8 +160,8 @@ function renderTable() {
   visible.sort((a, b) => {
     const av = a.cells[sortCol]?.textContent.trim() || '';
     const bv = b.cells[sortCol]?.textContent.trim() || '';
-    const an = parseFloat(av.replace(/\D/g,'')) || 0;
-    const bn = parseFloat(bv.replace(/\D/g,'')) || 0;
+    const an = parseFloat(av.replace(/[^0-9]/g,'')) || 0;
+    const bn = parseFloat(bv.replace(/[^0-9]/g,'')) || 0;
     if (sortCol === 2 || sortCol === 3) return sortAsc ? an - bn : bn - an;
     return sortAsc ? av.localeCompare(bv, 'da') : bv.localeCompare(av, 'da');
   });

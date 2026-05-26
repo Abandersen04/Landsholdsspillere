@@ -91,12 +91,12 @@
     <table>
       <thead>
         <tr>
-          <th onclick="sortTable(0)">Spiller ↕</th>
-          <th style="text-align:center" onclick="sortTable(1)">Køn ↕</th>
-          <th style="text-align:center" onclick="sortTable(2)">Kampe ↕</th>
-          <th style="text-align:center" onclick="sortTable(3)">Mål ↕</th>
-          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato ↕</th>
-          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub ↕</th>
+          <th onclick="sortTable(0)">Spiller</th>
+          <th style="text-align:center" onclick="sortTable(1)">Køn</th>
+          <th style="text-align:center" onclick="sortTable(2)">Kampe</th>
+          <th style="text-align:center" onclick="sortTable(3)">Mål</th>
+          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato</th>
+          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub</th>
         </tr>
       </thead>
       <tbody id="tbody">
@@ -140,8 +140,8 @@ function renderTable() {
   visible.sort((a, b) => {
     const av = a.cells[sortCol]?.textContent.trim() || '';
     const bv = b.cells[sortCol]?.textContent.trim() || '';
-    const an = parseFloat(av.replace(/\D/g,'')) || 0;
-    const bn = parseFloat(bv.replace(/\D/g,'')) || 0;
+    const an = parseFloat(av.replace(/[^0-9]/g,'')) || 0;
+    const bn = parseFloat(bv.replace(/[^0-9]/g,'')) || 0;
     if (sortCol === 2 || sortCol === 3) return sortAsc ? an - bn : bn - an;
     return sortAsc ? av.localeCompare(bv, 'da') : bv.localeCompare(av, 'da');
   });
