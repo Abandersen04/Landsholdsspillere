@@ -971,6 +971,19 @@ for p in players:
         '    <priority>0.8</priority>\n  </url>'
     )
 
+# Tilføj klub- og bysider hvis de er genereret
+import os as _os
+for slug_file, path_prefix, prio in [("_klub_slugs.json", "/klub/", "0.8"), ("_by_slugs.json", "/by/", "0.8")]:
+    if _os.path.exists(slug_file):
+        import json as _json
+        with open(slug_file) as sf:
+            for slug in _json.load(sf):
+                urls.append(
+                    f'  <url>\n    <loc>https://landsholdskortet.dk{path_prefix}{slug}/</loc>\n'
+                    f'    <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n'
+                    f'    <priority>{prio}</priority>\n  </url>'
+                )
+
 sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
 sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
 sitemap += "\n".join(urls) + "\n</urlset>\n"

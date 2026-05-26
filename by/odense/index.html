@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landsholdsspillere fra Odense – 72 spillere | Landsholdskortet</title>
+  <meta name="description" content="72 danske A-landsholdsspillere er født i Odense. Tilsammen har de spillet 930 kampe og scoret 105 mål for Danmark.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://landsholdskortet.dk/by/odense/">
+  <meta property="og:title" content="Landsholdsspillere fra Odense">
+  <meta property="og:description" content="72 danske A-landsholdsspillere er født i Odense. Tilsammen har de spillet 930 kampe og scoret 105 mål for Danmark.">
+  <meta property="og:url" content="https://landsholdskortet.dk/by/odense/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Landsholdskortet","item":"https://landsholdskortet.dk/"},
+    {"@type":"ListItem","position":2,"name":"Fødesteder","item":"https://landsholdskortet.dk/by/"},
+    {"@type":"ListItem","position":3,"name":"Odense","item":"https://landsholdskortet.dk/by/odense/"}
+  ]}
+  </script>
+  <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/fonts/inter.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Inter", -apple-system, sans-serif; background: #f4f4f4; color: #1a1a1a; }
+    a { color: #C8102E; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .topbar { background: #C8102E; padding: 12px 20px; display: flex; align-items: center; gap: 16px; }
+    .topbar a { color: #fff; font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 6px; }
+    .topbar a:hover { text-decoration: none; opacity: .85; }
+    .page { max-width: 960px; margin: 0 auto; padding: 24px 16px 60px; }
+    .header { background: #fff; border-radius: 10px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,.07); margin-bottom: 20px; }
+    h1 { font-size: 26px; margin-bottom: 6px; }
+    .stats-row { display: flex; gap: 16px; margin: 16px 0; flex-wrap: wrap; }
+    .stat { background: #f8f8f8; border-radius: 8px; padding: 12px 20px; text-align: center; }
+    .stat-n { font-size: 22px; font-weight: 700; color: #C8102E; }
+    .stat-l { font-size: 11px; color: #888; margin-top: 2px; text-transform: uppercase; letter-spacing: .4px; }
+    .card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.07); }
+    .filter-row { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
+    .pill { padding: 6px 14px; border-radius: 20px; border: 1px solid #ddd; background: #fff; font-size: 13px; cursor: pointer; font-family: inherit; color: #555; }
+    .pill.active { background: #C8102E; color: #fff; border-color: #C8102E; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th { text-align: left; color: #999; font-weight: 500; font-size: 12px; padding: 4px 8px 10px; border-bottom: 1px solid #eee; text-transform: uppercase; letter-spacing: .4px; cursor: pointer; user-select: none; }
+    th:hover { color: #333; }
+    td { padding: 9px 8px; border-bottom: 1px solid #f5f5f5; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fafafa; }
+    @media (max-width: 600px) { .hide-mobile { display: none; } }
+  </style>
+</head>
+<body>
+<div class="topbar">
+  <a href="/">
+    <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M13 17l-7-7 7-7" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+    Landsholdskortet
+  </a>
+</div>
+
+<div class="page">
+  <div class="header">
+    <h1>Landsholdsspillere fra Odense</h1>
+    <div class="stats-row">
+      <div class="stat"><div class="stat-n">72</div><div class="stat-l">Spillere</div></div>
+      <div class="stat"><div class="stat-n">930</div><div class="stat-l">Kampe i alt</div></div>
+      <div class="stat"><div class="stat-n">105</div><div class="stat-l">Mål i alt</div></div>
+    </div>
+  </div>
+
+  <div id="by-map" style="height:260px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.1)"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<script>
+(function() {
+  const map = L.map('by-map', {zoomControl:true});
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+    {attribution:'© OpenStreetMap © CARTO', maxZoom:18}).addTo(map);
+  const marker = L.circleMarker([55.4, 10.383333333],
+    {radius:10, color:'#C8102E', fillColor:'#C8102E', fillOpacity:0.85, weight:2}).addTo(map);
+  marker.bindPopup('<strong>Odense</strong><br>72 landsholdsspillere').openPopup();
+  map.setView([55.4, 10.383333333], 10);
+})();
+</script>
+
+  <div class="card">
+    <div class="filter-row">
+      <button class="pill active" onclick="filterGender('alle', this)">Alle</button>
+      <button class="pill" onclick="filterGender('mand', this)">Mænd</button>
+      <button class="pill" onclick="filterGender('kvinde', this)">Kvinder</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">Spiller ↕</th>
+          <th style="text-align:center" onclick="sortTable(1)">Køn ↕</th>
+          <th style="text-align:center" onclick="sortTable(2)">Kampe ↕</th>
+          <th style="text-align:center" onclick="sortTable(3)">Mål ↕</th>
+          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato ↕</th>
+          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub ↕</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+<tr data-gender="mand"><td><a href="/spiller/thomas-helveg-985/" style="color:#C8102E;font-weight:500">Thomas Helveg</a></td><td style="text-align:center">M</td><td style="text-align:center">108</td><td style="text-align:center">2</td><td class="hide-mobile">24. juni 1971</td><td class="hide-mobile"><a href="/klub/s-k-f-i-f/" style="color:#C8102E">S.K.F.I.F.</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/lars-jacobsen-4222/" style="color:#C8102E;font-weight:500">Lars Jacobsen</a></td><td style="text-align:center">M</td><td style="text-align:center">81</td><td style="text-align:center">1</td><td class="hide-mobile">20. september 1979</td><td class="hide-mobile"><a href="/klub/sanderum-bk/" style="color:#C8102E">Sanderum BK</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/lotte-bagge-4435/" style="color:#C8102E;font-weight:500">Lotte Bagge</a></td><td style="text-align:center">K</td><td style="text-align:center">63</td><td style="text-align:center">6</td><td class="hide-mobile">21. maj 1968</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/annie-gam-pedersen-4450/" style="color:#C8102E;font-weight:500">Annie Gam-Pedersen</a></td><td style="text-align:center">K</td><td style="text-align:center">56</td><td style="text-align:center">15</td><td class="hide-mobile">5. juli 1965</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/annette-thychosen-4436/" style="color:#C8102E;font-weight:500">Annette Thychosen</a></td><td style="text-align:center">K</td><td style="text-align:center">46</td><td style="text-align:center">13</td><td class="hide-mobile">30. august 1968</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/janne-rasmussen-4408/" style="color:#C8102E;font-weight:500">Janne Rasmussen</a></td><td style="text-align:center">K</td><td style="text-align:center">40</td><td style="text-align:center">11</td><td class="hide-mobile">18. juli 1970</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/kirsten-fabrin-4468/" style="color:#C8102E;font-weight:500">Kirsten Fabrin</a></td><td style="text-align:center">K</td><td style="text-align:center">38</td><td style="text-align:center">4</td><td class="hide-mobile">20. december 1953</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/gitte-hansen-4455/" style="color:#C8102E;font-weight:500">Gitte Hansen</a></td><td style="text-align:center">K</td><td style="text-align:center">34</td><td style="text-align:center">–</td><td class="hide-mobile">21. september 1961</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/hanne-nissen-4442/" style="color:#C8102E;font-weight:500">Hanne Nissen</a></td><td style="text-align:center">K</td><td style="text-align:center">29</td><td style="text-align:center">10</td><td class="hide-mobile">21. november 1970</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/john-danielsen-3026/" style="color:#C8102E;font-weight:500">John Danielsen</a></td><td style="text-align:center">M</td><td style="text-align:center">27</td><td style="text-align:center">7</td><td class="hide-mobile">13. juli 1939</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/karoline-s-nielsen-6779/" style="color:#C8102E;font-weight:500">Karoline S. Nielsen</a></td><td style="text-align:center">K</td><td style="text-align:center">24</td><td style="text-align:center">5</td><td class="hide-mobile">12. maj 1994</td><td class="hide-mobile"><a href="/klub/b1913/" style="color:#C8102E">B1913</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/erling-larsen-2979/" style="color:#C8102E;font-weight:500">Erling Larsen</a></td><td style="text-align:center">M</td><td style="text-align:center">20</td><td style="text-align:center">–</td><td class="hide-mobile">9. november 1931</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/kai-johansen-3113/" style="color:#C8102E;font-weight:500">Kai Johansen</a></td><td style="text-align:center">M</td><td style="text-align:center">20</td><td style="text-align:center">–</td><td class="hide-mobile">23. juli 1940</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/bent-kjaer-jensen-3299/" style="color:#C8102E;font-weight:500">Bent Kjær Jensen</a></td><td style="text-align:center">M</td><td style="text-align:center">20</td><td style="text-align:center">13</td><td class="hide-mobile">6. juni 1947</td><td class="hide-mobile"><a href="/klub/b1913/" style="color:#C8102E">B1913</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/marlene-kristensen-4398/" style="color:#C8102E;font-weight:500">Marlene Kristensen</a></td><td style="text-align:center">K</td><td style="text-align:center">20</td><td style="text-align:center">1</td><td class="hide-mobile">28. maj 1973</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/leif-hartwig-3167/" style="color:#C8102E;font-weight:500">Leif Hartwig</a></td><td style="text-align:center">M</td><td style="text-align:center">17</td><td style="text-align:center">–</td><td class="hide-mobile">9. november 1942</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/kasper-boegelund-4251/" style="color:#C8102E;font-weight:500">Kasper Bøgelund</a></td><td style="text-align:center">M</td><td style="text-align:center">17</td><td style="text-align:center">–</td><td class="hide-mobile">8. oktober 1980</td><td class="hide-mobile"><a href="/klub/bbb/" style="color:#C8102E">BBB</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/marie-herping-4386/" style="color:#C8102E;font-weight:500">Marie Herping</a></td><td style="text-align:center">K</td><td style="text-align:center">17</td><td style="text-align:center">–</td><td class="hide-mobile">18. marts 1984</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/ole-bjoernmose-3422/" style="color:#C8102E;font-weight:500">Ole Bjørnmose</a></td><td style="text-align:center">M</td><td style="text-align:center">16</td><td style="text-align:center">2</td><td class="hide-mobile">7. maj 1944</td><td class="hide-mobile"><a href="/klub/nr-aaby-ik/" style="color:#C8102E">Nr. Aaby IK</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/allan-hansen-3694/" style="color:#C8102E;font-weight:500">Allan Hansen</a></td><td style="text-align:center">M</td><td style="text-align:center">16</td><td style="text-align:center">3</td><td class="hide-mobile">21. april 1956</td><td class="hide-mobile"><a href="/klub/dalum-if/" style="color:#C8102E">Dalum IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/erik-lykke-soerensen-3141/" style="color:#C8102E;font-weight:500">Erik Lykke Sørensen</a></td><td style="text-align:center">M</td><td style="text-align:center">15</td><td style="text-align:center">–</td><td class="hide-mobile">22. januar 1940</td><td class="hide-mobile"><a href="/klub/b1913/" style="color:#C8102E">B1913</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/niels-moeller-3220/" style="color:#C8102E;font-weight:500">Niels Møller</a></td><td style="text-align:center">M</td><td style="text-align:center">13</td><td style="text-align:center">–</td><td class="hide-mobile">2. november 1939</td><td class="hide-mobile"><a href="/klub/kfum-s-bk-odense/" style="color:#C8102E">KFUM.s BK Odense</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/johnny-anker-hansen-3931/" style="color:#C8102E;font-weight:500">Johnny Anker Hansen</a></td><td style="text-align:center">M</td><td style="text-align:center">12</td><td style="text-align:center">–</td><td class="hide-mobile">11. juli 1966</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/christina-jensen-4411/" style="color:#C8102E;font-weight:500">Christina Jensen</a></td><td style="text-align:center">K</td><td style="text-align:center">11</td><td style="text-align:center">–</td><td class="hide-mobile">21. januar 1974</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/morten-donnerup-3874/" style="color:#C8102E;font-weight:500">Morten Donnerup</a></td><td style="text-align:center">M</td><td style="text-align:center">10</td><td style="text-align:center">1</td><td class="hide-mobile">26. august 1960</td><td class="hide-mobile"><a href="/klub/naesby-bk/" style="color:#C8102E">Næsby BK</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/ulrik-moseby-3926/" style="color:#C8102E;font-weight:500">Ulrik Moseby</a></td><td style="text-align:center">M</td><td style="text-align:center">10</td><td style="text-align:center">2</td><td class="hide-mobile">28. marts 1964</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/martin-vingaard-4693/" style="color:#C8102E;font-weight:500">Martin Vingaard</a></td><td style="text-align:center">M</td><td style="text-align:center">9</td><td style="text-align:center">1</td><td class="hide-mobile">20. marts 1985</td><td class="hide-mobile"><a href="/klub/s-k-f-i-f/" style="color:#C8102E">S.K.F.I.F.</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/lars-hoegh-2365/" style="color:#C8102E;font-weight:500">Lars Høgh</a></td><td style="text-align:center">M</td><td style="text-align:center">8</td><td style="text-align:center">–</td><td class="hide-mobile">14. januar 1959</td><td class="hide-mobile"><a href="/klub/sanderum-bk/" style="color:#C8102E">Sanderum BK</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/mogens-berg-3173/" style="color:#C8102E;font-weight:500">Mogens Berg</a></td><td style="text-align:center">M</td><td style="text-align:center">8</td><td style="text-align:center">1</td><td class="hide-mobile">8. juni 1944</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/jeanette-johansen-4371/" style="color:#C8102E;font-weight:500">Jeanette Johansen</a></td><td style="text-align:center">K</td><td style="text-align:center">8</td><td style="text-align:center">–</td><td class="hide-mobile">17. august 1979</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/lone-k-larsen-4397/" style="color:#C8102E;font-weight:500">Lone K. Larsen</a></td><td style="text-align:center">K</td><td style="text-align:center">7</td><td style="text-align:center">–</td><td class="hide-mobile">2. juni 1964</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/helge-joergensen-3115/" style="color:#C8102E;font-weight:500">Helge Jørgensen</a></td><td style="text-align:center">M</td><td style="text-align:center">6</td><td style="text-align:center">2</td><td class="hide-mobile">17. september 1937</td><td class="hide-mobile"><a href="/klub/kfum-s-bk-odense/" style="color:#C8102E">KFUM.s BK Odense</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/liana-juhl-nielsen-4369/" style="color:#C8102E;font-weight:500">Liana Juhl Nielsen</a></td><td style="text-align:center">K</td><td style="text-align:center">6</td><td style="text-align:center">–</td><td class="hide-mobile">27. juni 1971</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/jens-torstensen-2887/" style="color:#C8102E;font-weight:500">Jens Torstensen</a></td><td style="text-align:center">M</td><td style="text-align:center">5</td><td style="text-align:center">–</td><td class="hide-mobile">11. november 1928</td><td class="hide-mobile"><a href="/klub/kfum-s-bk-odense/" style="color:#C8102E">KFUM.s BK Odense</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/ulrik-laursen-4310/" style="color:#C8102E;font-weight:500">Ulrik Laursen</a></td><td style="text-align:center">M</td><td style="text-align:center">5</td><td style="text-align:center">1</td><td class="hide-mobile">28. februar 1976</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/jane-vest-4427/" style="color:#C8102E;font-weight:500">Jane Vest</a></td><td style="text-align:center">K</td><td style="text-align:center">5</td><td style="text-align:center">–</td><td class="hide-mobile">20. oktober 1970</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/anders-lindegaard-4826/" style="color:#C8102E;font-weight:500">Anders Lindegaard</a></td><td style="text-align:center">M</td><td style="text-align:center">5</td><td style="text-align:center">–</td><td class="hide-mobile">13. april 1984</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/tenna-kappel-5990/" style="color:#C8102E;font-weight:500">Tenna Kappel</a></td><td style="text-align:center">K</td><td style="text-align:center">5</td><td style="text-align:center">–</td><td class="hide-mobile">20. marts 1992</td><td class="hide-mobile"><a href="/klub/nr-vium-gf/" style="color:#C8102E">Nr. Vium GF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/georg-dahlfelt-2869/" style="color:#C8102E;font-weight:500">Georg Dahlfelt</a></td><td style="text-align:center">M</td><td style="text-align:center">4</td><td style="text-align:center">–</td><td class="hide-mobile">12. april 1919</td><td class="hide-mobile"><a href="/klub/ab/" style="color:#C8102E">AB</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/jack-johnson-2891/" style="color:#C8102E;font-weight:500">Jack Johnson</a></td><td style="text-align:center">M</td><td style="text-align:center">4</td><td style="text-align:center">–</td><td class="hide-mobile">3. juli 1924</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/frank-klausen-3899/" style="color:#C8102E;font-weight:500">Frank Klausen</a></td><td style="text-align:center">M</td><td style="text-align:center">4</td><td style="text-align:center">–</td><td class="hide-mobile">30. juni 1960</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/marianne-loevendorf-4399/" style="color:#C8102E;font-weight:500">Marianne Løvendorf</a></td><td style="text-align:center">K</td><td style="text-align:center">4</td><td style="text-align:center">–</td><td class="hide-mobile">23. maj 1982</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/anita-joergensen-4402/" style="color:#C8102E;font-weight:500">Anita Jørgensen</a></td><td style="text-align:center">K</td><td style="text-align:center">4</td><td style="text-align:center">1</td><td class="hide-mobile">1. december 1971</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/josefine-hoegh-5369/" style="color:#C8102E;font-weight:500">Josefine Høgh</a></td><td style="text-align:center">K</td><td style="text-align:center">4</td><td style="text-align:center">–</td><td class="hide-mobile">21. september 1989</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/bruno-eliasen-3029/" style="color:#C8102E;font-weight:500">Bruno Eliasen</a></td><td style="text-align:center">M</td><td style="text-align:center">3</td><td style="text-align:center">–</td><td class="hide-mobile">11. juli 1933</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/erling-nielsen-3031/" style="color:#C8102E;font-weight:500">Erling Nielsen</a></td><td style="text-align:center">M</td><td style="text-align:center">3</td><td style="text-align:center">–</td><td class="hide-mobile">2. januar 1935</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/ole-steffensen-3314/" style="color:#C8102E;font-weight:500">Ole Steffensen</a></td><td style="text-align:center">M</td><td style="text-align:center">3</td><td style="text-align:center">–</td><td class="hide-mobile">7. oktober 1939</td><td class="hide-mobile"><a href="/klub/b1913/" style="color:#C8102E">B1913</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/svend-joergen-hansen-2734/" style="color:#C8102E;font-weight:500">Svend Jørgen Hansen</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">1</td><td class="hide-mobile">17. september 1922</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/finn-sterobo-3105/" style="color:#C8102E;font-weight:500">Finn Sterobo</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">17. december 1933</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/kaj-andersen-3126/" style="color:#C8102E;font-weight:500">Kaj Andersen</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">14. juni 1932</td><td class="hide-mobile"><a href="/klub/boldklubben-marienlyst/" style="color:#C8102E">Boldklubben Marienlyst</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/kjeld-petersen-3133/" style="color:#C8102E;font-weight:500">Kjeld Petersen</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">7. august 1938</td><td class="hide-mobile"><a href="/klub/b1913/" style="color:#C8102E">B1913</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/palle-bruun-3139/" style="color:#C8102E;font-weight:500">Palle Bruun</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">1</td><td class="hide-mobile">26. april 1938</td><td class="hide-mobile"><a href="/klub/b1913/" style="color:#C8102E">B1913</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/palle-kahler-3169/" style="color:#C8102E;font-weight:500">Palle Kähler</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">16. november 1939</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/arne-rastad-3533/" style="color:#C8102E;font-weight:500">Arne Rastad</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">2. august 1952</td><td class="hide-mobile"><a href="/klub/koege-bk/" style="color:#C8102E">Køge BK</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/allan-nielsen-4018/" style="color:#C8102E;font-weight:500">Allan Nielsen</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">8. april 1953</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/michael-larsen-4072/" style="color:#C8102E;font-weight:500">Michael Larsen</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">16. oktober 1969</td><td class="hide-mobile"><a href="/klub/fraugde-g-if/" style="color:#C8102E">Fraugde G & IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/soeren-berg-4351/" style="color:#C8102E;font-weight:500">Søren Berg</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">15. maj 1976</td><td class="hide-mobile"><a href="/klub/fjordager-if/" style="color:#C8102E">Fjordager IF</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/carin-venborg-4443/" style="color:#C8102E;font-weight:500">Carin Venborg</a></td><td style="text-align:center">K</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">8. november 1969</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/ann-grethe-larsen-4449/" style="color:#C8102E;font-weight:500">Ann Grethe Larsen</a></td><td style="text-align:center">K</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">12. november 1974</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/maybritt-joergensen-4471/" style="color:#C8102E;font-weight:500">Maybritt Jørgensen</a></td><td style="text-align:center">K</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">8. maj 1964</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/mads-hermansen-7575/" style="color:#C8102E;font-weight:500">Mads Hermansen</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">11. juli 2000</td><td class="hide-mobile"><a href="/klub/naesby-bk/" style="color:#C8102E">Næsby BK</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/laura-worsoee-7697/" style="color:#C8102E;font-weight:500">Laura Worsøe</a></td><td style="text-align:center">K</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">28. oktober 2001</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/arthur-nielsen-2652/" style="color:#C8102E;font-weight:500">Arthur Nielsen</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">20. august 1908</td><td class="hide-mobile"><a href="/klub/esbjerg-fb/" style="color:#C8102E">Esbjerg fB</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/peder-rasmussen-2689/" style="color:#C8102E;font-weight:500">Peder Rasmussen</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">1</td><td class="hide-mobile">16. september 1912</td><td class="hide-mobile"><a href="/klub/b1913/" style="color:#C8102E">B1913</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/leif-petersen-2983/" style="color:#C8102E;font-weight:500">Leif Petersen</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">1. april 1932</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/svend-aage-rask-3336/" style="color:#C8102E;font-weight:500">Svend Aage Rask</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">14. juli 1935</td><td class="hide-mobile"><a href="/klub/b-1909/" style="color:#C8102E">B 1909</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/per-bartram-3644/" style="color:#C8102E;font-weight:500">Per Bartram</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">8. januar 1944</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/ronald-stelmer-3724/" style="color:#C8102E;font-weight:500">Ronald Stelmer</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">23. januar 1955</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/carsten-hemmingsen-4083/" style="color:#C8102E;font-weight:500">Carsten Hemmingsen</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">18. december 1970</td><td class="hide-mobile"><a href="/klub/bbb/" style="color:#C8102E">BBB</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/tove-larsen-4507/" style="color:#C8102E;font-weight:500">Tove Larsen</a></td><td style="text-align:center">K</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">-</td><td class="hide-mobile"><a href="/klub/loejt-if/" style="color:#C8102E">Løjt IF</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/maria-clausen-5343/" style="color:#C8102E;font-weight:500">Maria Clausen</a></td><td style="text-align:center">K</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">11. juli 1986</td><td class="hide-mobile"><a href="/klub/odense-boldklub/" style="color:#C8102E">Odense Boldklub</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/alberte-vingum-8130/" style="color:#C8102E;font-weight:500">Alberte Vingum</a></td><td style="text-align:center">K</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">14. november 2004</td><td class="hide-mobile"><a href="/klub/tarup-paarup-if/" style="color:#C8102E">Tarup/Paarup IF</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="margin-top:20px;text-align:center">
+    <a href="/?q=Odense" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:#C8102E;color:#fff;border-radius:8px;font-weight:600;font-size:14px">
+      <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
+      Se på kortet
+    </a>
+  </div>
+</div>
+
+<script>
+let currentGender = 'alle';
+let sortCol = 2, sortAsc = false;
+
+function filterGender(g, btn) {
+  currentGender = g;
+  document.querySelectorAll('.pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderTable();
+}
+
+function sortTable(col) {
+  if (sortCol === col) sortAsc = !sortAsc;
+  else { sortCol = col; sortAsc = col === 0 || col === 1 || col === 4 || col === 5; }
+  renderTable();
+}
+
+function renderTable() {
+  const tbody = document.getElementById('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const visible = rows.filter(r => currentGender === 'alle' || r.dataset.gender === currentGender);
+  const hidden  = rows.filter(r => currentGender !== 'alle' && r.dataset.gender !== currentGender);
+
+  visible.sort((a, b) => {
+    const av = a.cells[sortCol]?.textContent.trim() || '';
+    const bv = b.cells[sortCol]?.textContent.trim() || '';
+    const an = parseFloat(av.replace(/\D/g,'')) || 0;
+    const bn = parseFloat(bv.replace(/\D/g,'')) || 0;
+    if (sortCol === 2 || sortCol === 3) return sortAsc ? an - bn : bn - an;
+    return sortAsc ? av.localeCompare(bv, 'da') : bv.localeCompare(av, 'da');
+  });
+
+  hidden.forEach(r => { r.style.display = 'none'; });
+  visible.forEach(r => { r.style.display = ''; tbody.appendChild(r); });
+}
+</script>
+</body>
+</html>

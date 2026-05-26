@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landsholdsspillere fra Frederiksberg – 54 spillere | Landsholdskortet</title>
+  <meta name="description" content="54 danske A-landsholdsspillere er født i Frederiksberg. Tilsammen har de spillet 915 kampe og scoret 170 mål for Danmark.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://landsholdskortet.dk/by/frederiksberg/">
+  <meta property="og:title" content="Landsholdsspillere fra Frederiksberg">
+  <meta property="og:description" content="54 danske A-landsholdsspillere er født i Frederiksberg. Tilsammen har de spillet 915 kampe og scoret 170 mål for Danmark.">
+  <meta property="og:url" content="https://landsholdskortet.dk/by/frederiksberg/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Landsholdskortet","item":"https://landsholdskortet.dk/"},
+    {"@type":"ListItem","position":2,"name":"Fødesteder","item":"https://landsholdskortet.dk/by/"},
+    {"@type":"ListItem","position":3,"name":"Frederiksberg","item":"https://landsholdskortet.dk/by/frederiksberg/"}
+  ]}
+  </script>
+  <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/fonts/inter.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Inter", -apple-system, sans-serif; background: #f4f4f4; color: #1a1a1a; }
+    a { color: #C8102E; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .topbar { background: #C8102E; padding: 12px 20px; display: flex; align-items: center; gap: 16px; }
+    .topbar a { color: #fff; font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 6px; }
+    .topbar a:hover { text-decoration: none; opacity: .85; }
+    .page { max-width: 960px; margin: 0 auto; padding: 24px 16px 60px; }
+    .header { background: #fff; border-radius: 10px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,.07); margin-bottom: 20px; }
+    h1 { font-size: 26px; margin-bottom: 6px; }
+    .stats-row { display: flex; gap: 16px; margin: 16px 0; flex-wrap: wrap; }
+    .stat { background: #f8f8f8; border-radius: 8px; padding: 12px 20px; text-align: center; }
+    .stat-n { font-size: 22px; font-weight: 700; color: #C8102E; }
+    .stat-l { font-size: 11px; color: #888; margin-top: 2px; text-transform: uppercase; letter-spacing: .4px; }
+    .card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.07); }
+    .filter-row { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
+    .pill { padding: 6px 14px; border-radius: 20px; border: 1px solid #ddd; background: #fff; font-size: 13px; cursor: pointer; font-family: inherit; color: #555; }
+    .pill.active { background: #C8102E; color: #fff; border-color: #C8102E; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th { text-align: left; color: #999; font-weight: 500; font-size: 12px; padding: 4px 8px 10px; border-bottom: 1px solid #eee; text-transform: uppercase; letter-spacing: .4px; cursor: pointer; user-select: none; }
+    th:hover { color: #333; }
+    td { padding: 9px 8px; border-bottom: 1px solid #f5f5f5; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fafafa; }
+    @media (max-width: 600px) { .hide-mobile { display: none; } }
+  </style>
+</head>
+<body>
+<div class="topbar">
+  <a href="/">
+    <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M13 17l-7-7 7-7" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+    Landsholdskortet
+  </a>
+</div>
+
+<div class="page">
+  <div class="header">
+    <h1>Landsholdsspillere fra Frederiksberg</h1>
+    <div class="stats-row">
+      <div class="stat"><div class="stat-n">54</div><div class="stat-l">Spillere</div></div>
+      <div class="stat"><div class="stat-n">915</div><div class="stat-l">Kampe i alt</div></div>
+      <div class="stat"><div class="stat-n">170</div><div class="stat-l">Mål i alt</div></div>
+    </div>
+  </div>
+
+  <div id="by-map" style="height:260px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.1)"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<script>
+(function() {
+  const map = L.map('by-map', {zoomControl:true});
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+    {attribution:'© OpenStreetMap © CARTO', maxZoom:18}).addTo(map);
+  const marker = L.circleMarker([55.6779, 12.5327],
+    {radius:10, color:'#C8102E', fillColor:'#C8102E', fillOpacity:0.85, weight:2}).addTo(map);
+  marker.bindPopup('<strong>Frederiksberg</strong><br>54 landsholdsspillere').openPopup();
+  map.setView([55.6779, 12.5327], 10);
+})();
+</script>
+
+  <div class="card">
+    <div class="filter-row">
+      <button class="pill active" onclick="filterGender('alle', this)">Alle</button>
+      <button class="pill" onclick="filterGender('mand', this)">Mænd</button>
+      <button class="pill" onclick="filterGender('kvinde', this)">Kvinder</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">Spiller ↕</th>
+          <th style="text-align:center" onclick="sortTable(1)">Køn ↕</th>
+          <th style="text-align:center" onclick="sortTable(2)">Kampe ↕</th>
+          <th style="text-align:center" onclick="sortTable(3)">Mål ↕</th>
+          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato ↕</th>
+          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub ↕</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+<tr data-gender="mand"><td><a href="/spiller/michael-laudrup-1238/" style="color:#C8102E;font-weight:500">Michael Laudrup</a></td><td style="text-align:center">M</td><td style="text-align:center">104</td><td style="text-align:center">37</td><td class="hide-mobile">15. juni 1964</td><td class="hide-mobile"><a href="/klub/vanloese-if/" style="color:#C8102E">Vanløse IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/thomas-delaney-6654/" style="color:#C8102E;font-weight:500">Thomas Delaney</a></td><td style="text-align:center">M</td><td style="text-align:center">81</td><td style="text-align:center">8</td><td class="hide-mobile">3. september 1991</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/per-roentved-3359/" style="color:#C8102E;font-weight:500">Per Røntved</a></td><td style="text-align:center">M</td><td style="text-align:center">75</td><td style="text-align:center">11</td><td class="hide-mobile">27. januar 1949</td><td class="hide-mobile"><a href="/klub/broenshoej-boldklub/" style="color:#C8102E">Brønshøj Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/kent-nielsen-3996/" style="color:#C8102E;font-weight:500">Kent Nielsen</a></td><td style="text-align:center">M</td><td style="text-align:center">54</td><td style="text-align:center">3</td><td class="hide-mobile">28. december 1961</td><td class="hide-mobile"><a href="/klub/broenshoej-boldklub/" style="color:#C8102E">Brønshøj Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/ivan-nielsen-3799/" style="color:#C8102E;font-weight:500">Ivan Nielsen</a></td><td style="text-align:center">M</td><td style="text-align:center">51</td><td style="text-align:center">–</td><td class="hide-mobile">9. oktober 1956</td><td class="hide-mobile"><a href="/klub/fremad-amager/" style="color:#C8102E">Fremad Amager</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/joachim-christian-andersen-7054/" style="color:#C8102E;font-weight:500">Joachim Christian Andersen</a></td><td style="text-align:center">M</td><td style="text-align:center">49</td><td style="text-align:center">2</td><td class="hide-mobile">31. maj 1996</td><td class="hide-mobile"><a href="/klub/greve-fodbold/" style="color:#C8102E">Greve Fodbold</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/pauli-joergensen-2514/" style="color:#C8102E;font-weight:500">Pauli Jørgensen</a></td><td style="text-align:center">M</td><td style="text-align:center">47</td><td style="text-align:center">44</td><td class="hide-mobile">4. december 1905</td><td class="hide-mobile"><a href="/klub/b-1908/" style="color:#C8102E">B 1908</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/valdemar-laursen-2453/" style="color:#C8102E;font-weight:500">Valdemar Laursen</a></td><td style="text-align:center">M</td><td style="text-align:center">44</td><td style="text-align:center">1</td><td class="hide-mobile">30. august 1900</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/jan-bartram-4034/" style="color:#C8102E;font-weight:500">Jan Bartram</a></td><td style="text-align:center">M</td><td style="text-align:center">32</td><td style="text-align:center">5</td><td class="hide-mobile">6. marts 1962</td><td class="hide-mobile"><a href="/klub/skive-ik/" style="color:#C8102E">Skive IK</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/christian-groethan-2420/" style="color:#C8102E;font-weight:500">Christian Grøthan</a></td><td style="text-align:center">M</td><td style="text-align:center">31</td><td style="text-align:center">3</td><td class="hide-mobile">18. november 1890</td><td class="hide-mobile"><a href="/klub/boldklubben-af-1893/" style="color:#C8102E">Boldklubben af 1893</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/oscar-joergensen-2575/" style="color:#C8102E;font-weight:500">Oscar Jørgensen</a></td><td style="text-align:center">M</td><td style="text-align:center">28</td><td style="text-align:center">–</td><td class="hide-mobile">17. december 1909</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/ivar-lykke-2388/" style="color:#C8102E;font-weight:500">Ivar Lykke</a></td><td style="text-align:center">M</td><td style="text-align:center">27</td><td style="text-align:center">–</td><td class="hide-mobile">7. marts 1889</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/soeren-colding-980/" style="color:#C8102E;font-weight:500">Søren Colding</a></td><td style="text-align:center">M</td><td style="text-align:center">27</td><td style="text-align:center">–</td><td class="hide-mobile">2. september 1972</td><td class="hide-mobile"><a href="/klub/ejby-if-1968/" style="color:#C8102E">Ejby IF 1968</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/johannes-ploeger-2784/" style="color:#C8102E;font-weight:500">Johannes Pløger</a></td><td style="text-align:center">M</td><td style="text-align:center">21</td><td style="text-align:center">8</td><td class="hide-mobile">3. april 1922</td><td class="hide-mobile"><a href="/klub/frederiksberg-kammeraternes-if/" style="color:#C8102E">Frederiksberg Kammeraternes IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/alf-olsen-2396/" style="color:#C8102E;font-weight:500">Alf Olsen</a></td><td style="text-align:center">M</td><td style="text-align:center">19</td><td style="text-align:center">8</td><td class="hide-mobile">3. september 1893</td><td class="hide-mobile"><a href="/klub/fremad-amager/" style="color:#C8102E">Fremad Amager</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/finn-laudrup-3269/" style="color:#C8102E;font-weight:500">Finn Laudrup</a></td><td style="text-align:center">M</td><td style="text-align:center">19</td><td style="text-align:center">6</td><td class="hide-mobile">31. juli 1945</td><td class="hide-mobile"><a href="/klub/vanloese-if/" style="color:#C8102E">Vanløse IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/joergen-w-hansen-2810/" style="color:#C8102E;font-weight:500">Jørgen W. Hansen</a></td><td style="text-align:center">M</td><td style="text-align:center">18</td><td style="text-align:center">5</td><td class="hide-mobile">15. september 1925</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/john-andersen-3654/" style="color:#C8102E;font-weight:500">John Andersen</a></td><td style="text-align:center">M</td><td style="text-align:center">17</td><td style="text-align:center">–</td><td class="hide-mobile">12. marts 1953</td><td class="hide-mobile"><a href="/klub/boldklubben-1903/" style="color:#C8102E">Boldklubben 1903</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/leif-soerensen-3175/" style="color:#C8102E;font-weight:500">Leif Sørensen</a></td><td style="text-align:center">M</td><td style="text-align:center">15</td><td style="text-align:center">3</td><td class="hide-mobile">25. november 1942</td><td class="hide-mobile"><a href="/klub/hvidovre-if/" style="color:#C8102E">Hvidovre IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/finn-wiberg-3232/" style="color:#C8102E;font-weight:500">Finn Wiberg</a></td><td style="text-align:center">M</td><td style="text-align:center">14</td><td style="text-align:center">5</td><td class="hide-mobile">7. maj 1943</td><td class="hide-mobile"><a href="/klub/ab/" style="color:#C8102E">AB</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/john-worbye-3230/" style="color:#C8102E;font-weight:500">John Worbye</a></td><td style="text-align:center">M</td><td style="text-align:center">12</td><td style="text-align:center">–</td><td class="hide-mobile">27. januar 1941</td><td class="hide-mobile"><a href="/klub/hvidovre-if/" style="color:#C8102E">Hvidovre IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/kurt-praest-3318/" style="color:#C8102E;font-weight:500">Kurt Præst</a></td><td style="text-align:center">M</td><td style="text-align:center">10</td><td style="text-align:center">–</td><td class="hide-mobile">7. januar 1945</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/niels-soerensen-3595/" style="color:#C8102E;font-weight:500">Niels Sørensen</a></td><td style="text-align:center">M</td><td style="text-align:center">9</td><td style="text-align:center">1</td><td class="hide-mobile">12. november 1951</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/klaus-noerregaard-3704/" style="color:#C8102E;font-weight:500">Klaus Nørregaard</a></td><td style="text-align:center">M</td><td style="text-align:center">9</td><td style="text-align:center">1</td><td class="hide-mobile">4. oktober 1952</td><td class="hide-mobile"><a href="/klub/hvidovre-if/" style="color:#C8102E">Hvidovre IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/carl-stoltz-2521/" style="color:#C8102E;font-weight:500">Carl Stoltz</a></td><td style="text-align:center">M</td><td style="text-align:center">8</td><td style="text-align:center">3</td><td class="hide-mobile">1. juli 1905</td><td class="hide-mobile"><a href="/klub/boldklubben-frem/" style="color:#C8102E">Boldklubben Frem</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/john-angelo-hansen-2822/" style="color:#C8102E;font-weight:500">John Angelo Hansen</a></td><td style="text-align:center">M</td><td style="text-align:center">8</td><td style="text-align:center">10</td><td class="hide-mobile">24. juli 1924</td><td class="hide-mobile"><a href="/klub/boldklubben-frem/" style="color:#C8102E">Boldklubben Frem</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/flemming-pedersen-3398/" style="color:#C8102E;font-weight:500">Flemming Pedersen</a></td><td style="text-align:center">M</td><td style="text-align:center">8</td><td style="text-align:center">–</td><td class="hide-mobile">2. september 1947</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/gunnar-aaby-2465/" style="color:#C8102E;font-weight:500">Gunnar Aaby</a></td><td style="text-align:center">M</td><td style="text-align:center">7</td><td style="text-align:center">1</td><td class="hide-mobile">9. juli 1895</td><td class="hide-mobile"><a href="/klub/ab/" style="color:#C8102E">AB</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/niels-bennike-2763/" style="color:#C8102E;font-weight:500">Niels Bennike</a></td><td style="text-align:center">M</td><td style="text-align:center">7</td><td style="text-align:center">–</td><td class="hide-mobile">6. august 1925</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/bjarne-pettersson-3573/" style="color:#C8102E;font-weight:500">Bjarne Pettersson</a></td><td style="text-align:center">M</td><td style="text-align:center">7</td><td style="text-align:center">3</td><td class="hide-mobile">26. februar 1952</td><td class="hide-mobile"><a href="/klub/vanloese-if/" style="color:#C8102E">Vanløse IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/sigfred-jensen-2629/" style="color:#C8102E;font-weight:500">Sigfred Jensen</a></td><td style="text-align:center">M</td><td style="text-align:center">6</td><td style="text-align:center">–</td><td class="hide-mobile">6. marts 1909</td><td class="hide-mobile"><a href="/klub/ab/" style="color:#C8102E">AB</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/jens-kolding-3546/" style="color:#C8102E;font-weight:500">Jens Kolding</a></td><td style="text-align:center">M</td><td style="text-align:center">6</td><td style="text-align:center">–</td><td class="hide-mobile">12. juli 1952</td><td class="hide-mobile"><a href="/klub/boldklubben-af-1893/" style="color:#C8102E">Boldklubben af 1893</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/joergen-henriksen-3278/" style="color:#C8102E;font-weight:500">Jørgen Henriksen</a></td><td style="text-align:center">M</td><td style="text-align:center">5</td><td style="text-align:center">–</td><td class="hide-mobile">16. juli 1942</td><td class="hide-mobile"><a href="/klub/boldklubben-dalgas/" style="color:#C8102E">Boldklubben Dalgas</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/niels-hagenau-3414/" style="color:#C8102E;font-weight:500">Niels Hagenau</a></td><td style="text-align:center">M</td><td style="text-align:center">5</td><td style="text-align:center">–</td><td class="hide-mobile">4. december 1943</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/jan-hoejland-nielsen-3578/" style="color:#C8102E;font-weight:500">Jan Højland Nielsen</a></td><td style="text-align:center">M</td><td style="text-align:center">5</td><td style="text-align:center">–</td><td class="hide-mobile">15. januar 1952</td><td class="hide-mobile"><a href="/klub/boldklubben-af-1893/" style="color:#C8102E">Boldklubben af 1893</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/eli-larsen-2627/" style="color:#C8102E;font-weight:500">Eli Larsen</a></td><td style="text-align:center">M</td><td style="text-align:center">4</td><td style="text-align:center">–</td><td class="hide-mobile">31. januar 1909</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/henrik-agerbeck-3733/" style="color:#C8102E;font-weight:500">Henrik Agerbeck</a></td><td style="text-align:center">M</td><td style="text-align:center">4</td><td style="text-align:center">–</td><td class="hide-mobile">10. september 1956</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/ernst-petersen-2422/" style="color:#C8102E;font-weight:500">Ernst Petersen</a></td><td style="text-align:center">M</td><td style="text-align:center">3</td><td style="text-align:center">–</td><td class="hide-mobile">16. august 1890</td><td class="hide-mobile"><a href="/klub/ab/" style="color:#C8102E">AB</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/henrik-andersen-2410/" style="color:#C8102E;font-weight:500">Henrik Andersen</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">11. februar 1894</td><td class="hide-mobile"><a href="/klub/ab/" style="color:#C8102E">AB</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/gustaf-paalsson-2767/" style="color:#C8102E;font-weight:500">Gustaf Pålsson</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">1</td><td class="hide-mobile">25. marts 1920</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/john-nielsen-2771/" style="color:#C8102E;font-weight:500">John Nielsen</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">1. december 1911</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/christian-morville-2395/" style="color:#C8102E;font-weight:500">Christian Morville</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">3. december 1891</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/martin-ryding-2495/" style="color:#C8102E;font-weight:500">Martin Ryding</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">1. januar 1900</td><td class="hide-mobile"><a href="/klub/boldklubben-frem/" style="color:#C8102E">Boldklubben Frem</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/poul-christiansen-2524/" style="color:#C8102E;font-weight:500">Poul Christiansen</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">30. oktober 1897</td><td class="hide-mobile"><a href="/klub/boldklubben-1903/" style="color:#C8102E">Boldklubben 1903</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/hans-christensen-2648/" style="color:#C8102E;font-weight:500">Hans Christensen</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">7. juni 1906</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/arnold-olsen-2871/" style="color:#C8102E;font-weight:500">Arnold Olsen</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">2. marts 1919</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/jens-carl-kristensen-2955/" style="color:#C8102E;font-weight:500">Jens-Carl Kristensen</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">2. marts 1933</td><td class="hide-mobile"><a href="/klub/ab/" style="color:#C8102E">AB</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/kurt-stendal-3567/" style="color:#C8102E;font-weight:500">Kurt Stendal</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">1</td><td class="hide-mobile">19. februar 1951</td><td class="hide-mobile"><a href="/klub/hvidovre-if/" style="color:#C8102E">Hvidovre IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/jan-pettersson-3593/" style="color:#C8102E;font-weight:500">Jan Pettersson</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">10. december 1949</td><td class="hide-mobile"><a href="/klub/vanloese-if/" style="color:#C8102E">Vanløse IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/anders-soerensen-3605/" style="color:#C8102E;font-weight:500">Anders Sørensen</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">17. august 1945</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/karl-aage-skouborg-3607/" style="color:#C8102E;font-weight:500">Karl Aage Skouborg</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">9. april 1947</td><td class="hide-mobile"><a href="/klub/kjoebenhavns-boldklub/" style="color:#C8102E">Kjøbenhavns Boldklub</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/alex-nielsen-3909/" style="color:#C8102E;font-weight:500">Alex Nielsen</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">26. marts 1958</td><td class="hide-mobile"><a href="/klub/bk-sylvia/" style="color:#C8102E">BK Sylvia</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/pernille-vormslev-gartner-4374/" style="color:#C8102E;font-weight:500">Pernille Vormslev Gärtner</a></td><td style="text-align:center">K</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">24. marts 1973</td><td class="hide-mobile"><a href="/klub/fv-koebenhavn/" style="color:#C8102E">FV København</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/oskar-hoejbye-8031/" style="color:#C8102E;font-weight:500">Oskar Højbye</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">29. november 1996</td><td class="hide-mobile"><a href="/klub/vanloese-if/" style="color:#C8102E">Vanløse IF</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="margin-top:20px;text-align:center">
+    <a href="/?q=Frederiksberg" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:#C8102E;color:#fff;border-radius:8px;font-weight:600;font-size:14px">
+      <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
+      Se på kortet
+    </a>
+  </div>
+</div>
+
+<script>
+let currentGender = 'alle';
+let sortCol = 2, sortAsc = false;
+
+function filterGender(g, btn) {
+  currentGender = g;
+  document.querySelectorAll('.pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderTable();
+}
+
+function sortTable(col) {
+  if (sortCol === col) sortAsc = !sortAsc;
+  else { sortCol = col; sortAsc = col === 0 || col === 1 || col === 4 || col === 5; }
+  renderTable();
+}
+
+function renderTable() {
+  const tbody = document.getElementById('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const visible = rows.filter(r => currentGender === 'alle' || r.dataset.gender === currentGender);
+  const hidden  = rows.filter(r => currentGender !== 'alle' && r.dataset.gender !== currentGender);
+
+  visible.sort((a, b) => {
+    const av = a.cells[sortCol]?.textContent.trim() || '';
+    const bv = b.cells[sortCol]?.textContent.trim() || '';
+    const an = parseFloat(av.replace(/\D/g,'')) || 0;
+    const bn = parseFloat(bv.replace(/\D/g,'')) || 0;
+    if (sortCol === 2 || sortCol === 3) return sortAsc ? an - bn : bn - an;
+    return sortAsc ? av.localeCompare(bv, 'da') : bv.localeCompare(av, 'da');
+  });
+
+  hidden.forEach(r => { r.style.display = 'none'; });
+  visible.forEach(r => { r.style.display = ''; tbody.appendChild(r); });
+}
+</script>
+</body>
+</html>

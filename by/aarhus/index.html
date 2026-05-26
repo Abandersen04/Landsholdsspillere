@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landsholdsspillere fra Aarhus – 63 spillere | Landsholdskortet</title>
+  <meta name="description" content="63 danske A-landsholdsspillere er født i Aarhus. Tilsammen har de spillet 1124 kampe og scoret 161 mål for Danmark.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://landsholdskortet.dk/by/aarhus/">
+  <meta property="og:title" content="Landsholdsspillere fra Aarhus">
+  <meta property="og:description" content="63 danske A-landsholdsspillere er født i Aarhus. Tilsammen har de spillet 1124 kampe og scoret 161 mål for Danmark.">
+  <meta property="og:url" content="https://landsholdskortet.dk/by/aarhus/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Landsholdskortet","item":"https://landsholdskortet.dk/"},
+    {"@type":"ListItem","position":2,"name":"Fødesteder","item":"https://landsholdskortet.dk/by/"},
+    {"@type":"ListItem","position":3,"name":"Aarhus","item":"https://landsholdskortet.dk/by/aarhus/"}
+  ]}
+  </script>
+  <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/fonts/inter.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Inter", -apple-system, sans-serif; background: #f4f4f4; color: #1a1a1a; }
+    a { color: #C8102E; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .topbar { background: #C8102E; padding: 12px 20px; display: flex; align-items: center; gap: 16px; }
+    .topbar a { color: #fff; font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 6px; }
+    .topbar a:hover { text-decoration: none; opacity: .85; }
+    .page { max-width: 960px; margin: 0 auto; padding: 24px 16px 60px; }
+    .header { background: #fff; border-radius: 10px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,.07); margin-bottom: 20px; }
+    h1 { font-size: 26px; margin-bottom: 6px; }
+    .stats-row { display: flex; gap: 16px; margin: 16px 0; flex-wrap: wrap; }
+    .stat { background: #f8f8f8; border-radius: 8px; padding: 12px 20px; text-align: center; }
+    .stat-n { font-size: 22px; font-weight: 700; color: #C8102E; }
+    .stat-l { font-size: 11px; color: #888; margin-top: 2px; text-transform: uppercase; letter-spacing: .4px; }
+    .card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.07); }
+    .filter-row { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
+    .pill { padding: 6px 14px; border-radius: 20px; border: 1px solid #ddd; background: #fff; font-size: 13px; cursor: pointer; font-family: inherit; color: #555; }
+    .pill.active { background: #C8102E; color: #fff; border-color: #C8102E; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th { text-align: left; color: #999; font-weight: 500; font-size: 12px; padding: 4px 8px 10px; border-bottom: 1px solid #eee; text-transform: uppercase; letter-spacing: .4px; cursor: pointer; user-select: none; }
+    th:hover { color: #333; }
+    td { padding: 9px 8px; border-bottom: 1px solid #f5f5f5; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fafafa; }
+    @media (max-width: 600px) { .hide-mobile { display: none; } }
+  </style>
+</head>
+<body>
+<div class="topbar">
+  <a href="/">
+    <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M13 17l-7-7 7-7" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+    Landsholdskortet
+  </a>
+</div>
+
+<div class="page">
+  <div class="header">
+    <h1>Landsholdsspillere fra Aarhus</h1>
+    <div class="stats-row">
+      <div class="stat"><div class="stat-n">63</div><div class="stat-l">Spillere</div></div>
+      <div class="stat"><div class="stat-n">1124</div><div class="stat-l">Kampe i alt</div></div>
+      <div class="stat"><div class="stat-n">161</div><div class="stat-l">Mål i alt</div></div>
+    </div>
+  </div>
+
+  <div id="by-map" style="height:260px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.1)"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<script>
+(function() {
+  const map = L.map('by-map', {zoomControl:true});
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+    {attribution:'© OpenStreetMap © CARTO', maxZoom:18}).addTo(map);
+  const marker = L.circleMarker([56.156388888, 10.209722222],
+    {radius:10, color:'#C8102E', fillColor:'#C8102E', fillOpacity:0.85, weight:2}).addTo(map);
+  marker.bindPopup('<strong>Aarhus</strong><br>63 landsholdsspillere').openPopup();
+  map.setView([56.156388888, 10.209722222], 10);
+})();
+</script>
+
+  <div class="card">
+    <div class="filter-row">
+      <button class="pill active" onclick="filterGender('alle', this)">Alle</button>
+      <button class="pill" onclick="filterGender('mand', this)">Mænd</button>
+      <button class="pill" onclick="filterGender('kvinde', this)">Kvinder</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">Spiller ↕</th>
+          <th style="text-align:center" onclick="sortTable(1)">Køn ↕</th>
+          <th style="text-align:center" onclick="sortTable(2)">Kampe ↕</th>
+          <th style="text-align:center" onclick="sortTable(3)">Mål ↕</th>
+          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato ↕</th>
+          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub ↕</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+<tr data-gender="kvinde"><td><a href="/spiller/lene-jensen-4356/" style="color:#C8102E;font-weight:500">Lene Jensen</a></td><td style="text-align:center">K</td><td style="text-align:center">109</td><td style="text-align:center">26</td><td class="hide-mobile">17. marts 1976</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/martin-joergensen-1564/" style="color:#C8102E;font-weight:500">Martin Jørgensen</a></td><td style="text-align:center">M</td><td style="text-align:center">102</td><td style="text-align:center">12</td><td class="hide-mobile">6. oktober 1975</td><td class="hide-mobile"><a href="/klub/if-midtdjurs/" style="color:#C8102E">IF Midtdjurs</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/sofie-junge-pedersen-5979/" style="color:#C8102E;font-weight:500">Sofie Junge Pedersen</a></td><td style="text-align:center">K</td><td style="text-align:center">89</td><td style="text-align:center">7</td><td class="hide-mobile">24. april 1992</td><td class="hide-mobile"><a href="/klub/bmi/" style="color:#C8102E">BMI</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/irene-stelling-4423/" style="color:#C8102E;font-weight:500">Irene Stelling</a></td><td style="text-align:center">K</td><td style="text-align:center">63</td><td style="text-align:center">2</td><td class="hide-mobile">25. juli 1971</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/poul-pedersen-2915/" style="color:#C8102E;font-weight:500">Poul Pedersen</a></td><td style="text-align:center">M</td><td style="text-align:center">50</td><td style="text-align:center">17</td><td class="hide-mobile">31. oktober 1932</td><td class="hide-mobile"><a href="/klub/aia-tranbjerg/" style="color:#C8102E">AIA-Tranbjerg</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/maiken-pape-5367/" style="color:#C8102E;font-weight:500">Maiken Pape</a></td><td style="text-align:center">K</td><td style="text-align:center">48</td><td style="text-align:center">23</td><td class="hide-mobile">20. februar 1978</td><td class="hide-mobile"><a href="/klub/vri/" style="color:#C8102E">VRI</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/mette-jokumsen-4368/" style="color:#C8102E;font-weight:500">Mette Jokumsen</a></td><td style="text-align:center">K</td><td style="text-align:center">44</td><td style="text-align:center">10</td><td class="hide-mobile">11. februar 1977</td><td class="hide-mobile"><a href="/klub/skovbakken-ik-ob/" style="color:#C8102E">Skovbakken IK OB</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/kamma-flaeng-4420/" style="color:#C8102E;font-weight:500">Kamma Flæng</a></td><td style="text-align:center">K</td><td style="text-align:center">43</td><td style="text-align:center">9</td><td class="hide-mobile">30. marts 1976</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/marianne-jensen-4431/" style="color:#C8102E;font-weight:500">Marianne Jensen</a></td><td style="text-align:center">K</td><td style="text-align:center">40</td><td style="text-align:center">5</td><td class="hide-mobile">14. januar 1970</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/nadia-kjaeldgaard-4359/" style="color:#C8102E;font-weight:500">Nadia Kjældgaard</a></td><td style="text-align:center">K</td><td style="text-align:center">36</td><td style="text-align:center">3</td><td class="hide-mobile">2. november 1978</td><td class="hide-mobile"><a href="/klub/skovbakken-ik-ob/" style="color:#C8102E">Skovbakken IK OB</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/henry-from-2991/" style="color:#C8102E;font-weight:500">Henry From</a></td><td style="text-align:center">M</td><td style="text-align:center">31</td><td style="text-align:center">–</td><td class="hide-mobile">1. juni 1926</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/aage-rou-jensen-2757/" style="color:#C8102E;font-weight:500">Aage Rou Jensen</a></td><td style="text-align:center">M</td><td style="text-align:center">30</td><td style="text-align:center">11</td><td class="hide-mobile">24. september 1924</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/charlotte-nielsen-mann-4487/" style="color:#C8102E;font-weight:500">Charlotte Nielsen-Mann</a></td><td style="text-align:center">K</td><td style="text-align:center">28</td><td style="text-align:center">3</td><td class="hide-mobile">22. februar 1958</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/nanna-johansen-5093/" style="color:#C8102E;font-weight:500">Nanna Johansen</a></td><td style="text-align:center">K</td><td style="text-align:center">28</td><td style="text-align:center">3</td><td class="hide-mobile">19. november 1986</td><td class="hide-mobile"><a href="/klub/skovbakken-ik-ob/" style="color:#C8102E">Skovbakken IK OB</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/marianne-riis-4490/" style="color:#C8102E;font-weight:500">Marianne Riis</a></td><td style="text-align:center">K</td><td style="text-align:center">27</td><td style="text-align:center">–</td><td class="hide-mobile">8. oktober 1953</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/marianne-jacobsen-4454/" style="color:#C8102E;font-weight:500">Marianne Jacobsen</a></td><td style="text-align:center">K</td><td style="text-align:center">25</td><td style="text-align:center">1</td><td class="hide-mobile">1. januar 1965</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/luna-gevitz-6788/" style="color:#C8102E;font-weight:500">Luna Gevitz</a></td><td style="text-align:center">K</td><td style="text-align:center">25</td><td style="text-align:center">–</td><td class="hide-mobile">3. marts 1994</td><td class="hide-mobile"><a href="/klub/dover-gf/" style="color:#C8102E">Dover GF</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/annette-laursen-4372/" style="color:#C8102E;font-weight:500">Annette Laursen</a></td><td style="text-align:center">K</td><td style="text-align:center">23</td><td style="text-align:center">–</td><td class="hide-mobile">6. februar 1975</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/viktor-fischer-6663/" style="color:#C8102E;font-weight:500">Viktor Fischer</a></td><td style="text-align:center">M</td><td style="text-align:center">21</td><td style="text-align:center">3</td><td class="hide-mobile">9. juni 1994</td><td class="hide-mobile"><a href="/klub/if-lyseng/" style="color:#C8102E">IF Lyseng</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/claus-thomsen-1584/" style="color:#C8102E;font-weight:500">Claus Thomsen</a></td><td style="text-align:center">M</td><td style="text-align:center">20</td><td style="text-align:center">–</td><td class="hide-mobile">31. maj 1970</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/mikkel-beck-977/" style="color:#C8102E;font-weight:500">Mikkel Beck</a></td><td style="text-align:center">M</td><td style="text-align:center">19</td><td style="text-align:center">3</td><td class="hide-mobile">12. maj 1973</td><td class="hide-mobile"><a href="/klub/bramdrupdam-gif/" style="color:#C8102E">Bramdrupdam GIF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/holger-seebach-2812/" style="color:#C8102E;font-weight:500">Holger Seebach</a></td><td style="text-align:center">M</td><td style="text-align:center">17</td><td style="text-align:center">9</td><td class="hide-mobile">17. marts 1922</td><td class="hide-mobile"><a href="/klub/b1913/" style="color:#C8102E">B1913</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/helle-rotboell-4457/" style="color:#C8102E;font-weight:500">Helle Rotbøll</a></td><td style="text-align:center">K</td><td style="text-align:center">15</td><td style="text-align:center">4</td><td class="hide-mobile">8. oktober 1963</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/lise-soendergaard-4391/" style="color:#C8102E;font-weight:500">Lise Søndergaard</a></td><td style="text-align:center">K</td><td style="text-align:center">14</td><td style="text-align:center">1</td><td class="hide-mobile">27. oktober 1973</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/soeren-andersen-976/" style="color:#C8102E;font-weight:500">Søren Andersen</a></td><td style="text-align:center">M</td><td style="text-align:center">12</td><td style="text-align:center">–</td><td class="hide-mobile">31. januar 1970</td><td class="hide-mobile"><a href="/klub/silkeborg-if/" style="color:#C8102E">Silkeborg IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/frank-pingel-2358/" style="color:#C8102E;font-weight:500">Frank Pingel</a></td><td style="text-align:center">M</td><td style="text-align:center">11</td><td style="text-align:center">5</td><td class="hide-mobile">9. maj 1964</td><td class="hide-mobile"><a href="/klub/fuglebakken-kfum-aarhus/" style="color:#C8102E">Fuglebakken KFUM Århus</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/per-nielsen-2319/" style="color:#C8102E;font-weight:500">Per Nielsen</a></td><td style="text-align:center">M</td><td style="text-align:center">10</td><td style="text-align:center">–</td><td class="hide-mobile">15. oktober 1973</td><td class="hide-mobile"><a href="/klub/broendby-if/" style="color:#C8102E">Brøndby IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/lars-lundkvist-3736/" style="color:#C8102E;font-weight:500">Lars Lundkvist</a></td><td style="text-align:center">M</td><td style="text-align:center">10</td><td style="text-align:center">1</td><td class="hide-mobile">14. juni 1957</td><td class="hide-mobile"><a href="/klub/skovbakken-ik-ob/" style="color:#C8102E">Skovbakken IK OB</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/john-amdisen-2951/" style="color:#C8102E;font-weight:500">John Amdisen</a></td><td style="text-align:center">M</td><td style="text-align:center">9</td><td style="text-align:center">–</td><td class="hide-mobile">8. juli 1934</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/tina-rasmussen-5034/" style="color:#C8102E;font-weight:500">Tina Rasmussen</a></td><td style="text-align:center">K</td><td style="text-align:center">9</td><td style="text-align:center">–</td><td class="hide-mobile">14. april 1980</td><td class="hide-mobile"><a href="/klub/brabrand-if/" style="color:#C8102E">Brabrand IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/poul-bilde-3194/" style="color:#C8102E;font-weight:500">Poul Bilde</a></td><td style="text-align:center">M</td><td style="text-align:center">8</td><td style="text-align:center">–</td><td class="hide-mobile">27. marts 1938</td><td class="hide-mobile"><a href="/klub/randers-freja/" style="color:#C8102E">Randers Freja</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/thomas-roell-larsen-4214/" style="color:#C8102E;font-weight:500">Thomas Røll Larsen</a></td><td style="text-align:center">M</td><td style="text-align:center">8</td><td style="text-align:center">1</td><td class="hide-mobile">12. marts 1977</td><td class="hide-mobile"><a href="/klub/bylderup-burkal-if/" style="color:#C8102E">Bylderup/Burkal IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/casper-sloth-6465/" style="color:#C8102E;font-weight:500">Casper Sloth</a></td><td style="text-align:center">M</td><td style="text-align:center">8</td><td style="text-align:center">–</td><td class="hide-mobile">26. marts 1992</td><td class="hide-mobile"><a href="/klub/brabrand-if/" style="color:#C8102E">Brabrand IF</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/linda-thomsen-4458/" style="color:#C8102E;font-weight:500">Linda Thomsen</a></td><td style="text-align:center">K</td><td style="text-align:center">7</td><td style="text-align:center">–</td><td class="hide-mobile">17. marts 1965</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/sus-mogensen-4466/" style="color:#C8102E;font-weight:500">Sus Mogensen</a></td><td style="text-align:center">K</td><td style="text-align:center">7</td><td style="text-align:center">–</td><td class="hide-mobile">5. maj 1961</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/ole-skouboe-3548/" style="color:#C8102E;font-weight:500">Ole Skouboe</a></td><td style="text-align:center">M</td><td style="text-align:center">6</td><td style="text-align:center">–</td><td class="hide-mobile">6. september 1949</td><td class="hide-mobile"><a href="/klub/skovbakken-ik-ob/" style="color:#C8102E">Skovbakken IK OB</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/marianne-pedersen-5500/" style="color:#C8102E;font-weight:500">Marianne Pedersen</a></td><td style="text-align:center">K</td><td style="text-align:center">6</td><td style="text-align:center">–</td><td class="hide-mobile">28. februar 1985</td><td class="hide-mobile"><a href="/klub/skovbakken-ik-ob/" style="color:#C8102E">Skovbakken IK OB</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/katrine-korsgaard-5370/" style="color:#C8102E;font-weight:500">Katrine Korsgaard</a></td><td style="text-align:center">K</td><td style="text-align:center">5</td><td style="text-align:center">–</td><td class="hide-mobile">19. januar 1990</td><td class="hide-mobile"><a href="/klub/asa-aarhus/" style="color:#C8102E">ASA, Aarhus</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/malene-hansen-5585/" style="color:#C8102E;font-weight:500">Malene Hansen</a></td><td style="text-align:center">K</td><td style="text-align:center">5</td><td style="text-align:center">–</td><td class="hide-mobile">1. april 1990</td><td class="hide-mobile"><a href="/klub/skovbakken-ik-ob/" style="color:#C8102E">Skovbakken IK OB</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/jens-joensson-6685/" style="color:#C8102E;font-weight:500">Jens Jønsson</a></td><td style="text-align:center">M</td><td style="text-align:center">5</td><td style="text-align:center">–</td><td class="hide-mobile">10. januar 1993</td><td class="hide-mobile"><a href="/klub/viby-if/" style="color:#C8102E">Viby IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/haldur-lasthein-2516/" style="color:#C8102E;font-weight:500">Haldur Lasthein</a></td><td style="text-align:center">M</td><td style="text-align:center">4</td><td style="text-align:center">–</td><td class="hide-mobile">1. juni 1905</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/erik-kuld-jensen-2806/" style="color:#C8102E;font-weight:500">Erik Kuld Jensen</a></td><td style="text-align:center">M</td><td style="text-align:center">4</td><td style="text-align:center">1</td><td class="hide-mobile">10. juni 1925</td><td class="hide-mobile"><a href="/klub/aarhus-1900/" style="color:#C8102E">Aarhus 1900</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/erik-jensen-2963/" style="color:#C8102E;font-weight:500">Erik Jensen</a></td><td style="text-align:center">M</td><td style="text-align:center">4</td><td style="text-align:center">–</td><td class="hide-mobile">2. marts 1932</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/john-jensen-2989/" style="color:#C8102E;font-weight:500">John Jensen</a></td><td style="text-align:center">M</td><td style="text-align:center">4</td><td style="text-align:center">1</td><td class="hide-mobile">13. maj 1937</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/lisbeth-pedersen-4465/" style="color:#C8102E;font-weight:500">Lisbeth Pedersen</a></td><td style="text-align:center">K</td><td style="text-align:center">4</td><td style="text-align:center">–</td><td class="hide-mobile">10. marts 1964</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/aksel-nielsen-2773/" style="color:#C8102E;font-weight:500">Aksel Nielsen</a></td><td style="text-align:center">M</td><td style="text-align:center">3</td><td style="text-align:center">–</td><td class="hide-mobile">9. august 1918</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/sigurd-iversen-2808/" style="color:#C8102E;font-weight:500">Sigurd Iversen</a></td><td style="text-align:center">M</td><td style="text-align:center">3</td><td style="text-align:center">–</td><td class="hide-mobile">13. marts 1926</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/kim-ziegler-3872/" style="color:#C8102E;font-weight:500">Kim Ziegler</a></td><td style="text-align:center">M</td><td style="text-align:center">3</td><td style="text-align:center">–</td><td class="hide-mobile">29. december 1958</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/hugo-nielsen-2650/" style="color:#C8102E;font-weight:500">Hugo Nielsen</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">17. juli 1908</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/per-knudsen-2824/" style="color:#C8102E;font-weight:500">Per Knudsen</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">2. juni 1925</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/anette-rehmeier-4467/" style="color:#C8102E;font-weight:500">Anette Rehmeier</a></td><td style="text-align:center">K</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">24. maj 1966</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/michael-lumb-5132/" style="color:#C8102E;font-weight:500">Michael Lumb</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">9. januar 1988</td><td class="hide-mobile"><a href="/klub/fuglebakken-kfum-aarhus/" style="color:#C8102E">Fuglebakken KFUM Århus</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/mia-maria-kjaersgaard-andersen-5589/" style="color:#C8102E;font-weight:500">Mia-Maria Kjærsgaard-Andersen</a></td><td style="text-align:center">K</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">19. januar 1989</td><td class="hide-mobile"><a href="/klub/skovbakken-ik-ob/" style="color:#C8102E">Skovbakken IK OB</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/merete-nielsen-5676/" style="color:#C8102E;font-weight:500">Merete Nielsen</a></td><td style="text-align:center">K</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">3. december 1982</td><td class="hide-mobile"><a href="/klub/seest-b/" style="color:#C8102E">Seest B</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/jens-stage-7428/" style="color:#C8102E;font-weight:500">Jens Stage</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td class="hide-mobile">8. november 1996</td><td class="hide-mobile"><a href="/klub/asa-aarhus/" style="color:#C8102E">ASA, Aarhus</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/tage-soerensen-2769/" style="color:#C8102E;font-weight:500">Tage Sørensen</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">11. februar 1919</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/henning-bjerregaard-2943/" style="color:#C8102E;font-weight:500">Henning Bjerregaard</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">6. marts 1927</td><td class="hide-mobile"><a href="/klub/aarhus-1900/" style="color:#C8102E">Aarhus 1900</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/ib-thygesen-2975/" style="color:#C8102E;font-weight:500">Ib Thygesen</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">20. december 1930</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/bjarke-gundlev-2999/" style="color:#C8102E;font-weight:500">Bjarke Gundlev</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">9. januar 1931</td><td class="hide-mobile"><a href="/klub/agf/" style="color:#C8102E">AGF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/carsten-brandenborg-3507/" style="color:#C8102E;font-weight:500">Carsten Brandenborg</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">26. august 1945</td><td class="hide-mobile"><a href="/klub/moerke-if/" style="color:#C8102E">Mørke IF</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/jan-lauridsen-3937/" style="color:#C8102E;font-weight:500">Jan Lauridsen</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">18. januar 1963</td><td class="hide-mobile"><a href="/klub/aarhus-1900/" style="color:#C8102E">Aarhus 1900</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/charlotte-petersen-4426/" style="color:#C8102E;font-weight:500">Charlotte Petersen</a></td><td style="text-align:center">K</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">18. november 1963</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/linette-soerensen-4446/" style="color:#C8102E;font-weight:500">Linette Sørensen</a></td><td style="text-align:center">K</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">1. juni 1972</td><td class="hide-mobile"><a href="/klub/hei-aarhus/" style="color:#C8102E">HEI Aarhus</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="margin-top:20px;text-align:center">
+    <a href="/?q=Aarhus" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:#C8102E;color:#fff;border-radius:8px;font-weight:600;font-size:14px">
+      <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
+      Se på kortet
+    </a>
+  </div>
+</div>
+
+<script>
+let currentGender = 'alle';
+let sortCol = 2, sortAsc = false;
+
+function filterGender(g, btn) {
+  currentGender = g;
+  document.querySelectorAll('.pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderTable();
+}
+
+function sortTable(col) {
+  if (sortCol === col) sortAsc = !sortAsc;
+  else { sortCol = col; sortAsc = col === 0 || col === 1 || col === 4 || col === 5; }
+  renderTable();
+}
+
+function renderTable() {
+  const tbody = document.getElementById('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const visible = rows.filter(r => currentGender === 'alle' || r.dataset.gender === currentGender);
+  const hidden  = rows.filter(r => currentGender !== 'alle' && r.dataset.gender !== currentGender);
+
+  visible.sort((a, b) => {
+    const av = a.cells[sortCol]?.textContent.trim() || '';
+    const bv = b.cells[sortCol]?.textContent.trim() || '';
+    const an = parseFloat(av.replace(/\D/g,'')) || 0;
+    const bn = parseFloat(bv.replace(/\D/g,'')) || 0;
+    if (sortCol === 2 || sortCol === 3) return sortAsc ? an - bn : bn - an;
+    return sortAsc ? av.localeCompare(bv, 'da') : bv.localeCompare(av, 'da');
+  });
+
+  hidden.forEach(r => { r.style.display = 'none'; });
+  visible.forEach(r => { r.style.display = ''; tbody.appendChild(r); });
+}
+</script>
+</body>
+</html>
