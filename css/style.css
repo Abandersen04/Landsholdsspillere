@@ -1362,3 +1362,102 @@ html, body {
 .data-sources a:hover {
   color: #C8102E;
 }
+
+/* ===== Mobile Popup Panel (bottom sheet) ===== */
+.mobile-popup-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 1500;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.mobile-popup-overlay.open {
+  display: block;
+  opacity: 1;
+}
+
+.mobile-popup-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.18);
+  z-index: 1501;
+  max-height: 72vh;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(100%);
+  transition: transform 0.28s cubic-bezier(0.32,0.72,0,1);
+  will-change: transform;
+}
+.mobile-popup-panel.open {
+  transform: translateY(0);
+}
+
+.mobile-popup-handle-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px 6px;
+  position: relative;
+  flex-shrink: 0;
+}
+.mobile-popup-pill {
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background: #ddd;
+}
+.mobile-popup-close {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #999;
+  cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+}
+.mobile-popup-close:hover { color: #333; }
+
+.mobile-popup-content {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 0 24px;
+  flex: 1;
+}
+
+/* Hide Leaflet popups on mobile – we use the panel instead */
+@media (max-width: 768px) {
+  .leaflet-popup { display: none !important; }
+}
+
+/* ===== Larger touch targets on markers ===== */
+.leaflet-marker-icon {
+  min-width: 44px !important;
+  min-height: 44px !important;
+}
+
+/* ===== Sticky thead on rekordlister ===== */
+.top-table thead th {
+  position: sticky;
+  top: 96px;
+  background: #fff;
+  z-index: 10;
+}
+
+/* ===== Font size on small screens ===== */
+@media (max-width: 400px) {
+  .top-table { font-size: 12px; }
+}

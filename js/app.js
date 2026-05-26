@@ -722,7 +722,8 @@ function buildChoropleth(groups, geoData, nameKey, perCapita) {
         maxWidth: 340,
         minWidth: 260,
         closeButton: true,
-        autoPan: false
+        autoPan: true,
+        autoPanPaddingBottomRight: L.point(20, 100)
       });
       layer.on('mouseover', () => layer.setStyle({ weight: 3, color: '#333' }));
       layer.on('mouseout', () => geoLayer.resetStyle(layer));
@@ -1237,14 +1238,46 @@ function createMarker(group, mapType, birthLevel, perCapita) {
     });
   }
 
-  marker.bindPopup(() => buildPopupHtml(group, mapType), {
-    maxWidth: 340,
-    minWidth: 260,
-    closeButton: true,
-    autoPan: false
-  });
+  const isMob = window.innerWidth <= 768;
+  if (isMob) {
+    marker.on('click', () => openMobilePopup(group, mapType));
+  } else {
+    marker.bindPopup(() => buildPopupHtml(group, mapType), {
+      maxWidth: 340,
+      minWidth: 260,
+      closeButton: true,
+      autoPan: true,
+      autoPanPaddingBottomRight: L.point(20, 100)
+    });
+  }
 
   return marker;
+}
+
+// ===== Mobile Popup Panel =====
+function openMobilePopup(group, mapType) {
+  const panel   = document.getElementById('mobile-popup-panel');
+  const overlay = document.getElementById('mobile-popup-overlay');
+  const content = document.getElementById('mobile-popup-content');
+  if (!panel) return;
+
+  content.innerHTML = buildPopupHtml(group, mapType);
+  overlay.classList.add('open');
+  panel.classList.add('open');
+  document.getElementById('mobile-popup-close').onclick = closeMobilePopup;
+  overlay.onclick = closeMobilePopup;
+
+  // Swipe down to close
+  let startY = 0;
+  panel.addEventListener('touchstart', e => { startY = e.touches[0].clientY; }, { passive: true, once: true });
+  panel.addEventListener('touchend', e => {
+    if (e.changedTouches[0].clientY - startY > 60) closeMobilePopup();
+  }, { passive: true, once: true });
+}
+
+function closeMobilePopup() {
+  document.getElementById('mobile-popup-panel')?.classList.remove('open');
+  document.getElementById('mobile-popup-overlay')?.classList.remove('open');
 }
 
 // ===== Popup HTML =====
