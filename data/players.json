@@ -50559,6 +50559,15 @@
         "is_earliest": true,
         "klub_logo": "logos/klub_1191.jpg",
         "team_qid": null
+      },
+      {
+        "klub_id": "4045",
+        "klubnavn": "FV København",
+        "latitude": 55.6801,
+        "longitude": 12.4979,
+        "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -55786,6 +55795,26 @@
     "years_played": [
       1985,
       1986
+    ],
+    "allClubs": [
+      {
+        "klub_id": "1191",
+        "klubnavn": "Ringsted Pigefodbold",
+        "latitude": 55.4458,
+        "longitude": 11.807,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_1191.jpg",
+        "team_qid": null
+      },
+      {
+        "klub_id": "99002",
+        "klubnavn": "Boldklubben Femina",
+        "latitude": 55.735,
+        "longitude": 12.495,
+        "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
+      }
     ]
   },
   {
@@ -56466,6 +56495,26 @@
     "birthplace_estimated": true,
     "years_played": [
       1982
+    ],
+    "allClubs": [
+      {
+        "klub_id": "1191",
+        "klubnavn": "Ringsted Pigefodbold",
+        "latitude": 55.4458,
+        "longitude": 11.807,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_1191.jpg",
+        "team_qid": null
+      },
+      {
+        "klub_id": "99002",
+        "klubnavn": "Boldklubben Femina",
+        "latitude": 55.735,
+        "longitude": 12.495,
+        "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
+      }
     ]
   },
   {
@@ -57536,6 +57585,26 @@
     "years_played": [
       1977,
       1978
+    ],
+    "allClubs": [
+      {
+        "klub_id": "1191",
+        "klubnavn": "Ringsted Pigefodbold",
+        "latitude": 55.4458,
+        "longitude": 11.807,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_1191.jpg",
+        "team_qid": null
+      },
+      {
+        "klub_id": "99002",
+        "klubnavn": "Boldklubben Femina",
+        "latitude": 55.735,
+        "longitude": 12.495,
+        "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
+      }
     ]
   },
   {
@@ -61730,6 +61799,44 @@
       2011,
       2012,
       2013
+    ],
+    "allClubs": [
+      {
+        "klub_id": "3700",
+        "klubnavn": "Brøndby IF",
+        "latitude": 55.6491,
+        "longitude": 12.4176,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_3700.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "1675",
+        "klubnavn": "Knudsker IF",
+        "latitude": 55.0925,
+        "longitude": 14.7252,
+        "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "Køge Boldklub",
+        "latitude": 55.4681,
+        "longitude": 12.1778,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/9/97/K%C3%B8ge_BK.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "1191",
+        "klubnavn": "Ringsted Pigefodbold",
+        "latitude": 55.4458,
+        "longitude": 11.807,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_1191.jpg",
+        "team_qid": null
+      }
     ]
   },
   {

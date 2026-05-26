@@ -129,9 +129,9 @@
   </div>
 </div>
 
-<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
-const clubs = [];
+const clubs = [{"navn": "Ringsted Pigefodbold", "lat": 55.4458, "lng": 11.807, "barndom": true, "logo": "logos/klub_1191.jpg"}, {"navn": "Boldklubben Femina", "lat": 55.735, "lng": 12.495, "barndom": false, "logo": ""}];
 const birthMarker = {"lat": 55.445842, "lng": 11.806972, "navn": "Ringsted"};
 
 const map = L.map('player-map', { zoomControl: true });

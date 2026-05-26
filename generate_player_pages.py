@@ -819,7 +819,7 @@ def render_page(p):
   </div>
 </div>
 
-<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = {map_clubs_json};
 const birthMarker = {birth_marker_json};

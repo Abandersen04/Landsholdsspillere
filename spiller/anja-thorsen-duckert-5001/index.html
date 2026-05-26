@@ -233,9 +233,9 @@
   </div>
 </div>
 
-<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
-const clubs = [];
+const clubs = [{"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Knudsker IF", "lat": 55.0925, "lng": 14.7252, "barndom": false, "logo": ""}, {"navn": "Køge Boldklub", "lat": 55.4681, "lng": 12.1778, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/9/97/K%C3%B8ge_BK.png"}, {"navn": "Ringsted Pigefodbold", "lat": 55.4458, "lng": 11.807, "barndom": true, "logo": "logos/klub_1191.jpg"}];
 const birthMarker = {"lat": 55.445842, "lng": 11.806972, "navn": "Ringsted"};
 
 const map = L.map('player-map', { zoomControl: true });
