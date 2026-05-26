@@ -10,6 +10,7 @@
   <meta property="og:title" content="Janni Thomsen – Landsholdskortet">
   <meta property="og:description" content="Janni Thomsen spillede 57 A-landskampe og scorede 11 mål for Danmark. Barndomsklub: Kjellerup IF. Fødested: Kjellerup.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/janni-thomsen-7561/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Janni%20Thomsen.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/janni-thomsen-7561/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Kjellerup"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Janni%20Thomsen.jpg"
 }
   </script>
   <style>
@@ -223,7 +225,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Kjellerup IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/lars-bastrup-3614/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Lars Bastrup</a></div>
+    <a href="/?q=Kjellerup IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Janni Thomsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -231,7 +239,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Team Viborg", "lat": 56.4334, "lng": 9.3715, "barndom": false, "logo": "logos/klub_3850.png"}, {"navn": "Vejlby Skovbakken Aarhus", "lat": 56.1933, "lng": 10.208, "barndom": false, "logo": "logos/klub_431.png"}, {"navn": "Vålerenga IF", "lat": 59.918, "lng": 10.8061, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/V%C3%A5lerenga_Oslo_logo.svg/500px-V%C3%A5lerenga_Oslo_logo.svg.png"}, {"navn": "Vålerenga Fotball Damer", "lat": 59.9133, "lng": 10.7389, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/V%C3%A5lerenga_Oslo_logo.svg/500px-V%C3%A5lerenga_Oslo_logo.svg.png"}];
 const birthMarker = {"lat": 56.2847, "lng": 9.4331, "navn": "Kjellerup"};

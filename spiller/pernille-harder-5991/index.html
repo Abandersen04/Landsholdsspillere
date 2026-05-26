@@ -10,6 +10,7 @@
   <meta property="og:title" content="Pernille Harder – Landsholdskortet">
   <meta property="og:description" content="Pernille Harder spillede 171 A-landskampe og scorede 83 mål for Danmark. Barndomsklub: Tulstrup-Faurholt IK. Fødested: Ikast.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/pernille-harder-5991/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/20170706%20OEFB%20AUT-DEN%20Pernille%20Harder%20DSC%208228.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/pernille-harder-5991/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Ikast"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20170706%20OEFB%20AUT-DEN%20Pernille%20Harder%20DSC%208228.jpg"
 }
   </script>
   <style>
@@ -234,7 +236,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Pernille Harder" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -242,7 +246,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Skovbakken IK OB", "lat": 56.1944, "lng": 10.2068, "barndom": false, "logo": "logos/klub_3246.png"}, {"navn": "Tulstrup-Faurholt IK", "lat": 56.1645, "lng": 9.1554, "barndom": true, "logo": "logos/klub_362.png"}, {"navn": "Team Viborg", "lat": 56.4334, "lng": 9.3715, "barndom": false, "logo": "logos/klub_3850.png"}, {"navn": "VfL Wolfsburg (women)", "lat": 52.4231, "lng": 10.7872, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/VfL_Wolfsburg_Logo.svg/500px-VfL_Wolfsburg_Logo.svg.png"}, {"navn": "FC Bayern Munich (women)", "lat": 48.1375, "lng": 11.575, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/960px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png"}, {"navn": "Linköpings FC", "lat": 58.4181, "lng": 15.6492, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Link%C3%B6ping_FC%2C_logo.svg/120px-Link%C3%B6ping_FC%2C_logo.svg.png"}, {"navn": "Chelsea F.C. Women", "lat": 51.4051, "lng": -0.2819, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/250px-Chelsea_FC.svg.png"}];
 const birthMarker = {"lat": 56.1356, "lng": 9.1547, "navn": "Ikast"};

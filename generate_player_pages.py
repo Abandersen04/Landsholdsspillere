@@ -49,6 +49,15 @@ def build_rankings(players):
 build_rankings(players)
 player_by_id = {str(p.get("dbuID") or ""): p for p in players}
 
+# ── Byg klub-index: normaliseret klubnavn → liste af spillere ─────
+from collections import defaultdict as _dd
+_klub_index = _dd(list)
+for _p in players:
+    _k = (_p.get("klubnavn") or "").strip()
+    if _k:
+        _klub_index[_k].append(_p)
+KLUB_INDEX = dict(_klub_index)
+
 # ── Hjælpefunktioner ─────────────────────────────────────────
 def slugify(text):
     text = str(text or "").lower()
@@ -604,6 +613,7 @@ def render_page(p):
     elif wiki_en: ld["sameAs"] = wiki_en
     if bday: ld["birthDate"] = bday
     if fødested: ld["birthPlace"] = {"@type": "Place", "name": fødested}
+    if image: ld["image"] = image
     ld_json = json.dumps(ld, ensure_ascii=False, indent=2)
 
     # Kortdata til Leaflet
@@ -674,6 +684,27 @@ def render_page(p):
     debut_html  = f'<div class="stat"><div class="stat-n">{debut_år}</div><div class="stat-l">Debut</div></div>' if debut_år else ""
     bio_tekst   = generer_tekst(p)
 
+    # Interne links: andre spillere fra samme barndomsklub (maks 6)
+    klubfæller = [
+        q for q in KLUB_INDEX.get(klub, [])
+        if str(q.get("dbuID") or "") != dbu_id and q.get("playerLabel")
+    ]
+    klubfæller.sort(key=lambda q: -int(q.get("n_matches") or 0))
+    klubfæller = klubfæller[:6]
+    if klubfæller:
+        links_html = "".join(
+            f'<a href="/spiller/{slugify(q["playerLabel"])}-{q["dbuID"]}/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">'
+            f'{q["playerLabel"]}</a>'
+            for q in klubfæller
+        )
+        interne_links_html = f'''<div class="card" style="margin-top:20px">
+    <h2>Andre fra {klub}</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px">{links_html}</div>
+    <a href="/?q={klub}" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>'''
+    else:
+        interne_links_html = ""
+
     return f"""<!DOCTYPE html>
 <html lang="da">
 <head>
@@ -686,6 +717,7 @@ def render_page(p):
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description}">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/{slug}/">
+  {'<meta property="og:image" content="' + image + '">' if image else '<meta property="og:image" content="https://landsholdskortet.dk/og-image.png">'}
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/{slug}/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -777,7 +809,9 @@ def render_page(p):
 
   {karrierekurve_html}
 
-  <div class="card">
+  {interne_links_html}
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q={navn}" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -785,7 +819,7 @@ def render_page(p):
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = {map_clubs_json};
 const birthMarker = {birth_marker_json};
@@ -877,6 +911,13 @@ today = date.today().isoformat()
 urls = ['  <url>\n    <loc>https://landsholdskortet.dk/</loc>\n'
         f'    <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n'
         '    <priority>1.0</priority>\n  </url>']
+
+for static_path, prio in [("/rekordlister/", "0.9"), ("/landsholdskurven/", "0.9"), ("/toplister/", "0.7")]:
+    urls.append(
+        f'  <url>\n    <loc>https://landsholdskortet.dk{static_path}</loc>\n'
+        f'    <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n'
+        f'    <priority>{prio}</priority>\n  </url>'
+    )
 
 for p in players:
     navn   = p.get("playerLabel") or ""

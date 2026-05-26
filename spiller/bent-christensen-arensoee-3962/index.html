@@ -10,6 +10,7 @@
   <meta property="og:title" content="Bent Christensen Arensøe – Landsholdskortet">
   <meta property="og:description" content="Bent Christensen Arensøe spillede 26 A-landskampe og scorede 8 mål for Danmark. Barndomsklub: Brønshøj Boldklub. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/bent-christensen-arensoee-3962/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Bent-christensen-2004.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/bent-christensen-arensoee-3962/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bent-christensen-2004.jpg"
 }
   </script>
   <style>
@@ -222,7 +224,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Brønshøj Boldklub</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/per-roentved-3359/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Per Røntved</a><a href="/spiller/kent-nielsen-3996/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kent Nielsen</a><a href="/spiller/kim-christofte-4031/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kim Christofte</a><a href="/spiller/ove-andersen-2965/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ove Andersen</a><a href="/spiller/michael-manniche-3820/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Michael Manniche</a><a href="/spiller/preben-arentoft-3180/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Preben Arentoft</a></div>
+    <a href="/?q=Brønshøj Boldklub" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Bent Christensen Arensøe" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -230,7 +238,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Brønshøj Boldklub", "lat": 55.7188, "lng": 12.4923, "barndom": true, "logo": "logos/klub_1543.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Vejle Boldklub", "lat": 55.7142, "lng": 9.5561, "barndom": false, "logo": "logos/klub_3718.png"}, {"navn": "Olympiacos F.C.", "lat": 37.943, "lng": 23.6469, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Olympiacos_FC_crest.svg/330px-Olympiacos_FC_crest.svg.png"}, {"navn": "Servette FC", "lat": 46.2, "lng": 6.15, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Servette_FC_crest.svg/330px-Servette_FC_crest.svg.png"}, {"navn": "FC Schalke 04", "lat": 51.5103, "lng": 7.0942, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/FC_Schalke_04_Logo.svg/960px-FC_Schalke_04_Logo.svg.png"}, {"navn": "Gençlerbirliği S.K.", "lat": 39.98, "lng": 32.6139, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Gen%C3%A7lerbirli%C4%9Fi_S.K._crest.svg/330px-Gen%C3%A7lerbirli%C4%9Fi_S.K._crest.svg.png"}, {"navn": "SD Compostela", "lat": 42.8833, "lng": -8.5333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/7/7e/SD_Compostela.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

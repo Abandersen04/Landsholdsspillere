@@ -10,6 +10,7 @@
   <meta property="og:title" content="Søren Larsen – Landsholdskortet">
   <meta property="og:description" content="Søren Larsen spillede 20 A-landskampe og scorede 11 mål for Danmark. Barndomsklub: Køge BK. Fødested: Køge.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/soeren-larsen-4479/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/S04%20Soren%20Larsen%2001.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/soeren-larsen-4479/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Køge"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/S04%20Soren%20Larsen%2001.jpg"
 }
   </script>
   <style>
@@ -222,7 +224,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Køge BK</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/erik-pondal-jensen-2947/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Erik Pondal Jensen</a><a href="/spiller/poul-erik-petersen-2863/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Poul Erik Petersen</a><a href="/spiller/keld-pedersen-3184/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Keld Pedersen</a><a href="/spiller/edvin-hansen-2820/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Edvin Hansen</a><a href="/spiller/karl-hansen-3162/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Karl Hansen</a><a href="/spiller/peter-poulsen-3664/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Peter Poulsen</a></div>
+    <a href="/?q=Køge BK" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Søren Larsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -230,7 +238,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Køge BK", "lat": 55.4682, "lng": 12.1772, "barndom": true, "logo": "logos/klub_1133.png"}, {"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "barndom": false, "logo": "logos/klub_1552.png"}, {"navn": "AGF", "lat": 56.1322, "lng": 10.1937, "barndom": false, "logo": "logos/klub_3699.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Feyenoord", "lat": 51.92, "lng": 4.48, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Feyenoord_logo_since_2024.svg/960px-Feyenoord_logo_since_2024.svg.png"}, {"navn": "MSV Duisburg", "lat": 51.4322, "lng": 6.7611, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Msv_duisburg%28new%29.svg/330px-Msv_duisburg%28new%29.svg.png"}, {"navn": "Toulouse FC", "lat": 43.6044, "lng": 1.4433, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Toulouse_FC_2018_logo.svg/330px-Toulouse_FC_2018_logo.svg.png"}, {"navn": "FC Schalke 04", "lat": 51.5103, "lng": 7.0942, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/FC_Schalke_04_Logo.svg/960px-FC_Schalke_04_Logo.svg.png"}, {"navn": "Djurgårdens IF", "lat": 59.3453, "lng": 18.0789, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Djurgardens_IF_logo.svg/330px-Djurgardens_IF_logo.svg.png"}];
 const birthMarker = {"lat": 55.45, "lng": 12.183333333, "navn": "Køge"};

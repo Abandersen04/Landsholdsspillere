@@ -10,6 +10,7 @@
   <meta property="og:title" content="Kjeld Thorst – Landsholdskortet">
   <meta property="og:description" content="Kjeld Thorst spillede 26 A-landskampe og scorede 6 mål for Danmark. Barndomsklub: Skovsgaard B. Fødested: Øster Svenstrup.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/kjeld-thorst-3151/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Kjeld%20Thorst%20%281966%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/kjeld-thorst-3151/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Øster Svenstrup"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kjeld%20Thorst%20%281966%29.jpg"
 }
   </script>
   <style>
@@ -223,7 +225,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Kjeld Thorst" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -231,7 +235,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Ranum IF", "lat": 56.8992, "lng": 9.2338, "barndom": false, "logo": "logos/klub_108.png"}, {"navn": "Aalborg Boldklub", "lat": 57.0434, "lng": 10.0196, "barndom": false, "logo": "logos/klub_2.png"}, {"navn": "Aalborg Boldklub", "lat": 57.0436, "lng": 10.0208, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"}, {"navn": "Skovsgaard B", "lat": 57.0832, "lng": 9.4866, "barndom": true, "logo": "https://file.dbu.dk/images/club/122/Skovsgaard_B.png"}];
 const birthMarker = {"lat": 57.095480525616, "lng": 9.47614004692759, "navn": "Øster Svenstrup"};

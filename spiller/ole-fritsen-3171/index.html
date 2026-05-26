@@ -10,6 +10,7 @@
   <meta property="og:title" content="Ole Fritsen – Landsholdskortet">
   <meta property="og:description" content="Ole Fritsen spillede 6 A-landskampe og scorede 3 mål for Danmark. Barndomsklub: Brande IF. Fødested: Give.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/ole-fritsen-3171/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Ole%20Fritsen%20%281966%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/ole-fritsen-3171/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Give"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ole%20Fritsen%20%281966%29.jpg"
 }
   </script>
   <style>
@@ -226,7 +228,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Brande IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/rasmus-nissen-7193/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Rasmus Nissen</a><a href="/spiller/ejner-eg-rahbek-3911/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ejner Eg Rahbek</a><a href="/spiller/ernst-nielsen-2644/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ernst Nielsen</a><a href="/spiller/leon-jessen-4865/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Leon Jessen</a></div>
+    <a href="/?q=Brande IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Ole Fritsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -234,7 +242,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Brande IF", "lat": 55.9392, "lng": 9.1186, "barndom": true, "logo": "logos/klub_210.png"}, {"navn": "Vejle Boldklub", "lat": 55.7142, "lng": 9.5561, "barndom": false, "logo": "logos/klub_3718.png"}, {"navn": "F.C. Groningen", "lat": 53.2189, "lng": 6.5675, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/FC_Groningen_logo.svg/960px-FC_Groningen_logo.svg.png"}];
 const birthMarker = {"lat": 55.8439, "lng": 9.2383, "navn": "Give"};

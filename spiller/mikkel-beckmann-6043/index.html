@@ -10,6 +10,7 @@
   <meta property="og:title" content="Mikkel Beckmann – Landsholdskortet">
   <meta property="og:description" content="Mikkel Beckmann spillede 7 A-landskampe for Danmark. Barndomsklub: Brede IF. Fødested: Virum.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/mikkel-beckmann-6043/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Mikkel%20Beckmann.JPG">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/mikkel-beckmann-6043/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Virum"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mikkel%20Beckmann.JPG"
 }
   </script>
   <style>
@@ -220,7 +222,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Mikkel Beckmann" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -228,7 +232,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Lyngby Boldklub 1921", "lat": 55.7822, "lng": 12.5065, "barndom": false, "logo": "logos/klub_1146.png"}, {"navn": "Virum-Sorgenfri BK", "lat": 55.7856, "lng": 12.4698, "barndom": false, "logo": "logos/klub_1313.png"}, {"navn": "Boldklubben af 1893", "lat": 55.7138, "lng": 12.5825, "barndom": false, "logo": "logos/klub_1532.png"}, {"navn": "Boldklubben 1903", "lat": 55.731, "lng": 12.5478, "barndom": false, "logo": "logos/klub_1533.jpg"}, {"navn": "Brønshøj Boldklub", "lat": 55.7188, "lng": 12.4923, "barndom": false, "logo": "logos/klub_1543.png"}, {"navn": "Hellerup Idræts Klub", "lat": 55.7436, "lng": 12.5659, "barndom": false, "logo": "logos/klub_1562.png"}, {"navn": "FC Nordsjælland", "lat": 55.8161, "lng": 12.3514, "barndom": false, "logo": "logos/klub_3702.png"}, {"navn": "Randers FC", "lat": 56.4656, "lng": 10.0096, "barndom": false, "logo": "logos/klub_3707.png"}, {"navn": "Brede IF", "lat": 55.7948, "lng": 12.5062, "barndom": true, "logo": "logos/klub_975.png"}, {"navn": "APOEL F.C.", "lat": 35.1725, "lng": 33.365, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/APOEL_%28logo_with_stars%29.svg/60px-APOEL_%28logo_with_stars%29.svg.png"}, {"navn": "IF Elfsborg", "lat": 57.7171, "lng": 12.9457, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/IF_Elfsborg_logo.svg/330px-IF_Elfsborg_logo.svg.png"}];
 const birthMarker = {"lat": 55.7917, "lng": 12.4597, "navn": "Virum"};

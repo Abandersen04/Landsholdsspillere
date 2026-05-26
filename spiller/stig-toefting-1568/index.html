@@ -10,6 +10,7 @@
   <meta property="og:title" content="Stig Tøfting – Landsholdskortet">
   <meta property="og:description" content="Stig Tøfting spillede 41 A-landskampe og scorede 2 mål for Danmark. Barndomsklub: ASA, Aarhus. Fødested: Hørning.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/stig-toefting-1568/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/FC%20K%C3%B8benhavn%20-%20Aab%2C%2022.%20May%202022%20-%20tv%20kommentatorerne.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/stig-toefting-1568/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Hørning"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/FC%20K%C3%B8benhavn%20-%20Aab%2C%2022.%20May%202022%20-%20tv%20kommentatorerne.jpg"
 }
   </script>
   <style>
@@ -226,7 +228,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra ASA, Aarhus</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/katrine-korsgaard-5370/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Katrine Korsgaard</a><a href="/spiller/jens-stage-7428/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Jens Stage</a></div>
+    <a href="/?q=ASA, Aarhus" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Stig Tøfting" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -234,7 +242,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Odense Boldklub", "lat": 55.3846, "lng": 10.3743, "barndom": false, "logo": "logos/klub_1458.png"}, {"navn": "AGF", "lat": 56.1322, "lng": 10.1937, "barndom": false, "logo": "logos/klub_3699.png"}, {"navn": "Randers FC", "lat": 56.4656, "lng": 10.0096, "barndom": false, "logo": "logos/klub_3707.png"}, {"navn": "ASA, Aarhus", "lat": 56.1436, "lng": 10.1955, "barndom": true, "logo": "logos/klub_423.png"}, {"navn": "MSV Duisburg", "lat": 51.4322, "lng": 6.7611, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Msv_duisburg%28new%29.svg/330px-Msv_duisburg%28new%29.svg.png"}, {"navn": "Bolton Wanderers F.C.", "lat": 53.592, "lng": -2.54, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Bolton_Wanderers_FC_logo.svg/330px-Bolton_Wanderers_FC_logo.svg.png"}, {"navn": "Hamburger SV", "lat": 53.55, "lng": 10.0, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Hamburger_SV_logo.svg/960px-Hamburger_SV_logo.svg.png"}, {"navn": "Tianjin Jinmen Tiger F.C.", "lat": 39.0305, "lng": 117.719, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Tianjin_Jinmen_Tiger_F.C.svg/330px-Tianjin_Jinmen_Tiger_F.C.svg.png"}, {"navn": "BK Häcken", "lat": 57.7189, "lng": 11.9308, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/BK_Hacken_logo.svg/120px-BK_Hacken_logo.svg.png"}];
 const birthMarker = {"lat": 56.085, "lng": 10.036388888, "navn": "Hørning"};

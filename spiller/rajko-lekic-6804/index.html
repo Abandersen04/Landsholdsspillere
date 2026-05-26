@@ -10,6 +10,7 @@
   <meta property="og:title" content="Rajko Lekic – Landsholdskortet">
   <meta property="og:description" content="Rajko Lekic spillede 1 A-landskampe for Danmark. Barndomsklub: Boldklubben af 1893. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/rajko-lekic-6804/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/rajko-lekic-6804/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -217,7 +218,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Boldklubben af 1893</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/niclas-jensen-2304/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Niclas Jensen</a><a href="/spiller/daniel-jensen-4228/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Daniel Jensen</a><a href="/spiller/svend-aage-julius-jensen-2537/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Svend Aage Julius Jensen</a><a href="/spiller/michael-rohde-2416/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Michael Rohde</a><a href="/spiller/mathias-zanka-joergensen-5385/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Mathias "Zanka" Jørgensen</a><a href="/spiller/christian-groethan-2420/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Christian Grøthan</a></div>
+    <a href="/?q=Boldklubben af 1893" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Rajko Lekic" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -225,7 +232,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Herfølge BK", "lat": 55.4137, "lng": 12.135, "barndom": false, "logo": "logos/klub_1066.png"}, {"navn": "Odense Boldklub", "lat": 55.3846, "lng": 10.3743, "barndom": false, "logo": "logos/klub_1458.png"}, {"navn": "Boldklubben af 1893", "lat": 55.7138, "lng": 12.5825, "barndom": true, "logo": "logos/klub_1532.png"}, {"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "Ballerup-Skovlunde Fodbold (BSF)", "lat": 55.7161, "lng": 12.3734, "barndom": false, "logo": "https://bsfodbold.dk/images/logo.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Avarta", "lat": 55.6756, "lng": 12.4304, "barndom": false, "logo": "logos/klub_3720.png"}, {"navn": "FC Roskilde", "lat": 55.6369, "lng": 12.0702, "barndom": false, "logo": "logos/klub_3731.png"}, {"navn": "Silkeborg IF", "lat": 56.1841, "lng": 9.5755, "barndom": false, "logo": "logos/klub_632.png"}, {"navn": "Esbjerg fB", "lat": 55.4868, "lng": 8.436, "barndom": false, "logo": "logos/klub_785.png"}, {"navn": "Xerez CD", "lat": 36.7, "lng": -6.1167, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/5/50/Xerez_CD_logo.png"}, {"navn": "Zalaegerszegi TE", "lat": 46.8392, "lng": 16.8511, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1e/Zalaegerszegi_TE_logo.svg/250px-Zalaegerszegi_TE_logo.svg.png"}, {"navn": "New England Revolution", "lat": 42.065, "lng": -71.25, "barndom": false, "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/New%20England%20Revolution%20wordmark%202022.svg"}, {"navn": "Fremad Amager", "lat": 55.6493, "lng": 12.6016, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png"}, {"navn": "Lyngby Boldklub", "lat": 55.7821, "lng": 12.5064, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

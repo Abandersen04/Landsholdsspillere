@@ -10,6 +10,7 @@
   <meta property="og:title" content="Christian Eriksen – Landsholdskortet">
   <meta property="og:description" content="Christian Eriksen spillede 149 A-landskampe og scorede 46 mål for Danmark. Barndomsklub: Middelfart G&BK. Fødested: Middelfart.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/christian-eriksen-5999/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/20140904%20-%20Christian%20Eriksen%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/christian-eriksen-5999/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Middelfart"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20140904%20-%20Christian%20Eriksen%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -233,7 +235,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Middelfart G&BK</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/katrine-veje-5895/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Katrine Veje</a><a href="/spiller/bent-outzen-3396/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Bent Outzen</a><a href="/spiller/knud-herbert-soerensen-3666/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Knud Herbert Sørensen</a><a href="/spiller/knud-herbert-soerensen-3024/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Knud Herbert Sørensen</a><a href="/spiller/rasmus-falk-jensen-6021/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Rasmus Falk Jensen</a></div>
+    <a href="/?q=Middelfart G&BK" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Christian Eriksen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -241,7 +249,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Middelfart G&BK", "lat": 55.5002, "lng": 9.7603, "barndom": true, "logo": "https://file.dbu.dk/images/club/1447/MG_&_BK.png"}, {"navn": "Odense Boldklub", "lat": 55.3846, "lng": 10.3743, "barndom": false, "logo": "logos/klub_1458.png"}, {"navn": "VfL Wolfsburg", "lat": 52.4231, "lng": 10.7872, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/VfL_Wolfsburg_Logo.svg/500px-VfL_Wolfsburg_Logo.svg.png"}, {"navn": "Manchester United F.C.", "lat": 53.4667, "lng": -2.2333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/330px-Manchester_United_FC_crest.svg.png"}, {"navn": "Tottenham Hotspur F.C.", "lat": 51.6, "lng": -0.1119, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/120px-Tottenham_Hotspur.svg.png"}, {"navn": "Brentford F.C.", "lat": 51.5072, "lng": -0.1275, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/330px-Brentford_FC_crest.svg.png"}, {"navn": "AFC Ajax", "lat": 52.3667, "lng": 4.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_AFC_Ajax_%281928-1991%2C_2025-%29.png"}, {"navn": "FC Internazionale Milano", "lat": 45.4669, "lng": 9.19, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/960px-FC_Internazionale_Milano_2021.svg.png"}];
 const birthMarker = {"lat": 55.505833333, "lng": 9.730555555, "navn": "Middelfart"};

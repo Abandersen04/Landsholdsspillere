@@ -10,6 +10,7 @@
   <meta property="og:title" content="Thomas Augustinussen – Landsholdskortet">
   <meta property="og:description" content="Thomas Augustinussen spillede 2 A-landskampe for Danmark. Barndomsklub: Aabybro IF. Fødested: Svendborg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/thomas-augustinussen-4248/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Augustinussen.JPG">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/thomas-augustinussen-4248/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Svendborg"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Augustinussen.JPG"
 }
   </script>
   <style>
@@ -218,7 +220,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Thomas Augustinussen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -226,7 +230,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Aabybro IF", "lat": 57.1613, "lng": 9.7199, "barndom": true, "logo": "logos/klub_1.png"}, {"navn": "Aalborg Boldklub", "lat": 57.0434, "lng": 10.0196, "barndom": false, "logo": "logos/klub_2.png"}, {"navn": "Aalborg Boldklub", "lat": 57.0436, "lng": 10.0208, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"}, {"navn": "FC Red Bull Salzburg", "lat": 47.8, "lng": 13.045, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/FC_Red_Bull_Salzburg_logo.svg/330px-FC_Red_Bull_Salzburg_logo.svg.png"}];
 const birthMarker = {"lat": 55.059722222, "lng": 10.61, "navn": "Svendborg"};

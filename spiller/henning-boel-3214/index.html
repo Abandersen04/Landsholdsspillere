@@ -10,6 +10,7 @@
   <meta property="og:title" content="Henning Boel – Landsholdskortet">
   <meta property="og:description" content="Henning Boel spillede 15 A-landskampe for Danmark. Barndomsklub: Ikast FS. Fødested: Ikast.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/henning-boel-3214/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/henning-boel-3214/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -222,7 +223,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Ikast FS</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/kristian-mosegaard-3005/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kristian Mosegaard</a></div>
+    <a href="/?q=Ikast FS" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Henning Boel" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -230,7 +237,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Ikast FS", "lat": 56.1447, "lng": 9.1423, "barndom": true, "logo": "logos/klub_266.png"}, {"navn": "Boston Minutemen", "lat": 42.335, "lng": -71.1664, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/9/9f/BostonMinutemen.png"}, {"navn": "Aberdeen F.C.", "lat": 57.15, "lng": -2.1, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Aberdeen_FC_stars_crest.svg/250px-Aberdeen_FC_stars_crest.svg.png"}, {"navn": "Boston Beacons", "lat": 42.3603, "lng": -71.0578, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/c/c6/Boston_beacons_logo.png"}, {"navn": "Washington Whips", "lat": 38.89, "lng": -76.9719, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/8/8d/Washington_Whips.png"}];
 const birthMarker = {"lat": 56.1356, "lng": 9.1547, "navn": "Ikast"};

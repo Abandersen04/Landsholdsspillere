@@ -10,6 +10,7 @@
   <meta property="og:title" content="Martin Albrechtsen – Landsholdskortet">
   <meta property="og:description" content="Martin Albrechtsen spillede 4 A-landskampe for Danmark. Barndomsklub: Måløv BK. Fødested: Værløse.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/martin-albrechtsen-4210/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Martin%20Albrechtsen.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/martin-albrechtsen-4210/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Værløse"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Martin%20Albrechtsen.jpg"
 }
   </script>
   <style>
@@ -222,7 +224,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Måløv BK</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/nicoline-soerensen-6947/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Nicoline Sørensen</a><a href="/spiller/cecilie-soerensen-5290/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Cecilie Sørensen</a></div>
+    <a href="/?q=Måløv BK" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Martin Albrechtsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -230,7 +238,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Måløv BK", "lat": 55.7503, "lng": 12.3241, "barndom": true, "logo": "logos/klub_1160.png"}, {"navn": "Boldklubben Fremad Valby", "lat": 55.6468, "lng": 12.5101, "barndom": false, "logo": "https://file.dbu.dk/images/club/1554/Boldklubben_Fremad_Valby.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "FC Midtjylland", "lat": 56.117, "lng": 8.9509, "barndom": false, "logo": "https://file.dbu.dk/images/club/3705/FC_Midtjylland.png"}, {"navn": "AC Horsens", "lat": 55.8716, "lng": 9.8562, "barndom": false, "logo": "logos/klub_3715.png"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}, {"navn": "VB 1968", "lat": 55.76, "lng": 12.455, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/8/83/FC_Gladsaxe_logo.png"}, {"navn": "West Bromwich Albion F.C.", "lat": 52.5167, "lng": -1.9833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/West_Bromwich_Albion.svg/330px-West_Bromwich_Albion.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Derby County F.C.", "lat": 52.9217, "lng": -1.4767, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Derby_County_crest.svg/500px-Derby_County_crest.svg.png"}, {"navn": "Avarta", "lat": 55.6814, "lng": 12.455, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Logo_of_BK_Avarta.svg/960px-Logo_of_BK_Avarta.svg.png"}];
 const birthMarker = {"lat": 55.7828, "lng": 12.37, "navn": "Værløse"};

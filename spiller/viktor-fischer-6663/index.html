@@ -10,6 +10,7 @@
   <meta property="og:title" content="Viktor Fischer – Landsholdskortet">
   <meta property="og:description" content="Viktor Fischer spillede 21 A-landskampe og scorede 3 mål for Danmark. Barndomsklub: IF Lyseng. Fødested: Aarhus.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/viktor-fischer-6663/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Viktor-fischer-1379795691-crop.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/viktor-fischer-6663/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Aarhus"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Viktor-fischer-1379795691-crop.jpg"
 }
   </script>
   <style>
@@ -223,7 +225,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra IF Lyseng</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/susan-mackensie-4441/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Susan Mackensie</a></div>
+    <a href="/?q=IF Lyseng" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Viktor Fischer" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -231,7 +239,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "AGF", "lat": 56.1322, "lng": 10.1937, "barndom": false, "logo": "logos/klub_3699.png"}, {"navn": "FC Midtjylland", "lat": 56.117, "lng": 8.9509, "barndom": false, "logo": "https://file.dbu.dk/images/club/3705/FC_Midtjylland.png"}, {"navn": "IF Lyseng", "lat": 56.1122, "lng": 10.1939, "barndom": true, "logo": "logos/klub_586.png"}, {"navn": "Viby IF", "lat": 56.1261, "lng": 10.1576, "barndom": false, "logo": "logos/klub_691.png"}, {"navn": "1. FSV Mainz 05", "lat": 49.9994, "lng": 8.2736, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/1._FSV_Mainz_05_logo.svg/330px-1._FSV_Mainz_05_logo.svg.png"}, {"navn": "Middlesbrough F.C.", "lat": 54.5739, "lng": -1.2333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Middlesbrough_FC_crest.svg/250px-Middlesbrough_FC_crest.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "AIK Fotboll", "lat": 59.3294, "lng": 18.0686, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/AIK_logo.svg/330px-AIK_logo.svg.png"}, {"navn": "AFC Ajax", "lat": 52.3667, "lng": 4.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_AFC_Ajax_%281928-1991%2C_2025-%29.png"}, {"navn": "Royal Antwerp F.C.", "lat": 51.2211, "lng": 4.3997, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Royal_Antwerp_Football_Club_logo.svg/250px-Royal_Antwerp_Football_Club_logo.svg.png"}];
 const birthMarker = {"lat": 56.156388888, "lng": 10.209722222, "navn": "Aarhus"};

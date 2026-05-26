@@ -10,6 +10,7 @@
   <meta property="og:title" content="John Angelo Hansen – Landsholdskortet">
   <meta property="og:description" content="John Angelo Hansen spillede 8 A-landskampe og scorede 10 mål for Danmark. Barndomsklub: Boldklubben Frem. Fødested: Frederiksberg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/john-angelo-hansen-2822/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/John%20Hansen%20-%20Juventus%20FC.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/john-angelo-hansen-2822/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Frederiksberg"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Hansen%20-%20Juventus%20FC.jpg"
 }
   </script>
   <style>
@@ -217,7 +219,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Boldklubben Frem</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/kaj-uldaler-2539/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kaj Uldaler</a><a href="/spiller/sophus-hansen-2382/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Sophus Hansen</a><a href="/spiller/leif-nielsen-3154/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Leif Nielsen</a><a href="/spiller/lars-larsen-3583/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Lars Larsen</a><a href="/spiller/knud-christophersen-2560/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Knud Christophersen</a><a href="/spiller/sophus-nielsen-968/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Sophus Nielsen</a></div>
+    <a href="/?q=Boldklubben Frem" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=John Angelo Hansen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -225,7 +233,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "barndom": true, "logo": "logos/klub_1552.png"}, {"navn": "Juventus F.C.", "lat": 45.0792, "lng": 7.6761, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/250px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png"}, {"navn": "S.S. Lazio", "lat": 42.0833, "lng": 12.4, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/S.S._Lazio_badge.svg/250px-S.S._Lazio_badge.svg.png"}];
 const birthMarker = {"lat": 55.6779, "lng": 12.5327, "navn": "Frederiksberg"};

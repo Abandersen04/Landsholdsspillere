@@ -10,6 +10,7 @@
   <meta property="og:title" content="John Sivebæk – Landsholdskortet">
   <meta property="og:description" content="John Sivebæk spillede 87 A-landskampe og scorede 1 mål for Danmark. Barndomsklub: Vejle Boldklub. Fødested: Vejle.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/john-sivebaek-3826/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/john-sivebaek-3826/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -227,7 +228,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Vejle Boldklub</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/brian-steen-nielsen-1580/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Brian Steen Nielsen</a><a href="/spiller/johnny-terney-hansen-3196/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Johnny Terney Hansen</a><a href="/spiller/ulrik-le-fevre-3205/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ulrik le Fevre</a><a href="/spiller/troels-rasmussen-3893/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Troels Rasmussen</a><a href="/spiller/poul-jensen-3041/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Poul Jensen</a><a href="/spiller/kristine-pedersen-4996/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kristine Pedersen</a></div>
+    <a href="/?q=Vejle Boldklub" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=John Sivebæk" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -235,7 +242,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "AGF", "lat": 56.1322, "lng": 10.1937, "barndom": false, "logo": "logos/klub_3699.png"}, {"navn": "Vejle Boldklub", "lat": 55.7142, "lng": 9.5561, "barndom": true, "logo": "logos/klub_3718.png"}, {"navn": "AS Monaco", "lat": 43.7306, "lng": 7.4253, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/LogoASMonacoFC2021.svg/250px-LogoASMonacoFC2021.svg.png"}, {"navn": "Manchester United", "lat": 53.4667, "lng": -2.2333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/330px-Manchester_United_FC_crest.svg.png"}, {"navn": "AS Saint-Étienne", "lat": 45.4339, "lng": 4.3897, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/25/AS_Saint-%C3%89tienne_logo.svg/330px-AS_Saint-%C3%89tienne_logo.svg.png"}, {"navn": "Delfino Pescara 1936", "lat": 42.4643, "lng": 14.2142, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Delfino_Pescara_logo.svg/250px-Delfino_Pescara_logo.svg.png"}];
 const birthMarker = {"lat": 55.708333333, "lng": 9.533333333, "navn": "Vejle"};

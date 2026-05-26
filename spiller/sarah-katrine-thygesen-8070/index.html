@@ -10,6 +10,7 @@
   <meta property="og:title" content="Sarah Katrine Thygesen – Landsholdskortet">
   <meta property="og:description" content="Sarah Katrine Thygesen spillede 1 A-landskampe for Danmark. Barndomsklub: Jerne IF. Fødested: Esbjerg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/sarah-katrine-thygesen-8070/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Sarah%20Thygesen%20Kolding%20IF.tif">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/sarah-katrine-thygesen-8070/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Esbjerg"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sarah%20Thygesen%20Kolding%20IF.tif"
 }
   </script>
   <style>
@@ -217,7 +219,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Jerne IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/ole-kjaer-3702/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ole Kjær</a><a href="/spiller/philip-billing-7495/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Philip Billing</a><a href="/spiller/kevin-conboy-7229/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kevin Conboy</a></div>
+    <a href="/?q=Jerne IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Sarah Katrine Thygesen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -225,7 +233,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "HB Køge", "lat": 55.468, "lng": 12.1766, "barndom": false, "logo": "logos/klub_3714.png"}, {"navn": "Esbjerg fB", "lat": 55.4868, "lng": 8.436, "barndom": false, "logo": "logos/klub_785.png"}, {"navn": "Jerne IF", "lat": 55.4762, "lng": 8.4796, "barndom": true, "logo": "logos/klub_833.png"}, {"navn": "Kolding Idræts Forening", "lat": 55.4942, "lng": 9.4592, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/8/86/KoldingIFBadge.png"}];
 const birthMarker = {"lat": 55.470833333, "lng": 8.451388888, "navn": "Esbjerg"};

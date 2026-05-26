@@ -10,6 +10,7 @@
   <meta property="og:title" content="Holger Seebach – Landsholdskortet">
   <meta property="og:description" content="Holger Seebach spillede 17 A-landskampe og scorede 9 mål for Danmark. Barndomsklub: B1913. Fødested: Aarhus.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/holger-seebach-2812/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Elftal%20Denemarken%2C%20Bestanddeelnr%20905-5871.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/holger-seebach-2812/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Aarhus"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Elftal%20Denemarken%2C%20Bestanddeelnr%20905-5871.jpg"
 }
   </script>
   <style>
@@ -223,7 +225,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra B1913</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/karoline-s-nielsen-6779/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Karoline S. Nielsen</a><a href="/spiller/bent-kjaer-jensen-3299/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Bent Kjær Jensen</a><a href="/spiller/erik-lykke-soerensen-3141/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Erik Lykke Sørensen</a><a href="/spiller/kurt-groenning-3131/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kurt Grønning</a><a href="/spiller/ole-steffensen-3314/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ole Steffensen</a><a href="/spiller/kjeld-petersen-3133/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kjeld Petersen</a></div>
+    <a href="/?q=B1913" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Holger Seebach" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -231,7 +239,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "B1913", "lat": 55.3686, "lng": 10.4282, "barndom": true, "logo": "logos/klub_1365.png"}, {"navn": "Odense Boldklub", "lat": 55.3846, "lng": 10.3743, "barndom": false, "logo": "logos/klub_1458.png"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}];
 const birthMarker = {"lat": 56.156388888, "lng": 10.209722222, "navn": "Aarhus"};

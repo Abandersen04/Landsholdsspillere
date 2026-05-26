@@ -10,6 +10,7 @@
   <meta property="og:title" content="Niels-Christian Holmstrøm – Landsholdskortet">
   <meta property="og:description" content="Niels-Christian Holmstrøm spillede 15 A-landskampe og scorede 4 mål for Danmark. Barndomsklub: Kjøbenhavns Boldklub. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/niels-christian-holmstroem-3320/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Holmstroem%20Panini%20%28cropped%29.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/niels-christian-holmstroem-3320/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Holmstroem%20Panini%20%28cropped%29.png"
 }
   </script>
   <style>
@@ -225,7 +227,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Kjøbenhavns Boldklub</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/thomas-delaney-6654/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Thomas Delaney</a><a href="/spiller/valdemar-laursen-2453/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Valdemar Laursen</a><a href="/spiller/ole-qvist-3768/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ole Qvist</a><a href="/spiller/poul-nielsen-2374/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Poul Nielsen</a><a href="/spiller/oscar-joergensen-2575/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Oscar Jørgensen</a><a href="/spiller/ivar-lykke-2388/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ivar Lykke</a></div>
+    <a href="/?q=Kjøbenhavns Boldklub" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Niels-Christian Holmstrøm" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -233,7 +241,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": true, "logo": "logos/klub_1567.png"}, {"navn": "FC Girondins de Bordeaux", "lat": 44.8378, "lng": -0.5794, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/FC_Girondins_de_Bordeaux_logo.svg/330px-FC_Girondins_de_Bordeaux_logo.svg.png"}, {"navn": "ADO den Haag", "lat": 52.08, "lng": 4.31, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/ADO_Den_Haag_logo.svg/330px-ADO_Den_Haag_logo.svg.png"}, {"navn": "HFC Haarlem", "lat": 52.3803, "lng": 4.6406, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/HFC_Haarlem_%28logo%29.svg/330px-HFC_Haarlem_%28logo%29.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

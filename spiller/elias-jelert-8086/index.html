@@ -10,6 +10,7 @@
   <meta property="og:title" content="Elias Jelert – Landsholdskortet">
   <meta property="og:description" content="Elias Jelert spillede 3 A-landskampe for Danmark. Barndomsklub: Virum-Sorgenfri BK. Fødested: Virum.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/elias-jelert-8086/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Vejle%20Boldklub%20-%20FC%20K%C3%B8benhavn%2C%2029.%20July%202023%20-%20opvarmning%20FCK%27s%201.%20hold%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/elias-jelert-8086/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Virum"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Vejle%20Boldklub%20-%20FC%20K%C3%B8benhavn%2C%2029.%20July%202023%20-%20opvarmning%20FCK%27s%201.%20hold%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -218,7 +220,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Virum-Sorgenfri BK</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/john-helt-3889/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">John Helt</a><a href="/spiller/inger-pedersen-4499/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Inger Pedersen</a><a href="/spiller/thomas-kristensen-5911/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Thomas Kristensen</a><a href="/spiller/thomas-rytter-2321/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Thomas Rytter</a><a href="/spiller/soeren-lyng-3993/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Søren Lyng</a><a href="/spiller/elisabeth-brus-4915/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Elisabeth Brus</a></div>
+    <a href="/?q=Virum-Sorgenfri BK" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Elias Jelert" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -226,7 +234,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Virum-Sorgenfri BK", "lat": 55.7856, "lng": 12.4698, "barndom": true, "logo": "logos/klub_1313.png"}, {"navn": "FC København", "lat": 55.7036, "lng": 12.5718, "barndom": false, "logo": "logos/klub_3710.png"}, {"navn": "Southampton F.C.", "lat": 50.9067, "lng": -1.4044, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/FC_Southampton.svg/330px-FC_Southampton.svg.png"}];
 const birthMarker = {"lat": 55.7917, "lng": 12.4597, "navn": "Virum"};

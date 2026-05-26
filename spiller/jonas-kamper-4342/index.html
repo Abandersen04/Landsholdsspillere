@@ -10,6 +10,7 @@
   <meta property="og:title" content="Jonas Kamper – Landsholdskortet">
   <meta property="og:description" content="Jonas Kamper spillede 1 A-landskampe for Danmark. Barndomsklub: Eskilstrup BK. Fødested: Nørre Alslev.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/jonas-kamper-4342/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Jonas%20Kamper%202006.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/jonas-kamper-4342/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Nørre Alslev"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jonas%20Kamper%202006.jpg"
 }
   </script>
   <style>
@@ -217,7 +219,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Jonas Kamper" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -225,7 +229,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Randers FC", "lat": 56.4656, "lng": 10.0096, "barndom": false, "logo": "logos/klub_3707.png"}, {"navn": "Viborg FF", "lat": 56.461, "lng": 9.3891, "barndom": false, "logo": "logos/klub_376.png"}, {"navn": "Nykøbing Falster Alliancen", "lat": 54.7633, "lng": 11.8968, "barndom": false, "logo": "logos/klub_99020.jpg"}, {"navn": "Arminia Bielefeld", "lat": 52.0167, "lng": 8.5333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Arminia_Bielefeld_crest.svg/330px-Arminia_Bielefeld_crest.svg.png"}];
 const birthMarker = {"lat": 54.8975, "lng": 11.8806, "navn": "Nørre Alslev"};

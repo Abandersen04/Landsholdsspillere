@@ -10,6 +10,7 @@
   <meta property="og:title" content="Michael Gravgaard – Landsholdskortet">
   <meta property="og:description" content="Michael Gravgaard spillede 18 A-landskampe og scorede 5 mål for Danmark. Barndomsklub: Spentrup IF. Fødested: Randers.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/michael-gravgaard-5191/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Gravgaard.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/michael-gravgaard-5191/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Randers"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Gravgaard.jpg"
 }
   </script>
   <style>
@@ -219,7 +221,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Michael Gravgaard" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -227,7 +231,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Randers FC", "lat": 56.4656, "lng": 10.0096, "barndom": false, "logo": "logos/klub_3707.png"}, {"navn": "Viborg FF", "lat": 56.461, "lng": 9.3891, "barndom": false, "logo": "logos/klub_376.png"}, {"navn": "Randers Freja", "lat": 56.4656, "lng": 10.0086, "barndom": false, "logo": "logos/klub_610.png"}, {"navn": "Spentrup IF", "lat": 56.5427, "lng": 10.0346, "barndom": true, "logo": "logos/klub_647.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "FC Nantes", "lat": 47.2592, "lng": -1.542, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Logo_FC_Nantes_%28avec_fond%29_-_2019.svg/500px-Logo_FC_Nantes_%28avec_fond%29_-_2019.svg.png"}, {"navn": "Hamburger SV", "lat": 53.55, "lng": 10.0, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Hamburger_SV_logo.svg/960px-Hamburger_SV_logo.svg.png"}];
 const birthMarker = {"lat": 56.456944444, "lng": 10.039166666, "navn": "Randers"};

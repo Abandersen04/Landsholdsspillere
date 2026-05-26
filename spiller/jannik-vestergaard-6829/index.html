@@ -10,6 +10,7 @@
   <meta property="og:title" content="Jannik Vestergaard – Landsholdskortet">
   <meta property="og:description" content="Jannik Vestergaard spillede 59 A-landskampe og scorede 3 mål for Danmark. Barndomsklub: Boldklubben Vestia. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/jannik-vestergaard-6829/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Jannik%20Vestergaard%2024082024.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/jannik-vestergaard-6829/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jannik%20Vestergaard%2024082024.jpg"
 }
   </script>
   <style>
@@ -229,7 +231,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Jannik Vestergaard" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -237,7 +241,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "barndom": false, "logo": "logos/klub_1552.png"}, {"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "Boldklubben Vestia", "lat": 55.6597, "lng": 12.5386, "barndom": true, "logo": "logos/klub_1590.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Borussia Mönchengladbach", "lat": 51.2, "lng": 6.4333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Borussia_M%C3%B6nchengladbach_logo.svg/960px-Borussia_M%C3%B6nchengladbach_logo.svg.png"}, {"navn": "TSG 1899 Hoffenheim II", "lat": 49.2783, "lng": 8.8421, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Logo_TSG_Hoffenheim.svg/960px-Logo_TSG_Hoffenheim.svg.png"}, {"navn": "Southampton F.C.", "lat": 50.9067, "lng": -1.4044, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/FC_Southampton.svg/330px-FC_Southampton.svg.png"}, {"navn": "Leicester City F.C.", "lat": 52.6361, "lng": -1.1331, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Leicester_City_crest.svg/330px-Leicester_City_crest.svg.png"}, {"navn": "TSG 1899 Hoffenheim", "lat": 49.25, "lng": 8.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Logo_TSG_Hoffenheim.svg/960px-Logo_TSG_Hoffenheim.svg.png"}, {"navn": "SV Werder Bremen", "lat": 53.0664, "lng": 8.8375, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SV-Werder-Bremen-Logo.svg/250px-SV-Werder-Bremen-Logo.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

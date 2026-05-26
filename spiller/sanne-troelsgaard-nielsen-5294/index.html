@@ -10,6 +10,7 @@
   <meta property="og:title" content="Sanne Troelsgaard Nielsen – Landsholdskortet">
   <meta property="og:description" content="Sanne Troelsgaard Nielsen spillede 197 A-landskampe og scorede 57 mål for Danmark. Barndomsklub: Vejen SF. Fødested: Vejen.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/sanne-troelsgaard-nielsen-5294/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/20170706%20OEFB%20AUT-DEN%20Sanne%20Troelsgaard%20Nielsen%20DSC%208221.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/sanne-troelsgaard-nielsen-5294/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Vejen"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20170706%20OEFB%20AUT-DEN%20Sanne%20Troelsgaard%20Nielsen%20DSC%208221.jpg"
 }
   </script>
   <style>
@@ -234,7 +236,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Vejen SF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/lotte-troelsgaard-nielsen-7003/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Lotte Troelsgaard Nielsen</a><a href="/spiller/per-madsen-3343/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Per Madsen</a><a href="/spiller/jens-lundgaard-2698/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Jens Lundgaard</a></div>
+    <a href="/?q=Vejen SF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Sanne Troelsgaard Nielsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -242,7 +250,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Skovbakken IK OB", "lat": 56.1944, "lng": 10.2068, "barndom": false, "logo": "logos/klub_3246.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "FC Midtjylland", "lat": 56.117, "lng": 8.9509, "barndom": false, "logo": "https://file.dbu.dk/images/club/3705/FC_Midtjylland.png"}, {"navn": "KoldingQ", "lat": 55.4936, "lng": 9.4597, "barndom": false, "logo": "logos/klub_567.png"}, {"navn": "Haderslev FK", "lat": 55.2615, "lng": 9.4885, "barndom": false, "logo": "logos/klub_808.png"}, {"navn": "Vejen SF", "lat": 55.4595, "lng": 9.1025, "barndom": true, "logo": "logos/klub_902.png"}, {"navn": "Kolding IF Women", "lat": 55.49, "lng": 9.47, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/8/86/KoldingIFBadge.png"}, {"navn": "FC Rosengård", "lat": 55.595, "lng": 12.9956, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/FC_Roseng%C3%A5rd_logo.svg/250px-FC_Roseng%C3%A5rd_logo.svg.png"}, {"navn": "Reading F.C. Women", "lat": 51.4542, "lng": -0.9731, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Reading_FC.svg/250px-Reading_FC.svg.png"}, {"navn": "AS Roma (women)", "lat": 41.8931, "lng": 12.4828, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/AS_Roma_logo_%282017%29.svg/330px-AS_Roma_logo_%282017%29.svg.png"}];
 const birthMarker = {"lat": 55.4758, "lng": 9.1381, "navn": "Vejen"};

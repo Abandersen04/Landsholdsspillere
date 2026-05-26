@@ -10,6 +10,7 @@
   <meta property="og:title" content="Mie Leth Karshøj – Landsholdskortet">
   <meta property="og:description" content="Mie Leth Karshøj spillede 26 A-landskampe for Danmark. Barndomsklub: Dragør Boldklub. Fødested: Dragør.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/mie-leth-karshoej-6740/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Mie%20Jans%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/mie-leth-karshoej-6740/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Dragør"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mie%20Jans%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -222,7 +224,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Mie Leth Karshøj" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -230,7 +234,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "AB Tårnby", "lat": 55.6037, "lng": 12.5893, "barndom": false, "logo": "logos/klub_1537.png"}, {"navn": "Dragør Boldklub", "lat": 55.5938, "lng": 12.6399, "barndom": true, "logo": "logos/klub_1548.png"}, {"navn": "Ballerup-Skovlunde Fodbold (BSF)", "lat": 55.7161, "lng": 12.3734, "barndom": false, "logo": "https://bsfodbold.dk/images/logo.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "HB Køge", "lat": 55.468, "lng": 12.1766, "barndom": false, "logo": "logos/klub_3714.png"}, {"navn": "FC Rosengård", "lat": 55.595, "lng": 12.9956, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/FC_Roseng%C3%A5rd_logo.svg/250px-FC_Roseng%C3%A5rd_logo.svg.png"}, {"navn": "Manchester City", "lat": 53.4667, "lng": -2.2333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/330px-Manchester_City_FC_badge.svg.png"}, {"navn": "Perth Glory FC", "lat": -31.9558, "lng": 115.8597, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Perth_Glory_FC_logo.svg/250px-Perth_Glory_FC_logo.svg.png"}, {"navn": "Vittsjö GIK", "lat": 56.3347, "lng": 13.66, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Vittsjo_GIK_logo.svg/330px-Vittsjo_GIK_logo.svg.png"}];
 const birthMarker = {"lat": 55.593791, "lng": 12.639924, "navn": "Dragør"};

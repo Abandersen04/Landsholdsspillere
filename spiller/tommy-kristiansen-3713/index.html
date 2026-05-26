@@ -10,6 +10,7 @@
   <meta property="og:title" content="Tommy Kristiansen – Landsholdskortet">
   <meta property="og:description" content="Tommy Kristiansen spillede 2 A-landskampe for Danmark. Barndomsklub: Vanløse IF. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/tommy-kristiansen-3713/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/tommy-kristiansen-3713/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -219,7 +220,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Vanløse IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/michael-laudrup-1238/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Michael Laudrup</a><a href="/spiller/finn-laudrup-3269/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Finn Laudrup</a><a href="/spiller/bjarne-pettersson-3573/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Bjarne Pettersson</a><a href="/spiller/birger-mauritzen-3610/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Birger Mauritzen</a><a href="/spiller/ole-bjur-979/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ole Bjur</a><a href="/spiller/karen-haastrup-4991/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Karen Haastrup</a></div>
+    <a href="/?q=Vanløse IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Tommy Kristiansen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -227,7 +234,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Brønshøj Boldklub", "lat": 55.7188, "lng": 12.4923, "barndom": false, "logo": "logos/klub_1543.png"}, {"navn": "Vanløse IF", "lat": 55.6852, "lng": 12.4758, "barndom": true, "logo": "logos/klub_5643.png"}, {"navn": "Feyenoord", "lat": 51.92, "lng": 4.48, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Feyenoord_logo_since_2024.svg/960px-Feyenoord_logo_since_2024.svg.png"}, {"navn": "SC Heerenveen", "lat": 52.9658, "lng": 6.0503, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/SC_Heerenveen_logo.svg/330px-SC_Heerenveen_logo.svg.png"}, {"navn": "Go Ahead Eagles", "lat": 52.25, "lng": 6.2, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Go_Ahead_Eagles_logo.svg/330px-Go_Ahead_Eagles_logo.svg.png"}, {"navn": "HFC Haarlem", "lat": 52.3803, "lng": 4.6406, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/HFC_Haarlem_%28logo%29.svg/330px-HFC_Haarlem_%28logo%29.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

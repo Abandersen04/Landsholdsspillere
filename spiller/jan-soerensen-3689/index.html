@@ -10,6 +10,7 @@
   <meta property="og:title" content="Jan Sørensen – Landsholdskortet">
   <meta property="og:description" content="Jan Sørensen spillede 11 A-landskampe og scorede 3 mål for Danmark. Barndomsklub: Glostrup FK - IF 32. Fødested: Glostrup.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/jan-soerensen-3689/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Persdag%20Feyenoord%2012%20Molenaar%2C%20kop%2C%2013%20Sorensen%2C%20kop%2C%2014%2015%20Rep%2C%20kop%2C%20Bestanddeelnr%20933-3872.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/jan-soerensen-3689/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Glostrup"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Persdag%20Feyenoord%2012%20Molenaar%2C%20kop%2C%2013%20Sorensen%2C%20kop%2C%2014%2015%20Rep%2C%20kop%2C%20Bestanddeelnr%20933-3872.jpg"
 }
   </script>
   <style>
@@ -220,7 +222,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Glostrup FK - IF 32</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/soeren-busk-3743/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Søren Busk</a><a href="/spiller/erik-gaardhoeje-3084/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Erik Gaardhøje</a><a href="/spiller/steven-lustu-4205/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Steven Lustü</a><a href="/spiller/brian-jensen-2361/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Brian Jensen</a><a href="/spiller/john-frandsen-3537/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">John Frandsen</a></div>
+    <a href="/?q=Glostrup FK - IF 32" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Jan Sørensen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -228,7 +236,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "barndom": false, "logo": "logos/klub_1552.png"}, {"navn": "Glostrup FK - IF 32", "lat": 55.6683, "lng": 12.3759, "barndom": true, "logo": "logos/klub_1712.png"}, {"navn": "Feyenoord", "lat": 51.92, "lng": 4.48, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Feyenoord_logo_since_2024.svg/960px-Feyenoord_logo_since_2024.svg.png"}, {"navn": "Club Brugge", "lat": 51.2089, "lng": 3.2242, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Club_Brugge_KV_logo.svg/250px-Club_Brugge_KV_logo.svg.png"}, {"navn": "FC Twente", "lat": 52.2225, "lng": 6.8925, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/FC_Twente.svg/330px-FC_Twente.svg.png"}, {"navn": "Excelsior", "lat": 51.9169, "lng": 4.5206, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Excelsior_Rotterdam_logo_2021.svg/960px-Excelsior_Rotterdam_logo_2021.svg.png"}, {"navn": "AFC Ajax", "lat": 52.3667, "lng": 4.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_AFC_Ajax_%281928-1991%2C_2025-%29.png"}, {"navn": "Portimonense S.C.", "lat": 37.1357, "lng": -8.5398, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Portimonense_Sporting_Clube_logo.svg/250px-Portimonense_Sporting_Clube_logo.svg.png"}];
 const birthMarker = {"lat": 55.6628, "lng": 12.3972, "navn": "Glostrup"};

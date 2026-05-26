@@ -10,6 +10,7 @@
   <meta property="og:title" content="Henrik Risom – Landsholdskortet">
   <meta property="og:description" content="Henrik Risom spillede 9 A-landskampe for Danmark. Barndomsklub: Vildbjerg SF. Fødested: Vildbjerg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/henrik-risom-3975/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/henrik-risom-3975/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -220,7 +221,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Vildbjerg SF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/maja-bay-oestergaard-7699/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Maja Bay Østergaard</a></div>
+    <a href="/?q=Vildbjerg SF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Henrik Risom" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -228,7 +235,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Odense Boldklub", "lat": 55.3846, "lng": 10.3743, "barndom": false, "logo": "logos/klub_1458.png"}, {"navn": "AGF", "lat": 56.1322, "lng": 10.1937, "barndom": false, "logo": "logos/klub_3699.png"}, {"navn": "Vejle Boldklub", "lat": 55.7142, "lng": 9.5561, "barndom": false, "logo": "logos/klub_3718.png"}, {"navn": "Vildbjerg SF", "lat": 56.1955, "lng": 8.769, "barndom": true, "logo": "logos/klub_380.png"}, {"navn": "Silkeborg IF", "lat": 56.1841, "lng": 9.5755, "barndom": false, "logo": "logos/klub_632.png"}, {"navn": "Dynamo Dresden", "lat": 51.0493, "lng": 13.7381, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Dynamo_Dresden_crest.svg/500px-Dynamo_Dresden_crest.svg.png"}, {"navn": "Stoke City F.C.", "lat": 53.0, "lng": -2.1833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Stoke_City_FC_crest_2001.svg/330px-Stoke_City_FC_crest_2001.svg.png"}, {"navn": "Lyngby Boldklub", "lat": 55.7821, "lng": 12.5064, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"}];
 const birthMarker = {"lat": 56.197222222, "lng": 8.766666666, "navn": "Vildbjerg"};

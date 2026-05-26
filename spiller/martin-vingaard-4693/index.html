@@ -10,6 +10,7 @@
   <meta property="og:title" content="Martin Vingaard – Landsholdskortet">
   <meta property="og:description" content="Martin Vingaard spillede 9 A-landskampe og scorede 1 mål for Danmark. Barndomsklub: S.K.F.I.F.. Fødested: Odense.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/martin-vingaard-4693/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Norsh-Zen%20%286%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/martin-vingaard-4693/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Odense"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Norsh-Zen%20%286%29.jpg"
 }
   </script>
   <style>
@@ -220,7 +222,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra S.K.F.I.F.</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/thomas-helveg-985/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Thomas Helveg</a></div>
+    <a href="/?q=S.K.F.I.F." style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Martin Vingaard" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -228,7 +236,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "B1913", "lat": 55.3686, "lng": 10.4282, "barndom": false, "logo": "logos/klub_1365.png"}, {"navn": "Dalum IF", "lat": 55.3655, "lng": 10.3721, "barndom": false, "logo": "logos/klub_1378.png"}, {"navn": "FC Nordsjælland", "lat": 55.8161, "lng": 12.3514, "barndom": false, "logo": "logos/klub_3702.png"}, {"navn": "HB Køge", "lat": 55.468, "lng": 12.1766, "barndom": false, "logo": "logos/klub_3714.png"}, {"navn": "Esbjerg fB", "lat": 55.4868, "lng": 8.436, "barndom": false, "logo": "logos/klub_785.png"}, {"navn": "Tampa Bay Rowdies", "lat": 27.9803, "lng": -82.5067, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Tampa_Bay_Rowdies_logo_%28with_Tampa_Bay%2C_two_gold_stars%29.svg/500px-Tampa_Bay_Rowdies_logo_%28with_Tampa_Bay%2C_two_gold_stars%29.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}];
 const birthMarker = {"lat": 55.4, "lng": 10.383333333, "navn": "Odense"};

@@ -10,6 +10,7 @@
   <meta property="og:title" content="Stephan Andersen – Landsholdskortet">
   <meta property="og:description" content="Stephan Andersen spillede 30 A-landskampe for Danmark. Barndomsklub: Hvidovre IF. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/stephan-andersen-4241/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Stephan%20Andersen%20%28cropped%29.JPG">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/stephan-andersen-4241/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stephan%20Andersen%20%28cropped%29.JPG"
 }
   </script>
   <style>
@@ -228,7 +230,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Hvidovre IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/thomas-kahlenberg-4344/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Thomas Kahlenberg</a><a href="/spiller/sten-ziegler-3449/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Sten Ziegler</a><a href="/spiller/john-steen-olsen-3209/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">John Steen Olsen</a><a href="/spiller/leif-soerensen-3175/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Leif Sørensen</a><a href="/spiller/birger-pedersen-3374/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Birger Pedersen</a><a href="/spiller/john-worbye-3230/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">John Worbye</a></div>
+    <a href="/?q=Hvidovre IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Stephan Andersen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -236,7 +244,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Hvidovre IF", "lat": 55.6313, "lng": 12.4828, "barndom": true, "logo": "logos/klub_3716.png"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}, {"navn": "VB 1968", "lat": 55.76, "lng": 12.455, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/8/83/FC_Gladsaxe_logo.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Charlton Athletic F.C.", "lat": 51.5072, "lng": -0.1275, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Charlton_Athletic_FC_crest.svg/330px-Charlton_Athletic_FC_crest.svg.png"}, {"navn": "Evian Thonon Gaillard F.C.", "lat": 46.3706, "lng": 6.4797, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Thonon_Evian_Grand_Gen%C3%A8ve_FC_logo.svg/330px-Thonon_Evian_Grand_Gen%C3%A8ve_FC_logo.svg.png"}, {"navn": "Go Ahead Eagles", "lat": 52.25, "lng": 6.2, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Go_Ahead_Eagles_logo.svg/330px-Go_Ahead_Eagles_logo.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

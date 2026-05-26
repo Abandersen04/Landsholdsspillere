@@ -10,6 +10,7 @@
   <meta property="og:title" content="Thomas Kristensen – Landsholdskortet">
   <meta property="og:description" content="Thomas Kristensen spillede 7 A-landskampe for Danmark. Barndomsklub: Virum-Sorgenfri BK. Fødested: Virum.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/thomas-kristensen-5911/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Kristensen%20%282015%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/thomas-kristensen-5911/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Virum"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Kristensen%20%282015%29.jpg"
 }
   </script>
   <style>
@@ -221,7 +223,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Virum-Sorgenfri BK</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/john-helt-3889/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">John Helt</a><a href="/spiller/inger-pedersen-4499/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Inger Pedersen</a><a href="/spiller/thomas-rytter-2321/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Thomas Rytter</a><a href="/spiller/elias-jelert-8086/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Elias Jelert</a><a href="/spiller/soeren-lyng-3993/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Søren Lyng</a><a href="/spiller/elisabeth-brus-4915/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Elisabeth Brus</a></div>
+    <a href="/?q=Virum-Sorgenfri BK" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Thomas Kristensen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -229,7 +237,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Virum-Sorgenfri BK", "lat": 55.7856, "lng": 12.4698, "barndom": true, "logo": "logos/klub_1313.png"}, {"navn": "FC Helsingør", "lat": 56.0456, "lng": 12.5906, "barndom": false, "logo": "https://file.dbu.dk/images/club/1781/FC_Helsingør.png"}, {"navn": "FC Nordsjælland", "lat": 55.8161, "lng": 12.3514, "barndom": false, "logo": "logos/klub_3702.png"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}, {"navn": "Søllerød Boldklub", "lat": 55.812, "lng": 12.503, "barndom": false, "logo": ""}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "ADO Den Haag", "lat": 52.08, "lng": 4.31, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/ADO_Den_Haag_logo.svg/330px-ADO_Den_Haag_logo.svg.png"}, {"navn": "Lyngby Boldklub", "lat": 55.7821, "lng": 12.5064, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"}];
 const birthMarker = {"lat": 55.7917, "lng": 12.4597, "navn": "Virum"};

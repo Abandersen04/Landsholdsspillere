@@ -10,6 +10,7 @@
   <meta property="og:title" content="Ivan Nielsen – Landsholdskortet">
   <meta property="og:description" content="Ivan Nielsen spillede 51 A-landskampe for Danmark. Barndomsklub: Fremad Amager. Fødested: Frederiksberg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/ivan-nielsen-3799/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Ivan%20Nielsen.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/ivan-nielsen-3799/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Frederiksberg"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ivan%20Nielsen.jpg"
 }
   </script>
   <style>
@@ -226,7 +228,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Fremad Amager</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/frank-arnesen-3719/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Frank Arnesen</a><a href="/spiller/henrik-andersen-2363/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Henrik Andersen</a><a href="/spiller/alf-olsen-2396/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Alf Olsen</a><a href="/spiller/peter-nielsen-2311/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Peter Nielsen</a><a href="/spiller/oskar-theisen-2732/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Oskar Theisen</a><a href="/spiller/kai-frandsen-2828/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kai Frandsen</a></div>
+    <a href="/?q=Fremad Amager" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Ivan Nielsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -234,7 +242,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Boldklubben 1903", "lat": 55.731, "lng": 12.5478, "barndom": false, "logo": "logos/klub_1533.jpg"}, {"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "PSV Eindhoven", "lat": 51.4344, "lng": 5.4842, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/PSV_Eindhoven.svg/500px-PSV_Eindhoven.svg.png"}, {"navn": "Feyenoord", "lat": 51.92, "lng": 4.48, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Feyenoord_logo_since_2024.svg/960px-Feyenoord_logo_since_2024.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Fremad Amager", "lat": 55.6493, "lng": 12.6016, "barndom": true, "logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png"}, {"navn": "Næstved BK", "lat": 55.25, "lng": 11.6667, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/1/12/N%C3%A6stved_Boldklub_logo.png"}];
 const birthMarker = {"lat": 55.6779, "lng": 12.5327, "navn": "Frederiksberg"};

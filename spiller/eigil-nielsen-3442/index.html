@@ -10,6 +10,7 @@
   <meta property="og:title" content="Eigil Nielsen – Landsholdskortet">
   <meta property="og:description" content="Eigil Nielsen spillede 10 A-landskampe for Danmark. Barndomsklub: Boldklubben af 1893. Fødested: Tårs.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/eigil-nielsen-3442/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/eigil-nielsen-3442/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -221,7 +222,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Boldklubben af 1893</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/niclas-jensen-2304/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Niclas Jensen</a><a href="/spiller/daniel-jensen-4228/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Daniel Jensen</a><a href="/spiller/svend-aage-julius-jensen-2537/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Svend Aage Julius Jensen</a><a href="/spiller/michael-rohde-2416/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Michael Rohde</a><a href="/spiller/mathias-zanka-joergensen-5385/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Mathias "Zanka" Jørgensen</a><a href="/spiller/christian-groethan-2420/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Christian Grøthan</a></div>
+    <a href="/?q=Boldklubben af 1893" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Eigil Nielsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -229,7 +236,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "Vendsyssel FF", "lat": 57.4726, "lng": 10.0028, "barndom": false, "logo": "logos/klub_3733.png"}, {"navn": "Hjørring IF", "lat": 57.4617, "lng": 10.0064, "barndom": false, "logo": "logos/klub_68.png"}, {"navn": "FC Basel", "lat": 47.5606, "lng": 7.5906, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/FC_Basel_crest.svg/330px-FC_Basel_crest.svg.png"}, {"navn": "FC Winterthur", "lat": 47.4992, "lng": 8.7267, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/FC_Winterthur_logo.svg/330px-FC_Winterthur_logo.svg.png"}, {"navn": "FC Luzern", "lat": 47.0523, "lng": 8.3059, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/FC_Luzern_crest.svg/330px-FC_Luzern_crest.svg.png"}];
 const birthMarker = {"lat": 57.3839, "lng": 10.115, "navn": "Tårs"};

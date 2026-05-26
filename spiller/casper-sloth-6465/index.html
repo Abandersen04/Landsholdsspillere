@@ -10,6 +10,7 @@
   <meta property="og:title" content="Casper Sloth – Landsholdskortet">
   <meta property="og:description" content="Casper Sloth spillede 8 A-landskampe for Danmark. Barndomsklub: Brabrand IF. Fødested: Aarhus.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/casper-sloth-6465/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Casper%20Sloth%202014.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/casper-sloth-6465/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Aarhus"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Casper%20Sloth%202014.jpg"
 }
   </script>
   <style>
@@ -219,7 +221,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Brabrand IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/tina-rasmussen-5034/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Tina Rasmussen</a><a href="/spiller/asbjoern-sennels-4252/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Asbjørn Sennels</a></div>
+    <a href="/?q=Brabrand IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Casper Sloth" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -227,7 +235,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "FC Helsingør", "lat": 56.0456, "lng": 12.5906, "barndom": false, "logo": "https://file.dbu.dk/images/club/1781/FC_Helsingør.png"}, {"navn": "Aalborg Boldklub", "lat": 57.0434, "lng": 10.0196, "barndom": false, "logo": "logos/klub_2.png"}, {"navn": "AGF", "lat": 56.1322, "lng": 10.1937, "barndom": false, "logo": "logos/klub_3699.png"}, {"navn": "Brabrand IF", "lat": 56.1523, "lng": 10.1062, "barndom": true, "logo": "logos/klub_455.png"}, {"navn": "Silkeborg IF", "lat": 56.1841, "lng": 9.5755, "barndom": false, "logo": "logos/klub_632.png"}, {"navn": "Leeds United F.C.", "lat": 53.7778, "lng": -1.5722, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Leeds_United_F.C._logo.svg/330px-Leeds_United_F.C._logo.svg.png"}, {"navn": "Stjarnan fc", "lat": 64.0902, "lng": -21.9264, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Stjarnan_Logo.png"}, {"navn": "Notts County", "lat": 52.9437, "lng": -1.1472, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Notts_County_Logo.svg/960px-Notts_County_Logo.svg.png"}];
 const birthMarker = {"lat": 56.156388888, "lng": 10.209722222, "navn": "Aarhus"};

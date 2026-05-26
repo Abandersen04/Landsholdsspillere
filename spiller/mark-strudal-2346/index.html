@@ -10,6 +10,7 @@
   <meta property="og:title" content="Mark Strudal – Landsholdskortet">
   <meta property="og:description" content="Mark Strudal spillede 9 A-landskampe og scorede 3 mål for Danmark. Barndomsklub: Holbæk B&I. Fødested: Glostrup Kommune.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/mark-strudal-2346/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/mark-strudal-2346/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -224,7 +225,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Holbæk B&I</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/niels-tune-hansen-3631/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Niels Tune Hansen</a><a href="/spiller/joergen-joergensen-3224/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Jørgen Jørgensen</a><a href="/spiller/nicolai-stokholm-4764/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Nicolai Stokholm</a><a href="/spiller/allan-hansen-3638/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Allan Hansen</a><a href="/spiller/kurt-joergensen-3958/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kurt Jørgensen</a></div>
+    <a href="/?q=Holbæk B&I" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Mark Strudal" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -232,7 +239,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Holbæk B&I", "lat": 55.6976, "lng": 11.6857, "barndom": true, "logo": "logos/klub_1079.png"}, {"navn": "Næstved I.F.", "lat": 55.2225, "lng": 11.7677, "barndom": false, "logo": "logos/klub_3727.webp"}, {"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "barndom": false, "logo": "logos/klub_1552.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Hvidovre IF", "lat": 55.6313, "lng": 12.4828, "barndom": false, "logo": "logos/klub_3716.png"}, {"navn": "Vejle Boldklub", "lat": 55.7142, "lng": 9.5561, "barndom": false, "logo": "logos/klub_3718.png"}, {"navn": "FC Roskilde", "lat": 55.6369, "lng": 12.0702, "barndom": false, "logo": "logos/klub_3731.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Grasshopper Club Zürich", "lat": 47.3744, "lng": 8.5411, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/GC_Z%C3%BCrich_Logo.svg/330px-GC_Z%C3%BCrich_Logo.svg.png"}, {"navn": "Borussia Dortmund", "lat": 51.5139, "lng": 7.4653, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/960px-Borussia_Dortmund_logo.svg.png"}, {"navn": "Xanthi F.C.", "lat": 41.1333, "lng": 24.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Xanthi_F.C._Logo.svg/250px-Xanthi_F.C._Logo.svg.png"}];
 const birthMarker = {"lat": 55.666666666, "lng": 12.4, "navn": "Glostrup Kommune"};

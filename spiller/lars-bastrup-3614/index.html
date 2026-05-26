@@ -10,6 +10,7 @@
   <meta property="og:title" content="Lars Bastrup – Landsholdskortet">
   <meta property="og:description" content="Lars Bastrup spillede 30 A-landskampe og scorede 10 mål for Danmark. Barndomsklub: Kjellerup IF. Fødested: Levring.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/lars-bastrup-3614/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/lars-bastrup-3614/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -225,7 +226,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Kjellerup IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/janni-thomsen-7561/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Janni Thomsen</a></div>
+    <a href="/?q=Kjellerup IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Lars Bastrup" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -233,7 +240,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Kjellerup IF", "lat": 56.2859, "lng": 9.4129, "barndom": true, "logo": "logos/klub_274.png"}, {"navn": "AGF", "lat": 56.1322, "lng": 10.1937, "barndom": false, "logo": "logos/klub_3699.png"}, {"navn": "Fuglebakken KFUM Århus", "lat": 56.1723, "lng": 10.1762, "barndom": false, "logo": "logos/klub_427.png"}, {"navn": "Vejlby Skovbakken Aarhus", "lat": 56.1933, "lng": 10.208, "barndom": false, "logo": "logos/klub_431.png"}, {"navn": "Silkeborg IF", "lat": 56.1841, "lng": 9.5755, "barndom": false, "logo": "logos/klub_632.png"}, {"navn": "Ikast Forenede Sportsklubber", "lat": 56.1408, "lng": 9.1517, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/0/08/Ikast_FS.png"}, {"navn": "Kickers Offenbach", "lat": 50.1, "lng": 8.7667, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fe/Kickers_Offenbach_logo.svg/330px-Kickers_Offenbach_logo.svg.png"}, {"navn": "Hamburger SV", "lat": 53.55, "lng": 10.0, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Hamburger_SV_logo.svg/960px-Hamburger_SV_logo.svg.png"}];
 const birthMarker = {"lat": 56.3058, "lng": 9.4686, "navn": "Levring"};

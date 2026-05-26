@@ -10,6 +10,7 @@
   <meta property="og:title" content="Katrine Veje – Landsholdskortet">
   <meta property="og:description" content="Katrine Veje spillede 171 A-landskampe og scorede 9 mål for Danmark. Barndomsklub: Middelfart G&BK. Fødested: Middelfart.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/katrine-veje-5895/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/20170706%20OEFB%20AUT-DEN%20Katrine%20Veje%20DSC%208211.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/katrine-veje-5895/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Middelfart"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20170706%20OEFB%20AUT-DEN%20Katrine%20Veje%20DSC%208211.jpg"
 }
   </script>
   <style>
@@ -233,7 +235,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Middelfart G&BK</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/christian-eriksen-5999/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Christian Eriksen</a><a href="/spiller/bent-outzen-3396/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Bent Outzen</a><a href="/spiller/knud-herbert-soerensen-3666/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Knud Herbert Sørensen</a><a href="/spiller/knud-herbert-soerensen-3024/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Knud Herbert Sørensen</a><a href="/spiller/rasmus-falk-jensen-6021/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Rasmus Falk Jensen</a></div>
+    <a href="/?q=Middelfart G&BK" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Katrine Veje" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -241,7 +249,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Odense Boldklub", "lat": 55.3846, "lng": 10.3743, "barndom": false, "logo": "logos/klub_1458.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Vejle Boldklub", "lat": 55.7142, "lng": 9.5561, "barndom": false, "logo": "logos/klub_3718.png"}, {"navn": "OL Reign", "lat": 47.5953, "lng": -122.3317, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Seattle_Reign_logo.svg/250px-Seattle_Reign_logo.svg.png"}, {"navn": "FC Rosengård", "lat": 55.595, "lng": 12.9956, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/FC_Roseng%C3%A5rd_logo.svg/250px-FC_Roseng%C3%A5rd_logo.svg.png"}, {"navn": "Crystal Palace", "lat": 51.5072, "lng": -0.1275, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Crystal_Palace_FC_logo_%282022%29.svg/330px-Crystal_Palace_FC_logo_%282022%29.svg.png"}, {"navn": "A.S. Roma (kvinder)", "lat": 41.8931, "lng": 12.4828, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/AS_Roma_logo_%282017%29.svg/330px-AS_Roma_logo_%282017%29.svg.png"}, {"navn": "Everton F.C. (women)", "lat": 53.4072, "lng": -2.9917, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"}, {"navn": "Montpellier HSC (Women)", "lat": 43.6109, "lng": 3.8772, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Montpellier_HSC_logo.svg/330px-Montpellier_HSC_logo.svg.png"}, {"navn": "A.S. Roma Women", "lat": 41.8931, "lng": 12.4828, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/AS_Roma_logo_%282017%29.svg/330px-AS_Roma_logo_%282017%29.svg.png"}, {"navn": "Everton FC", "lat": 53.4072, "lng": -2.9917, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"}, {"navn": "Arsenal FC", "lat": 51.5072, "lng": -0.1275, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/330px-Arsenal_FC.svg.png"}];
 const birthMarker = {"lat": 55.4993014, "lng": 9.7392181, "navn": "Middelfart"};

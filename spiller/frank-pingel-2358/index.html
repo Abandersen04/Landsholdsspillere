@@ -10,6 +10,7 @@
   <meta property="og:title" content="Frank Pingel – Landsholdskortet">
   <meta property="og:description" content="Frank Pingel spillede 11 A-landskampe og scorede 5 mål for Danmark. Barndomsklub: Fuglebakken KFUM Århus. Fødested: Aarhus.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/frank-pingel-2358/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Frank%20Pingel%20Portr%C3%A4t.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/frank-pingel-2358/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Aarhus"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Frank%20Pingel%20Portr%C3%A4t.jpg"
 }
   </script>
   <style>
@@ -220,7 +222,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Fuglebakken KFUM Århus</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/michael-lumb-5132/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Michael Lumb</a></div>
+    <a href="/?q=Fuglebakken KFUM Århus" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Frank Pingel" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -228,7 +236,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Skovbakken IK OB", "lat": 56.1944, "lng": 10.2068, "barndom": false, "logo": "logos/klub_3246.png"}, {"navn": "AGF", "lat": 56.1322, "lng": 10.1937, "barndom": false, "logo": "logos/klub_3699.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Aarhus Fremad", "lat": 56.1796, "lng": 10.2117, "barndom": false, "logo": "logos/klub_425.png"}, {"navn": "Fuglebakken KFUM Århus", "lat": 56.1723, "lng": 10.1762, "barndom": true, "logo": "logos/klub_427.png"}, {"navn": "Vejlby Skovbakken Aarhus", "lat": 56.1933, "lng": 10.208, "barndom": false, "logo": "logos/klub_431.png"}, {"navn": "1860 München", "lat": 48.1375, "lng": 11.575, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/TSV_1860_M%C3%BCnchen.svg/500px-TSV_1860_M%C3%BCnchen.svg.png"}, {"navn": "Newcastle United F.C.", "lat": 54.9778, "lng": -1.6133, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Newcastle_United_Logo.svg/330px-Newcastle_United_Logo.svg.png"}, {"navn": "Lille OSC", "lat": 50.5953, "lng": 3.26, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Lille_OSC_2018_logo.svg/330px-Lille_OSC_2018_logo.svg.png"}, {"navn": "Bursaspor", "lat": 40.1913, "lng": 29.0805, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Bursaspor_logo.svg/250px-Bursaspor_logo.svg.png"}, {"navn": "Fenerbahçe S.K.", "lat": 40.9869, "lng": 29.0367, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Fenerbah%C3%A7e.svg/330px-Fenerbah%C3%A7e.svg.png"}];
 const birthMarker = {"lat": 56.156388888, "lng": 10.209722222, "navn": "Aarhus"};

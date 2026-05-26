@@ -10,6 +10,7 @@
   <meta property="og:title" content="Ebbe Sand – Landsholdskortet">
   <meta property="og:description" content="Ebbe Sand spillede 66 A-landskampe og scorede 22 mål for Danmark. Barndomsklub: Hadsund B. Fødested: Hadsund.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/ebbe-sand-1557/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Schalke%20Ebbe%20Sand%2002.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/ebbe-sand-1557/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Hadsund"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schalke%20Ebbe%20Sand%2002.jpg"
 }
   </script>
   <style>
@@ -223,7 +225,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Hadsund B</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/dorte-dalum-jensen-4378/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Dorte Dalum Jensen</a></div>
+    <a href="/?q=Hadsund B" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Ebbe Sand" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -231,7 +239,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Hadsund B", "lat": 56.7217, "lng": 10.1311, "barndom": true, "logo": "logos/klub_57.png"}, {"navn": "FC Schalke 04", "lat": 51.5103, "lng": 7.0942, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/FC_Schalke_04_Logo.svg/960px-FC_Schalke_04_Logo.svg.png"}];
 const birthMarker = {"lat": 56.7193519, "lng": 10.1151108, "navn": "Hadsund"};

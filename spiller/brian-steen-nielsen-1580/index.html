@@ -10,6 +10,7 @@
   <meta property="og:title" content="Brian Steen Nielsen – Landsholdskortet">
   <meta property="og:description" content="Brian Steen Nielsen spillede 66 A-landskampe og scorede 3 mål for Danmark. Barndomsklub: Vejle Boldklub. Fødested: Vejle.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/brian-steen-nielsen-1580/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/brian-steen-nielsen-1580/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -229,7 +230,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Vejle Boldklub</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/john-sivebaek-3826/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">John Sivebæk</a><a href="/spiller/johnny-terney-hansen-3196/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Johnny Terney Hansen</a><a href="/spiller/ulrik-le-fevre-3205/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ulrik le Fevre</a><a href="/spiller/troels-rasmussen-3893/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Troels Rasmussen</a><a href="/spiller/poul-jensen-3041/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Poul Jensen</a><a href="/spiller/kristine-pedersen-4996/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kristine Pedersen</a></div>
+    <a href="/?q=Vejle Boldklub" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Brian Steen Nielsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -237,7 +244,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Odense Boldklub", "lat": 55.3846, "lng": 10.3743, "barndom": false, "logo": "logos/klub_1458.png"}, {"navn": "AGF", "lat": 56.1322, "lng": 10.1937, "barndom": false, "logo": "logos/klub_3699.png"}, {"navn": "Vejle Boldklub", "lat": 55.7142, "lng": 9.5561, "barndom": true, "logo": "logos/klub_3718.png"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}, {"navn": "Malmö FF", "lat": 55.5833, "lng": 13.0, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Malmo_FF_logo.svg/250px-Malmo_FF_logo.svg.png"}, {"navn": "Urawa Red Diamonds", "lat": 35.8614, "lng": 139.6456, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Urawa_Red_Diamonds_logo.svg/330px-Urawa_Red_Diamonds_logo.svg.png"}, {"navn": "Fenerbahce A.S.", "lat": 40.9869, "lng": 29.0367, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Fenerbah%C3%A7e.svg/330px-Fenerbah%C3%A7e.svg.png"}];
 const birthMarker = {"lat": 55.708333333, "lng": 9.533333333, "navn": "Vejle"};

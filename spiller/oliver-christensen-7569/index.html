@@ -10,6 +10,7 @@
   <meta property="og:title" content="Oliver Christensen – Landsholdskortet">
   <meta property="og:description" content="Oliver Christensen spillede 1 A-landskampe for Danmark. Barndomsklub: Kerteminde BK. Fødested: Kerteminde.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/oliver-christensen-7569/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Christensen2022.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/oliver-christensen-7569/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Kerteminde"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Christensen2022.jpg"
 }
   </script>
   <style>
@@ -217,7 +219,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Oliver Christensen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -225,7 +229,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Kerteminde BK", "lat": 55.4444, "lng": 10.6592, "barndom": true, "logo": "logos/klub_1424.png"}, {"navn": "Odense Boldklub", "lat": 55.3846, "lng": 10.3743, "barndom": false, "logo": "logos/klub_1458.png"}, {"navn": "Hertha Berlin", "lat": 52.5167, "lng": 13.3833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Hertha_BSC_Logo_2012.svg/960px-Hertha_BSC_Logo_2012.svg.png"}, {"navn": "SK Sturm Graz", "lat": 47.0708, "lng": 15.4386, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/SK_Sturm_Graz_logo.svg/330px-SK_Sturm_Graz_logo.svg.png"}, {"navn": "ACF Fiorentina", "lat": 43.7714, "lng": 11.2542, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg/120px-ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg.png"}];
 const birthMarker = {"lat": 55.449, "lng": 10.659, "navn": "Kerteminde"};

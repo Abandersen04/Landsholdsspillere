@@ -10,6 +10,7 @@
   <meta property="og:title" content="Nicklas Bendtner – Landsholdskortet">
   <meta property="og:description" content="Nicklas Bendtner spillede 81 A-landskampe og scorede 30 mål for Danmark. Barndomsklub: AB Tårnby. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/nicklas-bendtner-5111/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Nicklas%20Bendtner%202017.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/nicklas-bendtner-5111/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Nicklas%20Bendtner%202017.jpg"
 }
   </script>
   <style>
@@ -229,7 +231,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra AB Tårnby</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/jan-heintze-984/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Jan Heintze</a><a href="/spiller/niki-zimling-4691/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Niki Zimling</a></div>
+    <a href="/?q=AB Tårnby" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Nicklas Bendtner" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -237,7 +245,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "AB Tårnby", "lat": 55.6037, "lng": 12.5893, "barndom": true, "logo": "logos/klub_1537.png"}, {"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "VfL Wolfsburg", "lat": 52.4231, "lng": 10.7872, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/VfL_Wolfsburg_Logo.svg/500px-VfL_Wolfsburg_Logo.svg.png"}, {"navn": "Juventus F.C.", "lat": 45.0792, "lng": 7.6761, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/250px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png"}, {"navn": "Rosenborg BK", "lat": 63.4136, "lng": 10.4119, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Rosenborg_logo_RGB.svg/960px-Rosenborg_logo_RGB.svg.png"}, {"navn": "Sunderland A.F.C.", "lat": 54.9, "lng": -1.3803, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Logo_Sunderland.svg/330px-Logo_Sunderland.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Birmingham City F.C.", "lat": 52.48, "lng": -1.9025, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Birmingham_City_FC_logo.svg/330px-Birmingham_City_FC_logo.svg.png"}, {"navn": "Nottingham Forest F.C.", "lat": 52.92, "lng": -1.13, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Nottingham_Forest_F.C._logo.svg/960px-Nottingham_Forest_F.C._logo.svg.png"}, {"navn": "Arsenal F.C.", "lat": 51.5072, "lng": -0.1275, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/330px-Arsenal_FC.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

@@ -10,6 +10,7 @@
   <meta property="og:title" content="Kristen Nygaard Kristensen – Landsholdskortet">
   <meta property="og:description" content="Kristen Nygaard Kristensen spillede 36 A-landskampe og scorede 11 mål for Danmark. Barndomsklub: Holstebro Boldklub. Fødested: Sunds.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/kristen-nygaard-kristensen-3378/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Leo%20Degens%20en%20Kristen%20Nygaard%20.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/kristen-nygaard-kristensen-3378/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Sunds"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leo%20Degens%20en%20Kristen%20Nygaard%20.jpg"
 }
   </script>
   <style>
@@ -226,7 +228,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Holstebro Boldklub</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/oluf-skjelmose-2639/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Oluf Skjelmose</a><a href="/spiller/kai-nielsen-2646/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kai Nielsen</a><a href="/spiller/hartvig-moeller-2861/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Hartvig Møller</a><a href="/spiller/bo-hansen-4085/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Bo Hansen</a></div>
+    <a href="/?q=Holstebro Boldklub" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Kristen Nygaard Kristensen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -234,7 +242,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Fuglebakken KFUM Århus", "lat": 56.1723, "lng": 10.1762, "barndom": false, "logo": "logos/klub_427.png"}, {"navn": "Holstebro Boldklub", "lat": 56.3885, "lng": 8.5766, "barndom": true, "logo": "logos/klub_5619.png"}, {"navn": "AZ Alkmaar", "lat": 52.6289, "lng": 4.744, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/AZ_Alkmaar.svg/250px-AZ_Alkmaar.svg.png"}, {"navn": "E.S. Gallia Club d'Uzès", "lat": 44.0125, "lng": 4.4197, "barndom": false, "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk9mA2O1H1PuFKnVG66djetdtWYc9HcgU_eg&s"}, {"navn": "Nîmes Olympique", "lat": 43.8383, "lng": 4.3597, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/N%C3%AEmes_Olympique_2018_logo.svg/250px-N%C3%AEmes_Olympique_2018_logo.svg.png"}];
 const birthMarker = {"lat": 56.206111111, "lng": 9.015277777, "navn": "Sunds"};

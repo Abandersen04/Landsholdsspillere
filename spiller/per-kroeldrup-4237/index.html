@@ -10,6 +10,7 @@
   <meta property="og:title" content="Per Krøldrup – Landsholdskortet">
   <meta property="og:description" content="Per Krøldrup spillede 33 A-landskampe for Danmark. Barndomsklub: Farsø/Ullits IK. Fødested: Farsø.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/per-kroeldrup-4237/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/per-kroeldrup-4237/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -223,7 +224,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Farsø/Ullits IK</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/sara-thrige-6945/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Sara Thrige</a></div>
+    <a href="/?q=Farsø/Ullits IK" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Per Krøldrup" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -231,7 +238,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Boldklubben af 1893", "lat": 55.7138, "lng": 12.5825, "barndom": false, "logo": "logos/klub_1532.png"}, {"navn": "Aalborg Chang", "lat": 57.0282, "lng": 9.9104, "barndom": false, "logo": "logos/klub_4.png"}, {"navn": "Farsø/Ullits IK", "lat": 56.7744, "lng": 9.3312, "barndom": true, "logo": "logos/klub_44.png"}, {"navn": "ACF Fiorentina", "lat": 43.7714, "lng": 11.2542, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg/120px-ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg.png"}, {"navn": "Delfino Pescara 1936", "lat": 42.4643, "lng": 14.2142, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Delfino_Pescara_logo.svg/250px-Delfino_Pescara_logo.svg.png"}, {"navn": "Udinese Calcio", "lat": 46.0667, "lng": 13.2333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Udinese_Calcio_logo.svg/250px-Udinese_Calcio_logo.svg.png"}, {"navn": "Everton F.C.", "lat": 53.4072, "lng": -2.9917, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"}, {"navn": "S.C. Olhanense", "lat": 37.0291, "lng": -7.8485, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/3/3b/SC_Olhanense.png"}];
 const birthMarker = {"lat": 56.772222222, "lng": 9.339722222, "navn": "Farsø"};

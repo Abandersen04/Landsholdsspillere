@@ -10,6 +10,7 @@
   <meta property="og:title" content="Morten Hjulmand – Landsholdskortet">
   <meta property="og:description" content="Morten Hjulmand spillede 27 A-landskampe og scorede 1 mål for Danmark. Barndomsklub: Korinth IF. Fødested: Kastrup.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/morten-hjulmand-7801/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Morten%20Hjulmand%2C%20FC%20Admira%20Wacker%20M%C3%B6dling%20vs.%20LASK%20Linz%202018-08-12.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/morten-hjulmand-7801/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Kastrup"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Morten%20Hjulmand%2C%20FC%20Admira%20Wacker%20M%C3%B6dling%20vs.%20LASK%20Linz%202018-08-12.jpg"
 }
   </script>
   <style>
@@ -220,7 +222,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Morten Hjulmand" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -228,7 +232,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Korinth IF", "lat": 55.1466, "lng": 10.3335, "barndom": true, "logo": "logos/klub_1429.png"}, {"navn": "AB Tårnby", "lat": 55.6037, "lng": 12.5893, "barndom": false, "logo": "logos/klub_1537.png"}, {"navn": "FC København", "lat": 55.7036, "lng": 12.5718, "barndom": false, "logo": "logos/klub_3710.png"}, {"navn": "US Lecce", "lat": 40.352, "lng": 18.1691, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/23/US_Lecce_crest.svg/330px-US_Lecce_crest.svg.png"}, {"navn": "Admira Wacker", "lat": 48.0856, "lng": 16.2831, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Admira_Wacker_logo.svg/330px-Admira_Wacker_logo.svg.png"}, {"navn": "Sporting CP", "lat": 38.708, "lng": -9.139, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Sporting_CP_crest.svg/120px-Sporting_CP_crest.svg.png"}];
 const birthMarker = {"lat": 55.6375, "lng": 12.6417, "navn": "Kastrup"};

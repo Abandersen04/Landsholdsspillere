@@ -10,6 +10,7 @@
   <meta property="og:title" content="Brian Laudrup – Landsholdskortet">
   <meta property="og:description" content="Brian Laudrup spillede 82 A-landskampe og scorede 21 mål for Danmark. Barndomsklub: Brøndby IF. Fødested: Wien.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/brian-laudrup-1235/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Brian-Laudrup-Darren-Laver-Lars-Hogh%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/brian-laudrup-1235/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Wien"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Brian-Laudrup-Darren-Laver-Lars-Hogh%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -228,7 +230,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Brøndby IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/cecilie-sandvej-5365/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Cecilie Sandvej</a><a href="/spiller/stine-dimun-4388/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Stine Dimun</a><a href="/spiller/hanne-noerregaard-4413/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Hanne Nørregaard</a><a href="/spiller/cecilie-pedersen-4382/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Cecilie Pedersen</a><a href="/spiller/per-nielsen-2319/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Per Nielsen</a><a href="/spiller/ole-oestergaard-3917/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ole Østergård</a></div>
+    <a href="/?q=Brøndby IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Brian Laudrup" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -236,7 +244,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": true, "logo": "logos/klub_3700.png"}, {"navn": "AC Milan", "lat": 45.4669, "lng": 9.19, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/500px-Logo_of_AC_Milan.svg.png"}, {"navn": "KFC Uerdingen 05", "lat": 51.3333, "lng": 6.5667, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Logo_KFC_Uerdingen_05.svg/960px-Logo_KFC_Uerdingen_05.svg.png"}, {"navn": "FC Bayern Munich", "lat": 48.1375, "lng": 11.575, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/960px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Rangers F.C.", "lat": 55.8611, "lng": -4.25, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Rangers_FC.svg/330px-Rangers_FC.svg.png"}, {"navn": "ACF Fiorentina", "lat": 43.7714, "lng": 11.2542, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg/120px-ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg.png"}, {"navn": "AFC Ajax", "lat": 52.3667, "lng": 4.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_AFC_Ajax_%281928-1991%2C_2025-%29.png"}, {"navn": "A.C. Milan", "lat": 45.4669, "lng": 9.19, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/500px-Logo_of_AC_Milan.svg.png"}, {"navn": "Chelsea F.C.", "lat": 51.4817, "lng": -0.1908, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/250px-Chelsea_FC.svg.png"}];
 const birthMarker = {"lat": 48.208333333, "lng": 16.3725, "navn": "Wien"};

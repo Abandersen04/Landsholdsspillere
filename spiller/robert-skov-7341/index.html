@@ -10,6 +10,7 @@
   <meta property="og:title" content="Robert Skov – Landsholdskortet">
   <meta property="og:description" content="Robert Skov spillede 14 A-landskampe og scorede 7 mål for Danmark. Barndomsklub: Sejs Svejbæk IF. Fødested: Marbella.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/robert-skov-7341/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Skov%2C%20Dinamarca%20x%20%C3%81frica%20do%20Sul%20-%20Olimp%C3%ADadas%20Rio%202016%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/robert-skov-7341/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Marbella"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Skov%2C%20Dinamarca%20x%20%C3%81frica%20do%20Sul%20-%20Olimp%C3%ADadas%20Rio%202016%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -221,7 +223,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Robert Skov" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -229,7 +233,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "FC København", "lat": 55.7036, "lng": 12.5718, "barndom": false, "logo": "logos/klub_3710.png"}, {"navn": "Sejs Svejbæk IF", "lat": 56.1369, "lng": 9.622, "barndom": true, "logo": "logos/klub_629.png"}, {"navn": "Silkeborg IF", "lat": 56.1841, "lng": 9.5755, "barndom": false, "logo": "logos/klub_632.png"}, {"navn": "1. FC Union Berlin", "lat": 52.5167, "lng": 13.3833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/1._FC_Union_Berlin_Logo.svg/960px-1._FC_Union_Berlin_Logo.svg.png"}, {"navn": "TSG 1899 Hoffenheim", "lat": 49.25, "lng": 8.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Logo_TSG_Hoffenheim.svg/960px-Logo_TSG_Hoffenheim.svg.png"}];
 const birthMarker = {"lat": 36.511363888, "lng": -4.883441666, "navn": "Marbella"};

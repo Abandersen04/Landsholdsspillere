@@ -10,6 +10,7 @@
   <meta property="og:title" content="Kris Stadsgaard – Landsholdskortet">
   <meta property="og:description" content="Kris Stadsgaard spillede 3 A-landskampe for Danmark. Barndomsklub: Sengeløse GI. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/kris-stadsgaard-5095/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Kris%20Stadsgaard.JPG">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/kris-stadsgaard-5095/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kris%20Stadsgaard.JPG"
 }
   </script>
   <style>
@@ -220,7 +222,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Sengeløse GI</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/maria-kloster-jensen-4444/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Maria Kloster Jensen</a></div>
+    <a href="/?q=Sengeløse GI" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Kris Stadsgaard" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -228,7 +236,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Farum BK", "lat": 55.8177, "lng": 12.3507, "barndom": false, "logo": "logos/klub_1008.png"}, {"navn": "FC Nordsjælland", "lat": 55.8161, "lng": 12.3514, "barndom": false, "logo": "logos/klub_3702.png"}, {"navn": "Malaga CF", "lat": 36.7341, "lng": -4.4264, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/8/83/CD_M%C3%A1laga.gif"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Reggina 1914", "lat": 38.1144, "lng": 15.65, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/AS_Reggina_1914_crest.svg/330px-AS_Reggina_1914_crest.svg.png"}, {"navn": "Málaga CF", "lat": 36.7167, "lng": -4.4167, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/M%C3%A1laga_CF.svg/330px-M%C3%A1laga_CF.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

@@ -10,6 +10,7 @@
   <meta property="og:title" content="Frederik Rønnow – Landsholdskortet">
   <meta property="og:description" content="Frederik Rønnow spillede 10 A-landskampe for Danmark. Barndomsklub: Stensballe IK. Fødested: Horsens.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/frederik-roennow-6781/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/FrederikR%C3%B6nnow.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/frederik-roennow-6781/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Horsens"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/FrederikR%C3%B6nnow.jpg"
 }
   </script>
   <style>
@@ -225,7 +227,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Stensballe IK</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/katrine-s-pedersen-4354/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Katrine S. Pedersen</a><a href="/spiller/gitte-krogh-4390/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Gitte Krogh</a><a href="/spiller/brian-priske-4215/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Brian Priske</a></div>
+    <a href="/?q=Stensballe IK" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Frederik Rønnow" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -233,7 +241,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "AC Horsens", "lat": 55.8716, "lng": 9.8562, "barndom": false, "logo": "logos/klub_3715.png"}, {"navn": "Stensballe IK", "lat": 55.8725, "lng": 9.905, "barndom": true, "logo": "logos/klub_650.png"}, {"navn": "Esbjerg fB", "lat": 55.4868, "lng": 8.436, "barndom": false, "logo": "logos/klub_785.png"}, {"navn": "1. FC Union Berlin", "lat": 52.5167, "lng": 13.3833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/1._FC_Union_Berlin_Logo.svg/960px-1._FC_Union_Berlin_Logo.svg.png"}, {"navn": "FC Schalke 04", "lat": 51.5103, "lng": 7.0942, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/FC_Schalke_04_Logo.svg/960px-FC_Schalke_04_Logo.svg.png"}, {"navn": "Eintracht Frankfurt", "lat": 50.1106, "lng": 8.6822, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/Eintracht_Frankfurt_crest.svg/330px-Eintracht_Frankfurt_crest.svg.png"}];
 const birthMarker = {"lat": 55.861944444, "lng": 9.851944444, "navn": "Horsens"};

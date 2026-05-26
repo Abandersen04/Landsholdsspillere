@@ -10,6 +10,7 @@
   <meta property="og:title" content="Sofie Bredgaard – Landsholdskortet">
   <meta property="og:description" content="Sofie Bredgaard spillede 24 A-landskampe og scorede 3 mål for Danmark. Barndomsklub: Frederiksværk Fodbold Klub. Fødested: Frederiksværk.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/sofie-bredgaard-7827/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/sofie-bredgaard-7827/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -221,7 +222,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Frederiksværk Fodbold Klub</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/benny-nielsen-3402/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Benny Nielsen</a></div>
+    <a href="/?q=Frederiksværk Fodbold Klub" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Sofie Bredgaard" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -229,7 +236,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Melby-Liseleje IF", "lat": 55.9945, "lng": 11.9644, "barndom": false, "logo": "https://file.dbu.dk/images/club/1151/Melby-Liseleje_IF.png"}, {"navn": "Boldklubben af 1893", "lat": 55.7138, "lng": 12.5825, "barndom": false, "logo": "logos/klub_1532.png"}, {"navn": "Frederiksværk Fodbold Klub", "lat": 55.9616, "lng": 12.0296, "barndom": true, "logo": "logos/klub_1749.png"}, {"navn": "Ballerup-Skovlunde Fodbold (BSF)", "lat": 55.7161, "lng": 12.3734, "barndom": false, "logo": "https://bsfodbold.dk/images/logo.png"}, {"navn": "Hillerød IF", "lat": 55.9446, "lng": 12.2927, "barndom": false, "logo": "logos/klub_5453.png"}, {"navn": "FC Rosengård", "lat": 55.595, "lng": 12.9956, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/FC_Roseng%C3%A5rd_logo.svg/250px-FC_Roseng%C3%A5rd_logo.svg.png"}, {"navn": "Linköpings FC", "lat": 58.4181, "lng": 15.6492, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Link%C3%B6ping_FC%2C_logo.svg/120px-Link%C3%B6ping_FC%2C_logo.svg.png"}, {"navn": "ACF Fiorentina (women)", "lat": 43.7714, "lng": 11.2542, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg/120px-ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg.png"}, {"navn": "Fiorentina Women's F.C.", "lat": 43.7714, "lng": 11.2542, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg/120px-ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg.png"}];
 const birthMarker = {"lat": 55.96989444, "lng": 12.0199, "navn": "Frederiksværk"};

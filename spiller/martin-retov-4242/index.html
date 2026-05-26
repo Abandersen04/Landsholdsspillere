@@ -10,6 +10,7 @@
   <meta property="og:title" content="Martin Retov – Landsholdskortet">
   <meta property="og:description" content="Martin Retov spillede 6 A-landskampe for Danmark. Barndomsklub: Køge Nord FC. Fødested: Rødovre Kommune.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/martin-retov-4242/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Martin%20Retov%2020120312.JPG">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/martin-retov-4242/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Rødovre Kommune"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Martin%20Retov%2020120312.JPG"
 }
   </script>
   <style>
@@ -221,7 +223,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Martin Retov" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -229,7 +233,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Køge BK", "lat": 55.4682, "lng": 12.1772, "barndom": false, "logo": "logos/klub_1133.png"}, {"navn": "Køge Nord FC", "lat": 55.4858, "lng": 12.168, "barndom": true, "logo": "logos/klub_1194.jpg"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "AC Horsens", "lat": 55.8716, "lng": 9.8562, "barndom": false, "logo": "logos/klub_3715.png"}, {"navn": "FC Hansa Rostock", "lat": 54.0833, "lng": 12.1333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/F.C._Hansa_Rostock_Logo.svg/960px-F.C._Hansa_Rostock_Logo.svg.png"}];
 const birthMarker = {"lat": 55.681388888, "lng": 12.455, "navn": "Rødovre Kommune"};

@@ -10,6 +10,7 @@
   <meta property="og:title" content="Anton Gaaei – Landsholdskortet">
   <meta property="og:description" content="Anton Gaaei spillede 1 A-landskampe for Danmark. Barndomsklub: Bruunshåb/Tapdrup IF. Fødested: Viborg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/anton-gaaei-8608/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Anton%20Gaaei%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/anton-gaaei-8608/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Viborg"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Anton%20Gaaei%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -217,7 +219,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Anton Gaaei" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -225,7 +229,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Bruunshåb/Tapdrup IF", "lat": 56.4233, "lng": 9.45, "barndom": true, "logo": "logos/klub_212.png"}, {"navn": "Overlund GF", "lat": 56.4463, "lng": 9.4437, "barndom": false, "logo": "https://file.dbu.dk/images/club/309/Overlund_GF.png"}, {"navn": "Viborg FF", "lat": 56.461, "lng": 9.3891, "barndom": false, "logo": "logos/klub_376.png"}, {"navn": "AFC Ajax", "lat": 52.3667, "lng": 4.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_AFC_Ajax_%281928-1991%2C_2025-%29.png"}];
 const birthMarker = {"lat": 56.45, "lng": 9.4, "navn": "Viborg"};

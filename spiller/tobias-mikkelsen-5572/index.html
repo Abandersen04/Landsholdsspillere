@@ -10,6 +10,7 @@
   <meta property="og:title" content="Tobias Mikkelsen – Landsholdskortet">
   <meta property="og:description" content="Tobias Mikkelsen spillede 8 A-landskampe og scorede 1 mål for Danmark. Barndomsklub: Helsingør IF Fodbold. Fødested: Helsingør.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/tobias-mikkelsen-5572/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Tobias%20Mikkelsen.JPG">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/tobias-mikkelsen-5572/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Helsingør"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tobias%20Mikkelsen.JPG"
 }
   </script>
   <style>
@@ -218,7 +220,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Helsingør IF Fodbold</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/john-larsen-4013/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">John Larsen</a></div>
+    <a href="/?q=Helsingør IF Fodbold" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Tobias Mikkelsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -226,7 +234,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Helsingør IF Fodbold", "lat": 56.0469, "lng": 12.5874, "barndom": true, "logo": "logos/klub_1065.png"}, {"navn": "Humlebæk BK", "lat": 55.9672, "lng": 12.5205, "barndom": false, "logo": "logos/klub_1085.jpg"}, {"navn": "Lyngby Boldklub 1921", "lat": 55.7822, "lng": 12.5065, "barndom": false, "logo": "logos/klub_1146.png"}, {"navn": "FC Helsingør", "lat": 56.0456, "lng": 12.5906, "barndom": false, "logo": "https://file.dbu.dk/images/club/1781/FC_Helsingør.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "FC Nordsjælland", "lat": 55.8161, "lng": 12.3514, "barndom": false, "logo": "logos/klub_3702.png"}, {"navn": "SpVgg Greuther Fürth", "lat": 49.4783, "lng": 10.9903, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/SpVgg_Greuther_F%C3%BCrth_logo_%282017%29.svg/330px-SpVgg_Greuther_F%C3%BCrth_logo_%282017%29.svg.png"}, {"navn": "Rosenborg BK", "lat": 63.4136, "lng": 10.4119, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Rosenborg_logo_RGB.svg/960px-Rosenborg_logo_RGB.svg.png"}, {"navn": "Helsingborgs IF", "lat": 56.0424, "lng": 12.721, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Helsingborgs_IF_logo.svg/330px-Helsingborgs_IF_logo.svg.png"}];
 const birthMarker = {"lat": 56.036, "lng": 12.6106, "navn": "Helsingør"};

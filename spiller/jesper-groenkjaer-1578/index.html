@@ -10,6 +10,7 @@
   <meta property="og:title" content="Jesper Grønkjær – Landsholdskortet">
   <meta property="og:description" content="Jesper Grønkjær spillede 80 A-landskampe og scorede 5 mål for Danmark. Barndomsklub: Thisted FC. Fødested: Nuuk.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/jesper-groenkjaer-1578/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Jespergr%C3%B8nkj%C3%A6r%20%28cropped%29.JPG">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/jesper-groenkjaer-1578/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Nuuk"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jespergr%C3%B8nkj%C3%A6r%20%28cropped%29.JPG"
 }
   </script>
   <style>
@@ -228,7 +230,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Thisted FC</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/frederikke-thoegersen-6852/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Frederikke Thøgersen</a></div>
+    <a href="/?q=Thisted FC" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Jesper Grønkjær" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -236,7 +244,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Aalborg Boldklub", "lat": 57.0434, "lng": 10.0196, "barndom": false, "logo": "logos/klub_2.png"}, {"navn": "Thisted FC", "lat": 56.969, "lng": 8.7012, "barndom": true, "logo": "logos/klub_351.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Birmingham City F.C.", "lat": 52.48, "lng": -1.9025, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Birmingham_City_FC_logo.svg/330px-Birmingham_City_FC_logo.svg.png"}, {"navn": "Aalborg Boldklub", "lat": 57.0436, "lng": 10.0208, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"}, {"navn": "AFC Ajax", "lat": 52.3667, "lng": 4.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_AFC_Ajax_%281928-1991%2C_2025-%29.png"}, {"navn": "VfB Stuttgart", "lat": 48.7775, "lng": 9.18, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/VfB_Stuttgart_1893_Logo.svg/500px-VfB_Stuttgart_1893_Logo.svg.png"}, {"navn": "Atletico Madrid", "lat": 40.4169, "lng": -3.7033, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/330px-Atletico_Madrid_Logo_2024.svg.png"}, {"navn": "Chelsea F.C.", "lat": 51.4817, "lng": -0.1908, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/250px-Chelsea_FC.svg.png"}];
 const birthMarker = {"lat": 64.175, "lng": -51.733333333, "navn": "Nuuk"};

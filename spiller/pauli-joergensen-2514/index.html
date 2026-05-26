@@ -10,6 +10,7 @@
   <meta property="og:title" content="Pauli Jørgensen – Landsholdskortet">
   <meta property="og:description" content="Pauli Jørgensen spillede 47 A-landskampe og scorede 44 mål for Danmark. Barndomsklub: B 1908. Fødested: Frederiksberg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/pauli-joergensen-2514/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Frem%20vs%20AB%20ca1940.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/pauli-joergensen-2514/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Frederiksberg"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Frem%20vs%20AB%20ca1940.jpg"
 }
   </script>
   <style>
@@ -231,7 +233,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra B 1908</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/miklos-molnar-1244/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Miklos Molnar</a><a href="/spiller/ole-tobiasen-2291/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ole Tobiasen</a><a href="/spiller/michael-jakobsen-4686/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Michael Jakobsen</a></div>
+    <a href="/?q=B 1908" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Pauli Jørgensen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -239,7 +247,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "barndom": false, "logo": "logos/klub_1552.png"}, {"navn": "Boldklubben Fix", "lat": 55.7099, "lng": 12.4996, "barndom": false, "logo": "https://file.dbu.dk/images/club/1599/Boldklubben_Fix.png"}, {"navn": "B 1908", "lat": 55.6516, "lng": 12.6, "barndom": true, "logo": "logos/klub_3721.png"}, {"navn": "SBK Drafn", "lat": 59.7454, "lng": 10.206, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/SBK_Drafn.jpg"}];
 const birthMarker = {"lat": 55.6779, "lng": 12.5327, "navn": "Frederiksberg"};

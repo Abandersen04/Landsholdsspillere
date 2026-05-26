@@ -10,6 +10,7 @@
   <meta property="og:title" content="Christian Gytkjær – Landsholdskortet">
   <meta property="og:description" content="Christian Gytkjær spillede 9 A-landskampe og scorede 5 mål for Danmark. Barndomsklub: Roskilde Boldklub. Fødested: Roskilde.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/christian-gytkjaer-5575/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Gytkjaer%20Lech%20Pozna%C5%84%202017%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/christian-gytkjaer-5575/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Roskilde"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Gytkjaer%20Lech%20Pozna%C5%84%202017%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -220,7 +222,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Roskilde Boldklub</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/peter-madsen-4216/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Peter Madsen</a><a href="/spiller/lene-hansen-4460/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Lene Hansen</a></div>
+    <a href="/?q=Roskilde Boldklub" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Christian Gytkjær" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -228,7 +236,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Jyllinge FC", "lat": 55.7482, "lng": 12.1234, "barndom": false, "logo": "logos/klub_1108.png"}, {"navn": "Lyngby Boldklub 1921", "lat": 55.7822, "lng": 12.5065, "barndom": false, "logo": "logos/klub_1146.png"}, {"navn": "Roskilde Boldklub", "lat": 55.6369, "lng": 12.0726, "barndom": true, "logo": "logos/klub_1141.jpg"}, {"navn": "FC Nordsjælland", "lat": 55.8161, "lng": 12.3514, "barndom": false, "logo": "logos/klub_3702.png"}, {"navn": "FC Roskilde", "lat": 55.6369, "lng": 12.0702, "barndom": false, "logo": "logos/klub_3731.png"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}, {"navn": "TSV 1860 Munich", "lat": 48.1375, "lng": 11.575, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/TSV_1860_M%C3%BCnchen.svg/500px-TSV_1860_M%C3%BCnchen.svg.png"}, {"navn": "Rosenborg BK", "lat": 63.4136, "lng": 10.4119, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Rosenborg_logo_RGB.svg/960px-Rosenborg_logo_RGB.svg.png"}, {"navn": "Lech Poznań", "lat": 52.3972, "lng": 16.8581, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/KKS_Lech_Pozna%C5%84.svg/250px-KKS_Lech_Pozna%C5%84.svg.png"}, {"navn": "Sandnes Ulf", "lat": 58.8594, "lng": 5.7258, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Sandnes_Ulf_logo.svg/330px-Sandnes_Ulf_logo.svg.png"}, {"navn": "SSC Bari", "lat": 41.1253, "lng": 16.8667, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/85/SSC_Bari_crest.svg/250px-SSC_Bari_crest.svg.png"}, {"navn": "FK Haugesund", "lat": 59.4164, "lng": 5.27, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/06/FK_Haugesund_logo.svg/330px-FK_Haugesund_logo.svg.png"}];
 const birthMarker = {"lat": 55.641666666, "lng": 12.080833333, "navn": "Roskilde"};

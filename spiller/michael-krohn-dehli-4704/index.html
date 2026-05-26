@@ -10,6 +10,7 @@
   <meta property="og:title" content="Michael Krohn-Dehli – Landsholdskortet">
   <meta property="og:description" content="Michael Krohn-Dehli spillede 59 A-landskampe og scorede 6 mål for Danmark. Barndomsklub: Rosenhøj BK. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/michael-krohn-dehli-4704/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Krohn-Dehli.JPG">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/michael-krohn-dehli-4704/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Krohn-Dehli.JPG"
 }
   </script>
   <style>
@@ -229,7 +231,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Rosenhøj BK</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/daniel-agger-4700/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Daniel Agger</a><a href="/spiller/johnny-hansen-3973/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Johnny Hansen</a><a href="/spiller/michael-johansen-4202/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Michael Johansen</a><a href="/spiller/martin-johansen-4075/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Martin Johansen</a><a href="/spiller/danny-olsen-4841/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Danny Olsen</a><a href="/spiller/kim-christensen-6633/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kim Christensen</a></div>
+    <a href="/?q=Rosenhøj BK" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Michael Krohn-Dehli" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -237,7 +245,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Rosenhøj BK", "lat": 55.6486, "lng": 12.4759, "barndom": true, "logo": "logos/klub_1196.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Hvidovre IF", "lat": 55.6313, "lng": 12.4828, "barndom": false, "logo": "logos/klub_3716.png"}, {"navn": "Sevilla FC", "lat": 37.3886, "lng": -5.9956, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Sevilla_FC_logo.svg/250px-Sevilla_FC_logo.svg.png"}, {"navn": "Sparta Rotterdam", "lat": 51.92, "lng": 4.48, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Sparta_Rotterdam_logo.svg/250px-Sparta_Rotterdam_logo.svg.png"}, {"navn": "RKC Waalwijk", "lat": 51.6833, "lng": 5.0667, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/RKC_Waalwijk_logo.svg/250px-RKC_Waalwijk_logo.svg.png"}, {"navn": "AFC Ajax", "lat": 52.3667, "lng": 4.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_AFC_Ajax_%281928-1991%2C_2025-%29.png"}, {"navn": "Celta de Vigo", "lat": 42.2358, "lng": -8.7267, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/RC_Celta_de_Vigo_logo.svg/250px-RC_Celta_de_Vigo_logo.svg.png"}, {"navn": "Deportivo de La Coruña", "lat": 43.3739, "lng": -8.4, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/RC_Deportivo_La_Coru%C3%B1a_logo.svg/250px-RC_Deportivo_La_Coru%C3%B1a_logo.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

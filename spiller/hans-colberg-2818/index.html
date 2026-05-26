@@ -10,6 +10,7 @@
   <meta property="og:title" content="Hans Colberg – Landsholdskortet">
   <meta property="og:description" content="Hans Colberg spillede 4 A-landskampe for Danmark. Barndomsklub: Hasle IF. Fødested: Klemensker.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/hans-colberg-2818/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Frem%201944.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/hans-colberg-2818/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Klemensker"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Frem%201944.jpg"
 }
   </script>
   <style>
@@ -219,7 +221,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Hans Colberg" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -227,7 +231,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "barndom": false, "logo": "logos/klub_1552.png"}, {"navn": "Hasle IF", "lat": 55.1792, "lng": 14.7127, "barndom": true, "logo": "logos/klub_1673.jpg"}, {"navn": "Lillerød IF", "lat": 55.8696, "lng": 12.355, "barndom": false, "logo": ""}, {"navn": "Associazione Sportiva Lucchese Libertas 1905", "lat": 43.85, "lng": 10.5167, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Lucchese_1905_crest.svg/120px-Lucchese_1905_crest.svg.png"}];
 const birthMarker = {"lat": 55.1733, "lng": 14.8056, "navn": "Klemensker"};

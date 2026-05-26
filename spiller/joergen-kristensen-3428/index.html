@@ -10,6 +10,7 @@
   <meta property="og:title" content="Jørgen Kristensen – Landsholdskortet">
   <meta property="og:description" content="Jørgen Kristensen spillede 19 A-landskampe og scorede 3 mål for Danmark. Barndomsklub: Fløng-Hedehusene Fodbold. Fødested: Hedehusene.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/joergen-kristensen-3428/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Sparta%20tegen%20Ajax%201-1%2C%20nr%2010%20Kowalik%20%28Sparta%29%20kop%2C%20nr%2011%20Kristensen%20%28Sparta%29%20k%2C%20Bestanddeelnr%20924-8713.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/joergen-kristensen-3428/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Hedehusene"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sparta%20tegen%20Ajax%201-1%2C%20nr%2010%20Kowalik%20%28Sparta%29%20kop%2C%20nr%2011%20Kristensen%20%28Sparta%29%20k%2C%20Bestanddeelnr%20924-8713.jpg"
 }
   </script>
   <style>
@@ -224,7 +226,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Fløng-Hedehusene Fodbold</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/malene-olsen-4384/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Malene Olsen</a></div>
+    <a href="/?q=Fløng-Hedehusene Fodbold" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Jørgen Kristensen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -232,7 +240,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Fløng-Hedehusene Fodbold", "lat": 55.6394, "lng": 12.1995, "barndom": true, "logo": "logos/klub_1019.png"}, {"navn": "Køge BK", "lat": 55.4682, "lng": 12.1772, "barndom": false, "logo": "logos/klub_1133.png"}, {"navn": "Hertha Berlin", "lat": 52.5167, "lng": 13.3833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Hertha_BSC_Logo_2012.svg/960px-Hertha_BSC_Logo_2012.svg.png"}, {"navn": "Feyenoord", "lat": 51.92, "lng": 4.48, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Feyenoord_logo_since_2024.svg/960px-Feyenoord_logo_since_2024.svg.png"}, {"navn": "Calgary Boomers", "lat": 51.0703, "lng": -114.1214, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Calgary_boomers_logo.png"}, {"navn": "Sparta Rotterdam", "lat": 51.92, "lng": 4.48, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Sparta_Rotterdam_logo.svg/250px-Sparta_Rotterdam_logo.svg.png"}, {"navn": "Tulsa Roughnecks", "lat": 36.1486, "lng": -95.9439, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/2/2d/TulsaRoughnecks.png"}, {"navn": "Detroit Cougars", "lat": 42.3319, "lng": -83.0689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/4/4d/Detroit_cougars_logo.png"}, {"navn": "Chicago Sting", "lat": 41.8625, "lng": -87.6167, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/2/2a/Chicago_Sting_logo.png"}, {"navn": "Wichita Wings", "lat": 37.8361, "lng": -97.3212, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/1/13/WichitaWingsLogo.png"}, {"navn": "Næstved BK", "lat": 55.25, "lng": 11.6667, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/1/12/N%C3%A6stved_Boldklub_logo.png"}];
 const birthMarker = {"lat": 55.65, "lng": 12.198611111, "navn": "Hedehusene"};

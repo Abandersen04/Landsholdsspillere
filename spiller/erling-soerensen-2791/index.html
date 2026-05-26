@@ -10,6 +10,7 @@
   <meta property="og:title" content="Erling Sørensen – Landsholdskortet">
   <meta property="og:description" content="Erling Sørensen spillede 5 A-landskampe og scorede 2 mål for Danmark. Barndomsklub: Boldklubben Frem. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/erling-soerensen-2791/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Frem%20vs%20AB%20ca1940.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/erling-soerensen-2791/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Frem%20vs%20AB%20ca1940.jpg"
 }
   </script>
   <style>
@@ -224,7 +226,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Boldklubben Frem</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/kaj-uldaler-2539/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kaj Uldaler</a><a href="/spiller/sophus-hansen-2382/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Sophus Hansen</a><a href="/spiller/leif-nielsen-3154/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Leif Nielsen</a><a href="/spiller/lars-larsen-3583/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Lars Larsen</a><a href="/spiller/knud-christophersen-2560/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Knud Christophersen</a><a href="/spiller/sophus-nielsen-968/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Sophus Nielsen</a></div>
+    <a href="/?q=Boldklubben Frem" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Erling Sørensen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -232,7 +240,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "barndom": true, "logo": "logos/klub_1552.png"}, {"navn": "Racing Club de Strasbourg", "lat": 48.5733, "lng": 7.7522, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Racing_Club_de_Strasbourg_logo.svg/330px-Racing_Club_de_Strasbourg_logo.svg.png"}, {"navn": "U.S. Triestina Calcio 1918", "lat": 45.6503, "lng": 13.7703, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/US_Triestina_Calcio_1918_crest.svg/330px-US_Triestina_Calcio_1918_crest.svg.png"}, {"navn": "Udinese Calcio", "lat": 46.0667, "lng": 13.2333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Udinese_Calcio_logo.svg/250px-Udinese_Calcio_logo.svg.png"}, {"navn": "Modena F.C.", "lat": 44.6458, "lng": 10.9257, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Modena_FC_2018_crest.svg/330px-Modena_FC_2018_crest.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

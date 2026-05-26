@@ -10,6 +10,7 @@
   <meta property="og:title" content="Janne Madsen – Landsholdskortet">
   <meta property="og:description" content="Janne Madsen spillede 61 A-landskampe og scorede 4 mål for Danmark. Barndomsklub: Spjald IF. Fødested: Spjald.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/janne-madsen-4364/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/janne-madsen-4364/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -226,7 +227,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Spjald IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/jesper-juelsgaard-kristensen-5322/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Jesper Juelsgård Kristensen</a></div>
+    <a href="/?q=Spjald IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Janne Madsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -234,7 +241,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Spjald IF", "lat": 56.1269, "lng": 8.5051, "barndom": true, "logo": "logos/klub_333.png"}, {"navn": "Fortuna Hjørring", "lat": 57.4641, "lng": 10.0053, "barndom": false, "logo": "logos/klub_47.png"}, {"navn": "Grønbjerg/Langelund IF", "lat": 55.8126, "lng": 9.1258, "barndom": false, "logo": "logos/klub_517.png"}];
 const birthMarker = {"lat": 56.1268684, "lng": 8.5050903, "navn": "Spjald"};

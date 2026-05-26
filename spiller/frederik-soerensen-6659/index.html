@@ -10,6 +10,7 @@
   <meta property="og:title" content="Frederik Sørensen – Landsholdskortet">
   <meta property="og:description" content="Frederik Sørensen spillede 1 A-landskampe for Danmark. Barndomsklub: KFUM BK, Roskilde. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/frederik-soerensen-6659/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Frederik%20Hillesborg%20S%C3%B8rensen.JPG">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/frederik-soerensen-6659/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Frederik%20Hillesborg%20S%C3%B8rensen.JPG"
 }
   </script>
   <style>
@@ -217,7 +219,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Frederik Sørensen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -225,7 +229,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Himmelev-Veddelev BK", "lat": 55.6574, "lng": 12.1158, "barndom": false, "logo": "logos/klub_1075.png"}, {"navn": "Lyngby Boldklub 1921", "lat": 55.7822, "lng": 12.5065, "barndom": false, "logo": "logos/klub_1146.png"}, {"navn": "FC Roskilde", "lat": 55.6369, "lng": 12.0702, "barndom": false, "logo": "logos/klub_3731.png"}, {"navn": "1. FC Köln", "lat": 50.9422, "lng": 6.9578, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/1._FC_Koeln_Logo_2014%E2%80%93.svg/330px-1._FC_Koeln_Logo_2014%E2%80%93.svg.png"}, {"navn": "Juventus F.C.", "lat": 45.0792, "lng": 7.6761, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/250px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png"}, {"navn": "Bologna F.C. 1909", "lat": 44.4939, "lng": 11.3428, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bologna_F.C._1909_logo.svg/250px-Bologna_F.C._1909_logo.svg.png"}, {"navn": "BSC Young Boys", "lat": 46.948, "lng": 7.4474, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/BSC_Young_Boys.svg/960px-BSC_Young_Boys.svg.png"}, {"navn": "Delfino Pescara 1936", "lat": 42.4643, "lng": 14.2142, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Delfino_Pescara_logo.svg/250px-Delfino_Pescara_logo.svg.png"}, {"navn": "Hellas Verona F.C.", "lat": 45.4386, "lng": 10.9928, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/92/Hellas_Verona_FC_logo_%282020%29.svg/250px-Hellas_Verona_FC_logo_%282020%29.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

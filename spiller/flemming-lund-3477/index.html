@@ -10,6 +10,7 @@
   <meta property="og:title" content="Flemming Lund – Landsholdskortet">
   <meta property="og:description" content="Flemming Lund spillede 20 A-landskampe og scorede 2 mål for Danmark. Barndomsklub: Lundtofte Boldklub. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/flemming-lund-3477/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/flemming-lund-3477/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -224,7 +225,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Flemming Lund" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -232,7 +235,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Boldklubben 1903", "lat": 55.731, "lng": 12.5478, "barndom": false, "logo": "logos/klub_1533.jpg"}, {"navn": "Tampa Bay Rowdies", "lat": 27.9803, "lng": -82.5067, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Tampa_Bay_Rowdies_logo_%28with_Tampa_Bay%2C_two_gold_stars%29.svg/500px-Tampa_Bay_Rowdies_logo_%28with_Tampa_Bay%2C_two_gold_stars%29.svg.png"}, {"navn": "Vancouver Whitecaps", "lat": 49.2826, "lng": -123.0332, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/e/ef/Oldcapslogo.png"}, {"navn": "Dallas Tornado", "lat": 32.7797, "lng": -96.7597, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/b/b6/DallasTornado_logo.png"}, {"navn": "Fortuna Düsseldorf", "lat": 51.2256, "lng": 6.7767, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Fortuna_D%C3%BCsseldorf.svg/960px-Fortuna_D%C3%BCsseldorf.svg.png"}, {"navn": "Rot-Weiss Essen", "lat": 51.4508, "lng": 7.0131, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Logo_of_Rot-Weiss_Essen.svg/330px-Logo_of_Rot-Weiss_Essen.svg.png"}, {"navn": "Vancouver Whitecaps FC", "lat": 49.2608, "lng": -123.1139, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Vancouver_Whitecaps_logo.svg/500px-Vancouver_Whitecaps_logo.svg.png"}, {"navn": "Buffalo Stallions", "lat": 42.8864, "lng": -78.8781, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Buffalo_Stallions_Ticket_Stub.jpg/1920px-Buffalo_Stallions_Ticket_Stub.jpg"}, {"navn": "New York Cosmos", "lat": 40.8137, "lng": -74.0744, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/9/93/New_York_Cosmos_77.png"}, {"navn": "Fort Lauderdale Strikers", "lat": 26.1358, "lng": -80.1419, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/6/68/FtLauderdaleStrikers.png"}, {"navn": "Royal Antwerp", "lat": 51.2211, "lng": 4.3997, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Royal_Antwerp_Football_Club_logo.svg/250px-Royal_Antwerp_Football_Club_logo.svg.png"}, {"navn": "Wichita Wings", "lat": 37.8361, "lng": -97.3212, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/1/13/WichitaWingsLogo.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

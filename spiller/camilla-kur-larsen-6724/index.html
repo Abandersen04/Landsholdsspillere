@@ -10,6 +10,7 @@
   <meta property="og:title" content="Camilla Kur Larsen – Landsholdskortet">
   <meta property="og:description" content="Camilla Kur Larsen spillede 10 A-landskampe for Danmark. Barndomsklub: Greve Fodbold. Fødested: Ishøj.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/camilla-kur-larsen-6724/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/camilla-kur-larsen-6724/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -223,7 +224,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Greve Fodbold</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/joachim-christian-andersen-7054/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Joachim Christian Andersen</a><a href="/spiller/alice-larsen-4437/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Alice Larsen</a><a href="/spiller/mikkel-thygesen-4766/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Mikkel Thygesen</a></div>
+    <a href="/?q=Greve Fodbold" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Camilla Kur Larsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -231,7 +238,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Greve Fodbold", "lat": 55.5927, "lng": 12.3002, "barndom": true, "logo": "logos/klub_1041.png"}, {"navn": "Boldklubben Skjold", "lat": 55.7037, "lng": 12.5749, "barndom": false, "logo": "logos/klub_1581.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "FC Nordsjælland", "lat": 55.8161, "lng": 12.3514, "barndom": false, "logo": "logos/klub_3702.png"}, {"navn": "Fortuna Hjørring", "lat": 57.4641, "lng": 10.0053, "barndom": false, "logo": "logos/klub_47.png"}, {"navn": "Western New York Flash", "lat": 43.1622, "lng": -77.6294, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Western_New_York_Flash_logo.svg/330px-Western_New_York_Flash_logo.svg.png"}, {"navn": "Vålerenga IF", "lat": 59.918, "lng": 10.8061, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/V%C3%A5lerenga_Oslo_logo.svg/500px-V%C3%A5lerenga_Oslo_logo.svg.png"}, {"navn": "AGSM Verona Calcio Femminile", "lat": 45.4386, "lng": 10.9928, "barndom": false, "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/A.S.D.%20Verona%20Women%20logo.png"}, {"navn": "Colorado Rapids", "lat": 39.8056, "lng": -104.8919, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Colorado_Rapids_logo.svg/330px-Colorado_Rapids_logo.svg.png"}, {"navn": "Vålerenga Fotball Damer", "lat": 59.9133, "lng": 10.7389, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/V%C3%A5lerenga_Oslo_logo.svg/500px-V%C3%A5lerenga_Oslo_logo.svg.png"}];
 const birthMarker = {"lat": 55.615833333, "lng": 12.351388888, "navn": "Ishøj"};

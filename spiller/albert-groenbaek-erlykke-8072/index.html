@@ -10,6 +10,7 @@
   <meta property="og:title" content="Albert Grønbæk Erlykke – Landsholdskortet">
   <meta property="og:description" content="Albert Grønbæk Erlykke spillede 8 A-landskampe og scorede 1 mål for Danmark. Barndomsklub: VRI. Fødested: Risskov.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/albert-groenbaek-erlykke-8072/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/albert-groenbaek-erlykke-8072/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -218,7 +219,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra VRI</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/maiken-pape-5367/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Maiken Pape</a></div>
+    <a href="/?q=VRI" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Albert Grønbæk Erlykke" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -226,7 +233,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "AGF", "lat": 56.1322, "lng": 10.1937, "barndom": false, "logo": "logos/klub_3699.png"}, {"navn": "VRI", "lat": 56.1938, "lng": 10.2472, "barndom": true, "logo": "logos/klub_680.png"}, {"navn": "Southampton F.C.", "lat": 50.9067, "lng": -1.4044, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/FC_Southampton.svg/330px-FC_Southampton.svg.png"}, {"navn": "Stade Rennais F.C.", "lat": 48.1142, "lng": -1.6808, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Stade_Rennais_FC.svg/330px-Stade_Rennais_FC.svg.png"}, {"navn": "Genoa C.F.C.", "lat": 44.4072, "lng": 8.934, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Genoa_CFC_crest.svg/250px-Genoa_CFC_crest.svg.png"}, {"navn": "FK Bodø/Glimt", "lat": 67.2775, "lng": 14.3842, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/FK_Bodo_Glimt_logo.svg/250px-FK_Bodo_Glimt_logo.svg.png"}, {"navn": "Hamburger SV", "lat": 53.55, "lng": 10.0, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Hamburger_SV_logo.svg/960px-Hamburger_SV_logo.svg.png"}];
 const birthMarker = {"lat": 56.202222222, "lng": 10.249444444, "navn": "Risskov"};

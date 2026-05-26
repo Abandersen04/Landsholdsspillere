@@ -10,6 +10,7 @@
   <meta property="og:title" content="Anders Fønss – Landsholdskortet">
   <meta property="og:description" content="Anders Fønss spillede 1 A-landskampe for Danmark. Barndomsklub: Fjordager IF. Fødested: Kerteminde.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/anders-foenss-8029/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/anders-foenss-8029/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -217,7 +218,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Fjordager IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/soeren-berg-4351/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Søren Berg</a></div>
+    <a href="/?q=Fjordager IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Anders Fønss" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -225,7 +232,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "B 1909", "lat": 55.4109, "lng": 10.4281, "barndom": false, "logo": "logos/klub_1364.png"}, {"navn": "Fjordager IF", "lat": 55.4296, "lng": 10.4474, "barndom": true, "logo": "logos/klub_1395.png"}, {"navn": "Boldklubben Marienlyst", "lat": 55.4225, "lng": 10.3972, "barndom": false, "logo": "logos/klub_1444.png"}, {"navn": "Næsby BK", "lat": 55.4332, "lng": 10.3401, "barndom": false, "logo": "logos/klub_1457.png"}, {"navn": "Otterup Bold- og Idrætsklub", "lat": 55.5092, "lng": 10.397, "barndom": false, "logo": "logos/klub_1467.png"}, {"navn": "Strib IF", "lat": 55.5336, "lng": 9.7844, "barndom": false, "logo": "https://file.dbu.dk/images/club/1494/Strib_IF.png"}, {"navn": "Tarup/Paarup IF", "lat": 55.4077, "lng": 10.3123, "barndom": false, "logo": "logos/klub_1503.png"}, {"navn": "Agedrup-Bullerup Boldklub", "lat": 55.4305, "lng": 10.4815, "barndom": false, "logo": "https://file.dbu.dk/images/club/2101/Agedrup-Bullerup_Boldklub.png"}, {"navn": "SønderjyskE", "lat": 55.2615, "lng": 9.4893, "barndom": false, "logo": "https://file.dbu.dk/images/club/3703/SønderjyskE.png"}];
 const birthMarker = {"lat": 55.449, "lng": 10.659, "navn": "Kerteminde"};

@@ -10,6 +10,7 @@
   <meta property="og:title" content="Michael Lumb – Landsholdskortet">
   <meta property="og:description" content="Michael Lumb spillede 2 A-landskampe for Danmark. Barndomsklub: Fuglebakken KFUM Århus. Fødested: Aarhus.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/michael-lumb-5132/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Lumb%202010.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/michael-lumb-5132/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Aarhus"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Lumb%202010.jpg"
 }
   </script>
   <style>
@@ -218,7 +220,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Fuglebakken KFUM Århus</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/frank-pingel-2358/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Frank Pingel</a></div>
+    <a href="/?q=Fuglebakken KFUM Århus" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Michael Lumb" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -226,7 +234,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Holbæk B&I", "lat": 55.6976, "lng": 11.6857, "barndom": false, "logo": "logos/klub_1079.png"}, {"navn": "Slagelse B&I", "lat": 55.3995, "lng": 11.3643, "barndom": false, "logo": "logos/klub_1229.png"}, {"navn": "Brønshøj Boldklub", "lat": 55.7188, "lng": 12.4923, "barndom": false, "logo": "logos/klub_1543.png"}, {"navn": "Boldklubben Fremad Amager", "lat": 55.6463, "lng": 12.599, "barndom": false, "logo": "logos/klub_1553.png"}, {"navn": "Aalborg Boldklub", "lat": 57.0434, "lng": 10.0196, "barndom": false, "logo": "logos/klub_2.png"}, {"navn": "AGF", "lat": 56.1322, "lng": 10.1937, "barndom": false, "logo": "logos/klub_3699.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "AC Horsens", "lat": 55.8716, "lng": 9.8562, "barndom": false, "logo": "logos/klub_3715.png"}, {"navn": "Avarta", "lat": 55.6756, "lng": 12.4304, "barndom": false, "logo": "logos/klub_3720.png"}, {"navn": "Fuglebakken KFUM Århus", "lat": 56.1723, "lng": 10.1762, "barndom": true, "logo": "logos/klub_427.png"}, {"navn": "VfL Bochum", "lat": 51.4833, "lng": 7.2167, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VfL_Bochum_logo.svg/250px-VfL_Bochum_logo.svg.png"}, {"navn": "SC Freiburg", "lat": 47.995, "lng": 7.85, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/SC_Freiburg_logo.svg/330px-SC_Freiburg_logo.svg.png"}, {"navn": "Feyenoord", "lat": 51.92, "lng": 4.48, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Feyenoord_logo_since_2024.svg/960px-Feyenoord_logo_since_2024.svg.png"}, {"navn": "Aalborg Boldklub", "lat": 57.0436, "lng": 10.0208, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"}, {"navn": "FC Zenit Saint Petersburg", "lat": 59.95, "lng": 30.3167, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/FC_Zenit_Saint_Petersburg_crest.svg/500px-FC_Zenit_Saint_Petersburg_crest.svg.png"}, {"navn": "Lyngby Boldklub", "lat": 55.7821, "lng": 12.5064, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"}];
 const birthMarker = {"lat": 56.156388888, "lng": 10.209722222, "navn": "Aarhus"};

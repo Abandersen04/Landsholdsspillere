@@ -10,6 +10,7 @@
   <meta property="og:title" content="Jan Heintze – Landsholdskortet">
   <meta property="og:description" content="Jan Heintze spillede 86 A-landskampe og scorede 4 mål for Danmark. Barndomsklub: AB Tårnby. Fødested: Tårnby.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/jan-heintze-984/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/PSV%20koppen%2015%20%2C%2016%20Jan%20Heintze%20%2C%2017%20%2C%20Bestanddeelnr%20934-0448.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/jan-heintze-984/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Tårnby"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/PSV%20koppen%2015%20%2C%2016%20Jan%20Heintze%20%2C%2017%20%2C%20Bestanddeelnr%20934-0448.jpg"
 }
   </script>
   <style>
@@ -232,7 +234,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra AB Tårnby</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/nicklas-bendtner-5111/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Nicklas Bendtner</a><a href="/spiller/niki-zimling-4691/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Niki Zimling</a></div>
+    <a href="/?q=AB Tårnby" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Jan Heintze" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -240,7 +248,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "AB Tårnby", "lat": 55.6037, "lng": 12.5893, "barndom": true, "logo": "logos/klub_1537.png"}, {"navn": "Kastrup Boldklub", "lat": 55.6321, "lng": 12.6296, "barndom": false, "logo": "logos/klub_1566.png"}, {"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "Bayer 04 Leverkusen", "lat": 51.0333, "lng": 6.9833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Bayer_04_Leverkusen_logo.svg/500px-Bayer_04_Leverkusen_logo.svg.png"}, {"navn": "PSV Eindhoven", "lat": 51.4344, "lng": 5.4842, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/PSV_Eindhoven.svg/500px-PSV_Eindhoven.svg.png"}, {"navn": "KFC Uerdingen 05", "lat": 51.3333, "lng": 6.5667, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Logo_KFC_Uerdingen_05.svg/960px-Logo_KFC_Uerdingen_05.svg.png"}];
 const birthMarker = {"lat": 55.6278, "lng": 12.6025, "navn": "Tårnby"};

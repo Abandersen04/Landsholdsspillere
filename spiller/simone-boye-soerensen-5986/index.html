@@ -10,6 +10,7 @@
   <meta property="og:title" content="Simone Boye Sørensen – Landsholdskortet">
   <meta property="og:description" content="Simone Boye Sørensen spillede 96 A-landskampe og scorede 5 mål for Danmark. Barndomsklub: Jernløse BK. Fødested: Regstrup.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/simone-boye-soerensen-5986/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Simone%20Boye%20S%C3%B8rensen%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/simone-boye-soerensen-5986/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Regstrup"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Simone%20Boye%20S%C3%B8rensen%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -232,7 +234,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Simone Boye Sørensen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -240,7 +244,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Jernløse BK", "lat": 55.6589, "lng": 11.6228, "barndom": true, "logo": "logos/klub_1105.png"}, {"navn": "Ballerup-Skovlunde Fodbold (BSF)", "lat": 55.7161, "lng": 12.3734, "barndom": false, "logo": "https://bsfodbold.dk/images/logo.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "HB Køge", "lat": 55.468, "lng": 12.1766, "barndom": false, "logo": "logos/klub_3714.png"}, {"navn": "FC Bayern Munich (women)", "lat": 48.1375, "lng": 11.575, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/960px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png"}, {"navn": "FC Rosengård", "lat": 55.595, "lng": 12.9956, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/FC_Roseng%C3%A5rd_logo.svg/250px-FC_Roseng%C3%A5rd_logo.svg.png"}, {"navn": "UTSA Roadrunners", "lat": 29.4169, "lng": -98.4789, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/UTSA_Athletics_logo.svg/250px-UTSA_Athletics_logo.svg.png"}, {"navn": "Hammarby Fotboll (women)", "lat": 59.2914, "lng": 18.0853, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Hammarby_IF_logo.svg/330px-Hammarby_IF_logo.svg.png"}, {"navn": "Arsenal FC", "lat": 51.5072, "lng": -0.1275, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/330px-Arsenal_FC.svg.png"}];
 const birthMarker = {"lat": 55.6736163, "lng": 11.6185139, "navn": "Regstrup"};

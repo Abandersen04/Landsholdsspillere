@@ -10,6 +10,7 @@
   <meta property="og:title" content="Søren Andersen – Landsholdskortet">
   <meta property="og:description" content="Søren Andersen spillede 12 A-landskampe for Danmark. Barndomsklub: Silkeborg IF. Fødested: Aarhus.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/soeren-andersen-976/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/soeren-andersen-976/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -224,7 +225,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Silkeborg IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/brian-skaarup-3986/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Brian Skaarup</a></div>
+    <a href="/?q=Silkeborg IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Søren Andersen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -232,7 +239,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Odense Boldklub", "lat": 55.3846, "lng": 10.3743, "barndom": false, "logo": "logos/klub_1458.png"}, {"navn": "Aalborg Boldklub", "lat": 57.0434, "lng": 10.0196, "barndom": false, "logo": "logos/klub_2.png"}, {"navn": "AGF", "lat": 56.1322, "lng": 10.1937, "barndom": false, "logo": "logos/klub_3699.png"}, {"navn": "Silkeborg IF", "lat": 56.1841, "lng": 9.5755, "barndom": true, "logo": "logos/klub_632.png"}, {"navn": "Rayo Vallecano", "lat": 40.4169, "lng": -3.7033, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Rayo_Vallecano_logo.svg/330px-Rayo_Vallecano_logo.svg.png"}, {"navn": "Bristol City F.C.", "lat": 51.4536, "lng": -2.5975, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Bristol_City_crest.svg/330px-Bristol_City_crest.svg.png"}, {"navn": "Aalborg Boldklub", "lat": 57.0436, "lng": 10.0208, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"}, {"navn": "IFK Norrkoping", "lat": 58.5793, "lng": 16.1493, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/IFK_Norrkoping_logo.svg/330px-IFK_Norrkoping_logo.svg.png"}, {"navn": "UE Lleida", "lat": 41.6167, "lng": 0.6333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/b/bb/UE_Lleida_escudo.png"}];
 const birthMarker = {"lat": 56.156388888, "lng": 10.209722222, "navn": "Aarhus"};

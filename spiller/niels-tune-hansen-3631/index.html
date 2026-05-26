@@ -10,6 +10,7 @@
   <meta property="og:title" content="Niels Tune Hansen – Landsholdskortet">
   <meta property="og:description" content="Niels Tune Hansen spillede 15 A-landskampe og scorede 1 mål for Danmark. Barndomsklub: Holbæk B&I. Fødested: Holbæk Sygehus.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/niels-tune-hansen-3631/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/niels-tune-hansen-3631/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -220,7 +221,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Holbæk B&I</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/mark-strudal-2346/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Mark Strudal</a><a href="/spiller/joergen-joergensen-3224/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Jørgen Jørgensen</a><a href="/spiller/nicolai-stokholm-4764/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Nicolai Stokholm</a><a href="/spiller/allan-hansen-3638/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Allan Hansen</a><a href="/spiller/kurt-joergensen-3958/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Kurt Jørgensen</a></div>
+    <a href="/?q=Holbæk B&I" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Niels Tune Hansen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -228,7 +235,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Holbæk B&I", "lat": 55.6976, "lng": 11.6857, "barndom": true, "logo": "logos/klub_1079.png"}, {"navn": "VfL Osnabrück", "lat": 52.2789, "lng": 8.0431, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/VfL_Osnabrueck_Logo_2021%E2%80%93.svg/330px-VfL_Osnabrueck_Logo_2021%E2%80%93.svg.png"}, {"navn": "FC St. Pauli", "lat": 53.55, "lng": 10.0, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/FC_St._Pauli_logo_%282018%29.svg/250px-FC_St._Pauli_logo_%282018%29.svg.png"}];
 const birthMarker = {"lat": 55.71119722, "lng": 11.71699722, "navn": "Holbæk Sygehus"};

@@ -10,6 +10,7 @@
   <meta property="og:title" content="Nina Frausing Pedersen – Landsholdskortet">
   <meta property="og:description" content="Nina Frausing Pedersen spillede 7 A-landskampe for Danmark. Barndomsklub: Skovbakken IK OB. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/nina-frausing-pedersen-6622/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Nina%20Frausing%20Pedersen%20%2816900046570%29%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/nina-frausing-pedersen-6622/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Nina%20Frausing%20Pedersen%20%2816900046570%29%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -218,7 +220,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Skovbakken IK OB</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/mette-jokumsen-4368/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Mette Jokumsen</a><a href="/spiller/nadia-kjaeldgaard-4359/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Nadia Kjældgaard</a><a href="/spiller/nanna-johansen-5093/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Nanna Johansen</a><a href="/spiller/lars-lundkvist-3736/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Lars Lundkvist</a><a href="/spiller/ole-skouboe-3548/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ole Skouboe</a><a href="/spiller/marianne-pedersen-5500/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Marianne Pedersen</a></div>
+    <a href="/?q=Skovbakken IK OB" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Nina Frausing Pedersen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -226,7 +234,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Skovbakken IK OB", "lat": 56.1944, "lng": 10.2068, "barndom": true, "logo": "logos/klub_3246.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Fortuna Hjørring", "lat": 57.4641, "lng": 10.0053, "barndom": false, "logo": "logos/klub_47.png"}, {"navn": "Liverpool F.C.", "lat": 53.4308, "lng": -2.9608, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/250px-Liverpool_FC.svg.png"}, {"navn": "1. FFC Turbine Potsdam", "lat": 52.4, "lng": 13.0667, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/1._FFC_Turbine_Potsdam_logo.svg/330px-1._FFC_Turbine_Potsdam_logo.svg.png"}, {"navn": "FC Rosengård", "lat": 55.595, "lng": 12.9956, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/FC_Roseng%C3%A5rd_logo.svg/250px-FC_Roseng%C3%A5rd_logo.svg.png"}, {"navn": "Texas Longhorns", "lat": 30.2837, "lng": -97.7326, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Texas_Longhorns_logo.svg/500px-Texas_Longhorns_logo.svg.png"}, {"navn": "California Golden Bears", "lat": 37.8711, "lng": -122.2508, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/250px-California_Golden_Bears_logo.svg.png"}, {"navn": "Liverpool F.C. Women", "lat": 53.4476, "lng": -2.7276, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/250px-Liverpool_FC.svg.png"}, {"navn": "ASA Tel Aviv University", "lat": 32.1137, "lng": 34.8035, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/he/1/18/ASA-TA.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

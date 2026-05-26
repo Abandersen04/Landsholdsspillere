@@ -10,6 +10,7 @@
   <meta property="og:title" content="Filip Jørgensen – Landsholdskortet">
   <meta property="og:description" content="Filip Jørgensen spillede 1 A-landskampe for Danmark. Barndomsklub: GIF Nike. Fødested: Lomma.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/filip-joergensen-8364/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Filip%20J%C3%B6rgensen%2020042025%20%281%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/filip-joergensen-8364/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Lomma"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Filip%20J%C3%B6rgensen%2020042025%20%281%29.jpg"
 }
   </script>
   <style>
@@ -217,7 +219,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Filip Jørgensen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -225,7 +229,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "GIF Nike", "lat": 55.6668, "lng": 13.0672, "barndom": true, "logo": "logos/klub_99015.png"}, {"navn": "Villarreal CF", "lat": 39.9378, "lng": -0.1014, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Villarreal_CF_logo-en.svg/330px-Villarreal_CF_logo-en.svg.png"}, {"navn": "Malmö FF", "lat": 55.5833, "lng": 13.0, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Malmo_FF_logo.svg/250px-Malmo_FF_logo.svg.png"}, {"navn": "Chelsea F.C.", "lat": 51.4817, "lng": -0.1908, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/250px-Chelsea_FC.svg.png"}];
 const birthMarker = {"lat": 55.674722184, "lng": 13.080126187, "navn": "Lomma"};

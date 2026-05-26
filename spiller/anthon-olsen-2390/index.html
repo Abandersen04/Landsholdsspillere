@@ -10,6 +10,7 @@
   <meta property="og:title" content="Anthon Olsen – Landsholdskortet">
   <meta property="og:description" content="Anthon Olsen spillede 16 A-landskampe og scorede 14 mål for Danmark. Barndomsklub: Hermod. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/anthon-olsen-2390/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Football%20at%20the%201912%20Summer%20Olympics%20-%20Denmark%20squad%20%28Olsen%29.JPG">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/anthon-olsen-2390/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Football%20at%20the%201912%20Summer%20Olympics%20-%20Denmark%20squad%20%28Olsen%29.JPG"
 }
   </script>
   <style>
@@ -232,7 +234,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Anthon Olsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -240,7 +244,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Boldklubben af 1893", "lat": 55.7138, "lng": 12.5825, "barndom": false, "logo": "logos/klub_1532.png"}, {"navn": "Hermod", "lat": 55.6997, "lng": 12.57, "barndom": true, "logo": "logos/klub_99999.jpg"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

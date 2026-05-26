@@ -10,6 +10,7 @@
   <meta property="og:title" content="Christopher Poulsen – Landsholdskortet">
   <meta property="og:description" content="Christopher Poulsen spillede 2 A-landskampe for Danmark. Barndomsklub: Bindslev/Tversted IF. Fødested: Hirtshals.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/christopher-poulsen-4345/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Christopher%20Poulsen.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/christopher-poulsen-4345/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Hirtshals"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Christopher%20Poulsen.jpg"
 }
   </script>
   <style>
@@ -217,7 +219,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Christopher Poulsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -225,7 +229,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Bording IF", "lat": 56.1484, "lng": 9.2721, "barndom": false, "logo": "https://file.dbu.dk/images/club/206/Bording_IF.png"}, {"navn": "Bindslev/Tversted IF", "lat": 57.547, "lng": 10.1966, "barndom": true, "logo": "logos/klub_23.png"}, {"navn": "FC Midtjylland", "lat": 56.117, "lng": 8.9509, "barndom": false, "logo": "https://file.dbu.dk/images/club/3705/FC_Midtjylland.png"}, {"navn": "Vendsyssel FF", "lat": 57.4726, "lng": 10.0028, "barndom": false, "logo": "logos/klub_3733.png"}, {"navn": "Viborg FF", "lat": 56.461, "lng": 9.3891, "barndom": false, "logo": "logos/klub_376.png"}, {"navn": "Silkeborg IF", "lat": 56.1841, "lng": 9.5755, "barndom": false, "logo": "logos/klub_632.png"}, {"navn": "Silkeborg KFUM", "lat": 56.1818, "lng": 9.5784, "barndom": false, "logo": "https://file.dbu.dk/images/club/633/Silkeborg_KFUM.png"}, {"navn": "Hjørring IF", "lat": 57.4617, "lng": 10.0064, "barndom": false, "logo": "logos/klub_68.png"}];
 const birthMarker = {"lat": 57.59, "lng": 9.96, "navn": "Hirtshals"};

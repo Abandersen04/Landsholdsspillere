@@ -10,6 +10,7 @@
   <meta property="og:title" content="Jan Michaelsen – Landsholdskortet">
   <meta property="og:description" content="Jan Michaelsen spillede 19 A-landskampe og scorede 1 mål for Danmark. Barndomsklub: SfB. Fødested: Nantes.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/jan-michaelsen-4207/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Michaelsen.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/jan-michaelsen-4207/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Nantes"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Michaelsen.jpg"
 }
   </script>
   <style>
@@ -221,7 +223,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra SfB</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/john-eriksen-3811/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">John Eriksen</a><a href="/spiller/boerge-bastholm-larsen-2945/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Børge Bastholm Larsen</a><a href="/spiller/mogens-haastrup-3353/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Mogens Haastrup</a></div>
+    <a href="/?q=SfB" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Jan Michaelsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -229,7 +237,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "SfB", "lat": 55.0563, "lng": 10.5772, "barndom": true, "logo": "logos/klub_1497.png"}, {"navn": "Hellerup Idræts Klub", "lat": 55.7436, "lng": 12.5659, "barndom": false, "logo": "logos/klub_1562.png"}, {"navn": "Vanløse IF", "lat": 55.6876, "lng": 12.4758, "barndom": false, "logo": "logos/klub_1588.png"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}, {"navn": "Hamarkameratene", "lat": 60.7956, "lng": 11.0922, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Hamarkameratene_logo.svg/250px-Hamarkameratene_logo.svg.png"}, {"navn": "Panathinaikos F.C.", "lat": 37.9842, "lng": 23.7281, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Panathinaikos_F.C._logo.svg/330px-Panathinaikos_F.C._logo.svg.png"}];
 const birthMarker = {"lat": 47.217222222, "lng": -1.553888888, "navn": "Nantes"};

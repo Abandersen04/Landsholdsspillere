@@ -10,6 +10,7 @@
   <meta property="og:title" content="Axel Pilmark – Landsholdskortet">
   <meta property="og:description" content="Axel Pilmark spillede 18 A-landskampe og scorede 1 mål for Danmark. Barndomsklub: Boldklubben Ydun. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/axel-pilmark-2816/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Axel%20Pilmark.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/axel-pilmark-2816/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Axel%20Pilmark.jpg"
 }
   </script>
   <style>
@@ -220,7 +222,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Axel Pilmark" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -228,7 +232,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "Boldklubben Ydun", "lat": 55.6765, "lng": 12.4978, "barndom": true, "logo": "logos/klub_99001.png"}, {"navn": "Bologna F.C. 1909", "lat": 44.4939, "lng": 11.3428, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bologna_F.C._1909_logo.svg/250px-Bologna_F.C._1909_logo.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

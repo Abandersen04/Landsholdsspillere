@@ -10,6 +10,7 @@
   <meta property="og:title" content="Mads Hermansen – Landsholdskortet">
   <meta property="og:description" content="Mads Hermansen spillede 2 A-landskampe for Danmark. Barndomsklub: Næsby BK. Fødested: Odense.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/mads-hermansen-7575/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Mads%20Hermansen%2024082024%20%282%29%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/mads-hermansen-7575/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Odense"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mads%20Hermansen%2024082024%20%282%29%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -217,7 +219,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Næsby BK</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/maja-kildemoes-6861/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Maja Kildemoes</a><a href="/spiller/morten-donnerup-3874/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Morten Donnerup</a><a href="/spiller/mads-priisholm-bertelsen-8027/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Mads Priisholm Bertelsen</a></div>
+    <a href="/?q=Næsby BK" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Mads Hermansen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -225,7 +233,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Næsby BK", "lat": 55.4332, "lng": 10.3401, "barndom": true, "logo": "logos/klub_1457.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "West Ham United F.C.", "lat": 51.5167, "lng": 0.0333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/250px-West_Ham_United_FC_logo.svg.png"}, {"navn": "Leicester City F.C.", "lat": 52.6361, "lng": -1.1331, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Leicester_City_crest.svg/330px-Leicester_City_crest.svg.png"}];
 const birthMarker = {"lat": 55.4, "lng": 10.383333333, "navn": "Odense"};

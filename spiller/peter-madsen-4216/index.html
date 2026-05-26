@@ -10,6 +10,7 @@
   <meta property="og:title" content="Peter Madsen – Landsholdskortet">
   <meta property="og:description" content="Peter Madsen spillede 13 A-landskampe og scorede 3 mål for Danmark. Barndomsklub: Roskilde Boldklub. Fødested: Roskilde.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/peter-madsen-4216/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Madsen%2020120507.JPG">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/peter-madsen-4216/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Roskilde"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Madsen%2020120507.JPG"
 }
   </script>
   <style>
@@ -221,7 +223,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Roskilde Boldklub</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/christian-gytkjaer-5575/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Christian Gytkjær</a><a href="/spiller/lene-hansen-4460/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Lene Hansen</a></div>
+    <a href="/?q=Roskilde Boldklub" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Peter Madsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -229,7 +237,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Roskilde Boldklub", "lat": 55.6369, "lng": 12.0726, "barndom": true, "logo": "logos/klub_1141.jpg"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "FC Roskilde", "lat": 55.6369, "lng": 12.0702, "barndom": false, "logo": "logos/klub_3731.png"}, {"navn": "VfL Wolfsburg", "lat": 52.4231, "lng": 10.7872, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/VfL_Wolfsburg_Logo.svg/500px-VfL_Wolfsburg_Logo.svg.png"}, {"navn": "1. FC Köln", "lat": 50.9422, "lng": 6.9578, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/1._FC_Koeln_Logo_2014%E2%80%93.svg/330px-1._FC_Koeln_Logo_2014%E2%80%93.svg.png"}, {"navn": "VfL Bochum", "lat": 51.4833, "lng": 7.2167, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VfL_Bochum_logo.svg/250px-VfL_Bochum_logo.svg.png"}, {"navn": "Southampton F.C.", "lat": 50.9067, "lng": -1.4044, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/FC_Southampton.svg/330px-FC_Southampton.svg.png"}, {"navn": "Lyngby Boldklub", "lat": 55.7821, "lng": 12.5064, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"}];
 const birthMarker = {"lat": 55.641666666, "lng": 12.080833333, "navn": "Roskilde"};

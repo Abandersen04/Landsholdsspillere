@@ -10,6 +10,7 @@
   <meta property="og:title" content="Jacob Bruun Larsen – Landsholdskortet">
   <meta property="og:description" content="Jacob Bruun Larsen spillede 8 A-landskampe og scorede 1 mål for Danmark. Barndomsklub: Hornbæk IF. Fødested: Kongens Lyngby.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/jacob-bruun-larsen-7361/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Jacob%20Bruun%20Larsen%2C%20Dinamarca%20x%20%C3%81frica%20do%20Sul%20-%20Olimp%C3%ADadas%20Rio%202016%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/jacob-bruun-larsen-7361/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Kongens Lyngby"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jacob%20Bruun%20Larsen%2C%20Dinamarca%20x%20%C3%81frica%20do%20Sul%20-%20Olimp%C3%ADadas%20Rio%202016%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -223,7 +225,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Hornbæk IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/victor-nelsson-7679/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Victor Nelsson</a></div>
+    <a href="/?q=Hornbæk IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Jacob Bruun Larsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -231,7 +239,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Lyngby Boldklub 1921", "lat": 55.7822, "lng": 12.5065, "barndom": false, "logo": "logos/klub_1146.png"}, {"navn": "R.S.C. Anderlecht", "lat": 50.8392, "lng": 4.3297, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/R.S.C._Anderlecht.svg/330px-R.S.C._Anderlecht.svg.png"}, {"navn": "Burnley F.C.", "lat": 53.7889, "lng": -2.2481, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Burnley_FC_Logo.svg/330px-Burnley_FC_Logo.svg.png"}, {"navn": "TSG 1899 Hoffenheim", "lat": 49.25, "lng": 8.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Logo_TSG_Hoffenheim.svg/960px-Logo_TSG_Hoffenheim.svg.png"}, {"navn": "Borussia Dortmund", "lat": 51.5139, "lng": 7.4653, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/960px-Borussia_Dortmund_logo.svg.png"}, {"navn": "VfB Stuttgart", "lat": 48.7775, "lng": 9.18, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/VfB_Stuttgart_1893_Logo.svg/500px-VfB_Stuttgart_1893_Logo.svg.png"}];
 const birthMarker = {"lat": 55.77, "lng": 12.5, "navn": "Kongens Lyngby"};

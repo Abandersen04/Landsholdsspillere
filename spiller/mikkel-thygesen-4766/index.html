@@ -10,6 +10,7 @@
   <meta property="og:title" content="Mikkel Thygesen – Landsholdskortet">
   <meta property="og:description" content="Mikkel Thygesen spillede 3 A-landskampe for Danmark. Barndomsklub: Greve Fodbold. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/mikkel-thygesen-4766/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Mikkel%20Thygesen.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/mikkel-thygesen-4766/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mikkel%20Thygesen.jpg"
 }
   </script>
   <style>
@@ -219,7 +221,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Greve Fodbold</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/joachim-christian-andersen-7054/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Joachim Christian Andersen</a><a href="/spiller/alice-larsen-4437/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Alice Larsen</a><a href="/spiller/camilla-kur-larsen-6724/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Camilla Kur Larsen</a></div>
+    <a href="/?q=Greve Fodbold" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Mikkel Thygesen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -227,7 +235,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Greve Fodbold", "lat": 55.5927, "lng": 12.3002, "barndom": true, "logo": "logos/klub_1041.png"}, {"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "barndom": false, "logo": "logos/klub_1552.png"}, {"navn": "Hellerup Idræts Klub", "lat": 55.7436, "lng": 12.5659, "barndom": false, "logo": "logos/klub_1562.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "FC Midtjylland", "lat": 56.117, "lng": 8.9509, "barndom": false, "logo": "https://file.dbu.dk/images/club/3705/FC_Midtjylland.png"}, {"navn": "Randers FC", "lat": 56.4656, "lng": 10.0096, "barndom": false, "logo": "logos/klub_3707.png"}, {"navn": "FC Roskilde", "lat": 55.6369, "lng": 12.0702, "barndom": false, "logo": "logos/klub_3731.png"}, {"navn": "Borussia Mönchengladbach", "lat": 51.2, "lng": 6.4333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Borussia_M%C3%B6nchengladbach_logo.svg/960px-Borussia_M%C3%B6nchengladbach_logo.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

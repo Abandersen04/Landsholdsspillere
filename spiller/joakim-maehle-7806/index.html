@@ -10,6 +10,7 @@
   <meta property="og:title" content="Joakim Mæhle – Landsholdskortet">
   <meta property="og:description" content="Joakim Mæhle spillede 57 A-landskampe og scorede 11 mål for Danmark. Barndomsklub: Østervraa IF. Fødested: Østervrå.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/joakim-maehle-7806/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Joakim%20M%C3%A6hle%20September%202019.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/joakim-maehle-7806/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Østervrå"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Joakim%20M%C3%A6hle%20September%202019.jpg"
 }
   </script>
   <style>
@@ -223,7 +225,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Joakim Mæhle" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -231,7 +235,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Østervraa IF", "lat": 57.3399, "lng": 10.2369, "barndom": true, "logo": "logos/klub_176.png"}, {"navn": "Aalborg Boldklub", "lat": 57.0434, "lng": 10.0196, "barndom": false, "logo": "logos/klub_2.png"}, {"navn": "VfL Wolfsburg", "lat": 52.4231, "lng": 10.7872, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/VfL_Wolfsburg_Logo.svg/500px-VfL_Wolfsburg_Logo.svg.png"}, {"navn": "Atalanta", "lat": 45.695, "lng": 9.67, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/66/AtalantaBC.svg/250px-AtalantaBC.svg.png"}, {"navn": "K.R.C. Genk", "lat": 50.9662, "lng": 5.5021, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/7/77/Logo_KRC_Genk.png"}];
 const birthMarker = {"lat": 57.3417, "lng": 10.2361, "navn": "Østervrå"};

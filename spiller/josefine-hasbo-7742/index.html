@@ -10,6 +10,7 @@
   <meta property="og:title" content="Josefine Hasbo – Landsholdskortet">
   <meta property="og:description" content="Josefine Hasbo spillede 38 A-landskampe og scorede 3 mål for Danmark. Barndomsklub: Hørsholm-Usserød IK. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/josefine-hasbo-7742/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Josefine%20Hasbo%20Gotham%20FC%20Bay%20FC%206.21.2025-025%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/josefine-hasbo-7742/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Josefine%20Hasbo%20Gotham%20FC%20Bay%20FC%206.21.2025-025%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -223,7 +225,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Hørsholm-Usserød IK</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/sofie-svava-7537/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Sofie Svava</a><a href="/spiller/rasmus-hoejlund-8012/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Rasmus Højlund</a></div>
+    <a href="/?q=Hørsholm-Usserød IK" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Josefine Hasbo" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -231,7 +239,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Ballerup-Skovlunde Fodbold (BSF)", "lat": 55.7161, "lng": 12.3734, "barndom": false, "logo": "https://bsfodbold.dk/images/logo.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Gotham FC", "lat": 40.7367, "lng": -74.1503, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/36/NJ_NY_Gotham_FC_logo.svg/250px-NJ_NY_Gotham_FC_logo.svg.png"}, {"navn": "Hørsholm-Usserød IK", "lat": 55.8951, "lng": 12.5172, "barndom": true, "logo": "logos/klub_1098.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

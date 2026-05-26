@@ -10,6 +10,7 @@
   <meta property="og:title" content="Nicolai Jørgensen – Landsholdskortet">
   <meta property="og:description" content="Nicolai Jørgensen spillede 39 A-landskampe og scorede 9 mål for Danmark. Barndomsklub: Grantoften IF. Fødested: Ballerup.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/nicolai-joergensen-6679/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Nicolai%20J%C3%B8rgensen%20%282%29%20%28cropped%29.JPG">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/nicolai-joergensen-6679/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Ballerup"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolai%20J%C3%B8rgensen%20%282%29%20%28cropped%29.JPG"
 }
   </script>
   <style>
@@ -225,7 +227,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Nicolai Jørgensen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -233,7 +237,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Grantoften IF", "lat": 55.7237, "lng": 12.3363, "barndom": true, "logo": "logos/klub_1039.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}, {"navn": "Bayer 04 Leverkusen", "lat": 51.0333, "lng": 6.9833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Bayer_04_Leverkusen_logo.svg/500px-Bayer_04_Leverkusen_logo.svg.png"}, {"navn": "Feyenoord", "lat": 51.92, "lng": 4.48, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Feyenoord_logo_since_2024.svg/960px-Feyenoord_logo_since_2024.svg.png"}, {"navn": "Kasımpaşa S.K.", "lat": 41.01, "lng": 28.9603, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Kasimpasa_logo.svg/330px-Kasimpasa_logo.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "1. FC Kaiserslautern", "lat": 49.4447, "lng": 7.7689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Logo_1_FC_Kaiserslautern.svg/330px-Logo_1_FC_Kaiserslautern.svg.png"}];
 const birthMarker = {"lat": 55.7307, "lng": 12.3617, "navn": "Ballerup"};

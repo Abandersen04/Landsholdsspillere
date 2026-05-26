@@ -10,6 +10,7 @@
   <meta property="og:title" content="Christian Nørgaard – Landsholdskortet">
   <meta property="og:description" content="Christian Nørgaard spillede 41 A-landskampe og scorede 2 mål for Danmark. Barndomsklub: Boldklubben Heimdal. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/christian-noergaard-6776/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20N%C3%B8rgaard%202%20-HSV.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/christian-noergaard-6776/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20N%C3%B8rgaard%202%20-HSV.jpg"
 }
   </script>
   <style>
@@ -223,7 +225,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Boldklubben Heimdal</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/lars-hoejer-nielsen-4070/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Lars Højer Nielsen</a></div>
+    <a href="/?q=Boldklubben Heimdal" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Christian Nørgaard" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -231,7 +239,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Espergærde IF", "lat": 55.998, "lng": 12.5286, "barndom": false, "logo": "logos/klub_1005.png"}, {"navn": "Lyngby Boldklub 1921", "lat": 55.7822, "lng": 12.5065, "barndom": false, "logo": "logos/klub_1146.png"}, {"navn": "Boldklubben Heimdal", "lat": 55.7073, "lng": 12.5638, "barndom": true, "logo": "logos/klub_1559.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Brentford F.C.", "lat": 51.5072, "lng": -0.1275, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/330px-Brentford_FC_crest.svg.png"}, {"navn": "ACF Fiorentina", "lat": 43.7714, "lng": 11.2542, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg/120px-ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg.png"}, {"navn": "Hamburger SV", "lat": 53.55, "lng": 10.0, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Hamburger_SV_logo.svg/960px-Hamburger_SV_logo.svg.png"}, {"navn": "Arsenal F.C.", "lat": 51.5072, "lng": -0.1275, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/330px-Arsenal_FC.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

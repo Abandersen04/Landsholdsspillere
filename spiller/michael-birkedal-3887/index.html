@@ -10,6 +10,7 @@
   <meta property="og:title" content="Michael Birkedal – Landsholdskortet">
   <meta property="og:description" content="Michael Birkedal spillede 1 A-landskampe for Danmark. Barndomsklub: Slagelse B&I. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/michael-birkedal-3887/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/michael-birkedal-3887/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -217,7 +218,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Slagelse B&I</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/peter-johansson-3459/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Peter Johansson</a><a href="/spiller/anders-hunsballe-8030/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Anders Hunsballe</a></div>
+    <a href="/?q=Slagelse B&I" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Michael Birkedal" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -225,7 +232,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Næstved I.F.", "lat": 55.2225, "lng": 11.7677, "barndom": false, "logo": "logos/klub_3727.webp"}, {"navn": "Slagelse B&I", "lat": 55.3995, "lng": 11.3643, "barndom": true, "logo": "logos/klub_1229.png"}, {"navn": "Ikast FS", "lat": 56.1447, "lng": 9.1423, "barndom": false, "logo": "logos/klub_266.png"}, {"navn": "FC Twente", "lat": 52.2225, "lng": 6.8925, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/FC_Twente.svg/330px-FC_Twente.svg.png"}, {"navn": "FC La Chaux-de-Fonds", "lat": 47.1114, "lng": 6.8361, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/9/92/FCLaChauxDeFonds.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

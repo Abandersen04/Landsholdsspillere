@@ -10,6 +10,7 @@
   <meta property="og:title" content="Cecilie Fløe – Landsholdskortet">
   <meta property="og:description" content="Cecilie Fløe spillede 8 A-landskampe for Danmark. Barndomsklub: Erritsø GIF. Fødested: Fredericia.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/cecilie-floee-8093/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/cecilie-floee-8093/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -222,7 +223,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Erritsø GIF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/thomas-soerensen-2285/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Thomas Sørensen</a><a href="/spiller/christoffer-haagh-7042/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Christoffer Haagh</a></div>
+    <a href="/?q=Erritsø GIF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Cecilie Fløe" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -230,7 +237,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Middelfart G&BK", "lat": 55.5002, "lng": 9.7603, "barndom": false, "logo": "https://file.dbu.dk/images/club/1447/MG_&_BK.png"}, {"navn": "Odense Boldklub", "lat": 55.3846, "lng": 10.3743, "barndom": false, "logo": "logos/klub_1458.png"}, {"navn": "HB Køge", "lat": 55.468, "lng": 12.1766, "barndom": false, "logo": "logos/klub_3714.png"}, {"navn": "Erritsø GIF", "lat": 55.5438, "lng": 9.7125, "barndom": true, "logo": "logos/klub_475.png"}, {"navn": "KoldingQ", "lat": 55.4936, "lng": 9.4597, "barndom": false, "logo": "logos/klub_567.png"}, {"navn": "Napoli", "lat": 40.8358, "lng": 14.2486, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/SSC_Napoli_2025_%28white_and_azure%29.svg/960px-SSC_Napoli_2025_%28white_and_azure%29.svg.png"}, {"navn": "S.S.D. Napoli Femminile", "lat": 40.8358, "lng": 14.2486, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/3/35/Napoli_Women_logo_%282025%29.png"}];
 const birthMarker = {"lat": 55.564444444, "lng": 9.759722222, "navn": "Fredericia"};

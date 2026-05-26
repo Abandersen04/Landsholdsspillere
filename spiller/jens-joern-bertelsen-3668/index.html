@@ -10,6 +10,7 @@
   <meta property="og:title" content="Jens Jørn Bertelsen – Landsholdskortet">
   <meta property="og:description" content="Jens Jørn Bertelsen spillede 69 A-landskampe og scorede 2 mål for Danmark. Barndomsklub: Sædding/G IF. Fødested: Guldager.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/jens-joern-bertelsen-3668/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/jens-joern-bertelsen-3668/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -228,7 +229,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Sædding/G IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/martin-braithwaite-5955/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Martin Braithwaite</a><a href="/spiller/allan-nielsen-1560/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Allan Nielsen</a><a href="/spiller/michael-schjoenberg-1596/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Michael Schjønberg</a></div>
+    <a href="/?q=Sædding/G IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Jens Jørn Bertelsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -236,7 +243,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Esbjerg fB", "lat": 55.4868, "lng": 8.436, "barndom": false, "logo": "logos/klub_785.png"}, {"navn": "Sædding/G IF", "lat": 55.5205, "lng": 8.399, "barndom": true, "logo": "logos/klub_886.png"}, {"navn": "Standard Liège", "lat": 50.6397, "lng": 5.5706, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/Standard_Li%C3%A8ge_logo.svg/250px-Standard_Li%C3%A8ge_logo.svg.png"}, {"navn": "FC Aarau", "lat": 47.3833, "lng": 8.06, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Wappen_FCAg.svg/330px-Wappen_FCAg.svg.png"}, {"navn": "FC Rouen", "lat": 49.4306, "lng": 1.0528, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/F.C._Rouen.svg/330px-F.C._Rouen.svg.png"}, {"navn": "R.F.C. Seraing", "lat": 50.6397, "lng": 5.5706, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/9/9e/RFC_Seraing-logo.png"}];
 const birthMarker = {"lat": 55.5300879, "lng": 8.4054744, "navn": "Guldager"};

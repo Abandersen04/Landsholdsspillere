@@ -10,6 +10,7 @@
   <meta property="og:title" content="Michael Schäfer – Landsholdskortet">
   <meta property="og:description" content="Michael Schäfer spillede 3 A-landskampe for Danmark. Barndomsklub: Avarta. Fødested: Rødovre.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/michael-schafer-3789/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/michael-schafer-3789/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -220,7 +221,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Avarta</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/daniel-wass-5270/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Daniel Wass</a><a href="/spiller/anders-randrup-5124/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Anders Randrup</a></div>
+    <a href="/?q=Avarta" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Michael Schäfer" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -228,7 +235,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Lyngby Boldklub", "lat": 55.7821, "lng": 12.5064, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"}, {"navn": "Avarta", "lat": 55.6814, "lng": 12.455, "barndom": true, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Logo_of_BK_Avarta.svg/960px-Logo_of_BK_Avarta.svg.png"}];
 const birthMarker = {"lat": 55.6811, "lng": 12.4558, "navn": "Rødovre"};

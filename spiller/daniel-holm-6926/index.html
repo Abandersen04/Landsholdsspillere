@@ -10,6 +10,7 @@
   <meta property="og:title" content="Daniel Holm – Landsholdskortet">
   <meta property="og:description" content="Daniel Holm spillede 1 A-landskampe for Danmark. Barndomsklub: Brøndby IF. Fødested: Hvidovre.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/daniel-holm-6926/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/daniel-holm-6926/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -217,7 +218,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Brøndby IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/brian-laudrup-1235/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Brian Laudrup</a><a href="/spiller/cecilie-sandvej-5365/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Cecilie Sandvej</a><a href="/spiller/stine-dimun-4388/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Stine Dimun</a><a href="/spiller/hanne-noerregaard-4413/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Hanne Nørregaard</a><a href="/spiller/cecilie-pedersen-4382/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Cecilie Pedersen</a><a href="/spiller/per-nielsen-2319/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Per Nielsen</a></div>
+    <a href="/?q=Brøndby IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Daniel Holm" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -225,7 +232,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "barndom": false, "logo": "logos/klub_1552.png"}, {"navn": "Hvidovre Idrætsforening", "lat": 55.6312, "lng": 12.4831, "barndom": false, "logo": "logos/klub_1564.png"}, {"navn": "Skovshoved Idrætsforening", "lat": 55.7637, "lng": 12.5902, "barndom": false, "logo": "logos/klub_1579.png"}, {"navn": "Vigerslev Boldklub", "lat": 55.6426, "lng": 12.5021, "barndom": false, "logo": "https://file.dbu.dk/images/club/1591/Vigerslev_Boldklub.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": true, "logo": "logos/klub_3700.png"}, {"navn": "Hvidovre IF", "lat": 55.6313, "lng": 12.4828, "barndom": false, "logo": "logos/klub_3716.png"}];
 const birthMarker = {"lat": 55.6564, "lng": 12.4686, "navn": "Hvidovre"};

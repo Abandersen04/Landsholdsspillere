@@ -10,6 +10,7 @@
   <meta property="og:title" content="Thomas Rasmussen – Landsholdskortet">
   <meta property="og:description" content="Thomas Rasmussen spillede 8 A-landskampe for Danmark. Barndomsklub: Boldklubben Dalgas. Fødested: Frederiksberg Kommune.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/thomas-rasmussen-4440/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Rasmussen%20Thomas%20BIF%2011-12%20WP.JPG">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/thomas-rasmussen-4440/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Frederiksberg Kommune"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rasmussen%20Thomas%20BIF%2011-12%20WP.JPG"
 }
   </script>
   <style>
@@ -222,7 +224,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Boldklubben Dalgas</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/joergen-henriksen-3278/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Jørgen Henriksen</a></div>
+    <a href="/?q=Boldklubben Dalgas" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Thomas Rasmussen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -230,7 +238,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Farum BK", "lat": 55.8177, "lng": 12.3507, "barndom": false, "logo": "logos/klub_1008.png"}, {"navn": "Lyngby Boldklub 1921", "lat": 55.7822, "lng": 12.5065, "barndom": false, "logo": "logos/klub_1146.png"}, {"navn": "Glostrup 95", "lat": 55.8692, "lng": 12.318, "barndom": false, "logo": "logos/klub_1181.png"}, {"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "Glostrup FK - IF 32", "lat": 55.6683, "lng": 12.3759, "barndom": false, "logo": "logos/klub_1712.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "FC Nordsjælland", "lat": 55.8161, "lng": 12.3514, "barndom": false, "logo": "logos/klub_3702.png"}, {"navn": "IF Skjold Birkerød", "lat": 55.8392, "lng": 12.4347, "barndom": false, "logo": "logos/klub_965.png"}, {"navn": "Boldklubben Dalgas", "lat": 55.6811, "lng": 12.4986, "barndom": true, "logo": "logos/klub_99017.png"}, {"navn": "Sint-Truidense VV", "lat": 50.8167, "lng": 5.1833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/f/f1/K._Sint-Truidense_V.V._logo.png"}, {"navn": "FC Hansa Rostock", "lat": 54.0833, "lng": 12.1333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/F.C._Hansa_Rostock_Logo.svg/960px-F.C._Hansa_Rostock_Logo.svg.png"}];
 const birthMarker = {"lat": 55.677777777, "lng": 12.533333333, "navn": "Frederiksberg Kommune"};

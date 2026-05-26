@@ -10,6 +10,7 @@
   <meta property="og:title" content="Steven Lustü – Landsholdskortet">
   <meta property="og:description" content="Steven Lustü spillede 9 A-landskampe for Danmark. Barndomsklub: Glostrup FK - IF 32. Fødested: Vordingborg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/steven-lustu-4205/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Steven%20Lust%C3%BC%202006-05-21.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/steven-lustu-4205/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Vordingborg"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Steven%20Lust%C3%BC%202006-05-21.jpg"
 }
   </script>
   <style>
@@ -222,7 +224,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Glostrup FK - IF 32</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/soeren-busk-3743/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Søren Busk</a><a href="/spiller/erik-gaardhoeje-3084/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Erik Gaardhøje</a><a href="/spiller/jan-soerensen-3689/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Jan Sørensen</a><a href="/spiller/brian-jensen-2361/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Brian Jensen</a><a href="/spiller/john-frandsen-3537/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">John Frandsen</a></div>
+    <a href="/?q=Glostrup FK - IF 32" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Steven Lustü" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -230,7 +238,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Herfølge BK", "lat": 55.4137, "lng": 12.135, "barndom": false, "logo": "logos/klub_1066.png"}, {"navn": "Vallensbæk IF", "lat": 55.6317, "lng": 12.3697, "barndom": false, "logo": "logos/klub_1292.png"}, {"navn": "Vordingborg IF", "lat": 55.0045, "lng": 11.902, "barndom": false, "logo": "logos/klub_1314.png"}, {"navn": "Glostrup FK - IF 32", "lat": 55.6683, "lng": 12.3759, "barndom": true, "logo": "logos/klub_1712.png"}, {"navn": "HB Køge", "lat": 55.468, "lng": 12.1766, "barndom": false, "logo": "logos/klub_3714.png"}, {"navn": "Silkeborg IF", "lat": 56.1841, "lng": 9.5755, "barndom": false, "logo": "logos/klub_632.png"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}, {"navn": "Lyn 1896 FK", "lat": 59.9133, "lng": 10.7389, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/de/Lyn_Fotball_logo.svg/330px-Lyn_Fotball_logo.svg.png"}, {"navn": "Næstved BK", "lat": 55.25, "lng": 11.6667, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/1/12/N%C3%A6stved_Boldklub_logo.png"}];
 const birthMarker = {"lat": 55.008333333, "lng": 11.910277777, "navn": "Vordingborg"};

@@ -10,6 +10,7 @@
   <meta property="og:title" content="Rikke Læntver Sevecke – Landsholdskortet">
   <meta property="og:description" content="Rikke Læntver Sevecke spillede 54 A-landskampe og scorede 5 mål for Danmark. Barndomsklub: Nykøbing Falster Boldklub af 1901. Fødested: Nykøbing Falster.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/rikke-laentver-sevecke-6939/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Rikke%20L%C3%A6ntver%20Sevecke%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/rikke-laentver-sevecke-6939/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Nykøbing Falster"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rikke%20L%C3%A6ntver%20Sevecke%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -224,7 +226,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Nykøbing Falster Boldklub af 1901</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/johanna-rasmussen-4381/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Johanna Rasmussen</a><a href="/spiller/bjarne-goldbaek-983/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Bjarne Goldbæk</a><a href="/spiller/hans-ewald-hansen-3455/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Hans Ewald Hansen</a><a href="/spiller/erik-nielsen-3339/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Erik Nielsen</a><a href="/spiller/svend-aage-eriksen-2549/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Svend Aage Eriksen</a><a href="/spiller/gert-joergensen-3700/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Gert Jørgensen</a></div>
+    <a href="/?q=Nykøbing Falster Boldklub af 1901" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Rikke Læntver Sevecke" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -232,7 +240,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Ballerup-Skovlunde Fodbold (BSF)", "lat": 55.7161, "lng": 12.3734, "barndom": false, "logo": "https://bsfodbold.dk/images/logo.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Boldklubben af 1921, Nykøbing Falster", "lat": 54.7646, "lng": 11.871, "barndom": false, "logo": "logos/klub_99003.png"}, {"navn": "Nykøbing Falster Boldklub af 1901", "lat": 54.7641, "lng": 11.8956, "barndom": true, "logo": "logos/klub_3404.png"}, {"navn": "Portland Thorns", "lat": 45.5214, "lng": -122.6917, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/Portland_Thorns_logo.svg/250px-Portland_Thorns_logo.svg.png"}, {"navn": "FC Fleury 91 (women)", "lat": 48.6294, "lng": 2.3614, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/FC_Fleury_91_%28men%29_logo.svg/330px-FC_Fleury_91_%28men%29_logo.svg.png"}, {"navn": "Everton F.C. (women)", "lat": 53.4072, "lng": -2.9917, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"}, {"navn": "Everton FC", "lat": 53.4072, "lng": -2.9917, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"}];
 const birthMarker = {"lat": 54.766666666, "lng": 11.883333333, "navn": "Nykøbing Falster"};

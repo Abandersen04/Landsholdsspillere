@@ -10,6 +10,7 @@
   <meta property="og:title" content="Anders Christiansen – Landsholdskortet">
   <meta property="og:description" content="Anders Christiansen spillede 5 A-landskampe for Danmark. Barndomsklub: Gentofte-Vangede Idrætsforening. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/anders-christiansen-6094/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Norsh-Zen%20%289%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/anders-christiansen-6094/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Norsh-Zen%20%289%29.jpg"
 }
   </script>
   <style>
@@ -224,7 +226,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Gentofte-Vangede Idrætsforening</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/tine-cederkvist-4367/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Tine Cederkvist</a><a href="/spiller/poul-erik-thygesen-3400/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Poul-Erik Thygesen</a></div>
+    <a href="/?q=Gentofte-Vangede Idrætsforening" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Anders Christiansen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -232,7 +240,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Lyngby Boldklub 1921", "lat": 55.7822, "lng": 12.5065, "barndom": false, "logo": "logos/klub_1146.png"}, {"navn": "FC Nordsjælland", "lat": 55.8161, "lng": 12.3514, "barndom": false, "logo": "logos/klub_3702.png"}, {"navn": "K.A.A. Gent", "lat": 51.0536, "lng": 3.7253, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/KAA_Gent_logo.svg/330px-KAA_Gent_logo.svg.png"}, {"navn": "AC ChievoVerona", "lat": 45.4386, "lng": 10.9928, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/A.C._ChievoVerona_logo.svg/250px-A.C._ChievoVerona_logo.svg.png"}, {"navn": "Malmö FF", "lat": 55.5833, "lng": 13.0, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Malmo_FF_logo.svg/250px-Malmo_FF_logo.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

@@ -10,6 +10,7 @@
   <meta property="og:title" content="Victor Nelsson – Landsholdskortet">
   <meta property="og:description" content="Victor Nelsson spillede 18 A-landskampe for Danmark. Barndomsklub: Hornbæk IF. Fødested: Hornbæk.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/victor-nelsson-7679/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Victor%20Enok%20Nelsson%202021.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/victor-nelsson-7679/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Hornbæk"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Victor%20Enok%20Nelsson%202021.png"
 }
   </script>
   <style>
@@ -223,7 +225,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Hornbæk IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/jacob-bruun-larsen-7361/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Jacob Bruun Larsen</a></div>
+    <a href="/?q=Hornbæk IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Victor Nelsson" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -231,7 +239,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Hornbæk IF", "lat": 56.0875, "lng": 12.4668, "barndom": true, "logo": "logos/klub_1083.png"}, {"navn": "FC Nordsjælland", "lat": 55.8161, "lng": 12.3514, "barndom": false, "logo": "logos/klub_3702.png"}, {"navn": "FC København", "lat": 55.7036, "lng": 12.5718, "barndom": false, "logo": "logos/klub_3710.png"}, {"navn": "FC Copenhagen", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "AS Roma", "lat": 41.8931, "lng": 12.4828, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/AS_Roma_logo_%282017%29.svg/330px-AS_Roma_logo_%282017%29.svg.png"}, {"navn": "Hellas Verona FC", "lat": 45.4386, "lng": 10.9928, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/92/Hellas_Verona_FC_logo_%282020%29.svg/250px-Hellas_Verona_FC_logo_%282020%29.svg.png"}];
 const birthMarker = {"lat": 56.0875, "lng": 12.4587, "navn": "Hornbæk"};

@@ -10,6 +10,7 @@
   <meta property="og:title" content="Lars Olsen – Landsholdskortet">
   <meta property="og:description" content="Lars Olsen spillede 84 A-landskampe og scorede 4 mål for Danmark. Barndomsklub: Glostrup 95. Fødested: Glostrup.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/lars-olsen-2352/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/FIFA%20WC-qualification%202014%20-%20Austria%20vs%20Faroe%20Islands%202013-03-22%20%2830%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/lars-olsen-2352/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Glostrup"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/FIFA%20WC-qualification%202014%20-%20Austria%20vs%20Faroe%20Islands%202013-03-22%20%2830%29.jpg"
 }
   </script>
   <style>
@@ -227,7 +229,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Lars Olsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -235,7 +239,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Køge BK", "lat": 55.4682, "lng": 12.1772, "barndom": false, "logo": "logos/klub_1133.png"}, {"navn": "Glostrup 95", "lat": 55.8692, "lng": 12.318, "barndom": true, "logo": "logos/klub_1181.png"}, {"navn": "Glostrup FK - IF 32", "lat": 55.6683, "lng": 12.3759, "barndom": false, "logo": "logos/klub_1712.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "FC Basel", "lat": 47.5606, "lng": 7.5906, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/FC_Basel_crest.svg/330px-FC_Basel_crest.svg.png"}, {"navn": "Trabzonspor", "lat": 41.005, "lng": 39.7225, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/de/Trabzonspor_Amblem.svg/250px-Trabzonspor_Amblem.svg.png"}, {"navn": "R.F.C. Seraing", "lat": 50.6397, "lng": 5.5706, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/9/9e/RFC_Seraing-logo.png"}];
 const birthMarker = {"lat": 55.6628, "lng": 12.3972, "navn": "Glostrup"};

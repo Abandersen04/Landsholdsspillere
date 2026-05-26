@@ -10,6 +10,7 @@
   <meta property="og:title" content="Allan Michaelsen – Landsholdskortet">
   <meta property="og:description" content="Allan Michaelsen spillede 8 A-landskampe og scorede 1 mål for Danmark. Barndomsklub: Østerbros Boldklub. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/allan-michaelsen-3332/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/allan-michaelsen-3332/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -220,7 +221,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Østerbros Boldklub</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/carl-aage-praest-2755/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Carl Aage Præst</a><a href="/spiller/emil-joergensen-2391/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Emil Jørgensen</a><a href="/spiller/johannes-gandil-2372/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Johannes Gandil</a><a href="/spiller/poul-nielsen-2475/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Poul Nielsen</a></div>
+    <a href="/?q=Østerbros Boldklub" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Allan Michaelsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -228,7 +235,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "B 1909", "lat": 55.4109, "lng": 10.4281, "barndom": false, "logo": "logos/klub_1364.png"}, {"navn": "SfB", "lat": 55.0563, "lng": 10.5772, "barndom": false, "logo": "logos/klub_1497.png"}, {"navn": "Boldklubben 1903", "lat": 55.731, "lng": 12.5478, "barndom": false, "logo": "logos/klub_1533.jpg"}, {"navn": "Østerbros Boldklub", "lat": 55.6997, "lng": 12.57, "barndom": true, "logo": "logos/klub_99999.jpg"}, {"navn": "Eintracht Braunschweig", "lat": 52.2692, "lng": 10.5211, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Eintracht_Braunschweig_logo.svg/330px-Eintracht_Braunschweig_logo.svg.png"}, {"navn": "FC Nantes", "lat": 47.2592, "lng": -1.542, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Logo_FC_Nantes_%28avec_fond%29_-_2019.svg/500px-Logo_FC_Nantes_%28avec_fond%29_-_2019.svg.png"}, {"navn": "FC Chiasso", "lat": 45.8341, "lng": 9.0167, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/FC_Chiasso_logo.svg/250px-FC_Chiasso_logo.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

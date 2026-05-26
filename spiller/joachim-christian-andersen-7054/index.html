@@ -10,6 +10,7 @@
   <meta property="og:title" content="Joachim Christian Andersen – Landsholdskortet">
   <meta property="og:description" content="Joachim Christian Andersen spillede 49 A-landskampe og scorede 2 mål for Danmark. Barndomsklub: Greve Fodbold. Fødested: Frederiksberg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/joachim-christian-andersen-7054/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Joachim%20Andersen%2022122024%20%283%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/joachim-christian-andersen-7054/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Frederiksberg"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Joachim%20Andersen%2022122024%20%283%29.jpg"
 }
   </script>
   <style>
@@ -224,7 +226,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Greve Fodbold</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/alice-larsen-4437/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Alice Larsen</a><a href="/spiller/camilla-kur-larsen-6724/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Camilla Kur Larsen</a><a href="/spiller/mikkel-thygesen-4766/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Mikkel Thygesen</a></div>
+    <a href="/?q=Greve Fodbold" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Joachim Christian Andersen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -232,7 +240,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Greve Fodbold", "lat": 55.5927, "lng": 12.3002, "barndom": true, "logo": "logos/klub_1041.png"}, {"navn": "FC Midtjylland", "lat": 56.117, "lng": 8.9509, "barndom": false, "logo": "https://file.dbu.dk/images/club/3705/FC_Midtjylland.png"}, {"navn": "FC København", "lat": 55.7036, "lng": 12.5718, "barndom": false, "logo": "logos/klub_3710.png"}, {"navn": "Fulham F.C.", "lat": 51.3761, "lng": -0.2896, "barndom": false, "logo": "logos/klub_99014.png"}, {"navn": "Sampdoria", "lat": 44.4072, "lng": 8.934, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/U.C._Sampdoria_logo.svg/330px-U.C._Sampdoria_logo.svg.png"}, {"navn": "Crystal Palace F.C.", "lat": 51.5072, "lng": -0.1275, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Crystal_Palace_FC_logo_%282022%29.svg/330px-Crystal_Palace_FC_logo_%282022%29.svg.png"}, {"navn": "FC Twente", "lat": 52.2225, "lng": 6.8925, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/FC_Twente.svg/330px-FC_Twente.svg.png"}, {"navn": "Olympique Lyonnais", "lat": 45.7675, "lng": 4.835, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Olympique_Lyonnais_logo.svg/330px-Olympique_Lyonnais_logo.svg.png"}];
 const birthMarker = {"lat": 55.6779, "lng": 12.5327, "navn": "Frederiksberg"};

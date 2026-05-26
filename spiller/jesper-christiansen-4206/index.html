@@ -10,6 +10,7 @@
   <meta property="og:title" content="Jesper Christiansen – Landsholdskortet">
   <meta property="og:description" content="Jesper Christiansen spillede 11 A-landskampe for Danmark. Barndomsklub: Borup IF Fodbold. Fødested: Roskilde.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/jesper-christiansen-4206/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/jesper-christiansen-4206/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -222,7 +223,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Borup IF Fodbold</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/sofus-johansen-2512/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Sofus Johansen</a></div>
+    <a href="/?q=Borup IF Fodbold" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Jesper Christiansen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -230,7 +237,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Ringsted IF", "lat": 55.447, "lng": 11.8018, "barndom": false, "logo": "logos/klub_1192.png"}, {"navn": "Roskilde Boldklub", "lat": 55.6369, "lng": 12.0726, "barndom": false, "logo": "logos/klub_1141.jpg"}, {"navn": "Ølstykke FC", "lat": 55.7828, "lng": 12.1469, "barndom": false, "logo": "logos/klub_1322.png"}, {"navn": "Odense Boldklub", "lat": 55.3846, "lng": 10.3743, "barndom": false, "logo": "logos/klub_1458.png"}, {"navn": "Vejle Boldklub", "lat": 55.7142, "lng": 9.5561, "barndom": false, "logo": "logos/klub_3718.png"}, {"navn": "FC Roskilde", "lat": 55.6369, "lng": 12.0702, "barndom": false, "logo": "logos/klub_3731.png"}, {"navn": "Vendsyssel FF", "lat": 57.4726, "lng": 10.0028, "barndom": false, "logo": "logos/klub_3733.png"}, {"navn": "Viborg FF", "lat": 56.461, "lng": 9.3891, "barndom": false, "logo": "logos/klub_376.png"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}, {"navn": "Borup IF Fodbold", "lat": 55.5031, "lng": 11.9764, "barndom": true, "logo": "logos/klub_972.png"}, {"navn": "VfL Wolfsburg", "lat": 52.4231, "lng": 10.7872, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/VfL_Wolfsburg_Logo.svg/500px-VfL_Wolfsburg_Logo.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "Rangers F.C.", "lat": 55.8611, "lng": -4.25, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Rangers_FC.svg/330px-Rangers_FC.svg.png"}, {"navn": "IF Elfsborg", "lat": 57.7171, "lng": 12.9457, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/IF_Elfsborg_logo.svg/330px-IF_Elfsborg_logo.svg.png"}];
 const birthMarker = {"lat": 55.641666666, "lng": 12.080833333, "navn": "Roskilde"};

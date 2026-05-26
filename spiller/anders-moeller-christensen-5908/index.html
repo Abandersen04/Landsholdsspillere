@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anders Møller Christensen – Landsholdskortet</title>
-  <meta name="description" content="Anders Møller Christensen spillede 6 A-landskampe for Danmark. Barndomsklub: Faxe Ladeplads IF. Fødested: St. Magleby.">
+  <meta name="description" content="Anders Møller Christensen spillede 6 A-landskampe for Danmark. Barndomsklub: Faxe Ladeplads IF. Fødested: Faxe.">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Anders Møller Christensen – Landsholdskortet">
-  <meta property="og:description" content="Anders Møller Christensen spillede 6 A-landskampe for Danmark. Barndomsklub: Faxe Ladeplads IF. Fødested: St. Magleby.">
+  <meta property="og:description" content="Anders Møller Christensen spillede 6 A-landskampe for Danmark. Barndomsklub: Faxe Ladeplads IF. Fødested: Faxe.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/anders-moeller-christensen-5908/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/anders-moeller-christensen-5908/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -17,13 +18,13 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Anders Møller Christensen",
-  "description": "Anders Møller Christensen spillede 6 A-landskampe for Danmark. Barndomsklub: Faxe Ladeplads IF. Fødested: St. Magleby.",
+  "description": "Anders Møller Christensen spillede 6 A-landskampe for Danmark. Barndomsklub: Faxe Ladeplads IF. Fødested: Faxe.",
   "url": "https://landsholdskortet.dk/spiller/anders-moeller-christensen-5908/",
   "sameAs": "https://da.wikipedia.org/wiki/Anders_M%C3%B8ller_Christensen",
   "birthDate": "26-07-1977",
   "birthPlace": {
     "@type": "Place",
-    "name": "St. Magleby"
+    "name": "Faxe"
   }
 }
   </script>
@@ -85,7 +86,7 @@
     
     <div class="hero-info">
       <h1>Anders Møller Christensen</h1>
-      <div class="hero-meta">Mand · Region Hovedstaden · Født: St. Magleby · 26-07-1977</div>
+      <div class="hero-meta">Mand · Region Hovedstaden · Født: Faxe · 26-07-1977</div>
       <div class="stats">
         <div class="stat"><div class="stat-n">2008</div><div class="stat-l">Debut</div></div>
         <div class="stat"><div class="stat-n">6</div><div class="stat-l">Kampe</div></div>
@@ -98,7 +99,7 @@
   <div id="player-map"></div>
 
   <!-- Bio-tekst -->
-  <p style="background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:20px;font-size:15px;line-height:1.65;color:#333">Anders Møller Christensen er fra St. Magleby og født den 26. juli 1977. Hans første klub var Faxe Ladeplads IF. A-landsholdskarrieren tog sin begyndelse i 2008 mod Holland i Eindhoven. Det blev uafgjort 1-1. I alt nåede Anders at optræde i 6 A-landskampe.</p>
+  <p style="background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:20px;font-size:15px;line-height:1.65;color:#333">Anders Møller Christensen er fra Faxe og født den 26. juli 1977. Hans første klub var Faxe Ladeplads IF. A-landsholdskarrieren tog sin begyndelse i 2008 mod Holland i Eindhoven. Det blev uafgjort 1-1. I alt nåede Anders at optræde i 6 A-landskampe.</p>
 
   <!-- Landsholdskarriere -->
   <div class="card">
@@ -218,7 +219,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Anders Møller Christensen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -226,10 +229,10 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Faxe Ladeplads IF", "lat": 55.2211, "lng": 12.1613, "barndom": true, "logo": "logos/klub_1007.jpg"}, {"navn": "Næstved I.F.", "lat": 55.2225, "lng": 11.7677, "barndom": false, "logo": "logos/klub_3727.webp"}, {"navn": "Odense Boldklub", "lat": 55.3846, "lng": 10.3743, "barndom": false, "logo": "logos/klub_1458.png"}, {"navn": "FC Roskilde", "lat": 55.6369, "lng": 12.0702, "barndom": false, "logo": "logos/klub_3731.png"}, {"navn": "Esbjerg fB", "lat": 55.4868, "lng": 8.436, "barndom": false, "logo": "logos/klub_785.png"}, {"navn": "K.A.A. Gent", "lat": 51.0536, "lng": 3.7253, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/KAA_Gent_logo.svg/330px-KAA_Gent_logo.svg.png"}];
-const birthMarker = {"lat": 55.5988461, "lng": 12.6352703, "navn": "St. Magleby"};
+const birthMarker = {"lat": 55.2551221055579, "lng": 12.112617016527, "navn": "Faxe"};
 
 const map = L.map('player-map', { zoomControl: true });
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {

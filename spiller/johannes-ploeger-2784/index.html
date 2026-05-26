@@ -10,6 +10,7 @@
   <meta property="og:title" content="Johannes Pløger – Landsholdskortet">
   <meta property="og:description" content="Johannes Pløger spillede 21 A-landskampe og scorede 8 mål for Danmark. Barndomsklub: Frederiksberg Kammeraternes IF. Fødested: Frederiksberg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/johannes-ploeger-2784/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Frem%20vs%20AB%20ca1940.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/johannes-ploeger-2784/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Frederiksberg"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Frem%20vs%20AB%20ca1940.jpg"
 }
   </script>
   <style>
@@ -225,7 +227,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Johannes Pløger" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -233,7 +237,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "barndom": false, "logo": "logos/klub_1552.png"}, {"navn": "Frederiksberg Kammeraternes IF", "lat": 55.6758, "lng": 12.4976, "barndom": true, "logo": "logos/klub_99019.png"}, {"navn": "Juventus F.C.", "lat": 45.0792, "lng": 7.6761, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/250px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png"}, {"navn": "Torino F.C.", "lat": 45.0792, "lng": 7.6761, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Torino_FC_Logo.svg/330px-Torino_FC_Logo.svg.png"}, {"navn": "Udinese Calcio", "lat": 46.0667, "lng": 13.2333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Udinese_Calcio_logo.svg/250px-Udinese_Calcio_logo.svg.png"}, {"navn": "Novara F.C.", "lat": 45.45, "lng": 8.62, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Novara_FC_crest.svg/330px-Novara_FC_crest.svg.png"}];
 const birthMarker = {"lat": 55.6779, "lng": 12.5327, "navn": "Frederiksberg"};

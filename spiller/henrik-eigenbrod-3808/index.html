@@ -10,6 +10,7 @@
   <meta property="og:title" content="Henrik Eigenbrod – Landsholdskortet">
   <meta property="og:description" content="Henrik Eigenbrod spillede 9 A-landskampe og scorede 2 mål for Danmark. Barndomsklub: AIA-Tranbjerg. Fødested: Svendborg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/henrik-eigenbrod-3808/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Persdag%20AZ%2067%2032%2C%2033%20Fokke%20Zwart%2C%20kop%2C%2034%2C%2035%20Henrik%20Eigenbord%20%2C%20kop%2C%20Bestanddeelnr%20932-2656.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/henrik-eigenbrod-3808/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Svendborg"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Persdag%20AZ%2067%2032%2C%2033%20Fokke%20Zwart%2C%20kop%2C%2034%2C%2035%20Henrik%20Eigenbord%20%2C%20kop%2C%20Bestanddeelnr%20932-2656.jpg"
 }
   </script>
   <style>
@@ -220,7 +222,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra AIA-Tranbjerg</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/poul-pedersen-2915/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Poul Pedersen</a><a href="/spiller/lasse-vibe-7164/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Lasse Vibe</a></div>
+    <a href="/?q=AIA-Tranbjerg" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Henrik Eigenbrod" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -228,7 +236,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Odense Boldklub", "lat": 55.3846, "lng": 10.3743, "barndom": false, "logo": "logos/klub_1458.png"}, {"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "AZ Alkmaar", "lat": 52.6289, "lng": 4.744, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/AZ_Alkmaar.svg/250px-AZ_Alkmaar.svg.png"}];
 const birthMarker = {"lat": 55.059722222, "lng": 10.61, "navn": "Svendborg"};

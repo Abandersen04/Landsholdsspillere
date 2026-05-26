@@ -10,6 +10,7 @@
   <meta property="og:title" content="Nicklas Pedersen – Landsholdskortet">
   <meta property="og:description" content="Nicklas Pedersen spillede 13 A-landskampe og scorede 1 mål for Danmark. Barndomsklub: Herfølge BK. Fødested: Køge.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/nicklas-pedersen-5807/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Niklas-pedersen-1344797299.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/nicklas-pedersen-5807/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Køge"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Niklas-pedersen-1344797299.jpg"
 }
   </script>
   <style>
@@ -220,7 +222,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Herfølge BK</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/frank-loendal-4025/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Frank Løndal</a></div>
+    <a href="/?q=Herfølge BK" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Nicklas Pedersen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -228,7 +236,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Herfølge BK", "lat": 55.4137, "lng": 12.135, "barndom": true, "logo": "logos/klub_1066.png"}, {"navn": "FC Nordsjælland", "lat": 55.8161, "lng": 12.3514, "barndom": false, "logo": "logos/klub_3702.png"}, {"navn": "FC Emmen", "lat": 52.7747, "lng": 6.9456, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/83/FC_Emmen_logo.svg/330px-FC_Emmen_logo.svg.png"}, {"navn": "KV Mechelen", "lat": 51.0281, "lng": 4.4803, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/KV_Mechelen_logo.svg/250px-KV_Mechelen_logo.svg.png"}, {"navn": "KAA Gent", "lat": 51.0536, "lng": 3.7253, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/KAA_Gent_logo.svg/330px-KAA_Gent_logo.svg.png"}, {"navn": "FC Groningen", "lat": 53.2189, "lng": 6.5675, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/FC_Groningen_logo.svg/960px-FC_Groningen_logo.svg.png"}, {"navn": "K.V. Oostende", "lat": 51.2258, "lng": 2.9194, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/87/KV_Oostende_logo.svg/330px-KV_Oostende_logo.svg.png"}];
 const birthMarker = {"lat": 55.45, "lng": 12.183333333, "navn": "Køge"};

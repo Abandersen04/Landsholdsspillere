@@ -10,6 +10,7 @@
   <meta property="og:title" content="Pierre-Emile Højbjerg – Landsholdskortet">
   <meta property="og:description" content="Pierre-Emile Højbjerg spillede 95 A-landskampe og scorede 11 mål for Danmark. Barndomsklub: Boldklubben Skjold. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/pierre-emile-hoejbjerg-6881/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B8jbjerg%20asse%20om%202425.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/pierre-emile-hoejbjerg-6881/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B8jbjerg%20asse%20om%202425.png"
 }
   </script>
   <style>
@@ -229,7 +231,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Boldklubben Skjold</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/nanna-christiansen-5293/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Nanna Christiansen</a><a href="/spiller/yussuf-poulsen-6837/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Yussuf Poulsen</a><a href="/spiller/john-faxe-jensen-2339/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">John "Faxe" Jensen</a><a href="/spiller/per-frandsen-981/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Per Frandsen</a><a href="/spiller/jan-andersen-3334/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Jan Andersen</a><a href="/spiller/nicolai-vallys-8717/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Nicolai Vallys</a></div>
+    <a href="/?q=Boldklubben Skjold" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Pierre-Emile Højbjerg" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -237,7 +245,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "Boldklubben Skjold", "lat": 55.7037, "lng": 12.5749, "barndom": true, "logo": "logos/klub_1581.png"}, {"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Olympique de Marseille", "lat": 43.2967, "lng": 5.3764, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Olympique_Marseille_logo.svg/250px-Olympique_Marseille_logo.svg.png"}, {"navn": "FC Augsburg", "lat": 48.3689, "lng": 10.8978, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/FC_Augsburg_logo.svg/250px-FC_Augsburg_logo.svg.png"}, {"navn": "FC Bayern Munich", "lat": 48.1375, "lng": 11.575, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/960px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png"}, {"navn": "Southampton F.C.", "lat": 50.9067, "lng": -1.4044, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/FC_Southampton.svg/330px-FC_Southampton.svg.png"}, {"navn": "Tottenham Hotspur F.C.", "lat": 51.6, "lng": -0.1119, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/120px-Tottenham_Hotspur.svg.png"}, {"navn": "FC Schalke 04", "lat": 51.5103, "lng": 7.0942, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/FC_Schalke_04_Logo.svg/960px-FC_Schalke_04_Logo.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

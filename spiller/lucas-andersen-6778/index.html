@@ -10,6 +10,7 @@
   <meta property="og:title" content="Lucas Andersen – Landsholdskortet">
   <meta property="og:description" content="Lucas Andersen spillede 7 A-landskampe for Danmark. Barndomsklub: Aalborg Freja. Fødested: Aalborg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/lucas-andersen-6778/">
+  <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/lucas-andersen-6778/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -223,7 +224,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Aalborg Freja</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/oliver-abildgaard-7441/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Oliver Abildgaard</a></div>
+    <a href="/?q=Aalborg Freja" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Lucas Andersen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -231,7 +238,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Aalborg Boldklub", "lat": 57.0434, "lng": 10.0196, "barndom": false, "logo": "logos/klub_2.png"}, {"navn": "Aalborg Freja", "lat": 57.0531, "lng": 9.8912, "barndom": true, "logo": "logos/klub_6.png"}, {"navn": "Queens Park Rangers F.C.", "lat": 51.5072, "lng": -0.1275, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/31/Queens_Park_Rangers_crest.svg/330px-Queens_Park_Rangers_crest.svg.png"}, {"navn": "Grasshopper Club Zürich", "lat": 47.3744, "lng": 8.5411, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/GC_Z%C3%BCrich_Logo.svg/330px-GC_Z%C3%BCrich_Logo.svg.png"}, {"navn": "Aalborg Boldklub", "lat": 57.0436, "lng": 10.0208, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"}, {"navn": "Willem II", "lat": 51.5575, "lng": 5.0906, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Willem_II_logo.svg/250px-Willem_II_logo.svg.png"}, {"navn": "AFC Ajax", "lat": 52.3667, "lng": 4.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_AFC_Ajax_%281928-1991%2C_2025-%29.png"}];
 const birthMarker = {"lat": 57.05, "lng": 9.916666666, "navn": "Aalborg"};

@@ -10,6 +10,7 @@
   <meta property="og:title" content="Marc Nygaard – Landsholdskortet">
   <meta property="og:description" content="Marc Nygaard spillede 7 A-landskampe for Danmark. Barndomsklub: Firkantens Boldklub. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/marc-nygaard-4209/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Marc%20Nygaard.JPG">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/marc-nygaard-4209/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marc%20Nygaard.JPG"
 }
   </script>
   <style>
@@ -225,7 +227,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Marc Nygaard" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -233,7 +237,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Boldklubben af 1893", "lat": 55.7138, "lng": 12.5825, "barndom": false, "logo": "logos/klub_1532.png"}, {"navn": "Randers FC", "lat": 56.4656, "lng": 10.0096, "barndom": false, "logo": "logos/klub_3707.png"}, {"navn": "Firkantens Boldklub", "lat": 55.714, "lng": 12.556, "barndom": true, "logo": "logos/klub_90003.jpg"}, {"navn": "AB", "lat": 55.7626, "lng": 12.4339, "barndom": false, "logo": "logos/klub_944.png"}, {"navn": "SpVgg Unterhaching", "lat": 48.0658, "lng": 11.61, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/SpVgg_Unterhaching_logo.svg/330px-SpVgg_Unterhaching_logo.svg.png"}, {"navn": "K.F.C. Lommel S.K.", "lat": 51.2333, "lng": 5.3167, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/de/6/6a/SK_Lommel.png"}, {"navn": "Queens Park Rangers F.C.", "lat": 51.5072, "lng": -0.1275, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/31/Queens_Park_Rangers_crest.svg/330px-Queens_Park_Rangers_crest.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "SC Heerenveen", "lat": 52.9658, "lng": 6.0503, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/SC_Heerenveen_logo.svg/330px-SC_Heerenveen_logo.svg.png"}, {"navn": "Catania FC", "lat": 37.5027, "lng": 15.0873, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Logo_CATANIA_FC.svg/960px-Logo_CATANIA_FC.svg.png"}, {"navn": "Roda JC", "lat": 50.8667, "lng": 6.0667, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Roda_JC_Kerkrade_logo.svg/330px-Roda_JC_Kerkrade_logo.svg.png"}, {"navn": "Helmond Sport", "lat": 51.4874, "lng": 5.6791, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/79/Helmond_Sport_logo.svg/500px-Helmond_Sport_logo.svg.png"}, {"navn": "Brescia Calcio", "lat": 45.5389, "lng": 10.2203, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Brescia_calcio_badge.svg/250px-Brescia_calcio_badge.svg.png"}, {"navn": "Vicenza Calcio", "lat": 45.55, "lng": 11.55, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/LR_Vicenza_Virtus_%28logo%29.svg/960px-LR_Vicenza_Virtus_%28logo%29.svg.png"}, {"navn": "Excelsior Mouscron", "lat": 50.7444, "lng": 3.2156, "barndom": false, "logo": ""}, {"navn": "MVV Maastricht", "lat": 50.8667, "lng": 5.6833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/60/MVV_Maastricht_logo.svg/120px-MVV_Maastricht_logo.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

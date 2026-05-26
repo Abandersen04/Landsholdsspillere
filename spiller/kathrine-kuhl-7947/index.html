@@ -10,6 +10,7 @@
   <meta property="og:title" content="Kathrine Kühl – Landsholdskortet">
   <meta property="og:description" content="Kathrine Kühl spillede 55 A-landskampe og scorede 3 mål for Danmark. Barndomsklub: Hillerød IF. Fødested: Hillerød.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/kathrine-kuhl-7947/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Valerenga-Arsenal%20WUCL%2012-12-2024%20CG3A6001%2025%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/kathrine-kuhl-7947/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Hillerød"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Valerenga-Arsenal%20WUCL%2012-12-2024%20CG3A6001%2025%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -222,7 +224,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Hillerød IF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/louise-hansen-4357/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Louise Hansen</a><a href="/spiller/jeanne-axelsen-4405/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Jeanne Axelsen</a><a href="/spiller/morten-wieghorst-1598/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Morten Wieghorst</a><a href="/spiller/mitzi-moeller-4353/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Mitzi Møller</a><a href="/spiller/christina-hansen-4432/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Christina Hansen</a><a href="/spiller/anja-moeller-4396/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Anja Møller</a></div>
+    <a href="/?q=Hillerød IF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Kathrine Kühl" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -230,7 +238,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "FC Nordsjælland", "lat": 55.8161, "lng": 12.3514, "barndom": false, "logo": "logos/klub_3702.png"}, {"navn": "Hillerød IF", "lat": 55.9446, "lng": 12.2927, "barndom": true, "logo": "logos/klub_5453.png"}, {"navn": "AS Roma (women)", "lat": 41.8931, "lng": 12.4828, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/AS_Roma_logo_%282017%29.svg/330px-AS_Roma_logo_%282017%29.svg.png"}, {"navn": "Everton F.C. (women)", "lat": 53.4072, "lng": -2.9917, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"}, {"navn": "Everton FC", "lat": 53.4072, "lng": -2.9917, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"}, {"navn": "Atletico Madrid", "lat": 40.4169, "lng": -3.7033, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/330px-Atletico_Madrid_Logo_2024.svg.png"}, {"navn": "Arsenal FC", "lat": 51.5072, "lng": -0.1275, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/330px-Arsenal_FC.svg.png"}];
 const birthMarker = {"lat": 55.933333333, "lng": 12.3, "navn": "Hillerød"};

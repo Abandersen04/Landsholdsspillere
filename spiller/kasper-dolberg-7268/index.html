@@ -10,6 +10,7 @@
   <meta property="og:title" content="Kasper Dolberg – Landsholdskortet">
   <meta property="og:description" content="Kasper Dolberg spillede 56 A-landskampe og scorede 12 mål for Danmark. Barndomsklub: GFG Voel. Fødested: Silkeborg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/kasper-dolberg-7268/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Kasper%20Dolberg%20-%20RSCA%20%282024%29%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/kasper-dolberg-7268/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Silkeborg"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kasper%20Dolberg%20-%20RSCA%20%282024%29%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -226,7 +228,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Kasper Dolberg" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -234,7 +238,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "GFG Voel", "lat": 56.1934, "lng": 9.6996, "barndom": true, "logo": "logos/klub_526.png"}, {"navn": "Silkeborg IF", "lat": 56.1841, "lng": 9.5755, "barndom": false, "logo": "logos/klub_632.png"}, {"navn": "Sevilla FC", "lat": 37.3886, "lng": -5.9956, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Sevilla_FC_logo.svg/250px-Sevilla_FC_logo.svg.png"}, {"navn": "OGC Nice", "lat": 43.7019, "lng": 7.2683, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/OGC_Nice_logo.svg/250px-OGC_Nice_logo.svg.png"}, {"navn": "R.S.C. Anderlecht", "lat": 50.8392, "lng": 4.3297, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/R.S.C._Anderlecht.svg/330px-R.S.C._Anderlecht.svg.png"}, {"navn": "TSG 1899 Hoffenheim", "lat": 49.25, "lng": 8.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Logo_TSG_Hoffenheim.svg/960px-Logo_TSG_Hoffenheim.svg.png"}, {"navn": "AFC Ajax", "lat": 52.3667, "lng": 4.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_AFC_Ajax_%281928-1991%2C_2025-%29.png"}];
 const birthMarker = {"lat": 56.166666666, "lng": 9.55, "navn": "Silkeborg"};

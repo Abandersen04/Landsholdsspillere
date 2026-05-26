@@ -10,6 +10,7 @@
   <meta property="og:title" content="Thomas Delaney – Landsholdskortet">
   <meta property="og:description" content="Thomas Delaney spillede 81 A-landskampe og scorede 8 mål for Danmark. Barndomsklub: Kjøbenhavns Boldklub. Fødested: Frederiksberg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/thomas-delaney-6654/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Delaney%2C%20Thomas%20Werder%2017-18%20WP%20%28cropped%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/thomas-delaney-6654/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Frederiksberg"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Delaney%2C%20Thomas%20Werder%2017-18%20WP%20%28cropped%29.jpg"
 }
   </script>
   <style>
@@ -228,7 +230,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Kjøbenhavns Boldklub</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/valdemar-laursen-2453/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Valdemar Laursen</a><a href="/spiller/ole-qvist-3768/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ole Qvist</a><a href="/spiller/poul-nielsen-2374/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Poul Nielsen</a><a href="/spiller/oscar-joergensen-2575/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Oscar Jørgensen</a><a href="/spiller/ivar-lykke-2388/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Ivar Lykke</a><a href="/spiller/steen-steensen-blicher-2449/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Steen Steensen Blicher</a></div>
+    <a href="/?q=Kjøbenhavns Boldklub" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Thomas Delaney" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -236,7 +244,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": true, "logo": "logos/klub_1567.png"}, {"navn": "Sevilla FC", "lat": 37.3886, "lng": -5.9956, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Sevilla_FC_logo.svg/250px-Sevilla_FC_logo.svg.png"}, {"navn": "R.S.C. Anderlecht", "lat": 50.8392, "lng": 4.3297, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/R.S.C._Anderlecht.svg/330px-R.S.C._Anderlecht.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "TSG 1899 Hoffenheim", "lat": 49.25, "lng": 8.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Logo_TSG_Hoffenheim.svg/960px-Logo_TSG_Hoffenheim.svg.png"}, {"navn": "Borussia Dortmund", "lat": 51.5139, "lng": 7.4653, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/960px-Borussia_Dortmund_logo.svg.png"}, {"navn": "SV Werder Bremen", "lat": 53.0664, "lng": 8.8375, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SV-Werder-Bremen-Logo.svg/250px-SV-Werder-Bremen-Logo.svg.png"}];
 const birthMarker = {"lat": 55.6779, "lng": 12.5327, "navn": "Frederiksberg"};

@@ -10,6 +10,7 @@
   <meta property="og:title" content="Thomas Sørensen – Landsholdskortet">
   <meta property="og:description" content="Thomas Sørensen spillede 101 A-landskampe for Danmark. Barndomsklub: Erritsø GIF. Fødested: Fredericia.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/thomas-soerensen-2285/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8rensen%2C%20Thomas.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/thomas-soerensen-2285/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Fredericia"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8rensen%2C%20Thomas.jpg"
 }
   </script>
   <style>
@@ -230,7 +232,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Erritsø GIF</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/cecilie-floee-8093/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Cecilie Fløe</a><a href="/spiller/christoffer-haagh-7042/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Christoffer Haagh</a></div>
+    <a href="/?q=Erritsø GIF" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Thomas Sørensen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -238,7 +246,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Assens FC", "lat": 55.264, "lng": 9.9092, "barndom": false, "logo": "https://file.dbu.dk/images/club/1358/Assens_FC.png"}, {"navn": "Odense Boldklub", "lat": 55.3846, "lng": 10.3743, "barndom": false, "logo": "logos/klub_1458.png"}, {"navn": "SfB", "lat": 55.0563, "lng": 10.5772, "barndom": false, "logo": "logos/klub_1497.png"}, {"navn": "Vejle Boldklub", "lat": 55.7142, "lng": 9.5561, "barndom": false, "logo": "logos/klub_3718.png"}, {"navn": "Erritsø GIF", "lat": 55.5438, "lng": 9.7125, "barndom": true, "logo": "logos/klub_475.png"}, {"navn": "Aston Villa F.C.", "lat": 52.5, "lng": -1.88, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Aston_Villa_FC_new_crest.svg/330px-Aston_Villa_FC_new_crest.svg.png"}, {"navn": "Stoke City F.C.", "lat": 53.0, "lng": -2.1833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Stoke_City_FC_crest_2001.svg/330px-Stoke_City_FC_crest_2001.svg.png"}, {"navn": "Sunderland A.F.C.", "lat": 54.9, "lng": -1.3803, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Logo_Sunderland.svg/330px-Logo_Sunderland.svg.png"}, {"navn": "Melbourne City", "lat": -37.8142, "lng": 144.9631, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Melbourne_City_FC.svg/330px-Melbourne_City_FC.svg.png"}];
 const birthMarker = {"lat": 55.564444444, "lng": 9.759722222, "navn": "Fredericia"};

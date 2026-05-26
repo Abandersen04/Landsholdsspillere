@@ -10,6 +10,7 @@
   <meta property="og:title" content="Jørgen Henriksen – Landsholdskortet">
   <meta property="og:description" content="Jørgen Henriksen spillede 5 A-landskampe for Danmark. Barndomsklub: Boldklubben Dalgas. Fødested: Frederiksberg.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/joergen-henriksen-3278/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/J%C3%B8rgen%20Henriksen%20%281974%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/joergen-henriksen-3278/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Frederiksberg"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/J%C3%B8rgen%20Henriksen%20%281974%29.jpg"
 }
   </script>
   <style>
@@ -222,7 +224,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Boldklubben Dalgas</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/thomas-rasmussen-4440/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Thomas Rasmussen</a></div>
+    <a href="/?q=Boldklubben Dalgas" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Jørgen Henriksen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -230,7 +238,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Hvidovre IF", "lat": 55.6313, "lng": 12.4828, "barndom": false, "logo": "logos/klub_3716.png"}, {"navn": "Boston Beacons", "lat": 42.3603, "lng": -71.0578, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/c/c6/Boston_beacons_logo.png"}, {"navn": "FC Utrecht", "lat": 52.0908, "lng": 5.1217, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Logo_FC_Utrecht.svg/500px-Logo_FC_Utrecht.svg.png"}];
 const birthMarker = {"lat": 55.6779, "lng": 12.5327, "navn": "Frederiksberg"};

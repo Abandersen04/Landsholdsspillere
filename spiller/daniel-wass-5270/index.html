@@ -10,6 +10,7 @@
   <meta property="og:title" content="Daniel Wass – Landsholdskortet">
   <meta property="og:description" content="Daniel Wass spillede 44 A-landskampe og scorede 1 mål for Danmark. Barndomsklub: Avarta. Fødested: Gladsaxe.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/daniel-wass-5270/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20Wass%202019.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/daniel-wass-5270/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Gladsaxe"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20Wass%202019.jpg"
 }
   </script>
   <style>
@@ -228,7 +230,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Avarta</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/michael-schafer-3789/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Michael Schäfer</a><a href="/spiller/anders-randrup-5124/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Anders Randrup</a></div>
+    <a href="/?q=Avarta" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Daniel Wass" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -236,7 +244,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Brøndby IF", "lat": 55.6491, "lng": 12.4176, "barndom": false, "logo": "logos/klub_3700.png"}, {"navn": "Avarta", "lat": 55.6756, "lng": 12.4304, "barndom": true, "logo": "logos/klub_3720.png"}, {"navn": "Valencia", "lat": 39.4747, "lng": -0.3586, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Valenciacf.svg/330px-Valenciacf.svg.png"}, {"navn": "S.L. Benfica", "lat": 38.708, "lng": -9.139, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/SL_Benfica_logo.svg/330px-SL_Benfica_logo.svg.png"}, {"navn": "Fredrikstad FK", "lat": 59.2181, "lng": 10.9298, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Fredrikstad_FK_logo.svg/500px-Fredrikstad_FK_logo.svg.png"}, {"navn": "Evian Thonon Gaillard F.C.", "lat": 46.3706, "lng": 6.4797, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Thonon_Evian_Grand_Gen%C3%A8ve_FC_logo.svg/330px-Thonon_Evian_Grand_Gen%C3%A8ve_FC_logo.svg.png"}, {"navn": "Atletico Madrid", "lat": 40.4169, "lng": -3.7033, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/330px-Atletico_Madrid_Logo_2024.svg.png"}, {"navn": "Celta de Vigo", "lat": 42.2358, "lng": -8.7267, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/RC_Celta_de_Vigo_logo.svg/250px-RC_Celta_de_Vigo_logo.svg.png"}];
 const birthMarker = {"lat": 55.7398, "lng": 12.4738, "navn": "Gladsaxe"};

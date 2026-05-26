@@ -10,6 +10,7 @@
   <meta property="og:title" content="Henning Jensen – Landsholdskortet">
   <meta property="og:description" content="Henning Jensen spillede 21 A-landskampe og scorede 9 mål for Danmark. Barndomsklub: Nørresundby Boldklub. Fødested: Nørresundby.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/henning-jensen-3466/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Henning%20Jensen%20%281979%29.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/henning-jensen-3466/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Nørresundby"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Henning%20Jensen%20%281979%29.jpg"
 }
   </script>
   <style>
@@ -225,7 +227,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Nørresundby Boldklub</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/verner-nielsen-2973/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Verner Nielsen</a></div>
+    <a href="/?q=Nørresundby Boldklub" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Henning Jensen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -233,7 +241,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "AGF", "lat": 56.1322, "lng": 10.1937, "barndom": false, "logo": "logos/klub_3699.png"}, {"navn": "Nørresundby Forenede Boldklubber", "lat": 57.0643, "lng": 9.9349, "barndom": false, "logo": "logos/klub_90.png"}, {"navn": "Nørresundby Boldklub", "lat": 57.0644, "lng": 9.9333, "barndom": true, "logo": "logos/klub_99012.png"}, {"navn": "Borussia Mönchengladbach", "lat": 51.2, "lng": 6.4333, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Borussia_M%C3%B6nchengladbach_logo.svg/960px-Borussia_M%C3%B6nchengladbach_logo.svg.png"}, {"navn": "AFC Ajax", "lat": 52.3667, "lng": 4.8833, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_AFC_Ajax_%281928-1991%2C_2025-%29.png"}, {"navn": "Real Madrid", "lat": 40.4169, "lng": -3.7033, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/330px-Real_Madrid_CF.svg.png"}];
 const birthMarker = {"lat": 57.0607251, "lng": 9.9241319, "navn": "Nørresundby"};

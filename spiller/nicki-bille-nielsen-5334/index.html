@@ -10,6 +10,7 @@
   <meta property="og:title" content="Nicki Bille Nielsen – Landsholdskortet">
   <meta property="og:description" content="Nicki Bille Nielsen spillede 3 A-landskampe og scorede 1 mål for Danmark. Barndomsklub: Hellas. Fødested: København.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/nicki-bille-nielsen-5334/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/Nicki%20Bille%20Nielsen%202017%20Pierwszy%20Gwizdek%20Lecha%20Pozna%C5%84.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/nicki-bille-nielsen-5334/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "København"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Nicki%20Bille%20Nielsen%202017%20Pierwszy%20Gwizdek%20Lecha%20Pozna%C5%84.jpg"
 }
   </script>
   <style>
@@ -217,7 +219,13 @@
     </script>
   </div>
 
-  <div class="card">
+  <div class="card" style="margin-top:20px">
+    <h2>Andre fra Hellas</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="/spiller/mia-brogaard-4376/" style="display:inline-block;padding:6px 12px;background:#f5f5f5;border-radius:6px;font-size:13px;color:#1a1a1a;text-decoration:none;white-space:nowrap">Mia Brogaard</a></div>
+    <a href="/?q=Hellas" style="display:inline-block;margin-top:14px;font-size:13px;color:#c0392b">Se alle på kortet →</a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Nicki Bille Nielsen" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -225,7 +233,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "barndom": false, "logo": "logos/klub_1552.png"}, {"navn": "Hellas", "lat": 55.6723, "lng": 12.4813, "barndom": true, "logo": "logos/klub_1561.png"}, {"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "Rikken Fodbold Club", "lat": 55.6638, "lng": 12.5136, "barndom": false, "logo": "logos/klub_1577.png"}, {"navn": "FC Nordsjælland", "lat": 55.8161, "lng": 12.3514, "barndom": false, "logo": "logos/klub_3702.png"}, {"navn": "Ishøj IF", "lat": 55.6173, "lng": 12.3676, "barndom": false, "logo": "logos/klub_5056.png"}, {"navn": "Esbjerg fB", "lat": 55.4868, "lng": 8.436, "barndom": false, "logo": "logos/klub_785.png"}, {"navn": "Rayo Vallecano", "lat": 40.4169, "lng": -3.7033, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Rayo_Vallecano_logo.svg/330px-Rayo_Vallecano_logo.svg.png"}, {"navn": "Elche CF", "lat": 38.2669, "lng": -0.6983, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Elche_CF_logo.svg/250px-Elche_CF_logo.svg.png"}, {"navn": "Villarreal CF", "lat": 39.9378, "lng": -0.1014, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Villarreal_CF_logo-en.svg/330px-Villarreal_CF_logo-en.svg.png"}, {"navn": "VB 1968", "lat": 55.76, "lng": 12.455, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/8/83/FC_Gladsaxe_logo.png"}, {"navn": "Rosenborg BK", "lat": 63.4136, "lng": 10.4119, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Rosenborg_logo_RGB.svg/960px-Rosenborg_logo_RGB.svg.png"}, {"navn": "Associazione Sportiva Dilettantistica Martina Calcio 1947", "lat": 40.6997, "lng": 17.3433, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/1/1e/Martina_Calcio_logo_2021.png"}, {"navn": "Associazione Sportiva Lucchese Libertas 1905", "lat": 43.85, "lng": 10.5167, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Lucchese_1905_crest.svg/120px-Lucchese_1905_crest.svg.png"}, {"navn": "Evian Thonon Gaillard F.C.", "lat": 46.3706, "lng": 6.4797, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Thonon_Evian_Grand_Gen%C3%A8ve_FC_logo.svg/330px-Thonon_Evian_Grand_Gen%C3%A8ve_FC_logo.svg.png"}, {"navn": "Panionios F.C.", "lat": 37.943, "lng": 23.7092, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/7/70/Panionios_FC.png"}, {"navn": "Lech Poznań", "lat": 52.3972, "lng": 16.8581, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/KKS_Lech_Pozna%C5%84.svg/250px-KKS_Lech_Pozna%C5%84.svg.png"}, {"navn": "Lyngby Boldklub", "lat": 55.7821, "lng": 12.5064, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"}, {"navn": "Reggina 1914", "lat": 38.1144, "lng": 15.65, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/AS_Reggina_1914_crest.svg/330px-AS_Reggina_1914_crest.svg.png"}];
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};

@@ -10,6 +10,7 @@
   <meta property="og:title" content="Sarah Dyrehauge – Landsholdskortet">
   <meta property="og:description" content="Sarah Dyrehauge spillede 9 A-landskampe og scorede 2 mål for Danmark. Barndomsklub: Vinding SF. Fødested: Vejle.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/sarah-dyrehauge-6902/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/20170706%20OEFB%20AUT-DEN%20Sarah%20Dyrehauge%20DSC%208283.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/sarah-dyrehauge-6902/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Vejle"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20170706%20OEFB%20AUT-DEN%20Sarah%20Dyrehauge%20DSC%208283.jpg"
 }
   </script>
   <style>
@@ -218,7 +220,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=Sarah Dyrehauge" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -226,7 +230,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Skovbakken IK OB", "lat": 56.1944, "lng": 10.2068, "barndom": false, "logo": "logos/klub_3246.png"}, {"navn": "Vejle Boldklub", "lat": 55.7142, "lng": 9.5561, "barndom": false, "logo": "logos/klub_3718.png"}, {"navn": "Fortuna Hjørring", "lat": 57.4641, "lng": 10.0053, "barndom": false, "logo": "logos/klub_47.png"}, {"navn": "KoldingQ", "lat": 55.4936, "lng": 9.4597, "barndom": false, "logo": "logos/klub_567.png"}, {"navn": "Vinding SF", "lat": 55.6791, "lng": 9.5599, "barndom": true, "logo": "logos/klub_692.png"}, {"navn": "Rosenborg BK", "lat": 63.4136, "lng": 10.4119, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Rosenborg_logo_RGB.svg/960px-Rosenborg_logo_RGB.svg.png"}, {"navn": "Kolbotn Fotball", "lat": 59.7999, "lng": 10.8201, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Kolbotn_IL_logo.svg/960px-Kolbotn_IL_logo.svg.png"}, {"navn": "AGF", "lat": 56.1564, "lng": 10.2097, "barndom": false, "logo": ""}];
 const birthMarker = {"lat": 55.679133, "lng": 9.559864, "navn": "Vejle"};

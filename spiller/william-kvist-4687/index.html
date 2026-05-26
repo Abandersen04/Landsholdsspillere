@@ -10,6 +10,7 @@
   <meta property="og:title" content="William Kvist – Landsholdskortet">
   <meta property="og:description" content="William Kvist spillede 81 A-landskampe og scorede 2 mål for Danmark. Barndomsklub: TRIF. Fødested: Rønde.">
   <meta property="og:url" content="https://landsholdskortet.dk/spiller/william-kvist-4687/">
+  <meta property="og:image" content="http://commons.wikimedia.org/wiki/Special:FilePath/William%20Kvist%20by%20Christian%20Ursilva.jpg">
   <link rel="canonical" href="https://landsholdskortet.dk/spiller/william-kvist-4687/">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
@@ -24,7 +25,8 @@
   "birthPlace": {
     "@type": "Place",
     "name": "Rønde"
-  }
+  },
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Kvist%20by%20Christian%20Ursilva.jpg"
 }
   </script>
   <style>
@@ -228,7 +230,9 @@
     </script>
   </div>
 
-  <div class="card">
+  
+
+  <div class="card" style="margin-top:20px">
     <a href="/?q=William Kvist" class="btn-map">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
@@ -236,7 +240,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const clubs = [{"navn": "Kjøbenhavns Boldklub", "lat": 55.6782, "lng": 12.4948, "barndom": false, "logo": "logos/klub_1567.png"}, {"navn": "TRIF", "lat": 56.307, "lng": 10.4619, "barndom": true, "logo": "logos/klub_664.png"}, {"navn": "Fulham F.C.", "lat": 51.3761, "lng": -0.2896, "barndom": false, "logo": "logos/klub_99014.png"}, {"navn": "Wigan Athletic F.C.", "lat": 53.5447, "lng": -2.6317, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Wigan_Athletic.svg/330px-Wigan_Athletic.svg.png"}, {"navn": "FC København", "lat": 55.6761, "lng": 12.5689, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"}, {"navn": "VfB Stuttgart", "lat": 48.7775, "lng": 9.18, "barndom": false, "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/VfB_Stuttgart_1893_Logo.svg/500px-VfB_Stuttgart_1893_Logo.svg.png"}];
 const birthMarker = {"lat": 56.3, "lng": 10.483333333, "navn": "Rønde"};
