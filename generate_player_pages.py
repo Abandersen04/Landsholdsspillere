@@ -189,12 +189,16 @@ def generer_tekst(p):
 
     afsnit = []
 
+    # Links til interne sider
+    fsted_link = f'<a href="/by/{slugify(fsted)}/" style="color:#c0392b">{fsted}</a>' if fsted else ""
+    klub_link  = f'<a href="/klub/{slugify(klub)}/" style="color:#c0392b">{klub}</a>' if klub else ""
+
     # ── Sætning 1: fødsel ────────────────────────────────────
     if bday and fsted:
         varianter = [
-            f"{navn} er født den {format_date(bday)} i {fsted}.",
-            f"{navn} kom til verden den {format_date(bday)} i {fsted}.",
-            f"{navn} er fra {fsted} og født den {format_date(bday)}.",
+            f"{navn} er født den {format_date(bday)} i {fsted_link}.",
+            f"{navn} kom til verden den {format_date(bday)} i {fsted_link}.",
+            f"{navn} er fra {fsted_link} og født den {format_date(bday)}.",
         ]
         afsnit.append(rng.choice(varianter))
     elif bday:
@@ -203,9 +207,9 @@ def generer_tekst(p):
     # ── Sætning 2: første klub ───────────────────────────────
     if klub:
         varianter = [
-            f"{hans} første klub var {klub}.",
-            f"{navn} startede sin fodboldkarriere i {klub}.",
-            f"Karrieren begyndte i {klub}, inden {navn.split()[0]} fandt vej til landsholdet.",
+            f"{hans} første klub var {klub_link}.",
+            f"{navn} startede sin fodboldkarriere i {klub_link}.",
+            f"Karrieren begyndte i {klub_link}, inden {navn.split()[0]} fandt vej til landsholdet.",
         ]
         afsnit.append(rng.choice(varianter))
 
