@@ -50520,14 +50520,13 @@
     "playerLabel": "Gitte Husemoen",
     "wikipediaURL_da": null,
     "wikipediaURL_en": null,
-    "birthPlaceLabel": "Ringsted",
-    "lat": "55.4453",
-    "lon": "11.7903",
+    "birthPlaceLabel": "København",
+    "lat": "55.4034",
+    "lon": "12.3408",
     "dbuID": "4387",
     "birthday_dbu": "21-03-1979",
     "n_matches": "1",
     "n_goals": "0",
-    "image": null,
     "gender": "kvinde",
     "firstClubName_original": null,
     "firstClubName": null,
@@ -56638,6 +56637,15 @@
         "longitude": 11.8018,
         "is_earliest": true,
         "klub_logo": "logos/klub_1192.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "1330",
+        "klubnavn": "Årby GI",
+        "latitude": 55.6521,
+        "longitude": 11.1165,
+        "is_earliest": false,
+        "klub_logo": null,
         "team_qid": null
       }
     ],
