@@ -599,7 +599,16 @@ def render_page(p):
         karrierekurve_html = ""
 
 
-    title       = f"{navn} – Landsholdskortet"
+    # Fix 6: Rigere title med stats
+    kampe_n_int = int(kampe_n or 0)
+    maal_n_int  = int(maal_n or 0)
+    if kampe_n_int > 0 and maal_n_int > 0:
+        title = f"{navn} – {kampe_n_int} kampe, {maal_n_int} mål | Landsholdskortet"
+    elif kampe_n_int > 0:
+        title = f"{navn} – {kampe_n_int} A-landskampe | Landsholdskortet"
+    else:
+        title = f"{navn} – Landsholdskortet"
+
     description = (
         f"{navn} spillede {kampe_n} A-landskampe"
         + (f" og scorede {maal_n} mål" if str(maal_n) != "0" else "")
@@ -620,6 +629,17 @@ def render_page(p):
     if fødested: ld["birthPlace"] = {"@type": "Place", "name": fødested}
     if image: ld["image"] = image
     ld_json = json.dumps(ld, ensure_ascii=False, indent=2)
+
+    # Fix 5: Breadcrumb JSON-LD
+    breadcrumb_ld = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Landsholdskortet", "item": "https://landsholdskortet.dk/"},
+            {"@type": "ListItem", "position": 2, "name": navn, "item": f"https://landsholdskortet.dk/spiller/{slug}/"},
+        ]
+    }
+    breadcrumb_json = json.dumps(breadcrumb_ld, ensure_ascii=False, indent=2)
 
     # Kortdata til Leaflet
     map_clubs = []
@@ -740,6 +760,9 @@ def render_page(p):
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <script type="application/ld+json">
 {ld_json}
+  </script>
+  <script type="application/ld+json">
+{breadcrumb_json}
   </script>
   <style>
     *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
