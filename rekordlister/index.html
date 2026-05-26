@@ -42,7 +42,8 @@
     a { color: #C8102E; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    .topbar { background: #C8102E; padding: 12px 20px; display: flex; align-items: center; gap: 16px; }
+    .topbar { background: #C8102E; padding: 12px 20px; display: flex; align-items: center; gap: 16px;
+              position: sticky; top: 0; z-index: 101; }
     .topbar a.home { color: #fff; font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 6px; }
     .topbar a.home:hover { text-decoration: none; opacity: .85; }
 
@@ -51,7 +52,8 @@
     .page-header p { color: #666; font-size: 15px; }
 
     .nav-tabs { background: #fff; border-bottom: 2px solid #eee; padding: 0 24px;
-                 display: flex; gap: 0; overflow-x: auto; }
+                 display: flex; gap: 0; overflow-x: auto;
+                 position: sticky; top: 48px; z-index: 100; }
     .nav-tab { padding: 14px 18px; font-size: 14px; font-weight: 500; color: #666;
                 cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px;
                 white-space: nowrap; background: none; border-top: none; border-left: none; border-right: none; }
