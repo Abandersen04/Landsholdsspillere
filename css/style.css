@@ -1384,7 +1384,7 @@ html, body {
   left: 0;
   right: 0;
   background: #fff;
-  border-radius: 16px 16px 0 0;
+  border-radius: 0;
   box-shadow: 0 -4px 24px rgba(0,0,0,0.18);
   z-index: 1501;
   max-height: 72vh;
@@ -1398,28 +1398,30 @@ html, body {
   transform: translateY(0);
 }
 
+/* Handle-row smelter sammen med popup-header baggrund */
 .mobile-popup-handle-row {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 16px 6px;
+  padding: 8px 16px 0;
   position: relative;
   flex-shrink: 0;
+  background: var(--red-light);
 }
 .mobile-popup-pill {
   width: 36px;
   height: 4px;
   border-radius: 2px;
-  background: #ddd;
+  background: rgba(200,16,46,0.25);
 }
 .mobile-popup-close {
   position: absolute;
-  right: 12px;
-  top: 8px;
+  right: 8px;
+  top: 4px;
   background: none;
   border: none;
   font-size: 24px;
-  color: #999;
+  color: var(--gray-500);
   cursor: pointer;
   min-width: 44px;
   min-height: 44px;
@@ -1429,13 +1431,26 @@ html, body {
   padding: 0;
   line-height: 1;
 }
-.mobile-popup-close:hover { color: #333; }
+.mobile-popup-close:hover { color: var(--gray-800); }
 
 .mobile-popup-content {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 0 0 24px;
   flex: 1;
+}
+
+/* På mobil: popup-wrapper og popup-header fylder fuld bredde */
+@media (max-width: 768px) {
+  #mobile-popup-content .popup-wrapper {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  #mobile-popup-content .popup-header {
+    border-radius: 0;
+    margin: 0;
+  }
 }
 
 /* Hide Leaflet popups on mobile – we use the panel instead */
