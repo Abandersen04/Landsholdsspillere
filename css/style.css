@@ -1256,7 +1256,7 @@ html, body {
 /* On mobile, push controls above bottomsheet peek */
 @media (max-width: 768px) {
   .leaflet-bottom.leaflet-right {
-    bottom: 4px;
+    bottom: calc(var(--bottomsheet-peek) + 4px);
     right: 4px;
     left: auto;
     max-width: calc(100vw - 8px);
@@ -1457,4 +1457,31 @@ html, body {
 /* ===== Font size on small screens ===== */
 @media (max-width: 400px) {
   .top-table { font-size: 12px; }
+}
+
+/* ===== Mobile filter toggle i søgebaren ===== */
+.sidebar-toggle-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .sidebar-toggle-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 8px;
+    color: var(--gray-600);
+    cursor: pointer;
+    flex-shrink: 0;
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .sidebar-toggle-mobile:hover {
+    color: var(--red);
+  }
+  /* Skjul den gamle toggle-knap */
+  .sidebar-toggle {
+    display: none !important;
+  }
 }

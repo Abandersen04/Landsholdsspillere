@@ -98,7 +98,10 @@ function initSidebar() {
     }
   });
 
-  close.addEventListener('click', closeSheet);
+  const mobileToggle = document.getElementById('sidebar-toggle-mobile');
+  if (mobileToggle) mobileToggle.addEventListener('click', openSheet);
+
+  if (close) close.addEventListener('click', closeSheet);
 
   // Tap on drag handle or peek area (when closed) → open
   if (handle) {
