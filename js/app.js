@@ -114,28 +114,20 @@ function initSidebar() {
     });
   }
 
-  // Swipe gesture on sidebar (mobile)
+  // Swipe op på drag handle åbner — men swipe ned lukker IKKE (kun kortet lukker)
   let touchStartY = 0;
-  let touchStartTime = 0;
 
   sidebar.addEventListener('touchstart', e => {
     touchStartY = e.touches[0].clientY;
-    touchStartTime = Date.now();
   }, { passive: true });
 
   sidebar.addEventListener('touchend', e => {
     const dy = e.changedTouches[0].clientY - touchStartY;
-    const dt = Date.now() - touchStartTime;
-    const velocity = Math.abs(dy) / dt; // px/ms
-    // Fast swipe or large drag
-    if (dy < -40 || (dy < -10 && velocity > 0.3)) {
-      openSheet();
-    } else if (dy > 40 || (dy > 10 && velocity > 0.3)) {
-      closeSheet();
-    }
+    // Kun åbn ved swipe op — luk aldrig ved swipe ned
+    if (dy < -40) openSheet();
   }, { passive: true });
 
-  // Tap on peek area (when sidebar is closed) opens it
+  // Tap på peek-området (når sidebar er lukket) åbner den
   sidebar.addEventListener('click', e => {
     if (window.innerWidth <= 768 && !sidebar.classList.contains('open')) {
       openSheet();
