@@ -1282,7 +1282,6 @@ function openMobilePopup(group, mapType) {
   content.innerHTML = buildPopupHtml(group, mapType);
   overlay.classList.add('open');
   panel.classList.add('open');
-  document.getElementById('mobile-popup-close').onclick = closeMobilePopup;
   overlay.onclick = closeMobilePopup;
 
   // Swipe down to close

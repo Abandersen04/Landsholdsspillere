@@ -1414,24 +1414,6 @@ html, body {
   border-radius: 2px;
   background: rgba(200,16,46,0.25);
 }
-.mobile-popup-close {
-  position: absolute;
-  right: 8px;
-  top: 4px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: var(--gray-500);
-  cursor: pointer;
-  min-width: 44px;
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  line-height: 1;
-}
-.mobile-popup-close:hover { color: var(--gray-800); }
 
 .mobile-popup-content {
   overflow-y: auto;
