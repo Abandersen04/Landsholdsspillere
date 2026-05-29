@@ -145,7 +145,7 @@ def render_klub(klubnavn):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{klubnavn} – {n} landsholdsspillere | Landsholdskortet</title>
   <meta name="description" content="{description}">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="{'index, follow' if n >= 3 else 'noindex, follow'}">
   <link rel="canonical" href="https://landsholdskortet.dk/klub/{slug}/">
   <meta property="og:title" content="{klubnavn} – {n} landsholdsspillere">
   <meta property="og:description" content="{description}">
@@ -300,7 +300,8 @@ for klubnavn in klub_players:
     os.makedirs(dir_, exist_ok=True)
     with open(os.path.join(dir_, "index.html"), "w", encoding="utf-8") as f:
         f.write(render_klub(klubnavn))
-    slugs.append(slug)
+    if len(klub_players[klubnavn]) >= 3:
+        slugs.append(slug)
     generated += 1
 
 print(f"Genereret {generated} klubsider i /klub/")
