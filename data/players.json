@@ -30704,6 +30704,15 @@
         "is_earliest": false,
         "klub_logo": null,
         "team_qid": null
+      },
+      {
+        "klub_id": "10101010",
+        "klubnavn": "Korsløkke boldklub",
+        "latitude": 55.3875,
+        "longitude": 10.4323,
+        "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -56376,19 +56385,19 @@
     "playerLabel": "Andreas Christensen",
     "wikipediaURL_da": "https://da.wikipedia.org/wiki/Andreas_Christensen",
     "wikipediaURL_en": "https://en.wikipedia.org/wiki/Andreas_Christensen",
-    "birthPlaceLabel": "Lillerød",
-    "lat": "55.8708",
-    "lon": "12.356",
+    "birthPlaceLabel": "Blovstrød",
+    "lat": "55.8695110592183",
+    "lon": "12.3854073116323",
     "dbuID": "6925",
     "birthday_dbu": "10-04-1996",
     "n_matches": "79",
     "n_goals": "4",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Andreas%20Christensen%202019.jpg",
     "gender": "mand",
-    "klubnavn": "Blovstrød IF",
-    "latitude": "55.865226",
-    "longitude": "12.383303",
-    "klub_logo": "logos/klub_969.png",
+    "klubnavn": "IF Skjold Birkerød",
+    "latitude": "55.8392",
+    "longitude": "12.4347",
+    "klub_logo": "logos/klub_965.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/969/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/969/klubinfo",
     "region": "Region Hovedstaden",
@@ -56406,16 +56415,8 @@
         "klubnavn": "IF Skjold Birkerød",
         "latitude": 55.8392,
         "longitude": 12.4347,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_965.png"
-      },
-      {
-        "klub_id": "969",
-        "klubnavn": "Blovstrød IF",
-        "latitude": 55.8652,
-        "longitude": 12.3833,
         "is_earliest": true,
-        "klub_logo": "logos/klub_969.png"
+        "klub_logo": "logos/klub_965.png"
       },
       {
         "klub_id": null,
@@ -56454,7 +56455,9 @@
       2023,
       2024,
       2025
-    ]
+    ],
+    "klubnavn_original": "IF Skjold Birkerød",
+    "klub_id": "965"
   },
   {
     "playerLabel": "Daniel Holm",
