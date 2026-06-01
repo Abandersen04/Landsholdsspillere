@@ -24062,9 +24062,9 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Råsted og Omegns Boldklub af 1984",
-    "latitude": "56.5172394879762",
-    "longitude": "9.94729621111608",
+    "klubnavn": "Råsted GF",
+    "latitude": "56.5172",
+    "longitude": "9.9473",
     "klub_logo": "https://file.dbu.dk/images/club/5203/Råsted_og_Omegns_Boldklub_af_1984.png",
     "klub_website": "http://www.randersfreja.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/5203/klubinfo",
@@ -24072,7 +24072,7 @@
     "allClubs": [
       {
         "klub_id": "5203",
-        "klubnavn": "Råsted og Omegns Boldklub af 1984",
+        "klubnavn": "Råsted GF",
         "latitude": 56.5172,
         "longitude": 9.9473,
         "is_earliest": true,
@@ -24085,11 +24085,22 @@
         "longitude": 10.0086,
         "is_earliest": false,
         "klub_logo": "logos/klub_610.png"
+      },
+      {
+        "klub_id": "700",
+        "klubnavn": "Vorup FB",
+        "latitude": 56.4218,
+        "longitude": 10.0288,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_700.png",
+        "team_qid": null
       }
     ],
     "years_played": [
       1974
-    ]
+    ],
+    "klubnavn_original": "Råsted GF",
+    "klub_id": "5203"
   },
   {
     "playerLabel": "Anders Sørensen",
