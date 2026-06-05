@@ -65474,23 +65474,71 @@
     "n_matches": "1",
     "n_goals": "0",
     "birthday_dbu": "28-09-2005",
-    "birthPlaceLabel": "",
-    "lat": "",
-    "lon": "",
-    "region": "",
-    "klubnavn": "",
-    "latitude": "",
-    "longitude": "",
-    "klub_logo": "",
+    "birthPlaceLabel": "Vanløse",
+    "lat": "55.6912848332986",
+    "lon": "12.4806530853471",
+    "region": "Region Hovedstaden",
+    "klubnavn": "FC København",
+    "latitude": "55.703609",
+    "longitude": "12.57179",
+    "klub_logo": "logos/klub_3710.png",
     "klub_website": "",
     "klub_dbu_url": "",
-    "allClubs": [],
+    "allClubs": [
+      {
+        "klub_id": "3710",
+        "klubnavn": "FC København",
+        "latitude": 55.7036,
+        "longitude": 12.5718,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_3710.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "3699",
+        "klubnavn": "AGF",
+        "latitude": 56.1322,
+        "longitude": 10.1937,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_3699.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "VfL Wolfsburg",
+        "latitude": 52.4231,
+        "longitude": 10.7872,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/VfL_Wolfsburg_Logo.svg/500px-VfL_Wolfsburg_Logo.svg.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "112311331231",
+        "klubnavn": "FC Liefering",
+        "latitude": 47.7433,
+        "longitude": 13.0476,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/a0/FC_Liefering_logo.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "FC Red Bull Salzburg",
+        "latitude": 47.8,
+        "longitude": 13.045,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/FC_Red_Bull_Salzburg_logo.svg/330px-FC_Red_Bull_Salzburg_logo.svg.png",
+        "team_qid": null
+      }
+    ],
     "years_played": [
       2026
     ],
-    "image": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/FC_Liefering_gegen_SV_Stripfing_%282023-09-15%29_05.jpg/1280px-FC_Liefering_gegen_SV_Stripfing_%282023-09-15%29_05.jpg",
     "wikipediaURL_da": "",
-    "wikipediaURL_en": ""
+    "wikipediaURL_en": "",
+    "klubnavn_original": "FC København",
+    "klub_id": "3710"
   },
   {
     "playerLabel": "William Osula",
@@ -65503,18 +65551,57 @@
     "lat": "56.156388888",
     "lon": "10.209722222",
     "region": "",
-    "klubnavn": "",
-    "latitude": "",
-    "longitude": "",
-    "klub_logo": "",
+    "klubnavn": "FC København",
+    "latitude": "55.703609",
+    "longitude": "12.57179",
+    "klub_logo": "logos/klub_3710.png",
     "klub_website": "",
     "klub_dbu_url": "",
-    "allClubs": [],
+    "allClubs": [
+      {
+        "klub_id": "3710",
+        "klubnavn": "FC København",
+        "latitude": 55.7036,
+        "longitude": 12.5718,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_3710.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "Derby County",
+        "latitude": 52.9217,
+        "longitude": -1.4767,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Derby_County_crest.svg/500px-Derby_County_crest.svg.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "Newcastle United",
+        "latitude": 54.9778,
+        "longitude": -1.6133,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Newcastle_United_Logo.svg/330px-Newcastle_United_Logo.svg.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "11231133",
+        "klubnavn": "Sheffield United F.C.",
+        "latitude": 53.2213,
+        "longitude": 12.815,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Sheffield_United_FC_logo.svg/1920px-Sheffield_United_FC_logo.svg.png",
+        "team_qid": null
+      }
+    ],
     "years_played": [
       2026
     ],
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Osula%2024052026%20%288%29.jpg",
     "wikipediaURL_da": "https://da.wikipedia.org/wiki/William_Osula",
-    "wikipediaURL_en": "https://en.wikipedia.org/wiki/William_Osula"
+    "wikipediaURL_en": "https://en.wikipedia.org/wiki/William_Osula",
+    "klubnavn_original": "FC København",
+    "klub_id": "3710"
   }
 ]
