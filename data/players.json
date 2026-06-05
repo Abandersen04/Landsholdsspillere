@@ -65493,15 +65493,15 @@
     "wikipediaURL_en": ""
   },
   {
-    "playerLabel": "William Idamudia Daugaard Osula",
+    "playerLabel": "William Osula",
     "dbuID": "8015",
     "gender": "mand",
     "n_matches": "1",
     "n_goals": "0",
     "birthday_dbu": "04-08-2003",
-    "birthPlaceLabel": "",
-    "lat": "",
-    "lon": "",
+    "birthPlaceLabel": "Aarhus",
+    "lat": "56.156388888",
+    "lon": "10.209722222",
     "region": "",
     "klubnavn": "",
     "latitude": "",
@@ -65513,8 +65513,8 @@
     "years_played": [
       2026
     ],
-    "image": "",
-    "wikipediaURL_da": "",
-    "wikipediaURL_en": ""
+    "image": "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Osula%2024052026%20%288%29.jpg",
+    "wikipediaURL_da": "https://da.wikipedia.org/wiki/William_Osula",
+    "wikipediaURL_en": "https://en.wikipedia.org/wiki/William_Osula"
   }
 ]
