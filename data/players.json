@@ -56465,7 +56465,8 @@
       2022,
       2023,
       2024,
-      2025
+      2025,
+      2026
     ],
     "klubnavn_original": "IF Skjold Birkerød",
     "klub_id": "965"
@@ -57862,7 +57863,8 @@
       2022,
       2023,
       2024,
-      2025
+      2025,
+      2026
     ]
   },
   {
@@ -63008,7 +63010,8 @@
     ],
     "years_played": [
       2024,
-      2025
+      2025,
+      2026
     ]
   },
   {
@@ -63618,7 +63621,8 @@
       }
     ],
     "years_played": [
-      2025
+      2025,
+      2026
     ]
   },
   {
@@ -63771,7 +63775,8 @@
     ],
     "years_played": [
       2024,
-      2025
+      2025,
+      2026
     ]
   },
   {
@@ -65461,5 +65466,55 @@
     "years_played": [
       1996
     ]
+  },
+  {
+    "playerLabel": "Adam Daghim",
+    "dbuID": "8621",
+    "gender": "mand",
+    "n_matches": "1",
+    "n_goals": "0",
+    "birthday_dbu": "28-09-2005",
+    "birthPlaceLabel": "",
+    "lat": "",
+    "lon": "",
+    "region": "",
+    "klubnavn": "",
+    "latitude": "",
+    "longitude": "",
+    "klub_logo": "",
+    "klub_website": "",
+    "klub_dbu_url": "",
+    "allClubs": [],
+    "years_played": [
+      2026
+    ],
+    "image": "",
+    "wikipediaURL_da": "",
+    "wikipediaURL_en": ""
+  },
+  {
+    "playerLabel": "William Idamudia Daugaard Osula",
+    "dbuID": "8015",
+    "gender": "mand",
+    "n_matches": "1",
+    "n_goals": "0",
+    "birthday_dbu": "04-08-2003",
+    "birthPlaceLabel": "",
+    "lat": "",
+    "lon": "",
+    "region": "",
+    "klubnavn": "",
+    "latitude": "",
+    "longitude": "",
+    "klub_logo": "",
+    "klub_website": "",
+    "klub_dbu_url": "",
+    "allClubs": [],
+    "years_played": [
+      2026
+    ],
+    "image": "",
+    "wikipediaURL_da": "",
+    "wikipediaURL_en": ""
   }
 ]
