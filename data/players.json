@@ -1725,10 +1725,10 @@
     "n_goals": "2",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marc%20Rieper%20with%20Harry%20Redknapp.jpg",
     "gender": "mand",
-    "klubnavn": "Aarhus 1900",
-    "latitude": "56.143167",
-    "longitude": "10.179676",
-    "klub_logo": "logos/klub_428.png",
+    "klubnavn": "AGF",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
+    "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "region": "Region Hovedstaden",
@@ -1738,7 +1738,7 @@
         "klubnavn": "AGF",
         "latitude": 56.1322,
         "longitude": 10.1937,
-        "is_earliest": false,
+        "is_earliest": true,
         "klub_logo": "logos/klub_3699.png"
       },
       {
@@ -1776,7 +1776,9 @@
       1996,
       1997,
       1998
-    ]
+    ],
+    "klubnavn_original": "AGF",
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Michael Schjønberg",
@@ -8208,25 +8210,37 @@
         "klub_logo": "logos/klub_3699.png"
       },
       {
-        "klub_id": "428",
-        "klubnavn": "Aarhus 1900",
-        "latitude": 56.1432,
-        "longitude": 10.1797,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_428.png"
-      },
-      {
         "klub_id": "944",
         "klubnavn": "AB",
         "latitude": 55.7626,
         "longitude": 12.4339,
         "is_earliest": false,
         "klub_logo": "logos/klub_944.png"
+      },
+      {
+        "klub_id": "5612",
+        "klubnavn": "Aarhus Football Club",
+        "latitude": 56.119,
+        "longitude": 10.127,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_5612.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "5619",
+        "klubnavn": "Holstebro Boldklub",
+        "latitude": 56.3885,
+        "longitude": 8.5766,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_5619.png",
+        "team_qid": null
       }
     ],
     "years_played": [
       1934
-    ]
+    ],
+    "klubnavn_original": "Holstebro Boldklub",
+    "klub_id": "5619"
   },
   {
     "playerLabel": "Hans Christensen",
@@ -11222,10 +11236,10 @@
     "n_goals": "1",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Aarhus 1900",
-    "latitude": "56.143167",
-    "longitude": "10.179676",
-    "klub_logo": "logos/klub_428.png",
+    "klubnavn": "AGF",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
+    "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "region": "Region Midtjylland",
@@ -11235,7 +11249,7 @@
         "klubnavn": "AGF",
         "latitude": 56.1322,
         "longitude": 10.1937,
-        "is_earliest": false,
+        "is_earliest": true,
         "klub_logo": "logos/klub_3699.png"
       },
       {
@@ -11274,7 +11288,9 @@
     "years_played": [
       1947,
       1950
-    ]
+    ],
+    "klubnavn_original": "AGF",
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Sigurd Iversen",
@@ -12867,19 +12883,19 @@
     "playerLabel": "Jørgen Olesen",
     "wikipediaURL_da": "https://da.wikipedia.org/wiki/J%C3%B8rgen_Olesen",
     "wikipediaURL_en": "https://en.wikipedia.org/wiki/J%C3%B8rgen_Olesen",
-    "birthPlaceLabel": "Midtbyen (Aarhus)",
-    "lat": "56.1497091",
-    "lon": "10.2039136",
+    "birthPlaceLabel": "Viby",
+    "lat": "56.1207423535563",
+    "lon": "10.1456961278973",
     "dbuID": "2895",
     "birthday_dbu": "21-01-1924",
     "n_matches": "42",
     "n_goals": "2",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/J%C3%B8rgen%20Olesen%201960.jpg",
     "gender": "mand",
-    "klubnavn": "Aarhus 1900",
-    "latitude": "56.143167",
-    "longitude": "10.179676",
-    "klub_logo": "logos/klub_428.png",
+    "klubnavn": "AGF",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
+    "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "region": "Region Midtjylland",
@@ -12889,7 +12905,7 @@
         "klubnavn": "AGF",
         "latitude": 56.1322,
         "longitude": 10.1937,
-        "is_earliest": false,
+        "is_earliest": true,
         "klub_logo": "logos/klub_3699.png"
       }
     ],
@@ -12903,7 +12919,9 @@
       1957,
       1958,
       1962
-    ]
+    ],
+    "klubnavn_original": "AGF",
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Leif Petersen",
@@ -13835,10 +13853,10 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Aarhus 1900",
-    "latitude": "56.143167",
-    "longitude": "10.179676",
-    "klub_logo": "logos/klub_428.png",
+    "klubnavn": "AGF",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
+    "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "region": "Region Midtjylland",
@@ -13856,13 +13874,15 @@
         "klubnavn": "AGF",
         "latitude": 56.1322,
         "longitude": 10.1937,
-        "is_earliest": false,
+        "is_earliest": true,
         "klub_logo": "logos/klub_3699.png"
       }
     ],
     "years_played": [
       1954
-    ]
+    ],
+    "klubnavn_original": "AGF",
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Børge Bastholm Larsen",
@@ -28999,10 +29019,10 @@
     "n_goals": "2",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Aarhus 1900",
-    "latitude": "56.143167",
-    "longitude": "10.179676",
-    "klub_logo": "logos/klub_428.png",
+    "klubnavn": "AGF",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
+    "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "region": "Region Midtjylland",
@@ -29012,7 +29032,7 @@
         "klubnavn": "AGF",
         "latitude": 56.1322,
         "longitude": 10.1937,
-        "is_earliest": false,
+        "is_earliest": true,
         "klub_logo": "logos/klub_3699.png"
       },
       {
@@ -29070,7 +29090,9 @@
       1989,
       1991,
       1993
-    ]
+    ],
+    "klubnavn_original": "AGF",
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Ulrik Moseby",
@@ -29300,10 +29322,10 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Aarhus 1900",
-    "latitude": "56.143167",
-    "longitude": "10.179676",
-    "klub_logo": "logos/klub_428.png",
+    "klubnavn": "Viby IF",
+    "latitude": "56.1261128",
+    "longitude": "10.1576322",
+    "klub_logo": "logos/klub_691.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "region": "Region Midtjylland",
@@ -29331,11 +29353,22 @@
         "longitude": 9.3891,
         "is_earliest": false,
         "klub_logo": "logos/klub_376.png"
+      },
+      {
+        "klub_id": "691",
+        "klubnavn": "Viby IF",
+        "latitude": 56.1261,
+        "longitude": 10.1576,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_691.png",
+        "team_qid": null
       }
     ],
     "years_played": [
       1988
-    ]
+    ],
+    "klubnavn_original": "Viby IF",
+    "klub_id": "691"
   },
   {
     "playerLabel": "Bent Christensen",
@@ -35111,10 +35144,10 @@
     "n_goals": "0",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Allan%20Jepsen%2002.jpg",
     "gender": "mand",
-    "klubnavn": "Aarhus 1900",
-    "latitude": "56.143167",
-    "longitude": "10.179676",
-    "klub_logo": "logos/klub_428.png",
+    "klubnavn": "Brøndby IF",
+    "latitude": "55.6491",
+    "longitude": "12.4176",
+    "klub_logo": "logos/klub_3700.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "region": "Region Syddanmark",
@@ -35140,7 +35173,7 @@
         "klubnavn": "Brøndby IF",
         "latitude": 55.6491,
         "longitude": 12.4176,
-        "is_earliest": false,
+        "is_earliest": true,
         "klub_logo": "logos/klub_3700.png"
       },
       {
@@ -35203,7 +35236,9 @@
     "years_played": [
       2005,
       2006
-    ]
+    ],
+    "klubnavn_original": "Brøndby IF",
+    "klub_id": "3700"
   },
   {
     "playerLabel": "Ulrik Laursen",
@@ -62595,10 +62630,10 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Aarhus 1900",
-    "latitude": "56.143167",
-    "longitude": "10.179676",
-    "klub_logo": "logos/klub_428.png",
+    "klubnavn": "AGF",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
+    "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "region": "Region Midtjylland",
@@ -62640,7 +62675,7 @@
         "klubnavn": "AGF",
         "latitude": 56.1322,
         "longitude": 10.1937,
-        "is_earliest": false,
+        "is_earliest": true,
         "klub_logo": "logos/klub_3699.png"
       },
       {
@@ -62662,7 +62697,9 @@
     ],
     "years_played": [
       2018
-    ]
+    ],
+    "klubnavn_original": "AGF",
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Daniel Nielsen",
