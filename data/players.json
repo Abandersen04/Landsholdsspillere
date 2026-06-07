@@ -6389,14 +6389,6 @@
         "longitude": 12.6,
         "is_earliest": true,
         "klub_logo": "logos/klub_3721.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "SBK Drafn",
-        "latitude": 59.7454,
-        "longitude": 10.206,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/SBK_Drafn.jpg"
       }
     ],
     "years_played": [
