@@ -57534,10 +57534,10 @@
     "n_goals": "25",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180912%20UEFA%20Women%27s%20Champions%20League%202019%20SKN%20-%20PSG%20Signe%20Bruun%20850%205437.jpg",
     "gender": "kvinde",
-    "klubnavn": "Alliancen IF",
-    "latitude": "56.43202",
-    "longitude": "9.95272",
-    "klub_logo": "https://file.dbu.dk/images/club/435/Alliancen_IF.png",
+    "klubnavn": "Romalt IF",
+    "latitude": "56.44784",
+    "longitude": "10.089479",
+    "klub_logo": "https://file.dbu.dk/images/club/727/Romalt_IF_Trans.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/435/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/435/klubinfo",
     "region": "Region Midtjylland",
@@ -57597,6 +57597,23 @@
         "longitude": -3.7033,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/330px-Real_Madrid_CF.svg.png"
+      },
+      {
+        "klub_id": "727",
+        "klubnavn": "Romalt IF",
+        "latitude": 56.4478,
+        "longitude": 10.0895,
+        "is_earliest": true,
+        "klub_logo": "https://file.dbu.dk/images/club/727/Romalt_IF_Trans.png"
+      },
+      {
+        "klub_id": "435",
+        "klubnavn": "Alliancen IF",
+        "latitude": 56.432,
+        "longitude": 9.9527,
+        "is_earliest": false,
+        "klub_logo": null,
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -57609,7 +57626,9 @@
       2023,
       2024,
       2025
-    ]
+    ],
+    "klubnavn_original": "Romalt IF",
+    "klub_id": "727"
   },
   {
     "playerLabel": "Rikke Marie Madsen",
