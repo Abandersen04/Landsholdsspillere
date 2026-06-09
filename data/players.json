@@ -20097,14 +20097,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "SC Freiburg",
-        "latitude": 47.995,
-        "longitude": 7.85,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/SC_Freiburg_logo.svg/330px-SC_Freiburg_logo.svg.png"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "BSC Young Boys",
         "latitude": 46.948,
         "longitude": 7.4474,
@@ -20118,6 +20110,15 @@
         "longitude": 12.55,
         "is_earliest": true,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Boldklubben_Skjold_-_Logo.svg/960px-Boldklubben_Skjold_-_Logo.svg.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "FC Fribourg",
+        "latitude": 46.8169,
+        "longitude": 7.154,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/de/thumb/f/fc/FC_Fribourg.svg/1920px-FC_Fribourg.svg.png",
+        "team_qid": null
       }
     ],
     "years_played": [
