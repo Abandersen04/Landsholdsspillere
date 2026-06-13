@@ -216,6 +216,8 @@ def render_by(bynavn):
     </div>
   </div>
 
+  {prose_html}
+
   {map_html}
 
   <div class="card">
@@ -239,8 +241,6 @@ def render_by(bynavn):
 {rows}      </tbody>
     </table>
   </div>
-
-  {prose_html}
 
   <div style="margin-top:20px;text-align:center">
     <a href="/?q={bynavn}" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:#C8102E;color:#fff;border-radius:8px;font-weight:600;font-size:14px">
