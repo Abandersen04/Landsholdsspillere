@@ -10,6 +10,31 @@ from collections import defaultdict
 with open("data/players.json", encoding="utf-8") as f:
     players = json.load(f)
 
+# National rangering (fødesteder sorteret efter antal spillere)
+_by_all_counts = defaultdict(int)
+_by_region_map = {}
+for _p in players:
+    _b = (_p.get("birthPlaceLabel") or "").strip()
+    if _b:
+        _by_all_counts[_b] += 1
+        if _b not in _by_region_map and _p.get("region"):
+            _by_region_map[_b] = _p["region"]
+_sorted_byer = sorted(_by_all_counts.items(), key=lambda x: -x[1])
+BY_NATIONAL_RANK = {b: i+1 for i, (b, _) in enumerate(_sorted_byer)}
+TOTAL_BYER = len(BY_NATIONAL_RANK)
+
+# Regional rangering: byer i samme region sorteret efter antal spillere
+_region_byer = defaultdict(list)
+for _b, _cnt in _by_all_counts.items():
+    _reg = _by_region_map.get(_b)
+    if _reg:
+        _region_byer[_reg].append((_b, _cnt))
+BY_REGION_RANK = {}
+for _reg, _entries in _region_byer.items():
+    _entries_sorted = sorted(_entries, key=lambda x: -x[1])
+    for _i, (_b, _) in enumerate(_entries_sorted):
+        BY_REGION_RANK[_b] = (_i+1, len(_entries_sorted), _reg)
+
 def slugify(text):
     text = str(text or "").lower()
     text = text.replace("æ", "ae").replace("ø", "oe").replace("å", "aa")
@@ -97,6 +122,29 @@ def render_by(bynavn):
         f"Tilsammen har de spillet {total_m} kampe og scoret {total_g} mål for Danmark."
     )
 
+    # Unik brødtekst (kun hvis > 5 spillere)
+    prose_html = ""
+    if n > 5:
+        top5 = ps[:5]
+        top5_navne = [f'<a href="/spiller/{player_slug(p)}/" style="color:#C8102E">{p.get("playerLabel","")}</a> ({p.get("n_matches",0)} kampe)' for p in top5]
+        if len(top5_navne) >= 2:
+            top5_str = ", ".join(top5_navne[:-1]) + " og " + top5_navne[-1]
+        else:
+            top5_str = top5_navne[0]
+        nat_rank = BY_NATIONAL_RANK.get(bynavn, 0)
+        reg_info = BY_REGION_RANK.get(bynavn)
+        rank_parts = []
+        if nat_rank:
+            rank_parts.append(f"nr. {nat_rank} i Danmark")
+        if reg_info:
+            reg_rank, reg_total, reg_navn = reg_info
+            if reg_rank <= reg_total:
+                rank_parts.append(f"nr. {reg_rank} i {reg_navn}")
+        rank_txt = " og ".join(rank_parts)
+        prose_html = f'''<div class="card" style="margin-top:20px;font-size:15px;line-height:1.7;color:#333">
+  <p>Med {n} landsholdsspillere er {bynavn} {f"placeret som {rank_txt} målt på antal A-landsholdsspillere. " if rank_txt else ""}De fem spillere med flest kampe for Danmark er {top5_str}.</p>
+</div>'''
+
     return f"""<!DOCTYPE html>
 <html lang="da">
 <head>
@@ -106,6 +154,8 @@ def render_by(bynavn):
   <meta name="description" content="{description}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://landsholdskortet.dk/by/{slug}/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.svg">
   <meta property="og:title" content="Landsholdsspillere fra {bynavn}">
   <meta property="og:description" content="{description}">
   <meta property="og:url" content="https://landsholdskortet.dk/by/{slug}/">
@@ -189,6 +239,8 @@ def render_by(bynavn):
 {rows}      </tbody>
     </table>
   </div>
+
+  {prose_html}
 
   <div style="margin-top:20px;text-align:center">
     <a href="/?q={bynavn}" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:#C8102E;color:#fff;border-radius:8px;font-weight:600;font-size:14px">

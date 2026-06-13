@@ -11,6 +11,19 @@ from datetime import date
 with open("data/players.json", encoding="utf-8") as f:
     players = json.load(f)
 
+# Byg national rangering (alle klubber sorteret efter antal spillere)
+_klub_all_counts = defaultdict(int)
+for _p in players:
+    _seen = set()
+    for _c in (_p.get("allClubs") or []):
+        _k = (_c.get("klubnavn") or "").strip()
+        if _k and _k not in _seen:
+            _seen.add(_k)
+            _klub_all_counts[_k] += 1
+_sorted_klubs = sorted(_klub_all_counts.items(), key=lambda x: -x[1])
+KLUB_NATIONAL_RANK = {k: i+1 for i, (k, _) in enumerate(_sorted_klubs)}
+TOTAL_KLUBS = len(KLUB_NATIONAL_RANK)
+
 def slugify(text):
     text = str(text or "").lower()
     text = text.replace("æ", "ae").replace("ø", "oe").replace("å", "aa")
@@ -138,6 +151,21 @@ def render_klub(klubnavn):
         f"Tilsammen har de spillet {total_m} kampe og scoret {total_g} mål for Danmark."
     )
 
+    # Unik brødtekst (kun hvis > 5 spillere)
+    nat_rank = KLUB_NATIONAL_RANK.get(klubnavn, 0)
+    prose_html = ""
+    if n > 5:
+        top5 = ps[:5]
+        top5_navne = [f'<a href="/spiller/{player_slug(p)}/" style="color:#C8102E">{p.get("playerLabel","")}</a> ({p.get("n_matches",0)} kampe)' for p in top5]
+        if len(top5_navne) >= 2:
+            top5_str = ", ".join(top5_navne[:-1]) + " og " + top5_navne[-1]
+        else:
+            top5_str = top5_navne[0]
+        rank_txt = f"nr. {nat_rank} ud af {TOTAL_KLUBS}" if nat_rank else ""
+        prose_html = f'''<div class="card" style="margin-top:20px;font-size:15px;line-height:1.7;color:#333">
+  <p>Med {n} landsholdsspillere er {klubnavn} {f"placeret som {rank_txt} i Danmark målt på antal A-landsholdsspillere. " if rank_txt else ""}De fem spillere med flest kampe for Danmark er {top5_str}.</p>
+</div>'''
+
     return f"""<!DOCTYPE html>
 <html lang="da">
 <head>
@@ -147,6 +175,8 @@ def render_klub(klubnavn):
   <meta name="description" content="{description}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://landsholdskortet.dk/klub/{slug}/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.svg">
   <meta property="og:title" content="{klubnavn} – {n} landsholdsspillere">
   <meta property="og:description" content="{description}">
   <meta property="og:url" content="https://landsholdskortet.dk/klub/{slug}/">
@@ -240,6 +270,8 @@ def render_klub(klubnavn):
 {rows}      </tbody>
     </table>
   </div>
+
+  {prose_html}
 
   <div style="margin-top:20px;text-align:center">
     <a href="/?q={klubnavn}" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:#C8102E;color:#fff;border-radius:8px;font-weight:600;font-size:14px">
