@@ -40090,7 +40090,7 @@
         "latitude": 55.2629,
         "longitude": 11.3132,
         "is_earliest": true,
-        "klub_logo": null
+        "klub_logo": "https://file.dbu.dk/images/club/1225/Skælskør_Boldklub_og_Idrætsforening.png"
       }
     ],
     "years_played": [
@@ -40102,7 +40102,8 @@
       1994,
       1995,
       1996
-    ]
+    ],
+    "klub_logo": "https://file.dbu.dk/images/club/1225/Skælskør_Boldklub_og_Idrætsforening.png"
   },
   {
     "playerLabel": "Lene Madsen",
