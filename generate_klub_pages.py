@@ -145,7 +145,7 @@ def render_klub(klubnavn):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{klubnavn} – {n} landsholdsspillere | Landsholdskortet</title>
   <meta name="description" content="{description}">
-  <meta name="robots" content="{'index, follow' if n >= 3 else 'noindex, follow'}">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://landsholdskortet.dk/klub/{slug}/">
   <meta property="og:title" content="{klubnavn} – {n} landsholdsspillere">
   <meta property="og:description" content="{description}">

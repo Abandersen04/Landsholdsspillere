@@ -17,7 +17,7 @@
     "name":"Kalundborg GB",
     "url":"https://landsholdskortet.dk/klub/kalundborg-gb/",
     "description":"Kalundborg GB har fostret 3 danske A-landsholdsspillere. Tilsammen har de spillet 64 kampe og scoret 6 mål for Danmark."
-    
+    ,"logo":"https://file.dbu.dk/images/club/1111/Kalundborg_GB.png"
   }
   </script>
   <script type="application/ld+json">
@@ -67,7 +67,7 @@
 
 <div class="page">
   <div class="header">
-    
+    <img src="https://file.dbu.dk/images/club/1111/Kalundborg_GB.png" alt="Kalundborg GB logo" style="height:64px;width:auto;object-fit:contain;margin-bottom:12px">
     <h1>Kalundborg GB</h1>
     <div style="margin-bottom:8px"><a href="https://www.dbu.dk/resultater/klub/1111/klubinfo" target="_blank" rel="noopener" style="color:#C8102E;font-size:14px">DBU-profil</a></div>
     <div class="stats-row">
@@ -84,7 +84,7 @@
 (function(){
   const map = L.map("klub-map",{zoomControl:true});
   L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{attribution:"© OpenStreetMap © CARTO",maxZoom:18}).addTo(map);
-  const icon = L.divIcon({html:'<div style="width:20px;height:20px;border-radius:50%;background:#C8102E;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,.3)"></div>',className:'',iconSize:[20,20],iconAnchor:[10,10]});
+  const icon = L.divIcon({html:'<div style="width:36px;height:36px;border-radius:50%;border:2px solid #C8102E;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center"><img src="https://file.dbu.dk/images/club/1111/Kalundborg_GB.png" style="width:100%;height:100%;object-fit:contain" onerror="this.parentElement.style.background=\'#C8102E\'"></div>',className:'',iconSize:[36,36],iconAnchor:[18,18]});
   L.marker([55.6844,11.0784],{icon}).addTo(map).bindPopup("<strong>Kalundborg GB</strong>").openPopup();
   map.setView([55.6844,11.0784],13);
 })();

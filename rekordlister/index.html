@@ -25524,6 +25524,7 @@ function showSection(id, btn) {
   document.getElementById(id).classList.add('active');
   btn.classList.add('active');
   history.replaceState(null, '', '/rekordlister/' + id + '/');
+  document.querySelector('link[rel="canonical"]').href = 'https://landsholdskortet.dk/rekordlister/';
 }
 function loadFromHash() {
   const path = location.pathname;
