@@ -300,8 +300,7 @@ for klubnavn in klub_players:
     os.makedirs(dir_, exist_ok=True)
     with open(os.path.join(dir_, "index.html"), "w", encoding="utf-8") as f:
         f.write(render_klub(klubnavn))
-    if len(klub_players[klubnavn]) >= 3:
-        slugs.append(slug)
+    slugs.append(slug)
     generated += 1
 
 print(f"Genereret {generated} klubsider i /klub/")
