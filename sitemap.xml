@@ -7045,6 +7045,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://landsholdskortet.dk/klub/derby-county/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://landsholdskortet.dk/klub/herfoelge-bk/</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -7609,6 +7615,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://landsholdskortet.dk/klub/aarhus-football-club/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://landsholdskortet.dk/klub/fc-metz/</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -8101,6 +8113,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://landsholdskortet.dk/klub/vorup-fb/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://landsholdskortet.dk/klub/nakskov-boldklub/</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -8114,6 +8132,12 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/klub/dalum-if/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://landsholdskortet.dk/klub/oks/</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8444,12 +8468,6 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/klub/everton-fc/</loc>
-    <lastmod>2026-06-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://landsholdskortet.dk/klub/vorup-fb/</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9242,12 +9260,6 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/by/tommerup/</loc>
-    <lastmod>2026-06-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://landsholdskortet.dk/by/midtbyen-aarhus/</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10123,6 +10135,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://landsholdskortet.dk/by/espegaerde/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://landsholdskortet.dk/by/jyllinge/</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -10460,6 +10478,12 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/by/dronningborg/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://landsholdskortet.dk/by/vanloese/</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
