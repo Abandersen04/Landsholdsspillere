@@ -161,9 +161,9 @@ def render_klub(klubnavn):
             top5_str = ", ".join(top5_navne[:-1]) + " og " + top5_navne[-1]
         else:
             top5_str = top5_navne[0]
-        rank_txt = f"nr. {nat_rank} ud af {TOTAL_KLUBS}" if nat_rank else ""
+        rank_txt = f"nr. {nat_rank} ud af {TOTAL_KLUBS} klubber" if nat_rank else ""
         prose_html = f'''<div class="card" style="margin-top:20px;font-size:15px;line-height:1.7;color:#333">
-  <p>Med {n} landsholdsspillere er {klubnavn} {f"placeret som {rank_txt} i Danmark målt på antal A-landsholdsspillere. " if rank_txt else ""}De fem spillere med flest kampe for Danmark er {top5_str}.</p>
+  <p>Med {n} landsholdsspillere er {klubnavn} {f"placeret som {rank_txt} i databasen målt på antal A-landsholdsspillere. " if rank_txt else ""}De fem spillere med flest kampe for Danmark er {top5_str}.</p>
 </div>'''
 
     return f"""<!DOCTYPE html>
