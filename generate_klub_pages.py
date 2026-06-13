@@ -11,16 +11,13 @@ from datetime import date
 with open("data/players.json", encoding="utf-8") as f:
     players = json.load(f)
 
-# Byg national rangering (alle klubber sorteret efter antal spillere)
-_klub_all_counts = defaultdict(int)
+# Byg national rangering (kun barndomsklubber)
+_barn_counts = defaultdict(int)
 for _p in players:
-    _seen = set()
-    for _c in (_p.get("allClubs") or []):
-        _k = (_c.get("klubnavn") or "").strip()
-        if _k and _k not in _seen:
-            _seen.add(_k)
-            _klub_all_counts[_k] += 1
-_sorted_klubs = sorted(_klub_all_counts.items(), key=lambda x: -x[1])
+    _k = (_p.get("klubnavn") or "").strip()
+    if _k:
+        _barn_counts[_k] += 1
+_sorted_klubs = sorted(_barn_counts.items(), key=lambda x: -x[1])
 KLUB_NATIONAL_RANK = {k: i+1 for i, (k, _) in enumerate(_sorted_klubs)}
 TOTAL_KLUBS = len(KLUB_NATIONAL_RANK)
 
@@ -161,9 +158,11 @@ def render_klub(klubnavn):
             top5_str = ", ".join(top5_navne[:-1]) + " og " + top5_navne[-1]
         else:
             top5_str = top5_navne[0]
-        rank_txt = f"nr. {nat_rank} ud af {TOTAL_KLUBS} klubber" if nat_rank else ""
+        barn_rank = KLUB_NATIONAL_RANK.get(klubnavn)
+        rank_txt = f"nr. {barn_rank} ud af {TOTAL_KLUBS} barndomsklubber" if barn_rank else ""
+        rank_sentence = f"{klubnavn} er placeret som {rank_txt} i Danmark målt på barndomsklub for A-landsholdsspillere. " if rank_txt else ""
         prose_html = f'''<div class="card" style="margin-top:20px;font-size:15px;line-height:1.7;color:#333">
-  <p>Med {n} landsholdsspillere er {klubnavn} {f"placeret som {rank_txt} i databasen målt på antal A-landsholdsspillere. " if rank_txt else ""}De fem spillere med flest kampe for Danmark er {top5_str}.</p>
+  <p>{rank_sentence}De {len(top5)} spillere med flest kampe for Danmark fra {klubnavn} er {top5_str}.</p>
 </div>'''
 
     return f"""<!DOCTYPE html>
