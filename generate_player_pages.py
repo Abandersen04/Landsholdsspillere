@@ -959,7 +959,7 @@ urls = ['  <url>\n    <loc>https://landsholdskortet.dk/</loc>\n'
         f'    <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n'
         '    <priority>1.0</priority>\n  </url>']
 
-for static_path, prio in [("/rekordlister/", "0.9"), ("/landsholdskurven/", "0.9"), ("/toplister/", "0.7"), ("/scatterplot/", "0.7")]:
+for static_path, prio in [("/rekordlister/", "0.9"), ("/landsholdskurven/", "0.9"), ("/toplister/", "0.7")]:
     urls.append(
         f'  <url>\n    <loc>https://landsholdskortet.dk{static_path}</loc>\n'
         f'    <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n'
