@@ -56806,22 +56806,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Juventus FC (women)",
-        "latitude": 45.0792,
-        "longitude": 7.6761,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/250px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Juventus F.C. (kvinder)",
-        "latitude": 45.0792,
-        "longitude": 7.6761,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/250px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "Linköpings FC",
         "latitude": 58.4181,
         "longitude": 15.6492,
@@ -56829,12 +56813,31 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Link%C3%B6ping_FC%2C_logo.svg/120px-Link%C3%B6ping_FC%2C_logo.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "",
+        "klubnavn": "Juventus F.C.",
+        "latitude": 45.0792,
+        "longitude": 7.6761,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/250px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "",
         "klubnavn": "Paris Saint-Germain Féminine",
         "latitude": 48.8567,
         "longitude": 2.3522,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/4a/PSG_women_team.png"
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/4a/PSG_women_team.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "Aston Villa FC",
+        "latitude": 52.5,
+        "longitude": -1.88,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Aston_Villa_FC_new_crest.svg/330px-Aston_Villa_FC_new_crest.svg.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -56843,6 +56846,9 @@
       2024,
       2025,
       2026
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -59640,6 +59646,15 @@
         "longitude": 10.7872,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/VfL_Wolfsburg_Logo.svg/500px-VfL_Wolfsburg_Logo.svg.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "S.C. Braga",
+        "latitude": 41.6372,
+        "longitude": -8.4411,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/79/S.C._Braga_logo.svg/500px-S.C._Braga_logo.svg.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -59649,6 +59664,9 @@
       2023,
       2024,
       2025
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -59698,14 +59716,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "VfL Wolfsburg (women)",
-        "latitude": 52.4231,
-        "longitude": 10.7872,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/VfL_Wolfsburg_Logo.svg/500px-VfL_Wolfsburg_Logo.svg.png"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "FC Rosengård",
         "latitude": 55.595,
         "longitude": 12.9956,
@@ -59721,12 +59731,22 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/330px-Real_Madrid_CF.svg.png"
       },
       {
-        "klub_id": null,
-        "klubnavn": "Real Madrid Femenino",
-        "latitude": 40.4169,
-        "longitude": -3.7033,
+        "klub_id": "",
+        "klubnavn": "VfL Wolfsburg",
+        "latitude": 52.4231,
+        "longitude": 10.7872,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/330px-Real_Madrid_CF.svg.png"
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/VfL_Wolfsburg_Logo.svg/500px-VfL_Wolfsburg_Logo.svg.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "Como 1907",
+        "latitude": 45.8135,
+        "longitude": 9.0732,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Calcio_Como_-_logo_%28Italy%2C_2019-%29.svg/1920px-Calcio_Como_-_logo_%28Italy%2C_2019-%29.svg.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -59738,6 +59758,9 @@
       2024,
       2025,
       2026
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -60443,6 +60466,24 @@
         "longitude": 3.2242,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Club_Brugge_KV_logo.svg/250px-Club_Brugge_KV_logo.svg.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "İstanbul Başakşehir FK",
+        "latitude": 41.122,
+        "longitude": 28.808,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/tr/c/cd/%C4%B0stanbul_Ba%C5%9Fak%C5%9Fehir_FK.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "99026",
+        "klubnavn": "Rangers F.C.",
+        "latitude": 55.8611,
+        "longitude": -4.3089,
+        "is_earliest": false,
+        "klub_logo": "https://file.dbu.dk/images/club/99026/Rangers_F.C..png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -60452,6 +60493,9 @@
       2023,
       2024,
       2025
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
