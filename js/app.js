@@ -1011,7 +1011,7 @@ function groupAllClubs(players, searchTerm) {
   //  3. navn|coords  → fallback (undgår falsk sammensmeltning, fx PSG + Stade Français)
   function clubKey(c) {
     if (c.team_qid != null) return `qid:${c.team_qid}`;
-    if (c.klub_id != null)  return `id:${c.klub_id}`;
+    if (c.klub_id)          return `id:${c.klub_id}`;
     return `${(c.klubnavn || '').toUpperCase()}|${c.latitude},${c.longitude}`;
   }
 
