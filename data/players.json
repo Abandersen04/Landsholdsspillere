@@ -20074,9 +20074,9 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben Skjold",
-    "latitude": "55.6833",
-    "longitude": "12.55",
-    "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Boldklubben_Skjold_-_Logo.svg/960px-Boldklubben_Skjold_-_Logo.svg.png",
+    "latitude": "55.7036602452096",
+    "longitude": "12.5746999379854",
+    "klub_logo": "https://file.dbu.dk/images/club/1581/Boldklubben_Skjold.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1533/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1533/klubinfo",
     "region": "Region Hovedstaden",
@@ -20106,14 +20106,6 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/BSC_Young_Boys.svg/960px-BSC_Young_Boys.svg.png"
       },
       {
-        "klub_id": "",
-        "klubnavn": "Boldklubben Skjold",
-        "latitude": 55.6833,
-        "longitude": 12.55,
-        "is_earliest": true,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Boldklubben_Skjold_-_Logo.svg/960px-Boldklubben_Skjold_-_Logo.svg.png"
-      },
-      {
         "klub_id": null,
         "klubnavn": "FC Fribourg",
         "latitude": 46.8169,
@@ -20121,12 +20113,29 @@
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/de/thumb/f/fc/FC_Fribourg.svg/1920px-FC_Fribourg.svg.png",
         "team_qid": null
+      },
+      {
+        "klub_id": "1581",
+        "klubnavn": "Boldklubben Skjold",
+        "latitude": 55.7037,
+        "longitude": 12.5747,
+        "is_earliest": true,
+        "klub_logo": "https://file.dbu.dk/images/club/1581/Boldklubben_Skjold.png",
+        "team_qid": null
       }
     ],
     "years_played": [
       1969,
       1970
-    ]
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "klubnavn",
+      "latitude",
+      "longitude"
+    ],
+    "klubnavn_original": "Boldklubben Skjold",
+    "klub_id": "1581"
   },
   {
     "playerLabel": "Svend Aage Rask",
@@ -31457,18 +31466,13 @@
         "longitude": 12.5689,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Boldklubben Skjold",
-        "latitude": 55.6833,
-        "longitude": 12.55,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Boldklubben_Skjold_-_Logo.svg/960px-Boldklubben_Skjold_-_Logo.svg.png"
       }
     ],
     "years_played": [
       1993
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -48130,14 +48134,6 @@
     "region": "Region Hovedstaden",
     "allClubs": [
       {
-        "klub_id": "1581",
-        "klubnavn": "Boldklubben Skjold",
-        "latitude": 55.7037,
-        "longitude": 12.5749,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1581.png"
-      },
-      {
         "klub_id": "2131",
         "klubnavn": "Ballerup-Skovlunde Fodbold (BSF)",
         "latitude": 55.7161,
@@ -48210,12 +48206,13 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Olympique_Lyonnais_logo.svg/330px-Olympique_Lyonnais_logo.svg.png"
       },
       {
-        "klub_id": null,
-        "klubnavn": "FC Barcelona (women)",
+        "klub_id": "",
+        "klubnavn": "FC Barcelona",
         "latitude": 41.3825,
         "longitude": 2.1769,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/250px-FC_Barcelona_%28crest%29.svg.png"
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/250px-FC_Barcelona_%28crest%29.svg.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -48231,6 +48228,9 @@
       2015,
       2016,
       2017
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
