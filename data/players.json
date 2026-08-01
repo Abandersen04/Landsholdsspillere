@@ -2782,9 +2782,9 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/John-faxe-jensen-2002.jpg",
     "gender": "mand",
     "klubnavn": "Boldklubben Skjold",
-    "latitude": "55.6833",
-    "longitude": "12.55",
-    "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Boldklubben_Skjold_-_Logo.svg/960px-Boldklubben_Skjold_-_Logo.svg.png",
+    "latitude": "55.7036602452096",
+    "longitude": "12.5746999379854",
+    "klub_logo": "https://file.dbu.dk/images/club/1581/Boldklubben_Skjold.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
     "region": "Region Hovedstaden",
@@ -2822,12 +2822,13 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/330px-Arsenal_FC.svg.png"
       },
       {
-        "klub_id": "",
+        "klub_id": "1581",
         "klubnavn": "Boldklubben Skjold",
-        "latitude": 55.6833,
-        "longitude": 12.55,
+        "latitude": 55.7037,
+        "longitude": 12.5747,
         "is_earliest": true,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Boldklubben_Skjold_-_Logo.svg/960px-Boldklubben_Skjold_-_Logo.svg.png"
+        "klub_logo": "https://file.dbu.dk/images/club/1581/Boldklubben_Skjold.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -2841,7 +2842,15 @@
       1993,
       1994,
       1995
-    ]
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "klubnavn",
+      "latitude",
+      "longitude"
+    ],
+    "klubnavn_original": "Boldklubben Skjold",
+    "klub_id": "1581"
   },
   {
     "playerLabel": "Peter Rasmussen",
@@ -17665,9 +17674,7 @@
       1964,
       1966
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Preben Arentoft",
@@ -22037,12 +22044,7 @@
     ],
     "klubnavn_original": "Nykøbing Falster Boldklub af 1901",
     "klub_id": "99004",
-    "_manual_fields": [
-      "allClubs",
-      "klubnavn",
-      "latitude",
-      "longitude"
-    ]
+    "_manual_fields": ["allClubs", "klubnavn", "latitude", "longitude"]
   },
   {
     "playerLabel": "Mogens Therkildsen",
@@ -32194,9 +32196,7 @@
       2006,
       2007
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Martin Laursen",
@@ -60501,14 +60501,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "FC Copenhagen",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "AS Roma",
         "latitude": 41.8931,
         "longitude": 12.4828,
@@ -60531,6 +60523,9 @@
       2023,
       2024,
       2026
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -61361,6 +61356,15 @@
         "longitude": -9.139,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Sporting_CP_crest.svg/120px-Sporting_CP_crest.svg.png"
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "Atlético Madrid",
+        "latitude": 40.4169,
+        "longitude": -3.7033,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/330px-Atletico_Madrid_Logo_2024.svg.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -61368,6 +61372,9 @@
       2024,
       2025,
       2026
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
