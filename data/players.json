@@ -51436,22 +51436,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Juventus FC (women)",
-        "latitude": 45.0792,
-        "longitude": 7.6761,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/250px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Juventus F.C. (kvinder)",
-        "latitude": 45.0792,
-        "longitude": 7.6761,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/250px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "FC Rosengård",
         "latitude": 55.595,
         "longitude": 12.9956,
@@ -51468,19 +51452,38 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Inter Milan (women)",
-        "latitude": 45.4669,
-        "longitude": 9.19,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/960px-FC_Internazionale_Milano_2021.svg.png"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "Vittsjö GIK",
         "latitude": 56.3347,
         "longitude": 13.66,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Vittsjo_GIK_logo.svg/330px-Vittsjo_GIK_logo.svg.png"
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "Juventus F.C.",
+        "latitude": 45.0792,
+        "longitude": 7.6761,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/250px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "FC Internazionale Milano",
+        "latitude": 45.4669,
+        "longitude": 9.19,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/960px-FC_Internazionale_Milano_2021.svg.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "FC Badalona",
+        "latitude": 41.4554,
+        "longitude": 2.2371,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/0/0d/FC_Levante_Badalona.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -51497,6 +51500,9 @@
       2022,
       2023,
       2026
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
