@@ -2843,12 +2843,7 @@
       1994,
       1995
     ],
-    "_manual_fields": [
-      "allClubs",
-      "klubnavn",
-      "latitude",
-      "longitude"
-    ],
+    "_manual_fields": ["allClubs", "klubnavn", "latitude", "longitude"],
     "klubnavn_original": "Boldklubben Skjold",
     "klub_id": "1581"
   },
@@ -20128,12 +20123,7 @@
       1969,
       1970
     ],
-    "_manual_fields": [
-      "allClubs",
-      "klubnavn",
-      "latitude",
-      "longitude"
-    ],
+    "_manual_fields": ["allClubs", "klubnavn", "latitude", "longitude"],
     "klubnavn_original": "Boldklubben Skjold",
     "klub_id": "1581"
   },
@@ -31471,9 +31461,7 @@
     "years_played": [
       1993
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Michael Larsen",
@@ -48229,9 +48217,7 @@
       2016,
       2017
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Henriette Salling-Dahl",
@@ -51214,11 +51200,32 @@
         "longitude": 9.4,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/1/14/Viborg_FF.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "Houston Dynamo FC",
+        "latitude": 29.7523,
+        "longitude": -95.3522,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Houston_Dynamo_FC_logo.svg/500px-Houston_Dynamo_FC_logo.svg.png",
+        "team_qid": null
+      },
+      {
+        "klub_id": "377",
+        "klubnavn": "Viborg Sdrm. IK",
+        "latitude": 56.4334,
+        "longitude": 9.3739,
+        "is_earliest": false,
+        "klub_logo": "https://file.dbu.dk/images/club/377/Viborg_Sdrm._IK.png",
+        "team_qid": null
       }
     ],
     "years_played": [
       2015,
       2016
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -51501,9 +51508,7 @@
       2023,
       2026
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Simone Boye Sørensen",
@@ -52722,9 +52727,7 @@
       2023,
       2025
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Nina Frausing Pedersen",
@@ -56848,9 +56851,7 @@
       2025,
       2026
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Sara Thrige",
@@ -59666,9 +59667,7 @@
       2024,
       2025
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Sofie Svava",
@@ -59760,9 +59759,7 @@
       2025,
       2026
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Rasmus Johansson",
@@ -60495,9 +60492,7 @@
       2024,
       2025
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Victor Nelsson",
@@ -60569,9 +60564,7 @@
       2024,
       2026
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Kristian Pedersen",
@@ -61418,9 +61411,7 @@
       2025,
       2026
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Joakim Mæhle",
