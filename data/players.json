@@ -51224,9 +51224,7 @@
       2015,
       2016
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Martin Braithwaite",
@@ -54512,6 +54510,15 @@
         "longitude": -0.1275,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/330px-Arsenal_FC.svg.png"
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "Everton FC",
+        "latitude": 53.4072,
+        "longitude": -2.9917,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png",
+        "team_qid": null
       }
     ],
     "years_played": [
@@ -54522,6 +54529,9 @@
       2024,
       2025,
       2026
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -58800,22 +58810,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Juventus FC (women)",
-        "latitude": 45.0792,
-        "longitude": 7.6761,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/250px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Juventus F.C. (kvinder)",
-        "latitude": 45.0792,
-        "longitude": 7.6761,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/250px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "Napoli",
         "latitude": 40.8358,
         "longitude": 14.2486,
@@ -58853,10 +58847,22 @@
         "longitude": 10.7389,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/V%C3%A5lerenga_Oslo_logo.svg/500px-V%C3%A5lerenga_Oslo_logo.svg.png"
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "Juventus F.C.",
+        "latitude": 45.0792,
+        "longitude": 7.6761,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/250px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png",
+        "team_qid": null
       }
     ],
     "years_played": [
       2022
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -61915,10 +61921,22 @@
         "longitude": -21.9236,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/5/59/Valur_%28men%27s_football%29_logo.png"
+      },
+      {
+        "klub_id": "",
+        "klubnavn": "Celtic F.C.",
+        "latitude": 55.8611,
+        "longitude": -4.25,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Celtic_FC_crest.svg/1280px-Celtic_FC_crest.svg.png",
+        "team_qid": null
       }
     ],
     "years_played": [
       2026
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
