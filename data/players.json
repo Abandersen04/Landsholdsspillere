@@ -30,7 +30,7 @@
       },
       {
         "klub_id": "266",
-        "klubnavn": "Ikast FS",
+        "klubnavn": "Ikast FS Fodbold",
         "latitude": 56.1447,
         "longitude": 9.1423,
         "is_earliest": false,
@@ -241,14 +241,6 @@
         "longitude": 4.8833,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_AFC_Ajax_%281928-1991%2C_2025-%29.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "AC Milan",
-        "latitude": 45.4669,
-        "longitude": 9.19,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/500px-Logo_of_AC_Milan.svg.png"
       },
       {
         "klub_id": null,
@@ -558,7 +550,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -654,7 +646,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -707,14 +699,6 @@
         "longitude": 8.5411,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/FC_Zurich_Logo_2022.svg/1280px-FC_Zurich_Logo_2022.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -784,7 +768,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -1216,7 +1200,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": false,
@@ -1277,14 +1261,6 @@
         "longitude": 9.18,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/VfB_Stuttgart_1893_Logo.svg/500px-VfB_Stuttgart_1893_Logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "AC Milan",
-        "latitude": 45.4669,
-        "longitude": 9.19,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/500px-Logo_of_AC_Milan.svg.png"
       }
     ],
     "years_played": [
@@ -1375,7 +1351,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -1404,14 +1380,6 @@
         "longitude": -1.9025,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Birmingham_City_FC_logo.svg/330px-Birmingham_City_FC_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -1610,7 +1578,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Everton FC",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -1684,7 +1652,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Everton FC",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -1934,7 +1902,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -1963,14 +1931,6 @@
         "longitude": 9.5755,
         "is_earliest": false,
         "klub_logo": "logos/klub_632.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       }
     ],
     "years_played": [
@@ -2137,7 +2097,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0436,
         "longitude": 10.0208,
         "is_earliest": false,
@@ -2174,14 +2134,6 @@
         "longitude": 5.9333,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/b/ba/EHC_Hoensbroek_Norad.PNG"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -2384,7 +2336,7 @@
     "n_goals": "1",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Fremad Amager",
+    "klubnavn": "Boldklubben Fremad Amager",
     "latitude": "55.6493",
     "longitude": "12.6016",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png",
@@ -2418,7 +2370,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": true,
@@ -2654,7 +2606,7 @@
       },
       {
         "klub_id": "266",
-        "klubnavn": "Ikast FS",
+        "klubnavn": "Ikast FS Fodbold",
         "latitude": 56.1447,
         "longitude": 9.1423,
         "is_earliest": false,
@@ -2838,7 +2790,12 @@
       1994,
       1995
     ],
-    "_manual_fields": ["allClubs", "klubnavn", "latitude", "longitude"],
+    "_manual_fields": [
+      "allClubs",
+      "klubnavn",
+      "latitude",
+      "longitude"
+    ],
     "klubnavn_original": "Boldklubben Skjold",
     "klub_id": "1581"
   },
@@ -2873,7 +2830,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -2894,14 +2851,6 @@
         "longitude": 9.9104,
         "is_earliest": false,
         "klub_logo": "logos/klub_4.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -2949,7 +2898,7 @@
       },
       {
         "klub_id": "266",
-        "klubnavn": "Ikast FS",
+        "klubnavn": "Ikast FS Fodbold",
         "latitude": 56.1447,
         "longitude": 9.1423,
         "is_earliest": false,
@@ -3032,7 +2981,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -3161,7 +3110,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": false,
@@ -3457,7 +3406,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "1860 München",
+        "klubnavn": "TSV 1860 Munich",
         "latitude": 48.1375,
         "longitude": 11.575,
         "is_earliest": false,
@@ -3590,7 +3539,7 @@
     "n_goals": "2",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Fremad Amager",
+    "klubnavn": "Boldklubben Fremad Amager",
     "latitude": "55.6493",
     "longitude": "12.6016",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png",
@@ -3616,7 +3565,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": true,
@@ -4341,7 +4290,7 @@
     "n_goals": "8",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Fremad Amager",
+    "klubnavn": "Boldklubben Fremad Amager",
     "latitude": "55.6493",
     "longitude": "12.6016",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png",
@@ -4367,7 +4316,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": true,
@@ -5010,7 +4959,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": false,
@@ -5222,7 +5171,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": false,
@@ -8006,7 +7955,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -8114,7 +8063,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Aalborg Boldklub",
+    "klubnavn": "AaB",
     "latitude": "57.0434",
     "longitude": "10.0196",
     "klub_logo": "logos/klub_2.png",
@@ -8124,7 +8073,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": true,
@@ -8158,7 +8107,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -8937,7 +8886,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Aalborg Boldklub",
+    "klubnavn": "AaB",
     "latitude": "57.0434",
     "longitude": "10.0196",
     "klub_logo": "logos/klub_2.png",
@@ -8947,7 +8896,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": true,
@@ -9593,7 +9542,7 @@
     "n_goals": "3",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Fremad Amager",
+    "klubnavn": "Boldklubben Fremad Amager",
     "latitude": "55.6493",
     "longitude": "12.6016",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png",
@@ -9603,7 +9552,7 @@
     "allClubs": [
       {
         "klub_id": "",
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": true,
@@ -9988,7 +9937,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -9998,7 +9947,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": true,
@@ -10639,7 +10588,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Aalborg Boldklub",
+    "klubnavn": "AaB",
     "latitude": "57.0434",
     "longitude": "10.0196",
     "klub_logo": "logos/klub_2.png",
@@ -10649,7 +10598,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": true,
@@ -11090,7 +11039,7 @@
     "n_goals": "2",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -11100,7 +11049,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": true,
@@ -11582,7 +11531,7 @@
     "n_goals": "3",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -11592,7 +11541,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": true,
@@ -11746,7 +11695,7 @@
     "n_goals": "1",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Fremad Amager",
+    "klubnavn": "Boldklubben Fremad Amager",
     "latitude": "55.6493",
     "longitude": "12.6016",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png",
@@ -11764,7 +11713,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": true,
@@ -11985,7 +11934,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": false,
@@ -12018,7 +11967,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Fremad Amager",
+    "klubnavn": "Boldklubben Fremad Amager",
     "latitude": "55.6493",
     "longitude": "12.6016",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png",
@@ -12028,7 +11977,7 @@
     "allClubs": [
       {
         "klub_id": "",
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": true,
@@ -12288,7 +12237,7 @@
     "n_goals": "6",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -12298,7 +12247,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": true,
@@ -12506,7 +12455,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -12524,7 +12473,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -12927,7 +12876,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -13366,7 +13315,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": false,
@@ -13898,7 +13847,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": false,
@@ -13925,7 +13874,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -13935,7 +13884,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": true,
@@ -14920,7 +14869,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Ikast FS",
+    "klubnavn": "Ikast FS Fodbold",
     "latitude": "56.1447",
     "longitude": "9.1423",
     "klub_logo": "logos/klub_266.png",
@@ -14930,7 +14879,7 @@
     "allClubs": [
       {
         "klub_id": "266",
-        "klubnavn": "Ikast FS",
+        "klubnavn": "Ikast FS Fodbold",
         "latitude": 56.1447,
         "longitude": 9.1423,
         "is_earliest": true,
@@ -15719,7 +15668,7 @@
     "n_matches": "4",
     "n_goals": "2",
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -15729,7 +15678,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": true,
@@ -16218,7 +16167,7 @@
     "n_goals": "2",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -16228,7 +16177,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": true,
@@ -16923,7 +16872,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -16933,7 +16882,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": true,
@@ -17105,19 +17054,11 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
         "klub_logo": "logos/klub_2.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -17175,7 +17116,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Greenock Morton",
+        "klubnavn": "Greenock Morton F.C.",
         "latitude": 55.95,
         "longitude": -4.7667,
         "is_earliest": false,
@@ -17355,7 +17296,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -17365,7 +17306,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": true,
@@ -17598,7 +17539,7 @@
     "n_goals": "3",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -17608,7 +17549,7 @@
     "allClubs": [
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -17643,7 +17584,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -17653,7 +17594,7 @@
     "allClubs": [
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -17754,7 +17695,7 @@
     "n_goals": "3",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -17764,7 +17705,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": true,
@@ -17866,7 +17807,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Aalborg Boldklub",
+    "klubnavn": "AaB",
     "latitude": "57.0434",
     "longitude": "10.0196",
     "klub_logo": "logos/klub_2.png",
@@ -17876,7 +17817,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": true,
@@ -18209,7 +18150,7 @@
     "n_goals": "3",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Feijenoord%20tegen%20FC%20Utrecht%20elftal%20Utrecht%2C%20Bestanddeelnr%20923-7659.jpg",
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -18219,7 +18160,7 @@
     "allClubs": [
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -18235,7 +18176,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "IFK Malmö Fotboll",
+        "klubnavn": "IFK Malmö",
         "latitude": 55.5861,
         "longitude": 12.9892,
         "is_earliest": false,
@@ -18321,7 +18262,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Ikast FS",
+    "klubnavn": "Ikast FS Fodbold",
     "latitude": "56.1447",
     "longitude": "9.1423",
     "klub_logo": "logos/klub_266.png",
@@ -18331,7 +18272,7 @@
     "allClubs": [
       {
         "klub_id": "266",
-        "klubnavn": "Ikast FS",
+        "klubnavn": "Ikast FS Fodbold",
         "latitude": 56.1447,
         "longitude": 9.1423,
         "is_earliest": true,
@@ -18592,7 +18533,7 @@
     "n_goals": "0",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Worbye%20%281966%29.jpg",
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -18602,7 +18543,7 @@
     "allClubs": [
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -18758,7 +18699,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -18811,14 +18752,6 @@
         "longitude": -113.5,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/9/9e/Original_edmonton_drillers_logo.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       }
     ],
     "years_played": [
@@ -18971,14 +18904,6 @@
         "longitude": 16.3725,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Logo_Wiener_Sport-Club_2017.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Vienna Sportclub",
-        "latitude": 48.2083,
-        "longitude": 16.3725,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Logo_Wiener_Sport-Club_2017.png"
       }
     ],
     "years_played": [
@@ -19123,7 +19048,7 @@
     "allClubs": [
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -19258,7 +19183,7 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "Kolding Idræts Forening",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
@@ -20118,7 +20043,12 @@
       1969,
       1970
     ],
-    "_manual_fields": ["allClubs", "klubnavn", "latitude", "longitude"],
+    "_manual_fields": [
+      "allClubs",
+      "klubnavn",
+      "latitude",
+      "longitude"
+    ],
     "klubnavn_original": "Boldklubben Skjold",
     "klub_id": "1581"
   },
@@ -20330,7 +20260,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -20555,7 +20485,7 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "Kolding Idræts Forening",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
@@ -20607,7 +20537,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -20667,7 +20597,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -20707,14 +20637,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "FC Linz",
         "latitude": 48.2933,
         "longitude": 14.2764,
@@ -20745,7 +20667,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Aalborg Boldklub",
+    "klubnavn": "AaB",
     "latitude": "57.0434",
     "longitude": "10.0196",
     "klub_logo": "logos/klub_2.png",
@@ -20755,7 +20677,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": true,
@@ -20779,7 +20701,7 @@
     "n_goals": "1",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -20797,7 +20719,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -21037,7 +20959,7 @@
     "n_matches": "4",
     "n_goals": "0",
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -21047,7 +20969,7 @@
     "allClubs": [
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -21316,7 +21238,7 @@
     "allClubs": [
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -21526,7 +21448,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -21534,7 +21456,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -21632,7 +21554,7 @@
       },
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": false,
@@ -21849,7 +21771,7 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "Kolding Idræts Forening",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
@@ -21958,7 +21880,7 @@
     "n_goals": "1",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sten%20Ziegler.png",
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -21968,7 +21890,7 @@
     "allClubs": [
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -22038,7 +21960,12 @@
     ],
     "klubnavn_original": "Nykøbing Falster Boldklub af 1901",
     "klub_id": "99004",
-    "_manual_fields": ["allClubs", "klubnavn", "latitude", "longitude"]
+    "_manual_fields": [
+      "allClubs",
+      "klubnavn",
+      "latitude",
+      "longitude"
+    ]
   },
   {
     "playerLabel": "Mogens Therkildsen",
@@ -22131,7 +22058,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -22292,7 +22219,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Aalborg Boldklub",
+    "klubnavn": "AaB",
     "latitude": "57.0434",
     "longitude": "10.0196",
     "klub_logo": "logos/klub_2.png",
@@ -22302,7 +22229,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": true,
@@ -22712,7 +22639,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -22720,19 +22647,11 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
         "klub_logo": "logos/klub_3716.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       }
     ],
     "years_played": [
@@ -22819,7 +22738,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -22829,7 +22748,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": true,
@@ -23101,7 +23020,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -23212,7 +23131,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -23228,7 +23147,7 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "Kolding Idræts Forening",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
@@ -23337,7 +23256,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Aalborg Boldklub",
+    "klubnavn": "AaB",
     "latitude": "57.0434",
     "longitude": "10.0196",
     "klub_logo": "logos/klub_2.png",
@@ -23347,7 +23266,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": true,
@@ -23371,7 +23290,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Skovshoved IF",
+    "klubnavn": "Skovshoved Idrætsforening",
     "latitude": "55.7597",
     "longitude": "12.5894",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ae/SkovshovedIFbadge.png",
@@ -23404,16 +23323,8 @@
         "klub_logo": "logos/klub_1567.png"
       },
       {
-        "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
-        "latitude": 55.6313,
-        "longitude": 12.4828,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_3716.png"
-      },
-      {
         "klub_id": null,
-        "klubnavn": "Skovshoved IF",
+        "klubnavn": "Skovshoved Idrætsforening",
         "latitude": 55.7597,
         "longitude": 12.5894,
         "is_earliest": true,
@@ -23486,7 +23397,7 @@
     "n_goals": "1",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -23496,7 +23407,7 @@
     "allClubs": [
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -23709,7 +23620,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "1860 München",
+        "klubnavn": "TSV 1860 Munich",
         "latitude": 48.1375,
         "longitude": 11.575,
         "is_earliest": false,
@@ -24295,7 +24206,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Ikast FS",
+        "klubnavn": "Ikast FS Fodbold",
         "latitude": 56.1408,
         "longitude": 9.1517,
         "is_earliest": false,
@@ -24349,7 +24260,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": false,
@@ -24438,7 +24349,7 @@
     "n_matches": "1",
     "n_goals": "0",
     "gender": "mand",
-    "klubnavn": "Fremad Amager",
+    "klubnavn": "Boldklubben Fremad Amager",
     "latitude": "55.6493",
     "longitude": "12.6016",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png",
@@ -24448,7 +24359,7 @@
     "allClubs": [
       {
         "klub_id": "",
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": true,
@@ -24913,7 +24824,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -25085,7 +24996,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -25093,7 +25004,7 @@
       },
       {
         "klub_id": "266",
-        "klubnavn": "Ikast FS",
+        "klubnavn": "Ikast FS Fodbold",
         "latitude": 56.1447,
         "longitude": 9.1423,
         "is_earliest": false,
@@ -25138,14 +25049,6 @@
         "longitude": 6.5667,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Logo_KFC_Uerdingen_05.svg/960px-Logo_KFC_Uerdingen_05.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       }
     ],
     "years_played": [
@@ -25602,7 +25505,7 @@
     "n_goals": "1",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -25636,7 +25539,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -25880,7 +25783,7 @@
     "n_goals": "14",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Persdag%20Ajax%20nr%202%2C%203%20Frank%20Arnesen%20%28kop%29%2C%20nr%204%20Rob%20Tervoort%20%28kop%29%2C%20Bestanddeelnr%20929-8308.jpg",
     "gender": "mand",
-    "klubnavn": "Fremad Amager",
+    "klubnavn": "Boldklubben Fremad Amager",
     "latitude": "55.6493",
     "longitude": "12.6016",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png",
@@ -25922,7 +25825,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": true,
@@ -26038,7 +25941,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": false,
@@ -26243,7 +26146,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -26331,14 +26234,6 @@
         "longitude": 7.2086,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/SC_Westfalia_Herne_crest.svg/330px-SC_Westfalia_Herne_crest.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Vienna Sportclub",
-        "latitude": 48.2083,
-        "longitude": 16.3725,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Logo_Wiener_Sport-Club_2017.png"
       },
       {
         "klub_id": null,
@@ -27135,7 +27030,7 @@
     "n_goals": "0",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ivan%20Nielsen.jpg",
     "gender": "mand",
-    "klubnavn": "Fremad Amager",
+    "klubnavn": "Boldklubben Fremad Amager",
     "latitude": "55.6493",
     "longitude": "12.6016",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png",
@@ -27185,7 +27080,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": true,
@@ -27244,7 +27139,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -27642,7 +27537,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -27686,7 +27581,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -27696,7 +27591,7 @@
     "allClubs": [
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -27748,7 +27643,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "AS Monaco",
+        "klubnavn": "AS Monaco F.C.",
         "latitude": 43.7306,
         "longitude": 7.4253,
         "is_earliest": false,
@@ -27959,7 +27854,7 @@
     "n_goals": "2",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Molby.jpg",
     "gender": "mand",
-    "klubnavn": "Kolding Idræts Forening",
+    "klubnavn": "Kolding IF",
     "latitude": "55.4936",
     "longitude": "9.4597",
     "klub_logo": "logos/klub_567.png",
@@ -27969,7 +27864,7 @@
     "allClubs": [
       {
         "klub_id": "567",
-        "klubnavn": "Kolding Idræts Forening",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": true,
@@ -28186,7 +28081,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -28244,7 +28139,7 @@
       },
       {
         "klub_id": "266",
-        "klubnavn": "Ikast FS",
+        "klubnavn": "Ikast FS Fodbold",
         "latitude": 56.1447,
         "longitude": 9.1423,
         "is_earliest": false,
@@ -28392,7 +28287,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -28416,7 +28311,7 @@
     "n_goals": "1",
     "image": null,
     "gender": "mand",
-    "klubnavn": "BK Avarta",
+    "klubnavn": "Avarta",
     "latitude": "55.6814",
     "longitude": "12.455",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Logo_of_BK_Avarta.svg/960px-Logo_of_BK_Avarta.svg.png",
@@ -28458,7 +28353,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "BK Avarta",
+        "klubnavn": "Avarta",
         "latitude": 55.6814,
         "longitude": 12.455,
         "is_earliest": true,
@@ -28525,7 +28420,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Kolding Idræts Forening",
+    "klubnavn": "Kolding IF",
     "latitude": "55.4936",
     "longitude": "9.4597",
     "klub_logo": "logos/klub_567.png",
@@ -28543,7 +28438,7 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "Kolding Idræts Forening",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": true,
@@ -28609,7 +28504,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -28688,7 +28583,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -28704,7 +28599,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": false,
@@ -28755,7 +28650,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Kolding Idræts Forening",
+    "klubnavn": "Kolding IF",
     "latitude": "55.4936",
     "longitude": "9.4597",
     "klub_logo": "logos/klub_567.png",
@@ -28765,7 +28660,7 @@
     "allClubs": [
       {
         "klub_id": "567",
-        "klubnavn": "Kolding Idræts Forening",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": true,
@@ -28977,7 +28872,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Panionios",
+        "klubnavn": "Panionios F.C.",
         "latitude": 37.943,
         "longitude": 23.7092,
         "is_earliest": false,
@@ -29037,7 +28932,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0436,
         "longitude": 10.0208,
         "is_earliest": false,
@@ -29066,14 +28961,6 @@
         "longitude": -1.0872,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/38/Portsmouth_FC_logo.svg/330px-Portsmouth_FC_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       }
     ],
     "years_played": [
@@ -29197,7 +29084,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -29215,7 +29102,7 @@
       },
       {
         "klub_id": "266",
-        "klubnavn": "Ikast FS",
+        "klubnavn": "Ikast FS Fodbold",
         "latitude": 56.1447,
         "longitude": 9.1423,
         "is_earliest": false,
@@ -29231,7 +29118,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -29531,7 +29418,7 @@
       },
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": false,
@@ -29735,7 +29622,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Kolding Idræts Forening",
+    "klubnavn": "Kolding IF",
     "latitude": "55.4936",
     "longitude": "9.4597",
     "klub_logo": "logos/klub_567.png",
@@ -29769,7 +29656,7 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "Kolding Idræts Forening",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": true,
@@ -29793,7 +29680,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0436,
         "longitude": 10.0208,
         "is_earliest": false,
@@ -29806,14 +29693,6 @@
         "longitude": -1.542,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Logo_FC_Nantes_%28avec_fond%29_-_2019.svg/500px-Logo_FC_Nantes_%28avec_fond%29_-_2019.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       }
     ],
     "years_played": [
@@ -29855,7 +29734,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -30778,7 +30657,7 @@
     "allClubs": [
       {
         "klub_id": "266",
-        "klubnavn": "Ikast FS",
+        "klubnavn": "Ikast FS Fodbold",
         "latitude": 56.1447,
         "longitude": 9.1423,
         "is_earliest": false,
@@ -31629,7 +31508,7 @@
       },
       {
         "klub_id": "3703",
-        "klubnavn": "SønderjyskE",
+        "klubnavn": "Sønderjyske Fodbold",
         "latitude": 55.2615,
         "longitude": 9.4893,
         "is_earliest": false,
@@ -31835,7 +31714,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": false,
@@ -32009,7 +31888,7 @@
     "n_matches": "2",
     "n_goals": "0",
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -32027,7 +31906,7 @@
       },
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": true,
@@ -32245,14 +32124,6 @@
         "longitude": 10.328,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo_Parma_Calcio_1913_%28adozione_2016%29.svg/250px-Logo_Parma_Calcio_1913_%28adozione_2016%29.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "AC Milan",
-        "latitude": 45.4669,
-        "longitude": 9.19,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/500px-Logo_of_AC_Milan.svg.png"
       },
       {
         "klub_id": null,
@@ -33239,7 +33110,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -33316,14 +33187,6 @@
         "longitude": 5.5021,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/7/77/Logo_KRC_Genk.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -33483,7 +33346,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Stabæk Fotball",
+        "klubnavn": "Stabæk",
         "latitude": 59.9181,
         "longitude": 10.5889,
         "is_earliest": false,
@@ -33698,7 +33561,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Everton FC",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -33943,14 +33806,6 @@
         "longitude": 4.5206,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Excelsior_Rotterdam_logo_2021.svg/960px-Excelsior_Rotterdam_logo_2021.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Málaga CF",
-        "latitude": 36.7167,
-        "longitude": -4.4167,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/M%C3%A1laga_CF.svg/330px-M%C3%A1laga_CF.svg.png"
       }
     ],
     "years_played": [
@@ -34070,7 +33925,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": false,
@@ -34123,7 +33978,7 @@
       },
       {
         "klub_id": "266",
-        "klubnavn": "Ikast FS",
+        "klubnavn": "Ikast FS Fodbold",
         "latitude": 56.1447,
         "longitude": 9.1423,
         "is_earliest": false,
@@ -34203,7 +34058,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Stabæk Fotball",
+        "klubnavn": "Stabæk",
         "latitude": 59.9181,
         "longitude": 10.5889,
         "is_earliest": false,
@@ -34257,7 +34112,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -34294,14 +34149,6 @@
         "longitude": -1.9833,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/West_Bromwich_Albion.svg/330px-West_Bromwich_Albion.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -34388,7 +34235,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Everton FC",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -34426,7 +34273,7 @@
     "n_goals": "0",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stephan%20Andersen%20%28cropped%29.JPG",
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -34444,7 +34291,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -34534,7 +34381,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": false,
@@ -34763,19 +34610,11 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
         "klub_logo": "logos/klub_2.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -34914,7 +34753,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -34943,14 +34782,6 @@
         "longitude": 5.1217,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Logo_FC_Utrecht.svg/500px-Logo_FC_Utrecht.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -35011,7 +34842,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -35032,14 +34863,6 @@
         "longitude": 5.4842,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/PSV_Eindhoven.svg/500px-PSV_Eindhoven.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       }
     ],
     "years_played": [
@@ -35132,7 +34955,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -35193,14 +35016,6 @@
         "longitude": 10.8061,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/V%C3%A5lerenga_Oslo_logo.svg/500px-V%C3%A5lerenga_Oslo_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -35673,7 +35488,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -35702,14 +35517,6 @@
         "longitude": 12.5689,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       }
     ],
     "years_played": [
@@ -35798,7 +35605,7 @@
     "n_goals": "5",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Kahlenberg%202006.jpg",
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -35816,7 +35623,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -36164,14 +35971,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fulham F.C. Women",
-        "latitude": 51.5072,
-        "longitude": -0.1275,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Fulham_FC_%28shield%29.svg/330px-Fulham_FC_%28shield%29.svg.png"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "Kolding Fodbold Club",
         "latitude": 55.4942,
         "longitude": 9.4592,
@@ -36305,14 +36104,6 @@
         "longitude": 10.5889,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Stabaek_IF_logo.svg/250px-Stabaek_IF_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Fulham F.C. Women",
-        "latitude": 51.5072,
-        "longitude": -0.1275,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Fulham_FC_%28shield%29.svg/330px-Fulham_FC_%28shield%29.svg.png"
       },
       {
         "klub_id": null,
@@ -37412,7 +37203,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Everton FC",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -37420,23 +37211,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Hamburger SV Women",
-        "latitude": 53.55,
-        "longitude": 10,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Hamburger_SV_logo.svg/960px-Hamburger_SV_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Everton FC",
-        "latitude": 53.4072,
-        "longitude": -2.9917,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Hamburger SV Women",
+        "klubnavn": "Hamburger SV",
         "latitude": 53.55,
         "longitude": 10,
         "is_earliest": false,
@@ -37656,7 +37431,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -37764,7 +37539,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Djurgårdens IF Fotboll (women)",
+        "klubnavn": "Djurgårdens IF Fotboll",
         "latitude": 59.3453,
         "longitude": 18.0789,
         "is_earliest": false,
@@ -37820,7 +37595,7 @@
     "allClubs": [
       {
         "klub_id": "3703",
-        "klubnavn": "SønderjyskE",
+        "klubnavn": "Sønderjyske Fodbold",
         "latitude": 55.2615,
         "longitude": 9.4893,
         "is_earliest": false,
@@ -38066,7 +37841,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -38668,7 +38443,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Brøndby IF Women",
+        "klubnavn": "Brøndby IF",
         "latitude": 55.6547,
         "longitude": 12.4164,
         "is_earliest": false,
@@ -41881,7 +41656,7 @@
     "n_goals": "11",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/S04%20Soren%20Larsen%2001.jpg",
     "gender": "mand",
-    "klubnavn": "Køge BK",
+    "klubnavn": "Køge Boldklub",
     "latitude": "55.468212",
     "longitude": "12.177224",
     "klub_logo": "logos/klub_1133.png",
@@ -41891,7 +41666,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": true,
@@ -41955,7 +41730,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Djurgårdens IF",
+        "klubnavn": "Djurgårdens IF Fotboll",
         "latitude": 59.3453,
         "longitude": 18.0789,
         "is_earliest": false,
@@ -44216,7 +43991,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -44277,14 +44052,6 @@
         "longitude": 11.04,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Lillestrom_SK_logo.svg/330px-Lillestrom_SK_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -44506,7 +44273,7 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "Kolding Idræts Forening",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
@@ -44708,7 +44475,7 @@
     "n_goals": "1",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bernburg%2C%20Martin%20BIF%2011-12%20EN-WP.JPG",
     "gender": "mand",
-    "klubnavn": "Fremad Amager",
+    "klubnavn": "Boldklubben Fremad Amager",
     "latitude": "55.6493",
     "longitude": "12.6016",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png",
@@ -44766,7 +44533,7 @@
       },
       {
         "klub_id": "",
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": true,
@@ -44878,7 +44645,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -44968,7 +44735,7 @@
     "allClubs": [
       {
         "klub_id": "3703",
-        "klubnavn": "SønderjyskE",
+        "klubnavn": "Sønderjyske Fodbold",
         "latitude": 55.2615,
         "longitude": 9.4893,
         "is_earliest": false,
@@ -45054,7 +44821,7 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Aalborg Boldklub",
+    "klubnavn": "AaB",
     "latitude": "57.0434",
     "longitude": "10.0196",
     "klub_logo": "logos/klub_2.png",
@@ -45064,7 +44831,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": true,
@@ -45299,7 +45066,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0436,
         "longitude": 10.0208,
         "is_earliest": false,
@@ -45312,14 +45079,6 @@
         "longitude": -4.25,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Celtic_FC_crest.svg/1280px-Celtic_FC_crest.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -45502,7 +45261,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -45667,7 +45426,7 @@
       },
       {
         "klub_id": "266",
-        "klubnavn": "Ikast FS",
+        "klubnavn": "Ikast FS Fodbold",
         "latitude": 56.1447,
         "longitude": 9.1423,
         "is_earliest": false,
@@ -46037,7 +45796,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -46066,14 +45825,6 @@
         "longitude": 6.5675,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/FC_Groningen_logo.svg/960px-FC_Groningen_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -46896,14 +46647,6 @@
         "longitude": 15.65,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/AS_Reggina_1914_crest.svg/330px-AS_Reggina_1914_crest.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Málaga CF",
-        "latitude": 36.7167,
-        "longitude": -4.4167,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/M%C3%A1laga_CF.svg/330px-M%C3%A1laga_CF.svg.png"
       }
     ],
     "years_played": [
@@ -47076,7 +46819,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "APOEL FC",
+        "klubnavn": "APOEL F.C.",
         "latitude": 35.1725,
         "longitude": 33.365,
         "is_earliest": false,
@@ -47154,7 +46897,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -47244,7 +46987,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -47313,14 +47056,6 @@
         "longitude": 4.48,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Feyenoord_logo_since_2024.svg/960px-Feyenoord_logo_since_2024.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -47439,7 +47174,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "1. FC Köln (women)",
+        "klubnavn": "1. FC Köln",
         "latitude": 50.9422,
         "longitude": 6.9578,
         "is_earliest": false,
@@ -47455,7 +47190,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "MSV Duisburg (women)",
+        "klubnavn": "MSV Duisburg",
         "latitude": 51.4322,
         "longitude": 6.7611,
         "is_earliest": false,
@@ -47782,14 +47517,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fiorentina Women's F.C.",
-        "latitude": 43.7714,
-        "longitude": 11.2542,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg/120px-ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg.png"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "Arsenal F.C.",
         "latitude": 51.5072,
         "longitude": -0.1275,
@@ -47884,7 +47611,7 @@
     "n_goals": "0",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jonas%20Lossl.jpg",
     "gender": "mand",
-    "klubnavn": "Kolding Idræts Forening",
+    "klubnavn": "Kolding IF",
     "latitude": "55.4936",
     "longitude": "9.4597",
     "klub_logo": "logos/klub_567.png",
@@ -47902,7 +47629,7 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "Kolding Idræts Forening",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": true,
@@ -47934,7 +47661,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Everton FC",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -48179,14 +47906,6 @@
         "longitude": 4.9289,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_AFC_Ajax_%281928-1991%2C_2025-%29.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Olympique Lyonnais (kvinder)",
-        "latitude": 45.7675,
-        "longitude": 4.835,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Olympique_Lyonnais_logo.svg/330px-Olympique_Lyonnais_logo.svg.png"
       },
       {
         "klub_id": "",
@@ -48485,7 +48204,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Kolding IF Women",
+        "klubnavn": "Kolding IF",
         "latitude": 55.49,
         "longitude": 9.47,
         "is_earliest": false,
@@ -48509,7 +48228,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "AS Roma (women)",
+        "klubnavn": "AS Roma",
         "latitude": 41.8931,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -48568,7 +48287,7 @@
       },
       {
         "klub_id": "3703",
-        "klubnavn": "SønderjyskE",
+        "klubnavn": "Sønderjyske Fodbold",
         "latitude": 55.2615,
         "longitude": 9.4893,
         "is_earliest": false,
@@ -49122,7 +48841,7 @@
       },
       {
         "klub_id": "3703",
-        "klubnavn": "SønderjyskE",
+        "klubnavn": "Sønderjyske Fodbold",
         "latitude": 55.2615,
         "longitude": 9.4893,
         "is_earliest": false,
@@ -49170,7 +48889,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "SSD Napoli Femminile",
+        "klubnavn": "S.S.C. Napoli",
         "latitude": 40.8358,
         "longitude": 14.2486,
         "is_earliest": false,
@@ -49498,7 +49217,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -49961,7 +49680,7 @@
       },
       {
         "klub_id": "3703",
-        "klubnavn": "SønderjyskE",
+        "klubnavn": "Sønderjyske Fodbold",
         "latitude": 55.2615,
         "longitude": 9.4893,
         "is_earliest": false,
@@ -50173,7 +49892,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -50324,14 +50043,6 @@
         "longitude": 12.4828,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/AS_Roma_logo_%282017%29.svg/330px-AS_Roma_logo_%282017%29.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "AC Milan",
-        "latitude": 45.4669,
-        "longitude": 9.19,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/500px-Logo_of_AC_Milan.svg.png"
       },
       {
         "klub_id": null,
@@ -50498,7 +50209,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "AS Roma (women)",
+        "klubnavn": "AS Roma",
         "latitude": 41.8931,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -50506,7 +50217,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Everton F.C. (women)",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -50519,22 +50230,6 @@
         "longitude": 3.8772,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Montpellier_HSC_logo.svg/330px-Montpellier_HSC_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "AS Roma (women)",
-        "latitude": 41.8931,
-        "longitude": 12.4828,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/AS_Roma_logo_%282017%29.svg/330px-AS_Roma_logo_%282017%29.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Everton FC",
-        "latitude": 53.4072,
-        "longitude": -2.9917,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"
       },
       {
         "klub_id": null,
@@ -50935,7 +50630,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Djurgårdens IF",
+        "klubnavn": "Djurgårdens IF Fotboll",
         "latitude": 59.3453,
         "longitude": 18.0789,
         "is_earliest": false,
@@ -51558,7 +51253,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "FC Bayern Munich (women)",
+        "klubnavn": "FC Bayern Munich",
         "latitude": 48.1375,
         "longitude": 11.575,
         "is_earliest": false,
@@ -51735,7 +51430,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "VfL Wolfsburg (women)",
+        "klubnavn": "VfL Wolfsburg",
         "latitude": 52.4231,
         "longitude": 10.7872,
         "is_earliest": false,
@@ -51743,7 +51438,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "FC Bayern Munich (women)",
+        "klubnavn": "FC Bayern Munich",
         "latitude": 48.1375,
         "longitude": 11.575,
         "is_earliest": false,
@@ -52296,7 +51991,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -52317,14 +52012,6 @@
         "longitude": 8.9509,
         "is_earliest": false,
         "klub_logo": "https://file.dbu.dk/images/club/3705/FC_Midtjylland.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       }
     ],
     "years_played": [
@@ -52422,7 +52109,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -52523,7 +52210,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -52959,7 +52646,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -53638,7 +53325,7 @@
     "allClubs": [
       {
         "klub_id": "3703",
-        "klubnavn": "SønderjyskE",
+        "klubnavn": "Sønderjyske Fodbold",
         "latitude": 55.2615,
         "longitude": 9.4893,
         "is_earliest": false,
@@ -53797,7 +53484,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "FC Bayern Munich (women)",
+        "klubnavn": "FC Bayern Munich",
         "latitude": 48.1375,
         "longitude": 11.575,
         "is_earliest": false,
@@ -53805,7 +53492,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "ACF Fiorentina (women)",
+        "klubnavn": "ACF Fiorentina",
         "latitude": 43.7714,
         "longitude": 11.2542,
         "is_earliest": false,
@@ -53912,7 +53599,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -54132,14 +53819,6 @@
         "longitude": 5.4794,
         "is_earliest": false,
         "klub_logo": "http://commons.wikimedia.org/wiki/Special:FilePath/PSV%20Eindhoven%20-%20Philips%20Stadion%20-%20Kleedkamer%20Welkom%20-%20Cropped%20Logo.jpg"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "AC Milan",
-        "latitude": 45.4669,
-        "longitude": 9.19,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/500px-Logo_of_AC_Milan.svg.png"
       }
     ],
     "years_played": [
@@ -54273,7 +53952,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -54318,14 +53997,6 @@
         "longitude": -0.1275,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/330px-Brentford_FC_crest.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -54508,7 +54179,7 @@
       },
       {
         "klub_id": "",
-        "klubnavn": "Everton FC",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -54550,7 +54221,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -54579,14 +54250,6 @@
         "longitude": 8.5411,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/GC_Z%C3%BCrich_Logo.svg/330px-GC_Z%C3%BCrich_Logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -54852,7 +54515,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -54969,25 +54632,9 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "En Avant de Guingamp (kvinder)",
+        "klubnavn": "En Avant de Guingamp",
         "latitude": 48.5652,
         "longitude": -3.1655,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/En_Avant_Guingamp_logo.svg/330px-En_Avant_Guingamp_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "BK Häcken",
-        "latitude": 57.7189,
-        "longitude": 11.9308,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/BK_Hacken_logo.svg/120px-BK_Hacken_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "En Avant de Guingamp",
-        "latitude": 48.5625,
-        "longitude": -3.1511,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/En_Avant_Guingamp_logo.svg/330px-En_Avant_Guingamp_logo.svg.png"
       }
@@ -55129,7 +54776,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fremad Amager",
+        "klubnavn": "Boldklubben Fremad Amager",
         "latitude": 55.6493,
         "longitude": 12.6016,
         "is_earliest": false,
@@ -55414,7 +55061,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -55459,14 +55106,6 @@
         "longitude": 6.8925,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/FC_Twente.svg/330px-FC_Twente.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       }
     ],
     "years_played": [
@@ -55521,7 +55160,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "ACF Fiorentina (women)",
+        "klubnavn": "ACF Fiorentina",
         "latitude": 43.7714,
         "longitude": 11.2542,
         "is_earliest": false,
@@ -55529,15 +55168,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Fiorentina Women's F.C.",
-        "latitude": 43.7714,
-        "longitude": 11.2542,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg/120px-ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "AS Roma (women)",
+        "klubnavn": "AS Roma",
         "latitude": 41.8931,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -55545,7 +55176,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Inter Milan (women)",
+        "klubnavn": "FC Internazionale Milano",
         "latitude": 45.4669,
         "longitude": 9.19,
         "is_earliest": false,
@@ -55950,7 +55581,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Djurgårdens IF",
+        "klubnavn": "Djurgårdens IF Fotboll",
         "latitude": 59.3453,
         "longitude": 18.0789,
         "is_earliest": false,
@@ -56003,7 +55634,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -56040,14 +55671,6 @@
         "longitude": -1.88,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Aston_Villa_FC_new_crest.svg/330px-Aston_Villa_FC_new_crest.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       }
     ],
     "years_played": [
@@ -56216,7 +55839,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "West Ham United F.C. Women",
+        "klubnavn": "West Ham United F.C.",
         "latitude": 51.5167,
         "longitude": 0.0333,
         "is_earliest": false,
@@ -56232,7 +55855,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "AS Roma (women)",
+        "klubnavn": "AS Roma",
         "latitude": 41.8931,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -56291,7 +55914,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -56299,7 +55922,7 @@
       },
       {
         "klub_id": "3703",
-        "klubnavn": "SønderjyskE",
+        "klubnavn": "Sønderjyske Fodbold",
         "latitude": 55.2615,
         "longitude": 9.4893,
         "is_earliest": false,
@@ -56336,14 +55959,6 @@
         "longitude": 10.8061,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/V%C3%A5lerenga_Oslo_logo.svg/500px-V%C3%A5lerenga_Oslo_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       }
     ],
     "years_played": [
@@ -56565,14 +56180,6 @@
         "longitude": 12.4176,
         "is_earliest": true,
         "klub_logo": "logos/klub_3700.png"
-      },
-      {
-        "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
-        "latitude": 55.6313,
-        "longitude": 12.4828,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_3716.png"
       }
     ],
     "years_played": [
@@ -56650,15 +56257,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Everton F.C. (women)",
-        "latitude": 53.4072,
-        "longitude": -2.9917,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Everton FC",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -56735,14 +56334,6 @@
         "longitude": -1.88,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Aston_Villa_FC_new_crest.svg/330px-Aston_Villa_FC_new_crest.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "BK Häcken (women)",
-        "latitude": 57.7189,
-        "longitude": 11.9308,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/BK_Hacken_logo.svg/120px-BK_Hacken_logo.svg.png"
       }
     ],
     "years_played": [
@@ -56919,7 +56510,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Kolding IF Women",
+        "klubnavn": "Kolding IF",
         "latitude": 55.49,
         "longitude": 9.47,
         "is_earliest": false,
@@ -56940,14 +56531,6 @@
         "longitude": 5.4794,
         "is_earliest": false,
         "klub_logo": "http://commons.wikimedia.org/wiki/Special:FilePath/PSV%20Eindhoven%20-%20Philips%20Stadion%20-%20Kleedkamer%20Welkom%20-%20Cropped%20Logo.jpg"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "AC Milan",
-        "latitude": 45.4669,
-        "longitude": 9.19,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/500px-Logo_of_AC_Milan.svg.png"
       }
     ],
     "years_played": [
@@ -57025,15 +56608,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Everton F.C. (women)",
-        "latitude": 53.4072,
-        "longitude": -2.9917,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Everton FC",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -57602,14 +57177,6 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/330px-Real_Madrid_CF.svg.png"
       },
       {
-        "klub_id": null,
-        "klubnavn": "Real Madrid Femenino",
-        "latitude": 40.4169,
-        "longitude": -3.7033,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/330px-Real_Madrid_CF.svg.png"
-      },
-      {
         "klub_id": "727",
         "klubnavn": "Romalt IF",
         "latitude": 56.4478,
@@ -57696,15 +57263,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Everton F.C. (women)",
-        "latitude": 53.4072,
-        "longitude": -2.9917,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Everton FC",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -57775,7 +57334,7 @@
       },
       {
         "klub_id": "3703",
-        "klubnavn": "SønderjyskE",
+        "klubnavn": "Sønderjyske Fodbold",
         "latitude": 55.2615,
         "longitude": 9.4893,
         "is_earliest": false,
@@ -58394,14 +57953,6 @@
         "longitude": 10.208,
         "is_earliest": false,
         "klub_logo": "logos/klub_431.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "AGF",
-        "latitude": 56.1564,
-        "longitude": 10.2097,
-        "is_earliest": false,
-        "klub_logo": null
       }
     ],
     "years_played": [
@@ -58447,7 +57998,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0436,
         "longitude": 10.0208,
         "is_earliest": false,
@@ -58505,7 +58056,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "S.L. Benfica (women)",
+        "klubnavn": "S.L. Benfica",
         "latitude": 38.708,
         "longitude": -9.139,
         "is_earliest": false,
@@ -58513,7 +58064,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Inter Milan (women)",
+        "klubnavn": "FC Internazionale Milano",
         "latitude": 45.4669,
         "longitude": 9.19,
         "is_earliest": false,
@@ -58522,14 +58073,6 @@
       {
         "klub_id": null,
         "klubnavn": "Real Madrid CF",
-        "latitude": 40.4169,
-        "longitude": -3.7033,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/330px-Real_Madrid_CF.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Real Madrid Femenino",
         "latitude": 40.4169,
         "longitude": -3.7033,
         "is_earliest": false,
@@ -58803,7 +58346,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Napoli",
+        "klubnavn": "S.S.C. Napoli",
         "latitude": 40.8358,
         "longitude": 14.2486,
         "is_earliest": false,
@@ -58824,14 +58367,6 @@
         "longitude": 10.2097,
         "is_earliest": true,
         "klub_logo": null
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "SSD Napoli Femminile",
-        "latitude": 40.8358,
-        "longitude": 14.2486,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/35/Napoli_Women_logo_%282025%29.png"
       },
       {
         "klub_id": null,
@@ -59055,7 +58590,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -59185,7 +58720,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Crystal Palace F.C. (Women)",
+        "klubnavn": "Crystal Palace F.C.",
         "latitude": 51.5072,
         "longitude": -0.1275,
         "is_earliest": false,
@@ -59198,14 +58733,6 @@
         "longitude": 3.8772,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Montpellier_HSC_logo.svg/330px-Montpellier_HSC_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "BK Häcken",
-        "latitude": 57.7189,
-        "longitude": 11.9308,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/BK_Hacken_logo.svg/120px-BK_Hacken_logo.svg.png"
       }
     ],
     "years_played": [
@@ -59273,15 +58800,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Everton F.C. (women)",
-        "latitude": 53.4072,
-        "longitude": -2.9917,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Everton FC",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -59290,14 +58809,6 @@
       {
         "klub_id": null,
         "klubnavn": "Real Madrid CF",
-        "latitude": 40.4169,
-        "longitude": -3.7033,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/330px-Real_Madrid_CF.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Real Madrid Femenino",
         "latitude": 40.4169,
         "longitude": -3.7033,
         "is_earliest": false,
@@ -59369,15 +58880,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Everton F.C. (women)",
-        "latitude": 53.4072,
-        "longitude": -2.9917,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Everton FC",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -59505,7 +59008,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Napoli",
+        "klubnavn": "S.S.C. Napoli",
         "latitude": 40.8358,
         "longitude": 14.2486,
         "is_earliest": false,
@@ -59797,7 +59300,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -60220,7 +59723,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Inter Milan (women)",
+        "klubnavn": "FC Internazionale Milano",
         "latitude": 45.4669,
         "longitude": 9.19,
         "is_earliest": false,
@@ -60294,7 +59797,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Kolding IF Women",
+        "klubnavn": "Kolding IF",
         "latitude": 55.49,
         "longitude": 9.47,
         "is_earliest": false,
@@ -60302,15 +59805,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "ACF Fiorentina (women)",
-        "latitude": 43.7714,
-        "longitude": 11.2542,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg/120px-ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "ACF Fiorentina Femminile",
+        "klubnavn": "ACF Fiorentina",
         "latitude": 43.7714,
         "longitude": 11.2542,
         "is_earliest": false,
@@ -60469,15 +59964,6 @@
         "longitude": 28.808,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/tr/c/cd/%C4%B0stanbul_Ba%C5%9Fak%C5%9Fehir_FK.png",
-        "team_qid": null
-      },
-      {
-        "klub_id": "99026",
-        "klubnavn": "Rangers F.C.",
-        "latitude": 55.8611,
-        "longitude": -4.3089,
-        "is_earliest": false,
-        "klub_logo": "https://file.dbu.dk/images/club/99026/Rangers_F.C..png",
         "team_qid": null
       }
     ],
@@ -60684,19 +60170,11 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "Kolding Idræts Forening",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
         "klub_logo": "logos/klub_567.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Kolding IF Women",
-        "latitude": 55.49,
-        "longitude": 9.47,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/8/86/KoldingIFBadge.png"
       },
       {
         "klub_id": null,
@@ -60861,7 +60339,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Tottenham Hotspur F.C. Women",
+        "klubnavn": "Tottenham Hotspur F.C.",
         "latitude": 51.6,
         "longitude": -0.1119,
         "is_earliest": false,
@@ -60869,7 +60347,7 @@
       },
       {
         "klub_id": "266",
-        "klubnavn": "Ikast FS",
+        "klubnavn": "Ikast FS Fodbold",
         "latitude": 56.1447,
         "longitude": 9.1423,
         "is_earliest": true,
@@ -60931,7 +60409,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "ACF Fiorentina (women)",
+        "klubnavn": "ACF Fiorentina",
         "latitude": 43.7714,
         "longitude": 11.2542,
         "is_earliest": false,
@@ -61102,7 +60580,7 @@
       },
       {
         "klub_id": "3703",
-        "klubnavn": "SønderjyskE",
+        "klubnavn": "Sønderjyske Fodbold",
         "latitude": 55.2615,
         "longitude": 9.4893,
         "is_earliest": false,
@@ -61200,7 +60678,7 @@
       },
       {
         "klub_id": "3703",
-        "klubnavn": "SønderjyskE",
+        "klubnavn": "Sønderjyske Fodbold",
         "latitude": 55.2615,
         "longitude": 9.4893,
         "is_earliest": false,
@@ -61441,7 +60919,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -61561,15 +61039,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "ACF Fiorentina (women)",
-        "latitude": 43.7714,
-        "longitude": 11.2542,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg/120px-ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Fiorentina Women's F.C.",
+        "klubnavn": "ACF Fiorentina",
         "latitude": 43.7714,
         "longitude": 11.2542,
         "is_earliest": false,
@@ -61615,7 +61085,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -61631,19 +61101,11 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Bayer 04 Leverkusen (women)",
+        "klubnavn": "Bayer 04 Leverkusen",
         "latitude": 51.0333,
         "longitude": 6.9833,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Bayer_04_Leverkusen_logo.svg/500px-Bayer_04_Leverkusen_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       }
     ],
     "years_played": [
@@ -61752,7 +61214,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Napoli",
+        "klubnavn": "S.S.C. Napoli",
         "latitude": 40.8358,
         "longitude": 14.2486,
         "is_earliest": false,
@@ -61851,7 +61313,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -62019,7 +61481,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "AS Roma (women)",
+        "klubnavn": "AS Roma",
         "latitude": 41.8931,
         "longitude": 12.4828,
         "is_earliest": false,
@@ -62027,15 +61489,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Everton F.C. (women)",
-        "latitude": 53.4072,
-        "longitude": -2.9917,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/330px-Everton_FC_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Everton FC",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -62130,7 +61584,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Napoli",
+        "klubnavn": "S.S.C. Napoli",
         "latitude": 40.8358,
         "longitude": 14.2486,
         "is_earliest": false,
@@ -62200,7 +61654,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Napoli",
+        "klubnavn": "S.S.C. Napoli",
         "latitude": 40.8358,
         "longitude": 14.2486,
         "is_earliest": false,
@@ -62216,7 +61670,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Everton FC",
+        "klubnavn": "Everton F.C.",
         "latitude": 53.4072,
         "longitude": -2.9917,
         "is_earliest": false,
@@ -62491,7 +61945,7 @@
       },
       {
         "klub_id": "3703",
-        "klubnavn": "SønderjyskE",
+        "klubnavn": "Sønderjyske Fodbold",
         "latitude": 55.2615,
         "longitude": 9.4893,
         "is_earliest": false,
@@ -62819,7 +62273,7 @@
     "allClubs": [
       {
         "klub_id": "1133",
-        "klubnavn": "Køge BK",
+        "klubnavn": "Køge Boldklub",
         "latitude": 55.4682,
         "longitude": 12.1772,
         "is_earliest": false,
@@ -63017,7 +62471,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Kolding Idræts Forening",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4942,
         "longitude": 9.4592,
         "is_earliest": false,
@@ -63292,19 +62746,11 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Napoli",
+        "klubnavn": "S.S.C. Napoli",
         "latitude": 40.8358,
         "longitude": 14.2486,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/SSC_Napoli_2025_%28white_and_azure%29.svg/960px-SSC_Napoli_2025_%28white_and_azure%29.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "SSD Napoli Femminile",
-        "latitude": 40.8358,
-        "longitude": 14.2486,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/35/Napoli_Women_logo_%282025%29.png"
       }
     ],
     "years_played": [
@@ -63531,14 +62977,6 @@
         "longitude": 11.9306,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/BK_Hacken_logo.svg/120px-BK_Hacken_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "BK Häcken",
-        "latitude": 57.7189,
-        "longitude": 11.9308,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/BK_Hacken_logo.svg/120px-BK_Hacken_logo.svg.png"
       }
     ],
     "years_played": [
@@ -63559,7 +62997,7 @@
     "n_goals": "1",
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mohamed%20Daramy.jpg",
     "gender": "mand",
-    "klubnavn": "Hvidovre IF",
+    "klubnavn": "Hvidovre Idrætsforening",
     "latitude": "55.63125",
     "longitude": "12.482835",
     "klub_logo": "logos/klub_3716.png",
@@ -63577,7 +63015,7 @@
       },
       {
         "klub_id": "3716",
-        "klubnavn": "Hvidovre IF",
+        "klubnavn": "Hvidovre Idrætsforening",
         "latitude": 55.6313,
         "longitude": 12.4828,
         "is_earliest": true,
@@ -64458,7 +63896,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -64503,14 +63941,6 @@
         "longitude": 6.7611,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Msv_duisburg%28new%29.svg/330px-Msv_duisburg%28new%29.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       }
     ],
     "years_played": [
@@ -64549,7 +63979,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -64586,14 +64016,6 @@
         "longitude": -2.5975,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Bristol_City_crest.svg/330px-Bristol_City_crest.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -64651,7 +64073,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -64712,14 +64134,6 @@
         "longitude": 3.26,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Lille_OSC_2018_logo.svg/330px-Lille_OSC_2018_logo.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -65377,14 +64791,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "AC Milan",
-        "latitude": 45.4669,
-        "longitude": 9.19,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/500px-Logo_of_AC_Milan.svg.png"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "FC Internazionale Milano",
         "latitude": 45.4669,
         "longitude": 9.19,
@@ -65432,7 +64838,7 @@
     "allClubs": [
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -65453,14 +64859,6 @@
         "longitude": 9.9104,
         "is_earliest": true,
         "klub_logo": "logos/klub_4.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
@@ -65522,7 +64920,7 @@
       },
       {
         "klub_id": "2",
-        "klubnavn": "Aalborg Boldklub",
+        "klubnavn": "AaB",
         "latitude": 57.0434,
         "longitude": 10.0196,
         "is_earliest": false,
@@ -65543,14 +64941,6 @@
         "longitude": 9.3891,
         "is_earliest": false,
         "klub_logo": "logos/klub_376.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Aalborg Boldklub",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/3/33/Aalborg_Boldspilklub_Logo.gif"
       },
       {
         "klub_id": null,
