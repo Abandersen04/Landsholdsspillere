@@ -1390,14 +1390,6 @@
         "klub_logo": "logos/klub_351.png"
       },
       {
-        "klub_id": "3700",
-        "klubnavn": "Brøndby IF",
-        "latitude": 55.6491,
-        "longitude": 12.4176,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_3700.png"
-      },
-      {
         "klub_id": null,
         "klubnavn": "FC København",
         "latitude": 55.6761,
@@ -1466,6 +1458,9 @@
       2007,
       2009,
       2010
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -54530,9 +54525,7 @@
       2025,
       2026
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Lucas Andersen",
@@ -58861,9 +58854,7 @@
     "years_played": [
       2022
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Jens Stage",
@@ -61935,9 +61926,7 @@
     "years_played": [
       2026
     ],
-    "_manual_fields": [
-      "allClubs"
-    ]
+    "_manual_fields": "allClubs"
   },
   {
     "playerLabel": "Victor Kristiansen",
