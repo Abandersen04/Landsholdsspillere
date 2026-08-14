@@ -135,7 +135,7 @@ function initControls() {
     });
   });
 
-  // Fødselsår dual slider
+  // Birth year dual slider
   const byMin = document.getElementById('birth-year-min');
   const byMax = document.getElementById('birth-year-max');
   const byLabel = document.getElementById('birth-year-range-label');
@@ -210,7 +210,7 @@ async function loadData() {
 
   document.getElementById('total-label').textContent = allPlayers.length.toLocaleString('da-DK');
 
-  // Populate country dropdown (nationality hvis tilgængeligt, ellers fødeland)
+  // Populate country dropdown
   const countries = [...new Set(allPlayers.map(p => p.nationality || p.country).filter(Boolean))].sort();
   const sel = document.getElementById('country-select');
   countries.forEach(c => {
@@ -366,11 +366,11 @@ function buildPopupHtml(group) {
     <div class="popup-wrapper">
       <div class="popup-header">
         <div class="location-name">${escapeHtml(city)}</div>
-        <div class="player-total">${escapeHtml(country)} · ${players.length} spillere</div>
+        <div class="player-total">${escapeHtml(country)} · ${players.length} players</div>
       </div>
       <div class="popup-players">
         ${playersHtml}
-        ${hidden > 0 ? `<div style="padding:8px 12px;color:#888;font-size:13px;text-align:center">... og ${hidden} flere</div>` : ''}
+        ${hidden > 0 ? `<div style="padding:8px 12px;color:#888;font-size:13px;text-align:center">... and ${hidden} more</div>` : ''}
       </div>
     </div>`;
 }
