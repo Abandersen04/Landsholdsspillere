@@ -3,9 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Football players from Gdańsk, Poland – World Map</title>
-  <meta name="description" content="Football players born in Gdańsk, Poland. 100 players from Gdańsk are listed on this page, including Przemysław Frankowski.">
+  <title>100 football players from Gdańsk, Poland – World Map</title>
+  <meta name="description" content="100 notable football players were born in Gdańsk, Poland, including Przemysław Frankowski, Andrzej Szarmach, Tomasz Wałdoch. Explore the full list on the World Map.">
   <link rel="canonical" href="https://landsholdskortet.dk/worldmap/city/gda-sk-poland/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="100 football players from Gdańsk, Poland">
+  <meta property="og:description" content="100 notable football players were born in Gdańsk, Poland, including Przemysław Frankowski, Andrzej Szarmach, Tomasz Wałdoch. Explore the full list on the World Map.">
+  <meta property="og:url" content="https://landsholdskortet.dk/worldmap/city/gda-sk-poland/">
+  <meta property="og:site_name" content="Landsholdskortet – World Map">
+  <meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Przemysław_Frankowski_ASSE_rcl_2425_(cropped).jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="100 football players from Gdańsk, Poland">
+  <meta name="twitter:description" content="100 notable football players were born in Gdańsk, Poland, including Przemysław Frankowski, Andrzej Szarmach, Tomasz Wałdoch. Explore the full list on the World Map.">
+  <meta name="twitter:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Przemysław_Frankowski_ASSE_rcl_2425_(cropped).jpg">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/fonts/inter.css">
@@ -14,757 +24,177 @@
     html, body { overflow: auto; height: auto; }
     :root { --red: #1B3A6B; --red-dark: #122a52; --red-light: #eef2f9; }
     body { max-width: 860px; margin: 0 auto; padding: 32px 20px 64px; font-family: Inter, sans-serif; color: #222; }
-    .breadcrumb { font-size: 13px; color: #888; margin-bottom: 24px; }
+    .breadcrumb { font-size: 13px; color: #888; margin-bottom: 20px; }
     .breadcrumb a { color: #1B3A6B; text-decoration: none; }
     .breadcrumb a:hover { text-decoration: underline; }
     h1 { font-size: 28px; font-weight: 800; color: #1B3A6B; margin: 0 0 8px; }
-    .subtitle { color: #555; font-size: 15px; margin-bottom: 28px; line-height: 1.6; }
+    .subtitle { color: #555; font-size: 15px; margin-bottom: 28px; line-height: 1.7; }
     .section-title { font-size: 18px; font-weight: 700; color: #1B3A6B; margin: 32px 0 14px; border-bottom: 2px solid #eef2f9; padding-bottom: 8px; }
-    .player-list, .top5-grid { display: grid; gap: 12px; }
-    .top5-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+    .top5-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+    .player-list { display: grid; gap: 8px; }
     .player-card { display: flex; align-items: center; gap: 12px; background: #f8faff; border: 1px solid #dde6f5; border-radius: 10px; padding: 12px; }
     .player-card.prominent { border-color: #1B3A6B; background: #eef2f9; }
     .player-img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .player-img-placeholder { width: 48px; height: 48px; border-radius: 50%; background: #d6e0f0; flex-shrink: 0; }
     .player-name { font-weight: 600; font-size: 14px; margin-bottom: 3px; }
     .player-link { color: #1B3A6B; text-decoration: none; }
     .player-link:hover { text-decoration: underline; }
-    .player-details { font-size: 12px; color: #777; display: flex; gap: 10px; flex-wrap: wrap; }
-    .player-notability { background: #1B3A6B; color: white; border-radius: 4px; padding: 1px 6px; font-size: 11px; }
-    .back-link { display: inline-flex; align-items: center; gap: 6px; color: #1B3A6B; text-decoration: none; font-size: 14px; font-weight: 600; margin-bottom: 28px; }
+    .player-details { font-size: 12px; color: #777; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .player-meta { color: #999; }
+    .player-notability { background: #1B3A6B; color: white; border-radius: 4px; padding: 1px 6px; font-size: 11px; font-weight: 600; cursor: help; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: #1B3A6B; text-decoration: none; font-size: 14px; font-weight: 600; margin-bottom: 24px; }
     .back-link:hover { text-decoration: underline; }
+    .stat-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+    .chip { background: #eef2f9; color: #1B3A6B; border-radius: 20px; padding: 4px 12px; font-size: 12px; font-weight: 600; }
   </style>
 </head>
 <body>
-  <nav class="breadcrumb">
-    <a href="/">Landsholdskortet</a> › <a href="/worldmap/">World map</a> › Gdańsk, Poland
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Landsholdskortet</a> ›
+    <a href="/worldmap/">World map</a> ›
+    <span>Gdańsk, Poland</span>
   </nav>
 
-  <a href="/worldmap/" class="back-link">
-    ← Back to World map
-  </a>
+  <a href="/worldmap/" class="back-link">← Back to World map</a>
 
   <h1>Football players from Gdańsk</h1>
 
+  <div class="stat-chips">
+    <span class="chip">Poland</span>
+    <span class="chip">100 players</span>
+    <span class="chip">1911–2007</span>
+    
+  </div>
+
   <p class="subtitle">
-    Gdańsk is a city in Poland.
-    100 notable football players have been born in Gdańsk.
+    Gdańsk is a city in Poland with 100 notable football players born there according to Wikidata. Players were born between 1911–2007.
     The most prominent are Przemysław Frankowski, Andrzej Szarmach, Tomasz Wałdoch, Janusz Kupcewicz and Łukasz Szukała.
   </p>
 
   <h2 class="section-title">Most notable players from Gdańsk</h2>
   <div class="top5-grid">
-    <div class="player-card prominent">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Przemysław_Frankowski_ASSE_rcl_2425_(cropped).jpg" alt="Przemysław Frankowski" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Przemys%C5%82aw_Frankowski" target="_blank" rel="noopener" class="player-link">Przemysław Frankowski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1995</span> <span class="player-notability">Notability: 65</span></div>
-  </div>
-</div>
-<div class="player-card prominent">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Szarmach_Andrzej.jpg" alt="Andrzej Szarmach" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Andrzej_Szarmach" target="_blank" rel="noopener" class="player-link">Andrzej Szarmach</a></div>
-    <div class="player-details"><span class="player-meta">Born 1950</span> <span class="player-notability">Notability: 65</span></div>
-  </div>
-</div>
-<div class="player-card prominent">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/S04_Tomasz_Waldoch_01.jpg" alt="Tomasz Wałdoch" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Tomasz_Wa%C5%82doch" target="_blank" rel="noopener" class="player-link">Tomasz Wałdoch</a></div>
-    <div class="player-details"><span class="player-meta">Born 1971</span> <span class="player-notability">Notability: 61</span></div>
-  </div>
-</div>
-<div class="player-card prominent">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Janusz_Kupcewicz.jpg" alt="Janusz Kupcewicz" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Janusz_Kupcewicz" target="_blank" rel="noopener" class="player-link">Janusz Kupcewicz</a></div>
-    <div class="player-details"><span class="player-meta">Born 1955</span> <span class="player-notability">Notability: 59</span></div>
-  </div>
-</div>
-<div class="player-card prominent">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Łukasz_Szukała.jpg" alt="Łukasz Szukała" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/%C5%81ukasz_Szuka%C5%82a" target="_blank" rel="noopener" class="player-link">Łukasz Szukała</a></div>
-    <div class="player-details"><span class="player-meta">Born 1984</span> <span class="player-notability">Notability: 58</span></div>
-  </div>
-</div>
+    <div class="player-card prominent"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Przemysław_Frankowski_ASSE_rcl_2425_(cropped).jpg" alt="Przemysław Frankowski" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Przemys%C5%82aw_Frankowski" target="_blank" rel="noopener" class="player-link">Przemysław Frankowski</a></div><div class="player-details"><span class="player-meta">b. 1995</span><span class="player-notability" title="Notability score based on Wikipedia language editions">65</span></div></div></div>
+<div class="player-card prominent"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Szarmach_Andrzej.jpg" alt="Andrzej Szarmach" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Andrzej_Szarmach" target="_blank" rel="noopener" class="player-link">Andrzej Szarmach</a></div><div class="player-details"><span class="player-meta">b. 1950</span><span class="player-notability" title="Notability score based on Wikipedia language editions">65</span></div></div></div>
+<div class="player-card prominent"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/S04_Tomasz_Waldoch_01.jpg" alt="Tomasz Wałdoch" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Tomasz_Wa%C5%82doch" target="_blank" rel="noopener" class="player-link">Tomasz Wałdoch</a></div><div class="player-details"><span class="player-meta">b. 1971</span><span class="player-notability" title="Notability score based on Wikipedia language editions">61</span></div></div></div>
+<div class="player-card prominent"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Janusz_Kupcewicz.jpg" alt="Janusz Kupcewicz" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Janusz_Kupcewicz" target="_blank" rel="noopener" class="player-link">Janusz Kupcewicz</a></div><div class="player-details"><span class="player-meta">b. 1955</span><span class="player-notability" title="Notability score based on Wikipedia language editions">59</span></div></div></div>
+<div class="player-card prominent"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Łukasz_Szukała.jpg" alt="Łukasz Szukała" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/%C5%81ukasz_Szuka%C5%82a" target="_blank" rel="noopener" class="player-link">Łukasz Szukała</a></div><div class="player-details"><span class="player-meta">b. 1984</span><span class="player-notability" title="Notability score based on Wikipedia language editions">58</span></div></div></div>
   </div>
 
-  <h2 class="section-title">All players from Gdańsk</h2>
-<div class="player-list"><div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Kacper_Urba%C5%84ski" target="_blank" rel="noopener" class="player-link">Kacper Urbański</a></div>
-    <div class="player-details"><span class="player-meta">Born 2004</span> <span class="player-notability">Notability: 56</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Filip_Wichman" target="_blank" rel="noopener" class="player-link">Filip Wichman</a></div>
-    <div class="player-details"><span class="player-meta">Born 1994</span> <span class="player-notability">Notability: 51</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/S%C5%82awomir_Wojciechowski" target="_blank" rel="noopener" class="player-link">Sławomir Wojciechowski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1973</span> <span class="player-notability">Notability: 44</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Karol_Fila.png" alt="Karol Fila" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Karol_Fila" target="_blank" rel="noopener" class="player-link">Karol Fila</a></div>
-    <div class="player-details"><span class="player-meta">Born 1998</span> <span class="player-notability">Notability: 44</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Grzegorz_Szamotulski_na_Targach_Książki_2014.jpg" alt="Grzegorz Szamotulski" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Grzegorz_Szamotulski" target="_blank" rel="noopener" class="player-link">Grzegorz Szamotulski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1976</span> <span class="player-notability">Notability: 44</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Dietrich_Albrecht" target="_blank" rel="noopener" class="player-link">Dietrich Albrecht</a></div>
-    <div class="player-details"><span class="player-meta">Born 1940</span> <span class="player-notability">Notability: 43</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Jakub_Ka%C5%82uzi%C5%84ski" target="_blank" rel="noopener" class="player-link">Jakub Kałuziński</a></div>
-    <div class="player-details"><span class="player-meta">Born 2002</span> <span class="player-notability">Notability: 43</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Radoslaw_Michalski.jpg" alt="Radosław Michalski" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Rados%C5%82aw_Michalski" target="_blank" rel="noopener" class="player-link">Radosław Michalski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1969</span> <span class="player-notability">Notability: 41</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marek_Zienczuk2.jpg" alt="Marek Zieńczuk" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Marek_Zie%C5%84czuk" target="_blank" rel="noopener" class="player-link">Marek Zieńczuk</a></div>
-    <div class="player-details"><span class="player-meta">Born 1978</span> <span class="player-notability">Notability: 41</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Jaros%C5%82aw_Bieniuk" target="_blank" rel="noopener" class="player-link">Jarosław Bieniuk</a></div>
-    <div class="player-details"><span class="player-meta">Born 1979</span> <span class="player-notability">Notability: 38</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Krzysztof_Adamczyk" target="_blank" rel="noopener" class="player-link">Krzysztof Adamczyk</a></div>
-    <div class="player-details"><span class="player-meta">Born 1956</span> <span class="player-notability">Notability: 38</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Oliwier_Zych" target="_blank" rel="noopener" class="player-link">Oliwier Zych</a></div>
-    <div class="player-details"><span class="player-meta">Born 2004</span> <span class="player-notability">Notability: 38</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Marcin_Pietrowski" target="_blank" rel="noopener" class="player-link">Marcin Pietrowski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1988</span> <span class="player-notability">Notability: 36</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Gerard_Mach" target="_blank" rel="noopener" class="player-link">Gerard von Mach</a></div>
-    <div class="player-details"><span class="player-meta">Born 1926</span> <span class="player-notability">Notability: 36</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Adam_Duda" target="_blank" rel="noopener" class="player-link">Adam Duda</a></div>
-    <div class="player-details"><span class="player-meta">Born 1991</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Jacek_Grembocki" target="_blank" rel="noopener" class="player-link">Jacek Grembocki</a></div>
-    <div class="player-details"><span class="player-meta">Born 1965</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Dietmar_Bruck" target="_blank" rel="noopener" class="player-link">Dietmar Bruck</a></div>
-    <div class="player-details"><span class="player-meta">Born 1944</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Filip_Koperski" target="_blank" rel="noopener" class="player-link">Filip Koperski</a></div>
-    <div class="player-details"><span class="player-meta">Born 2004</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Andrzej_G%C5%82ownia" target="_blank" rel="noopener" class="player-link">Andrzej Głownia</a></div>
-    <div class="player-details"><span class="player-meta">Born 1951</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Micha%C5%82_Szromnik" target="_blank" rel="noopener" class="player-link">Michał Szromnik</a></div>
-    <div class="player-details"><span class="player-meta">Born 1993</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Jaros%C5%82aw_Lindner" target="_blank" rel="noopener" class="player-link">Jarosław Lindner</a></div>
-    <div class="player-details"><span class="player-meta">Born 1988</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Paul_Mathies" target="_blank" rel="noopener" class="player-link">Paul Mathies</a></div>
-    <div class="player-details"><span class="player-meta">Born 1911</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/KostrzewaDamian.jpg" alt="Damian Kostrzewa" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><span>Damian Kostrzewa</span></div>
-    <div class="player-details"><span class="player-meta">Born 1988</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Mariusz_Pawlak" target="_blank" rel="noopener" class="player-link">Mariusz Pawlak</a></div>
-    <div class="player-details"><span class="player-meta">Born 1972</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Stanis%C5%82aw_Burzy%C5%84ski_(footballer)" target="_blank" rel="noopener" class="player-link">Stanisław Ryszard Burzyński</a></div>
-    <div class="player-details"><span class="player-meta">Born 1948</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Dietmar_M%C3%BCrdter" target="_blank" rel="noopener" class="player-link">Dietmar Mürdter</a></div>
-    <div class="player-details"><span class="player-meta">Born 1943</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Helmut_Kronsbein" target="_blank" rel="noopener" class="player-link">Helmut Kronsbein</a></div>
-    <div class="player-details"><span class="player-meta">Born 1914</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Pawe%C5%82_Niewrzawa" target="_blank" rel="noopener" class="player-link">Paweł Niewrzawa</a></div>
-    <div class="player-details"><span class="player-meta">Born 1992</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Werner Drews</span></div>
-    <div class="player-details"><span class="player-meta">Born 1940</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Andrzej_Salach" target="_blank" rel="noopener" class="player-link">Andrzej Salach</a></div>
-    <div class="player-details"><span class="player-meta">Born 1959</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Damian_Kugiel" target="_blank" rel="noopener" class="player-link">Damian Kugiel</a></div>
-    <div class="player-details"><span class="player-meta">Born 1995</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Dariusz_W%C3%B3jtowicz" target="_blank" rel="noopener" class="player-link">Dariusz Wójtowicz</a></div>
-    <div class="player-details"><span class="player-meta">Born 1965</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Zdzis%C5%82aw_Puszkarz" target="_blank" rel="noopener" class="player-link">Zdzisław Puszkarz</a></div>
-    <div class="player-details"><span class="player-meta">Born 1950</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Grzegorz_Motyka_(footballer)" target="_blank" rel="noopener" class="player-link">Grzegorz Motyka</a></div>
-    <div class="player-details"><span class="player-meta">Born 1972</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Juliusz_Letniowski" target="_blank" rel="noopener" class="player-link">Juliusz Letniowski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1998</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Maciej_Kalkowski" target="_blank" rel="noopener" class="player-link">Maciej Kalkowski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1974</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Pawe%C5%82_Janik" target="_blank" rel="noopener" class="player-link">Paweł Janik</a></div>
-    <div class="player-details"><span class="player-meta">Born 1949</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Maciej_Kostrzewa" target="_blank" rel="noopener" class="player-link">Maciej Kostrzewa</a></div>
-    <div class="player-details"><span class="player-meta">Born 1991</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Maciej_Kozak" target="_blank" rel="noopener" class="player-link">Maciej Kozak</a></div>
-    <div class="player-details"><span class="player-meta">Born 1971</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Mi%C5%82osz_Ka%C5%82ahur" target="_blank" rel="noopener" class="player-link">Miłosz Kałahur</a></div>
-    <div class="player-details"><span class="player-meta">Born 1999</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Adam_Karda%C5%9B" target="_blank" rel="noopener" class="player-link">Adam Kardaś</a></div>
-    <div class="player-details"><span class="player-meta">Born 2006</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Bartosz_Borkowski" target="_blank" rel="noopener" class="player-link">Bartosz Borkowski</a></div>
-    <div class="player-details"><span class="player-meta">Born 2006</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Janusz_Surdykowski" target="_blank" rel="noopener" class="player-link">Janusz Surdykowski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1986</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Marcin_Kalkowski" target="_blank" rel="noopener" class="player-link">Marcin Kalkowski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1989</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Mateusz_%C5%81uczak" target="_blank" rel="noopener" class="player-link">Mateusz Łuczak</a></div>
-    <div class="player-details"><span class="player-meta">Born 1990</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Robert_Hirsz" target="_blank" rel="noopener" class="player-link">Robert Hirsz</a></div>
-    <div class="player-details"><span class="player-meta">Born 1989</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/%C5%81ukasz_Uszalewski" target="_blank" rel="noopener" class="player-link">Łukasz Uszalewski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1988</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Jerzy_Jastrz%C4%99bowski" target="_blank" rel="noopener" class="player-link">Jerzy Jastrzębowski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1951</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/J%C3%B3zef_G%C5%82adysz" target="_blank" rel="noopener" class="player-link">Józef Gładysz</a></div>
-    <div class="player-details"><span class="player-meta">Born 1952</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Zbigniew_Kupcewicz" target="_blank" rel="noopener" class="player-link">Zbigniew Kupcewicz</a></div>
-    <div class="player-details"><span class="player-meta">Born 1952</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Andrzej_Prawda" target="_blank" rel="noopener" class="player-link">Andrzej Prawda</a></div>
-    <div class="player-details"><span class="player-meta">Born 1951</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Zygmunt_Gross" target="_blank" rel="noopener" class="player-link">Zygmunt Gross</a></div>
-    <div class="player-details"><span class="player-meta">Born 1936</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Winfried Schülke</span></div>
-    <div class="player-details"><span class="player-meta">Born 1942</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Marcin_Kubsik" target="_blank" rel="noopener" class="player-link">Marcin Kubsik</a></div>
-    <div class="player-details"><span class="player-meta">Born 1975</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marek_Widzicki.JPG" alt="Marek Widzicki" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><span>Marek Widzicki</span></div>
-    <div class="player-details"><span class="player-meta">Born 1976</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Artur_Chrzonowski" target="_blank" rel="noopener" class="player-link">Artur Chrzonowski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1976</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Vojtek Kaluzny</span></div>
-    <div class="player-details"><span class="player-meta">Born 1964</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Jan_Richert" target="_blank" rel="noopener" class="player-link">Jan Richert</a></div>
-    <div class="player-details"><span class="player-meta">Born 1922</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Oskar_Paprzycki" target="_blank" rel="noopener" class="player-link">Oskar Paprzycki</a></div>
-    <div class="player-details"><span class="player-meta">Born 1998</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Piotr_Gryszkiewicz" target="_blank" rel="noopener" class="player-link">Piotr Gryszkiewicz</a></div>
-    <div class="player-details"><span class="player-meta">Born 2001</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Mieczysław Cirkowski</span></div>
-    <div class="player-details"><span class="player-meta">Born 1956</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/%C5%81ukasz_Paulewicz" target="_blank" rel="noopener" class="player-link">Łukasz Paulewicz</a></div>
-    <div class="player-details"><span class="player-meta">Born 1983</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Marek_Hartman" target="_blank" rel="noopener" class="player-link">Marek Hartman</a></div>
-    <div class="player-details"><span class="player-meta">Born 1947</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Henryk_Kliszewicz" target="_blank" rel="noopener" class="player-link">Henryk Kliszewicz</a></div>
-    <div class="player-details"><span class="player-meta">Born 1949</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Marek_Szutowicz" target="_blank" rel="noopener" class="player-link">Marek Szutowicz</a></div>
-    <div class="player-details"><span class="player-meta">Born 1977</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Edmund_Wierzy%C5%84ski" target="_blank" rel="noopener" class="player-link">Edmund Wierzyński</a></div>
-    <div class="player-details"><span class="player-meta">Born 1939</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Janusz_Makowski" target="_blank" rel="noopener" class="player-link">Janusz Makowski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1955</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Tomasz_Pi%C4%99tka" target="_blank" rel="noopener" class="player-link">Tomasz Piętka</a></div>
-    <div class="player-details"><span class="player-meta">Born 1972</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Tomasz_Motyka_(footballer)" target="_blank" rel="noopener" class="player-link">Tomasz Motyka</a></div>
-    <div class="player-details"><span class="player-meta">Born 1972</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Jerzy_G%C3%B3rski_(footballer)" target="_blank" rel="noopener" class="player-link">Jerzy Górski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1948</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Mariusz Malinowski</span></div>
-    <div class="player-details"><span class="player-meta">Born 1975</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Piotr_Ko%C5%82c" target="_blank" rel="noopener" class="player-link">Piotr Kolc</a></div>
-    <div class="player-details"><span class="player-meta">Born 1987</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Arkadiusz_Rojek" target="_blank" rel="noopener" class="player-link">Arkadiusz Rojek</a></div>
-    <div class="player-details"><span class="player-meta">Born 1972</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Maciej_Os%C5%82owski" target="_blank" rel="noopener" class="player-link">Maciej Osłowski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1988</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Tadeusz_Ma%C5%82olepszy" target="_blank" rel="noopener" class="player-link">Tadeusz Małolepszy</a></div>
-    <div class="player-details"><span class="player-meta">Born 1952</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Pawe%C5%82_Czychowski" target="_blank" rel="noopener" class="player-link">Paweł Czychowski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1993</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Adrian_Bielawski" target="_blank" rel="noopener" class="player-link">Adrian Bielawski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1996</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Maciej_Wo%C5%BAniak" target="_blank" rel="noopener" class="player-link">Maciej Woźniak</a></div>
-    <div class="player-details"><span class="player-meta">Born 2001</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Przemys%C5%82aw_Kami%C5%84ski" target="_blank" rel="noopener" class="player-link">Przemysław Kamiński</a></div>
-    <div class="player-details"><span class="player-meta">Born 1996</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Tomasz_Borkowski" target="_blank" rel="noopener" class="player-link">Tomasz Borkowski</a></div>
-    <div class="player-details"><span class="player-meta">Born 1972</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Piotr_Nierych%C5%82o" target="_blank" rel="noopener" class="player-link">Piotr Nierychło</a></div>
-    <div class="player-details"><span class="player-meta">Born 1921</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Oktawian_Skrzecz" target="_blank" rel="noopener" class="player-link">Oktawian Skrzecz</a></div>
-    <div class="player-details"><span class="player-meta">Born 1997</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Pawe%C5%82_%C5%BBuk_(footballer,_born_1985)" target="_blank" rel="noopener" class="player-link">Paweł Żuk</a></div>
-    <div class="player-details"><span class="player-meta">Born 1985</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Pawe%C5%82_%C5%BBuk_(footballer,_born_2001)" target="_blank" rel="noopener" class="player-link">Paweł Żuk</a></div>
-    <div class="player-details"><span class="player-meta">Born 2001</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Heinz Brauer</span></div>
-    <div class="player-details"><span class="player-meta">Born 1921</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Henryk Mojsa</span></div>
-    <div class="player-details"><span class="player-meta">Born 1957</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Krzysztof Wiśniewski</span></div>
-    <div class="player-details"><span class="player-meta">Born 1982</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Krzysztof_Rusinek" target="_blank" rel="noopener" class="player-link">Krzysztof Rusinek</a></div>
-    <div class="player-details"><span class="player-meta">Born 1981</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Q112326681</span></div>
-    <div class="player-details"><span class="player-meta">Born 1963</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Igor Brzyski</span></div>
-    <div class="player-details"><span class="player-meta">Born 2007</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Włodzimierz Żemojtel</span></div>
-    <div class="player-details"><span class="player-meta">Born 1950</span> <span class="player-notability">Notability: 0</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Andrzej Wydrowski</span></div>
-    <div class="player-details"><span class="player-meta">Born 1965</span> <span class="player-notability">Notability: 0</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Edmund Wierzinski</span></div>
-    <div class="player-details"><span class="player-meta">Born 1939</span> <span class="player-notability">Notability: 0</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Q121865155</span></div>
-    <div class="player-details"><span class="player-meta">Born 1958</span> <span class="player-notability">Notability: 0</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Andrzej Sobczyk</span></div>
-    <div class="player-details"><span class="player-meta">Born 1956</span> <span class="player-notability">Notability: 0</span></div>
-  </div>
-</div></div>
+  <h2 class="section-title">All 100 players from Gdańsk</h2><div class="player-list"><div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Kacper_Urba%C5%84ski" target="_blank" rel="noopener" class="player-link">Kacper Urbański</a></div><div class="player-details"><span class="player-meta">b. 2004</span><span class="player-notability" title="Notability score based on Wikipedia language editions">56</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Filip_Wichman" target="_blank" rel="noopener" class="player-link">Filip Wichman</a></div><div class="player-details"><span class="player-meta">b. 1994</span><span class="player-notability" title="Notability score based on Wikipedia language editions">51</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/S%C5%82awomir_Wojciechowski" target="_blank" rel="noopener" class="player-link">Sławomir Wojciechowski</a></div><div class="player-details"><span class="player-meta">b. 1973</span><span class="player-notability" title="Notability score based on Wikipedia language editions">44</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Karol_Fila.png" alt="Karol Fila" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Karol_Fila" target="_blank" rel="noopener" class="player-link">Karol Fila</a></div><div class="player-details"><span class="player-meta">b. 1998</span><span class="player-notability" title="Notability score based on Wikipedia language editions">44</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Grzegorz_Szamotulski_na_Targach_Książki_2014.jpg" alt="Grzegorz Szamotulski" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Grzegorz_Szamotulski" target="_blank" rel="noopener" class="player-link">Grzegorz Szamotulski</a></div><div class="player-details"><span class="player-meta">b. 1976</span><span class="player-notability" title="Notability score based on Wikipedia language editions">44</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Dietrich_Albrecht" target="_blank" rel="noopener" class="player-link">Dietrich Albrecht</a></div><div class="player-details"><span class="player-meta">b. 1940</span><span class="player-notability" title="Notability score based on Wikipedia language editions">43</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Jakub_Ka%C5%82uzi%C5%84ski" target="_blank" rel="noopener" class="player-link">Jakub Kałuziński</a></div><div class="player-details"><span class="player-meta">b. 2002</span><span class="player-notability" title="Notability score based on Wikipedia language editions">43</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Radoslaw_Michalski.jpg" alt="Radosław Michalski" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Rados%C5%82aw_Michalski" target="_blank" rel="noopener" class="player-link">Radosław Michalski</a></div><div class="player-details"><span class="player-meta">b. 1969</span><span class="player-notability" title="Notability score based on Wikipedia language editions">41</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marek_Zienczuk2.jpg" alt="Marek Zieńczuk" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Marek_Zie%C5%84czuk" target="_blank" rel="noopener" class="player-link">Marek Zieńczuk</a></div><div class="player-details"><span class="player-meta">b. 1978</span><span class="player-notability" title="Notability score based on Wikipedia language editions">41</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Jaros%C5%82aw_Bieniuk" target="_blank" rel="noopener" class="player-link">Jarosław Bieniuk</a></div><div class="player-details"><span class="player-meta">b. 1979</span><span class="player-notability" title="Notability score based on Wikipedia language editions">38</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Krzysztof_Adamczyk" target="_blank" rel="noopener" class="player-link">Krzysztof Adamczyk</a></div><div class="player-details"><span class="player-meta">b. 1956</span><span class="player-notability" title="Notability score based on Wikipedia language editions">38</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Oliwier_Zych" target="_blank" rel="noopener" class="player-link">Oliwier Zych</a></div><div class="player-details"><span class="player-meta">b. 2004</span><span class="player-notability" title="Notability score based on Wikipedia language editions">38</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Marcin_Pietrowski" target="_blank" rel="noopener" class="player-link">Marcin Pietrowski</a></div><div class="player-details"><span class="player-meta">b. 1988</span><span class="player-notability" title="Notability score based on Wikipedia language editions">36</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Gerard_Mach" target="_blank" rel="noopener" class="player-link">Gerard von Mach</a></div><div class="player-details"><span class="player-meta">b. 1926</span><span class="player-notability" title="Notability score based on Wikipedia language editions">36</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Adam_Duda" target="_blank" rel="noopener" class="player-link">Adam Duda</a></div><div class="player-details"><span class="player-meta">b. 1991</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Jacek_Grembocki" target="_blank" rel="noopener" class="player-link">Jacek Grembocki</a></div><div class="player-details"><span class="player-meta">b. 1965</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Dietmar_Bruck" target="_blank" rel="noopener" class="player-link">Dietmar Bruck</a></div><div class="player-details"><span class="player-meta">b. 1944</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Filip_Koperski" target="_blank" rel="noopener" class="player-link">Filip Koperski</a></div><div class="player-details"><span class="player-meta">b. 2004</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Andrzej_G%C5%82ownia" target="_blank" rel="noopener" class="player-link">Andrzej Głownia</a></div><div class="player-details"><span class="player-meta">b. 1951</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Micha%C5%82_Szromnik" target="_blank" rel="noopener" class="player-link">Michał Szromnik</a></div><div class="player-details"><span class="player-meta">b. 1993</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Jaros%C5%82aw_Lindner" target="_blank" rel="noopener" class="player-link">Jarosław Lindner</a></div><div class="player-details"><span class="player-meta">b. 1988</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Paul_Mathies" target="_blank" rel="noopener" class="player-link">Paul Mathies</a></div><div class="player-details"><span class="player-meta">b. 1911</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/KostrzewaDamian.jpg" alt="Damian Kostrzewa" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><span>Damian Kostrzewa</span></div><div class="player-details"><span class="player-meta">b. 1988</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Mariusz_Pawlak" target="_blank" rel="noopener" class="player-link">Mariusz Pawlak</a></div><div class="player-details"><span class="player-meta">b. 1972</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Stanis%C5%82aw_Burzy%C5%84ski_(footballer)" target="_blank" rel="noopener" class="player-link">Stanisław Ryszard Burzyński</a></div><div class="player-details"><span class="player-meta">b. 1948</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Dietmar_M%C3%BCrdter" target="_blank" rel="noopener" class="player-link">Dietmar Mürdter</a></div><div class="player-details"><span class="player-meta">b. 1943</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Helmut_Kronsbein" target="_blank" rel="noopener" class="player-link">Helmut Kronsbein</a></div><div class="player-details"><span class="player-meta">b. 1914</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Pawe%C5%82_Niewrzawa" target="_blank" rel="noopener" class="player-link">Paweł Niewrzawa</a></div><div class="player-details"><span class="player-meta">b. 1992</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Werner Drews</span></div><div class="player-details"><span class="player-meta">b. 1940</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Andrzej_Salach" target="_blank" rel="noopener" class="player-link">Andrzej Salach</a></div><div class="player-details"><span class="player-meta">b. 1959</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Damian_Kugiel" target="_blank" rel="noopener" class="player-link">Damian Kugiel</a></div><div class="player-details"><span class="player-meta">b. 1995</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Dariusz_W%C3%B3jtowicz" target="_blank" rel="noopener" class="player-link">Dariusz Wójtowicz</a></div><div class="player-details"><span class="player-meta">b. 1965</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Zdzis%C5%82aw_Puszkarz" target="_blank" rel="noopener" class="player-link">Zdzisław Puszkarz</a></div><div class="player-details"><span class="player-meta">b. 1950</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Grzegorz_Motyka_(footballer)" target="_blank" rel="noopener" class="player-link">Grzegorz Motyka</a></div><div class="player-details"><span class="player-meta">b. 1972</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Juliusz_Letniowski" target="_blank" rel="noopener" class="player-link">Juliusz Letniowski</a></div><div class="player-details"><span class="player-meta">b. 1998</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Maciej_Kalkowski" target="_blank" rel="noopener" class="player-link">Maciej Kalkowski</a></div><div class="player-details"><span class="player-meta">b. 1974</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Pawe%C5%82_Janik" target="_blank" rel="noopener" class="player-link">Paweł Janik</a></div><div class="player-details"><span class="player-meta">b. 1949</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Maciej_Kostrzewa" target="_blank" rel="noopener" class="player-link">Maciej Kostrzewa</a></div><div class="player-details"><span class="player-meta">b. 1991</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Maciej_Kozak" target="_blank" rel="noopener" class="player-link">Maciej Kozak</a></div><div class="player-details"><span class="player-meta">b. 1971</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Mi%C5%82osz_Ka%C5%82ahur" target="_blank" rel="noopener" class="player-link">Miłosz Kałahur</a></div><div class="player-details"><span class="player-meta">b. 1999</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Adam_Karda%C5%9B" target="_blank" rel="noopener" class="player-link">Adam Kardaś</a></div><div class="player-details"><span class="player-meta">b. 2006</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Bartosz_Borkowski" target="_blank" rel="noopener" class="player-link">Bartosz Borkowski</a></div><div class="player-details"><span class="player-meta">b. 2006</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Janusz_Surdykowski" target="_blank" rel="noopener" class="player-link">Janusz Surdykowski</a></div><div class="player-details"><span class="player-meta">b. 1986</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Marcin_Kalkowski" target="_blank" rel="noopener" class="player-link">Marcin Kalkowski</a></div><div class="player-details"><span class="player-meta">b. 1989</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Mateusz_%C5%81uczak" target="_blank" rel="noopener" class="player-link">Mateusz Łuczak</a></div><div class="player-details"><span class="player-meta">b. 1990</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Robert_Hirsz" target="_blank" rel="noopener" class="player-link">Robert Hirsz</a></div><div class="player-details"><span class="player-meta">b. 1989</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/%C5%81ukasz_Uszalewski" target="_blank" rel="noopener" class="player-link">Łukasz Uszalewski</a></div><div class="player-details"><span class="player-meta">b. 1988</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Jerzy_Jastrz%C4%99bowski" target="_blank" rel="noopener" class="player-link">Jerzy Jastrzębowski</a></div><div class="player-details"><span class="player-meta">b. 1951</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/J%C3%B3zef_G%C5%82adysz" target="_blank" rel="noopener" class="player-link">Józef Gładysz</a></div><div class="player-details"><span class="player-meta">b. 1952</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Zbigniew_Kupcewicz" target="_blank" rel="noopener" class="player-link">Zbigniew Kupcewicz</a></div><div class="player-details"><span class="player-meta">b. 1952</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Andrzej_Prawda" target="_blank" rel="noopener" class="player-link">Andrzej Prawda</a></div><div class="player-details"><span class="player-meta">b. 1951</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Zygmunt_Gross" target="_blank" rel="noopener" class="player-link">Zygmunt Gross</a></div><div class="player-details"><span class="player-meta">b. 1936</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Winfried Schülke</span></div><div class="player-details"><span class="player-meta">b. 1942</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Marcin_Kubsik" target="_blank" rel="noopener" class="player-link">Marcin Kubsik</a></div><div class="player-details"><span class="player-meta">b. 1975</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marek_Widzicki.JPG" alt="Marek Widzicki" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><span>Marek Widzicki</span></div><div class="player-details"><span class="player-meta">b. 1976</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Artur_Chrzonowski" target="_blank" rel="noopener" class="player-link">Artur Chrzonowski</a></div><div class="player-details"><span class="player-meta">b. 1976</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Vojtek Kaluzny</span></div><div class="player-details"><span class="player-meta">b. 1964</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Jan_Richert" target="_blank" rel="noopener" class="player-link">Jan Richert</a></div><div class="player-details"><span class="player-meta">b. 1922</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Oskar_Paprzycki" target="_blank" rel="noopener" class="player-link">Oskar Paprzycki</a></div><div class="player-details"><span class="player-meta">b. 1998</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Piotr_Gryszkiewicz" target="_blank" rel="noopener" class="player-link">Piotr Gryszkiewicz</a></div><div class="player-details"><span class="player-meta">b. 2001</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Mieczysław Cirkowski</span></div><div class="player-details"><span class="player-meta">b. 1956</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/%C5%81ukasz_Paulewicz" target="_blank" rel="noopener" class="player-link">Łukasz Paulewicz</a></div><div class="player-details"><span class="player-meta">b. 1983</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Marek_Hartman" target="_blank" rel="noopener" class="player-link">Marek Hartman</a></div><div class="player-details"><span class="player-meta">b. 1947</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Henryk_Kliszewicz" target="_blank" rel="noopener" class="player-link">Henryk Kliszewicz</a></div><div class="player-details"><span class="player-meta">b. 1949</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Marek_Szutowicz" target="_blank" rel="noopener" class="player-link">Marek Szutowicz</a></div><div class="player-details"><span class="player-meta">b. 1977</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Edmund_Wierzy%C5%84ski" target="_blank" rel="noopener" class="player-link">Edmund Wierzyński</a></div><div class="player-details"><span class="player-meta">b. 1939</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Janusz_Makowski" target="_blank" rel="noopener" class="player-link">Janusz Makowski</a></div><div class="player-details"><span class="player-meta">b. 1955</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Tomasz_Pi%C4%99tka" target="_blank" rel="noopener" class="player-link">Tomasz Piętka</a></div><div class="player-details"><span class="player-meta">b. 1972</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Tomasz_Motyka_(footballer)" target="_blank" rel="noopener" class="player-link">Tomasz Motyka</a></div><div class="player-details"><span class="player-meta">b. 1972</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Jerzy_G%C3%B3rski_(footballer)" target="_blank" rel="noopener" class="player-link">Jerzy Górski</a></div><div class="player-details"><span class="player-meta">b. 1948</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Mariusz Malinowski</span></div><div class="player-details"><span class="player-meta">b. 1975</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Piotr_Ko%C5%82c" target="_blank" rel="noopener" class="player-link">Piotr Kolc</a></div><div class="player-details"><span class="player-meta">b. 1987</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Arkadiusz_Rojek" target="_blank" rel="noopener" class="player-link">Arkadiusz Rojek</a></div><div class="player-details"><span class="player-meta">b. 1972</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Maciej_Os%C5%82owski" target="_blank" rel="noopener" class="player-link">Maciej Osłowski</a></div><div class="player-details"><span class="player-meta">b. 1988</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Tadeusz_Ma%C5%82olepszy" target="_blank" rel="noopener" class="player-link">Tadeusz Małolepszy</a></div><div class="player-details"><span class="player-meta">b. 1952</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Pawe%C5%82_Czychowski" target="_blank" rel="noopener" class="player-link">Paweł Czychowski</a></div><div class="player-details"><span class="player-meta">b. 1993</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Adrian_Bielawski" target="_blank" rel="noopener" class="player-link">Adrian Bielawski</a></div><div class="player-details"><span class="player-meta">b. 1996</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Maciej_Wo%C5%BAniak" target="_blank" rel="noopener" class="player-link">Maciej Woźniak</a></div><div class="player-details"><span class="player-meta">b. 2001</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Przemys%C5%82aw_Kami%C5%84ski" target="_blank" rel="noopener" class="player-link">Przemysław Kamiński</a></div><div class="player-details"><span class="player-meta">b. 1996</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Tomasz_Borkowski" target="_blank" rel="noopener" class="player-link">Tomasz Borkowski</a></div><div class="player-details"><span class="player-meta">b. 1972</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Piotr_Nierych%C5%82o" target="_blank" rel="noopener" class="player-link">Piotr Nierychło</a></div><div class="player-details"><span class="player-meta">b. 1921</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Oktawian_Skrzecz" target="_blank" rel="noopener" class="player-link">Oktawian Skrzecz</a></div><div class="player-details"><span class="player-meta">b. 1997</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Pawe%C5%82_%C5%BBuk_(footballer,_born_1985)" target="_blank" rel="noopener" class="player-link">Paweł Żuk</a></div><div class="player-details"><span class="player-meta">b. 1985</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Pawe%C5%82_%C5%BBuk_(footballer,_born_2001)" target="_blank" rel="noopener" class="player-link">Paweł Żuk</a></div><div class="player-details"><span class="player-meta">b. 2001</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Heinz Brauer</span></div><div class="player-details"><span class="player-meta">b. 1921</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Henryk Mojsa</span></div><div class="player-details"><span class="player-meta">b. 1957</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Krzysztof Wiśniewski</span></div><div class="player-details"><span class="player-meta">b. 1982</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Krzysztof_Rusinek" target="_blank" rel="noopener" class="player-link">Krzysztof Rusinek</a></div><div class="player-details"><span class="player-meta">b. 1981</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Q112326681</span></div><div class="player-details"><span class="player-meta">b. 1963</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Igor Brzyski</span></div><div class="player-details"><span class="player-meta">b. 2007</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Włodzimierz Żemojtel</span></div><div class="player-details"><span class="player-meta">b. 1950</span><span class="player-notability" title="Notability score based on Wikipedia language editions">0</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Andrzej Wydrowski</span></div><div class="player-details"><span class="player-meta">b. 1965</span><span class="player-notability" title="Notability score based on Wikipedia language editions">0</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Edmund Wierzinski</span></div><div class="player-details"><span class="player-meta">b. 1939</span><span class="player-notability" title="Notability score based on Wikipedia language editions">0</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Q121865155</span></div><div class="player-details"><span class="player-meta">b. 1958</span><span class="player-notability" title="Notability score based on Wikipedia language editions">0</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Andrzej Sobczyk</span></div><div class="player-details"><span class="player-meta">b. 1956</span><span class="player-notability" title="Notability score based on Wikipedia language editions">0</span></div></div></div></div>
 
   <script type="application/ld+json">
+  [
   {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Football players from Gdańsk, Poland",
-    "numberOfItems": 100,
-    "itemListElement": [{"@type":"ListItem","position":1,"name":"Przemysław Frankowski"},{"@type":"ListItem","position":2,"name":"Andrzej Szarmach"},{"@type":"ListItem","position":3,"name":"Tomasz Wałdoch"},{"@type":"ListItem","position":4,"name":"Janusz Kupcewicz"},{"@type":"ListItem","position":5,"name":"Łukasz Szukała"},{"@type":"ListItem","position":6,"name":"Kacper Urbański"},{"@type":"ListItem","position":7,"name":"Filip Wichman"},{"@type":"ListItem","position":8,"name":"Sławomir Wojciechowski"},{"@type":"ListItem","position":9,"name":"Karol Fila"},{"@type":"ListItem","position":10,"name":"Grzegorz Szamotulski"}]
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Landsholdskortet","item":"https://landsholdskortet.dk/"},
+      {"@type":"ListItem","position":2,"name":"World map","item":"https://landsholdskortet.dk/worldmap/"},
+      {"@type":"ListItem","position":3,"name":"Gdańsk, Poland","item":"https://landsholdskortet.dk/worldmap/city/gda-sk-poland/"}
+    ]
+  },
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Football players from Gdańsk, Poland",
+    "numberOfItems":100,
+    "itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Person","name":"Przemysław Frankowski","sameAs":"https://en.wikipedia.org/wiki/Przemys%C5%82aw_Frankowski","image":"https://commons.wikimedia.org/wiki/Special:FilePath/Przemysław_Frankowski_ASSE_rcl_2425_(cropped).jpg","birthDate":"1995","birthPlace":{"@type":"Place","name":"Gdańsk, Poland"}}},{"@type":"ListItem","position":2,"item":{"@type":"Person","name":"Andrzej Szarmach","sameAs":"https://en.wikipedia.org/wiki/Andrzej_Szarmach","image":"https://commons.wikimedia.org/wiki/Special:FilePath/Szarmach_Andrzej.jpg","birthDate":"1950","birthPlace":{"@type":"Place","name":"Gdańsk, Poland"}}},{"@type":"ListItem","position":3,"item":{"@type":"Person","name":"Tomasz Wałdoch","sameAs":"https://en.wikipedia.org/wiki/Tomasz_Wa%C5%82doch","image":"https://commons.wikimedia.org/wiki/Special:FilePath/S04_Tomasz_Waldoch_01.jpg","birthDate":"1971","birthPlace":{"@type":"Place","name":"Gdańsk, Poland"}}},{"@type":"ListItem","position":4,"item":{"@type":"Person","name":"Janusz Kupcewicz","sameAs":"https://en.wikipedia.org/wiki/Janusz_Kupcewicz","image":"https://commons.wikimedia.org/wiki/Special:FilePath/Janusz_Kupcewicz.jpg","birthDate":"1955","birthPlace":{"@type":"Place","name":"Gdańsk, Poland"}}},{"@type":"ListItem","position":5,"item":{"@type":"Person","name":"Łukasz Szukała","sameAs":"https://en.wikipedia.org/wiki/%C5%81ukasz_Szuka%C5%82a","image":"https://commons.wikimedia.org/wiki/Special:FilePath/Łukasz_Szukała.jpg","birthDate":"1984","birthPlace":{"@type":"Place","name":"Gdańsk, Poland"}}}]
   }
+]
   </script>
 </body>
 </html>

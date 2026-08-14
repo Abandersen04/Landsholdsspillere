@@ -3,9 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Football players from Leeds, United Kingdom – World Map</title>
-  <meta name="description" content="Football players born in Leeds, United Kingdom. 30 players from Leeds are listed on this page, including James Milner.">
+  <title>30 football players from Leeds, United Kingdom – World Map</title>
+  <meta name="description" content="30 notable football players were born in Leeds, United Kingdom, including James Milner, Aaron Lennon, Jimmy Savile. Explore the full list on the World Map.">
   <link rel="canonical" href="https://landsholdskortet.dk/worldmap/city/leeds-united-kingdom/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="30 football players from Leeds, United Kingdom">
+  <meta property="og:description" content="30 notable football players were born in Leeds, United Kingdom, including James Milner, Aaron Lennon, Jimmy Savile. Explore the full list on the World Map.">
+  <meta property="og:url" content="https://landsholdskortet.dk/worldmap/city/leeds-united-kingdom/">
+  <meta property="og:site_name" content="Landsholdskortet – World Map">
+  <meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/James_Milner_2022-07-21_Fußball,_Männer,Freundschaftsspiel,_RB_Leipzig_-_FC_Liverpool_1DX_2223_by_Stepro_(cropped).jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="30 football players from Leeds, United Kingdom">
+  <meta name="twitter:description" content="30 notable football players were born in Leeds, United Kingdom, including James Milner, Aaron Lennon, Jimmy Savile. Explore the full list on the World Map.">
+  <meta name="twitter:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/James_Milner_2022-07-21_Fußball,_Männer,Freundschaftsspiel,_RB_Leipzig_-_FC_Liverpool_1DX_2223_by_Stepro_(cropped).jpg">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/fonts/inter.css">
@@ -14,267 +24,107 @@
     html, body { overflow: auto; height: auto; }
     :root { --red: #1B3A6B; --red-dark: #122a52; --red-light: #eef2f9; }
     body { max-width: 860px; margin: 0 auto; padding: 32px 20px 64px; font-family: Inter, sans-serif; color: #222; }
-    .breadcrumb { font-size: 13px; color: #888; margin-bottom: 24px; }
+    .breadcrumb { font-size: 13px; color: #888; margin-bottom: 20px; }
     .breadcrumb a { color: #1B3A6B; text-decoration: none; }
     .breadcrumb a:hover { text-decoration: underline; }
     h1 { font-size: 28px; font-weight: 800; color: #1B3A6B; margin: 0 0 8px; }
-    .subtitle { color: #555; font-size: 15px; margin-bottom: 28px; line-height: 1.6; }
+    .subtitle { color: #555; font-size: 15px; margin-bottom: 28px; line-height: 1.7; }
     .section-title { font-size: 18px; font-weight: 700; color: #1B3A6B; margin: 32px 0 14px; border-bottom: 2px solid #eef2f9; padding-bottom: 8px; }
-    .player-list, .top5-grid { display: grid; gap: 12px; }
-    .top5-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+    .top5-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+    .player-list { display: grid; gap: 8px; }
     .player-card { display: flex; align-items: center; gap: 12px; background: #f8faff; border: 1px solid #dde6f5; border-radius: 10px; padding: 12px; }
     .player-card.prominent { border-color: #1B3A6B; background: #eef2f9; }
     .player-img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .player-img-placeholder { width: 48px; height: 48px; border-radius: 50%; background: #d6e0f0; flex-shrink: 0; }
     .player-name { font-weight: 600; font-size: 14px; margin-bottom: 3px; }
     .player-link { color: #1B3A6B; text-decoration: none; }
     .player-link:hover { text-decoration: underline; }
-    .player-details { font-size: 12px; color: #777; display: flex; gap: 10px; flex-wrap: wrap; }
-    .player-notability { background: #1B3A6B; color: white; border-radius: 4px; padding: 1px 6px; font-size: 11px; }
-    .back-link { display: inline-flex; align-items: center; gap: 6px; color: #1B3A6B; text-decoration: none; font-size: 14px; font-weight: 600; margin-bottom: 28px; }
+    .player-details { font-size: 12px; color: #777; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .player-meta { color: #999; }
+    .player-notability { background: #1B3A6B; color: white; border-radius: 4px; padding: 1px 6px; font-size: 11px; font-weight: 600; cursor: help; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: #1B3A6B; text-decoration: none; font-size: 14px; font-weight: 600; margin-bottom: 24px; }
     .back-link:hover { text-decoration: underline; }
+    .stat-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+    .chip { background: #eef2f9; color: #1B3A6B; border-radius: 20px; padding: 4px 12px; font-size: 12px; font-weight: 600; }
   </style>
 </head>
 <body>
-  <nav class="breadcrumb">
-    <a href="/">Landsholdskortet</a> › <a href="/worldmap/">World map</a> › Leeds, United Kingdom
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Landsholdskortet</a> ›
+    <a href="/worldmap/">World map</a> ›
+    <span>Leeds, United Kingdom</span>
   </nav>
 
-  <a href="/worldmap/" class="back-link">
-    ← Back to World map
-  </a>
+  <a href="/worldmap/" class="back-link">← Back to World map</a>
 
   <h1>Football players from Leeds</h1>
 
+  <div class="stat-chips">
+    <span class="chip">United Kingdom</span>
+    <span class="chip">30 players</span>
+    <span class="chip">1926–1993</span>
+    <span class="chip">29 men · 1 women</span>
+  </div>
+
   <p class="subtitle">
-    Leeds is a city in United Kingdom.
-    30 notable football players have been born in Leeds.
+    Leeds is a city in United Kingdom with 30 notable football players born there according to Wikidata. This includes 29 male and 1 female players. Players were born between 1926–1993.
     The most prominent are James Milner, Aaron Lennon, Jimmy Savile, Andre Wisdom and David Batty.
   </p>
 
   <h2 class="section-title">Most notable players from Leeds</h2>
   <div class="top5-grid">
-    <div class="player-card prominent">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/James_Milner_2022-07-21_Fußball,_Männer,Freundschaftsspiel,_RB_Leipzig_-_FC_Liverpool_1DX_2223_by_Stepro_(cropped).jpg" alt="James Milner" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/James_Milner" target="_blank" rel="noopener" class="player-link">James Milner</a></div>
-    <div class="player-details"><span class="player-meta">Born 1986</span> <span class="player-notability">Notability: 77</span></div>
-  </div>
-</div>
-<div class="player-card prominent">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Lennon_Brighton_v_Spurs_Amex_Opening_30711.jpg" alt="Aaron Lennon" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Aaron_Lennon" target="_blank" rel="noopener" class="player-link">Aaron Lennon</a></div>
-    <div class="player-details"><span class="player-meta">Born 1987</span> <span class="player-notability">Notability: 74</span></div>
-  </div>
-</div>
-<div class="player-card prominent">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy_Savile_2006.jpg" alt="Jimmy Savile" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Jimmy_Savile" target="_blank" rel="noopener" class="player-link">Jimmy Savile</a></div>
-    <div class="player-details"><span class="player-meta">Born 1926</span> <span class="player-notability">Notability: 63</span></div>
-  </div>
-</div>
-<div class="player-card prominent">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/FC_Admira_Wacker_Mödling_vs._FC_Red_Bull_Salzburg_(Cup)_2017-04-26_(124).jpg" alt="Andre Wisdom" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Andre_Wisdom" target="_blank" rel="noopener" class="player-link">Andre Wisdom</a></div>
-    <div class="player-details"><span class="player-meta">Born 1993</span> <span class="player-notability">Notability: 62</span></div>
-  </div>
-</div>
-<div class="player-card prominent">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/David_Batty" target="_blank" rel="noopener" class="player-link">David Batty</a></div>
-    <div class="player-details"><span class="player-meta">Born 1968</span> <span class="player-notability">Notability: 62</span></div>
-  </div>
-</div>
+    <div class="player-card prominent"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/James_Milner_2022-07-21_Fußball,_Männer,Freundschaftsspiel,_RB_Leipzig_-_FC_Liverpool_1DX_2223_by_Stepro_(cropped).jpg" alt="James Milner" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/James_Milner" target="_blank" rel="noopener" class="player-link">James Milner</a></div><div class="player-details"><span class="player-meta">b. 1986</span><span class="player-notability" title="Notability score based on Wikipedia language editions">77</span></div></div></div>
+<div class="player-card prominent"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Lennon_Brighton_v_Spurs_Amex_Opening_30711.jpg" alt="Aaron Lennon" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Aaron_Lennon" target="_blank" rel="noopener" class="player-link">Aaron Lennon</a></div><div class="player-details"><span class="player-meta">b. 1987</span><span class="player-notability" title="Notability score based on Wikipedia language editions">74</span></div></div></div>
+<div class="player-card prominent"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy_Savile_2006.jpg" alt="Jimmy Savile" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Jimmy_Savile" target="_blank" rel="noopener" class="player-link">Jimmy Savile</a></div><div class="player-details"><span class="player-meta">b. 1926</span><span class="player-notability" title="Notability score based on Wikipedia language editions">63</span></div></div></div>
+<div class="player-card prominent"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/FC_Admira_Wacker_Mödling_vs._FC_Red_Bull_Salzburg_(Cup)_2017-04-26_(124).jpg" alt="Andre Wisdom" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Andre_Wisdom" target="_blank" rel="noopener" class="player-link">Andre Wisdom</a></div><div class="player-details"><span class="player-meta">b. 1993</span><span class="player-notability" title="Notability score based on Wikipedia language editions">62</span></div></div></div>
+<div class="player-card prominent"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/David_Batty" target="_blank" rel="noopener" class="player-link">David Batty</a></div><div class="player-details"><span class="player-meta">b. 1968</span><span class="player-notability" title="Notability score based on Wikipedia language editions">62</span></div></div></div>
   </div>
 
-  <h2 class="section-title">All players from Leeds</h2>
-<div class="player-list"><div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Stuart_mccall.jpg" alt="Stuart McCall" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Stuart_McCall" target="_blank" rel="noopener" class="player-link">Stuart McCall</a></div>
-    <div class="player-details"><span class="player-meta">Born 1964</span> <span class="player-notability">Notability: 60</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/David_Stockdale_10-02-2015_1.jpg" alt="David Stockdale" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/David_Stockdale" target="_blank" rel="noopener" class="player-link">David Stockdale</a></div>
-    <div class="player-details"><span class="player-meta">Born 1985</span> <span class="player-notability">Notability: 60</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Don_Goodman.jpg" alt="Don Goodman" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Don_Goodman" target="_blank" rel="noopener" class="player-link">Don Goodman</a></div>
-    <div class="player-details"><span class="player-meta">Born 1966</span> <span class="player-notability">Notability: 60</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Brian_Deane" target="_blank" rel="noopener" class="player-link">Brian Deane</a></div>
-    <div class="player-details"><span class="player-meta">Born 1968</span> <span class="player-notability">Notability: 54</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/David_Harvey_(footballer)" target="_blank" rel="noopener" class="player-link">David Harvey</a></div>
-    <div class="player-details"><span class="player-meta">Born 1948</span> <span class="player-notability">Notability: 52</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Paul_Madeley" target="_blank" rel="noopener" class="player-link">Paul Madeley</a></div>
-    <div class="player-details"><span class="player-meta">Born 1944</span> <span class="player-notability">Notability: 52</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Byron_Webster_18-07-2009_1.jpg" alt="Byron Webster" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Byron_Webster" target="_blank" rel="noopener" class="player-link">Byron Webster</a></div>
-    <div class="player-details"><span class="player-meta">Born 1987</span> <span class="player-notability">Notability: 50</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Terry_Connor_02052026_(5).jpg" alt="Terry Connor" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Terry_Connor" target="_blank" rel="noopener" class="player-link">Terry Connor</a></div>
-    <div class="player-details"><span class="player-meta">Born 1962</span> <span class="player-notability">Notability: 50</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Caleb_Folan.jpg" alt="Caleb Folan" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Caleb_Folan" target="_blank" rel="noopener" class="player-link">Caleb Folan</a></div>
-    <div class="player-details"><span class="player-meta">Born 1982</span> <span class="player-notability">Notability: 49</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jessica_Clarke,_15_September_2019_(02)_(cropped).jpg" alt="Jessica Clarke" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Jessica_Clarke_(footballer)" target="_blank" rel="noopener" class="player-link">Jessica Clarke</a></div>
-    <div class="player-details"><span class="player-meta">Born 1989</span> <span class="player-notability">Notability: 49</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Joe_Dudgeon_23-07-11_1.png" alt="Joe Dudgeon" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Joe_Dudgeon" target="_blank" rel="noopener" class="player-link">Joe Dudgeon</a></div>
-    <div class="player-details"><span class="player-meta">Born 1990</span> <span class="player-notability">Notability: 47</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Kevin_Hector" target="_blank" rel="noopener" class="player-link">Kevin Hector</a></div>
-    <div class="player-details"><span class="player-meta">Born 1944</span> <span class="player-notability">Notability: 46</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sam,_lloyd.jpg" alt="Lloyd Sam" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Lloyd_Sam" target="_blank" rel="noopener" class="player-link">Lloyd Sam</a></div>
-    <div class="player-details"><span class="player-meta">Born 1984</span> <span class="player-notability">Notability: 46</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Richard_Naylor_Ipswich.jpg" alt="Richard Naylor" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Richard_Naylor" target="_blank" rel="noopener" class="player-link">Richard Naylor</a></div>
-    <div class="player-details"><span class="player-meta">Born 1977</span> <span class="player-notability">Notability: 44</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/NC_Courage_vs_Orlando_Pride_(Jun_2024)_028.jpg" alt="Seb Hines" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Seb_Hines" target="_blank" rel="noopener" class="player-link">Seb Hines</a></div>
-    <div class="player-details"><span class="player-meta">Born 1988</span> <span class="player-notability">Notability: 43</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Dale_Tempest" target="_blank" rel="noopener" class="player-link">Dale Tempest</a></div>
-    <div class="player-details"><span class="player-meta">Born 1963</span> <span class="player-notability">Notability: 41</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Matt_Jackson_(footballer)" target="_blank" rel="noopener" class="player-link">Matt Jackson</a></div>
-    <div class="player-details"><span class="player-meta">Born 1971</span> <span class="player-notability">Notability: 41</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tommy_Spurr_Doncaster.jpg" alt="Tommy Spurr" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Tommy_Spurr" target="_blank" rel="noopener" class="player-link">Tommy Spurr</a></div>
-    <div class="player-details"><span class="player-meta">Born 1987</span> <span class="player-notability">Notability: 41</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Noel_Whelan" target="_blank" rel="noopener" class="player-link">Noel Whelan</a></div>
-    <div class="player-details"><span class="player-meta">Born 1974</span> <span class="player-notability">Notability: 41</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Emile_Sinclair_15-03-2014_1.jpg" alt="Emile Sinclair" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Emile_Sinclair" target="_blank" rel="noopener" class="player-link">Emile Sinclair</a></div>
-    <div class="player-details"><span class="player-meta">Born 1987</span> <span class="player-notability">Notability: 38</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Niall_Canavan" target="_blank" rel="noopener" class="player-link">Niall Canavan</a></div>
-    <div class="player-details"><span class="player-meta">Born 1991</span> <span class="player-notability">Notability: 38</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Adam_Baker_(footballer)" target="_blank" rel="noopener" class="player-link">Adam Baker</a></div>
-    <div class="player-details"><span class="player-meta">Born 1993</span> <span class="player-notability">Notability: 36</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Andy_Watson_(footballer,_born_1967)" target="_blank" rel="noopener" class="player-link">Andy Watson</a></div>
-    <div class="player-details"><span class="player-meta">Born 1967</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Simon_Walton" target="_blank" rel="noopener" class="player-link">Simon Walton</a></div>
-    <div class="player-details"><span class="player-meta">Born 1987</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Andy_Watson_(footballer,_born_1978)" target="_blank" rel="noopener" class="player-link">Andy Watson</a></div>
-    <div class="player-details"><span class="player-meta">Born 1978</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div></div>
+  <h2 class="section-title">All 30 players from Leeds</h2><div class="player-list"><div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Stuart_mccall.jpg" alt="Stuart McCall" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Stuart_McCall" target="_blank" rel="noopener" class="player-link">Stuart McCall</a></div><div class="player-details"><span class="player-meta">b. 1964</span><span class="player-notability" title="Notability score based on Wikipedia language editions">60</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/David_Stockdale_10-02-2015_1.jpg" alt="David Stockdale" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/David_Stockdale" target="_blank" rel="noopener" class="player-link">David Stockdale</a></div><div class="player-details"><span class="player-meta">b. 1985</span><span class="player-notability" title="Notability score based on Wikipedia language editions">60</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Don_Goodman.jpg" alt="Don Goodman" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Don_Goodman" target="_blank" rel="noopener" class="player-link">Don Goodman</a></div><div class="player-details"><span class="player-meta">b. 1966</span><span class="player-notability" title="Notability score based on Wikipedia language editions">60</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Brian_Deane" target="_blank" rel="noopener" class="player-link">Brian Deane</a></div><div class="player-details"><span class="player-meta">b. 1968</span><span class="player-notability" title="Notability score based on Wikipedia language editions">54</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/David_Harvey_(footballer)" target="_blank" rel="noopener" class="player-link">David Harvey</a></div><div class="player-details"><span class="player-meta">b. 1948</span><span class="player-notability" title="Notability score based on Wikipedia language editions">52</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Paul_Madeley" target="_blank" rel="noopener" class="player-link">Paul Madeley</a></div><div class="player-details"><span class="player-meta">b. 1944</span><span class="player-notability" title="Notability score based on Wikipedia language editions">52</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Byron_Webster_18-07-2009_1.jpg" alt="Byron Webster" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Byron_Webster" target="_blank" rel="noopener" class="player-link">Byron Webster</a></div><div class="player-details"><span class="player-meta">b. 1987</span><span class="player-notability" title="Notability score based on Wikipedia language editions">50</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Terry_Connor_02052026_(5).jpg" alt="Terry Connor" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Terry_Connor" target="_blank" rel="noopener" class="player-link">Terry Connor</a></div><div class="player-details"><span class="player-meta">b. 1962</span><span class="player-notability" title="Notability score based on Wikipedia language editions">50</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jessica_Clarke,_15_September_2019_(02)_(cropped).jpg" alt="Jessica Clarke" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Jessica_Clarke_(footballer)" target="_blank" rel="noopener" class="player-link">Jessica Clarke</a></div><div class="player-details"><span class="player-meta">b. 1989</span><span class="player-notability" title="Notability score based on Wikipedia language editions">49</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Caleb_Folan.jpg" alt="Caleb Folan" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Caleb_Folan" target="_blank" rel="noopener" class="player-link">Caleb Folan</a></div><div class="player-details"><span class="player-meta">b. 1982</span><span class="player-notability" title="Notability score based on Wikipedia language editions">49</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Joe_Dudgeon_23-07-11_1.png" alt="Joe Dudgeon" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Joe_Dudgeon" target="_blank" rel="noopener" class="player-link">Joe Dudgeon</a></div><div class="player-details"><span class="player-meta">b. 1990</span><span class="player-notability" title="Notability score based on Wikipedia language editions">47</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Kevin_Hector" target="_blank" rel="noopener" class="player-link">Kevin Hector</a></div><div class="player-details"><span class="player-meta">b. 1944</span><span class="player-notability" title="Notability score based on Wikipedia language editions">46</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sam,_lloyd.jpg" alt="Lloyd Sam" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Lloyd_Sam" target="_blank" rel="noopener" class="player-link">Lloyd Sam</a></div><div class="player-details"><span class="player-meta">b. 1984</span><span class="player-notability" title="Notability score based on Wikipedia language editions">46</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Richard_Naylor_Ipswich.jpg" alt="Richard Naylor" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Richard_Naylor" target="_blank" rel="noopener" class="player-link">Richard Naylor</a></div><div class="player-details"><span class="player-meta">b. 1977</span><span class="player-notability" title="Notability score based on Wikipedia language editions">44</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/NC_Courage_vs_Orlando_Pride_(Jun_2024)_028.jpg" alt="Seb Hines" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Seb_Hines" target="_blank" rel="noopener" class="player-link">Seb Hines</a></div><div class="player-details"><span class="player-meta">b. 1988</span><span class="player-notability" title="Notability score based on Wikipedia language editions">43</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Dale_Tempest" target="_blank" rel="noopener" class="player-link">Dale Tempest</a></div><div class="player-details"><span class="player-meta">b. 1963</span><span class="player-notability" title="Notability score based on Wikipedia language editions">41</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Matt_Jackson_(footballer)" target="_blank" rel="noopener" class="player-link">Matt Jackson</a></div><div class="player-details"><span class="player-meta">b. 1971</span><span class="player-notability" title="Notability score based on Wikipedia language editions">41</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tommy_Spurr_Doncaster.jpg" alt="Tommy Spurr" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Tommy_Spurr" target="_blank" rel="noopener" class="player-link">Tommy Spurr</a></div><div class="player-details"><span class="player-meta">b. 1987</span><span class="player-notability" title="Notability score based on Wikipedia language editions">41</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Noel_Whelan" target="_blank" rel="noopener" class="player-link">Noel Whelan</a></div><div class="player-details"><span class="player-meta">b. 1974</span><span class="player-notability" title="Notability score based on Wikipedia language editions">41</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Emile_Sinclair_15-03-2014_1.jpg" alt="Emile Sinclair" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Emile_Sinclair" target="_blank" rel="noopener" class="player-link">Emile Sinclair</a></div><div class="player-details"><span class="player-meta">b. 1987</span><span class="player-notability" title="Notability score based on Wikipedia language editions">38</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Niall_Canavan" target="_blank" rel="noopener" class="player-link">Niall Canavan</a></div><div class="player-details"><span class="player-meta">b. 1991</span><span class="player-notability" title="Notability score based on Wikipedia language editions">38</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Adam_Baker_(footballer)" target="_blank" rel="noopener" class="player-link">Adam Baker</a></div><div class="player-details"><span class="player-meta">b. 1993</span><span class="player-notability" title="Notability score based on Wikipedia language editions">36</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Andy_Watson_(footballer,_born_1967)" target="_blank" rel="noopener" class="player-link">Andy Watson</a></div><div class="player-details"><span class="player-meta">b. 1967</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Simon_Walton" target="_blank" rel="noopener" class="player-link">Simon Walton</a></div><div class="player-details"><span class="player-meta">b. 1987</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Andy_Watson_(footballer,_born_1978)" target="_blank" rel="noopener" class="player-link">Andy Watson</a></div><div class="player-details"><span class="player-meta">b. 1978</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div></div>
 
   <script type="application/ld+json">
+  [
   {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Football players from Leeds, United Kingdom",
-    "numberOfItems": 30,
-    "itemListElement": [{"@type":"ListItem","position":1,"name":"James Milner"},{"@type":"ListItem","position":2,"name":"Aaron Lennon"},{"@type":"ListItem","position":3,"name":"Jimmy Savile"},{"@type":"ListItem","position":4,"name":"Andre Wisdom"},{"@type":"ListItem","position":5,"name":"David Batty"},{"@type":"ListItem","position":6,"name":"Stuart McCall"},{"@type":"ListItem","position":7,"name":"David Stockdale"},{"@type":"ListItem","position":8,"name":"Don Goodman"},{"@type":"ListItem","position":9,"name":"Brian Deane"},{"@type":"ListItem","position":10,"name":"David Harvey"}]
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Landsholdskortet","item":"https://landsholdskortet.dk/"},
+      {"@type":"ListItem","position":2,"name":"World map","item":"https://landsholdskortet.dk/worldmap/"},
+      {"@type":"ListItem","position":3,"name":"Leeds, United Kingdom","item":"https://landsholdskortet.dk/worldmap/city/leeds-united-kingdom/"}
+    ]
+  },
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Football players from Leeds, United Kingdom",
+    "numberOfItems":30,
+    "itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Person","name":"James Milner","sameAs":"https://en.wikipedia.org/wiki/James_Milner","image":"https://commons.wikimedia.org/wiki/Special:FilePath/James_Milner_2022-07-21_Fußball,_Männer,Freundschaftsspiel,_RB_Leipzig_-_FC_Liverpool_1DX_2223_by_Stepro_(cropped).jpg","birthDate":"1986","birthPlace":{"@type":"Place","name":"Leeds, United Kingdom"}}},{"@type":"ListItem","position":2,"item":{"@type":"Person","name":"Aaron Lennon","sameAs":"https://en.wikipedia.org/wiki/Aaron_Lennon","image":"https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Lennon_Brighton_v_Spurs_Amex_Opening_30711.jpg","birthDate":"1987","birthPlace":{"@type":"Place","name":"Leeds, United Kingdom"}}},{"@type":"ListItem","position":3,"item":{"@type":"Person","name":"Jimmy Savile","sameAs":"https://en.wikipedia.org/wiki/Jimmy_Savile","image":"https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy_Savile_2006.jpg","birthDate":"1926","birthPlace":{"@type":"Place","name":"Leeds, United Kingdom"}}},{"@type":"ListItem","position":4,"item":{"@type":"Person","name":"Andre Wisdom","sameAs":"https://en.wikipedia.org/wiki/Andre_Wisdom","image":"https://commons.wikimedia.org/wiki/Special:FilePath/FC_Admira_Wacker_Mödling_vs._FC_Red_Bull_Salzburg_(Cup)_2017-04-26_(124).jpg","birthDate":"1993","birthPlace":{"@type":"Place","name":"Leeds, United Kingdom"}}},{"@type":"ListItem","position":5,"item":{"@type":"Person","name":"David Batty","sameAs":"https://en.wikipedia.org/wiki/David_Batty","birthDate":"1968","birthPlace":{"@type":"Place","name":"Leeds, United Kingdom"}}}]
   }
+]
   </script>
 </body>
 </html>

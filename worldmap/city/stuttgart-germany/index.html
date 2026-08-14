@@ -3,9 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Football players from Stuttgart, Germany – World Map</title>
-  <meta name="description" content="Football players born in Stuttgart, Germany. 80 players from Stuttgart are listed on this page, including Jürgen Klopp.">
+  <title>80 football players from Stuttgart, Germany – World Map</title>
+  <meta name="description" content="80 notable football players were born in Stuttgart, Germany, including Jürgen Klopp, Sami Khedira, Serge Gnabry. Explore the full list on the World Map.">
   <link rel="canonical" href="https://landsholdskortet.dk/worldmap/city/stuttgart-germany/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="80 football players from Stuttgart, Germany">
+  <meta property="og:description" content="80 notable football players were born in Stuttgart, Germany, including Jürgen Klopp, Sami Khedira, Serge Gnabry. Explore the full list on the World Map.">
+  <meta property="og:url" content="https://landsholdskortet.dk/worldmap/city/stuttgart-germany/">
+  <meta property="og:site_name" content="Landsholdskortet – World Map">
+  <meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Jürgen_Klopp,_Liverpool_vs._Chelsea,_UEFA_Super_Cup_2019-08-14_04.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="80 football players from Stuttgart, Germany">
+  <meta name="twitter:description" content="80 notable football players were born in Stuttgart, Germany, including Jürgen Klopp, Sami Khedira, Serge Gnabry. Explore the full list on the World Map.">
+  <meta name="twitter:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Jürgen_Klopp,_Liverpool_vs._Chelsea,_UEFA_Super_Cup_2019-08-14_04.jpg">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/fonts/inter.css">
@@ -14,617 +24,157 @@
     html, body { overflow: auto; height: auto; }
     :root { --red: #1B3A6B; --red-dark: #122a52; --red-light: #eef2f9; }
     body { max-width: 860px; margin: 0 auto; padding: 32px 20px 64px; font-family: Inter, sans-serif; color: #222; }
-    .breadcrumb { font-size: 13px; color: #888; margin-bottom: 24px; }
+    .breadcrumb { font-size: 13px; color: #888; margin-bottom: 20px; }
     .breadcrumb a { color: #1B3A6B; text-decoration: none; }
     .breadcrumb a:hover { text-decoration: underline; }
     h1 { font-size: 28px; font-weight: 800; color: #1B3A6B; margin: 0 0 8px; }
-    .subtitle { color: #555; font-size: 15px; margin-bottom: 28px; line-height: 1.6; }
+    .subtitle { color: #555; font-size: 15px; margin-bottom: 28px; line-height: 1.7; }
     .section-title { font-size: 18px; font-weight: 700; color: #1B3A6B; margin: 32px 0 14px; border-bottom: 2px solid #eef2f9; padding-bottom: 8px; }
-    .player-list, .top5-grid { display: grid; gap: 12px; }
-    .top5-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+    .top5-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+    .player-list { display: grid; gap: 8px; }
     .player-card { display: flex; align-items: center; gap: 12px; background: #f8faff; border: 1px solid #dde6f5; border-radius: 10px; padding: 12px; }
     .player-card.prominent { border-color: #1B3A6B; background: #eef2f9; }
     .player-img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .player-img-placeholder { width: 48px; height: 48px; border-radius: 50%; background: #d6e0f0; flex-shrink: 0; }
     .player-name { font-weight: 600; font-size: 14px; margin-bottom: 3px; }
     .player-link { color: #1B3A6B; text-decoration: none; }
     .player-link:hover { text-decoration: underline; }
-    .player-details { font-size: 12px; color: #777; display: flex; gap: 10px; flex-wrap: wrap; }
-    .player-notability { background: #1B3A6B; color: white; border-radius: 4px; padding: 1px 6px; font-size: 11px; }
-    .back-link { display: inline-flex; align-items: center; gap: 6px; color: #1B3A6B; text-decoration: none; font-size: 14px; font-weight: 600; margin-bottom: 28px; }
+    .player-details { font-size: 12px; color: #777; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .player-meta { color: #999; }
+    .player-notability { background: #1B3A6B; color: white; border-radius: 4px; padding: 1px 6px; font-size: 11px; font-weight: 600; cursor: help; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: #1B3A6B; text-decoration: none; font-size: 14px; font-weight: 600; margin-bottom: 24px; }
     .back-link:hover { text-decoration: underline; }
+    .stat-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+    .chip { background: #eef2f9; color: #1B3A6B; border-radius: 20px; padding: 4px 12px; font-size: 12px; font-weight: 600; }
   </style>
 </head>
 <body>
-  <nav class="breadcrumb">
-    <a href="/">Landsholdskortet</a> › <a href="/worldmap/">World map</a> › Stuttgart, Germany
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Landsholdskortet</a> ›
+    <a href="/worldmap/">World map</a> ›
+    <span>Stuttgart, Germany</span>
   </nav>
 
-  <a href="/worldmap/" class="back-link">
-    ← Back to World map
-  </a>
+  <a href="/worldmap/" class="back-link">← Back to World map</a>
 
   <h1>Football players from Stuttgart</h1>
 
+  <div class="stat-chips">
+    <span class="chip">Germany</span>
+    <span class="chip">80 players</span>
+    <span class="chip">1880–1995</span>
+    <span class="chip">77 men · 3 women</span>
+  </div>
+
   <p class="subtitle">
-    Stuttgart is a city in Germany.
-    80 notable football players have been born in Stuttgart.
+    Stuttgart is a city in Germany with 80 notable football players born there according to Wikidata. This includes 77 male and 3 female players. Players were born between 1880–1995.
     The most prominent are Jürgen Klopp, Sami Khedira, Serge Gnabry, Joselu and Horst Köppel.
   </p>
 
   <h2 class="section-title">Most notable players from Stuttgart</h2>
   <div class="top5-grid">
-    <div class="player-card prominent">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jürgen_Klopp,_Liverpool_vs._Chelsea,_UEFA_Super_Cup_2019-08-14_04.jpg" alt="Jürgen Klopp" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/J%C3%BCrgen_Klopp" target="_blank" rel="noopener" class="player-link">Jürgen Klopp</a></div>
-    <div class="player-details"><span class="player-meta">Born 1967</span> <span class="player-notability">Notability: 82</span></div>
-  </div>
-</div>
-<div class="player-card prominent">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Sami_Khedira_850_0707.jpg" alt="Sami Khedira" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Sami_Khedira" target="_blank" rel="noopener" class="player-link">Sami Khedira</a></div>
-    <div class="player-details"><span class="player-meta">Born 1987</span> <span class="player-notability">Notability: 80</span></div>
-  </div>
-</div>
-<div class="player-card prominent">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2019-06-11_Fußball,_Männer,_Länderspiel,_Deutschland-Estland_StP_2075_LR10_by_Stepro.jpg" alt="Serge Gnabry" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Serge_Gnabry" target="_blank" rel="noopener" class="player-link">Serge Gnabry</a></div>
-    <div class="player-details"><span class="player-meta">Born 1995</span> <span class="player-notability">Notability: 75</span></div>
-  </div>
-</div>
-<div class="player-card prominent">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Joselu,_16_September_2024.jpg" alt="Joselu" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Joselu" target="_blank" rel="noopener" class="player-link">Joselu</a></div>
-    <div class="player-details"><span class="player-meta">Born 1990</span> <span class="player-notability">Notability: 72</span></div>
-  </div>
-</div>
-<div class="player-card prominent">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Horst_K%C3%B6ppel" target="_blank" rel="noopener" class="player-link">Horst Köppel</a></div>
-    <div class="player-details"><span class="player-meta">Born 1948</span> <span class="player-notability">Notability: 70</span></div>
-  </div>
-</div>
+    <div class="player-card prominent"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jürgen_Klopp,_Liverpool_vs._Chelsea,_UEFA_Super_Cup_2019-08-14_04.jpg" alt="Jürgen Klopp" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/J%C3%BCrgen_Klopp" target="_blank" rel="noopener" class="player-link">Jürgen Klopp</a></div><div class="player-details"><span class="player-meta">b. 1967</span><span class="player-notability" title="Notability score based on Wikipedia language editions">82</span></div></div></div>
+<div class="player-card prominent"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Sami_Khedira_850_0707.jpg" alt="Sami Khedira" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Sami_Khedira" target="_blank" rel="noopener" class="player-link">Sami Khedira</a></div><div class="player-details"><span class="player-meta">b. 1987</span><span class="player-notability" title="Notability score based on Wikipedia language editions">80</span></div></div></div>
+<div class="player-card prominent"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2019-06-11_Fußball,_Männer,_Länderspiel,_Deutschland-Estland_StP_2075_LR10_by_Stepro.jpg" alt="Serge Gnabry" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Serge_Gnabry" target="_blank" rel="noopener" class="player-link">Serge Gnabry</a></div><div class="player-details"><span class="player-meta">b. 1995</span><span class="player-notability" title="Notability score based on Wikipedia language editions">75</span></div></div></div>
+<div class="player-card prominent"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Joselu,_16_September_2024.jpg" alt="Joselu" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Joselu" target="_blank" rel="noopener" class="player-link">Joselu</a></div><div class="player-details"><span class="player-meta">b. 1990</span><span class="player-notability" title="Notability score based on Wikipedia language editions">72</span></div></div></div>
+<div class="player-card prominent"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Horst_K%C3%B6ppel" target="_blank" rel="noopener" class="player-link">Horst Köppel</a></div><div class="player-details"><span class="player-meta">b. 1948</span><span class="player-notability" title="Notability score based on Wikipedia language editions">70</span></div></div></div>
   </div>
 
-  <h2 class="section-title">All players from Stuttgart</h2>
-<div class="player-list"><div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hansi_Müller.jpg" alt="Hansi Müller" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Hansi_M%C3%BCller" target="_blank" rel="noopener" class="player-link">Hansi Müller</a></div>
-    <div class="player-details"><span class="player-meta">Born 1957</span> <span class="player-notability">Notability: 67</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2022-04-20_Fußball,_Männer,_DFB-Pokal,_RB_Leipzig_-_1._FC_Union_Berlin_1DX_8299_by_Stepro.jpg" alt="Rani Khedira" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Rani_Khedira" target="_blank" rel="noopener" class="player-link">Rani Khedira</a></div>
-    <div class="player-details"><span class="player-meta">Born 1994</span> <span class="player-notability">Notability: 65</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odisseas_vlachodimos.jpg" alt="Odysseas Vlachodimos" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Odysseas_Vlachodimos" target="_blank" rel="noopener" class="player-link">Odysseas Vlachodimos</a></div>
-    <div class="player-details"><span class="player-meta">Born 1994</span> <span class="player-notability">Notability: 63</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2023-07-07_Fussball,_Frauen,_Länderspiel,_Deutschland_-_Sambia_1DX_6965_by_Stepro.jpg" alt="Leonie Maier" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Leonie_Maier" target="_blank" rel="noopener" class="player-link">Leonie Maier</a></div>
-    <div class="player-details"><span class="player-meta">Born 1992</span> <span class="player-notability">Notability: 59</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jens_Keller_2016_(cropped).jpg" alt="Jens Keller" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Jens_Keller" target="_blank" rel="noopener" class="player-link">Jens Keller</a></div>
-    <div class="player-details"><span class="player-meta">Born 1970</span> <span class="player-notability">Notability: 57</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tayfun_korkut.jpg" alt="Tayfun Korkut" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Tayfun_Korkut" target="_blank" rel="noopener" class="player-link">Tayfun Korkut</a></div>
-    <div class="player-details"><span class="player-meta">Born 1974</span> <span class="player-notability">Notability: 57</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/David_Yelldell_2011_2.jpg" alt="David Yelldell" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/David_Yelldell" target="_blank" rel="noopener" class="player-link">David Yelldell</a></div>
-    <div class="player-details"><span class="player-meta">Born 1981</span> <span class="player-notability">Notability: 56</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marco_Kurz.jpg" alt="Marco Kurz" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Marco_Kurz" target="_blank" rel="noopener" class="player-link">Marco Kurz</a></div>
-    <div class="player-details"><span class="player-meta">Born 1969</span> <span class="player-notability">Notability: 51</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Roberto-d-aversa.jpg" alt="Roberto D'Aversa" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Roberto_D%27Aversa" target="_blank" rel="noopener" class="player-link">Roberto D'Aversa</a></div>
-    <div class="player-details"><span class="player-meta">Born 1975</span> <span class="player-notability">Notability: 51</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Herman_Rapp" target="_blank" rel="noopener" class="player-link">Herman Rapp</a></div>
-    <div class="player-details"><span class="player-meta">Born 1907</span> <span class="player-notability">Notability: 51</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rainer_Adrion.jpg" alt="Rainer Adrion" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Rainer_Adrion" target="_blank" rel="noopener" class="player-link">Rainer Adrion</a></div>
-    <div class="player-details"><span class="player-meta">Born 1953</span> <span class="player-notability">Notability: 50</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/SV_Mattersburg_vs._SK_Rapid_Wien_2015-11-21_(105).jpg" alt="Andreas Müller" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Andreas_M%C3%BCller_(footballer,_born_1962)" target="_blank" rel="noopener" class="player-link">Andreas Müller</a></div>
-    <div class="player-details"><span class="player-meta">Born 1962</span> <span class="player-notability">Notability: 49</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rugby1_1900.jpg" alt="Hugo Betting" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Hugo_Betting" target="_blank" rel="noopener" class="player-link">Hugo Betting</a></div>
-    <div class="player-details"><span class="player-meta">Born 1880</span> <span class="player-notability">Notability: 47</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Bernd_Martin" target="_blank" rel="noopener" class="player-link">Bernd Martin</a></div>
-    <div class="player-details"><span class="player-meta">Born 1955</span> <span class="player-notability">Notability: 47</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/PanagiotisVlachodimos.jpg" alt="Panagiotis Vlachodimos" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Panagiotis_Vlachodimos" target="_blank" rel="noopener" class="player-link">Panagiotis Vlachodimos</a></div>
-    <div class="player-details"><span class="player-meta">Born 1991</span> <span class="player-notability">Notability: 47</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sead_Ramovic.jpg" alt="Sead Ramović" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Sead_Ramovi%C4%87" target="_blank" rel="noopener" class="player-link">Sead Ramović</a></div>
-    <div class="player-details"><span class="player-meta">Born 1979</span> <span class="player-notability">Notability: 47</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Murat_Akça_2014.jpg" alt="Murat Akça" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Murat_Ak%C3%A7a" target="_blank" rel="noopener" class="player-link">Murat Akça</a></div>
-    <div class="player-details"><span class="player-meta">Born 1990</span> <span class="player-notability">Notability: 46</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Felix_Lohkemper.jpg" alt="Felix Lohkemper" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Felix_Lohkemper" target="_blank" rel="noopener" class="player-link">Felix Lohkemper</a></div>
-    <div class="player-details"><span class="player-meta">Born 1995</span> <span class="player-notability">Notability: 44</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Karl_Burger" target="_blank" rel="noopener" class="player-link">Karl Burger</a></div>
-    <div class="player-details"><span class="player-meta">Born 1883</span> <span class="player-notability">Notability: 43</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Fritz_Retter" target="_blank" rel="noopener" class="player-link">Fritz Retter</a></div>
-    <div class="player-details"><span class="player-meta">Born 1896</span> <span class="player-notability">Notability: 41</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Barth,_Oliver_AAL_12-13_WP.JPG" alt="Oliver Barth" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Oliver_Barth" target="_blank" rel="noopener" class="player-link">Oliver Barth</a></div>
-    <div class="player-details"><span class="player-meta">Born 1979</span> <span class="player-notability">Notability: 41</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Ernst_Blum" target="_blank" rel="noopener" class="player-link">Ernst Blum</a></div>
-    <div class="player-details"><span class="player-meta">Born 1904</span> <span class="player-notability">Notability: 41</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Roberto_Pinto" target="_blank" rel="noopener" class="player-link">Roberto Pinto</a></div>
-    <div class="player-details"><span class="player-meta">Born 1978</span> <span class="player-notability">Notability: 41</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/G%C3%BCnter_Seibold" target="_blank" rel="noopener" class="player-link">Günter Seibold</a></div>
-    <div class="player-details"><span class="player-meta">Born 1936</span> <span class="player-notability">Notability: 38</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Walter_Kelsch" target="_blank" rel="noopener" class="player-link">Walter Kelsch</a></div>
-    <div class="player-details"><span class="player-meta">Born 1955</span> <span class="player-notability">Notability: 38</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Otto_B%C3%B6kle" target="_blank" rel="noopener" class="player-link">Otto Bökle</a></div>
-    <div class="player-details"><span class="player-meta">Born 1912</span> <span class="player-notability">Notability: 38</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dieter_Schwemmle_(1973).jpg" alt="Dieter Schwemmle" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Dieter_Schwemmle" target="_blank" rel="noopener" class="player-link">Dieter Schwemmle</a></div>
-    <div class="player-details"><span class="player-meta">Born 1949</span> <span class="player-notability">Notability: 38</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Eugen_Kipp" target="_blank" rel="noopener" class="player-link">Eugen Kipp</a></div>
-    <div class="player-details"><span class="player-meta">Born 1885</span> <span class="player-notability">Notability: 38</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Patrick_Milchraum,_2010-01.JPG" alt="Patrick Milchraum" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Patrick_Milchraum" target="_blank" rel="noopener" class="player-link">Patrick Milchraum</a></div>
-    <div class="player-details"><span class="player-meta">Born 1984</span> <span class="player-notability">Notability: 38</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Michael_Spies" target="_blank" rel="noopener" class="player-link">Michael Spies</a></div>
-    <div class="player-details"><span class="player-meta">Born 1965</span> <span class="player-notability">Notability: 36</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Erwin_Deyhle" target="_blank" rel="noopener" class="player-link">Erwin Deyhle</a></div>
-    <div class="player-details"><span class="player-meta">Born 1914</span> <span class="player-notability">Notability: 36</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Reinhold_Zech" target="_blank" rel="noopener" class="player-link">Reinhold Zech</a></div>
-    <div class="player-details"><span class="player-meta">Born 1948</span> <span class="player-notability">Notability: 36</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Recep_Y%C4%B1ld%C4%B1z" target="_blank" rel="noopener" class="player-link">Recep Yıldız</a></div>
-    <div class="player-details"><span class="player-meta">Born 1986</span> <span class="player-notability">Notability: 36</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Adolf_H%C3%B6schle" target="_blank" rel="noopener" class="player-link">Adolf Höschle</a></div>
-    <div class="player-details"><span class="player-meta">Born 1899</span> <span class="player-notability">Notability: 36</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Savvas_Exouzidis" target="_blank" rel="noopener" class="player-link">Savvas Exouzidis</a></div>
-    <div class="player-details"><span class="player-meta">Born 1981</span> <span class="player-notability">Notability: 36</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kağan_Söylemezgiller.JPG" alt="Kağan Söylemezgiller" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Ka%C4%9Fan_S%C3%B6ylemezgiller" target="_blank" rel="noopener" class="player-link">Kağan Söylemezgiller</a></div>
-    <div class="player-details"><span class="player-meta">Born 1988</span> <span class="player-notability">Notability: 36</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dimitrios_Moutas.jpg" alt="Dimitris Moutas" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Dimitrios_Moutas" target="_blank" rel="noopener" class="player-link">Dimitris Moutas</a></div>
-    <div class="player-details"><span class="player-meta">Born 1968</span> <span class="player-notability">Notability: 36</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/David_Montero_(footballer,_born_1974)" target="_blank" rel="noopener" class="player-link">David Montero</a></div>
-    <div class="player-details"><span class="player-meta">Born 1974</span> <span class="player-notability">Notability: 36</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Niels_Schlotterbeck" target="_blank" rel="noopener" class="player-link">Niels Schlotterbeck</a></div>
-    <div class="player-details"><span class="player-meta">Born 1967</span> <span class="player-notability">Notability: 36</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Hans_Eisele_(footballer)" target="_blank" rel="noopener" class="player-link">Hans Eisele</a></div>
-    <div class="player-details"><span class="player-meta">Born 1940</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rainer_Kraft.jpg" alt="Rainer Kraft" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Rainer_Kraft_(football_manager)" target="_blank" rel="noopener" class="player-link">Rainer Kraft</a></div>
-    <div class="player-details"><span class="player-meta">Born 1962</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Thomas_Stickroth" target="_blank" rel="noopener" class="player-link">Thomas Stickroth</a></div>
-    <div class="player-details"><span class="player-meta">Born 1965</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Otto_L%C3%B6ble" target="_blank" rel="noopener" class="player-link">Otto Löble</a></div>
-    <div class="player-details"><span class="player-meta">Born 1888</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Paul_K%C3%BChnle" target="_blank" rel="noopener" class="player-link">Paul Kühnle</a></div>
-    <div class="player-details"><span class="player-meta">Born 1885</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Karl_Berger_(footballer)" target="_blank" rel="noopener" class="player-link">Karl Berger</a></div>
-    <div class="player-details"><span class="player-meta">Born 1951</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Horst_Haug" target="_blank" rel="noopener" class="player-link">Horst Haug</a></div>
-    <div class="player-details"><span class="player-meta">Born 1946</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Marcel_Avdi%C4%87" target="_blank" rel="noopener" class="player-link">Marcel Avdić</a></div>
-    <div class="player-details"><span class="player-meta">Born 1991</span> <span class="player-notability">Notability: 33</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Roland_Mall" target="_blank" rel="noopener" class="player-link">Roland Mall</a></div>
-    <div class="player-details"><span class="player-meta">Born 1951</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Axel_D%C3%BCnnwald-Metzler" target="_blank" rel="noopener" class="player-link">Axel Dünnwald-Metzler</a></div>
-    <div class="player-details"><span class="player-meta">Born 1939</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Julian_Leist.jpg" alt="Julian Leist" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Julian_Leist" target="_blank" rel="noopener" class="player-link">Julian Leist</a></div>
-    <div class="player-details"><span class="player-meta">Born 1988</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Markus_L%C3%B6sch" target="_blank" rel="noopener" class="player-link">Markus Lösch</a></div>
-    <div class="player-details"><span class="player-meta">Born 1971</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Michael_Schick_(footballer)" target="_blank" rel="noopener" class="player-link">Michael Schick</a></div>
-    <div class="player-details"><span class="player-meta">Born 1988</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Patrick_Auracher.jpg" alt="Patrick Auracher" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Patrick_Auracher" target="_blank" rel="noopener" class="player-link">Patrick Auracher</a></div>
-    <div class="player-details"><span class="player-meta">Born 1990</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Oliver_Stierle.jpg" alt="Oliver Stierle" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Oliver_Stierle" target="_blank" rel="noopener" class="player-link">Oliver Stierle</a></div>
-    <div class="player-details"><span class="player-meta">Born 1983</span> <span class="player-notability">Notability: 30</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Manfred_Weidmann" target="_blank" rel="noopener" class="player-link">Manfred Weidmann</a></div>
-    <div class="player-details"><span class="player-meta">Born 1945</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Rudolf Kölbl</span></div>
-    <div class="player-details"><span class="player-meta">Born 1937</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Gustav_Unfried" target="_blank" rel="noopener" class="player-link">Gustav Unfried</a></div>
-    <div class="player-details"><span class="player-meta">Born 1889</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gökhan_Gümüşsu.jpg" alt="Gökhan Gümüşsu" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/G%C3%B6khan_G%C3%BCm%C3%BC%C5%9Fsu" target="_blank" rel="noopener" class="player-link">Gökhan Gümüşsu</a></div>
-    <div class="player-details"><span class="player-meta">Born 1989</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Mustafa_Parmak" target="_blank" rel="noopener" class="player-link">Mustafa Parmak</a></div>
-    <div class="player-details"><span class="player-meta">Born 1982</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Pascal Schmidt</span></div>
-    <div class="player-details"><span class="player-meta">Born 1993</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Eve_Chandraratne_2013_1.jpg" alt="Eve Chandraratne" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><a href="https://en.wikipedia.org/wiki/Eve_Chandraratne" target="_blank" rel="noopener" class="player-link">Eve Chandraratne</a></div>
-    <div class="player-details"><span class="player-meta">Born 1989</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ines_oesterle.jpg" alt="Ines Österle" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><span>Ines Österle</span></div>
-    <div class="player-details"><span class="player-meta">Born 1984</span> <span class="player-notability">Notability: 26</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin_Adrion.jpg" alt="Benjamin Adrion" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><span>Benjamin Adrion</span></div>
-    <div class="player-details"><span class="player-meta">Born 1981</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Klaus Mirwald</span></div>
-    <div class="player-details"><span class="player-meta">Born 1968</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Moritz Steinle</span></div>
-    <div class="player-details"><span class="player-meta">Born 1983</span> <span class="player-notability">Notability: 20</span></div>
-  </div>
-</div>
-<div class="player-card">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bernd_Klaus.jpg" alt="Bernd Klaus" class="player-img" onerror="this.style.display='none'">
-  <div class="player-info">
-    <div class="player-name"><span>Bernd Klaus</span></div>
-    <div class="player-details"><span class="player-meta">Born 1967</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Dirk Fengler</span></div>
-    <div class="player-details"><span class="player-meta">Born 1970</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Uwe Greiner</span></div>
-    <div class="player-details"><span class="player-meta">Born 1959</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Erwin Haaga</span></div>
-    <div class="player-details"><span class="player-meta">Born 1914</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Erwin Läpple</span></div>
-    <div class="player-details"><span class="player-meta">Born 1925</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Francesco Di Frisco</span></div>
-    <div class="player-details"><span class="player-meta">Born 1987</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Gianni Coveli</span></div>
-    <div class="player-details"><span class="player-meta">Born 1970</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Frank Elser</span></div>
-    <div class="player-details"><span class="player-meta">Born 1958</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Thomas Walter</span></div>
-    <div class="player-details"><span class="player-meta">Born 1967</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div>
-<div class="player-card">
-  
-  <div class="player-info">
-    <div class="player-name"><span>Paul Kraft</span></div>
-    <div class="player-details"><span class="player-meta">Born 1914</span> <span class="player-notability">Notability: 13</span></div>
-  </div>
-</div></div>
+  <h2 class="section-title">All 80 players from Stuttgart</h2><div class="player-list"><div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hansi_Müller.jpg" alt="Hansi Müller" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Hansi_M%C3%BCller" target="_blank" rel="noopener" class="player-link">Hansi Müller</a></div><div class="player-details"><span class="player-meta">b. 1957</span><span class="player-notability" title="Notability score based on Wikipedia language editions">67</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2022-04-20_Fußball,_Männer,_DFB-Pokal,_RB_Leipzig_-_1._FC_Union_Berlin_1DX_8299_by_Stepro.jpg" alt="Rani Khedira" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Rani_Khedira" target="_blank" rel="noopener" class="player-link">Rani Khedira</a></div><div class="player-details"><span class="player-meta">b. 1994</span><span class="player-notability" title="Notability score based on Wikipedia language editions">65</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Odisseas_vlachodimos.jpg" alt="Odysseas Vlachodimos" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Odysseas_Vlachodimos" target="_blank" rel="noopener" class="player-link">Odysseas Vlachodimos</a></div><div class="player-details"><span class="player-meta">b. 1994</span><span class="player-notability" title="Notability score based on Wikipedia language editions">63</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2023-07-07_Fussball,_Frauen,_Länderspiel,_Deutschland_-_Sambia_1DX_6965_by_Stepro.jpg" alt="Leonie Maier" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Leonie_Maier" target="_blank" rel="noopener" class="player-link">Leonie Maier</a></div><div class="player-details"><span class="player-meta">b. 1992</span><span class="player-notability" title="Notability score based on Wikipedia language editions">59</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jens_Keller_2016_(cropped).jpg" alt="Jens Keller" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Jens_Keller" target="_blank" rel="noopener" class="player-link">Jens Keller</a></div><div class="player-details"><span class="player-meta">b. 1970</span><span class="player-notability" title="Notability score based on Wikipedia language editions">57</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tayfun_korkut.jpg" alt="Tayfun Korkut" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Tayfun_Korkut" target="_blank" rel="noopener" class="player-link">Tayfun Korkut</a></div><div class="player-details"><span class="player-meta">b. 1974</span><span class="player-notability" title="Notability score based on Wikipedia language editions">57</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/David_Yelldell_2011_2.jpg" alt="David Yelldell" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/David_Yelldell" target="_blank" rel="noopener" class="player-link">David Yelldell</a></div><div class="player-details"><span class="player-meta">b. 1981</span><span class="player-notability" title="Notability score based on Wikipedia language editions">56</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marco_Kurz.jpg" alt="Marco Kurz" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Marco_Kurz" target="_blank" rel="noopener" class="player-link">Marco Kurz</a></div><div class="player-details"><span class="player-meta">b. 1969</span><span class="player-notability" title="Notability score based on Wikipedia language editions">51</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Roberto-d-aversa.jpg" alt="Roberto D'Aversa" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Roberto_D%27Aversa" target="_blank" rel="noopener" class="player-link">Roberto D'Aversa</a></div><div class="player-details"><span class="player-meta">b. 1975</span><span class="player-notability" title="Notability score based on Wikipedia language editions">51</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Herman_Rapp" target="_blank" rel="noopener" class="player-link">Herman Rapp</a></div><div class="player-details"><span class="player-meta">b. 1907</span><span class="player-notability" title="Notability score based on Wikipedia language editions">51</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rainer_Adrion.jpg" alt="Rainer Adrion" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Rainer_Adrion" target="_blank" rel="noopener" class="player-link">Rainer Adrion</a></div><div class="player-details"><span class="player-meta">b. 1953</span><span class="player-notability" title="Notability score based on Wikipedia language editions">50</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/SV_Mattersburg_vs._SK_Rapid_Wien_2015-11-21_(105).jpg" alt="Andreas Müller" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Andreas_M%C3%BCller_(footballer,_born_1962)" target="_blank" rel="noopener" class="player-link">Andreas Müller</a></div><div class="player-details"><span class="player-meta">b. 1962</span><span class="player-notability" title="Notability score based on Wikipedia language editions">49</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rugby1_1900.jpg" alt="Hugo Betting" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Hugo_Betting" target="_blank" rel="noopener" class="player-link">Hugo Betting</a></div><div class="player-details"><span class="player-meta">b. 1880</span><span class="player-notability" title="Notability score based on Wikipedia language editions">47</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Bernd_Martin" target="_blank" rel="noopener" class="player-link">Bernd Martin</a></div><div class="player-details"><span class="player-meta">b. 1955</span><span class="player-notability" title="Notability score based on Wikipedia language editions">47</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/PanagiotisVlachodimos.jpg" alt="Panagiotis Vlachodimos" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Panagiotis_Vlachodimos" target="_blank" rel="noopener" class="player-link">Panagiotis Vlachodimos</a></div><div class="player-details"><span class="player-meta">b. 1991</span><span class="player-notability" title="Notability score based on Wikipedia language editions">47</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sead_Ramovic.jpg" alt="Sead Ramović" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Sead_Ramovi%C4%87" target="_blank" rel="noopener" class="player-link">Sead Ramović</a></div><div class="player-details"><span class="player-meta">b. 1979</span><span class="player-notability" title="Notability score based on Wikipedia language editions">47</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Murat_Akça_2014.jpg" alt="Murat Akça" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Murat_Ak%C3%A7a" target="_blank" rel="noopener" class="player-link">Murat Akça</a></div><div class="player-details"><span class="player-meta">b. 1990</span><span class="player-notability" title="Notability score based on Wikipedia language editions">46</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Felix_Lohkemper.jpg" alt="Felix Lohkemper" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Felix_Lohkemper" target="_blank" rel="noopener" class="player-link">Felix Lohkemper</a></div><div class="player-details"><span class="player-meta">b. 1995</span><span class="player-notability" title="Notability score based on Wikipedia language editions">44</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Karl_Burger" target="_blank" rel="noopener" class="player-link">Karl Burger</a></div><div class="player-details"><span class="player-meta">b. 1883</span><span class="player-notability" title="Notability score based on Wikipedia language editions">43</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Fritz_Retter" target="_blank" rel="noopener" class="player-link">Fritz Retter</a></div><div class="player-details"><span class="player-meta">b. 1896</span><span class="player-notability" title="Notability score based on Wikipedia language editions">41</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Barth,_Oliver_AAL_12-13_WP.JPG" alt="Oliver Barth" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Oliver_Barth" target="_blank" rel="noopener" class="player-link">Oliver Barth</a></div><div class="player-details"><span class="player-meta">b. 1979</span><span class="player-notability" title="Notability score based on Wikipedia language editions">41</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Ernst_Blum" target="_blank" rel="noopener" class="player-link">Ernst Blum</a></div><div class="player-details"><span class="player-meta">b. 1904</span><span class="player-notability" title="Notability score based on Wikipedia language editions">41</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Roberto_Pinto" target="_blank" rel="noopener" class="player-link">Roberto Pinto</a></div><div class="player-details"><span class="player-meta">b. 1978</span><span class="player-notability" title="Notability score based on Wikipedia language editions">41</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/G%C3%BCnter_Seibold" target="_blank" rel="noopener" class="player-link">Günter Seibold</a></div><div class="player-details"><span class="player-meta">b. 1936</span><span class="player-notability" title="Notability score based on Wikipedia language editions">38</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Walter_Kelsch" target="_blank" rel="noopener" class="player-link">Walter Kelsch</a></div><div class="player-details"><span class="player-meta">b. 1955</span><span class="player-notability" title="Notability score based on Wikipedia language editions">38</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Otto_B%C3%B6kle" target="_blank" rel="noopener" class="player-link">Otto Bökle</a></div><div class="player-details"><span class="player-meta">b. 1912</span><span class="player-notability" title="Notability score based on Wikipedia language editions">38</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dieter_Schwemmle_(1973).jpg" alt="Dieter Schwemmle" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Dieter_Schwemmle" target="_blank" rel="noopener" class="player-link">Dieter Schwemmle</a></div><div class="player-details"><span class="player-meta">b. 1949</span><span class="player-notability" title="Notability score based on Wikipedia language editions">38</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Eugen_Kipp" target="_blank" rel="noopener" class="player-link">Eugen Kipp</a></div><div class="player-details"><span class="player-meta">b. 1885</span><span class="player-notability" title="Notability score based on Wikipedia language editions">38</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Patrick_Milchraum,_2010-01.JPG" alt="Patrick Milchraum" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Patrick_Milchraum" target="_blank" rel="noopener" class="player-link">Patrick Milchraum</a></div><div class="player-details"><span class="player-meta">b. 1984</span><span class="player-notability" title="Notability score based on Wikipedia language editions">38</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Michael_Spies" target="_blank" rel="noopener" class="player-link">Michael Spies</a></div><div class="player-details"><span class="player-meta">b. 1965</span><span class="player-notability" title="Notability score based on Wikipedia language editions">36</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Erwin_Deyhle" target="_blank" rel="noopener" class="player-link">Erwin Deyhle</a></div><div class="player-details"><span class="player-meta">b. 1914</span><span class="player-notability" title="Notability score based on Wikipedia language editions">36</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Reinhold_Zech" target="_blank" rel="noopener" class="player-link">Reinhold Zech</a></div><div class="player-details"><span class="player-meta">b. 1948</span><span class="player-notability" title="Notability score based on Wikipedia language editions">36</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Recep_Y%C4%B1ld%C4%B1z" target="_blank" rel="noopener" class="player-link">Recep Yıldız</a></div><div class="player-details"><span class="player-meta">b. 1986</span><span class="player-notability" title="Notability score based on Wikipedia language editions">36</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Adolf_H%C3%B6schle" target="_blank" rel="noopener" class="player-link">Adolf Höschle</a></div><div class="player-details"><span class="player-meta">b. 1899</span><span class="player-notability" title="Notability score based on Wikipedia language editions">36</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Savvas_Exouzidis" target="_blank" rel="noopener" class="player-link">Savvas Exouzidis</a></div><div class="player-details"><span class="player-meta">b. 1981</span><span class="player-notability" title="Notability score based on Wikipedia language editions">36</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kağan_Söylemezgiller.JPG" alt="Kağan Söylemezgiller" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Ka%C4%9Fan_S%C3%B6ylemezgiller" target="_blank" rel="noopener" class="player-link">Kağan Söylemezgiller</a></div><div class="player-details"><span class="player-meta">b. 1988</span><span class="player-notability" title="Notability score based on Wikipedia language editions">36</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dimitrios_Moutas.jpg" alt="Dimitris Moutas" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Dimitrios_Moutas" target="_blank" rel="noopener" class="player-link">Dimitris Moutas</a></div><div class="player-details"><span class="player-meta">b. 1968</span><span class="player-notability" title="Notability score based on Wikipedia language editions">36</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/David_Montero_(footballer,_born_1974)" target="_blank" rel="noopener" class="player-link">David Montero</a></div><div class="player-details"><span class="player-meta">b. 1974</span><span class="player-notability" title="Notability score based on Wikipedia language editions">36</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Niels_Schlotterbeck" target="_blank" rel="noopener" class="player-link">Niels Schlotterbeck</a></div><div class="player-details"><span class="player-meta">b. 1967</span><span class="player-notability" title="Notability score based on Wikipedia language editions">36</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Hans_Eisele_(footballer)" target="_blank" rel="noopener" class="player-link">Hans Eisele</a></div><div class="player-details"><span class="player-meta">b. 1940</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rainer_Kraft.jpg" alt="Rainer Kraft" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Rainer_Kraft_(football_manager)" target="_blank" rel="noopener" class="player-link">Rainer Kraft</a></div><div class="player-details"><span class="player-meta">b. 1962</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Thomas_Stickroth" target="_blank" rel="noopener" class="player-link">Thomas Stickroth</a></div><div class="player-details"><span class="player-meta">b. 1965</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Otto_L%C3%B6ble" target="_blank" rel="noopener" class="player-link">Otto Löble</a></div><div class="player-details"><span class="player-meta">b. 1888</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Paul_K%C3%BChnle" target="_blank" rel="noopener" class="player-link">Paul Kühnle</a></div><div class="player-details"><span class="player-meta">b. 1885</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Karl_Berger_(footballer)" target="_blank" rel="noopener" class="player-link">Karl Berger</a></div><div class="player-details"><span class="player-meta">b. 1951</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Horst_Haug" target="_blank" rel="noopener" class="player-link">Horst Haug</a></div><div class="player-details"><span class="player-meta">b. 1946</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Marcel_Avdi%C4%87" target="_blank" rel="noopener" class="player-link">Marcel Avdić</a></div><div class="player-details"><span class="player-meta">b. 1991</span><span class="player-notability" title="Notability score based on Wikipedia language editions">33</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Roland_Mall" target="_blank" rel="noopener" class="player-link">Roland Mall</a></div><div class="player-details"><span class="player-meta">b. 1951</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Axel_D%C3%BCnnwald-Metzler" target="_blank" rel="noopener" class="player-link">Axel Dünnwald-Metzler</a></div><div class="player-details"><span class="player-meta">b. 1939</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Julian_Leist.jpg" alt="Julian Leist" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Julian_Leist" target="_blank" rel="noopener" class="player-link">Julian Leist</a></div><div class="player-details"><span class="player-meta">b. 1988</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Markus_L%C3%B6sch" target="_blank" rel="noopener" class="player-link">Markus Lösch</a></div><div class="player-details"><span class="player-meta">b. 1971</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Michael_Schick_(footballer)" target="_blank" rel="noopener" class="player-link">Michael Schick</a></div><div class="player-details"><span class="player-meta">b. 1988</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Patrick_Auracher.jpg" alt="Patrick Auracher" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Patrick_Auracher" target="_blank" rel="noopener" class="player-link">Patrick Auracher</a></div><div class="player-details"><span class="player-meta">b. 1990</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Oliver_Stierle.jpg" alt="Oliver Stierle" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Oliver_Stierle" target="_blank" rel="noopener" class="player-link">Oliver Stierle</a></div><div class="player-details"><span class="player-meta">b. 1983</span><span class="player-notability" title="Notability score based on Wikipedia language editions">30</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Manfred_Weidmann" target="_blank" rel="noopener" class="player-link">Manfred Weidmann</a></div><div class="player-details"><span class="player-meta">b. 1945</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Rudolf Kölbl</span></div><div class="player-details"><span class="player-meta">b. 1937</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Gustav_Unfried" target="_blank" rel="noopener" class="player-link">Gustav Unfried</a></div><div class="player-details"><span class="player-meta">b. 1889</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Eve_Chandraratne_2013_1.jpg" alt="Eve Chandraratne" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Eve_Chandraratne" target="_blank" rel="noopener" class="player-link">Eve Chandraratne</a></div><div class="player-details"><span class="player-meta">b. 1989</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gökhan_Gümüşsu.jpg" alt="Gökhan Gümüşsu" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/G%C3%B6khan_G%C3%BCm%C3%BC%C5%9Fsu" target="_blank" rel="noopener" class="player-link">Gökhan Gümüşsu</a></div><div class="player-details"><span class="player-meta">b. 1989</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ines_oesterle.jpg" alt="Ines Österle" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><span>Ines Österle</span></div><div class="player-details"><span class="player-meta">b. 1984</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><a href="https://en.wikipedia.org/wiki/Mustafa_Parmak" target="_blank" rel="noopener" class="player-link">Mustafa Parmak</a></div><div class="player-details"><span class="player-meta">b. 1982</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Pascal Schmidt</span></div><div class="player-details"><span class="player-meta">b. 1993</span><span class="player-notability" title="Notability score based on Wikipedia language editions">26</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin_Adrion.jpg" alt="Benjamin Adrion" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><span>Benjamin Adrion</span></div><div class="player-details"><span class="player-meta">b. 1981</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Klaus Mirwald</span></div><div class="player-details"><span class="player-meta">b. 1968</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Moritz Steinle</span></div><div class="player-details"><span class="player-meta">b. 1983</span><span class="player-notability" title="Notability score based on Wikipedia language editions">20</span></div></div></div>
+<div class="player-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bernd_Klaus.jpg" alt="Bernd Klaus" class="player-img" loading="lazy" onerror="this.style.display='none'"><div class="player-info"><div class="player-name"><span>Bernd Klaus</span></div><div class="player-details"><span class="player-meta">b. 1967</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Dirk Fengler</span></div><div class="player-details"><span class="player-meta">b. 1970</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Uwe Greiner</span></div><div class="player-details"><span class="player-meta">b. 1959</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Erwin Haaga</span></div><div class="player-details"><span class="player-meta">b. 1914</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Erwin Läpple</span></div><div class="player-details"><span class="player-meta">b. 1925</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Francesco Di Frisco</span></div><div class="player-details"><span class="player-meta">b. 1987</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Gianni Coveli</span></div><div class="player-details"><span class="player-meta">b. 1970</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Frank Elser</span></div><div class="player-details"><span class="player-meta">b. 1958</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Thomas Walter</span></div><div class="player-details"><span class="player-meta">b. 1967</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div>
+<div class="player-card"><div class="player-img-placeholder"></div><div class="player-info"><div class="player-name"><span>Paul Kraft</span></div><div class="player-details"><span class="player-meta">b. 1914</span><span class="player-notability" title="Notability score based on Wikipedia language editions">13</span></div></div></div></div>
 
   <script type="application/ld+json">
+  [
   {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Football players from Stuttgart, Germany",
-    "numberOfItems": 80,
-    "itemListElement": [{"@type":"ListItem","position":1,"name":"Jürgen Klopp"},{"@type":"ListItem","position":2,"name":"Sami Khedira"},{"@type":"ListItem","position":3,"name":"Serge Gnabry"},{"@type":"ListItem","position":4,"name":"Joselu"},{"@type":"ListItem","position":5,"name":"Horst Köppel"},{"@type":"ListItem","position":6,"name":"Hansi Müller"},{"@type":"ListItem","position":7,"name":"Rani Khedira"},{"@type":"ListItem","position":8,"name":"Odysseas Vlachodimos"},{"@type":"ListItem","position":9,"name":"Leonie Maier"},{"@type":"ListItem","position":10,"name":"Jens Keller"}]
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Landsholdskortet","item":"https://landsholdskortet.dk/"},
+      {"@type":"ListItem","position":2,"name":"World map","item":"https://landsholdskortet.dk/worldmap/"},
+      {"@type":"ListItem","position":3,"name":"Stuttgart, Germany","item":"https://landsholdskortet.dk/worldmap/city/stuttgart-germany/"}
+    ]
+  },
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Football players from Stuttgart, Germany",
+    "numberOfItems":80,
+    "itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Person","name":"Jürgen Klopp","sameAs":"https://en.wikipedia.org/wiki/J%C3%BCrgen_Klopp","image":"https://commons.wikimedia.org/wiki/Special:FilePath/Jürgen_Klopp,_Liverpool_vs._Chelsea,_UEFA_Super_Cup_2019-08-14_04.jpg","birthDate":"1967","birthPlace":{"@type":"Place","name":"Stuttgart, Germany"}}},{"@type":"ListItem","position":2,"item":{"@type":"Person","name":"Sami Khedira","sameAs":"https://en.wikipedia.org/wiki/Sami_Khedira","image":"https://commons.wikimedia.org/wiki/Special:FilePath/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Sami_Khedira_850_0707.jpg","birthDate":"1987","birthPlace":{"@type":"Place","name":"Stuttgart, Germany"}}},{"@type":"ListItem","position":3,"item":{"@type":"Person","name":"Serge Gnabry","sameAs":"https://en.wikipedia.org/wiki/Serge_Gnabry","image":"https://commons.wikimedia.org/wiki/Special:FilePath/2019-06-11_Fußball,_Männer,_Länderspiel,_Deutschland-Estland_StP_2075_LR10_by_Stepro.jpg","birthDate":"1995","birthPlace":{"@type":"Place","name":"Stuttgart, Germany"}}},{"@type":"ListItem","position":4,"item":{"@type":"Person","name":"Joselu","sameAs":"https://en.wikipedia.org/wiki/Joselu","image":"https://commons.wikimedia.org/wiki/Special:FilePath/Joselu,_16_September_2024.jpg","birthDate":"1990","birthPlace":{"@type":"Place","name":"Stuttgart, Germany"}}},{"@type":"ListItem","position":5,"item":{"@type":"Person","name":"Horst Köppel","sameAs":"https://en.wikipedia.org/wiki/Horst_K%C3%B6ppel","birthDate":"1948","birthPlace":{"@type":"Place","name":"Stuttgart, Germany"}}}]
   }
+]
   </script>
 </body>
 </html>
