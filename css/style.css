@@ -677,7 +677,7 @@ html, body {
 }
 
 .popup-players {
-  max-height: 320px;
+  max-height: min(320px, 40vh);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 8px 0;
