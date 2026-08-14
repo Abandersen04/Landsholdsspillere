@@ -395,7 +395,11 @@ function buildPopupHtml(group) {
   return `
     <div class="popup-wrapper">
       <div class="popup-header">
-        <div class="location-name">${escapeHtml(city)}</div>
+        <div class="location-name">${
+          cityPageSlugs.has(citySlug(city, country))
+            ? `<a href="/worldmap/city/${citySlug(city, country)}/" style="color:inherit;text-decoration:none;border-bottom:2px solid ${ACCENT}22" onmouseover="this.style.borderBottomColor='${ACCENT}'" onmouseout="this.style.borderBottomColor='${ACCENT}22'">${escapeHtml(city)}</a>`
+            : escapeHtml(city)
+        }</div>
         <div class="player-total">${escapeHtml(country)} · ${players.length} players</div>
       </div>
       <div class="popup-players">
