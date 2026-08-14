@@ -22,5 +22,5 @@
 /*.json
   Cache-Control: public, max-age=3600
 
-/verdenskortet/players.json
+/worldmap/players.json
   Cache-Control: public, max-age=86400
