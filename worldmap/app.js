@@ -345,6 +345,7 @@ function buildPopupHtml(group) {
       ${imgHtml}
       <div class="popup-player-info">
         <div class="popup-player-name">
+          ${p.wiki && !p.wiki.includes('Special:EntityPage') ? `
           <a href="${escapeHtml(p.wiki)}" target="_blank" rel="noopener"
              style="color:${ACCENT};text-decoration:none;font-weight:600"
              onmouseover="this.style.textDecoration='underline'"
@@ -353,7 +354,7 @@ function buildPopupHtml(group) {
             <svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="opacity:.6;vertical-align:middle">
               <path d="M3 9L9 3M9 3H5M9 3V7" stroke="${ACCENT}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </a>
+          </a>` : `<span style="font-weight:600">${escapeHtml(p.name)}</span>`}
         </div>
         ${p.city ? `<div class="popup-player-detail" style="color:var(--gray-500);font-size:12px"><strong>Birthplace:</strong> ${escapeHtml(p.city)}</div>` : ''}
         ${p.birth_year && p.birth_year > 1800 ? `<div class="popup-player-detail" style="color:var(--gray-500);font-size:12px"><strong>Birth year:</strong> ${p.birth_year}</div>` : ''}
