@@ -3,10 +3,24 @@ let allPlayers = [];
 let map;
 let markersLayer;
 let debounceTimer;
+let cityPageSlugs = new Set();
 
 const ACCENT = '#1B3A6B';
 const WIKI_BASE = 'https://en.wikipedia.org/wiki/';
 const IMG_BASE  = 'https://commons.wikimedia.org/wiki/Special:FilePath/';
+
+function slugify(s) {
+  return (s || '').toLowerCase()
+    .replace(/[àáâãäå]/g,'a').replace(/[èéêë]/g,'e').replace(/[ìíîï]/g,'i')
+    .replace(/[òóôõöø]/g,'o').replace(/[ùúûü]/g,'u').replace(/[ýÿ]/g,'y')
+    .replace(/[ñ]/g,'n').replace(/[ç]/g,'c').replace(/[ß]/g,'ss')
+    .replace(/[æ]/g,'ae').replace(/[ø]/g,'oe').replace(/[å]/g,'aa')
+    .replace(/[^a-z0-9]+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'');
+}
+
+function citySlug(city, country) {
+  return slugify(city) + '-' + slugify(country);
+}
 
 // ===== Init =====
 document.addEventListener('DOMContentLoaded', async () => {
@@ -206,6 +220,18 @@ async function loadData() {
   }
   allPlayers = Array.from(byQid.values());
 
+  // Build set of city slugs that have a subpage (5+ players)
+  const cityCount = new Map();
+  for (const p of allPlayers) {
+    if (p.city && p.country) {
+      const k = citySlug(p.city, p.country);
+      cityCount.set(k, (cityCount.get(k) || 0) + 1);
+    }
+  }
+  for (const [slug, count] of cityCount) {
+    if (count >= 5) cityPageSlugs.add(slug);
+  }
+
   if (loadingEl) loadingEl.style.display = 'none';
 
   document.getElementById('total-label').textContent = allPlayers.length.toLocaleString('da-DK');
@@ -356,7 +382,11 @@ function buildPopupHtml(group) {
             </svg>
           </a>` : `<span style="font-weight:600">${escapeHtml(p.name)}</span>`}
         </div>
-        ${p.city ? `<div class="popup-player-detail" style="color:var(--gray-500);font-size:12px"><strong>Birthplace:</strong> ${escapeHtml(p.city)}</div>` : ''}
+        ${p.city ? `<div class="popup-player-detail" style="color:var(--gray-500);font-size:12px"><strong>Birthplace:</strong> ${
+          cityPageSlugs.has(citySlug(p.city, p.country || ''))
+            ? `<a href="/worldmap/city/${citySlug(p.city, p.country || '')}/" style="color:${ACCENT};text-decoration:none" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${escapeHtml(p.city)}</a>`
+            : escapeHtml(p.city)
+        }</div>` : ''}
         ${p.birth_year && p.birth_year > 1800 ? `<div class="popup-player-detail" style="color:var(--gray-500);font-size:12px"><strong>Birth year:</strong> ${p.birth_year}</div>` : ''}
       </div>
     </div>`;
