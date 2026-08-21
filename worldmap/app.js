@@ -5,6 +5,8 @@ let markersLayer;
 let debounceTimer;
 let cityPageSlugs = new Set();
 let natSelected = '';
+let fullLoaded = false;
+let fullLoading = false;
 
 const ACCENT = '#1B3A6B';
 const WIKI_BASE = 'https://en.wikipedia.org/wiki/';
@@ -181,7 +183,8 @@ function initControls() {
   sitelinksEl.addEventListener('input', () => {
     sitelinksLabel.textContent = sitelinksEl.value;
     updateSingleSliderFill(sitelinksEl);
-    debouncedUpdate();
+    if (parseInt(sitelinksEl.value) < 40 && !fullLoaded) loadFull();
+    else debouncedUpdate();
   });
 
   const minPlayersEl = document.getElementById('min-players');
@@ -200,6 +203,38 @@ function debouncedUpdate() {
 }
 
 // ===== Load Data =====
+function expandPlayer(p) {
+  p.qid        = p.q;
+  p.name       = p.n;
+  p.city       = p.c;
+  p.lat        = p.la;
+  p.lon        = p.lo;
+  p.gender     = p.g === 'm' ? 'male' : p.g === 'f' ? 'female' : 'unknown';
+  p.notability = p.s;
+  p.birth_year = p.y;
+  p.nationality= p.nat;
+  p.slug       = p.sl;
+  if (p.w) p.wiki  = WIKI_BASE + p.w;
+  if (p.i) p.image = IMG_BASE + encodeURIComponent(p.i).replace(/%20/g, '_');
+  return p;
+}
+
+async function loadFull() {
+  if (fullLoaded || fullLoading) return;
+  fullLoading = true;
+  const resp = await fetch('players-full.json');
+  const raw  = await resp.json();
+  const byQid = new Map(allPlayers.map(p => [p.qid, p]));
+  for (const p of raw) {
+    if (!byQid.has(p.q)) { byQid.set(p.q, expandPlayer(p)); }
+  }
+  allPlayers = Array.from(byQid.values());
+  fullLoaded  = true;
+  fullLoading = false;
+  document.getElementById('total-label').textContent = allPlayers.length.toLocaleString('da-DK');
+  updateMap();
+}
+
 async function loadData() {
   const loadingEl = document.getElementById('loading-overlay');
   if (loadingEl) loadingEl.style.display = 'flex';
@@ -207,21 +242,7 @@ async function loadData() {
   const resp = await fetch('players.json');
   const raw = await resp.json();
 
-  // Expand short keys
-  for (const p of raw) {
-    p.qid        = p.q;
-    p.name       = p.n;
-    p.city       = p.c;
-    p.lat        = p.la;
-    p.lon        = p.lo;
-    p.gender     = p.g === 'm' ? 'male' : p.g === 'f' ? 'female' : 'unknown';
-    p.notability = p.s;
-    p.birth_year = p.y;
-    p.nationality= p.nat;
-    p.slug       = p.sl;
-    if (p.w) p.wiki  = WIKI_BASE + p.w;
-    if (p.i) p.image = IMG_BASE + encodeURIComponent(p.i).replace(/%20/g, '_');
-  }
+  for (const p of raw) expandPlayer(p);
 
   // Deduplicate on QID
   const byQid = new Map();
