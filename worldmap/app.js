@@ -206,27 +206,33 @@ async function loadData() {
   const resp = await fetch('players.json');
   const raw = await resp.json();
 
-  // Rekonstruer komprimerede URLs
+  // Expand short keys
   for (const p of raw) {
-    if (p.wiki && !p.wiki.startsWith('http')) p.wiki = WIKI_BASE + p.wiki;
-    if (p.image && !p.image.startsWith('http')) p.image = IMG_BASE + encodeURIComponent(p.image).replace(/%20/g, '_');
+    p.qid        = p.q;
+    p.name       = p.n;
+    p.city       = p.c;
+    p.lat        = p.la;
+    p.lon        = p.lo;
+    p.gender     = p.g === 'm' ? 'male' : p.g === 'f' ? 'female' : 'unknown';
+    p.notability = p.s;
+    p.birth_year = p.y;
+    p.nationality= p.nat;
+    p.slug       = p.sl;
+    if (p.w) p.wiki  = WIKI_BASE + p.w;
+    if (p.i) p.image = IMG_BASE + encodeURIComponent(p.i).replace(/%20/g, '_');
   }
 
-  // Dedupliker på QID — behold den med flest sitelinks
+  // Deduplicate on QID
   const byQid = new Map();
   for (const p of raw) {
-    const existing = byQid.get(p.qid);
-    if (!existing || p.sitelinks > existing.sitelinks) byQid.set(p.qid, p);
+    if (!byQid.has(p.qid)) byQid.set(p.qid, p);
   }
   allPlayers = Array.from(byQid.values());
 
   // Build set of city slugs that have a subpage (5+ players)
   const cityCount = new Map();
   for (const p of allPlayers) {
-    if (p.city && p.country) {
-      const k = citySlug(p.city, p.country);
-      cityCount.set(k, (cityCount.get(k) || 0) + 1);
-    }
+    if (p.slug) cityCount.set(p.slug, (cityCount.get(p.slug) || 0) + 1);
   }
   for (const [slug, count] of cityCount) {
     if (count >= 5) cityPageSlugs.add(slug);
@@ -236,8 +242,8 @@ async function loadData() {
 
   document.getElementById('total-label').textContent = allPlayers.length.toLocaleString('da-DK');
 
-  // Populate country dropdown
-  const countries = [...new Set(allPlayers.map(p => p.nationality || p.country).filter(Boolean))].sort();
+  // Populate nationality dropdown
+  const countries = [...new Set(allPlayers.map(p => p.nationality).filter(Boolean))].sort();
   const sel = document.getElementById('country-select');
   countries.forEach(c => {
     const opt = document.createElement('option');
@@ -259,7 +265,7 @@ function getFiltered() {
 
   return allPlayers.filter(p => {
     if (gender !== 'alle' && p.gender !== gender) return false;
-    if (country && (p.nationality || p.country) !== country) return false;
+    if (country && p.nationality !== country) return false;
     if ((p.notability ?? 0) < minNotability) return false;
     if (birthYearActive) {
       if (!p.birth_year) return false;
@@ -268,8 +274,8 @@ function getFiltered() {
     if (searchTerm) {
       const nameMatch = normalize(p.name).includes(searchTerm);
       const cityMatch = normalize(p.city).includes(searchTerm);
-      const countryMatch = normalize(p.country).includes(searchTerm);
-      if (!nameMatch && !cityMatch && !countryMatch) return false;
+      const natMatch  = normalize(p.nationality).includes(searchTerm);
+      if (!nameMatch && !cityMatch && !natMatch) return false;
     }
     return true;
   });
@@ -282,11 +288,11 @@ function groupByCity(players) {
     if (!p.lat || !p.lon) continue;
     const key = `${Math.round(p.lat * 100) / 100},${Math.round(p.lon * 100) / 100}`;
     if (!cityMap.has(key)) {
-      cityMap.set(key, { city: p.city, country: p.country, lat: p.lat, lon: p.lon, players: [] });
+      cityMap.set(key, { city: p.city, nat: p.nationality, slug: p.slug, lat: p.lat, lon: p.lon, players: [] });
     }
     cityMap.get(key).players.push(p);
   }
-  cityMap.forEach(g => g.players.sort((a, b) => b.sitelinks - a.sitelinks));
+  cityMap.forEach(g => g.players.sort((a, b) => b.notability - a.notability));
   return Array.from(cityMap.values());
 }
 
@@ -321,7 +327,7 @@ function updateMap() {
 
 // ===== Marker =====
 function createMarker(group) {
-  const { lat, lon, city, country, players } = group;
+  const { lat, lon, city, nat, players } = group;
   const radius = Math.min(Math.sqrt(players.length) * 3 + 5, 30);
 
   const marker = L.circleMarker([lat, lon], {
@@ -332,7 +338,7 @@ function createMarker(group) {
     weight: 2
   });
 
-  marker.bindTooltip(`${escapeHtml(city)}, ${escapeHtml(country)} (${players.length})`, {
+  marker.bindTooltip(`${escapeHtml(city)}, ${escapeHtml(nat)} (${players.length})`, {
     direction: 'auto',
     className: 'leaflet-tooltip'
   });
@@ -355,7 +361,7 @@ function createMarker(group) {
 
 // ===== Popup =====
 function buildPopupHtml(group) {
-  const { city, country, players } = group;
+  const { city, nat, slug, players } = group;
   const isMobile = window.innerWidth <= 768;
   const maxVisible = isMobile ? 10 : Math.min(players.length, 30);
   const visible = players.slice(0, maxVisible);
@@ -383,8 +389,8 @@ function buildPopupHtml(group) {
           </a>` : `<span style="font-weight:600">${escapeHtml(p.name)}</span>`}
         </div>
         ${p.city ? `<div class="popup-player-detail" style="color:var(--gray-500);font-size:12px"><strong>Birthplace:</strong> ${
-          cityPageSlugs.has(citySlug(p.city, p.country || ''))
-            ? `<a href="/worldmap/city/${citySlug(p.city, p.country || '')}/" style="color:${ACCENT};text-decoration:none" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${escapeHtml(p.city)}</a>`
+          p.slug && cityPageSlugs.has(p.slug)
+            ? `<a href="/worldmap/city/${p.slug}/" style="color:${ACCENT};text-decoration:none" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${escapeHtml(p.city)}</a>`
             : escapeHtml(p.city)
         }</div>` : ''}
         ${p.birth_year && p.birth_year > 1800 ? `<div class="popup-player-detail" style="color:var(--gray-500);font-size:12px"><strong>Birth year:</strong> ${p.birth_year}</div>` : ''}
@@ -396,11 +402,11 @@ function buildPopupHtml(group) {
     <div class="popup-wrapper">
       <div class="popup-header">
         <div class="location-name">${
-          cityPageSlugs.has(citySlug(city, country))
-            ? `<a href="/worldmap/city/${citySlug(city, country)}/" style="color:inherit;text-decoration:none;border-bottom:2px solid ${ACCENT}22" onmouseover="this.style.borderBottomColor='${ACCENT}'" onmouseout="this.style.borderBottomColor='${ACCENT}22'">${escapeHtml(city)}</a>`
+          slug && cityPageSlugs.has(slug)
+            ? `<a href="/worldmap/city/${slug}/" style="color:inherit;text-decoration:none;border-bottom:2px solid ${ACCENT}22" onmouseover="this.style.borderBottomColor='${ACCENT}'" onmouseout="this.style.borderBottomColor='${ACCENT}22'">${escapeHtml(city)}</a>`
             : escapeHtml(city)
         }</div>
-        <div class="player-total">${escapeHtml(country)} · ${players.length} players</div>
+        <div class="player-total">${escapeHtml(nat)} · ${players.length} players</div>
       </div>
       <div class="popup-players">
         ${playersHtml}
