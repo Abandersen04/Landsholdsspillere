@@ -242,14 +242,46 @@ async function loadData() {
 
   document.getElementById('total-label').textContent = allPlayers.length.toLocaleString('da-DK');
 
-  // Populate nationality datalist
-  const countries = [...new Set(allPlayers.map(p => p.nationality).filter(Boolean))].sort();
-  const dl = document.getElementById('country-list');
-  countries.forEach(c => {
-    const opt = document.createElement('option');
-    opt.value = c;
-    dl.appendChild(opt);
-  });
+  // Nationality autocomplete
+  const allNationalities = [...new Set(allPlayers.map(p => p.nationality).filter(Boolean))].sort();
+  const natInput = document.getElementById('country-select');
+  const natDropdown = document.getElementById('country-dropdown');
+  let natSelected = '';
+
+  function renderDropdown(term) {
+    const norm = normalize(term);
+    const matches = norm
+      ? allNationalities.filter(n => normalize(n).includes(norm))
+      : allNationalities;
+    natDropdown.innerHTML = '';
+    if (!matches.length) { natDropdown.style.display = 'none'; return; }
+    if (!norm) {
+      const all = document.createElement('div');
+      all.textContent = 'All nationalities';
+      all.style.cssText = 'padding:8px 12px;cursor:pointer;color:#888;font-style:italic';
+      all.addEventListener('mousedown', () => { natInput.value = ''; natSelected = ''; natDropdown.style.display = 'none'; debouncedUpdate(); });
+      natDropdown.appendChild(all);
+    }
+    matches.slice(0, 80).forEach(n => {
+      const el = document.createElement('div');
+      el.textContent = n;
+      el.style.cssText = 'padding:8px 12px;cursor:pointer';
+      el.addEventListener('mouseover', () => el.style.background = '#eef2f9');
+      el.addEventListener('mouseout',  () => el.style.background = '');
+      el.addEventListener('mousedown', () => {
+        natInput.value = n; natSelected = n;
+        natDropdown.style.display = 'none';
+        debouncedUpdate();
+      });
+      natDropdown.appendChild(el);
+    });
+    natDropdown.style.display = 'block';
+  }
+
+  natInput.addEventListener('focus', () => renderDropdown(natInput.value));
+  natInput.addEventListener('input', () => { natSelected = ''; renderDropdown(natInput.value); debouncedUpdate(); });
+  natInput.addEventListener('blur',  () => setTimeout(() => { natDropdown.style.display = 'none'; }, 150));
+  document.addEventListener('click', e => { if (!natInput.contains(e.target) && !natDropdown.contains(e.target)) natDropdown.style.display = 'none'; });
 }
 
 // ===== Filter =====
@@ -264,7 +296,7 @@ function getFiltered() {
 
   return allPlayers.filter(p => {
     if (gender !== 'alle' && p.gender !== gender) return false;
-    if (country && !normalize(p.nationality).includes(normalize(country))) return false;
+    if (country && !normalize(p.nationality).includes(normalize(natSelected || country))) return false;
     if ((p.notability ?? 0) < minNotability) return false;
     if (birthYearActive) {
       if (!p.birth_year) return false;

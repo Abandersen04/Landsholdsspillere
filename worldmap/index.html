@@ -116,12 +116,19 @@
         </div>
       </div>
 
-      <div class="control-group">
+      <div class="control-group" style="position:relative">
         <label class="control-label" for="country-select">Nationality</label>
-        <input type="text" id="country-select" list="country-list" class="text-input"
-               placeholder="All nationalities…"
-               style="width:100%;padding:8px 10px;border-radius:6px;border:1px solid var(--gray-200);font-size:14px;background:white;box-sizing:border-box">
-        <datalist id="country-list"></datalist>
+        <div style="position:relative">
+          <input type="text" id="country-select" autocomplete="off" class="text-input"
+                 placeholder="All nationalities…"
+                 style="width:100%;padding:8px 10px;border-radius:6px;border:1px solid var(--gray-200);font-size:14px;background:white;box-sizing:border-box">
+          <div id="country-dropdown" style="
+            display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;
+            background:white;border:1px solid var(--gray-200);border-radius:8px;
+            box-shadow:0 4px 16px rgba(27,58,107,.12);max-height:220px;overflow-y:auto;
+            z-index:2000;font-size:14px;
+          "></div>
+        </div>
       </div>
 
       <div class="control-group">
