@@ -213,6 +213,7 @@ function expandPlayer(p) {
   p.notability = p.s;
   p.birth_year = p.y;
   p.nationality= p.nat;
+  p.country    = p.co;
   p.slug       = p.sl;
   if (p.w) p.wiki  = WIKI_BASE + p.w;
   if (p.i) p.image = IMG_BASE + encodeURIComponent(p.i).replace(/%20/g, '_');
@@ -339,7 +340,7 @@ function groupByCity(players) {
     if (!p.lat || !p.lon) continue;
     const key = `${Math.round(p.lat * 100) / 100},${Math.round(p.lon * 100) / 100}`;
     if (!cityMap.has(key)) {
-      cityMap.set(key, { city: p.city, nat: p.nationality, slug: p.slug, lat: p.lat, lon: p.lon, players: [] });
+      cityMap.set(key, { city: p.city, nat: p.country || p.nationality, slug: p.slug, lat: p.lat, lon: p.lon, players: [] });
     }
     cityMap.get(key).players.push(p);
   }

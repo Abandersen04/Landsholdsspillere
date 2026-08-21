@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kolding IF – 1 landsholdsspillere | Landsholdskortet</title>
-  <meta name="description" content="Kolding IF har fostret 1 danske A-landsholdsspillere. Tilsammen har de spillet 1 kampe og scoret 0 mål for Danmark.">
+  <title>Kolding IF – 15 landsholdsspillere | Landsholdskortet</title>
+  <meta name="description" content="Kolding IF har fostret 15 danske A-landsholdsspillere. Tilsammen har de spillet 368 kampe og scoret 70 mål for Danmark.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://landsholdskortet.dk/klub/kolding-if/">
-  <meta property="og:title" content="Kolding IF – 1 landsholdsspillere">
-  <meta property="og:description" content="Kolding IF har fostret 1 danske A-landsholdsspillere. Tilsammen har de spillet 1 kampe og scoret 0 mål for Danmark.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <meta property="og:title" content="Kolding IF – 15 landsholdsspillere">
+  <meta property="og:description" content="Kolding IF har fostret 15 danske A-landsholdsspillere. Tilsammen har de spillet 368 kampe og scoret 70 mål for Danmark.">
   <meta property="og:url" content="https://landsholdskortet.dk/klub/kolding-if/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
@@ -16,7 +18,7 @@
   {"@context":"https://schema.org","@type":"SportsOrganization",
     "name":"Kolding IF",
     "url":"https://landsholdskortet.dk/klub/kolding-if/",
-    "description":"Kolding IF har fostret 1 danske A-landsholdsspillere. Tilsammen har de spillet 1 kampe og scoret 0 mål for Danmark."
+    "description":"Kolding IF har fostret 15 danske A-landsholdsspillere. Tilsammen har de spillet 368 kampe og scoret 70 mål for Danmark."
     ,"logo":"/logos/klub_567.png"
   }
   </script>
@@ -69,13 +71,17 @@
   <div class="header">
     <img src="/logos/klub_567.png" alt="Kolding IF logo" style="height:64px;width:auto;object-fit:contain;margin-bottom:12px">
     <h1>Kolding IF</h1>
-    <div style="margin-bottom:8px"><a href="http://www.kif-fodbold.dk/" target="_blank" rel="noopener" style="color:#C8102E;font-size:14px">Klubbens hjemmeside</a> · <a href="https://www.dbu.dk/resultater/klub/567/klubinfo" target="_blank" rel="noopener" style="color:#C8102E;font-size:14px">DBU-profil</a></div>
+    <div style="margin-bottom:8px"><a href="https://www.dbu.dk/resultater/klub/567/klubinfo" target="_blank" rel="noopener" style="color:#C8102E;font-size:14px">DBU-profil</a></div>
     <div class="stats-row">
-      <div class="stat"><div class="stat-n">1</div><div class="stat-l">Landsholdsspillere</div></div>
-      <div class="stat"><div class="stat-n">1</div><div class="stat-l">Kampe i alt</div></div>
-      <div class="stat"><div class="stat-n">0</div><div class="stat-l">Mål i alt</div></div>
+      <div class="stat"><div class="stat-n">15</div><div class="stat-l">Landsholdsspillere</div></div>
+      <div class="stat"><div class="stat-n">368</div><div class="stat-l">Kampe i alt</div></div>
+      <div class="stat"><div class="stat-n">70</div><div class="stat-l">Mål i alt</div></div>
     </div>
   </div>
+
+  <div class="card" style="margin-top:20px;font-size:15px;line-height:1.7;color:#333">
+  <p>Kolding IF er placeret som nr. 39 ud af 338 barndomsklubber i Danmark målt på barndomsklub for A-landsholdsspillere. De 5 spillere med flest kampe for Danmark fra Kolding IF er <a href="/spiller/sanne-troelsgaard-nielsen-5294/" style="color:#C8102E">Sanne Troelsgaard Nielsen</a> (197 kampe), <a href="/spiller/jan-moelby-3868/" style="color:#C8102E">Jan Mølby</a> (33 kampe), <a href="/spiller/sara-thrige-6945/" style="color:#C8102E">Sara Thrige</a> (30 kampe), <a href="/spiller/niki-zimling-4691/" style="color:#C8102E">Niki Zimling</a> (24 kampe) og <a href="/spiller/emma-faerge-7609/" style="color:#C8102E">Emma Færge</a> (20 kampe).</p>
+</div>
 
   <div id="klub-map" style="height:260px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.1)"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
@@ -85,8 +91,8 @@
   const map = L.map("klub-map",{zoomControl:true});
   L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{attribution:"© OpenStreetMap © CARTO",maxZoom:18}).addTo(map);
   const icon = L.divIcon({html:'<div style="width:36px;height:36px;border-radius:50%;border:2px solid #C8102E;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center"><img src="/logos/klub_567.png" style="width:100%;height:100%;object-fit:contain" onerror="this.parentElement.style.background=\'#C8102E\'"></div>',className:'',iconSize:[36,36],iconAnchor:[18,18]});
-  L.marker([55.493563,9.459691],{icon}).addTo(map).bindPopup("<strong>Kolding IF</strong>").openPopup();
-  map.setView([55.493563,9.459691],13);
+  L.marker([55.4936,9.4597],{icon}).addTo(map).bindPopup("<strong>Kolding IF</strong>").openPopup();
+  map.setView([55.4936,9.4597],13);
 })();
 </script>
 
@@ -99,16 +105,30 @@
     <table id="spillertabel">
       <thead>
         <tr>
-          <th onclick="sortTable(0)">Spiller ↕</th>
-          <th style="text-align:center" onclick="sortTable(1)">Køn ↕</th>
-          <th style="text-align:center" onclick="sortTable(2)">Kampe ↕</th>
-          <th style="text-align:center" onclick="sortTable(3)">Mål ↕</th>
-          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato ↕</th>
-          <th class="hide-mobile" onclick="sortTable(5)">Fødested ↕</th>
+          <th onclick="sortTable(0)">Spiller</th>
+          <th style="text-align:center" onclick="sortTable(1)">Køn</th>
+          <th style="text-align:center" onclick="sortTable(2)">Kampe</th>
+          <th style="text-align:center" onclick="sortTable(3)">Mål</th>
+          <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato</th>
+          <th class="hide-mobile" onclick="sortTable(5)">Fødested</th>
         </tr>
       </thead>
       <tbody id="tbody">
-<tr data-gender="kvinde"><td><a href="/spiller/linda-nissen-4414/" style="color:#C8102E;font-weight:500">Linda Nissen</a></td><td style="text-align:center">K</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td>7. oktober 1978</td><td><a href="/by/kolding/" style="color:#C8102E">Kolding</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/sanne-troelsgaard-nielsen-5294/" style="color:#C8102E;font-weight:500">Sanne Troelsgaard Nielsen</a></td><td style="text-align:center">K</td><td style="text-align:center">197</td><td style="text-align:center">57</td><td>15. august 1988</td><td><a href="/by/vejen/" style="color:#C8102E">Vejen</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/jan-moelby-3868/" style="color:#C8102E;font-weight:500">Jan Mølby</a></td><td style="text-align:center">M</td><td style="text-align:center">33</td><td style="text-align:center">2</td><td>4. juli 1963</td><td><a href="/by/kolding/" style="color:#C8102E">Kolding</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/sara-thrige-6945/" style="color:#C8102E;font-weight:500">Sara Thrige</a></td><td style="text-align:center">K</td><td style="text-align:center">30</td><td style="text-align:center">2</td><td>15. maj 1996</td><td><a href="/by/farsoe/" style="color:#C8102E">Farsø</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/niki-zimling-4691/" style="color:#C8102E;font-weight:500">Niki Zimling</a></td><td style="text-align:center">M</td><td style="text-align:center">24</td><td style="text-align:center">1</td><td>19. april 1985</td><td><a href="/by/taarnby/" style="color:#C8102E">Tårnby</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/emma-faerge-7609/" style="color:#C8102E;font-weight:500">Emma Færge</a></td><td style="text-align:center">K</td><td style="text-align:center">20</td><td style="text-align:center">1</td><td>6. december 2000</td><td><a href="/by/herning/" style="color:#C8102E">Herning</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/knud-engedal-3286/" style="color:#C8102E;font-weight:500">Knud Engedal</a></td><td style="text-align:center">M</td><td style="text-align:center">17</td><td style="text-align:center">–</td><td>18. marts 1942</td><td><a href="/by/soenderborg/" style="color:#C8102E">Sønderborg</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/johnny-moelby-3969/" style="color:#C8102E;font-weight:500">Johnny Mølby</a></td><td style="text-align:center">M</td><td style="text-align:center">16</td><td style="text-align:center">–</td><td>4. februar 1969</td><td><a href="/by/kolding/" style="color:#C8102E">Kolding</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/joergen-markussen-3357/" style="color:#C8102E;font-weight:500">Jørgen Markussen</a></td><td style="text-align:center">M</td><td style="text-align:center">10</td><td style="text-align:center">1</td><td>19. november 1947</td><td><a href="/by/hjortsvang/" style="color:#C8102E">Hjortsvang</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/ole-skouboe-3548/" style="color:#C8102E;font-weight:500">Ole Skouboe</a></td><td style="text-align:center">M</td><td style="text-align:center">6</td><td style="text-align:center">–</td><td>6. september 1949</td><td><a href="/by/aarhus/" style="color:#C8102E">Aarhus</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/iver-schriver-3439/" style="color:#C8102E;font-weight:500">Iver Schriver</a></td><td style="text-align:center">M</td><td style="text-align:center">5</td><td style="text-align:center">6</td><td>4. august 1949</td><td><a href="/by/lemvig/" style="color:#C8102E">Lemvig</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/leif-hansen-3913/" style="color:#C8102E;font-weight:500">Leif Hansen</a></td><td style="text-align:center">M</td><td style="text-align:center">4</td><td style="text-align:center">–</td><td>16. februar 1955</td><td><a href="/by/lunderskov/" style="color:#C8102E">Lunderskov</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/alan-hansen-3901/" style="color:#C8102E;font-weight:500">Alan Hansen</a></td><td style="text-align:center">M</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td>7. november 1960</td><td><a href="/by/middelfart/" style="color:#C8102E">Middelfart</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/laura-worsoee-7697/" style="color:#C8102E;font-weight:500">Laura Worsøe</a></td><td style="text-align:center">K</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td>28. oktober 2001</td><td><a href="/by/odense/" style="color:#C8102E">Odense</a></td></tr>
+<tr data-gender="mand"><td><a href="/spiller/jonas-lossl-5268/" style="color:#C8102E;font-weight:500">Jonas Lössl</a></td><td style="text-align:center">M</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td>1. februar 1989</td><td><a href="/by/kolding/" style="color:#C8102E">Kolding</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/sarah-katrine-thygesen-8070/" style="color:#C8102E;font-weight:500">Sarah Katrine Thygesen</a></td><td style="text-align:center">K</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td>5. november 2003</td><td><a href="/by/esbjerg/" style="color:#C8102E">Esbjerg</a></td></tr>
       </tbody>
     </table>
   </div>
