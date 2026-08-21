@@ -117,10 +117,11 @@
       </div>
 
       <div class="control-group">
-        <label class="control-label" for="country-select">Country</label>
-        <select id="country-select" class="text-input" style="width:100%;padding:8px 10px;border-radius:6px;border:1px solid var(--gray-200);font-size:14px;background:white">
-          <option value="">All countries</option>
-        </select>
+        <label class="control-label" for="country-select">Nationality</label>
+        <input type="text" id="country-select" list="country-list" class="text-input"
+               placeholder="All nationalities…"
+               style="width:100%;padding:8px 10px;border-radius:6px;border:1px solid var(--gray-200);font-size:14px;background:white;box-sizing:border-box">
+        <datalist id="country-list"></datalist>
       </div>
 
       <div class="control-group">

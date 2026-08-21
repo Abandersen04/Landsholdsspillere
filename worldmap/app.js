@@ -122,7 +122,7 @@ function initSidebar() {
 // ===== Controls =====
 function initControls() {
   document.querySelectorAll('input[name="gender"]').forEach(el => el.addEventListener('change', debouncedUpdate));
-  document.getElementById('country-select').addEventListener('change', debouncedUpdate);
+  document.getElementById('country-select').addEventListener('input', debouncedUpdate);
   document.getElementById('search').addEventListener('input', debouncedUpdate);
 
   // Position info-tooltip within sidebar bounds
@@ -242,14 +242,13 @@ async function loadData() {
 
   document.getElementById('total-label').textContent = allPlayers.length.toLocaleString('da-DK');
 
-  // Populate nationality dropdown
+  // Populate nationality datalist
   const countries = [...new Set(allPlayers.map(p => p.nationality).filter(Boolean))].sort();
-  const sel = document.getElementById('country-select');
+  const dl = document.getElementById('country-list');
   countries.forEach(c => {
     const opt = document.createElement('option');
     opt.value = c;
-    opt.textContent = c;
-    sel.appendChild(opt);
+    dl.appendChild(opt);
   });
 }
 
@@ -265,7 +264,7 @@ function getFiltered() {
 
   return allPlayers.filter(p => {
     if (gender !== 'alle' && p.gender !== gender) return false;
-    if (country && p.nationality !== country) return false;
+    if (country && !normalize(p.nationality).includes(normalize(country))) return false;
     if ((p.notability ?? 0) < minNotability) return false;
     if (birthYearActive) {
       if (!p.birth_year) return false;
