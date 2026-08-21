@@ -4,6 +4,7 @@ let map;
 let markersLayer;
 let debounceTimer;
 let cityPageSlugs = new Set();
+let natSelected = '';
 
 const ACCENT = '#1B3A6B';
 const WIKI_BASE = 'https://en.wikipedia.org/wiki/';
@@ -246,8 +247,6 @@ async function loadData() {
   const allNationalities = [...new Set(allPlayers.map(p => p.nationality).filter(Boolean))].sort();
   const natInput = document.getElementById('country-select');
   const natDropdown = document.getElementById('country-dropdown');
-  let natSelected = '';
-
   function renderDropdown(term) {
     const norm = normalize(term);
     const matches = norm
