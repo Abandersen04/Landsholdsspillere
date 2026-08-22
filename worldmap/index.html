@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  <title>World Map – Football players from around the world</title>
-  <meta name="description" content="Interactive world map of football players via Wikidata. Find players from around the world by birthplace and country.">
+  <title>World Football Map – Birthplaces of 263,000 Football Players | Landsholdskortet</title>
+  <meta name="description" content="Interactive map showing the birthplaces of over 263,000 association football players worldwide. Explore where footballers come from, filter by nationality, notability and era. Data from Wikidata.">
+  <meta name="keywords" content="football player birthplaces, world football map, where footballers are born, association football players by country, football birthplace map, soccer player origins">
+  <link rel="canonical" href="https://landsholdskortet.dk/worldmap/">
+  <meta property="og:title" content="World Football Map – Birthplaces of 263,000 Football Players">
+  <meta property="og:description" content="Interactive map showing the birthplaces of over 263,000 association football players. Filter by nationality, notability score and birth year.">
+  <meta property="og:url" content="https://landsholdskortet.dk/worldmap/">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "World Football Map",
+    "url": "https://landsholdskortet.dk/worldmap/",
+    "description": "An interactive map showing the birthplaces of over 263,000 association football players from around the world, based on Wikidata.",
+    "applicationCategory": "SportsApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "en",
+    "keywords": "football, birthplace, world map, association football, soccer, players, Wikidata",
+    "author": {"@type": "Organization", "name": "Landsholdskortet", "url": "https://landsholdskortet.dk"},
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "DKK"}
+  },{
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "World Football Players – Birthplace Dataset",
+    "description": "263,026 association football players (Wikidata Q937857) with birthplace coordinates, nationality, notability score, birth year and Wikipedia links. Derived from a Wikidata dump.",
+    "url": "https://landsholdskortet.dk/worldmap/",
+    "creator": {"@type": "Organization", "name": "Wikidata", "url": "https://www.wikidata.org"},
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "keywords": ["football", "soccer", "birthplace", "association football", "players", "Wikidata"],
+    "temporalCoverage": "1850/2020"
+  }]
+  </script>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/css/vendor/leaflet.css">
   <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
@@ -169,8 +200,28 @@
       </div>
 
       <div style="margin-top:auto;padding:16px 0 8px;border-top:1px solid var(--gray-100);font-size:12px;color:var(--gray-400);line-height:1.6">
-        <strong style="color:var(--gray-500);font-size:11px;text-transform:uppercase;letter-spacing:.05em">About the data</strong><br>
-        All players are sourced from <a href="https://www.wikidata.org" target="_blank" rel="noopener" style="color:#1B3A6B">Wikidata</a>, which is a community-edited database. Each player is classified as an <em>association football player</em> (<a href="https://www.wikidata.org/wiki/Q937857" target="_blank" rel="noopener" style="color:#1B3A6B">Q937857</a>) with a known birthplace.<br><br>
+        <strong style="color:var(--gray-500);font-size:11px;text-transform:uppercase;letter-spacing:.05em">About this map</strong><br>
+        This world football map shows the <strong style="color:var(--gray-500)">birthplaces of over 263,000 association football players</strong> from every corner of the globe. Each pin represents a city — click it to see which players were born there, filter by nationality, notability or era, and follow links to individual Wikipedia articles.<br><br>
+        The map reveals patterns in global football geography: South American capitals like Buenos Aires and Montevideo have produced thousands of players; European cities like Glasgow, Liverpool and Budapest dominated in the early 20th century; and modern football's reach extends to cities in Africa, Asia and the Pacific.<br><br>
+        <strong style="color:var(--gray-500)">Popular birthplace cities:</strong>
+        <div style="margin:6px 0 10px;display:flex;flex-wrap:wrap;gap:5px">
+          <a href="/worldmap/city/buenos-aires-argentina/" style="color:#1B3A6B;font-size:11px;background:#eef2f9;border-radius:10px;padding:2px 8px;text-decoration:none">Buenos Aires</a>
+          <a href="/worldmap/city/montevideo-uruguay/" style="color:#1B3A6B;font-size:11px;background:#eef2f9;border-radius:10px;padding:2px 8px;text-decoration:none">Montevideo</a>
+          <a href="/worldmap/city/glasgow-united-kingdom/" style="color:#1B3A6B;font-size:11px;background:#eef2f9;border-radius:10px;padding:2px 8px;text-decoration:none">Glasgow</a>
+          <a href="/worldmap/city/rio-de-janeiro-brazil/" style="color:#1B3A6B;font-size:11px;background:#eef2f9;border-radius:10px;padding:2px 8px;text-decoration:none">Rio de Janeiro</a>
+          <a href="/worldmap/city/sao-paulo-brazil/" style="color:#1B3A6B;font-size:11px;background:#eef2f9;border-radius:10px;padding:2px 8px;text-decoration:none">São Paulo</a>
+          <a href="/worldmap/city/budapest-hungary/" style="color:#1B3A6B;font-size:11px;background:#eef2f9;border-radius:10px;padding:2px 8px;text-decoration:none">Budapest</a>
+          <a href="/worldmap/city/liverpool-united-kingdom/" style="color:#1B3A6B;font-size:11px;background:#eef2f9;border-radius:10px;padding:2px 8px;text-decoration:none">Liverpool</a>
+          <a href="/worldmap/city/amsterdam-netherlands/" style="color:#1B3A6B;font-size:11px;background:#eef2f9;border-radius:10px;padding:2px 8px;text-decoration:none">Amsterdam</a>
+          <a href="/worldmap/city/madrid-spain/" style="color:#1B3A6B;font-size:11px;background:#eef2f9;border-radius:10px;padding:2px 8px;text-decoration:none">Madrid</a>
+          <a href="/worldmap/city/barcelona-spain/" style="color:#1B3A6B;font-size:11px;background:#eef2f9;border-radius:10px;padding:2px 8px;text-decoration:none">Barcelona</a>
+          <a href="/worldmap/city/rome-italy/" style="color:#1B3A6B;font-size:11px;background:#eef2f9;border-radius:10px;padding:2px 8px;text-decoration:none">Rome</a>
+          <a href="/worldmap/city/lima-peru/" style="color:#1B3A6B;font-size:11px;background:#eef2f9;border-radius:10px;padding:2px 8px;text-decoration:none">Lima</a>
+          <a href="/worldmap/city/vienna-austria/" style="color:#1B3A6B;font-size:11px;background:#eef2f9;border-radius:10px;padding:2px 8px;text-decoration:none">Vienna</a>
+          <a href="/worldmap/city/santiago-chile/" style="color:#1B3A6B;font-size:11px;background:#eef2f9;border-radius:10px;padding:2px 8px;text-decoration:none">Santiago</a>
+        </div>
+        <strong style="color:var(--gray-500)">About the data:</strong><br>
+        All players are sourced from <a href="https://www.wikidata.org" target="_blank" rel="noopener" style="color:#1B3A6B">Wikidata</a>. Each player is classified as an <em>association football player</em> (<a href="https://www.wikidata.org/wiki/Q937857" target="_blank" rel="noopener" style="color:#1B3A6B">Q937857</a>) with a known birthplace.<br><br>
         <strong style="color:var(--gray-500)">Known limitations:</strong>
         <ul style="margin:4px 0 0 16px;padding:0">
           <li>Missing players: if a player lacks a birthplace or football classification on Wikidata, they will not appear here</li>
@@ -179,7 +230,7 @@
           <li>English-language bias: English Wikipedia has more editors covering lower-league English and British football than equivalent leagues elsewhere — so the UK has disproportionately many players in the dataset relative to its actual global football output</li>
         </ul>
         <br>
-        Errors can be corrected directly on <a href="https://www.wikidata.org" target="_blank" rel="noopener" style="color:#1B3A6B">wikidata.org</a> — changes will appear here when the data is next updated.<br><br>
+        Errors can be corrected directly on <a href="https://www.wikidata.org" target="_blank" rel="noopener" style="color:#1B3A6B">wikidata.org</a>.<br><br>
         <span id="total-label">0</span> players total · Data from Wikidata
       </div>
     </aside>
