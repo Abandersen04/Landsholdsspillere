@@ -9,6 +9,12 @@ let fullLoaded = false;
 let fullLoading = false;
 
 const ACCENT = '#1B3A6B';
+
+function getMinPlayers() {
+  const v = parseInt(document.getElementById('min-players').value, 10);
+  // Logarithmic: slider 0–100 → players 1–500
+  return Math.round(Math.pow(500, v / 100));
+}
 const WIKI_BASE = 'https://en.wikipedia.org/wiki/';
 const IMG_BASE  = 'https://commons.wikimedia.org/wiki/Special:FilePath/';
 
@@ -189,9 +195,10 @@ function initControls() {
 
   const minPlayersEl = document.getElementById('min-players');
   const minPlayersLabel = document.getElementById('min-players-label');
+  minPlayersEl.min = 0; minPlayersEl.max = 100; minPlayersEl.value = 0;
   updateSingleSliderFill(minPlayersEl);
   minPlayersEl.addEventListener('input', () => {
-    minPlayersLabel.textContent = minPlayersEl.value;
+    minPlayersLabel.textContent = getMinPlayers();
     updateSingleSliderFill(minPlayersEl);
     debouncedUpdate();
   });
@@ -353,7 +360,7 @@ function updateMap() {
   const filtered = getFiltered();
   let groups = groupByCity(filtered);
 
-  const minPlayers = parseInt(document.getElementById('min-players').value, 10);
+  const minPlayers = getMinPlayers();
   if (minPlayers > 1) groups = groups.filter(g => g.players.length >= minPlayers);
 
   document.getElementById('player-count').textContent = filtered.length.toLocaleString('da-DK');
