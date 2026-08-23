@@ -115,7 +115,7 @@
         <a href="/" class="sidebar-nav-item">Denmark</a>
         <span class="sidebar-nav-item active" id="nav-verden">World</span>
         <a href="/worldmap/toplists/" class="sidebar-nav-item">Top lists</a>
-        <a href="/worldmap/most-read/" class="sidebar-nav-item">Most-read players</a>
+        <a href="/worldmap/toplists/#most-read" class="sidebar-nav-item">Most-read players</a>
       </nav>
 
       <div class="stats-row">
@@ -190,6 +190,25 @@
         </label>
         <div class="range-slider-single">
           <input type="range" id="min-sitelinks" min="0" max="100" value="40" step="1" class="slider">
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">
+          Min. Wikipedia views: <span id="pageviews-label">0</span>
+          <span class="info-icon" tabindex="0" aria-label="About Wikipedia views">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="vertical-align:middle;margin-left:3px;opacity:.5">
+              <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M8 7v4M8 5.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <div class="info-tooltip">
+              <strong>Minimum Wikipedia pageviews</strong><br>
+              Total Wikipedia views across all language editions, January 2023 – August 2025. Only the top 1,000 most notable players have pageview data.
+            </div>
+          </span>
+        </label>
+        <div class="range-slider-single">
+          <input type="range" id="min-pageviews" min="0" max="9" value="0" step="1" class="slider">
         </div>
       </div>
 

@@ -8,6 +8,25 @@ let natSelected = '';
 let fullLoaded = false;
 let fullLoading = false;
 
+// Pageviews filter
+let pageviewsMap = null; // QID → views
+const PV_STEPS = [0, 100000, 500000, 1000000, 2000000, 5000000, 10000000, 20000000, 50000000, 100000000];
+const PV_LABELS = ['0', '100K', '500K', '1M', '2M', '5M', '10M', '20M', '50M', '100M'];
+
+function getMinPageviews() {
+  const step = parseInt(document.getElementById('min-pageviews').value, 10);
+  return PV_STEPS[step] || 0;
+}
+
+function loadPageviewsData(cb) {
+  if (pageviewsMap) { cb(); return; }
+  fetch('most-read-data.json').then(r => r.json()).then(rows => {
+    pageviewsMap = {};
+    rows.forEach(p => { pageviewsMap[p.q] = p.views; });
+    cb();
+  });
+}
+
 const ACCENT = '#1B3A6B';
 
 function getMinPlayers() {
@@ -193,6 +212,20 @@ function initControls() {
     else debouncedUpdate();
   });
 
+  const pvEl = document.getElementById('min-pageviews');
+  const pvLabel = document.getElementById('pageviews-label');
+  updateSingleSliderFill(pvEl);
+  pvEl.addEventListener('input', () => {
+    const step = parseInt(pvEl.value, 10);
+    pvLabel.textContent = PV_LABELS[step];
+    updateSingleSliderFill(pvEl);
+    if (step > 0) {
+      loadPageviewsData(() => debouncedUpdate());
+    } else {
+      debouncedUpdate();
+    }
+  });
+
   const minPlayersEl = document.getElementById('min-players');
   const minPlayersLabel = document.getElementById('min-players-label');
   minPlayersEl.min = 0; minPlayersEl.max = 100; minPlayersEl.value = 0;
@@ -317,6 +350,7 @@ function getFiltered() {
   const gender = document.querySelector('input[name="gender"]:checked').value;
   const country = document.getElementById('country-select').value;
   const minNotability = parseInt(document.getElementById('min-sitelinks').value, 10);
+  const minPV = getMinPageviews();
   const searchTerm = normalize(document.getElementById('search').value.trim());
   const minBY = Math.min(parseInt(document.getElementById('birth-year-min').value), parseInt(document.getElementById('birth-year-max').value));
   const maxBY = Math.max(parseInt(document.getElementById('birth-year-min').value), parseInt(document.getElementById('birth-year-max').value));
@@ -326,6 +360,10 @@ function getFiltered() {
     if (gender !== 'alle' && p.gender !== gender) return false;
     if (country && !normalize(p.nationality).includes(normalize(natSelected || country))) return false;
     if ((p.notability ?? 0) < minNotability) return false;
+    if (minPV > 0) {
+      const views = pageviewsMap ? (pageviewsMap[p.qid] || 0) : 0;
+      if (views < minPV) return false;
+    }
     if (birthYearActive) {
       if (!p.birth_year) return false;
       if (p.birth_year < minBY || p.birth_year > maxBY) return false;
