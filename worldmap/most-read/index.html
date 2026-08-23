@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Most-Read Football Players on Wikipedia | Landsholdskortet</title>
+  <meta name="description" content="The 1,000 most-read football players on Wikipedia, ranked by total pageviews across all language editions (2023–2025). Filter by nationality, birth year, and gender.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://landsholdskortet.dk/worldmap/most-read/">
+  <meta property="og:title" content="Most-Read Football Players on Wikipedia">
+  <meta property="og:description" content="Rankings based on Wikipedia pageviews across all language editions, 2023–2025.">
+  <meta property="og:url" content="https://landsholdskortet.dk/worldmap/most-read/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/fonts/inter.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Inter", -apple-system, sans-serif; background: #f4f4f4; color: #1a1a1a; }
+    a { color: #1B3A6B; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .topbar { background: #1B3A6B; padding: 12px 20px; display: flex; align-items: center; gap: 16px; position: sticky; top: 0; z-index: 101; }
+    .topbar a.home { color: #fff; font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 6px; }
+    .topbar a.home:hover { text-decoration: none; opacity: .85; }
+
+    .page-header { background: #fff; border-bottom: 1px solid #eee; padding: 28px 24px 20px; }
+    .page-header h1 { font-size: 26px; margin-bottom: 6px; }
+    .page-header p { color: #666; font-size: 14px; line-height: 1.6; }
+
+    .filters { background: #fff; border-bottom: 1px solid #eee; padding: 14px 24px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; position: sticky; top: 48px; z-index: 100; }
+    .filter-group { display: flex; align-items: center; gap: 8px; }
+    .filter-label { font-size: 13px; color: #666; white-space: nowrap; }
+    .pill-row { display: flex; gap: 5px; }
+    .pill { padding: 5px 12px; border-radius: 20px; border: 1px solid #ddd; background: #fff; font-size: 12px; cursor: pointer; font-family: inherit; color: #444; transition: all .15s; }
+    .pill.active { background: #1B3A6B; color: #fff; border-color: #1B3A6B; }
+    .pill:hover:not(.active) { border-color: #1B3A6B; color: #1B3A6B; }
+    select.fsel { padding: 5px 10px; border-radius: 6px; border: 1px solid #ddd; font-size: 13px; font-family: inherit; background: #fff; color: #333; max-width: 180px; }
+    .yr-range { display: flex; align-items: center; gap: 6px; font-size: 13px; }
+    .yr-range input[type=range] { width: 80px; }
+    #result-count { font-size: 13px; color: #888; margin-left: auto; white-space: nowrap; }
+
+    .content { max-width: 960px; margin: 24px auto; padding: 0 16px 60px; }
+
+    .top-table { width: 100%; border-collapse: collapse; font-size: 14px; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.07); }
+    .top-table thead th { text-align: left; color: #999; font-weight: 500; font-size: 11px; padding: 10px 12px; border-bottom: 2px solid #eee; text-transform: uppercase; letter-spacing: .4px; background: #fafafa; }
+    .top-table th.right, .top-table td.right { text-align: right; }
+    .top-table td { padding: 9px 12px; border-bottom: 1px solid #f5f5f5; vertical-align: middle; }
+    .top-table tr:last-child td { border-bottom: none; }
+    .top-table tr:hover td { background: #fafafa; }
+    .top-table tr.hidden { display: none; }
+    td.rank { color: #bbb; font-size: 12px; width: 36px; }
+    td.player-cell { display: flex; align-items: center; gap: 10px; }
+    .thumb { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #eee; flex-shrink: 0; }
+    .thumb-placeholder { width: 36px; height: 36px; border-radius: 50%; background: #e8edf5; flex-shrink: 0; }
+    .player-name { font-weight: 600; }
+    .player-meta { font-size: 12px; color: #888; }
+    td.views-cell { font-weight: 600; text-align: right; white-space: nowrap; }
+    td.nat-cell { color: #555; font-size: 13px; }
+    td.year-cell { color: #888; font-size: 13px; text-align: right; }
+
+    .no-results { text-align: center; padding: 60px; color: #aaa; font-size: 15px; }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="/worldmap/" class="home">
+    <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+      <path d="M13 17l-7-7 7-7" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    World Football Map
+  </a>
+</div>
+
+<div class="page-header">
+  <h1>Most-Read Football Players on Wikipedia</h1>
+  <p>Top 1,000 players ranked by total Wikipedia pageviews across all language editions, January 2023 – August 2025.</p>
+</div>
+
+<div class="filters">
+  <div class="filter-group">
+    <span class="filter-label">Gender</span>
+    <div class="pill-row">
+      <button class="pill active" data-g="all">All</button>
+      <button class="pill" data-g="m">Men</button>
+      <button class="pill" data-g="f">Women</button>
+    </div>
+  </div>
+
+  <div class="filter-group">
+    <span class="filter-label">Nationality</span>
+    <select class="fsel" id="nat-sel"><option value="">All nationalities</option></select>
+  </div>
+
+  <div class="filter-group">
+    <span class="filter-label">Born</span>
+    <div class="yr-range">
+      <input type="range" id="yr-min" min="1920" max="2010" value="1920">
+      <span id="lbl-yr-min">1920</span>
+      –
+      <input type="range" id="yr-max" min="1920" max="2010" value="2010">
+      <span id="lbl-yr-max">2010</span>
+    </div>
+  </div>
+
+  <span id="result-count"></span>
+</div>
+
+<div class="content">
+  <table class="top-table" id="main-table">
+    <thead>
+      <tr>
+        <th style="width:40px">#</th>
+        <th>Player</th>
+        <th>Nationality</th>
+        <th class="right">Born</th>
+        <th class="right">Wikipedia views</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+  <div class="no-results" id="no-results" style="display:none">No players match your filters.</div>
+</div>
+
+<script>
+const WIKI = 'https://en.wikipedia.org/wiki/';
+const IMG  = 'https://commons.wikimedia.org/wiki/Special:FilePath/';
+
+function fmt(n) {
+  if (n >= 1e6) return (n/1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return (n/1e3).toFixed(0) + 'K';
+  return n.toString();
+}
+
+function esc(s) {
+  return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+let data = [];
+let gFilter = 'all';
+let natFilter = '';
+let yrMin = 1920, yrMax = 2010;
+
+fetch('../most-read-data.json').then(r => r.json()).then(rows => {
+  data = rows;
+  buildNatDropdown();
+  render();
+});
+
+function buildNatDropdown() {
+  const counts = {};
+  data.forEach(p => { if (p.nat) counts[p.nat] = (counts[p.nat]||0) + 1; });
+  const sorted = Object.entries(counts).sort((a,b) => b[1]-a[1]);
+  const sel = document.getElementById('nat-sel');
+  sorted.forEach(([nat, n]) => {
+    const o = document.createElement('option');
+    o.value = nat;
+    o.textContent = `${nat} (${n})`;
+    sel.appendChild(o);
+  });
+}
+
+function render() {
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = '';
+  let rank = 0;
+  let shown = 0;
+
+  data.forEach((p, i) => {
+    if (gFilter !== 'all' && p.g !== gFilter) return;
+    if (natFilter && p.nat !== natFilter) return;
+    if (p.y && (p.y < yrMin || p.y > yrMax)) return;
+    if (!p.y && (yrMin > 1920 || yrMax < 2010)) return;
+
+    rank++;
+    shown++;
+
+    const img = p.i
+      ? `<img class="thumb" src="${IMG}${encodeURIComponent(p.i)}?width=72" loading="lazy" alt="">`
+      : `<div class="thumb-placeholder"></div>`;
+
+    const nameLink = p.w
+      ? `<a href="${WIKI}${p.w}" target="_blank">${esc(p.n)}</a>`
+      : esc(p.n);
+
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td class="rank">${rank}</td>
+      <td><div class="player-cell">${img}<div><div class="player-name">${nameLink}</div></div></div></td>
+      <td class="nat-cell">${esc(p.nat||'')}</td>
+      <td class="year-cell">${p.y || '–'}</td>
+      <td class="views-cell">${fmt(p.views)}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  document.getElementById('result-count').textContent = `${shown} players`;
+  document.getElementById('no-results').style.display = shown === 0 ? 'block' : 'none';
+  document.getElementById('main-table').style.display = shown === 0 ? 'none' : '';
+}
+
+// Gender pills
+document.querySelectorAll('.pill[data-g]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.pill[data-g]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    gFilter = btn.dataset.g;
+    render();
+  });
+});
+
+// Nationality
+document.getElementById('nat-sel').addEventListener('change', e => {
+  natFilter = e.target.value;
+  render();
+});
+
+// Year sliders
+const yrMinEl = document.getElementById('yr-min');
+const yrMaxEl = document.getElementById('yr-max');
+const lblMin  = document.getElementById('lbl-yr-min');
+const lblMax  = document.getElementById('lbl-yr-max');
+
+yrMinEl.addEventListener('input', () => {
+  yrMin = parseInt(yrMinEl.value);
+  if (yrMin > yrMax) { yrMax = yrMin; yrMaxEl.value = yrMax; lblMax.textContent = yrMax; }
+  lblMin.textContent = yrMin;
+  render();
+});
+yrMaxEl.addEventListener('input', () => {
+  yrMax = parseInt(yrMaxEl.value);
+  if (yrMax < yrMin) { yrMin = yrMax; yrMinEl.value = yrMin; lblMin.textContent = yrMin; }
+  lblMax.textContent = yrMax;
+  render();
+});
+</script>
+</body>
+</html>
