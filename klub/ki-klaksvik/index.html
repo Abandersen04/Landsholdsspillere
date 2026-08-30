@@ -87,7 +87,7 @@
 <script>
 (function(){
   const map = L.map("klub-map",{zoomControl:true});
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{attribution:"© OpenStreetMap © CARTO",maxZoom:18}).addTo(map);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"© OpenStreetMap contributors",maxZoom:19}).addTo(map);
   const icon = L.divIcon({html:'<div style="width:36px;height:36px;border-radius:50%;border:2px solid #C8102E;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/82/K%C3%8D_Klaksv%C3%ADk_logo.svg/250px-K%C3%8D_Klaksv%C3%ADk_logo.svg.png" style="width:100%;height:100%;object-fit:contain" onerror="this.parentElement.style.background=\'#C8102E\'"></div>',className:'',iconSize:[36,36],iconAnchor:[18,18]});
   L.marker([62.2239,-6.5786],{icon}).addTo(map).bindPopup("<strong>KÍ Klaksvík</strong>").openPopup();
   map.setView([62.2239,-6.5786],13);

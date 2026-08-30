@@ -77,8 +77,8 @@
 <script>
 (function() {
   const map = L.map('by-map', {zoomControl:true});
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
-    {attribution:'© OpenStreetMap © CARTO', maxZoom:18}).addTo(map);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {attribution:'© OpenStreetMap contributors', maxZoom:19}).addTo(map);
   const marker = L.circleMarker([55.9913060719061, 12.5418126773623],
     {radius:10, color:'#C8102E', fillColor:'#C8102E', fillOpacity:0.85, weight:2}).addTo(map);
   marker.bindPopup('<strong>Espegærde</strong><br>1 landsholdsspillere').openPopup();

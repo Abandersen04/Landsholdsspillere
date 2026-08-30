@@ -261,8 +261,8 @@ const clubs = [{"navn": "SfB", "lat": 55.0563, "lng": 10.5772, "barndom": true, 
 const birthMarker = {"lat": 47.217222222, "lng": -1.553888888, "navn": "Nantes"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

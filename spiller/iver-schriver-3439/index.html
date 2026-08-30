@@ -256,8 +256,8 @@ const clubs = [{"navn": "Aulum IF", "lat": 56.2656, "lng": 8.7998, "barndom": tr
 const birthMarker = {"lat": 56.5486971, "lng": 8.3046456, "navn": "Lemvig"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

@@ -266,8 +266,8 @@ const clubs = [{"navn": "HEI Aarhus", "lat": 56.2267, "lng": 10.2982, "barndom":
 const birthMarker = {"lat": 56.22668, "lng": 10.298241, "navn": "Aarhus"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

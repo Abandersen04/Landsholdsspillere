@@ -259,8 +259,8 @@ const clubs = [{"navn": "Skovshoved Idrætsforening", "lat": 55.7637, "lng": 12.
 const birthMarker = {"lat": 54.7753, "lng": 11.5035, "navn": "Maribo"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

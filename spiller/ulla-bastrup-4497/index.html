@@ -256,8 +256,8 @@ const clubs = [{"navn": "B 1909", "lat": 55.4109, "lng": 10.4281, "barndom": fal
 const birthMarker = {"lat": -1.286388888, "lng": 36.817222222, "navn": "Nairobi"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

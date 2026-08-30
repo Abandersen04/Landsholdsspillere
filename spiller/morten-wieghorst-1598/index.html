@@ -266,8 +266,8 @@ const clubs = [{"navn": "Lyngby Boldklub", "lat": 55.7822, "lng": 12.5065, "barn
 const birthMarker = {"lat": 55.6628, "lng": 12.3972, "navn": "Glostrup"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

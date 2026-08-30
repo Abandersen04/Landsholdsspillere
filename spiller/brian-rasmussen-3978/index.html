@@ -257,8 +257,8 @@ const clubs = [{"navn": "Boldklubben 1903", "lat": 55.731, "lng": 12.5478, "barn
 const birthMarker = {"lat": 55.564444444, "lng": 9.759722222, "navn": "Fredericia"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

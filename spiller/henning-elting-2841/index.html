@@ -257,8 +257,8 @@ const clubs = [{"navn": "Køge Boldklub", "lat": 55.4682, "lng": 12.1772, "barnd
 const birthMarker = {"lat": 54.7646137, "lng": 11.8709918, "navn": "Nykøbing Falster"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

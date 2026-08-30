@@ -256,8 +256,8 @@ const clubs = [{"navn": "Randers Freja", "lat": 56.4656, "lng": 10.0086, "barndo
 const birthMarker = {"lat": 56.456944444, "lng": 10.039166666, "navn": "Randers"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

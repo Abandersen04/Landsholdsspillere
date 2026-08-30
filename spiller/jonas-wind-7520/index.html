@@ -262,8 +262,8 @@ const clubs = [{"navn": "Rosenhøj BK", "lat": 55.6486, "lng": 12.4759, "barndom
 const birthMarker = {"lat": 55.6564, "lng": 12.4686, "navn": "Hvidovre"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

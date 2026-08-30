@@ -89,7 +89,7 @@
 <script>
 (function(){
   const map = L.map("klub-map",{zoomControl:true});
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{attribution:"© OpenStreetMap © CARTO",maxZoom:18}).addTo(map);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"© OpenStreetMap contributors",maxZoom:19}).addTo(map);
   const icon = L.divIcon({html:'<div style="width:36px;height:36px;border-radius:50%;border:2px solid #C8102E;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/VfL_Wolfsburg_Logo.svg/500px-VfL_Wolfsburg_Logo.svg.png" style="width:100%;height:100%;object-fit:contain" onerror="this.parentElement.style.background=\'#C8102E\'"></div>',className:'',iconSize:[36,36],iconAnchor:[18,18]});
   L.marker([52.4231,10.7872],{icon}).addTo(map).bindPopup("<strong>VfL Wolfsburg</strong>").openPopup();
   map.setView([52.4231,10.7872],13);

@@ -256,8 +256,8 @@ const clubs = [{"navn": "Holbæk B&I", "lat": 55.6976, "lng": 11.6857, "barndom"
 const birthMarker = {"lat": 55.62083333, "lng": 11.48861111, "navn": "Skamstrup Sogn"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

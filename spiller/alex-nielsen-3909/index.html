@@ -256,8 +256,8 @@ const clubs = [{"navn": "BK Sylvia", "lat": 56.7561, "lng": 9.7436, "barndom": t
 const birthMarker = {"lat": 55.678016, "lng": 12.5326186, "navn": "Frederiksberg"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

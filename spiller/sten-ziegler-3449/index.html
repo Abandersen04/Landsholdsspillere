@@ -267,8 +267,8 @@ const clubs = [{"navn": "Hvidovre Idrætsforening", "lat": 55.6313, "lng": 12.48
 const birthMarker = {"lat": 55.676111111, "lng": 12.568888888, "navn": "København"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

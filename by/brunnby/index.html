@@ -77,8 +77,8 @@
 <script>
 (function() {
   const map = L.map('by-map', {zoomControl:true});
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
-    {attribution:'© OpenStreetMap © CARTO', maxZoom:18}).addTo(map);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {attribution:'© OpenStreetMap contributors', maxZoom:19}).addTo(map);
   const marker = L.circleMarker([56.2489, 12.56],
     {radius:10, color:'#C8102E', fillColor:'#C8102E', fillOpacity:0.85, weight:2}).addTo(map);
   marker.bindPopup('<strong>Brunnby</strong><br>2 landsholdsspillere').openPopup();

@@ -264,8 +264,8 @@ const clubs = [{"navn": "Næstved BK", "lat": 55.25, "lng": 11.6667, "barndom": 
 const birthMarker = {"lat": 55.23333333, "lng": 11.76666667, "navn": "Næstved"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

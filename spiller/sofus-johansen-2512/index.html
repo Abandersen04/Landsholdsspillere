@@ -262,8 +262,8 @@ const clubs = [{"navn": "Boldklubben Frem", "lat": 55.6489, "lng": 12.5122, "bar
 const birthMarker = {"lat": 55.6867243, "lng": 12.5700724, "navn": "København"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

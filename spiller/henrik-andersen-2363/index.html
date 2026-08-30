@@ -265,8 +265,8 @@ const clubs = [{"navn": "1. FC Köln", "lat": 50.9422, "lng": 6.9578, "barndom":
 const birthMarker = {"lat": 55.616666666, "lng": 12.616666666, "navn": "Amager"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

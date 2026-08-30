@@ -258,8 +258,8 @@ const clubs = [{"navn": "Vorup FB", "lat": 56.4218, "lng": 10.0288, "barndom": t
 const birthMarker = {"lat": 56.421817, "lng": 10.028847, "navn": "Randers"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

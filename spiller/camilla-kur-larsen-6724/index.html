@@ -262,8 +262,8 @@ const clubs = [{"navn": "Greve Fodbold", "lat": 55.5927, "lng": 12.3002, "barndo
 const birthMarker = {"lat": 55.615833333, "lng": 12.351388888, "navn": "Ishøj"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

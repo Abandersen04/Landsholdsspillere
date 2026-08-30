@@ -257,8 +257,8 @@ const clubs = [{"navn": "Faxe Ladeplads IF", "lat": 55.2211, "lng": 12.1613, "ba
 const birthMarker = {"lat": 55.2551221055579, "lng": 12.112617016527, "navn": "Faxe"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

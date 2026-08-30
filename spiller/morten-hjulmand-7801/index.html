@@ -260,8 +260,8 @@ const clubs = [{"navn": "Korinth IF", "lat": 55.1466, "lng": 10.3335, "barndom":
 const birthMarker = {"lat": 55.6375, "lng": 12.6417, "navn": "Kastrup"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

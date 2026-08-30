@@ -261,8 +261,8 @@ const clubs = [{"navn": "FC København", "lat": 55.7036, "lng": 12.5718, "barndo
 const birthMarker = {"lat": 36.511363888, "lng": -4.883441666, "navn": "Marbella"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

@@ -258,8 +258,8 @@ const clubs = [{"navn": "Roslev IK", "lat": 56.6996, "lng": 8.9817, "barndom": t
 const birthMarker = {"lat": 56.6916, "lng": 8.9207, "navn": "Over Hjerk"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

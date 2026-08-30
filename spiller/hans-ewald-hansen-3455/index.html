@@ -259,8 +259,8 @@ const clubs = [{"navn": "Nykøbing Falster Boldklub af 1901", "lat": 54.7641, "l
 const birthMarker = {"lat": 54.766666666, "lng": 11.883333333, "navn": "Nykøbing Falster"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

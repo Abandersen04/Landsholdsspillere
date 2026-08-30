@@ -87,7 +87,7 @@
 <script>
 (function(){
   const map = L.map("klub-map",{zoomControl:true});
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{attribution:"© OpenStreetMap © CARTO",maxZoom:18}).addTo(map);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"© OpenStreetMap contributors",maxZoom:19}).addTo(map);
   const icon = L.divIcon({html:'<div style="width:20px;height:20px;border-radius:50%;background:#C8102E;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,.3)"></div>',className:'',iconSize:[20,20],iconAnchor:[10,10]});
   L.marker([55.2811,10.613],{icon}).addTo(map).bindPopup("<strong>Herrested GIF</strong>").openPopup();
   map.setView([55.2811,10.613],13);

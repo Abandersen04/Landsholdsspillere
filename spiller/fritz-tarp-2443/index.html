@@ -272,8 +272,8 @@ const clubs = [{"navn": "Boldklubben af 1893", "lat": 55.7138, "lng": 12.5825, "
 const birthMarker = {"lat": 55.446979, "lng": 11.80178, "navn": "Ringsted"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

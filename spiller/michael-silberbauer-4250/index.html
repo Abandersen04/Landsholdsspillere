@@ -267,8 +267,8 @@ const clubs = [{"navn": "Støvring IF Fodbold", "lat": 56.8847, "lng": 9.8331, "
 const birthMarker = {"lat": 56.889, "lng": 9.831, "navn": "Støvring"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

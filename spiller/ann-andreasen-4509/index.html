@@ -262,8 +262,8 @@ const clubs = [{"navn": "BK Stjernen af 1968", "lat": 55.0693, "lng": 10.6391, "
 const birthMarker = {"lat": 55.149424, "lng": 10.7062309, "navn": "Gudme"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];

@@ -256,8 +256,8 @@ const clubs = [{"navn": "Jægersborg Boldklub", "lat": 55.7568, "lng": 12.5326, 
 const birthMarker = {"lat": 56.9539, "lng": 8.6903, "navn": "Thisted"};
 
 const map = L.map('player-map', { zoomControl: true });
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
 }).addTo(map);
 
 const bounds = [];
