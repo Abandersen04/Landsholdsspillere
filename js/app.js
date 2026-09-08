@@ -1355,7 +1355,7 @@ function buildPopupHtml(group, mapType) {
   if (mapType === 'club' || mapType === 'all_clubs') {
     const logoUrl = group.klub_logo;
     const logoHtml = logoUrl
-      ? `<img class="club-logo" src="${escapeHtml(logoUrl)}" onerror="this.style.display='none'" alt="">`
+      ? `<img class="club-logo" src="${escapeHtml(logoUrl)}" onerror="this.style.display='none'" alt="${escapeHtml(locName)} logo">`
       : '';
 
     const klubSlug = slugify(locName);
@@ -1385,7 +1385,7 @@ function buildPopupHtml(group, mapType) {
 
   const playersHtml = visiblePlayers.map(p => {
     const imgHtml = p.image
-      ? `<img class="popup-player-img" src="${escapeHtml(p.image)}" onerror="this.style.display='none'" alt="">`
+      ? `<img class="popup-player-img" src="${escapeHtml(p.image)}" onerror="this.style.display='none'" alt="${escapeHtml(p.playerLabel || '')}">`
       : '';
 
     const birth = p.birthday_dbu || 'Ukendt';

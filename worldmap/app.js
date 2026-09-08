@@ -465,7 +465,7 @@ function buildPopupHtml(group) {
 
   const playersHtml = visible.map(p => {
     const imgHtml = p.image
-      ? `<img class="popup-player-img" src="${escapeHtml(p.image)}" onerror="this.style.display='none'" alt="" style="width:44px;height:44px;object-fit:cover;border-radius:50%;flex-shrink:0">`
+      ? `<img class="popup-player-img" src="${escapeHtml(p.image)}" onerror="this.style.display='none'" alt="${escapeHtml(p.name || '')}" style="width:44px;height:44px;object-fit:cover;border-radius:50%;flex-shrink:0">`
       : '';
 
     return `
