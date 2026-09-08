@@ -10,6 +10,9 @@ let kommunerPromise = null;
 let regionerPromise = null;
 let debounceTimer;
 let klubSlugs = new Set(); // Genererede klubsider
+let pendingLogoMarkers = [];
+const MAX_CONCURRENT_LOGO_LOADS = 24;
+let activeLogoLoads = 0;
 
 // ===== Init =====
 document.addEventListener('DOMContentLoaded', async () => {
@@ -77,6 +80,8 @@ function initMap() {
     })
   });
   map.addLayer(markersLayer);
+
+  map.on('moveend zoomend', upgradeVisibleLogos);
 }
 
 // ===== Sidebar / Bottomsheet =====
@@ -634,6 +639,7 @@ async function updateMap() {
 
   // Clear and rebuild markers
   markersLayer.clearLayers();
+  pendingLogoMarkers = [];
 
   const bounds = [];
   groups.forEach(group => {
@@ -653,6 +659,66 @@ async function updateMap() {
       map.fitBounds(bounds, { padding: [50, 50], maxZoom: 12 });
     }
   }
+
+  upgradeVisibleLogos();
+}
+
+// ===== Lazy logo loading =====
+// Only fetch club logo images for markers within (or just outside) the
+// current viewport, then load more as the user pans/zooms. Avoids firing
+// hundreds of simultaneous image requests on initial page load, which was
+// triggering net::ERR_HTTP2_PROTOCOL_ERROR on many logos at once.
+function queueLazyLogo(marker, logoUrl, locName) {
+  pendingLogoMarkers.push({ marker, logoUrl, locName, loading: false });
+}
+
+function upgradeVisibleLogos() {
+  if (!pendingLogoMarkers.length) return;
+
+  const bounds = map.getBounds().pad(0.5); // small margin around viewport
+  const stillPending = [];
+
+  for (const entry of pendingLogoMarkers) {
+    if (entry.loading) {
+      stillPending.push(entry);
+      continue;
+    }
+    if (activeLogoLoads >= MAX_CONCURRENT_LOGO_LOADS) {
+      stillPending.push(entry);
+      continue;
+    }
+    if (!bounds.contains(entry.marker.getLatLng())) {
+      stillPending.push(entry);
+      continue;
+    }
+    loadClubLogo(entry);
+  }
+
+  pendingLogoMarkers = stillPending;
+}
+
+function loadClubLogo(entry) {
+  const { marker, logoUrl } = entry;
+  entry.loading = true;
+  activeLogoLoads++;
+
+  const img = new Image();
+  img.onload = () => {
+    activeLogoLoads--;
+    marker.setIcon(L.icon({
+      iconUrl: logoUrl,
+      iconSize: [30, 30],
+      iconAnchor: [15, 15],
+      popupAnchor: [0, -15]
+    }));
+    upgradeVisibleLogos();
+  };
+  img.onerror = () => {
+    activeLogoLoads--;
+    // Leave the SVG badge in place (already set as the marker's icon).
+    upgradeVisibleLogos();
+  };
+  img.src = logoUrl;
 }
 
 // ===== Choropleth =====
@@ -1160,30 +1226,19 @@ function createMarker(group, mapType, birthLevel, perCapita) {
     const hasLogo = logoUrl && logoUrl.length > 0;
 
     if (hasLogo) {
-      // Pre-check logo with Image to fall back to SVG badge on error
-      const img = new Image();
-      img.src = logoUrl;
-      const icon = L.icon({
-        iconUrl: logoUrl,
+      // Start with SVG badge; upgrade to real logo lazily once the marker
+      // is within (or near) the visible map bounds, so we don't fire off
+      // hundreds of simultaneous logo requests on initial load.
+      const badgeHtml = buildSvgBadge(escapeHtml(locName));
+      const icon = L.divIcon({
+        className: '',
+        html: badgeHtml,
         iconSize: [30, 30],
         iconAnchor: [15, 15],
         popupAnchor: [0, -15]
       });
       marker = L.marker([lat, lng], { icon });
-
-      // If logo fails to load, replace with SVG badge
-      img.onerror = () => {
-        const fullText = escapeHtml(locName);
-        const badgeHtml = buildSvgBadge(fullText);
-        const fallbackIcon = L.divIcon({
-          className: '',
-          html: badgeHtml,
-          iconSize: [30, 30],
-          iconAnchor: [15, 15],
-          popupAnchor: [0, -15]
-        });
-        marker.setIcon(fallbackIcon);
-      };
+      queueLazyLogo(marker, logoUrl, locName);
     } else {
       // Round badge resembling a logo - full name curved inside circle
       const fullText = escapeHtml(locName);
