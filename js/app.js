@@ -673,7 +673,10 @@ function queueLazyLogo(marker, logoUrl, locName) {
 }
 
 function upgradeVisibleLogos() {
-  if (!pendingLogoMarkers.length) return;
+  if (!pendingLogoMarkers.length) {
+    updateLogoLoadingIndicator();
+    return;
+  }
 
   const bounds = map.getBounds().pad(0.5); // small margin around viewport
   const stillPending = [];
@@ -695,6 +698,7 @@ function upgradeVisibleLogos() {
   }
 
   pendingLogoMarkers = stillPending;
+  updateLogoLoadingIndicator();
 }
 
 function loadClubLogo(entry) {
@@ -719,6 +723,21 @@ function loadClubLogo(entry) {
     upgradeVisibleLogos();
   };
   img.src = logoUrl;
+}
+
+// Small "indlæser logoer…" pill so users don't mistake the badge-to-logo
+// swap-in for the page being stuck while lazy logos trickle in.
+function updateLogoLoadingIndicator() {
+  const el = document.getElementById('logo-loading-indicator');
+  if (!el) return;
+  const remaining = pendingLogoMarkers.length + activeLogoLoads;
+  if (remaining > 0) {
+    document.getElementById('logo-loading-text').textContent =
+      `Indlæser logoer… (${remaining})`;
+    el.hidden = false;
+  } else {
+    el.hidden = true;
+  }
 }
 
 // ===== Choropleth =====
