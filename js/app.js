@@ -69,15 +69,26 @@ function initMap() {
 
   markersLayer = L.markerClusterGroup({
     spiderfyOnMaxZoom: true,
-    zoomToBoundsOnClick: false,
+    zoomToBoundsOnClick: true,
     showCoverageOnHover: false,
-    maxClusterRadius: 1,
+    // Cluster generously when zoomed out (whole-country view), taper off as
+    // the user zooms in, and stop clustering entirely once individual pins
+    // are far enough apart to tap. Previously maxClusterRadius was 1px,
+    // which effectively disabled clustering and buried the map under ~800
+    // overlapping club logos at the default zoom.
+    maxClusterRadius: (zoom) => (zoom <= 7 ? 70 : zoom <= 9 ? 45 : 25),
+    disableClusteringAtZoom: 12,
     spiderfyDistanceMultiplier: 2.0,
-    iconCreateFunction: () => L.divIcon({
-      html: '',
-      className: '',
-      iconSize: [0, 0]
-    })
+    iconCreateFunction: (cluster) => {
+      const count = cluster.getChildCount();
+      const size = Math.min(56, 32 + Math.sqrt(count) * 4);
+      return L.divIcon({
+        html: `<div style="width:${size}px;height:${size}px;border-radius:50%;background:rgba(200,16,46,0.85);border:3px solid white;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,0.4);color:white;font-weight:700;font-size:${size > 44 ? 14 : 12}px;cursor:pointer;">${count}</div>`,
+        className: '',
+        iconSize: [size, size],
+        iconAnchor: [size / 2, size / 2]
+      });
+    }
   });
   map.addLayer(markersLayer);
 
