@@ -484,7 +484,7 @@
         "latitude": 55.5782,
         "longitude": 9.7286,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/8/81/FC_Fredericia.png"
+        "klub_logo": "logos/klub_3713.png"
       }
     ],
     "years_played": [
@@ -23988,7 +23988,7 @@
     "klubnavn": "Råsted GF",
     "latitude": "56.5172",
     "longitude": "9.9473",
-    "klub_logo": "https://file.dbu.dk/images/club/5203/Råsted_og_Omegns_Boldklub_af_1984.png",
+    "klub_logo": "",
     "klub_website": "http://www.randersfreja.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/5203/klubinfo",
     "region": "Region Midtjylland",
@@ -23999,7 +23999,7 @@
         "latitude": 56.5172,
         "longitude": 9.9473,
         "is_earliest": true,
-        "klub_logo": "https://file.dbu.dk/images/club/5203/Råsted_og_Omegns_Boldklub_af_1984.png"
+        "klub_logo": ""
       },
       {
         "klub_id": "610",
@@ -34697,7 +34697,7 @@
         "latitude": 51.7608,
         "longitude": 14.3319,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/FC_Energie_Cottbus_crest.svg/330px-FC_Energie_Cottbus_crest.svg.png"
+        "klub_logo": "logos/klub_ext_energie-cottbus.svg"
       },
       {
         "klub_id": null,
@@ -39559,7 +39559,7 @@
         "latitude": 55.2294,
         "longitude": 11.7615,
         "is_earliest": false,
-        "klub_logo": "https://file.dbu.dk/images/club/4064/Frigg_Næstved.png"
+        "klub_logo": ""
       },
       {
         "klub_id": "533",
@@ -50889,7 +50889,7 @@
         "latitude": 56.45,
         "longitude": 9.4,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/1/14/Viborg_FF.png"
+        "klub_logo": ""
       },
       {
         "klub_id": null,
@@ -50906,7 +50906,7 @@
         "latitude": 56.4334,
         "longitude": 9.3739,
         "is_earliest": false,
-        "klub_logo": "https://file.dbu.dk/images/club/377/Viborg_Sdrm._IK.png",
+        "klub_logo": "",
         "team_qid": null
       }
     ],
@@ -55662,7 +55662,7 @@
         "latitude": 51.7167,
         "longitude": 8.7667,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/SC_Paderborn_07_logo.svg/500px-SC_Paderborn_07_logo.svg.png"
+        "klub_logo": "logos/klub_ext_sc-paderborn-07.svg"
       },
       {
         "klub_id": null,
