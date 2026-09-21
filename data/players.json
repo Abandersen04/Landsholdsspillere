@@ -63779,29 +63779,21 @@
     "n_goals": "16",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Football%20at%20the%201912%20Summer%20Olympics%20-%20Denmark%20squad%20%28Nielsen%29.JPG",
     "gender": "mand",
-    "klubnavn": "Boldklubben Frem",
-    "latitude": "55.648925",
-    "longitude": "12.512152",
-    "klub_logo": "logos/klub_1552.png",
-    "klub_website": "https://www.dbu.dk/resultater/klub/1552/klubinfo",
-    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1552/klubinfo",
-    "region": "Region Hovedstaden",
+    "klubnavn": "Concordia",
+    "latitude": "55.699618",
+    "longitude": "12.560081",
+    "klub_logo": null,
+    "klub_website": null,
+    "klub_dbu_url": null,
+    "region": null,
     "allClubs": [
       {
-        "klub_id": "1493",
-        "klubnavn": "BK Stjernen af 1968",
-        "latitude": 55.0693,
-        "longitude": 10.6391,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_1493.png"
-      },
-      {
-        "klub_id": "1552",
-        "klubnavn": "Boldklubben Frem",
-        "latitude": 55.6489,
-        "longitude": 12.5122,
+        "klub_id": null,
+        "klubnavn": "Concordia",
+        "latitude": 55.699618,
+        "longitude": 12.560081,
         "is_earliest": true,
-        "klub_logo": "logos/klub_1552.png"
+        "klub_logo": null
       },
       {
         "klub_id": null,
@@ -63810,6 +63802,22 @@
         "longitude": 10.1394,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Holstein_Kiel_Logo.svg/330px-Holstein_Kiel_Logo.svg.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "Concordia",
+        "latitude": 55.699618,
+        "longitude": 12.560081,
+        "is_earliest": false,
+        "klub_logo": null
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "Stjernen",
+        "latitude": 55.700241,
+        "longitude": 12.569526,
+        "is_earliest": false,
+        "klub_logo": null
       }
     ],
     "years_played": [
@@ -63823,6 +63831,12 @@
       1917,
       1918,
       1919
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "klubnavn",
+      "latitude",
+      "longitude"
     ]
   },
   {
