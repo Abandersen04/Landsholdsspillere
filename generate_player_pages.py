@@ -7,6 +7,7 @@ Genererer statiske HTML-filer for alle spillere med:
 """
 
 import json, os, re, unicodedata, itertools
+from html import escape as html_escape
 from collections import defaultdict
 
 # ── Indlæs data ───────────────────────────────────────────────
@@ -23,28 +24,48 @@ with open("../kampe/kampe.json", encoding="utf-8") as f:
     kampe_list = json.load(f)
 
 # ── Rangering: mål og snit per køn ───────────────────────────
+from fractions import Fraction
+from collections import Counter
+
+def assign_ranks(sorted_items, key, rank_attr, tied_attr):
+    """Konkurrence-rangering: lige store værdier deler placering (1, 1, 3, ...).
+    tied_attr får listen over de andre spillere på samme placering [(navn, dbuID), ...],
+    sorteret alfabetisk (tom liste = ingen deler placeringen)."""
+    groups = defaultdict(list)
+    for p in sorted_items:
+        groups[key(p)].append(p)
+    rank, prev = 0, None
+    for pos, p in enumerate(sorted_items, 1):
+        k = key(p)
+        if k != prev:
+            rank, prev = pos, k
+        p[rank_attr] = rank
+        p[tied_attr] = sorted(((q.get("playerLabel") or "", q.get("dbuID")) for q in groups[k] if q is not p),
+                              key=lambda t: t[0])
+
 def build_rankings(players):
     for gender in ("mand", "kvinde"):
         group = [p for p in players
                  if p.get("gender") == gender
                  and int(p.get("n_goals") or 0) > 0
                  and int(p.get("n_matches") or 0) > 0]
+        goals   = lambda x: int(x.get("n_goals") or 0)
+        matches = lambda x: int(x.get("n_matches") or 0)
         # Rangér efter mål (flest først)
-        sorted_goals = sorted(group, key=lambda x: -int(x.get("n_goals") or 0))
-        for rank, p in enumerate(sorted_goals, 1):
-            p[f"_rank_goals_{gender}"] = rank
+        sorted_goals = sorted(group, key=lambda x: -goals(x))
+        assign_ranks(sorted_goals, goals, f"_rank_goals_{gender}", f"_rank_goals_tied_{gender}")
+        for p in sorted_goals:
             p[f"_rank_goals_total_{gender}"] = len(sorted_goals)
-        # Rangér efter snit (min. 10 kampe)
-        qualified = [p for p in group if int(p.get("n_matches") or 0) >= 10]
-        sorted_snit = sorted(qualified,
-            key=lambda x: -(int(x.get("n_goals") or 0) / int(x.get("n_matches") or 1)))
-        for rank, p in enumerate(sorted_snit, 1):
-            p[f"_rank_snit_{gender}"] = rank
+        # Rangér efter snit (min. 10 kampe) – sammenlignet som brøker, så 1/2 og 2/4 er ens
+        qualified = [p for p in group if matches(p) >= 10]
+        snit = lambda x: Fraction(goals(x), matches(x) or 1)
+        sorted_snit = sorted(qualified, key=lambda x: -snit(x))
+        assign_ranks(sorted_snit, snit, f"_rank_snit_{gender}", f"_rank_snit_tied_{gender}")
+        for p in sorted_snit:
             p[f"_rank_snit_total_{gender}"] = len(sorted_snit)
         # Rangér efter antal kampe (alle med ≥1 kamp)
-        sorted_kampe = sorted(group, key=lambda x: -int(x.get("n_matches") or 0))
-        for rank, p in enumerate(sorted_kampe, 1):
-            p[f"_rank_kampe_{gender}"] = rank
+        sorted_kampe = sorted(group, key=lambda x: -matches(x))
+        assign_ranks(sorted_kampe, matches, f"_rank_kampe_{gender}", f"_rank_kampe_tied_{gender}")
 
 build_rankings(players)
 player_by_id = {str(p.get("dbuID") or ""): p for p in players}
@@ -171,6 +192,110 @@ def kamptype_kort(kt):
 
 import random
 
+def rangering_tekst(p, rng):
+    """Sætning 5: spillerens placering på ranglisterne (mål >10, målsnit, kampe ≥100).
+    Bruger kun data/players.json, ikke kampdata."""
+    navn    = p.get("playerLabel") or ""
+    gender  = p.get("gender") or "mand"
+    kampe_n = int(p.get("n_matches") or 0)
+    maal_n  = int(p.get("n_goals") or 0)
+
+    kon_label = "kvindernes" if gender == "kvinde" else "herrernes"
+    rang_dele = []
+
+    def spiller_link(navn_, id_):
+        return f'<a href="/spiller/{slugify(navn_)}-{id_}/" style="color:#c0392b">{html_escape(navn_, quote=False)}</a>'
+
+    def andre(others):
+        """'A, B og C' med links – maks. 5 navne, resten som 'N andre'."""
+        dele = [spiller_link(n_, i_) for n_, i_ in others[:5]]
+        rest = len(others) - len(dele)
+        if rest > 0:
+            dele.append(f"{rest} andre")
+        return dele[0] if len(dele) == 1 else ", ".join(dele[:-1]) + " og " + dele[-1]
+
+    def rang_maal(rank, others, snit_rank, snit_others, snit):
+        if others and rank == 1:
+            t = rng.choice([
+                f"delt rekordindehaver for flest mål på {kon_label} landshold sammen med {andre(others)}",
+                f"medindehaver af førstepladsen over flest mål i {kon_label} landsholdshistorie sammen med {andre(others)}",
+            ])
+        elif others:
+            t = f"delt nr. {rank} på listen over flest mål i {kon_label} landsholdshistorie sammen med {andre(others)}"
+        elif rank == 1:
+            t = rng.choice([
+                f"den spiller med flest mål i {kon_label} landsholdshistorie",
+                f"rekordindehaver for flest mål på {kon_label} landshold",
+            ])
+        elif rank <= 3:
+            t = rng.choice([
+                f"nr. {rank} på listen over flest mål i {kon_label} landsholdshistorie",
+                f"den {rank}.-mest scorende spiller på {kon_label} landshold",
+            ])
+        else:
+            t = f"nr. {rank} på listen over flest mål i {kon_label} landsholdshistorie"
+        if snit_rank:
+            komma = "," if others else ""   # adskil målsnit fra en foregående navneliste
+            if snit_others:
+                t += rng.choice([
+                    f"{komma} og delt nr. {snit_rank} i bedste målsnit ({snit} mål pr. kamp) sammen med {andre(snit_others)}",
+                    f"{komma} med et målsnit på {snit} pr. kamp (delt nr. {snit_rank} historisk sammen med {andre(snit_others)})",
+                ])
+            else:
+                t += rng.choice([
+                    f"{komma} og nr. {snit_rank} i bedste målsnit ({snit} mål pr. kamp)",
+                    f"{komma} med et målsnit på {snit} pr. kamp (nr. {snit_rank} historisk)",
+                ])
+        return t
+
+    def rang_kampe(rank, others):
+        if others and rank == 1:
+            return rng.choice([
+                f"delt rekordindehaver for flest kampe på {kon_label} landshold sammen med {andre(others)}",
+                f"medindehaver af førstepladsen over flest A-landskampe i {kon_label} landsholdshistorie sammen med {andre(others)}",
+            ])
+        elif others:
+            return f"delt nr. {rank} på listen over flest A-landskampe for {kon_label} landshold sammen med {andre(others)}"
+        elif rank == 1:
+            return rng.choice([
+                f"den spiller med flest A-landskampe i {kon_label} landsholdshistorie",
+                f"rekordindehaver for flest kampe på {kon_label} landshold",
+            ])
+        elif rank <= 3:
+            return rng.choice([
+                f"nr. {rank} på listen over flest A-landskampe for {kon_label} landshold",
+                f"den {rank}.-mest spillede spiller på {kon_label} landshold",
+            ])
+        else:
+            return f"nr. {rank} på listen over flest A-landskampe for {kon_label} landshold"
+
+    if maal_n > 10:
+        rank_g = p.get(f"_rank_goals_{gender}")
+        rank_s = p.get(f"_rank_snit_{gender}")
+        if rank_g:
+            snit = str(round(maal_n / kampe_n, 2)).replace(".", ",") if kampe_n else "0"
+            rang_dele.append(rang_maal(rank_g, p.get(f"_rank_goals_tied_{gender}"), rank_s,
+                                          p.get(f"_rank_snit_tied_{gender}"), snit))
+
+    if kampe_n >= 100:
+        rank_k = p.get(f"_rank_kampe_{gender}")
+        if rank_k:
+            rang_dele.append(rang_kampe(rank_k, p.get(f"_rank_kampe_tied_{gender}")))
+
+    if rang_dele:
+        intro = rng.choice([
+            f"Det placerer {navn.split()[0]} som",
+            f"Statistisk er {navn.split()[0]}",
+            f"Dermed er {navn.split()[0]}",
+        ])
+        tekst = rang_dele[0]
+        for prev, nxt in zip(rang_dele, rang_dele[1:]):
+            navne = re.search(r"(</a>|andre)$", prev)          # foregående del ender på en navneliste
+            tekst += (", og " if navne else " og ") + nxt
+        return intro + " " + tekst + "."
+    return ""
+
+
 def generer_tekst(p):
     """Genererer et varieret SEO-tekstafsnit for en spiller."""
     navn    = p.get("playerLabel") or ""
@@ -280,62 +405,9 @@ def generer_tekst(p):
         afsnit.append(rng.choice(varianter))
 
     # ── Sætning 5: rangering mål (>10 mål) og kampe (≥100) ──
-    kon_label = "kvindernes" if gender == "kvinde" else "herrernes"
-    rang_dele = []
-
-    def rang_maal(rank, total, snit_rank, snit):
-        if rank == 1:
-            t = rng.choice([
-                f"den spiller med flest mål i {kon_label} landsholdshistorie",
-                f"rekordindehaver for flest mål på {kon_label} landshold",
-            ])
-        elif rank <= 3:
-            t = rng.choice([
-                f"nr. {rank} på listen over flest mål i {kon_label} landsholdshistorie",
-                f"den {rank}.-mest scorende spiller på {kon_label} landshold",
-            ])
-        else:
-            t = f"nr. {rank} på listen over flest mål i {kon_label} landsholdshistorie"
-        if snit_rank:
-            t += rng.choice([
-                f" og nr. {snit_rank} i bedste målsnit ({snit} mål pr. kamp)",
-                f" med et målsnit på {snit} pr. kamp (nr. {snit_rank} historisk)",
-            ])
-        return t
-
-    def rang_kampe(rank):
-        if rank == 1:
-            return rng.choice([
-                f"den spiller med flest A-landskampe i {kon_label} landsholdshistorie",
-                f"rekordindehaver for flest kampe på {kon_label} landshold",
-            ])
-        elif rank <= 3:
-            return rng.choice([
-                f"nr. {rank} på listen over flest A-landskampe for {kon_label} landshold",
-                f"den {rank}.-mest spillede spiller på {kon_label} landshold",
-            ])
-        else:
-            return f"nr. {rank} på listen over flest A-landskampe for {kon_label} landshold"
-
-    if maal_n > 10:
-        rank_g = p.get(f"_rank_goals_{gender}")
-        rank_s = p.get(f"_rank_snit_{gender}")
-        if rank_g:
-            snit = str(round(maal_n / kampe_n, 2)).replace(".", ",") if kampe_n else "0"
-            rang_dele.append(rang_maal(rank_g, None, rank_s, snit))
-
-    if kampe_n >= 100:
-        rank_k = p.get(f"_rank_kampe_{gender}")
-        if rank_k:
-            rang_dele.append(rang_kampe(rank_k))
-
-    if rang_dele:
-        intro = rng.choice([
-            f"Det placerer {navn.split()[0]} som",
-            f"Statistisk er {navn.split()[0]}",
-            f"Dermed er {navn.split()[0]}",
-        ])
-        afsnit.append(intro + " " + " og ".join(rang_dele) + ".")
+    s5 = rangering_tekst(p, rng)
+    if s5:
+        afsnit.append(s5)
 
     return " ".join(afsnit) if afsnit else ""
 
