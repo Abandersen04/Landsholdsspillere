@@ -50908,13 +50908,23 @@
         "is_earliest": false,
         "klub_logo": "",
         "team_qid": null
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "Port F.C.",
+        "latitude": 13.71546,
+        "longitude": 100.559801,
+        "is_earliest": false,
+        "klub_logo": "https://thumb.wikimedia.org/wikipedia/en/thumb/f/fc/Port_FC_logo.svg/960px-Port_FC_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       }
     ],
     "years_played": [
       2015,
       2016
     ],
-    "_manual_fields": "allClubs"
+    "_manual_fields": [
+      "allClubs"
+    ]
   },
   {
     "playerLabel": "Martin Braithwaite",
