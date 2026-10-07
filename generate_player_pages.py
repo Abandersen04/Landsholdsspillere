@@ -915,12 +915,9 @@ def render_page(p):
   <!-- Bio-tekst -->
   {f'<p style="background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:20px;font-size:15px;line-height:1.65;color:#333">{bio_tekst}</p>' if bio_tekst else ""}
 
-  <!-- Landsholdskarriere -->
+  <!-- Links -->
   <div class="card">
-    <h2>Landsholdskarriere</h2>
-    {"<table><thead><tr><th>År</th><th>Kampe</th><th>Mål</th><th>Rolle</th></tr></thead><tbody>" + career_rows + "</tbody></table>"
-      if career_rows else "<p style='color:#999;font-size:14px'>Ingen kampdata fundet.</p>"}
-    <div class="links" style="margin-top:16px">
+    <div class="links">
       {wiki_links}
       {"· " if wiki_links else ""}<a href="{dbu_url}" rel="noopener" target="_blank">DBU-profil</a>
     </div>
