@@ -303732,10 +303732,35 @@
       "name": "Høgh Kasper",
       "id": "7914",
       "captain": false
+     },
+     {
+      "id": "7193",
+      "name": "Kristensen Rasmus Nissen",
+      "captain": false,
+      "manuel": true
+     },
+     {
+      "id": "8012",
+      "name": "Højlund Rasmus",
+      "captain": false,
+      "manuel": true
+     },
+     {
+      "id": "8413",
+      "name": "Høgsberg Lucas",
+      "captain": false,
+      "manuel": true
+     },
+     {
+      "id": "8621",
+      "name": "Daghim Adam",
+      "captain": false,
+      "manuel": true
      }
     ]
    },
-   "ikke_benyttet": {}
+   "ikke_benyttet": {},
+   "manuel_rettelse": "Kampen (Danmark - Ukraine, 07-06-2026) blev afbrudt i 79. minut; DBU nåede ikke at registrere bænk/udskiftninger. Bekræftet manuelt ud fra DBU's egne spillerstatistikker (kampetal), 2026-10-07."
   }
  },
  {
