@@ -6913,12 +6913,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://landsholdskortet.dk/klub/ikast-fs/</loc>
-    <lastmod>2026-08-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://landsholdskortet.dk/klub/broendby-if/</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -7135,12 +7129,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://landsholdskortet.dk/klub/hvidovre-if/</loc>
-    <lastmod>2026-08-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://landsholdskortet.dk/klub/b-1908/</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -7178,12 +7166,6 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/klub/sporting-kansas-city/</loc>
-    <lastmod>2026-08-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://landsholdskortet.dk/klub/aalborg-boldklub/</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8600,12 +8582,6 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/klub/wiener-sport-club/</loc>
-    <lastmod>2026-08-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://landsholdskortet.dk/klub/vienna-sportclub/</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11306,18 +11282,6 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/klub/fc-badalona-women/</loc>
-    <lastmod>2026-08-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://landsholdskortet.dk/klub/juventus-fc-women/</loc>
-    <lastmod>2026-08-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://landsholdskortet.dk/klub/juventus-f-c-kvinder/</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
