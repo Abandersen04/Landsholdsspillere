@@ -125,8 +125,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -148,6 +148,8 @@
       1994,
       1996
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Brian Laudrup",
@@ -163,8 +165,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Brian-Laudrup-Darren-Laver-Lars-Hogh%20%28cropped%29.jpg",
     "gender": "mand",
     "klubnavn": "Brøndby IF",
-    "latitude": "55.649056",
-    "longitude": "12.417581",
+    "latitude": "55.6491",
+    "longitude": "12.4176",
     "klub_logo": "logos/klub_3700.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
@@ -213,8 +215,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -264,6 +266,8 @@
       1997,
       1998
     ]
+  ,
+    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Michael Laudrup",
@@ -449,8 +453,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -494,6 +498,8 @@
       1998,
       1999
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Miklos Molnar",
@@ -687,8 +693,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -720,6 +726,8 @@
       2003,
       2005
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Peter Schmeichel",
@@ -953,8 +961,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -1001,6 +1009,8 @@
       2001,
       2002
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Martin Jørgensen",
@@ -1368,8 +1378,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -1619,8 +1629,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -1674,6 +1684,8 @@
       1998,
       1999
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Marc Rieper",
@@ -2098,16 +2110,16 @@
       {
         "klub_id": null,
         "klubnavn": "AaB",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
+        "latitude": 57.0434,
+        "longitude": 10.0196,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Aalborg_Boldspilklub_%28logo%29.svg/330px-Aalborg_Boldspilklub_%28logo%29.svg.png"
       },
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -2164,6 +2176,8 @@
       1997,
       1998
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Peter Kjær",
@@ -2246,8 +2260,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Niclas%20Jensen%202008.jpg",
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -2288,8 +2302,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -2322,6 +2336,8 @@
       2007,
       2008
     ]
+  ,
+    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Peter Nielsen",
@@ -2363,8 +2379,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -2384,6 +2400,8 @@
       2001,
       2002
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Per Pedersen",
@@ -2399,8 +2417,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -2460,6 +2478,8 @@
       1996,
       1997
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Per Nielsen",
@@ -2475,8 +2495,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Per%20Nielsen%20JM%200286.jpg",
     "gender": "mand",
     "klubnavn": "Brøndby IF",
-    "latitude": "55.649056",
-    "longitude": "12.417581",
+    "latitude": "55.6491",
+    "longitude": "12.4176",
     "klub_logo": "logos/klub_3700.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
@@ -2497,6 +2517,8 @@
       2005,
       2006
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Thomas Rytter",
@@ -2546,8 +2568,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -2566,6 +2588,8 @@
       2002,
       2003
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Torben Piechnik",
@@ -3006,8 +3030,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -3043,6 +3067,8 @@
       1994,
       1995
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Jesper Kristensen",
@@ -4005,8 +4031,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -4033,6 +4059,8 @@
       1911,
       1912
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Ivar Lykke",
@@ -4421,7 +4449,7 @@
     "gender": "mand",
     "klubnavn": "Nykøbing Falster Boldklub af 1901",
     "latitude": "54.762",
-    "longitude": "11.870992",
+    "longitude": "11.871",
     "klub_logo": "logos/klub_99004.gif",
     "klub_website": "http://www.bkfrem.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3742/klubinfo",
@@ -4446,7 +4474,7 @@
       {
         "klub_id": "1532",
         "klubnavn": "Boldklubben af 1893",
-        "latitude": 55.7134,
+        "latitude": 55.7138,
         "longitude": 12.5825,
         "is_earliest": false,
         "klub_logo": "logos/klub_1532.png"
@@ -4455,6 +4483,8 @@
     "years_played": [
       1913
     ]
+  ,
+    "_manual_fields": ["allClubs", "longitude"]
   },
   {
     "playerLabel": "Henrik Andersen",
@@ -4494,8 +4524,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -4514,6 +4544,8 @@
       1915,
       1917
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Hans Julius Rützebeck",
@@ -4529,8 +4561,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -4548,6 +4580,8 @@
     "years_played": [
       1915
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Michael Rohde",
@@ -4563,8 +4597,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -4594,6 +4628,8 @@
       1929,
       1931
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Holger Teilmann",
@@ -4643,8 +4679,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -4670,6 +4706,8 @@
       1922,
       1923
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Ernst Petersen",
@@ -4747,8 +4785,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -4767,6 +4805,8 @@
       1916,
       1919
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Vilhelm Jørgensen",
@@ -4821,8 +4861,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -4840,6 +4880,8 @@
     "years_played": [
       1917
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Carl \"Skoma'r\" Hansen",
@@ -5616,7 +5658,7 @@
       {
         "klub_id": "1532",
         "klubnavn": "Boldklubben af 1893",
-        "latitude": 55.7134,
+        "latitude": 55.7138,
         "longitude": 12.5825,
         "is_earliest": false,
         "klub_logo": "logos/klub_1532.png"
@@ -5625,6 +5667,8 @@
     "years_played": [
       1920
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Ernst Nilsson",
@@ -5729,8 +5773,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -5757,6 +5801,8 @@
       1930,
       1931
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Henry Hansen",
@@ -5853,8 +5899,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -5882,6 +5928,8 @@
       1923,
       1927
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Knud Kastrup",
@@ -6027,7 +6075,7 @@
       {
         "klub_id": "1532",
         "klubnavn": "Boldklubben af 1893",
-        "latitude": 55.7134,
+        "latitude": 55.7138,
         "longitude": 12.5825,
         "is_earliest": false,
         "klub_logo": "logos/klub_1532.png"
@@ -6046,6 +6094,8 @@
       1924,
       1925
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Eiler Holm",
@@ -6371,8 +6421,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -6400,6 +6450,8 @@
       1928,
       1931
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Vilhelm Nielsen",
@@ -6603,8 +6655,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -6625,6 +6677,8 @@
       1930,
       1932
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Palle Christensen",
@@ -6712,8 +6766,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -6742,6 +6796,8 @@
       1937,
       1939
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Kaj Uldaler",
@@ -6811,8 +6867,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -6834,6 +6890,8 @@
       1930,
       1931
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Arne Kleven",
@@ -6954,7 +7012,7 @@
     "gender": "mand",
     "klubnavn": "Nykøbing Falster Boldklub af 1901",
     "latitude": "54.762",
-    "longitude": "11.870992",
+    "longitude": "11.871",
     "klub_logo": "logos/klub_99004.gif",
     "klub_website": null,
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/99004/klubinfo",
@@ -6975,6 +7033,8 @@
       1930,
       1933
     ]
+  ,
+    "_manual_fields": ["longitude"]
   },
   {
     "playerLabel": "Svend Hansen",
@@ -7242,8 +7302,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -7263,6 +7323,8 @@
       1932,
       1933
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Henning Jensen",
@@ -7313,8 +7375,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -7332,6 +7394,8 @@
     "years_played": [
       1931
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Svend Caroli Hansen",
@@ -7594,8 +7658,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -7627,6 +7691,8 @@
     "years_played": [
       1999
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Oskar Nørland",
@@ -7909,8 +7975,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -7931,6 +7997,8 @@
       1936,
       1937
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Svend Sanvig",
@@ -8238,8 +8306,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -8257,6 +8325,8 @@
     "years_played": [
       1935
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Arthur Nielsen",
@@ -8343,8 +8413,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -8364,6 +8434,8 @@
       1937,
       1938
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Olaf Brockhoff",
@@ -8439,8 +8511,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -8467,6 +8539,8 @@
       1945,
       1946
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Raymond Hansen",
@@ -8482,8 +8556,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -8501,6 +8575,8 @@
     "years_played": [
       1935
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Helmuth Søbirk",
@@ -8516,8 +8592,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -8551,6 +8627,8 @@
       1942,
       1945
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Egon Andersen",
@@ -8644,8 +8722,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -8711,6 +8789,8 @@
       1945,
       1946
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Carl Larsen",
@@ -9286,7 +9366,7 @@
       {
         "klub_id": "1532",
         "klubnavn": "Boldklubben af 1893",
-        "latitude": 55.7134,
+        "latitude": 55.7138,
         "longitude": 12.5825,
         "is_earliest": false,
         "klub_logo": "logos/klub_1532.png"
@@ -9295,6 +9375,8 @@
     "years_played": [
       1938
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Svend Albrechtsen",
@@ -9448,8 +9530,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "http://www.b93.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3722/klubinfo",
@@ -9457,6 +9539,8 @@
     "years_played": [
       1939
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Walther Christensen",
@@ -9509,8 +9593,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -9528,6 +9612,8 @@
     "years_played": [
       1939
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Oskar Theisen",
@@ -9580,8 +9666,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -9616,6 +9702,8 @@
       1942,
       1949
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Knud Bastrup-Birk",
@@ -10016,8 +10104,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -10044,6 +10132,8 @@
       1945,
       1948
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Edmund Sørensen",
@@ -10059,8 +10149,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "http://www.agf1880fodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/421/klubinfo",
@@ -10068,6 +10158,8 @@
     "years_played": [
       1945
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Carl Aage Præst",
@@ -10137,8 +10229,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aage%20Rou%20Jensen.jpg",
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -10166,6 +10258,8 @@
       1956,
       1957
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Helge Christian Bronée",
@@ -10395,8 +10489,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -10417,6 +10511,8 @@
       1947,
       1948
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Gustaf Pålsson",
@@ -10457,8 +10553,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -10476,6 +10572,8 @@
     "years_played": [
       1945
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "John Nielsen",
@@ -10515,8 +10613,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -10534,6 +10632,8 @@
     "years_played": [
       1938
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Poul Petersen",
@@ -10834,8 +10934,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -10853,6 +10953,8 @@
     "years_played": [
       1941
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Erling Sørensen",
@@ -11076,8 +11178,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -11096,6 +11198,8 @@
       1946,
       1947
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Leo Nielsen",
@@ -11111,8 +11215,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1552/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1552/klubinfo",
@@ -11129,7 +11233,7 @@
       {
         "klub_id": "1532",
         "klubnavn": "Boldklubben af 1893",
-        "latitude": 55.7134,
+        "latitude": 55.7138,
         "longitude": 12.5825,
         "is_earliest": true,
         "klub_logo": "logos/klub_1532.png"
@@ -11138,6 +11242,8 @@
     "years_played": [
       1946
     ]
+  ,
+    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Axel W. Petersen",
@@ -11246,8 +11352,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -11265,6 +11371,8 @@
     "years_played": [
       1947
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jørgen W. Hansen",
@@ -11627,8 +11735,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -11647,6 +11755,8 @@
       1948,
       1952
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Poul Nielsen",
@@ -12120,8 +12230,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Skovshoved Idrætsforening",
-    "latitude": "55.763678",
-    "longitude": "12.590212",
+    "latitude": "55.7637",
+    "longitude": "12.5902",
     "klub_logo": "logos/klub_1579.png",
     "klub_website": "http://www.skovshoved-fodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1579/klubinfo",
@@ -12130,6 +12240,8 @@
       1949,
       1954
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Claes Petersen",
@@ -12145,8 +12257,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "http://www.agf1880fodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/421/klubinfo",
@@ -12154,6 +12266,8 @@
     "years_played": [
       1949
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Carl Holm",
@@ -12274,8 +12388,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -12311,6 +12425,8 @@
       1951,
       1952
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Erik Terkelsen",
@@ -12422,8 +12538,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -12441,6 +12557,8 @@
     "years_played": [
       1950
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Bendt Jørgensen",
@@ -12799,8 +12917,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -12818,6 +12936,8 @@
     "years_played": [
       1951
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jørgen Olesen",
@@ -13112,8 +13232,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Skovshoved Idrætsforening",
-    "latitude": "55.763678",
-    "longitude": "12.590212",
+    "latitude": "55.7637",
+    "longitude": "12.5902",
     "klub_logo": "logos/klub_1579.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1579/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1579/klubinfo",
@@ -13156,6 +13276,8 @@
       1952,
       1953
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Per Jensen",
@@ -13549,8 +13671,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -13569,6 +13691,8 @@
       1954,
       1956
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Valdemar Kendzior",
@@ -13584,8 +13708,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Skovshoved Idrætsforening",
-    "latitude": "55.763678",
-    "longitude": "12.590212",
+    "latitude": "55.7637",
+    "longitude": "12.5902",
     "klub_logo": "logos/klub_1579.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1579/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1579/klubinfo",
@@ -13611,6 +13735,8 @@
     "years_played": [
       1954
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Flemming Nielsen",
@@ -13725,8 +13851,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -13745,6 +13871,8 @@
       1954,
       1955
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Henning Gronemann",
@@ -13955,8 +14083,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Amdisen%201960.jpg",
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -13976,6 +14104,8 @@
       1957,
       1961
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jørgen Hansen",
@@ -14090,7 +14220,7 @@
       {
         "klub_id": "1532",
         "klubnavn": "Boldklubben af 1893",
-        "latitude": 55.7134,
+        "latitude": 55.7138,
         "longitude": 12.5825,
         "is_earliest": false,
         "klub_logo": "logos/klub_1532.png"
@@ -14099,6 +14229,8 @@
     "years_played": [
       1955
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Johannes Schmidt",
@@ -14172,8 +14304,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -14192,6 +14324,8 @@
       1955,
       1957
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Ove Andersen",
@@ -14348,8 +14482,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "http://www.agf1880fodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/421/klubinfo",
@@ -14357,6 +14491,8 @@
     "years_played": [
       1955
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Poul Andersen",
@@ -14371,8 +14507,8 @@
     "n_goals": "0",
     "gender": "mand",
     "klubnavn": "Skovshoved Idrætsforening",
-    "latitude": "55.763678",
-    "longitude": "12.590212",
+    "latitude": "55.7637",
+    "longitude": "12.5902",
     "klub_logo": "logos/klub_1579.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1579/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1579/klubinfo",
@@ -14391,6 +14527,8 @@
       1955,
       1960
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Erling Larsen",
@@ -14544,8 +14682,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Skovshoved Idrætsforening",
-    "latitude": "55.763678",
-    "longitude": "12.590212",
+    "latitude": "55.7637",
+    "longitude": "12.5902",
     "klub_logo": "logos/klub_1579.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1579/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1579/klubinfo",
@@ -14564,6 +14702,8 @@
       1956,
       1957
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "John Jensen",
@@ -14579,8 +14719,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -14599,6 +14739,8 @@
       1957,
       1958
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Henry From",
@@ -14614,8 +14756,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Henry%20From%201957cr.jpg",
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -14637,6 +14779,8 @@
       1960,
       1961
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Knud Petersen",
@@ -14653,7 +14797,7 @@
     "gender": "mand",
     "klubnavn": "Nykøbing Falster Boldklub af 1901",
     "latitude": "54.762",
-    "longitude": "11.870992",
+    "longitude": "11.871",
     "klub_logo": "logos/klub_99004.gif",
     "klub_website": null,
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/99004/klubinfo",
@@ -14679,6 +14823,8 @@
     "years_played": [
       1957
     ]
+  ,
+    "_manual_fields": ["longitude"]
   },
   {
     "playerLabel": "Bent Dideriksen",
@@ -14767,8 +14913,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -14786,6 +14932,8 @@
     "years_played": [
       1957
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Peder Kjær",
@@ -14801,8 +14949,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -14820,6 +14968,8 @@
     "years_played": [
       1957
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Finn Alfred Hansen",
@@ -15711,8 +15861,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20M%C3%B8ller%20Nielsen%202010-10-01.JPG",
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -15731,6 +15881,8 @@
       1959,
       1961
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Erling Sørensen",
@@ -16270,8 +16422,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -16289,6 +16441,8 @@
     "years_played": [
       1962
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Carl Bertelsen",
@@ -16423,8 +16577,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -16459,6 +16613,8 @@
       1962,
       1963
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Helge Jørgensen",
@@ -17194,8 +17350,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20S%C3%B8ndergaard.png",
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -17248,6 +17404,8 @@
       1966,
       1967
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jørgen Rasmussen",
@@ -18229,8 +18387,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "http://www.agf1880fodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/421/klubinfo",
@@ -18248,6 +18406,8 @@
     "years_played": [
       1966
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Henning Boel",
@@ -19821,8 +19981,8 @@
     "n_goals": "0",
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -19891,6 +20051,8 @@
       1971,
       1972
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Allan Michaelsen",
@@ -20101,7 +20263,7 @@
     "gender": "mand",
     "klubnavn": "Nykøbing Falster Boldklub af 1901",
     "latitude": "54.762",
-    "longitude": "11.870992",
+    "longitude": "11.871",
     "klub_logo": "logos/klub_99004.gif",
     "klub_website": null,
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/99004/klubinfo",
@@ -20121,6 +20283,8 @@
       1970,
       1971
     ]
+  ,
+    "_manual_fields": ["longitude"]
   },
   {
     "playerLabel": "Kaj Paulsen",
@@ -20136,8 +20300,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AaB",
-    "latitude": "57.043402",
-    "longitude": "10.019594",
+    "latitude": "57.0434",
+    "longitude": "10.0196",
     "klub_logo": "logos/klub_2.png",
     "klub_website": "http://www.aabaf1885.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/2/klubinfo",
@@ -20146,6 +20310,8 @@
       1969,
       1970
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Per Madsen",
@@ -21804,8 +21970,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -21866,6 +22032,8 @@
       1973,
       1975
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Sten Ziegler",
@@ -21936,8 +22104,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Nykøbing Falster Boldklub af 1901",
-    "latitude": "54.7641",
-    "longitude": "11.8956",
+    "latitude": "54.762",
+    "longitude": "11.871",
     "klub_logo": "logos/klub_99004.gif",
     "klub_website": "https://www.dbu.dk/resultater/klub/3404/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3404/klubinfo",
@@ -21946,8 +22114,8 @@
       {
         "klub_id": "99004",
         "klubnavn": "Nykøbing Falster Boldklub af 1901",
-        "latitude": 54.7641,
-        "longitude": 11.8956,
+        "latitude": 54.762,
+        "longitude": 11.871,
         "is_earliest": true,
         "klub_logo": "logos/klub_99004.gif"
       }
@@ -22083,8 +22251,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Skovshoved Idrætsforening",
-    "latitude": "55.763678",
-    "longitude": "12.590212",
+    "latitude": "55.7637",
+    "longitude": "12.5902",
     "klub_logo": "logos/klub_1579.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1579/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1579/klubinfo",
@@ -22123,6 +22291,8 @@
       1977,
       1978
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Henning Jensen",
@@ -22673,7 +22843,7 @@
     "gender": "mand",
     "klubnavn": "Nykøbing Falster Boldklub af 1901",
     "latitude": "54.762",
-    "longitude": "11.870992",
+    "longitude": "11.871",
     "klub_logo": "logos/klub_99004.gif",
     "klub_website": null,
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/99004/klubinfo",
@@ -22724,6 +22894,8 @@
       1972,
       1973
     ]
+  ,
+    "_manual_fields": ["longitude"]
   },
   {
     "playerLabel": "Arne Rastad",
@@ -23003,8 +23175,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -23046,6 +23218,8 @@
     "years_played": [
       1973
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jens Kolding",
@@ -23061,8 +23235,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eindhoven%20tegen%20Roda%20JC%200-0%20scheidsrechter%20Vervoort%20wordt%20door%20bal%20getroffen%20na%2C%20Bestanddeelnr%20928-8023.jpg",
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -23099,6 +23273,8 @@
       1976,
       1981
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Ole Skouboe",
@@ -23291,8 +23467,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Skovshoved Idrætsforening",
-    "latitude": "55.7597",
-    "longitude": "12.5894",
+    "latitude": "55.7637",
+    "longitude": "12.5902",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ae/SkovshovedIFbadge.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1579/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1579/klubinfo",
@@ -23325,8 +23501,8 @@
       {
         "klub_id": null,
         "klubnavn": "Skovshoved Idrætsforening",
-        "latitude": 55.7597,
-        "longitude": 12.5894,
+        "latitude": 55.7637,
+        "longitude": 12.5902,
         "is_earliest": true,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ae/SkovshovedIFbadge.png"
       },
@@ -23383,6 +23559,8 @@
       1973,
       1974
     ]
+  ,
+    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Kurt Stendal",
@@ -23595,8 +23773,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -23632,6 +23810,8 @@
       1977,
       1978
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Lars Larsen",
@@ -24207,8 +24387,8 @@
       {
         "klub_id": null,
         "klubnavn": "Ikast FS Fodbold",
-        "latitude": 56.1408,
-        "longitude": 9.1517,
+        "latitude": 56.1447,
+        "longitude": 9.1423,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/0/08/Ikast_FS.png"
       },
@@ -24238,6 +24418,8 @@
       1982,
       1983
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Claus Larsen",
@@ -24310,7 +24492,7 @@
     "gender": "mand",
     "klubnavn": "Nykøbing Falster Boldklub af 1901",
     "latitude": "54.762",
-    "longitude": "11.870992",
+    "longitude": "11.871",
     "klub_logo": "logos/klub_99004.gif",
     "klub_website": "https://www.dbu.dk/resultater/klub/3404/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3404/klubinfo",
@@ -24327,8 +24509,8 @@
       {
         "klub_id": "99004",
         "klubnavn": "Nykøbing Falster Boldklub af 1901",
-        "latitude": 54.7641,
-        "longitude": 11.8956,
+        "latitude": 54.762,
+        "longitude": 11.871,
         "is_earliest": true,
         "klub_logo": "logos/klub_3404.png"
       }
@@ -24336,6 +24518,8 @@
     "years_played": [
       1975
     ]
+  ,
+    "_manual_fields": ["allClubs", "longitude"]
   },
   {
     "playerLabel": "Poul Mathiasen",
@@ -24481,8 +24665,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -24524,6 +24708,8 @@
     "years_played": [
       1975
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Ole Rasmussen",
@@ -25407,7 +25593,7 @@
     "gender": "mand",
     "klubnavn": "Nykøbing Falster Boldklub af 1901",
     "latitude": "54.762",
-    "longitude": "11.870992",
+    "longitude": "11.871",
     "klub_logo": "logos/klub_99004.gif",
     "klub_website": "https://www.dbu.dk/resultater/klub/3404/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3404/klubinfo",
@@ -25424,8 +25610,8 @@
       {
         "klub_id": "99004",
         "klubnavn": "Nykøbing Falster Boldklub af 1901",
-        "latitude": 54.7641,
-        "longitude": 11.8956,
+        "latitude": 54.762,
+        "longitude": 11.871,
         "is_earliest": true,
         "klub_logo": "logos/klub_3404.png"
       }
@@ -25434,6 +25620,8 @@
       1977,
       1978
     ]
+  ,
+    "_manual_fields": ["allClubs", "longitude"]
   },
   {
     "playerLabel": "Ole Kjær",
@@ -25759,7 +25947,7 @@
     "gender": "mand",
     "klubnavn": "Nykøbing Falster Boldklub af 1901",
     "latitude": "54.762",
-    "longitude": "11.870992",
+    "longitude": "11.871",
     "klub_logo": "logos/klub_99004.gif",
     "klub_website": "http://www.nykobingfc.dk/",
     "klub_dbu_url": null,
@@ -25769,6 +25957,8 @@
       1978,
       1979
     ]
+  ,
+    "_manual_fields": ["longitude"]
   },
   {
     "playerLabel": "Frank Arnesen",
@@ -25860,8 +26050,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "http://www.obfodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -25869,6 +26059,8 @@
     "years_played": [
       1978
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Søren Lerby",
@@ -26129,8 +26321,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -26165,6 +26357,8 @@
       1978,
       1979
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Søren Busk",
@@ -26749,8 +26943,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -26768,6 +26962,8 @@
     "years_played": [
       1980
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Johnny Jacobsen",
@@ -26783,8 +26979,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Johnny%20Jacobsen%20%281982%29%2C%20Bestanddeelnr%20932-2599%20%28cropped%29.jpg",
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -26826,6 +27022,8 @@
     "years_played": [
       1980
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Michael Schäfer",
@@ -26841,8 +27039,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Avarta",
-    "latitude": "55.6814",
-    "longitude": "12.455",
+    "latitude": "55.6756",
+    "longitude": "12.4304",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Logo_of_BK_Avarta.svg/960px-Logo_of_BK_Avarta.svg.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3720/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3720/klubinfo",
@@ -26859,8 +27057,8 @@
       {
         "klub_id": null,
         "klubnavn": "Avarta",
-        "latitude": 55.6814,
-        "longitude": 12.455,
+        "latitude": 55.6756,
+        "longitude": 12.4304,
         "is_earliest": true,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Logo_of_BK_Avarta.svg/960px-Logo_of_BK_Avarta.svg.png"
       }
@@ -26870,6 +27068,8 @@
       1981,
       1983
     ]
+  ,
+    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Ole Kirketerp Madsen",
@@ -27073,8 +27273,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -27107,6 +27307,8 @@
       1988,
       1989
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Kenneth Brylle Larsen",
@@ -27461,8 +27663,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -27489,6 +27691,8 @@
       1981,
       1983
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Michael Manniche",
@@ -27554,8 +27758,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       }
@@ -27567,6 +27771,8 @@
       1986,
       1987
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Steen Hansen",
@@ -27937,8 +28143,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -27972,6 +28178,8 @@
     "years_played": [
       1982
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Morten Donnerup",
@@ -28312,8 +28520,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Avarta",
-    "latitude": "55.6814",
-    "longitude": "12.455",
+    "latitude": "55.6756",
+    "longitude": "12.4304",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Logo_of_BK_Avarta.svg/960px-Logo_of_BK_Avarta.svg.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3720/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3720/klubinfo",
@@ -28354,8 +28562,8 @@
       {
         "klub_id": null,
         "klubnavn": "Avarta",
-        "latitude": 55.6814,
-        "longitude": 12.455,
+        "latitude": 55.6756,
+        "longitude": 12.4304,
         "is_earliest": true,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Logo_of_BK_Avarta.svg/960px-Logo_of_BK_Avarta.svg.png"
       },
@@ -28372,6 +28580,8 @@
       1983,
       1984
     ]
+  ,
+    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Frank Klausen",
@@ -28387,8 +28597,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -28406,6 +28616,8 @@
     "years_played": [
       1983
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Alan Hansen",
@@ -28521,8 +28733,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -28543,6 +28755,8 @@
       1987,
       1988
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Alex Nielsen",
@@ -28717,8 +28931,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Brøndby IF",
-    "latitude": "55.649056",
-    "longitude": "12.417581",
+    "latitude": "55.6491",
+    "longitude": "12.4176",
     "klub_logo": "logos/klub_3700.png",
     "klub_website": "http://www.brondbyif.net/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
@@ -28726,6 +28940,8 @@
     "years_played": [
       1983
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Tommy Christensen",
@@ -28741,8 +28957,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tommy%20Christensen.JPG",
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.132177",
-    "longitude": "10.19374",
+    "latitude": "56.1322",
+    "longitude": "10.1937",
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -28816,6 +29032,8 @@
     "years_played": [
       1983
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Keld Bordinggaard",
@@ -28933,8 +29151,8 @@
       {
         "klub_id": null,
         "klubnavn": "AaB",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
+        "latitude": 57.0434,
+        "longitude": 10.0196,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Aalborg_Boldspilklub_%28logo%29.svg/330px-Aalborg_Boldspilklub_%28logo%29.svg.png"
       },
@@ -28972,6 +29190,8 @@
     ],
     "klubnavn_original": "AGF",
     "klub_id": "3699"
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Ulrik Moseby",
@@ -28987,8 +29207,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -29008,6 +29228,8 @@
       1988,
       1989
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Johnny Anker Hansen",
@@ -29023,8 +29245,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -29070,6 +29292,8 @@
       1990,
       1991
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Per Steffensen",
@@ -29451,8 +29675,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Brøndby IF",
-    "latitude": "55.649056",
-    "longitude": "12.417581",
+    "latitude": "55.6491",
+    "longitude": "12.4176",
     "klub_logo": "logos/klub_3700.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
@@ -29471,6 +29695,8 @@
       1988,
       1989
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Bent Christensen Arensøe",
@@ -29681,8 +29907,8 @@
       {
         "klub_id": null,
         "klubnavn": "AaB",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
+        "latitude": 57.0434,
+        "longitude": 10.0196,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Aalborg_Boldspilklub_%28logo%29.svg/330px-Aalborg_Boldspilklub_%28logo%29.svg.png"
       },
@@ -29702,6 +29928,8 @@
       1992,
       1993
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Johnny Hansen",
@@ -30152,8 +30380,8 @@
       {
         "klub_id": null,
         "klubnavn": "Avarta",
-        "latitude": 55.6814,
-        "longitude": 12.455,
+        "latitude": 55.6756,
+        "longitude": 12.4304,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Logo_of_BK_Avarta.svg/960px-Logo_of_BK_Avarta.svg.png"
       },
@@ -30177,6 +30405,8 @@
     "years_played": [
       1990
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Søren Lyng",
@@ -30233,8 +30463,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -30259,6 +30489,8 @@
       1990,
       1991
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Kent Nielsen",
@@ -30472,8 +30704,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       }
@@ -30487,6 +30719,8 @@
       1988,
       1989
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "John Larsen",
@@ -30588,8 +30822,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -30633,6 +30867,8 @@
     "years_played": [
       1984
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Torben Christensen",
@@ -31268,8 +31504,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -31285,6 +31521,8 @@
     "years_played": [
       1993
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Lars Højer Nielsen",
@@ -31326,8 +31564,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       }
@@ -31459,8 +31697,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -31476,6 +31714,8 @@
     "years_played": [
       1993
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Carsten Dethlefsen",
@@ -31615,8 +31855,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -31632,6 +31872,8 @@
     "years_played": [
       1995
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Bo Hansen",
@@ -31866,8 +32108,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       }
@@ -31875,6 +32117,8 @@
     "years_played": [
       1991
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Erik Rasmussen",
@@ -32209,8 +32453,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -32227,6 +32471,8 @@
       2000,
       2002
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Henrik Pedersen",
@@ -32620,8 +32866,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -32650,6 +32896,8 @@
       2009,
       2010
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Jan Michaelsen",
@@ -32809,8 +33057,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -32885,6 +33133,8 @@
       2002,
       2008
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Martin Albrechtsen",
@@ -32974,8 +33224,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -32990,8 +33240,8 @@
       {
         "klub_id": null,
         "klubnavn": "Avarta",
-        "latitude": 55.6814,
-        "longitude": 12.455,
+        "latitude": 55.6756,
+        "longitude": 12.4304,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Logo_of_BK_Avarta.svg/960px-Logo_of_BK_Avarta.svg.png"
       }
@@ -33002,6 +33252,8 @@
       2003,
       2006
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Thomas Røll Larsen",
@@ -33075,8 +33327,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       }
@@ -33086,6 +33338,8 @@
       2003,
       2004
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Brian Priske",
@@ -33437,8 +33691,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -33481,6 +33735,8 @@
       2011,
       2012
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Lars Jacobsen",
@@ -33530,8 +33786,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -33580,6 +33836,8 @@
       2014,
       2015
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Bo Svensson",
@@ -33595,8 +33853,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bo%20Svensson%20Guntersblum%20in%202022%20%28cropped%29.jpg",
     "gender": "mand",
     "klubnavn": "FC København",
-    "latitude": "55.6761",
-    "longitude": "12.5689",
+    "latitude": "55.7036",
+    "longitude": "12.5718",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3710/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3710/klubinfo",
@@ -33629,8 +33887,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": true,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       }
@@ -33639,6 +33897,8 @@
       2006,
       2011
     ]
+  ,
+    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Daniel Jensen",
@@ -33654,8 +33914,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20Jensen.jpg",
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -33680,8 +33940,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -33737,6 +33997,8 @@
       2009,
       2010
     ]
+  ,
+    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Patrick Mtiliga",
@@ -33752,8 +34014,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Patrick%20Mtiliga%2C%20Norsh-Zen.jpg",
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -33813,6 +34075,8 @@
       2010,
       2012
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Mads Junker",
@@ -34316,8 +34580,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -34357,6 +34621,8 @@
       2014,
       2015
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Martin Retov",
@@ -34762,8 +35028,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -34802,6 +35068,8 @@
       2011,
       2012
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Kasper Bøgelund",
@@ -35047,8 +35315,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -35065,8 +35333,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -35091,6 +35359,8 @@
       2007,
       2008
     ]
+  ,
+    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Thomas Frandsen",
@@ -35513,8 +35783,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       }
@@ -35525,6 +35795,8 @@
       2007,
       2014
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Jonas Kamper",
@@ -35772,8 +36044,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjalte%20N%C3%B8rregaard%202008.jpg",
     "gender": "mand",
     "klubnavn": "Boldklubben Rødovre",
-    "latitude": "55.6947322",
-    "longitude": "12.4615094",
+    "latitude": "55.6947",
+    "longitude": "12.4615",
     "klub_logo": "logos/klub_1578.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
@@ -35814,8 +36086,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -35832,6 +36104,8 @@
       2008,
       2009
     ]
+  ,
+    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Søren Berg",
@@ -37127,8 +37401,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -37147,6 +37421,8 @@
       2000,
       2002
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Gitte Pedersen",
@@ -37238,8 +37514,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -37259,6 +37535,8 @@
       2001,
       2002
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Annette Laursen",
@@ -37472,8 +37750,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Mejrup GU",
-    "latitude": "56.362638",
-    "longitude": "8.689196",
+    "latitude": "56.3626",
+    "longitude": "8.6892",
     "klub_logo": "logos/klub_294.png",
     "klub_website": "http://www.mejrup-fodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/294/klubinfo",
@@ -37483,6 +37761,8 @@
       2003,
       2004
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Dorte Dalum Jensen",
@@ -37640,8 +37920,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Boldklubben Rødovre",
-    "latitude": "55.6947322",
-    "longitude": "12.4615094",
+    "latitude": "55.6947",
+    "longitude": "12.4615",
     "klub_logo": "logos/klub_1578.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
@@ -37704,6 +37984,8 @@
       2003,
       2004
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Johanna Rasmussen",
@@ -37720,7 +38002,7 @@
     "gender": "kvinde",
     "klubnavn": "Nykøbing Falster Boldklub af 1901",
     "latitude": "54.762",
-    "longitude": "11.870992",
+    "longitude": "11.871",
     "klub_logo": "logos/klub_99004.gif",
     "klub_website": "https://www.dbu.dk/resultater/klub/3404/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3404/klubinfo",
@@ -37745,8 +38027,8 @@
       {
         "klub_id": "99004",
         "klubnavn": "Nykøbing Falster Boldklub af 1901",
-        "latitude": 54.7641,
-        "longitude": 11.8956,
+        "latitude": 54.762,
+        "longitude": 11.871,
         "is_earliest": true,
         "klub_logo": "logos/klub_3404.png"
       },
@@ -37809,6 +38091,8 @@
       2017,
       2018
     ]
+  ,
+    "_manual_fields": ["allClubs", "longitude"]
   },
   {
     "playerLabel": "Cecilie Pedersen",
@@ -37824,8 +38108,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Brøndby IF",
-    "latitude": "55.649056",
-    "longitude": "12.417581",
+    "latitude": "55.6491",
+    "longitude": "12.4176",
     "klub_logo": "logos/klub_3700.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
@@ -37853,6 +38137,8 @@
       2003,
       2005
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "May Christensen",
@@ -38030,8 +38316,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -38062,6 +38348,8 @@
       2007,
       2008
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Gitte Husemoen",
@@ -38118,8 +38406,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Brøndby IF",
-    "latitude": "55.649056",
-    "longitude": "12.417581",
+    "latitude": "55.6491",
+    "longitude": "12.4176",
     "klub_logo": "logos/klub_3700.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
@@ -38141,6 +38429,8 @@
       2006,
       2007
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Trine Falck",
@@ -38155,8 +38445,8 @@
     "n_goals": "0",
     "gender": "kvinde",
     "klubnavn": "Nakskov Boldklub",
-    "latitude": "54.8358473807113",
-    "longitude": "11.1356218388542",
+    "latitude": "54.8358",
+    "longitude": "11.1356",
     "klub_logo": "logos/klub_2312312.png",
     "klub_website": null,
     "klub_dbu_url": null,
@@ -38174,6 +38464,8 @@
     "years_played": [
       2003
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Gitte Krogh",
@@ -38444,8 +38736,8 @@
       {
         "klub_id": null,
         "klubnavn": "Brøndby IF",
-        "latitude": 55.6547,
-        "longitude": 12.4164,
+        "latitude": 55.6491,
+        "longitude": 12.4176,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/Brondby_IF_logo.svg/330px-Brondby_IF_logo.svg.png"
       }
@@ -38455,6 +38747,8 @@
       2000,
       2001
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Lone K. Larsen",
@@ -38470,8 +38764,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "http://www.obfodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -38479,6 +38773,8 @@
     "years_played": [
       2000
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Marlene Kristensen",
@@ -38494,8 +38790,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -38516,6 +38812,8 @@
       1999,
       2000
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Marianne Løvendorf",
@@ -38531,8 +38829,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -38558,6 +38856,8 @@
     "years_played": [
       2000
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Anne Juul Ulnitz",
@@ -38625,8 +38925,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "http://www.obfodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -38636,6 +38936,8 @@
       1992,
       2000
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Dorthe Larsen",
@@ -39053,8 +39355,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -39099,6 +39401,8 @@
       1998,
       1999
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Hanne Nørregaard",
@@ -39114,8 +39418,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Brøndby IF",
-    "latitude": "55.649056",
-    "longitude": "12.417581",
+    "latitude": "55.6491",
+    "longitude": "12.4176",
     "klub_logo": "logos/klub_3700.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
@@ -39152,6 +39456,8 @@
       1998,
       1999
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Linda Nissen",
@@ -39167,8 +39473,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Kolding IF",
-    "latitude": "55.493563",
-    "longitude": "9.459691",
+    "latitude": "55.4936",
+    "longitude": "9.4597",
     "klub_logo": "logos/klub_567.png",
     "klub_website": "http://www.kif-fodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/567/klubinfo",
@@ -39176,6 +39482,8 @@
     "years_played": [
       1999
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Merete Hrenczuk",
@@ -39296,8 +39604,8 @@
       {
         "klub_id": "99004",
         "klubnavn": "Nykøbing Falster Boldklub af 1901",
-        "latitude": 54.7641,
-        "longitude": 11.8956,
+        "latitude": 54.762,
+        "longitude": 11.871,
         "is_earliest": false,
         "klub_logo": "logos/klub_3404.png"
       },
@@ -39329,6 +39637,8 @@
     "years_played": [
       2007
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Kamma Flæng",
@@ -39397,8 +39707,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -39456,6 +39766,8 @@
       1997,
       1998
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Karina Sefron",
@@ -39604,8 +39916,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Boldklubben Rødovre",
-    "latitude": "55.6947322",
-    "longitude": "12.4615094",
+    "latitude": "55.6947",
+    "longitude": "12.4615",
     "klub_logo": "logos/klub_1578.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
@@ -39648,6 +39960,8 @@
       1995,
       1996
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Bonny Madsen",
@@ -39737,8 +40051,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "http://www.obfodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -39748,6 +40062,8 @@
       1989,
       1990
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Helle Jensen",
@@ -40108,8 +40424,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -40141,6 +40457,8 @@
       1993,
       1994
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Alice Larsen",
@@ -40415,8 +40733,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -40454,6 +40772,8 @@
       1992,
       1993
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Carin Venborg",
@@ -40517,8 +40837,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Boldklubben Rødovre",
-    "latitude": "55.6947322",
-    "longitude": "12.4615094",
+    "latitude": "55.6947",
+    "longitude": "12.4615",
     "klub_logo": "logos/klub_1578.png",
     "klub_website": "http://www.bkrodovre.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
@@ -40526,6 +40846,8 @@
     "years_played": [
       1993
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Linette Sørensen",
@@ -40583,8 +40905,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Boldklubben Rødovre",
-    "latitude": "55.6947322",
-    "longitude": "12.4615094",
+    "latitude": "55.6947",
+    "longitude": "12.4615",
     "klub_logo": "logos/klub_1578.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
@@ -40616,6 +40938,8 @@
       1991,
       1992
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Ann Grethe Larsen",
@@ -40655,8 +40979,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -40699,6 +41023,8 @@
       1990,
       1991
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Ulla Christensen",
@@ -41378,8 +41704,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Boldklubben Rødovre",
-    "latitude": "55.6947322",
-    "longitude": "12.4615094",
+    "latitude": "55.6947",
+    "longitude": "12.4615",
     "klub_logo": "logos/klub_1578.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
@@ -41400,6 +41726,8 @@
       1984,
       1987
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Maybritt Jørgensen",
@@ -41464,8 +41792,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Boldklubben Rødovre",
-    "latitude": "55.6947322",
-    "longitude": "12.4615094",
+    "latitude": "55.6947",
+    "longitude": "12.4615",
     "klub_logo": "logos/klub_1578.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
@@ -41505,6 +41833,8 @@
       1986,
       1987
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Glennie Nielsen",
@@ -41624,8 +41954,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -41642,6 +41972,8 @@
       2006,
       2009
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Søren Larsen",
@@ -42561,8 +42893,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Boldklubben Rødovre",
-    "latitude": "55.6947322",
-    "longitude": "12.4615094",
+    "latitude": "55.6947",
+    "longitude": "12.4615",
     "klub_logo": "logos/klub_1578.png",
     "klub_website": "http://www.bkrodovre.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
@@ -42571,6 +42903,8 @@
       1981,
       1982
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Fridel Riggelsen",
@@ -43807,8 +44141,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -43861,6 +44195,8 @@
       2007,
       2008
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Johan Absalonsen",
@@ -43942,8 +44278,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -43959,6 +44295,8 @@
     "years_played": [
       2009
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Michael Jakobsen",
@@ -44040,8 +44378,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -44065,6 +44403,8 @@
     "years_played": [
       2009
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "William Kvist",
@@ -44122,8 +44462,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -44150,6 +44490,8 @@
       2017,
       2018
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Kasper Lorentzen",
@@ -44449,8 +44791,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       }
@@ -44461,6 +44803,8 @@
       2010,
       2011
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Martin Bernburg",
@@ -44526,8 +44870,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -44544,6 +44888,8 @@
       2008,
       2009
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Daniel Agger",
@@ -45067,8 +45413,8 @@
       {
         "klub_id": null,
         "klubnavn": "AaB",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
+        "latitude": 57.0434,
+        "longitude": 10.0196,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Aalborg_Boldspilklub_%28logo%29.svg/330px-Aalborg_Boldspilklub_%28logo%29.svg.png"
       },
@@ -45114,6 +45460,8 @@
       2015,
       2016
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Anders Lindegaard",
@@ -45129,8 +45477,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Lindegaard%202016.jpg",
     "gender": "mand",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -45205,6 +45553,8 @@
       2010,
       2011
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Danny Olsen",
@@ -45286,8 +45636,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       }
@@ -45295,6 +45645,8 @@
     "years_played": [
       2014
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Jonas Borring",
@@ -46481,8 +46833,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Jyllinge FC",
-    "latitude": "55.748197374936495",
-    "longitude": "12.12342829742018",
+    "latitude": "55.7482",
+    "longitude": "12.1234",
     "klub_logo": "logos/klub_1108.png",
     "klub_website": "http://www.jyllinge-fc.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1108/klubinfo",
@@ -46490,6 +46842,8 @@
     "years_played": [
       2006
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Tina Rasmussen",
@@ -46635,8 +46989,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -46654,6 +47008,8 @@
       2010,
       2012
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Nicklas Bendtner",
@@ -46727,8 +47083,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -46771,6 +47127,8 @@
       2017,
       2018
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Mike Jensen",
@@ -46786,8 +47144,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mike%20Jensen.JPG",
     "gender": "mand",
     "klubnavn": "Boldklubben Rødovre",
-    "latitude": "55.6947322",
-    "longitude": "12.4615094",
+    "latitude": "55.6947",
+    "longitude": "12.4615",
     "klub_logo": "logos/klub_1578.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1578/klubinfo",
@@ -46849,6 +47207,8 @@
       2017,
       2018
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Anders Randrup",
@@ -46864,8 +47224,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Avarta",
-    "latitude": "55.675614",
-    "longitude": "12.430403",
+    "latitude": "55.6756",
+    "longitude": "12.4304",
     "klub_logo": "logos/klub_3720.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3720/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3720/klubinfo",
@@ -46931,6 +47291,8 @@
     "years_played": [
       2008
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Michael Lumb",
@@ -47296,8 +47658,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -47331,6 +47693,8 @@
       2008,
       2009
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Michael Gravgaard",
@@ -47388,8 +47752,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -47415,6 +47779,8 @@
       2006,
       2007
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Mette V. Jensen",
@@ -47694,8 +48060,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20Wass%202019.jpg",
     "gender": "mand",
     "klubnavn": "Avarta",
-    "latitude": "55.675614",
-    "longitude": "12.430403",
+    "latitude": "55.6756",
+    "longitude": "12.4304",
     "klub_logo": "logos/klub_3720.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3720/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3720/klubinfo",
@@ -47778,6 +48144,8 @@
       2021,
       2022
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Carina Johansen",
@@ -47836,8 +48204,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Line%20Roddik%20Hansen%20May%202013.jpg",
     "gender": "kvinde",
     "klubnavn": "IF Skjold Birkerød",
-    "latitude": "55.839243",
-    "longitude": "12.434655",
+    "latitude": "55.8392",
+    "longitude": "12.4347",
     "klub_logo": "logos/klub_965.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/965/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/965/klubinfo",
@@ -47931,7 +48299,7 @@
       2016,
       2017
     ],
-    "_manual_fields": "allClubs"
+    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Henriette Salling-Dahl",
@@ -48205,8 +48573,8 @@
       {
         "klub_id": null,
         "klubnavn": "Kolding IF",
-        "latitude": 55.49,
-        "longitude": 9.47,
+        "latitude": 55.4936,
+        "longitude": 9.4597,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/8/86/KoldingIFBadge.png"
       },
@@ -48255,6 +48623,8 @@
       2024,
       2025
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Sif Rykær",
@@ -48540,8 +48910,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -48573,6 +48943,8 @@
       2017,
       2018
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Nicki Bille Nielsen",
@@ -48790,8 +49162,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -48809,6 +49181,8 @@
     "years_played": [
       2006
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Cecilie Sandvej",
@@ -48824,8 +49198,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cecilie%20Sandvej%202017%20%28cropped%29.jpg",
     "gender": "kvinde",
     "klubnavn": "Brøndby IF",
-    "latitude": "55.649056",
-    "longitude": "12.417581",
+    "latitude": "55.6491",
+    "longitude": "12.4176",
     "klub_logo": "logos/klub_3700.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
@@ -48915,6 +49289,8 @@
       2018,
       2019
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Maiken Pape",
@@ -48992,8 +49368,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -49027,6 +49403,8 @@
     "years_played": [
       2010
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Katrine Korsgaard",
@@ -49076,8 +49454,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Zanka%20-%20RSCA%20%282024%29%20%28cropped%29.jpg",
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -49118,8 +49496,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -49169,6 +49547,8 @@
       2023,
       2024
     ]
+  ,
+    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Theresa Eslund",
@@ -50705,8 +51085,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -50732,6 +51112,8 @@
       2009,
       2012
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Jens Stryger Larsen",
@@ -51532,8 +51914,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -51555,6 +51937,8 @@
       2021,
       2022
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Christian Eriksen",
@@ -51710,8 +52094,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       }
@@ -51720,6 +52104,8 @@
       2013,
       2020
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Lise Overgaard Munk",
@@ -52539,8 +52925,8 @@
     "n_goals": "0",
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.384575",
-    "longitude": "10.374329",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "logos/klub_1458.png",
     "klub_website": null,
     "klub_dbu_url": null,
@@ -52558,6 +52944,8 @@
     "years_played": [
       2013
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Simone Hagelskjær",
@@ -52673,8 +53061,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -52690,6 +53078,8 @@
     "years_played": [
       2010
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Thomas Delaney",
@@ -52739,8 +53129,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -52782,6 +53172,8 @@
       2023,
       2024
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Bashkim Kadrii",
@@ -52797,8 +53189,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bashkim%20Kadrii%202014%20Dnepr-Kopengagen.jpg",
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -52831,8 +53223,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -52856,6 +53248,8 @@
     "years_played": [
       2011
     ]
+  ,
+    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Frederik Sørensen",
@@ -53109,8 +53503,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -53147,6 +53541,8 @@
       2017,
       2018
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Nicolai Jørgensen",
@@ -53220,8 +53616,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -53244,6 +53640,8 @@
       2018,
       2019
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Jens Jønsson",
@@ -53368,8 +53766,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       }
@@ -53378,6 +53776,8 @@
       2010,
       2011
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Julie Trustrup Jensen",
@@ -54508,8 +54908,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jores%20Okore%20playing%20for%20Denmark.PNG",
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -54570,6 +54970,8 @@
       2013,
       2014
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Luna Gevitz",
@@ -54673,8 +55075,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -54804,6 +55206,8 @@
     "years_played": [
       2010
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jannik Vestergaard",
@@ -55104,8 +55508,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -55122,6 +55526,8 @@
       2013,
       2014
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Frederikke Thøgersen",
@@ -55477,8 +55883,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -55511,6 +55917,8 @@
       2021,
       2022
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Kathrine Larsen",
@@ -55767,8 +56175,8 @@
       {
         "klub_id": null,
         "klubnavn": "AGF",
-        "latitude": 56.1564,
-        "longitude": 10.2097,
+        "latitude": 56.1322,
+        "longitude": 10.1937,
         "is_earliest": false,
         "klub_logo": null
       }
@@ -55777,6 +56185,8 @@
       2016,
       2017
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Amalie Thestrup",
@@ -55792,8 +56202,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Amalie%20Thestrup%20Lewes%20FC%20Women%202%20Liverpool%20Women%202%2001%2011%202020-109%20%2850557152287%29%20%28cropped%29.jpg",
     "gender": "kvinde",
     "klubnavn": "Brøndby IF",
-    "latitude": "55.649056",
-    "longitude": "12.417581",
+    "latitude": "55.6491",
+    "longitude": "12.4176",
     "klub_logo": "logos/klub_3700.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
@@ -55884,6 +56294,8 @@
       2019,
       2020
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Nicolaj Thomsen",
@@ -55949,8 +56361,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -55974,6 +56386,8 @@
     "years_played": [
       2014
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Lukas Lerager",
@@ -56023,8 +56437,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -56050,6 +56464,8 @@
       2018,
       2019
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Andreas Christensen",
@@ -56144,8 +56560,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Brøndby IF",
-    "latitude": "55.649056",
-    "longitude": "12.417581",
+    "latitude": "55.6491",
+    "longitude": "12.4176",
     "klub_logo": "logos/klub_3700.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
@@ -56195,6 +56611,8 @@
     "years_played": [
       2018
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Rikke Læntver Sevecke",
@@ -56211,7 +56629,7 @@
     "gender": "kvinde",
     "klubnavn": "Nykøbing Falster Boldklub af 1901",
     "latitude": "54.762",
-    "longitude": "11.870992",
+    "longitude": "11.871",
     "klub_logo": "logos/klub_99004.gif",
     "klub_website": "https://www.dbu.dk/resultater/klub/3404/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3404/klubinfo",
@@ -56244,8 +56662,8 @@
       {
         "klub_id": "99004",
         "klubnavn": "Nykøbing Falster Boldklub af 1901",
-        "latitude": 54.7641,
-        "longitude": 11.8956,
+        "latitude": 54.762,
+        "longitude": 11.871,
         "is_earliest": true,
         "klub_logo": "logos/klub_3404.png"
       },
@@ -56283,6 +56701,8 @@
       2022,
       2023
     ]
+  ,
+    "_manual_fields": ["allClubs", "longitude"]
   },
   {
     "playerLabel": "Stine Larsen",
@@ -56521,8 +56941,8 @@
       {
         "klub_id": null,
         "klubnavn": "Kolding IF",
-        "latitude": 55.49,
-        "longitude": 9.47,
+        "latitude": 55.4936,
+        "longitude": 9.4597,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/8/86/KoldingIFBadge.png"
       },
@@ -56554,6 +56974,8 @@
       2024,
       2026
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Nicoline Sørensen",
@@ -56883,8 +57305,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -56913,6 +57335,8 @@
       2018,
       2019
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Emilie Henriksen",
@@ -57790,8 +58214,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Andreas%20Maxs%C3%B8%2C%20FC%20Salzburg%20gegen%20Br%C3%B8ndby%20IF%20%28Championsleague%20Play%20off%20Hinspiel%2017.%20August%202021%29%2047%20%28cropped%29.jpg",
     "gender": "mand",
     "klubnavn": "Brøndby IF",
-    "latitude": "55.649056",
-    "longitude": "12.417581",
+    "latitude": "55.6491",
+    "longitude": "12.4176",
     "klub_logo": "logos/klub_3700.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
@@ -57850,6 +58274,8 @@
       2020,
       2022
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Katrine Abel",
@@ -58009,8 +58435,8 @@
       {
         "klub_id": null,
         "klubnavn": "AaB",
-        "latitude": 57.0436,
-        "longitude": 10.0208,
+        "latitude": 57.0434,
+        "longitude": 10.0196,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Aalborg_Boldspilklub_%28logo%29.svg/330px-Aalborg_Boldspilklub_%28logo%29.svg.png"
       }
@@ -58018,6 +58444,8 @@
     "years_played": [
       2018
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Caroline Møller Hansen",
@@ -59054,8 +59482,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -59105,6 +59533,8 @@
     "years_played": [
       2019
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jonas Wind",
@@ -59465,8 +59895,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mads%20Roerslev.jpg",
     "gender": "mand",
     "klubnavn": "FC København",
-    "latitude": "55.703609",
-    "longitude": "12.57179",
+    "latitude": "55.7036",
+    "longitude": "12.5718",
     "klub_logo": "logos/klub_3710.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3710/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3710/klubinfo",
@@ -59524,6 +59954,8 @@
     "years_played": [
       2024
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Mads Hermansen",
@@ -59716,8 +60148,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Brøndby IF",
-    "latitude": "55.649056",
-    "longitude": "12.417581",
+    "latitude": "55.6491",
+    "longitude": "12.4176",
     "klub_logo": "logos/klub_3700.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3700/klubinfo",
@@ -59743,6 +60175,8 @@
     "years_played": [
       2024
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Emma Færge",
@@ -59808,8 +60242,8 @@
       {
         "klub_id": null,
         "klubnavn": "Kolding IF",
-        "latitude": 55.49,
-        "longitude": 9.47,
+        "latitude": 55.4936,
+        "longitude": 9.4597,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/8/86/KoldingIFBadge.png"
       },
@@ -59829,6 +60263,8 @@
       2025,
       2026
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Matt O'Riley",
@@ -60163,8 +60599,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Odense Boldklub",
-    "latitude": "55.396",
-    "longitude": "10.3885",
+    "latitude": "55.3846",
+    "longitude": "10.3743",
     "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Odense_Boldklub.svg/330px-Odense_Boldklub.svg.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1458/klubinfo",
@@ -60189,8 +60625,8 @@
       {
         "klub_id": null,
         "klubnavn": "Odense Boldklub",
-        "latitude": 55.396,
-        "longitude": 10.3885,
+        "latitude": 55.3846,
+        "longitude": 10.3743,
         "is_earliest": true,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Odense_Boldklub.svg/330px-Odense_Boldklub.svg.png"
       }
@@ -60199,6 +60635,8 @@
       2022,
       2023
     ]
+  ,
+    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Adam Fogt",
@@ -60308,8 +60746,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/20250907-Olivia%20Holdt.jpg",
     "gender": "kvinde",
     "klubnavn": "Ikast FS Fodbold",
-    "latitude": "56.144702",
-    "longitude": "9.142348",
+    "latitude": "56.1447",
+    "longitude": "9.1423",
     "klub_logo": "logos/klub_266.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/380/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/380/klubinfo",
@@ -60371,6 +60809,8 @@
       2025,
       2026
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Emma Snerle",
@@ -61250,8 +61690,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mikkel%20Damsgaard%2029112025%20%282%29%20%28cropped%29.jpg",
     "gender": "mand",
     "klubnavn": "Jyllinge FC",
-    "latitude": "55.7481973749365",
-    "longitude": "12.1234282974202",
+    "latitude": "55.7482",
+    "longitude": "12.1234",
     "klub_logo": "logos/klub_1108.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1108/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1108/klubinfo",
@@ -61299,6 +61739,8 @@
       2025,
       2026
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Kasper Høgh",
@@ -61414,8 +61856,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Victor%20Kristiansen%2024082024%20%283%29.jpg",
     "gender": "mand",
     "klubnavn": "FC København",
-    "latitude": "55.703609",
-    "longitude": "12.57179",
+    "latitude": "55.7036",
+    "longitude": "12.5718",
     "klub_logo": "logos/klub_3710.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3710/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3710/klubinfo",
@@ -61451,6 +61893,8 @@
       2024,
       2025
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Kathrine Kühl",
@@ -62482,8 +62926,8 @@
       {
         "klub_id": null,
         "klubnavn": "Kolding IF",
-        "latitude": 55.4942,
-        "longitude": 9.4592,
+        "latitude": 55.4936,
+        "longitude": 9.4597,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/8/86/KoldingIFBadge.png"
       }
@@ -62491,6 +62935,8 @@
     "years_played": [
       2021
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Albert Grønbæk Erlykke",
@@ -62891,8 +63337,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mathias%20Kvistgaarden%2C%20Br%C3%B8ndby%20IF.jpg",
     "gender": "mand",
     "klubnavn": "IF Skjold Birkerød",
-    "latitude": "55.839243",
-    "longitude": "12.434655",
+    "latitude": "55.8392",
+    "longitude": "12.4347",
     "klub_logo": "logos/klub_965.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/965/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/965/klubinfo",
@@ -62934,6 +63380,8 @@
     "years_played": [
       2025
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jóhanna Fossdalsá",
@@ -63068,8 +63516,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "FC København",
-    "latitude": "55.703609",
-    "longitude": "12.57179",
+    "latitude": "55.7036",
+    "longitude": "12.5718",
     "klub_logo": "logos/klub_3710.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3710/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3710/klubinfo",
@@ -63111,6 +63559,8 @@
     "years_played": [
       2025
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Filip Jørgensen",
@@ -63611,8 +64061,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Football%20at%20the%201912%20Summer%20Olympics%20-%20Denmark%20squad%20%28Hansen%29.JPG",
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -63632,6 +64082,8 @@
       1910,
       1912
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "August Lindgren",
@@ -63647,8 +64099,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/DK%20football1908.jpg",
     "gender": "mand",
     "klubnavn": "Boldklubben af 1893",
-    "latitude": "55.713431",
-    "longitude": "12.582473",
+    "latitude": "55.7138",
+    "longitude": "12.5825",
     "klub_logo": "logos/klub_1532.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1532/klubinfo",
@@ -63675,6 +64127,8 @@
       1908,
       1910
     ]
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Kristian Middelboe",
@@ -64240,8 +64694,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -64267,6 +64721,8 @@
       1997,
       2000
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Ole Bjur",
@@ -64430,8 +64886,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -64472,6 +64928,8 @@
       2002,
       2003
     ]
+  ,
+    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Jakob Friis-Hansen",
@@ -64559,7 +65017,7 @@
     "gender": "mand",
     "klubnavn": "Nykøbing Falster Boldklub af 1901",
     "latitude": "54.762",
-    "longitude": "11.870992",
+    "longitude": "11.871",
     "klub_logo": "logos/klub_99004.gif",
     "klub_website": "https://www.dbu.dk/resultater/klub/3404/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3404/klubinfo",
@@ -64600,8 +65058,8 @@
       {
         "klub_id": null,
         "klubnavn": "FC København",
-        "latitude": 55.6761,
-        "longitude": 12.5689,
+        "latitude": 55.7036,
+        "longitude": 12.5718,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
@@ -64649,6 +65107,8 @@
       2000,
       2001
     ]
+  ,
+    "_manual_fields": ["allClubs", "longitude"]
   },
   {
     "playerLabel": "Jan Heintze",
@@ -64991,8 +65451,8 @@
     "lon": "12.4806530853471",
     "region": "Region Hovedstaden",
     "klubnavn": "FC København",
-    "latitude": "55.703609",
-    "longitude": "12.57179",
+    "latitude": "55.7036",
+    "longitude": "12.5718",
     "klub_logo": "logos/klub_3710.png",
     "klub_website": "",
     "klub_dbu_url": "",
@@ -65051,6 +65511,8 @@
     "wikipediaURL_en": "",
     "klubnavn_original": "FC København",
     "klub_id": "3710"
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "William Osula",
@@ -65064,8 +65526,8 @@
     "lon": "10.209722222",
     "region": "",
     "klubnavn": "FC København",
-    "latitude": "55.703609",
-    "longitude": "12.57179",
+    "latitude": "55.7036",
+    "longitude": "12.5718",
     "klub_logo": "logos/klub_3710.png",
     "klub_website": "",
     "klub_dbu_url": "",
@@ -65115,5 +65577,7 @@
     "wikipediaURL_en": "https://en.wikipedia.org/wiki/William_Osula",
     "klubnavn_original": "FC København",
     "klub_id": "3710"
+  ,
+    "_manual_fields": ["latitude", "longitude"]
   }
 ]
