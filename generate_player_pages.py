@@ -14,14 +14,11 @@ from collections import defaultdict
 with open("data/players.json", encoding="utf-8") as f:
     players = json.load(f)
 
-with open("../kampe/player_roles.json", encoding="utf-8") as f:
-    player_roles = json.load(f)
-
-with open("../kampe/match_lineups.json", encoding="utf-8") as f:
-    match_lineups = json.load(f)
-
-with open("../kampe/kampe.json", encoding="utf-8") as f:
-    kampe_list = json.load(f)
+# player_roles/match_lineups/kampe_list kom historisk fra en ekstern ../kampe-mappe.
+# Den findes ikke længere; data/kampe_dbu.json (selv-indsamlet og verificeret mod
+# DBU's officielle spillerstatistikker) er nu kilden i stedet. Se kampe_adapter.py.
+from kampe_adapter import load_kampe_dbu, build_adapters
+player_roles, match_lineups, kampe_list = build_adapters(load_kampe_dbu())
 
 # ── Rangering: mål og snit per køn ───────────────────────────
 from fractions import Fraction
@@ -102,35 +99,6 @@ def norm(s):
 
 # ── Byg kamp-index: match_id → {år, scoringer} ────────────────
 kamp_by_id = {k["match_id"]: k for k in kampe_list}
-
-# ── Byg mål-index: normalized_name → {år: antal} ─────────────
-# Vi bygger det per spiller ved lookup (for at holde memory nede)
-def goals_per_year(player_name, match_ids):
-    """Tæl mål per år for en spiller baseret på scorerlisten i kampe."""
-    name_norm = norm(player_name)
-    result = defaultdict(int)
-    for mid in match_ids:
-        kamp = kamp_by_id.get(mid)
-        if not kamp:
-            continue
-        year = None
-        dato = kamp.get("dato", "")
-        m = re.search(r'\b(1\d{3}|20\d{2})\b', dato)
-        if m:
-            year = int(m.group(1))
-        if not year:
-            continue
-        for s in kamp.get("scoringer", []):
-            spiller_norm = norm(s.get("spiller", ""))
-            # Match: alle ord i søgenavn skal stå i scorernavn eller omvendt
-            name_words = name_norm.split()
-            if len(name_words) >= 2:
-                if all(w in spiller_norm for w in name_words):
-                    result[year] += 1
-            else:
-                if name_norm in spiller_norm or spiller_norm in name_norm:
-                    result[year] += 1
-    return result
 
 # ── Byg karrieretabel per spiller ────────────────────────────
 def format_date(dato_str):
@@ -411,35 +379,6 @@ def generer_tekst(p):
 
     return " ".join(afsnit) if afsnit else ""
 
-def career_stats(dbu_id, player_name):
-    """Returnerer {år: {kampe, mål, rolle}} sorteret."""
-    roller = player_roles.get(str(dbu_id), {})
-    startede  = roller.get("starter", [])
-    indskiftet = roller.get("indskiftet", [])
-    alle_mids  = startede + indskiftet
-
-    # Matches per år
-    kampe_per_year = defaultdict(lambda: {"starter": 0, "indskiftet": 0})
-    for mid in startede:
-        yr = match_lineups.get(mid, {}).get("år")
-        if yr: kampe_per_year[yr]["starter"] += 1
-    for mid in indskiftet:
-        yr = match_lineups.get(mid, {}).get("år")
-        if yr: kampe_per_year[yr]["indskiftet"] += 1
-
-    # Mål per år
-    maal = goals_per_year(player_name, alle_mids)
-
-    # Saml
-    alle_år = sorted(set(list(kampe_per_year.keys()) + list(maal.keys())))
-    rows = []
-    for år in alle_år:
-        s = kampe_per_year[år]["starter"]
-        i = kampe_per_year[år]["indskiftet"]
-        g = maal.get(år, 0)
-        rows.append({"år": år, "starter": s, "indskiftet": i, "mål": g, "total": s + i})
-    return rows
-
 def career_kurve(dbu_id, player_name):
     """Beregner de tre akkumulerede kurver (kampe, mål, slutrunder) fordelt på alder."""
     maaned_map_k = {"jan":1,"feb":2,"mar":3,"apr":4,"maj":5,"jun":6,
@@ -504,7 +443,9 @@ def career_kurve(dbu_id, player_name):
         kampe_pr_alder[age] += 1
 
         for sc in (kamp.get("scoringer") or []):
-            if name_matches_k(player_name, sc.get("spiller","")):
+            is_match = sc["spiller_id"] == pid if sc.get("spiller_id") is not None \
+                else name_matches_k(player_name, sc.get("spiller",""))
+            if is_match:
                 maal_pr_alder[age] += 1
 
         kt = kamp.get("kamptype","")
@@ -556,8 +497,6 @@ def render_page(p):
     slug       = f"{slugify(navn)}-{dbu_id}"
     dbu_url    = f"https://www.dbu.dk/landshold/landsholdsdatabasen/PlayerInfo/{dbu_id}"
 
-    # Karrieretabel
-    stats = career_stats(dbu_id, navn)
     kurve_data = career_kurve(dbu_id, navn)
 
     kurve_html_parts = []
@@ -739,39 +678,6 @@ def render_page(p):
 
     map_clubs_json   = json.dumps(map_clubs, ensure_ascii=False)
     birth_marker_json = json.dumps(birth_marker, ensure_ascii=False)
-
-    # Karrieretabel HTML — vis alle år fra debut til sidste kamp, "-" for år uden kampe
-    career_rows = ""
-    total_kampe = 0
-    total_maal  = 0
-    if stats:
-        stats_by_year = {r["år"]: r for r in stats}
-        debut  = min(r["år"] for r in stats)
-        sidste = max(r["år"] for r in stats)
-        for år in range(debut, sidste + 1):
-            r = stats_by_year.get(år)
-            if r:
-                rolle = "Starter" if r["starter"] > 0 and r["indskiftet"] == 0 else \
-                        "Indskiftet" if r["starter"] == 0 else "Starter + ind"
-                total_kampe += r["total"]
-                total_maal  += r["mål"]
-                career_rows += (
-                    f"<tr><td>{år}</td>"
-                    f"<td>{r['total']}</td>"
-                    f"<td>{r['mål'] or '–'}</td>"
-                    f"<td style='color:#888;font-size:13px'>{rolle}</td></tr>\n"
-                )
-            else:
-                career_rows += (
-                    f"<tr style='color:#bbb'><td>{år}</td>"
-                    f"<td>–</td><td>–</td><td></td></tr>\n"
-                )
-        # I alt-række
-        career_rows += (
-            f"<tr style='font-weight:600;border-top:2px solid #ddd'>"
-            f"<td>I alt</td><td>{total_kampe}</td>"
-            f"<td>{total_maal or '–'}</td><td></td></tr>\n"
-        )
 
     wiki_links = ""
     if wiki_da: wiki_links += f'<a href="{wiki_da}" rel="noopener" target="_blank">Wikipedia (dansk)</a>'
