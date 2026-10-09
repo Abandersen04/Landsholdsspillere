@@ -81,18 +81,69 @@ def build_adapters(kampe):
     return dict(player_roles), match_lineups, kampe_list
 
 
-def active_in_year(kampe, year):
-    """Spiller-id'er der har optrådt (startet eller blevet indskiftet) i mindst
-    én kamp i det angivne år. Bruges til "kun nutidige spillere"-filtre."""
-    pids = set()
+def years_played(kampe):
+    """pid -> sorteret liste af år, spilleren har spillet mindst én landskamp i.
+    Bruges til periode-filtre (vælg fra-år/til-år) på landsholdskurven og
+    rekordlister."""
+    years = collections.defaultdict(set)
     for r in kampe:
-        if not r.get("date") or int(r["date"].split("-")[2]) != year:
+        if not r.get("date"):
             continue
+        yyyy = int(r["date"].split("-")[2])
         det = r.get("detaljer", {})
         for p in det.get("startopstilling", {}).get("Danmark", []):
             if p.get("id"):
-                pids.add(p["id"])
+                years[p["id"]].add(yyyy)
         for s in det.get("udskiftninger", []):
             if s.get("ind_id"):
-                pids.add(s["ind_id"])
-    return pids
+                years[s["ind_id"]].add(yyyy)
+    return {pid: sorted(ys) for pid, ys in years.items()}
+
+
+EM_VM = {"EM-slutrunde", "VM-slutrunde"}
+
+
+def match_records(kampe):
+    """Kompakte kamp-poster til klient-side periode-filtrering (rekordlister):
+    [{"y": år, "p": [spiller_id, ...], "w": True (kun hvis vundet),
+      "t": "EM/VM-slutrunde ÅÅÅÅ" (kun hvis slutrundekamp),
+      "g": [spiller_id, ...] (scorere, ekskl. selvmål, kun hvis mål)}, ...]"""
+    out = []
+    for r in kampe:
+        if not r.get("date"):
+            continue
+        det = r.get("detaljer", {})
+        yyyy = int(r["date"].split("-")[2])
+
+        played = set()
+        for p in det.get("startopstilling", {}).get("Danmark", []):
+            if p.get("id"):
+                played.add(p["id"])
+        for s in det.get("udskiftninger", []):
+            if s.get("ind_id"):
+                played.add(s["ind_id"])
+        if not played:
+            continue
+
+        score_dk = score_mod = None
+        if r.get("score"):
+            parts = [x.strip() for x in r["score"].split("-")]
+            if len(parts) == 2 and all(x.isdigit() for x in parts):
+                score_dk, score_mod = int(parts[0]), int(parts[1])
+        vandt = score_dk is not None and score_dk > score_mod
+
+        kt = r.get("kamptype") or ""
+        tur = f"{kt} {yyyy}" if any(t in kt for t in EM_VM) else None
+
+        goals = [g["spiller_id"] for g in det.get("maal", [])
+                 if g.get("spiller_id") and not g.get("selvmaal")]
+
+        rec = {"y": yyyy, "p": sorted(played)}
+        if vandt:
+            rec["w"] = True
+        if tur:
+            rec["t"] = tur
+        if goals:
+            rec["g"] = goals
+        out.append(rec)
+    return out

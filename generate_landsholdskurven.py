@@ -35,10 +35,9 @@ def main():
         return round(y + (dt - datetime.date(y, 1, 1)).days / days, 3)
 
     sys.path.insert(0, ".")
-    from kampe_adapter import load_kampe_dbu, active_in_year
-    this_year = datetime.date.today().year
-    active_pids = active_in_year(load_kampe_dbu(), this_year)
-    print(f"spillere aktive i {this_year}: {len(active_pids)}", file=sys.stderr)
+    from kampe_adapter import load_kampe_dbu, years_played
+    yrs_map = years_played(load_kampe_dbu())
+    print(f"spillere med kampår-data: {len(yrs_map)}", file=sys.stderr)
 
     raw = []
     skipped = []
@@ -61,8 +60,8 @@ def main():
             "kurve_m": kurve["kurve_m"],
             "kurve_sl": kurve["kurve_sl"],
         }
-        if pid in active_pids:
-            entry["aktiv"] = True
+        if pid in yrs_map:
+            entry["yrs"] = yrs_map[pid]
         if p.get("birthday_dbu"):
             try:
                 entry["f"] = decimal_year(p["birthday_dbu"])
