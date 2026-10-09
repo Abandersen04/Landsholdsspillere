@@ -11,7 +11,7 @@ Genbruger career_kurve()/slugify() fra generate_player_pages.py (uden at køre
 dens sidegenerering) for at garantere, at tallene her stemmer 1:1 med den lille
 "Karrierekurve"-graf på hver spillers egen side.
 """
-import json, re, sys
+import json, re, sys, datetime
 
 def load_generator_head():
     """Importerer kun funktionsdefinitionerne fra generate_player_pages.py
@@ -29,11 +29,16 @@ def main():
     slugify = ns["slugify"]
 
     def decimal_year(bday_str):
-        import datetime
         d, m, y = (int(x) for x in bday_str.split("-"))
         dt = datetime.date(y, m, d)
         days = 366 if (y % 4 == 0 and (y % 100 != 0 or y % 400 == 0)) else 365
         return round(y + (dt - datetime.date(y, 1, 1)).days / days, 3)
+
+    sys.path.insert(0, ".")
+    from kampe_adapter import load_kampe_dbu, active_in_year
+    this_year = datetime.date.today().year
+    active_pids = active_in_year(load_kampe_dbu(), this_year)
+    print(f"spillere aktive i {this_year}: {len(active_pids)}", file=sys.stderr)
 
     raw = []
     skipped = []
@@ -56,6 +61,8 @@ def main():
             "kurve_m": kurve["kurve_m"],
             "kurve_sl": kurve["kurve_sl"],
         }
+        if pid in active_pids:
+            entry["aktiv"] = True
         if p.get("birthday_dbu"):
             try:
                 entry["f"] = decimal_year(p["birthday_dbu"])

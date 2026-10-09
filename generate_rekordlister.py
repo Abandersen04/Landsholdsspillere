@@ -33,13 +33,14 @@ def rank_rows(items, key, fmt_extra=None, min_key=None):
     return rows
 
 
-def render_table_rows(rows, link_fn, value_fn, extra_fn=None, gender_fn=None):
+def render_table_rows(rows, link_fn, value_fn, extra_fn=None, gender_fn=None, current_fn=None):
     out = []
     for i, (rank, it) in enumerate(rows):
         hidden = ' class="hidden-row"' if i >= 20 else ""
         gender_attr = f' data-gender="{gender_fn(it)}"' if gender_fn else ""
+        current_attr = ' data-current="1"' if current_fn and current_fn(it) else ""
         extra = extra_fn(it) if extra_fn else ""
-        out.append(f'<tr{gender_attr}{hidden}><td class="rank">{rank}</td>'
+        out.append(f'<tr{gender_attr}{current_attr}{hidden}><td class="rank">{rank}</td>'
                    f'<td>{link_fn(it)}</td><td class="num">{value_fn(it)}</td>{extra}</tr>')
     return "\n".join(out)
 
@@ -55,8 +56,12 @@ def main():
     by_id = {p["dbuID"]: p for p in players}
 
     sys.path.insert(0, ".")
-    from kampe_adapter import load_kampe_dbu
+    from kampe_adapter import load_kampe_dbu, active_in_year
+    import datetime
     kampe = load_kampe_dbu()
+    this_year = datetime.date.today().year
+    active_pids = active_in_year(kampe, this_year)
+    print(f"spillere aktive i {this_year}: {len(active_pids)}", file=sys.stderr)
 
     def slug(pid):
         p = by_id.get(pid)
@@ -131,14 +136,15 @@ def main():
         rows, lambda it: spiller_link(navn(it["pid"]), slug(it["pid"])),
         lambda it: it["value"],
         extra_fn=lambda it: f'<td class="num dim">{it["m"]} kampe</td>',
-        gender_fn=lambda it: gender(it["pid"]))
+        gender_fn=lambda it: gender(it["pid"]), current_fn=lambda it: it["pid"] in active_pids)
 
     # ---- kampe: flest kampe ----------------------------------------------
     items = [{"pid": pid, "value": matches[pid]} for pid in valid_pids]
     rows = rank_rows(items, "value")
     sections["kampe"] = render_table_rows(
         rows, lambda it: spiller_link(navn(it["pid"]), slug(it["pid"])),
-        lambda it: it["value"], gender_fn=lambda it: gender(it["pid"]))
+        lambda it: it["value"], gender_fn=lambda it: gender(it["pid"]),
+        current_fn=lambda it: it["pid"] in active_pids)
 
     # ---- snit: bedste målsnit (min. 10 kampe) -----------------------------
     items = [{"pid": pid, "value": goals[pid] / matches[pid], "m": matches[pid], "g": goals[pid]}
@@ -148,7 +154,7 @@ def main():
         rows, lambda it: spiller_link(navn(it["pid"]), slug(it["pid"])),
         lambda it: f"{it['value']:.2f}".replace(".", ","),
         extra_fn=lambda it: f'<td class="num dim">{it["m"]} kampe</td>',
-        gender_fn=lambda it: gender(it["pid"]))
+        gender_fn=lambda it: gender(it["pid"]), current_fn=lambda it: it["pid"] in active_pids)
 
     # ---- sejr: bedste sejrsprocent (min. 10 kampe) -------------------------
     items = [{"pid": pid, "value": wins[pid] / matches[pid] * 100, "m": matches[pid], "w": wins[pid]}
@@ -158,7 +164,7 @@ def main():
         rows, lambda it: spiller_link(navn(it["pid"]), slug(it["pid"])),
         lambda it: f"{it['value']:.1f}%",
         extra_fn=lambda it: f'<td class="num dim">{it["w"]}/{it["m"]} kampe</td>',
-        gender_fn=lambda it: gender(it["pid"]))
+        gender_fn=lambda it: gender(it["pid"]), current_fn=lambda it: it["pid"] in active_pids)
 
     # ---- turneringer: flest EM/VM-slutrunder -------------------------------
     items = [{"pid": pid, "value": len(tournaments[pid]), "titel": ", ".join(sorted(tournaments[pid]))}
@@ -167,13 +173,14 @@ def main():
     sections["turneringer"] = render_table_rows(
         rows, lambda it: spiller_link(navn(it["pid"]), slug(it["pid"])),
         lambda it: it["value"],
-        gender_fn=lambda it: gender(it["pid"]))
+        gender_fn=lambda it: gender(it["pid"]), current_fn=lambda it: it["pid"] in active_pids)
     # title-attribut kræver speciel håndtering (anden <td>-form) - bygges separat:
     rows_t = rows
     out = []
     for i, (rank, it) in enumerate(rows_t):
         hidden = ' class="hidden-row"' if i >= 20 else ""
-        out.append(f'<tr data-gender="{gender(it["pid"])}"{hidden}><td class="rank">{rank}</td>'
+        current_attr = ' data-current="1"' if it["pid"] in active_pids else ""
+        out.append(f'<tr data-gender="{gender(it["pid"])}"{current_attr}{hidden}><td class="rank">{rank}</td>'
                    f'<td>{spiller_link(navn(it["pid"]), slug(it["pid"]))}</td>'
                    f'<td class="num" title="{it["titel"]}">{it["value"]}</td></tr>')
     sections["turneringer"] = "\n".join(out)
@@ -183,7 +190,8 @@ def main():
     rows = rank_rows(items, "value")
     sections["saesoner"] = render_table_rows(
         rows, lambda it: spiller_link(navn(it["pid"]), slug(it["pid"])),
-        lambda it: it["value"], gender_fn=lambda it: gender(it["pid"]))
+        lambda it: it["value"], gender_fn=lambda it: gender(it["pid"]),
+        current_fn=lambda it: it["pid"] in active_pids)
 
     # ---- par: flest kampe sammen --------------------------------------------
     items = [{"a": a, "b": b, "value": n} for (a, b), n in pair_counts.items()
@@ -194,9 +202,10 @@ def main():
         hidden = ' class="hidden-row"' if i >= 20 else ""
         ga, gb = gender(it["a"]), gender(it["b"])
         g = ga if ga == gb else "alle"
+        current_attr = ' data-current="1"' if it["a"] in active_pids and it["b"] in active_pids else ""
         link = (f'{spiller_link(navn(it["a"]), slug(it["a"]))} &amp; '
                f'{spiller_link(navn(it["b"]), slug(it["b"]))}')
-        out.append(f'<tr data-gender="{g}"{hidden}><td class="rank">{rank}</td>'
+        out.append(f'<tr data-gender="{g}"{current_attr}{hidden}><td class="rank">{rank}</td>'
                    f'<td>{link}</td><td class="num">{it["value"]}</td></tr>')
     sections["par"] = "\n".join(out)
 

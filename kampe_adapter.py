@@ -79,3 +79,20 @@ def build_adapters(kampe):
                 player_roles[s["ind_id"]]["indskiftet"].append(mid)
 
     return dict(player_roles), match_lineups, kampe_list
+
+
+def active_in_year(kampe, year):
+    """Spiller-id'er der har optrådt (startet eller blevet indskiftet) i mindst
+    én kamp i det angivne år. Bruges til "kun nutidige spillere"-filtre."""
+    pids = set()
+    for r in kampe:
+        if not r.get("date") or int(r["date"].split("-")[2]) != year:
+            continue
+        det = r.get("detaljer", {})
+        for p in det.get("startopstilling", {}).get("Danmark", []):
+            if p.get("id"):
+                pids.add(p["id"])
+        for s in det.get("udskiftninger", []):
+            if s.get("ind_id"):
+                pids.add(s["ind_id"])
+    return pids
