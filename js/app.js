@@ -12,6 +12,7 @@ let debounceTimer;
 let klubSlugs = new Set(); // Genererede klubsider
 let pendingLogoMarkers = [];
 const MAX_CONCURRENT_LOGO_LOADS = 24;
+const CLUB_ICON_SIZE = 22; // pixel-størrelse på klub-/logo-markører (var 30 - mindsket for at reducere overlap)
 let activeLogoLoads = 0;
 
 // ===== Init =====
@@ -701,9 +702,9 @@ function loadClubLogo(entry) {
     activeLogoLoads--;
     marker.setIcon(L.icon({
       iconUrl: logoUrl,
-      iconSize: [30, 30],
-      iconAnchor: [15, 15],
-      popupAnchor: [0, -15]
+      iconSize: [CLUB_ICON_SIZE, CLUB_ICON_SIZE],
+      iconAnchor: [CLUB_ICON_SIZE / 2, CLUB_ICON_SIZE / 2],
+      popupAnchor: [0, -CLUB_ICON_SIZE / 2]
     }));
     upgradeVisibleLogos();
   };
@@ -1242,9 +1243,9 @@ function createMarker(group, mapType, birthLevel, perCapita) {
       const icon = L.divIcon({
         className: '',
         html: badgeHtml,
-        iconSize: [30, 30],
-        iconAnchor: [15, 15],
-        popupAnchor: [0, -15]
+        iconSize: [CLUB_ICON_SIZE, CLUB_ICON_SIZE],
+        iconAnchor: [CLUB_ICON_SIZE / 2, CLUB_ICON_SIZE / 2],
+        popupAnchor: [0, -CLUB_ICON_SIZE / 2]
       });
       marker = L.marker([lat, lng], { icon });
       queueLazyLogo(marker, logoUrl, locName);
@@ -1255,9 +1256,9 @@ function createMarker(group, mapType, birthLevel, perCapita) {
       const icon = L.divIcon({
         className: '',
         html: badgeHtml,
-        iconSize: [30, 30],
-        iconAnchor: [15, 15],
-        popupAnchor: [0, -15]
+        iconSize: [CLUB_ICON_SIZE, CLUB_ICON_SIZE],
+        iconAnchor: [CLUB_ICON_SIZE / 2, CLUB_ICON_SIZE / 2],
+        popupAnchor: [0, -CLUB_ICON_SIZE / 2]
       });
       marker = L.marker([lat, lng], { icon });
     }
@@ -1448,7 +1449,7 @@ function buildSvgBadge(name) {
   const maxLen = Math.max(topText.length, bottomText.length);
   const fontSize = maxLen > 12 ? 3 : maxLen > 8 ? 3.5 : 4;
 
-  return `<svg viewBox="0 0 30 30" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+  return `<svg viewBox="0 0 30 30" width="${CLUB_ICON_SIZE}" height="${CLUB_ICON_SIZE}" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <path id="arc-top-${name.length}" d="M 4,15 A 11,11 0 0,1 26,15" fill="none"/>
       <path id="arc-bot-${name.length}" d="M 4,17 A 11,11 0 0,0 26,17" fill="none"/>
