@@ -66312,8 +66312,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Hellerup Idræts Klub",
-    "latitude": "55.7436",
-    "longitude": "12.5659",
+    "latitude": "55.743608",
+    "longitude": "12.565942",
     "klub_logo": "logos/klub_1562.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1562/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1562/klubinfo",
@@ -66321,7 +66321,7 @@
     "years_played": [
       2026
     ],
-    "klub_id": "1562",
+    "klub_id": null,
     "allClubs": [
       {
         "klub_id": "3702",
