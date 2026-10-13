@@ -147,9 +147,10 @@
       1993,
       1994,
       1996
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Brian Laudrup",
@@ -265,9 +266,12 @@
       1996,
       1997,
       1998
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Michael Laudrup",
@@ -497,9 +501,10 @@
       1997,
       1998,
       1999
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Miklos Molnar",
@@ -725,9 +730,10 @@
       1999,
       2003,
       2005
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Peter Schmeichel",
@@ -1008,9 +1014,10 @@
       2000,
       2001,
       2002
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Martin Jørgensen",
@@ -1683,9 +1690,11 @@
       1997,
       1998,
       1999
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Marc Rieper",
@@ -2175,9 +2184,10 @@
     "years_played": [
       1997,
       1998
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Peter Kjær",
@@ -2335,9 +2345,12 @@
       2006,
       2007,
       2008
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Peter Nielsen",
@@ -2399,9 +2412,10 @@
       1996,
       2001,
       2002
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Per Pedersen",
@@ -2477,9 +2491,11 @@
       1991,
       1996,
       1997
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Per Nielsen",
@@ -2516,9 +2532,11 @@
       2003,
       2005,
       2006
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Thomas Rytter",
@@ -2587,9 +2605,10 @@
       2001,
       2002,
       2003
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Torben Piechnik",
@@ -3066,9 +3085,10 @@
       1993,
       1994,
       1995
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Jesper Kristensen",
@@ -4058,9 +4078,11 @@
     "years_played": [
       1911,
       1912
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Ivar Lykke",
@@ -4482,9 +4504,11 @@
     ],
     "years_played": [
       1913
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "longitude"]
   },
   {
     "playerLabel": "Henrik Andersen",
@@ -4543,9 +4567,11 @@
     "years_played": [
       1915,
       1917
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Hans Julius Rützebeck",
@@ -4579,9 +4605,11 @@
     ],
     "years_played": [
       1915
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Michael Rohde",
@@ -4627,9 +4655,11 @@
       1928,
       1929,
       1931
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Holger Teilmann",
@@ -4705,9 +4735,11 @@
       1921,
       1922,
       1923
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Ernst Petersen",
@@ -4804,9 +4836,11 @@
     "years_played": [
       1916,
       1919
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Vilhelm Jørgensen",
@@ -4879,9 +4913,11 @@
     ],
     "years_played": [
       1917
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Carl \"Skoma'r\" Hansen",
@@ -5666,9 +5702,10 @@
     ],
     "years_played": [
       1920
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Ernst Nilsson",
@@ -5800,9 +5837,11 @@
       1929,
       1930,
       1931
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Henry Hansen",
@@ -5927,9 +5966,11 @@
       1922,
       1923,
       1927
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Knud Kastrup",
@@ -6093,9 +6134,10 @@
       1923,
       1924,
       1925
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Eiler Holm",
@@ -6449,9 +6491,11 @@
       1925,
       1928,
       1931
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Vilhelm Nielsen",
@@ -6676,9 +6720,11 @@
       1928,
       1930,
       1932
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Palle Christensen",
@@ -6795,9 +6841,11 @@
       1936,
       1937,
       1939
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Kaj Uldaler",
@@ -6889,9 +6937,11 @@
       1929,
       1930,
       1931
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Arne Kleven",
@@ -7032,9 +7082,10 @@
       1929,
       1930,
       1933
+    ],
+    "_manual_fields": [
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["longitude"]
   },
   {
     "playerLabel": "Svend Hansen",
@@ -7322,9 +7373,11 @@
       1931,
       1932,
       1933
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Henning Jensen",
@@ -7393,9 +7446,11 @@
     ],
     "years_played": [
       1931
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Svend Caroli Hansen",
@@ -7690,9 +7745,10 @@
     ],
     "years_played": [
       1999
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Oskar Nørland",
@@ -7996,9 +8052,11 @@
       1934,
       1936,
       1937
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Svend Sanvig",
@@ -8324,9 +8382,11 @@
     ],
     "years_played": [
       1935
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Arthur Nielsen",
@@ -8433,9 +8493,11 @@
       1935,
       1937,
       1938
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Olaf Brockhoff",
@@ -8538,9 +8600,11 @@
       1942,
       1945,
       1946
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Raymond Hansen",
@@ -8574,9 +8638,11 @@
     ],
     "years_played": [
       1935
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Helmuth Søbirk",
@@ -8626,9 +8692,11 @@
       1941,
       1942,
       1945
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Egon Andersen",
@@ -8788,9 +8856,11 @@
       1942,
       1945,
       1946
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Carl Larsen",
@@ -9374,9 +9444,10 @@
     ],
     "years_played": [
       1938
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Svend Albrechtsen",
@@ -9538,9 +9609,11 @@
     "region": "Region Hovedstaden",
     "years_played": [
       1939
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Walther Christensen",
@@ -9611,9 +9684,11 @@
     ],
     "years_played": [
       1939
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Oskar Theisen",
@@ -9701,9 +9776,11 @@
     "years_played": [
       1942,
       1949
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Knud Bastrup-Birk",
@@ -10131,9 +10208,11 @@
     "years_played": [
       1945,
       1948
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Edmund Sørensen",
@@ -10157,9 +10236,11 @@
     "region": "Region Midtjylland",
     "years_played": [
       1945
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Carl Aage Præst",
@@ -10257,9 +10338,11 @@
       1955,
       1956,
       1957
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Helge Christian Bronée",
@@ -10510,9 +10593,11 @@
       1946,
       1947,
       1948
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Gustaf Pålsson",
@@ -10571,9 +10656,11 @@
     ],
     "years_played": [
       1945
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "John Nielsen",
@@ -10631,9 +10718,11 @@
     ],
     "years_played": [
       1938
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Poul Petersen",
@@ -10952,9 +11041,11 @@
     ],
     "years_played": [
       1941
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Erling Sørensen",
@@ -11197,9 +11288,11 @@
     "years_played": [
       1946,
       1947
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Leo Nielsen",
@@ -11241,9 +11334,12 @@
     ],
     "years_played": [
       1946
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Axel W. Petersen",
@@ -11370,9 +11466,11 @@
     ],
     "years_played": [
       1947
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jørgen W. Hansen",
@@ -11754,9 +11852,11 @@
     "years_played": [
       1948,
       1952
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Poul Nielsen",
@@ -12239,9 +12339,11 @@
     "years_played": [
       1949,
       1954
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Claes Petersen",
@@ -12265,9 +12367,11 @@
     "region": "Region Midtjylland",
     "years_played": [
       1949
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Carl Holm",
@@ -12424,9 +12528,11 @@
       1950,
       1951,
       1952
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Erik Terkelsen",
@@ -12556,9 +12662,11 @@
     ],
     "years_played": [
       1950
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Bendt Jørgensen",
@@ -12935,9 +13043,11 @@
     ],
     "years_played": [
       1951
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jørgen Olesen",
@@ -13275,9 +13385,11 @@
     "years_played": [
       1952,
       1953
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Per Jensen",
@@ -13690,9 +13802,11 @@
     "years_played": [
       1954,
       1956
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Valdemar Kendzior",
@@ -13734,9 +13848,11 @@
     ],
     "years_played": [
       1954
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Flemming Nielsen",
@@ -13870,9 +13986,11 @@
     "years_played": [
       1954,
       1955
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Henning Gronemann",
@@ -14103,9 +14221,11 @@
       1955,
       1957,
       1961
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jørgen Hansen",
@@ -14228,9 +14348,10 @@
     ],
     "years_played": [
       1955
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Johannes Schmidt",
@@ -14323,9 +14444,11 @@
     "years_played": [
       1955,
       1957
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Ove Andersen",
@@ -14490,9 +14613,11 @@
     "region": "Region Midtjylland",
     "years_played": [
       1955
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Poul Andersen",
@@ -14526,9 +14651,11 @@
     "years_played": [
       1955,
       1960
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Erling Larsen",
@@ -14701,9 +14828,11 @@
     "years_played": [
       1956,
       1957
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "John Jensen",
@@ -14738,9 +14867,11 @@
     "years_played": [
       1957,
       1958
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Henry From",
@@ -14778,9 +14909,11 @@
       1959,
       1960,
       1961
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Knud Petersen",
@@ -14822,9 +14955,10 @@
     ],
     "years_played": [
       1957
+    ],
+    "_manual_fields": [
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["longitude"]
   },
   {
     "playerLabel": "Bent Dideriksen",
@@ -14931,9 +15065,11 @@
     ],
     "years_played": [
       1957
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Peder Kjær",
@@ -14967,9 +15103,11 @@
     ],
     "years_played": [
       1957
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Finn Alfred Hansen",
@@ -15880,9 +16018,11 @@
     "years_played": [
       1959,
       1961
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Erling Sørensen",
@@ -16440,9 +16580,11 @@
     ],
     "years_played": [
       1962
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Carl Bertelsen",
@@ -16612,9 +16754,11 @@
     "years_played": [
       1962,
       1963
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Helge Jørgensen",
@@ -17403,9 +17547,11 @@
       1965,
       1966,
       1967
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jørgen Rasmussen",
@@ -18405,9 +18551,11 @@
     ],
     "years_played": [
       1966
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Henning Boel",
@@ -20050,9 +20198,11 @@
       1970,
       1971,
       1972
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Allan Michaelsen",
@@ -20282,9 +20432,10 @@
       1969,
       1970,
       1971
+    ],
+    "_manual_fields": [
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["longitude"]
   },
   {
     "playerLabel": "Kaj Paulsen",
@@ -20309,9 +20460,11 @@
     "years_played": [
       1969,
       1970
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Per Madsen",
@@ -22031,9 +22184,11 @@
       1972,
       1973,
       1975
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Sten Ziegler",
@@ -22290,9 +22445,11 @@
       1976,
       1977,
       1978
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Henning Jensen",
@@ -22893,9 +23050,10 @@
     "years_played": [
       1972,
       1973
+    ],
+    "_manual_fields": [
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["longitude"]
   },
   {
     "playerLabel": "Arne Rastad",
@@ -23217,9 +23375,11 @@
     ],
     "years_played": [
       1973
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jens Kolding",
@@ -23272,9 +23432,11 @@
       1975,
       1976,
       1981
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Ole Skouboe",
@@ -23558,9 +23720,12 @@
     "years_played": [
       1973,
       1974
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Kurt Stendal",
@@ -23809,9 +23974,11 @@
       1974,
       1977,
       1978
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Lars Larsen",
@@ -24417,9 +24584,10 @@
       1981,
       1982,
       1983
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Claus Larsen",
@@ -24517,9 +24685,11 @@
     ],
     "years_played": [
       1975
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "longitude"]
   },
   {
     "playerLabel": "Poul Mathiasen",
@@ -24707,9 +24877,11 @@
     ],
     "years_played": [
       1975
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Ole Rasmussen",
@@ -25619,9 +25791,11 @@
     "years_played": [
       1977,
       1978
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "longitude"]
   },
   {
     "playerLabel": "Ole Kjær",
@@ -25956,9 +26130,10 @@
       1977,
       1978,
       1979
+    ],
+    "_manual_fields": [
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["longitude"]
   },
   {
     "playerLabel": "Frank Arnesen",
@@ -26058,9 +26233,11 @@
     "region": "Region Syddanmark",
     "years_played": [
       1978
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Søren Lerby",
@@ -26356,9 +26533,11 @@
     "years_played": [
       1978,
       1979
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Søren Busk",
@@ -26961,9 +27140,11 @@
     ],
     "years_played": [
       1980
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Johnny Jacobsen",
@@ -27021,9 +27202,11 @@
     ],
     "years_played": [
       1980
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Michael Schäfer",
@@ -27067,9 +27250,12 @@
       1980,
       1981,
       1983
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Ole Kirketerp Madsen",
@@ -27306,9 +27492,10 @@
       1987,
       1988,
       1989
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Kenneth Brylle Larsen",
@@ -27690,9 +27877,11 @@
     "years_played": [
       1981,
       1983
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Michael Manniche",
@@ -27770,9 +27959,10 @@
       1984,
       1986,
       1987
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Steen Hansen",
@@ -28177,9 +28367,11 @@
     ],
     "years_played": [
       1982
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Morten Donnerup",
@@ -28579,9 +28771,12 @@
     "years_played": [
       1983,
       1984
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Frank Klausen",
@@ -28615,9 +28810,11 @@
     ],
     "years_played": [
       1983
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Alan Hansen",
@@ -28754,9 +28951,10 @@
       1986,
       1987,
       1988
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Alex Nielsen",
@@ -28939,9 +29137,11 @@
     "region": "Region Hovedstaden",
     "years_played": [
       1983
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Tommy Christensen",
@@ -29031,9 +29231,11 @@
     ],
     "years_played": [
       1983
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Keld Bordinggaard",
@@ -29189,9 +29391,10 @@
       1993
     ],
     "klubnavn_original": "AGF",
-    "klub_id": "3699"
-  ,
-    "_manual_fields": ["allClubs"]
+    "klub_id": "3699",
+    "_manual_fields": [
+      "allClubs"
+    ]
   },
   {
     "playerLabel": "Ulrik Moseby",
@@ -29227,9 +29430,11 @@
       1987,
       1988,
       1989
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Johnny Anker Hansen",
@@ -29291,9 +29496,11 @@
       1989,
       1990,
       1991
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Per Steffensen",
@@ -29694,9 +29901,11 @@
     "years_played": [
       1988,
       1989
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Bent Christensen Arensøe",
@@ -29927,9 +30136,10 @@
       1991,
       1992,
       1993
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Johnny Hansen",
@@ -30404,9 +30614,10 @@
     ],
     "years_played": [
       1990
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Søren Lyng",
@@ -30488,9 +30699,10 @@
     "years_played": [
       1990,
       1991
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Kent Nielsen",
@@ -30718,9 +30930,10 @@
       1987,
       1988,
       1989
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "John Larsen",
@@ -30866,9 +31079,11 @@
     ],
     "years_played": [
       1984
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Torben Christensen",
@@ -31520,9 +31735,10 @@
     ],
     "years_played": [
       1993
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Lars Højer Nielsen",
@@ -31713,9 +31929,10 @@
     ],
     "years_played": [
       1993
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Carsten Dethlefsen",
@@ -31871,9 +32088,10 @@
     ],
     "years_played": [
       1995
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Bo Hansen",
@@ -32116,9 +32334,10 @@
     ],
     "years_played": [
       1991
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Erik Rasmussen",
@@ -32470,9 +32689,10 @@
     "years_played": [
       2000,
       2002
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Henrik Pedersen",
@@ -32895,9 +33115,10 @@
       2008,
       2009,
       2010
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Jan Michaelsen",
@@ -33132,9 +33353,10 @@
       2001,
       2002,
       2008
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Martin Albrechtsen",
@@ -33251,9 +33473,10 @@
       2002,
       2003,
       2006
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Thomas Røll Larsen",
@@ -33337,9 +33560,10 @@
       2002,
       2003,
       2004
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Brian Priske",
@@ -33734,9 +33958,10 @@
       2010,
       2011,
       2012
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Lars Jacobsen",
@@ -33835,9 +34060,10 @@
       2013,
       2014,
       2015
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Bo Svensson",
@@ -33896,9 +34122,12 @@
     "years_played": [
       2006,
       2011
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Daniel Jensen",
@@ -33996,9 +34225,12 @@
       2008,
       2009,
       2010
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Patrick Mtiliga",
@@ -34074,9 +34306,11 @@
       2008,
       2010,
       2012
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Mads Junker",
@@ -34620,9 +34854,10 @@
       2013,
       2014,
       2015
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Martin Retov",
@@ -35067,9 +35302,10 @@
       2010,
       2011,
       2012
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Kasper Bøgelund",
@@ -35358,9 +35594,12 @@
     "years_played": [
       2007,
       2008
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Thomas Frandsen",
@@ -35794,9 +36033,10 @@
       2006,
       2007,
       2014
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Jonas Kamper",
@@ -36103,9 +36343,12 @@
     "years_played": [
       2008,
       2009
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Søren Berg",
@@ -37420,9 +37663,11 @@
     "years_played": [
       2000,
       2002
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Gitte Pedersen",
@@ -37534,9 +37779,11 @@
       2000,
       2001,
       2002
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Annette Laursen",
@@ -37760,9 +38007,11 @@
       2002,
       2003,
       2004
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Dorte Dalum Jensen",
@@ -37983,9 +38232,11 @@
       2002,
       2003,
       2004
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Johanna Rasmussen",
@@ -38090,9 +38341,11 @@
       2016,
       2017,
       2018
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "longitude"]
   },
   {
     "playerLabel": "Cecilie Pedersen",
@@ -38136,9 +38389,11 @@
       2002,
       2003,
       2005
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "May Christensen",
@@ -38347,9 +38602,11 @@
       2006,
       2007,
       2008
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Gitte Husemoen",
@@ -38428,9 +38685,11 @@
       2005,
       2006,
       2007
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Trine Falck",
@@ -38463,9 +38722,11 @@
     ],
     "years_played": [
       2003
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Gitte Krogh",
@@ -38746,9 +39007,10 @@
       1999,
       2000,
       2001
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Lone K. Larsen",
@@ -38772,9 +39034,11 @@
     "region": "Region Syddanmark",
     "years_played": [
       2000
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Marlene Kristensen",
@@ -38811,9 +39075,11 @@
       1998,
       1999,
       2000
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Marianne Løvendorf",
@@ -38855,9 +39121,11 @@
     ],
     "years_played": [
       2000
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Anne Juul Ulnitz",
@@ -38935,9 +39203,11 @@
       1991,
       1992,
       2000
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Dorthe Larsen",
@@ -39400,9 +39670,11 @@
       1997,
       1998,
       1999
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Hanne Nørregaard",
@@ -39455,9 +39727,11 @@
       1997,
       1998,
       1999
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Linda Nissen",
@@ -39481,9 +39755,11 @@
     "region": "Region Syddanmark",
     "years_played": [
       1999
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Merete Hrenczuk",
@@ -39636,9 +39912,10 @@
     ],
     "years_played": [
       2007
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Kamma Flæng",
@@ -39765,9 +40042,11 @@
       1996,
       1997,
       1998
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Karina Sefron",
@@ -39959,9 +40238,11 @@
       1994,
       1995,
       1996
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Bonny Madsen",
@@ -40061,9 +40342,11 @@
       1987,
       1989,
       1990
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Helle Jensen",
@@ -40456,9 +40739,11 @@
       1992,
       1993,
       1994
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Alice Larsen",
@@ -40771,9 +41056,11 @@
       1991,
       1992,
       1993
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Carin Venborg",
@@ -40845,9 +41132,11 @@
     "region": "Region Hovedstaden",
     "years_played": [
       1993
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Linette Sørensen",
@@ -40937,9 +41226,11 @@
       1990,
       1991,
       1992
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Ann Grethe Larsen",
@@ -41022,9 +41313,11 @@
       1989,
       1990,
       1991
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Ulla Christensen",
@@ -41725,9 +42018,11 @@
       1983,
       1984,
       1987
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Maybritt Jørgensen",
@@ -41832,9 +42127,11 @@
       1985,
       1986,
       1987
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Glennie Nielsen",
@@ -41971,9 +42268,10 @@
     "years_played": [
       2006,
       2009
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Søren Larsen",
@@ -42902,9 +43200,11 @@
     "years_played": [
       1981,
       1982
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Fridel Riggelsen",
@@ -44194,9 +44494,10 @@
       2006,
       2007,
       2008
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Johan Absalonsen",
@@ -44294,9 +44595,10 @@
     ],
     "years_played": [
       2009
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Michael Jakobsen",
@@ -44402,9 +44704,10 @@
     ],
     "years_played": [
       2009
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "William Kvist",
@@ -44489,9 +44792,10 @@
       2016,
       2017,
       2018
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Kasper Lorentzen",
@@ -44802,9 +45106,10 @@
       2009,
       2010,
       2011
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Martin Bernburg",
@@ -44887,9 +45192,10 @@
     "years_played": [
       2008,
       2009
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Daniel Agger",
@@ -45459,9 +45765,10 @@
       2014,
       2015,
       2016
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Anders Lindegaard",
@@ -45552,9 +45859,11 @@
     "years_played": [
       2010,
       2011
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Danny Olsen",
@@ -45644,9 +45953,10 @@
     ],
     "years_played": [
       2014
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Jonas Borring",
@@ -46841,9 +47151,11 @@
     "region": "Region Sjælland",
     "years_played": [
       2006
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Tina Rasmussen",
@@ -47007,9 +47319,10 @@
       2009,
       2010,
       2012
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Nicklas Bendtner",
@@ -47126,9 +47439,10 @@
       2015,
       2017,
       2018
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Mike Jensen",
@@ -47206,9 +47520,11 @@
       2016,
       2017,
       2018
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Anders Randrup",
@@ -47290,9 +47606,11 @@
     ],
     "years_played": [
       2008
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Michael Lumb",
@@ -47692,9 +48010,10 @@
       2007,
       2008,
       2009
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Michael Gravgaard",
@@ -47778,9 +48097,10 @@
       2005,
       2006,
       2007
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Mette V. Jensen",
@@ -48143,9 +48463,11 @@
       2020,
       2021,
       2022
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Carina Johansen",
@@ -48299,7 +48621,11 @@
       2016,
       2017
     ],
-    "_manual_fields": ["allClubs", "latitude", "longitude"]
+    "_manual_fields": [
+      "allClubs",
+      "latitude",
+      "longitude"
+    ]
   },
   {
     "playerLabel": "Henriette Salling-Dahl",
@@ -48622,9 +48948,10 @@
       2023,
       2024,
       2025
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Sif Rykær",
@@ -48942,9 +49269,10 @@
       2016,
       2017,
       2018
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Nicki Bille Nielsen",
@@ -49180,9 +49508,11 @@
     ],
     "years_played": [
       2006
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Cecilie Sandvej",
@@ -49288,9 +49618,11 @@
       2017,
       2018,
       2019
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Maiken Pape",
@@ -49402,9 +49734,11 @@
     ],
     "years_played": [
       2010
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Katrine Korsgaard",
@@ -49546,9 +49880,12 @@
       2021,
       2023,
       2024
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Theresa Eslund",
@@ -51111,9 +51448,10 @@
       2008,
       2009,
       2012
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Jens Stryger Larsen",
@@ -51936,9 +52274,10 @@
       2018,
       2021,
       2022
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Christian Eriksen",
@@ -52103,9 +52442,10 @@
     "years_played": [
       2013,
       2020
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Lise Overgaard Munk",
@@ -52943,9 +53283,11 @@
     ],
     "years_played": [
       2013
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Simone Hagelskjær",
@@ -53077,9 +53419,10 @@
     ],
     "years_played": [
       2010
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Thomas Delaney",
@@ -53171,9 +53514,10 @@
       2022,
       2023,
       2024
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Bashkim Kadrii",
@@ -53247,9 +53591,12 @@
     ],
     "years_played": [
       2011
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Frederik Sørensen",
@@ -53540,9 +53887,10 @@
       2016,
       2017,
       2018
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Nicolai Jørgensen",
@@ -53639,9 +53987,10 @@
       2017,
       2018,
       2019
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Jens Jønsson",
@@ -53775,9 +54124,10 @@
     "years_played": [
       2010,
       2011
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Julie Trustrup Jensen",
@@ -54969,9 +55319,11 @@
       2012,
       2013,
       2014
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Luna Gevitz",
@@ -55205,9 +55557,11 @@
     ],
     "years_played": [
       2010
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jannik Vestergaard",
@@ -55525,9 +55879,10 @@
     "years_played": [
       2013,
       2014
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Frederikke Thøgersen",
@@ -55916,9 +56271,10 @@
       2020,
       2021,
       2022
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Kathrine Larsen",
@@ -56184,9 +56540,10 @@
     "years_played": [
       2016,
       2017
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Amalie Thestrup",
@@ -56293,9 +56650,11 @@
     "years_played": [
       2019,
       2020
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Nicolaj Thomsen",
@@ -56385,9 +56744,10 @@
     ],
     "years_played": [
       2014
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Lukas Lerager",
@@ -56463,9 +56823,10 @@
       2017,
       2018,
       2019
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Andreas Christensen",
@@ -56610,9 +56971,11 @@
     ],
     "years_played": [
       2018
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Rikke Læntver Sevecke",
@@ -56700,9 +57063,11 @@
       2021,
       2022,
       2023
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "longitude"]
   },
   {
     "playerLabel": "Stine Larsen",
@@ -56973,9 +57338,10 @@
       2023,
       2024,
       2026
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Nicoline Sørensen",
@@ -57334,9 +57700,10 @@
       2017,
       2018,
       2019
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Emilie Henriksen",
@@ -58273,9 +58640,11 @@
     "years_played": [
       2020,
       2022
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Katrine Abel",
@@ -58443,9 +58812,10 @@
     ],
     "years_played": [
       2018
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Caroline Møller Hansen",
@@ -59532,9 +59902,11 @@
     ],
     "years_played": [
       2019
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jonas Wind",
@@ -59953,9 +60325,11 @@
     ],
     "years_played": [
       2024
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Mads Hermansen",
@@ -60174,9 +60548,11 @@
     ],
     "years_played": [
       2024
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Emma Færge",
@@ -60262,9 +60638,10 @@
       2024,
       2025,
       2026
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Matt O'Riley",
@@ -60635,9 +61012,12 @@
     "years_played": [
       2022,
       2023
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "latitude", "longitude"]
   },
   {
     "playerLabel": "Adam Fogt",
@@ -60810,9 +61190,11 @@
       2024,
       2025,
       2026
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Emma Snerle",
@@ -61742,9 +62124,11 @@
       2024,
       2025,
       2026
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Kasper Høgh",
@@ -61896,9 +62280,11 @@
       2023,
       2024,
       2025
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Kathrine Kühl",
@@ -62938,9 +63324,10 @@
     ],
     "years_played": [
       2021
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Albert Grønbæk Erlykke",
@@ -63386,9 +63773,11 @@
     "years_played": [
       2025,
       2026
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Jóhanna Fossdalsá",
@@ -63566,9 +63955,11 @@
     ],
     "years_played": [
       2025
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Filip Jørgensen",
@@ -64090,9 +64481,11 @@
       1908,
       1910,
       1912
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "August Lindgren",
@@ -64135,9 +64528,11 @@
     "years_played": [
       1908,
       1910
+    ],
+    "_manual_fields": [
+      "latitude",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["latitude", "longitude"]
   },
   {
     "playerLabel": "Kristian Middelboe",
@@ -64729,9 +65124,10 @@
       1996,
       1997,
       2000
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Ole Bjur",
@@ -64936,9 +65332,10 @@
       2001,
       2002,
       2003
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
-  ,
-    "_manual_fields": ["allClubs"]
   },
   {
     "playerLabel": "Jakob Friis-Hansen",
@@ -65115,9 +65512,11 @@
       1999,
       2000,
       2001
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "longitude"
     ]
-  ,
-    "_manual_fields": ["allClubs", "longitude"]
   },
   {
     "playerLabel": "Jan Heintze",
@@ -65519,9 +65918,11 @@
     "wikipediaURL_da": "",
     "wikipediaURL_en": "",
     "klubnavn_original": "FC København",
-    "klub_id": "3710"
-  ,
-    "_manual_fields": ["latitude", "longitude"]
+    "klub_id": "3710",
+    "_manual_fields": [
+      "latitude",
+      "longitude"
+    ]
   },
   {
     "playerLabel": "William Osula",
@@ -65585,9 +65986,11 @@
     "wikipediaURL_da": "https://da.wikipedia.org/wiki/William_Osula",
     "wikipediaURL_en": "https://en.wikipedia.org/wiki/William_Osula",
     "klubnavn_original": "FC København",
-    "klub_id": "3710"
-  ,
-    "_manual_fields": ["latitude", "longitude"]
+    "klub_id": "3710",
+    "_manual_fields": [
+      "latitude",
+      "longitude"
+    ]
   },
   {
     "playerLabel": "Selma Svendsen",
@@ -65617,44 +66020,137 @@
         "longitude": 12.524479,
         "is_earliest": true,
         "klub_logo": "logos/klub_1145.png"
+      },
+      {
+        "klub_id": "1146",
+        "klubnavn": "Lyngby Boldklub",
+        "latitude": 55.7822,
+        "longitude": 12.5065,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_1146.png"
+      },
+      {
+        "klub_id": "1532",
+        "klubnavn": "Boldklubben af 1893",
+        "latitude": 55.7138,
+        "longitude": 12.5825,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_1532.png"
+      },
+      {
+        "klub_id": "1468",
+        "klubnavn": "Oure Fodbold Akademi",
+        "latitude": 55.117,
+        "longitude": 10.724,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_1468.png"
+      },
+      {
+        "klub_id": "3714",
+        "klubnavn": "HB Køge",
+        "latitude": 55.468,
+        "longitude": 12.1766,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_3714.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "Djurgårdens IF Fotboll",
+        "latitude": 59.3453,
+        "longitude": 18.0789,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Djurgardens_IF_logo.svg/330px-Djurgardens_IF_logo.svg.png"
       }
     ],
     "years_played": [
       2026
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
     "playerLabel": "Sofie Vendelbo",
     "wikipediaURL_da": null,
     "wikipediaURL_en": "https://en.wikipedia.org/wiki/Sofie_Vendelbo",
-    "birthPlaceLabel": "Silkeborg",
-    "lat": "56.184061",
-    "lon": "9.575509",
+    "birthPlaceLabel": "Engesvang",
+    "lat": "56.17023",
+    "lon": "9.348559",
     "dbuID": "8063",
     "birthday_dbu": "09-02-2000",
     "n_matches": "1",
     "n_goals": "0",
     "image": null,
     "gender": "kvinde",
-    "klubnavn": "Vildbjerg SF",
-    "latitude": "56.195465",
-    "longitude": "8.769028",
-    "klub_logo": "logos/klub_380.png",
-    "klub_website": "https://www.dbu.dk/resultater/klub/380/klubinfo",
-    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/380/klubinfo",
+    "klubnavn": "Engesvang Fremad",
+    "latitude": "56.170292",
+    "longitude": "9.354252",
+    "klub_logo": "https://file.dbu.dk/images/club/219/Engesvang_Fremad.png",
+    "klub_website": "https://www.dbu.dk/resultater/klub/219/klubinfo",
+    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/219/klubinfo",
     "region": "Region Midtjylland",
     "allClubs": [
       {
-        "klub_id": "380",
-        "klubnavn": "Vildbjerg SF",
-        "latitude": 56.1955,
-        "longitude": 8.769,
+        "klub_id": "219",
+        "klubnavn": "Engesvang Fremad",
+        "latitude": 56.170292,
+        "longitude": 9.354252,
         "is_earliest": true,
-        "klub_logo": "logos/klub_380.png"
+        "klub_logo": "https://file.dbu.dk/images/club/219/Engesvang_Fremad.png"
+      },
+      {
+        "klub_id": "3699",
+        "klubnavn": "AGF",
+        "latitude": 56.1322,
+        "longitude": 10.1937,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_3699.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "K.R.C. Genk",
+        "latitude": 50.9662,
+        "longitude": 5.5021,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/7/77/Logo_KRC_Genk.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "1. FC Köln",
+        "latitude": 50.9422,
+        "longitude": 6.9578,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/1._FC_Koeln_Logo_2014%E2%80%93.svg/330px-1._FC_Koeln_Logo_2014%E2%80%93.svg.png"
+      },
+      {
+        "klub_id": "3705",
+        "klubnavn": "FC Midtjylland",
+        "latitude": 56.117,
+        "longitude": 8.9509,
+        "is_earliest": false,
+        "klub_logo": "https://file.dbu.dk/images/club/3705/FC_Midtjylland.png"
+      },
+      {
+        "klub_id": "431",
+        "klubnavn": "Vejlby Skovbakken Aarhus",
+        "latitude": 56.1933,
+        "longitude": 10.208,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_431.png"
       }
     ],
     "years_played": [
       2026
+    ],
+    "klub_id": "219",
+    "_manual_fields": [
+      "klubnavn",
+      "latitude",
+      "longitude",
+      "allClubs",
+      "birthPlaceLabel",
+      "lat",
+      "lon"
     ]
   },
   {
@@ -65695,9 +66191,9 @@
     "playerLabel": "Emilie Fink Pedersen",
     "wikipediaURL_da": "https://da.wikipedia.org/wiki/Emilie_Fink",
     "wikipediaURL_en": null,
-    "birthPlaceLabel": "Skive",
-    "lat": "56.57",
-    "lon": "9.0244",
+    "birthPlaceLabel": "Røddinge",
+    "lat": "56.644583",
+    "lon": "8.809519",
     "dbuID": "8329",
     "birthday_dbu": "30-09-2004",
     "n_matches": "1",
@@ -65719,34 +66215,84 @@
         "longitude": 8.885196,
         "is_earliest": true,
         "klub_logo": null
+      },
+      {
+        "klub_id": "351",
+        "klubnavn": "Thisted FC",
+        "latitude": 56.969,
+        "longitude": 8.7012,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_351.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "FC Salling",
+        "latitude": 56.546205,
+        "longitude": 9.027723,
+        "is_earliest": false,
+        "klub_logo": null
       }
     ],
     "years_played": [
       2026
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "birthPlaceLabel",
+      "lat",
+      "lon"
     ]
   },
   {
     "playerLabel": "Carli Scheuer Moesgaard",
     "wikipediaURL_da": null,
     "wikipediaURL_en": null,
-    "birthPlaceLabel": null,
-    "lat": null,
-    "lon": null,
+    "birthPlaceLabel": "Hellerup",
+    "lat": "55.740259",
+    "lon": "12.575221",
     "dbuID": "8571",
     "birthday_dbu": "14-05-2007",
     "n_matches": "1",
     "n_goals": "0",
     "image": null,
     "gender": "kvinde",
-    "klubnavn": null,
-    "latitude": null,
-    "longitude": null,
-    "klub_logo": null,
-    "klub_website": null,
-    "klub_dbu_url": null,
-    "region": null,
+    "klubnavn": "Hellerup Idræts Klub",
+    "latitude": "55.7436",
+    "longitude": "12.5659",
+    "klub_logo": "logos/klub_1562.png",
+    "klub_website": "https://www.dbu.dk/resultater/klub/1562/klubinfo",
+    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1562/klubinfo",
+    "region": "Region Hovedstaden",
     "years_played": [
       2026
+    ],
+    "klub_id": "1562",
+    "allClubs": [
+      {
+        "klub_id": "3702",
+        "klubnavn": "FC Nordsjælland",
+        "latitude": 55.8161,
+        "longitude": 12.3514,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_3702.png"
+      },
+      {
+        "klub_id": "1562",
+        "klubnavn": "Hellerup Idræts Klub",
+        "latitude": 55.7436,
+        "longitude": 12.5659,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_1562.png"
+      }
+    ],
+    "_manual_fields": [
+      "birthPlaceLabel",
+      "lat",
+      "lon",
+      "klubnavn",
+      "latitude",
+      "longitude",
+      "allClubs"
     ]
   }
 ]
