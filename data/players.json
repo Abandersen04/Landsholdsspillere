@@ -66203,7 +66203,7 @@
     "klubnavn": "Spøttrup Motion & Sport",
     "latitude": "56.602581",
     "longitude": "8.885196",
-    "klub_logo": null,
+    "klub_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2i0EXAufWzALS5o-v857rPaZosVt7YaAj5luZWjSKXI71p5ze08YdOxaw&s=10",
     "klub_website": "http://www.spottrupms.dk",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/201/klubinfo",
     "region": "Region Midtjylland",
@@ -66214,7 +66214,7 @@
         "latitude": 56.602581,
         "longitude": 8.885196,
         "is_earliest": true,
-        "klub_logo": null
+        "klub_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2i0EXAufWzALS5o-v857rPaZosVt7YaAj5luZWjSKXI71p5ze08YdOxaw&s=10"
       },
       {
         "klub_id": "351",
