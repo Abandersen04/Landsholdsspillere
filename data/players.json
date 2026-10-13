@@ -1636,8 +1636,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -1694,7 +1694,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Marc Rieper",
@@ -1710,8 +1711,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Marc%20Rieper%20with%20Harry%20Redknapp.jpg",
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/428/klubinfo",
@@ -2592,12 +2593,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       }
     ],
     "years_played": [
@@ -3714,8 +3715,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/DK%20football1908.jpg",
     "gender": "mand",
     "klubnavn": "Østerbros Boldklub",
-    "latitude": "55.69972",
-    "longitude": "12.57",
+    "latitude": 55.6997,
+    "longitude": 12.57,
     "klub_logo": "logos/klub_99999.jpg",
     "klub_website": null,
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/99999/klubinfo",
@@ -3748,7 +3749,8 @@
     ],
     "years_played": [
       1908
-    ]
+    ],
+    "klub_id": "99999"
   },
   {
     "playerLabel": "Poul Nielsen",
@@ -4224,8 +4226,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Football%20at%20the%201912%20Summer%20Olympics%20-%20Denmark%20squad%20%28J%C3%B8rgensen%29.JPG",
     "gender": "mand",
     "klubnavn": "Østerbros Boldklub",
-    "latitude": "55.69972",
-    "longitude": "12.57",
+    "latitude": 55.6997,
+    "longitude": 12.57,
     "klub_logo": "logos/klub_99999.jpg",
     "klub_website": null,
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/99999/klubinfo",
@@ -4251,7 +4253,8 @@
     "years_played": [
       1911,
       1912
-    ]
+    ],
+    "klub_id": "99999"
   },
   {
     "playerLabel": "Georg Brysting",
@@ -4932,9 +4935,9 @@
     "n_goals": "3",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Østerbro Boldklub",
-    "latitude": "55.6997",
-    "longitude": "12.57",
+    "klubnavn": "Østerbros Boldklub",
+    "latitude": 55.6997,
+    "longitude": 12.57,
     "klub_logo": "logos/klub_99999.jpg",
     "klub_website": null,
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/99999/klubinfo",
@@ -4969,7 +4972,8 @@
       1918,
       1920,
       1921
-    ]
+    ],
+    "klub_id": "99999"
   },
   {
     "playerLabel": "Svend Knudsen",
@@ -5676,8 +5680,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Østerbros Boldklub",
-    "latitude": "55.69972",
-    "longitude": "12.57",
+    "latitude": 55.6997,
+    "longitude": 12.57,
     "klub_logo": "logos/klub_99999.jpg",
     "klub_website": null,
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/99999/klubinfo",
@@ -5705,7 +5709,8 @@
     ],
     "_manual_fields": [
       "allClubs"
-    ]
+    ],
+    "klub_id": "99999"
   },
   {
     "playerLabel": "Ernst Nilsson",
@@ -6463,8 +6468,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -6495,7 +6500,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Vilhelm Nielsen",
@@ -7353,8 +7359,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -7377,7 +7383,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Henning Jensen",
@@ -7727,12 +7734,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Bolton_Wanderers_FC_logo.svg/330px-Bolton_Wanderers_FC_logo.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       },
       {
         "klub_id": null,
@@ -8364,8 +8371,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -8386,7 +8393,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Arthur Nielsen",
@@ -8473,8 +8481,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -8497,7 +8505,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Olaf Brockhoff",
@@ -10181,8 +10190,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -10212,7 +10221,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Edmund Sørensen",
@@ -10228,8 +10238,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "http://www.agf1880fodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/421/klubinfo",
@@ -10240,7 +10250,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Carl Aage Præst",
@@ -10256,8 +10267,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Karl%20Aage%20Pr%C3%A6st%20-%20Juventus%20FC%201951-52.jpg",
     "gender": "mand",
     "klubnavn": "Østerbros Boldklub",
-    "latitude": "55.69972",
-    "longitude": "12.57",
+    "latitude": 55.6997,
+    "longitude": 12.57,
     "klub_logo": "logos/klub_99999.jpg",
     "klub_website": null,
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/99999/klubinfo",
@@ -10294,7 +10305,8 @@
       1947,
       1948,
       1949
-    ]
+    ],
+    "klub_id": "99999"
   },
   {
     "playerLabel": "Aage Rou Jensen",
@@ -10310,8 +10322,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aage%20Rou%20Jensen.jpg",
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -10342,7 +10354,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Helge Christian Bronée",
@@ -10638,8 +10651,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -10660,7 +10673,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "John Nielsen",
@@ -10700,8 +10714,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -10722,7 +10736,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Poul Petersen",
@@ -11379,8 +11394,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/428/klubinfo",
@@ -11448,8 +11463,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -11470,7 +11485,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Jørgen W. Hansen",
@@ -11833,8 +11849,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -11856,7 +11872,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Poul Nielsen",
@@ -12359,8 +12376,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "http://www.agf1880fodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/421/klubinfo",
@@ -12371,7 +12388,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Carl Holm",
@@ -12682,8 +12700,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -12709,7 +12727,8 @@
     "years_played": [
       1950,
       1951
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "James Rønvang",
@@ -13063,8 +13082,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/J%C3%B8rgen%20Olesen%201960.jpg",
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/428/klubinfo",
@@ -14040,8 +14059,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/428/klubinfo",
@@ -14201,8 +14220,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Amdisen%201960.jpg",
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -14225,7 +14244,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Jørgen Hansen",
@@ -14425,8 +14445,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -14448,7 +14468,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Ove Andersen",
@@ -14605,8 +14626,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "http://www.agf1880fodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/421/klubinfo",
@@ -14617,7 +14638,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Poul Andersen",
@@ -14848,8 +14870,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -14871,7 +14893,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Henry From",
@@ -14887,8 +14910,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Henry%20From%201957cr.jpg",
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -14913,7 +14936,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Knud Petersen",
@@ -15047,8 +15071,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -15069,7 +15093,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Peder Kjær",
@@ -15085,8 +15110,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -15107,7 +15132,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Finn Alfred Hansen",
@@ -17844,8 +17870,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -17873,7 +17899,8 @@
       1966,
       1968,
       1969
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "John Petersen",
@@ -17889,8 +17916,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -17909,7 +17936,8 @@
       1964,
       1966
     ],
-    "_manual_fields": "allClubs"
+    "_manual_fields": "allClubs",
+    "klub_id": "3716"
   },
   {
     "playerLabel": "Preben Arentoft",
@@ -18455,8 +18483,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Feijenoord%20tegen%20FC%20Utrecht%20elftal%20Utrecht%2C%20Bestanddeelnr%20923-7659.jpg",
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -18517,7 +18545,8 @@
       1971,
       1972,
       1973
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "Ove Adler Sørensen",
@@ -18533,8 +18562,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "http://www.agf1880fodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/421/klubinfo",
@@ -18555,7 +18584,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Henning Boel",
@@ -18842,8 +18872,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Worbye%20%281966%29.jpg",
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -18869,7 +18899,8 @@
     "years_played": [
       1966,
       1967
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "Finn Wiberg",
@@ -20218,8 +20249,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Østerbros Boldklub",
-    "latitude": "55.69972",
-    "longitude": "12.57",
+    "latitude": 55.6997,
+    "longitude": 12.57,
     "klub_logo": "logos/klub_99999.jpg",
     "klub_website": null,
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/99999/klubinfo",
@@ -20285,7 +20316,8 @@
     "years_played": [
       1969,
       1972
-    ]
+    ],
+    "klub_id": "99999"
   },
   {
     "playerLabel": "Jan Andersen",
@@ -21021,8 +21053,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -21065,7 +21097,8 @@
       1970,
       1971,
       1972
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "Kristen Nygaard Kristensen",
@@ -21279,8 +21312,8 @@
     "n_goals": "0",
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -21298,7 +21331,8 @@
     "years_played": [
       1970,
       1971
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "Bent Outzen",
@@ -22204,8 +22238,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sten%20Ziegler.png",
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -22243,7 +22277,8 @@
       1979,
       1980,
       1981
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "Hans Ewald Hansen",
@@ -22382,15 +22417,16 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": null,
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "region": "Region Hovedstaden",
     "years_played": [
       1972
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "Flemming Ahlberg",
@@ -22606,11 +22642,11 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Vancouver Whitecaps",
-        "latitude": 49.2826,
-        "longitude": -123.0332,
+        "klubnavn": "Vancouver Whitecaps FC",
+        "latitude": 49.2608,
+        "longitude": -123.1139,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/e/ef/Oldcapslogo.png"
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Vancouver_Whitecaps_logo.svg/500px-Vancouver_Whitecaps_logo.svg.png"
       },
       {
         "klub_id": null,
@@ -22635,14 +22671,6 @@
         "longitude": 7.0131,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Logo_of_Rot-Weiss_Essen.svg/330px-Logo_of_Rot-Weiss_Essen.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Vancouver Whitecaps FC",
-        "latitude": 49.2608,
-        "longitude": -123.1139,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Vancouver_Whitecaps_logo.svg/500px-Vancouver_Whitecaps_logo.svg.png"
       },
       {
         "klub_id": null,
@@ -23333,8 +23361,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -23379,7 +23407,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Jens Kolding",
@@ -23452,8 +23481,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Skovbakken IK OB",
-    "latitude": "56.1944301342951",
-    "longitude": "10.206791",
+    "latitude": 56.1944,
+    "longitude": 10.2068,
     "klub_logo": "logos/klub_3246.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
@@ -23536,7 +23565,8 @@
       1973,
       1974,
       1980
-    ]
+    ],
+    "klub_id": "3246"
   },
   {
     "playerLabel": "Tommy Hansen",
@@ -23645,12 +23675,12 @@
         "klub_logo": "logos/klub_1562.png"
       },
       {
-        "klub_id": "1564",
+        "klub_id": "3716",
         "klubnavn": "Hvidovre Idrætsforening",
-        "latitude": 55.6312,
-        "longitude": 12.4831,
+        "latitude": 55.6313,
+        "longitude": 12.4828,
         "is_earliest": false,
-        "klub_logo": "logos/klub_1564.png"
+        "klub_logo": "logos/klub_3716.png"
       },
       {
         "klub_id": "1567",
@@ -23709,12 +23739,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/87/KV_Oostende_logo.svg/330px-KV_Oostende_logo.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       }
     ],
     "years_played": [
@@ -23741,8 +23771,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -23767,7 +23797,8 @@
     ],
     "years_played": [
       1973
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "Søren Larsen",
@@ -25591,7 +25622,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Excelsior",
+        "klubnavn": "Excelsior Rotterdam",
         "latitude": 51.9169,
         "longitude": 4.5206,
         "is_earliest": false,
@@ -25669,8 +25700,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Dalum IF",
-    "latitude": "55.365511",
-    "longitude": "10.372096",
+    "latitude": 55.3655,
+    "longitude": 10.3721,
     "klub_logo": "logos/klub_1378.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1378/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1378/klubinfo",
@@ -25748,7 +25779,8 @@
       1982,
       1984,
       1985
-    ]
+    ],
+    "klub_id": "1378"
   },
   {
     "playerLabel": "Gert Jørgensen",
@@ -25868,8 +25900,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -25912,7 +25944,8 @@
       1977,
       1979,
       1980
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "John Povelsen",
@@ -26445,8 +26478,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Skovbakken IK OB",
-    "latitude": "56.1944301342951",
-    "longitude": "10.206791",
+    "latitude": 56.1944,
+    "longitude": 10.2068,
     "klub_logo": "logos/klub_3246.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
@@ -26482,7 +26515,8 @@
       1981,
       1982,
       1983
-    ]
+    ],
+    "klub_id": "3246"
   },
   {
     "playerLabel": "Flemming Nielsen",
@@ -26740,9 +26774,9 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Lyngby Boldklub",
-    "latitude": "55.7821",
-    "longitude": "12.5064",
-    "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png",
+    "latitude": 55.7822,
+    "longitude": 12.5065,
+    "klub_logo": "logos/klub_1146.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1146/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1146/klubinfo",
     "region": "Region Hovedstaden",
@@ -26772,12 +26806,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Pisa_SC_crest.svg/330px-Pisa_SC_crest.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": true,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       }
     ],
     "years_played": [
@@ -26790,7 +26824,8 @@
       1986,
       1987,
       1988
-    ]
+    ],
+    "klub_id": "1146"
   },
   {
     "playerLabel": "Frank Olsen",
@@ -27005,9 +27040,9 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Lyngby Boldklub 1921",
-    "latitude": "55.782169",
-    "longitude": "12.50649",
+    "klubnavn": "Lyngby Boldklub",
+    "latitude": 55.7822,
+    "longitude": 12.5065,
     "klub_logo": "logos/klub_1146.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1146/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1146/klubinfo",
@@ -27032,7 +27067,8 @@
     ],
     "years_played": [
       1980
-    ]
+    ],
+    "klub_id": "1146"
   },
   {
     "playerLabel": "Jesper Olsen",
@@ -27122,8 +27158,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -27144,7 +27180,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Johnny Jacobsen",
@@ -27230,12 +27267,12 @@
     "region": "Region Hovedstaden",
     "allClubs": [
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       },
       {
         "klub_id": null,
@@ -27978,8 +28015,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -27998,7 +28035,8 @@
       1981,
       1982,
       1984
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "John Sivebæk",
@@ -28220,12 +28258,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Wappen_FCAg.svg/330px-Wappen_FCAg.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       }
     ],
     "years_played": [
@@ -28333,8 +28371,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -28371,7 +28409,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Morten Donnerup",
@@ -28688,15 +28727,16 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": null,
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "region": "Region Hovedstaden",
     "years_played": [
       1983
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "Brian Chrøis",
@@ -29104,16 +29144,17 @@
     "n_goals": "1",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Lyngby Boldklub 1921",
-    "latitude": "55.782169",
-    "longitude": "12.50649",
+    "klubnavn": "Lyngby Boldklub",
+    "latitude": 55.7822,
+    "longitude": 12.5065,
     "klub_logo": "logos/klub_1146.png",
     "klub_website": "http://www.lyngby-boldklub1921.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1146/klubinfo",
     "region": "Region Hovedstaden",
     "years_played": [
       1983
-    ]
+    ],
+    "klub_id": "1146"
   },
   {
     "playerLabel": "Ole Østergård",
@@ -29157,8 +29198,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tommy%20Christensen.JPG",
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3699/klubinfo",
@@ -29235,7 +29276,8 @@
     "_manual_fields": [
       "latitude",
       "longitude"
-    ]
+    ],
+    "klub_id": "3699"
   },
   {
     "playerLabel": "Keld Bordinggaard",
@@ -29327,8 +29369,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/428/klubinfo",
@@ -29482,12 +29524,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_AFC_Ajax_%281928-1991%2C_2025-%29.png"
       },
       {
-        "klub_id": null,
-        "klubnavn": "Silkeborg IF Fodbold",
-        "latitude": 56.1667,
-        "longitude": 9.55,
+        "klub_id": "632",
+        "klubnavn": "Silkeborg IF",
+        "latitude": 56.1841,
+        "longitude": 9.5755,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Silkeborg_IF_logo.svg/250px-Silkeborg_IF_logo.svg.png"
+        "klub_logo": "logos/klub_632.png"
       }
     ],
     "years_played": [
@@ -29516,8 +29558,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -29567,7 +29609,8 @@
     "years_played": [
       1987,
       1988
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "Carsten Pedersen",
@@ -29718,12 +29761,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/BSC_Young_Boys.svg/960px-BSC_Young_Boys.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       }
     ],
     "years_played": [
@@ -30277,12 +30320,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Stoke_City_FC_crest_2001.svg/330px-Stoke_City_FC_crest_2001.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       }
     ],
     "years_played": [
@@ -30540,15 +30583,16 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Silkeborg IF",
-    "latitude": "56.184061",
-    "longitude": "9.575509",
+    "latitude": 56.1841,
+    "longitude": 9.5755,
     "klub_logo": "logos/klub_632.png",
     "klub_website": "http://www.silkeborgiffodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/632/klubinfo",
     "region": "Region Midtjylland",
     "years_played": [
       1990
-    ]
+    ],
+    "klub_id": "632"
   },
   {
     "playerLabel": "Jørgen Juul Jensen",
@@ -30688,12 +30732,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/0/0c/Herf%C3%B8lge_BK.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       }
     ],
     "years_played": [
@@ -32078,12 +32122,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
       },
       {
-        "klub_id": null,
-        "klubnavn": "Dalum Idræts-Forening",
-        "latitude": 55.396,
-        "longitude": 10.3885,
+        "klub_id": "1378",
+        "klubnavn": "Dalum IF",
+        "latitude": 55.3655,
+        "longitude": 10.3721,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/af/Dalum_IF.png"
+        "klub_logo": "logos/klub_1378.png"
       }
     ],
     "years_played": [
@@ -32248,12 +32292,12 @@
     "region": "Region Hovedstaden",
     "allClubs": [
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       }
     ],
     "years_played": [
@@ -32847,12 +32891,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_AFC_Ajax_%281928-1991%2C_2025-%29.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       }
     ],
     "years_played": [
@@ -33761,12 +33805,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/FC_Southampton.svg/330px-FC_Southampton.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       }
     ],
     "years_played": [
@@ -34199,12 +34243,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SV-Werder-Bremen-Logo.svg/250px-SV-Werder-Bremen-Logo.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       },
       {
         "klub_id": null,
@@ -34772,8 +34816,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Stephan%20Andersen%20%28cropped%29.JPG",
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -34857,7 +34901,8 @@
     ],
     "_manual_fields": [
       "allClubs"
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "Martin Retov",
@@ -35201,12 +35246,12 @@
         "klub_logo": "logos/klub_ext_energie-cottbus.svg"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       }
     ],
     "years_played": [
@@ -35516,8 +35561,8 @@
       {
         "klub_id": null,
         "klubnavn": "Vålerenga Fotball",
-        "latitude": 59.918,
-        "longitude": 10.8061,
+        "latitude": 59.9133,
+        "longitude": 10.7389,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/V%C3%A5lerenga_Oslo_logo.svg/500px-V%C3%A5lerenga_Oslo_logo.svg.png"
       },
@@ -36118,8 +36163,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Kahlenberg%202006.jpg",
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -36178,7 +36223,8 @@
       2012,
       2014,
       2015
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "Christopher Poulsen",
@@ -37005,8 +37051,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Skovbakken IK OB",
-    "latitude": "56.1944301342951",
-    "longitude": "10.206791",
+    "latitude": 56.1944,
+    "longitude": 10.2068,
     "klub_logo": "logos/klub_3246.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
@@ -37068,7 +37114,8 @@
       2002,
       2004,
       2005
-    ]
+    ],
+    "klub_id": "3246"
   },
   {
     "playerLabel": "Christina Bonde",
@@ -37472,7 +37519,7 @@
         "latitude": 55.7161,
         "longitude": 12.3734,
         "is_earliest": false,
-        "klub_logo": "logos/klub_2131.png"
+        "klub_logo": "https://bsfodbold.dk/images/logo.png"
       },
       {
         "klub_id": null,
@@ -37588,8 +37635,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Skovbakken IK OB",
-    "latitude": "56.1944301342951",
-    "longitude": "10.206791",
+    "latitude": 56.1944,
+    "longitude": 10.2068,
     "klub_logo": "logos/klub_3246.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
@@ -37628,7 +37675,8 @@
       2003,
       2004,
       2005
-    ]
+    ],
+    "klub_id": "3246"
   },
   {
     "playerLabel": "Liana Juhl Nielsen",
@@ -38903,8 +38951,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/47/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -38931,7 +38979,8 @@
       1999,
       2000,
       2001
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Kristina D. Høeg",
@@ -39223,8 +39272,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/47/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -39248,7 +39297,8 @@
       1998,
       1999,
       2005
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Karina Christensen",
@@ -39264,8 +39314,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/47/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -39292,7 +39342,8 @@
       1995,
       1998,
       1999
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Jeanne Axelsen",
@@ -39403,12 +39454,12 @@
         "klub_logo": "logos/klub_533.png"
       },
       {
-        "klub_id": "543",
+        "klub_id": "3715",
         "klubnavn": "FC Horsens",
-        "latitude": 55.8311,
-        "longitude": 9.8303,
+        "latitude": 55.8716,
+        "longitude": 9.8562,
         "is_earliest": false,
-        "klub_logo": "https://file.dbu.dk/images/club/543/FC_Horsens.png"
+        "klub_logo": "logos/klub_3715.png"
       },
       {
         "klub_id": null,
@@ -39549,8 +39600,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/47/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -39575,7 +39626,8 @@
     ],
     "years_played": [
       1999
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Anne-Mette Christensen",
@@ -39591,8 +39643,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/47/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -39609,7 +39661,8 @@
     ],
     "years_played": [
       1999
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Christina Jensen",
@@ -39894,12 +39947,12 @@
         "klub_logo": "logos/klub_99020.jpg"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       },
       {
         "klub_id": null,
@@ -40813,8 +40866,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "http://www.fortunahjorring.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -40822,7 +40875,8 @@
     "years_played": [
       1992,
       1994
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Dorthe Andersen",
@@ -41333,8 +41387,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/47/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -41352,7 +41406,8 @@
     "years_played": [
       1990,
       1991
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Mette Nielsen",
@@ -41404,8 +41459,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/47/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -41444,7 +41499,8 @@
       1989,
       1990,
       1991
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Marianne Jacobsen",
@@ -41804,8 +41860,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "http://www.fortunahjorring.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -41813,7 +41869,8 @@
     "years_played": [
       1987,
       1988
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Jette Jensen",
@@ -41972,8 +42029,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "http://www.fortunahjorring.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -41981,7 +42038,8 @@
     "years_played": [
       1986,
       1987
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Hanne Pedersen",
@@ -42061,9 +42119,9 @@
     "n_goals": "0",
     "image": null,
     "gender": "kvinde",
-    "klubnavn": "Ballerup-Skovlunde Fodbold",
-    "latitude": "55.716056",
-    "longitude": "12.373437",
+    "klubnavn": "Ballerup-Skovlunde Fodbold (BSF)",
+    "latitude": 55.7161,
+    "longitude": 12.3734,
     "klub_logo": "https://bsfodbold.dk/images/logo.png",
     "klub_website": "http://www.bsfodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
@@ -42071,7 +42129,8 @@
     "years_played": [
       1986,
       1987
-    ]
+    ],
+    "klub_id": "2131"
   },
   {
     "playerLabel": "Jette Hansen",
@@ -42147,8 +42206,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Ballerup-Skovlunde Fodbold (BSF)",
-    "latitude": "55.7161",
-    "longitude": "12.3734",
+    "latitude": 55.7161,
+    "longitude": 12.3734,
     "klub_logo": "https://bsfodbold.dk/images/logo.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
@@ -42169,7 +42228,8 @@
       1984,
       1985,
       1986
-    ]
+    ],
+    "klub_id": "2131"
   },
   {
     "playerLabel": "Jesper Bech",
@@ -42576,8 +42636,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/47/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -42597,7 +42657,8 @@
       1983,
       1984,
       1985
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Charlotte Nielsen-Mann",
@@ -42691,8 +42752,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Ballerup-Skovlunde Fodbold (BSF)",
-    "latitude": "55.7161",
-    "longitude": "12.3734",
+    "latitude": 55.7161,
+    "longitude": 12.3734,
     "klub_logo": "https://bsfodbold.dk/images/logo.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
@@ -42711,7 +42772,8 @@
       1983,
       1984,
       1985
-    ]
+    ],
+    "klub_id": "2131"
   },
   {
     "playerLabel": "Marianne Riis",
@@ -42832,8 +42894,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Ballerup-Skovlunde Fodbold (BSF)",
-    "latitude": "55.7161",
-    "longitude": "12.3734",
+    "latitude": 55.7161,
+    "longitude": 12.3734,
     "klub_logo": "https://bsfodbold.dk/images/logo.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
@@ -42863,7 +42925,8 @@
       1981,
       1982,
       1984
-    ]
+    ],
+    "klub_id": "2131"
   },
   {
     "playerLabel": "Pia Andersen",
@@ -42879,8 +42942,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Ballerup-Skovlunde Fodbold (BSF)",
-    "latitude": "55.7161",
-    "longitude": "12.3734",
+    "latitude": 55.7161,
+    "longitude": 12.3734,
     "klub_logo": "https://bsfodbold.dk/images/logo.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
@@ -42906,7 +42969,8 @@
     "years_played": [
       1983,
       1984
-    ]
+    ],
+    "klub_id": "2131"
   },
   {
     "playerLabel": "Gitte Christensen",
@@ -43617,16 +43681,17 @@
     "n_goals": "0",
     "image": null,
     "gender": "kvinde",
-    "klubnavn": "Ballerup-Skovlunde Fodbold",
-    "latitude": "55.716056",
-    "longitude": "12.373437",
+    "klubnavn": "Ballerup-Skovlunde Fodbold (BSF)",
+    "latitude": 55.7161,
+    "longitude": 12.3734,
     "klub_logo": "https://bsfodbold.dk/images/logo.png",
     "klub_website": "http://www.bsfodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
     "region": "Region Hovedstaden",
     "years_played": [
       1980
-    ]
+    ],
+    "klub_id": "2131"
   },
   {
     "playerLabel": "Lise Olesen",
@@ -43775,8 +43840,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/47/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -43793,7 +43858,8 @@
     ],
     "years_played": [
       1979
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Kirsten Hansen",
@@ -43885,9 +43951,9 @@
     "n_goals": "0",
     "image": null,
     "gender": "kvinde",
-    "klubnavn": "Ballerup-Skovlunde Fodbold",
-    "latitude": "55.716056",
-    "longitude": "12.373437",
+    "klubnavn": "Ballerup-Skovlunde Fodbold (BSF)",
+    "latitude": 55.7161,
+    "longitude": 12.3734,
     "klub_logo": "https://bsfodbold.dk/images/logo.png",
     "klub_website": "http://www.bsfodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
@@ -43895,7 +43961,8 @@
     "years_played": [
       1977,
       1978
-    ]
+    ],
+    "klub_id": "2131"
   },
   {
     "playerLabel": "Lise Andersen",
@@ -46337,8 +46404,8 @@
     "n_goals": "0",
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "http://www.fortunahjorring.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -46357,7 +46424,8 @@
       2004,
       2005,
       2008
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Ditte Larsen",
@@ -46641,9 +46709,9 @@
     "n_goals": "2",
     "image": null,
     "gender": "kvinde",
-    "klubnavn": "Ballerup-Skovlunde Fodbold",
-    "latitude": "55.716056",
-    "longitude": "12.373437",
+    "klubnavn": "Ballerup-Skovlunde Fodbold (BSF)",
+    "latitude": 55.7161,
+    "longitude": 12.3734,
     "klub_logo": "https://bsfodbold.dk/images/logo.png",
     "klub_website": "http://www.bsfodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
@@ -46651,7 +46719,8 @@
     "years_played": [
       1974,
       1975
-    ]
+    ],
+    "klub_id": "2131"
   },
   {
     "playerLabel": "Kirsten Damgård",
@@ -46797,8 +46866,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/47/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -46823,7 +46892,8 @@
     ],
     "years_played": [
       2006
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Karen Haastrup",
@@ -47222,8 +47292,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Skovbakken IK OB",
-    "latitude": "56.1944301342951",
-    "longitude": "10.206791",
+    "latitude": 56.1944,
+    "longitude": 10.2068,
     "klub_logo": "logos/klub_3246.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
@@ -47251,7 +47321,8 @@
       2006,
       2007,
       2014
-    ]
+    ],
+    "klub_id": "3246"
   },
   {
     "playerLabel": "Kris Stadsgaard",
@@ -47746,12 +47817,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/FC_Zenit_Saint_Petersburg_crest.svg/500px-FC_Zenit_Saint_Petersburg_crest.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       }
     ],
     "years_played": [
@@ -47990,12 +48061,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/FC_Groningen_logo.svg/960px-FC_Groningen_logo.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       },
       {
         "klub_id": null,
@@ -48116,8 +48187,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/47/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -48138,7 +48209,8 @@
       2008,
       2009,
       2011
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Janni Arnth Jensen",
@@ -48641,8 +48713,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Ballerup-Skovlunde Fodbold (BSF)",
-    "latitude": "55.7161",
-    "longitude": "12.3734",
+    "latitude": 55.7161,
+    "longitude": 12.3734,
     "klub_logo": "https://bsfodbold.dk/images/logo.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
@@ -48659,7 +48731,8 @@
     ],
     "years_played": [
       2007
-    ]
+    ],
+    "klub_id": "2131"
   },
   {
     "playerLabel": "Emma Madsen",
@@ -49144,12 +49217,12 @@
         "klub_logo": "https://file.dbu.dk/images/club/3713/FC_Fredericia.png"
       },
       {
-        "klub_id": "428",
-        "klubnavn": "Aarhus Gymnastikforening",
-        "latitude": 56.1432,
-        "longitude": 10.1797,
+        "klub_id": "3699",
+        "klubnavn": "AGF",
+        "latitude": 56.1322,
+        "longitude": 10.1937,
         "is_earliest": false,
-        "klub_logo": "logos/klub_428.png"
+        "klub_logo": "logos/klub_3699.png"
       },
       {
         "klub_id": "545",
@@ -49432,12 +49505,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/KKS_Lech_Pozna%C5%84.svg/250px-KKS_Lech_Pozna%C5%84.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       },
       {
         "klub_id": null,
@@ -49958,7 +50031,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Vålerenga Fotball Damer",
+        "klubnavn": "Vålerenga Fotball",
         "latitude": 59.9133,
         "longitude": 10.7389,
         "is_earliest": false,
@@ -49995,8 +50068,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Skovbakken IK OB",
-    "latitude": "56.1944301342951",
-    "longitude": "10.206791",
+    "latitude": 56.1944,
+    "longitude": 10.2068,
     "klub_logo": "logos/klub_3246.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
@@ -50021,7 +50094,8 @@
     ],
     "years_played": [
       2009
-    ]
+    ],
+    "klub_id": "3246"
   },
   {
     "playerLabel": "Louise Seier-Hansen",
@@ -50346,8 +50420,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Skovbakken IK OB",
-    "latitude": "56.1944301342951",
-    "longitude": "10.206791",
+    "latitude": 56.1944,
+    "longitude": 10.2068,
     "klub_logo": "logos/klub_3246.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
@@ -50364,7 +50438,8 @@
     ],
     "years_played": [
       2010
-    ]
+    ],
+    "klub_id": "3246"
   },
   {
     "playerLabel": "Mia-Maria Kjærsgaard-Andersen",
@@ -50380,8 +50455,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Skovbakken IK OB",
-    "latitude": "56.1944301342951",
-    "longitude": "10.206791",
+    "latitude": 56.1944,
+    "longitude": 10.2068,
     "klub_logo": "logos/klub_3246.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
@@ -50407,7 +50482,8 @@
     "years_played": [
       2009,
       2010
-    ]
+    ],
+    "klub_id": "3246"
   },
   {
     "playerLabel": "Nanna Larsen",
@@ -50423,8 +50499,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Ballerup-Skovlunde Fodbold (BSF)",
-    "latitude": "55.7161",
-    "longitude": "12.3734",
+    "latitude": 55.7161,
+    "longitude": 12.3734,
     "klub_logo": "https://bsfodbold.dk/images/logo.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
@@ -50449,7 +50525,8 @@
     ],
     "years_played": [
       2010
-    ]
+    ],
+    "klub_id": "2131"
   },
   {
     "playerLabel": "Merete Nielsen",
@@ -51007,12 +51084,12 @@
         "klub_logo": "logos/klub_3246.png"
       },
       {
-        "klub_id": "3738",
+        "klub_id": "47",
         "klubnavn": "Fortuna Hjørring",
-        "latitude": 57.461,
-        "longitude": 10.0062,
+        "latitude": 57.4641,
+        "longitude": 10.0053,
         "is_earliest": false,
-        "klub_logo": "https://file.dbu.dk/images/club/3738/Fortuna_Hjørring.png"
+        "klub_logo": "logos/klub_47.png"
       },
       {
         "klub_id": "533",
@@ -51436,12 +51513,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/ADO_Den_Haag_logo.svg/330px-ADO_Den_Haag_logo.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       }
     ],
     "years_played": [
@@ -51767,9 +51844,9 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Lyngby Boldklub 1921",
-    "latitude": "55.782169",
-    "longitude": "12.50649",
+    "klubnavn": "Lyngby Boldklub",
+    "latitude": 55.7822,
+    "longitude": 12.5065,
     "klub_logo": "logos/klub_1146.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1146/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1146/klubinfo",
@@ -51804,7 +51881,8 @@
       2012,
       2013,
       2014
-    ]
+    ],
+    "klub_id": "1146"
   },
   {
     "playerLabel": "Sofie Junge Pedersen",
@@ -51853,11 +51931,11 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "FC Badalona Women",
-        "latitude": 41.4333,
-        "longitude": 2.2333,
+        "klubnavn": "FC Badalona",
+        "latitude": 41.4554,
+        "longitude": 2.2371,
         "is_earliest": false,
-        "klub_logo": null
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/0/0d/FC_Levante_Badalona.png"
       },
       {
         "klub_id": null,
@@ -51899,15 +51977,6 @@
         "longitude": 9.19,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/960px-FC_Internazionale_Milano_2021.svg.png",
-        "team_qid": null
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "FC Badalona",
-        "latitude": 41.4554,
-        "longitude": 2.2371,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/0/0d/FC_Levante_Badalona.png",
         "team_qid": null
       }
     ],
@@ -52901,7 +52970,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Vålerenga Fotball Damer",
+        "klubnavn": "Vålerenga Fotball",
         "latitude": 59.9133,
         "longitude": 10.7389,
         "is_earliest": false,
@@ -53159,8 +53228,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nina%20Frausing%20Pedersen%20%2816900046570%29%20%28cropped%29.jpg",
     "gender": "kvinde",
     "klubnavn": "Skovbakken IK OB",
-    "latitude": "56.1944301342951",
-    "longitude": "10.206791",
+    "latitude": 56.1944,
+    "longitude": 10.2068,
     "klub_logo": "logos/klub_3246.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
@@ -53232,14 +53301,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Liverpool F.C. Women",
-        "latitude": 53.4476,
-        "longitude": -2.7276,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/250px-Liverpool_FC.svg.png"
-      },
-      {
-        "klub_id": null,
         "klubnavn": "ASA Tel Aviv University",
         "latitude": 32.1137,
         "longitude": 34.8035,
@@ -53250,7 +53311,8 @@
     "years_played": [
       2014,
       2015
-    ]
+    ],
+    "klub_id": "3246"
   },
   {
     "playerLabel": "Annika Overby Hansen",
@@ -54176,7 +54238,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Vålerenga Fotball Damer",
+        "klubnavn": "Vålerenga Fotball",
         "latitude": 59.9133,
         "longitude": 10.7389,
         "is_earliest": false,
@@ -54268,7 +54330,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Vålerenga Fotball Damer",
+        "klubnavn": "Vålerenga Fotball",
         "latitude": 59.9133,
         "longitude": 10.7389,
         "is_earliest": false,
@@ -54513,7 +54575,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Vålerenga Fotball Damer",
+        "klubnavn": "Vålerenga Fotball",
         "latitude": 59.9133,
         "longitude": 10.7389,
         "is_earliest": false,
@@ -54541,8 +54603,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Fortuna Hjørring",
-    "latitude": "57.464077",
-    "longitude": "10.005278",
+    "latitude": 57.4641,
+    "longitude": 10.0053,
     "klub_logo": "logos/klub_47.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/47/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/47/klubinfo",
@@ -54584,7 +54646,8 @@
     "years_played": [
       2015,
       2018
-    ]
+    ],
+    "klub_id": "47"
   },
   {
     "playerLabel": "Mie Leth Karshøj",
@@ -54743,12 +54806,12 @@
         "klub_logo": "logos/klub_376.png"
       },
       {
-        "klub_id": "428",
-        "klubnavn": "Aarhus Gymnastikforening",
-        "latitude": 56.1432,
-        "longitude": 10.1797,
+        "klub_id": "3699",
+        "klubnavn": "AGF",
+        "latitude": 56.1322,
+        "longitude": 10.1937,
         "is_earliest": false,
-        "klub_logo": "logos/klub_428.png"
+        "klub_logo": "logos/klub_3699.png"
       },
       {
         "klub_id": null,
@@ -55547,12 +55610,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Fremad_Amager.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "1146",
         "klubnavn": "Lyngby Boldklub",
-        "latitude": 55.7821,
-        "longitude": 12.5064,
+        "latitude": 55.7822,
+        "longitude": 12.5065,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Lyngby_Boldklub_logo.png"
+        "klub_logo": "logos/klub_1146.png"
       }
     ],
     "years_played": [
@@ -56044,8 +56107,8 @@
     "image": null,
     "gender": "kvinde",
     "klubnavn": "Ballerup-Skovlunde Fodbold (BSF)",
-    "latitude": "55.7161",
-    "longitude": "12.3734",
+    "latitude": 55.7161,
+    "longitude": 12.3734,
     "klub_logo": "https://bsfodbold.dk/images/logo.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/2131/klubinfo",
@@ -56071,7 +56134,8 @@
     "years_played": [
       2017,
       2018
-    ]
+    ],
+    "klub_id": "2131"
   },
   {
     "playerLabel": "Pierre-Emile Højbjerg",
@@ -56415,12 +56479,12 @@
         "klub_logo": "logos/klub_2.png"
       },
       {
-        "klub_id": "428",
-        "klubnavn": "Aarhus Gymnastikforening",
-        "latitude": 56.1432,
-        "longitude": 10.1797,
+        "klub_id": "3699",
+        "klubnavn": "AGF",
+        "latitude": 56.1322,
+        "longitude": 10.1937,
         "is_earliest": false,
-        "klub_logo": "logos/klub_428.png"
+        "klub_logo": "logos/klub_3699.png"
       },
       {
         "klub_id": "632",
@@ -56529,12 +56593,12 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Kolbotn_IL_logo.svg/960px-Kolbotn_IL_logo.svg.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "3699",
         "klubnavn": "AGF",
         "latitude": 56.1322,
         "longitude": 10.1937,
         "is_earliest": false,
-        "klub_logo": null
+        "klub_logo": "logos/klub_3699.png"
       }
     ],
     "years_played": [
@@ -56637,14 +56701,6 @@
         "longitude": 12.4828,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/AS_Roma_logo_%282017%29.svg/330px-AS_Roma_logo_%282017%29.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Liverpool F.C. Women",
-        "latitude": 53.4476,
-        "longitude": -2.7276,
-        "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/250px-Liverpool_FC.svg.png"
       }
     ],
     "years_played": [
@@ -56937,12 +56993,12 @@
         "klub_logo": "logos/klub_1552.png"
       },
       {
-        "klub_id": "1564",
+        "klub_id": "3716",
         "klubnavn": "Hvidovre Idrætsforening",
-        "latitude": 55.6312,
-        "longitude": 12.4831,
+        "latitude": 55.6313,
+        "longitude": 12.4828,
         "is_earliest": false,
-        "klub_logo": "logos/klub_1564.png"
+        "klub_logo": "logos/klub_3716.png"
       },
       {
         "klub_id": "1579",
@@ -58072,7 +58128,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Vålerenga Fotball Damer",
+        "klubnavn": "Vålerenga Fotball",
         "latitude": 59.9133,
         "longitude": 10.7389,
         "is_earliest": false,
@@ -59129,9 +59185,9 @@
     "n_goals": "0",
     "image": null,
     "gender": "kvinde",
-    "klubnavn": "IK Skovbakken (women)",
-    "latitude": "56.1564",
-    "longitude": "10.2097",
+    "klubnavn": "Skovbakken IK OB",
+    "latitude": 56.1944,
+    "longitude": 10.2068,
     "klub_website": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3246/klubinfo",
     "region": null,
@@ -59169,16 +59225,16 @@
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/4/4a/PSG_women_team.png"
       },
       {
-        "klub_id": null,
-        "klubnavn": "IK Skovbakken (women)",
-        "latitude": 56.1564,
-        "longitude": 10.2097,
+        "klub_id": "3246",
+        "klubnavn": "Skovbakken IK OB",
+        "latitude": 56.1944,
+        "longitude": 10.2068,
         "is_earliest": true,
-        "klub_logo": null
+        "klub_logo": "logos/klub_3246.png"
       },
       {
         "klub_id": null,
-        "klubnavn": "Vålerenga Fotball Damer",
+        "klubnavn": "Vålerenga Fotball",
         "latitude": 59.9133,
         "longitude": 10.7389,
         "is_earliest": false,
@@ -59197,7 +59253,9 @@
     "years_played": [
       2022
     ],
-    "_manual_fields": "allClubs"
+    "_manual_fields": "allClubs",
+    "klub_logo": "logos/klub_3246.png",
+    "klub_id": "3246"
   },
   {
     "playerLabel": "Jens Stage",
@@ -60170,7 +60228,7 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Vålerenga Fotball Damer",
+        "klubnavn": "Vålerenga Fotball",
         "latitude": 59.9133,
         "longitude": 10.7389,
         "is_earliest": false,
@@ -62665,9 +62723,9 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Lyngby Boldklub 1921",
-    "latitude": "55.782169",
-    "longitude": "12.50649",
+    "klubnavn": "Lyngby Boldklub",
+    "latitude": 55.7822,
+    "longitude": 12.5065,
     "klub_logo": "logos/klub_1146.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1146/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1146/klubinfo",
@@ -62700,7 +62758,8 @@
     ],
     "years_played": [
       2018
-    ]
+    ],
+    "klub_id": "1146"
   },
   {
     "playerLabel": "Anders Fønss",
@@ -62990,8 +63049,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "AGF",
-    "latitude": "56.1322",
-    "longitude": "10.1937",
+    "latitude": 56.1322,
+    "longitude": 10.1937,
     "klub_logo": "logos/klub_3699.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/428/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/428/klubinfo",
@@ -63107,9 +63166,9 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Lyngby Boldklub 1921",
-    "latitude": "55.782169",
-    "longitude": "12.50649",
+    "klubnavn": "Lyngby Boldklub",
+    "latitude": 55.7822,
+    "longitude": 12.5065,
     "klub_logo": "logos/klub_1146.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1146/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1146/klubinfo",
@@ -63174,7 +63233,8 @@
     ],
     "years_played": [
       2018
-    ]
+    ],
+    "klub_id": "1146"
   },
   {
     "playerLabel": "Simon Vollesen",
@@ -63189,9 +63249,9 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Lyngby Boldklub 1921",
-    "latitude": "55.782169",
-    "longitude": "12.50649",
+    "klubnavn": "Lyngby Boldklub",
+    "latitude": 55.7822,
+    "longitude": 12.5065,
     "klub_logo": "logos/klub_1146.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1146/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1146/klubinfo",
@@ -63216,7 +63276,8 @@
     ],
     "years_played": [
       2018
-    ]
+    ],
+    "klub_id": "1146"
   },
   {
     "playerLabel": "Oliver Provstgaard",
@@ -63852,8 +63913,8 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mohamed%20Daramy.jpg",
     "gender": "mand",
     "klubnavn": "Hvidovre Idrætsforening",
-    "latitude": "55.63125",
-    "longitude": "12.482835",
+    "latitude": 55.6313,
+    "longitude": 12.4828,
     "klub_logo": "logos/klub_3716.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3716/klubinfo",
@@ -63897,7 +63958,8 @@
       2023,
       2024,
       2026
-    ]
+    ],
+    "klub_id": "3716"
   },
   {
     "playerLabel": "Conrad Harder",
@@ -64673,14 +64735,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Concordia",
-        "latitude": 55.699618,
-        "longitude": 12.560081,
-        "is_earliest": false,
-        "klub_logo": null
-      },
-      {
-        "klub_id": null,
         "klubnavn": "Stjernen",
         "latitude": 55.700241,
         "longitude": 12.569526,
@@ -64844,8 +64898,8 @@
     "image": null,
     "gender": "mand",
     "klubnavn": "Silkeborg IF",
-    "latitude": "56.184061",
-    "longitude": "9.575509",
+    "latitude": 56.1841,
+    "longitude": 9.5755,
     "klub_logo": "logos/klub_632.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/632/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/632/klubinfo",
@@ -64922,7 +64976,8 @@
       1998,
       1999,
       2000
-    ]
+    ],
+    "klub_id": "632"
   },
   {
     "playerLabel": "Mikkel Beck",

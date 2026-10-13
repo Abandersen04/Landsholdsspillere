@@ -3,30 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Silkeborg IF Fodbold – 1 landsholdsspillere | Landsholdskortet</title>
-  <meta name="description" content="Silkeborg IF Fodbold har fostret 1 danske A-landsholdsspillere. Tilsammen har de spillet 12 kampe og scoret 0 mål for Danmark.">
+  <title>Landsholdsspillere fra Røddinge – 1 spillere | Landsholdskortet</title>
+  <meta name="description" content="1 danske A-landsholdsspillere er født i Røddinge. Tilsammen har de spillet 1 kampe og scoret 0 mål for Danmark.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://landsholdskortet.dk/klub/silkeborg-if-fodbold/">
+  <link rel="canonical" href="https://landsholdskortet.dk/by/roeddinge/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/favicon.svg">
-  <meta property="og:title" content="Silkeborg IF Fodbold – 1 landsholdsspillere">
-  <meta property="og:description" content="Silkeborg IF Fodbold har fostret 1 danske A-landsholdsspillere. Tilsammen har de spillet 12 kampe og scoret 0 mål for Danmark.">
-  <meta property="og:url" content="https://landsholdskortet.dk/klub/silkeborg-if-fodbold/">
+  <meta property="og:title" content="Landsholdsspillere fra Røddinge">
+  <meta property="og:description" content="1 danske A-landsholdsspillere er født i Røddinge. Tilsammen har de spillet 1 kampe og scoret 0 mål for Danmark.">
+  <meta property="og:url" content="https://landsholdskortet.dk/by/roeddinge/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"SportsOrganization",
-    "name":"Silkeborg IF Fodbold",
-    "url":"https://landsholdskortet.dk/klub/silkeborg-if-fodbold/",
-    "description":"Silkeborg IF Fodbold har fostret 1 danske A-landsholdsspillere. Tilsammen har de spillet 12 kampe og scoret 0 mål for Danmark."
-    ,"logo":"https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Silkeborg_IF_logo.svg/250px-Silkeborg_IF_logo.svg.png"
-  }
-  </script>
-  <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
     {"@type":"ListItem","position":1,"name":"Landsholdskortet","item":"https://landsholdskortet.dk/"},
-    {"@type":"ListItem","position":2,"name":"Klubber","item":"https://landsholdskortet.dk/klub/"},
-    {"@type":"ListItem","position":3,"name":"Silkeborg IF Fodbold","item":"https://landsholdskortet.dk/klub/silkeborg-if-fodbold/"}
+    {"@type":"ListItem","position":2,"name":"Fødesteder","item":"https://landsholdskortet.dk/by/"},
+    {"@type":"ListItem","position":3,"name":"Røddinge","item":"https://landsholdskortet.dk/by/roeddinge/"}
   ]}
   </script>
   <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
@@ -69,28 +61,28 @@
 
 <div class="page">
   <div class="header">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Silkeborg_IF_logo.svg/250px-Silkeborg_IF_logo.svg.png" alt="Silkeborg IF Fodbold logo" style="height:64px;width:auto;object-fit:contain;margin-bottom:12px">
-    <h1>Silkeborg IF Fodbold</h1>
-    
+    <h1>Landsholdsspillere fra Røddinge</h1>
     <div class="stats-row">
-      <div class="stat"><div class="stat-n">1</div><div class="stat-l">Landsholdsspillere</div></div>
-      <div class="stat"><div class="stat-n">12</div><div class="stat-l">Kampe i alt</div></div>
+      <div class="stat"><div class="stat-n">1</div><div class="stat-l">Spillere</div></div>
+      <div class="stat"><div class="stat-n">1</div><div class="stat-l">Kampe i alt</div></div>
       <div class="stat"><div class="stat-n">0</div><div class="stat-l">Mål i alt</div></div>
     </div>
   </div>
 
   
 
-  <div id="klub-map" style="height:260px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.1)"></div>
+  <div id="by-map" style="height:260px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.1)"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 <script>
-(function(){
-  const map = L.map("klub-map",{zoomControl:true});
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"© OpenStreetMap contributors",maxZoom:19}).addTo(map);
-  const icon = L.divIcon({html:'<div style="width:36px;height:36px;border-radius:50%;border:2px solid #C8102E;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Silkeborg_IF_logo.svg/250px-Silkeborg_IF_logo.svg.png" style="width:100%;height:100%;object-fit:contain" onerror="this.parentElement.style.background=\'#C8102E\'"></div>',className:'',iconSize:[36,36],iconAnchor:[18,18]});
-  L.marker([56.1667,9.55],{icon}).addTo(map).bindPopup("<strong>Silkeborg IF Fodbold</strong>").openPopup();
-  map.setView([56.1667,9.55],13);
+(function() {
+  const map = L.map('by-map', {zoomControl:true});
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {attribution:'© OpenStreetMap contributors', maxZoom:19}).addTo(map);
+  const marker = L.circleMarker([56.644583, 8.809519],
+    {radius:10, color:'#C8102E', fillColor:'#C8102E', fillOpacity:0.85, weight:2}).addTo(map);
+  marker.bindPopup('<strong>Røddinge</strong><br>1 landsholdsspillere').openPopup();
+  map.setView([56.644583, 8.809519], 10);
 })();
 </script>
 
@@ -100,7 +92,7 @@
       <button class="pill" onclick="filterGender('mand', this)">Mænd</button>
       <button class="pill" onclick="filterGender('kvinde', this)">Kvinder</button>
     </div>
-    <table id="spillertabel">
+    <table>
       <thead>
         <tr>
           <th onclick="sortTable(0)">Spiller</th>
@@ -108,17 +100,17 @@
           <th style="text-align:center" onclick="sortTable(2)">Kampe</th>
           <th style="text-align:center" onclick="sortTable(3)">Mål</th>
           <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato</th>
-          <th class="hide-mobile" onclick="sortTable(5)">Fødested</th>
+          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub</th>
         </tr>
       </thead>
       <tbody id="tbody">
-<tr data-gender="mand"><td><a href="/spiller/johnny-anker-hansen-3931/" style="color:#C8102E;font-weight:500">Johnny Anker Hansen</a></td><td style="text-align:center">M</td><td style="text-align:center">12</td><td style="text-align:center">–</td><td>11. juli 1966</td><td><a href="/by/odense/" style="color:#C8102E">Odense</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/emilie-fink-pedersen-8329/" style="color:#C8102E;font-weight:500">Emilie Fink Pedersen</a></td><td style="text-align:center">K</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">30. september 2004</td><td class="hide-mobile"><a href="/klub/spoettrup-motion-sport/" style="color:#C8102E">Spøttrup Motion &amp; Sport</a></td></tr>
       </tbody>
     </table>
   </div>
 
   <div style="margin-top:20px;text-align:center">
-    <a href="/?q=Silkeborg IF Fodbold" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:#C8102E;color:#fff;border-radius:8px;font-weight:600;font-size:14px">
+    <a href="/?q=Røddinge" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:#C8102E;color:#fff;border-radius:8px;font-weight:600;font-size:14px">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
     </a>

@@ -3,30 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IK Skovbakken (women) – 1 landsholdsspillere | Landsholdskortet</title>
-  <meta name="description" content="IK Skovbakken (women) har fostret 1 danske A-landsholdsspillere. Tilsammen har de spillet 2 kampe og scoret 0 mål for Danmark.">
+  <title>Landsholdsspillere fra Engesvang – 1 spillere | Landsholdskortet</title>
+  <meta name="description" content="1 danske A-landsholdsspillere er født i Engesvang. Tilsammen har de spillet 1 kampe og scoret 0 mål for Danmark.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://landsholdskortet.dk/klub/ik-skovbakken-women/">
+  <link rel="canonical" href="https://landsholdskortet.dk/by/engesvang/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/favicon.svg">
-  <meta property="og:title" content="IK Skovbakken (women) – 1 landsholdsspillere">
-  <meta property="og:description" content="IK Skovbakken (women) har fostret 1 danske A-landsholdsspillere. Tilsammen har de spillet 2 kampe og scoret 0 mål for Danmark.">
-  <meta property="og:url" content="https://landsholdskortet.dk/klub/ik-skovbakken-women/">
+  <meta property="og:title" content="Landsholdsspillere fra Engesvang">
+  <meta property="og:description" content="1 danske A-landsholdsspillere er født i Engesvang. Tilsammen har de spillet 1 kampe og scoret 0 mål for Danmark.">
+  <meta property="og:url" content="https://landsholdskortet.dk/by/engesvang/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://landsholdskortet.dk/og-image.png">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"SportsOrganization",
-    "name":"IK Skovbakken (women)",
-    "url":"https://landsholdskortet.dk/klub/ik-skovbakken-women/",
-    "description":"IK Skovbakken (women) har fostret 1 danske A-landsholdsspillere. Tilsammen har de spillet 2 kampe og scoret 0 mål for Danmark."
-    
-  }
-  </script>
-  <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
     {"@type":"ListItem","position":1,"name":"Landsholdskortet","item":"https://landsholdskortet.dk/"},
-    {"@type":"ListItem","position":2,"name":"Klubber","item":"https://landsholdskortet.dk/klub/"},
-    {"@type":"ListItem","position":3,"name":"IK Skovbakken (women)","item":"https://landsholdskortet.dk/klub/ik-skovbakken-women/"}
+    {"@type":"ListItem","position":2,"name":"Fødesteder","item":"https://landsholdskortet.dk/by/"},
+    {"@type":"ListItem","position":3,"name":"Engesvang","item":"https://landsholdskortet.dk/by/engesvang/"}
   ]}
   </script>
   <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
@@ -69,28 +61,28 @@
 
 <div class="page">
   <div class="header">
-    
-    <h1>IK Skovbakken (women)</h1>
-    
+    <h1>Landsholdsspillere fra Engesvang</h1>
     <div class="stats-row">
-      <div class="stat"><div class="stat-n">1</div><div class="stat-l">Landsholdsspillere</div></div>
-      <div class="stat"><div class="stat-n">2</div><div class="stat-l">Kampe i alt</div></div>
+      <div class="stat"><div class="stat-n">1</div><div class="stat-l">Spillere</div></div>
+      <div class="stat"><div class="stat-n">1</div><div class="stat-l">Kampe i alt</div></div>
       <div class="stat"><div class="stat-n">0</div><div class="stat-l">Mål i alt</div></div>
     </div>
   </div>
 
   
 
-  <div id="klub-map" style="height:260px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.1)"></div>
+  <div id="by-map" style="height:260px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.1)"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 <script>
-(function(){
-  const map = L.map("klub-map",{zoomControl:true});
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"© OpenStreetMap contributors",maxZoom:19}).addTo(map);
-  const icon = L.divIcon({html:'<div style="width:20px;height:20px;border-radius:50%;background:#C8102E;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,.3)"></div>',className:'',iconSize:[20,20],iconAnchor:[10,10]});
-  L.marker([56.1564,10.2097],{icon}).addTo(map).bindPopup("<strong>IK Skovbakken (women)</strong>").openPopup();
-  map.setView([56.1564,10.2097],13);
+(function() {
+  const map = L.map('by-map', {zoomControl:true});
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {attribution:'© OpenStreetMap contributors', maxZoom:19}).addTo(map);
+  const marker = L.circleMarker([56.17023, 9.348559],
+    {radius:10, color:'#C8102E', fillColor:'#C8102E', fillOpacity:0.85, weight:2}).addTo(map);
+  marker.bindPopup('<strong>Engesvang</strong><br>1 landsholdsspillere').openPopup();
+  map.setView([56.17023, 9.348559], 10);
 })();
 </script>
 
@@ -100,7 +92,7 @@
       <button class="pill" onclick="filterGender('mand', this)">Mænd</button>
       <button class="pill" onclick="filterGender('kvinde', this)">Kvinder</button>
     </div>
-    <table id="spillertabel">
+    <table>
       <thead>
         <tr>
           <th onclick="sortTable(0)">Spiller</th>
@@ -108,17 +100,17 @@
           <th style="text-align:center" onclick="sortTable(2)">Kampe</th>
           <th style="text-align:center" onclick="sortTable(3)">Mål</th>
           <th class="hide-mobile" onclick="sortTable(4)">Fødselsdato</th>
-          <th class="hide-mobile" onclick="sortTable(5)">Fødested</th>
+          <th class="hide-mobile" onclick="sortTable(5)">Barndomsklub</th>
         </tr>
       </thead>
       <tbody id="tbody">
-<tr data-gender="kvinde"><td><a href="/spiller/matilde-lundorf-7426/" style="color:#C8102E;font-weight:500">Matilde Lundorf</a></td><td style="text-align:center">K</td><td style="text-align:center">2</td><td style="text-align:center">–</td><td>19. januar 1999</td><td><a href="/by/nottingham/" style="color:#C8102E">Nottingham</a></td></tr>
+<tr data-gender="kvinde"><td><a href="/spiller/sofie-vendelbo-8063/" style="color:#C8102E;font-weight:500">Sofie Vendelbo</a></td><td style="text-align:center">K</td><td style="text-align:center">1</td><td style="text-align:center">–</td><td class="hide-mobile">9. februar 2000</td><td class="hide-mobile"><a href="/klub/engesvang-fremad/" style="color:#C8102E">Engesvang Fremad</a></td></tr>
       </tbody>
     </table>
   </div>
 
   <div style="margin-top:20px;text-align:center">
-    <a href="/?q=IK Skovbakken (women)" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:#C8102E;color:#fff;border-radius:8px;font-weight:600;font-size:14px">
+    <a href="/?q=Engesvang" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:#C8102E;color:#fff;border-radius:8px;font-weight:600;font-size:14px">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2"/><circle cx="10" cy="10" r="3" fill="white"/></svg>
       Se på kortet
     </a>
