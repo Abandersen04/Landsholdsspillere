@@ -94,6 +94,7 @@ def main():
 
         mod = r.get("opponent") or ""
         kt = kamptype_kort(r.get("kamptype") or "")
+        kon = "kvinde" if r.get("gender") == "Kvinder" else "mand"
         sted_raw = det.get("info", {}).get("Sted") or []
         sted_str = ", ".join(x.get("text", "") for x in sted_raw if isinstance(x, dict) and x.get("text"))
         sted = parse_sted(sted_str, mod)
@@ -116,7 +117,7 @@ def main():
                 "stilling": g.get("stilling") or None,
             })
 
-        entry = {"y": yyyy, "opp": mod, "kt": kt, "sted": sted, "p": sorted(played)}
+        entry = {"y": yyyy, "opp": mod, "kt": kt, "sted": sted, "gender": kon, "p": sorted(played)}
         if score:
             entry["score"] = score
         if goals:
