@@ -307,8 +307,11 @@ function showSection(id, btn) {
 }
 function loadFromHash() {
   const path = location.pathname;
-  const match = path.match(/\/quiz\/([^\/]+)\//);
-  const id = match ? match[1] : 'spiller';
+  const pathMatch = path.match(/\/quiz\/([^\/]+)\//);
+  // De små omdirigerings-sider i quiz/<fane>/ (til hård genindlæsning uden 404)
+  // sender hertil som /quiz/#<fane>, siden selve siden kun ligger på /quiz/.
+  const hashMatch = location.hash.match(/^#([a-z]+)$/);
+  const id = (pathMatch && pathMatch[1]) || (hashMatch && hashMatch[1]) || 'spiller';
   const section = document.getElementById(id);
   const btn = document.querySelector(`.nav-tab[data-section="${id}"]`);
   if (section && btn) { showSection(id, btn); }
