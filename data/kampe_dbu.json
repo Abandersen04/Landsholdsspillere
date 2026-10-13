@@ -305270,7 +305270,7 @@
  {
   "id": "10184",
   "date": "10-10-2026",
-  "score": "",
+  "score": "1 - 1",
   "opponent": "Canada",
   "opponent_id": "310",
   "venue": "Stade Saputo",
@@ -305282,7 +305282,7 @@
   "date_sort": "2026-10-10-10184",
   "detaljer": {
    "id": "10184",
-   "titel": "Canada - Danmark",
+   "titel": "Canada - Danmark 1 - 1",
    "info": {
     "Landskampnr": "538",
     "Kamp": "A-Landshold (Kvinder) - Testkamp",
@@ -305308,6 +305308,7 @@
       "id": "310"
      }
     ],
+    "Tilskuere": "10187",
     "Afgørelse": "Ordinær spilletid",
     "Træner": [
      {
@@ -305322,18 +305323,224 @@
      }
     ]
    },
-   "maal": [],
-   "kort": [],
-   "udskiftninger": [],
-   "dommere": [],
-   "startopstilling": {},
-   "ikke_benyttet": {}
+   "maal": [
+    {
+     "minut": "24'",
+     "stilling": "1 - 0",
+     "spiller": "Pernille Harder",
+     "spiller_id": "5991",
+     "bemaerkning": "",
+     "selvmaal": false
+    },
+    {
+     "minut": "85'",
+     "stilling": "1 - 1",
+     "spiller": "O. Smith",
+     "spiller_id": null,
+     "bemaerkning": "",
+     "selvmaal": false
+    }
+   ],
+   "kort": [
+    {
+     "type": "Advarsel",
+     "minut": "47'",
+     "spiller": "Janni Thomsen",
+     "spiller_id": "7561",
+     "bemaerkning": ""
+    },
+    {
+     "type": "Advarsel",
+     "minut": "89'",
+     "spiller": "Mille Gejl Jensen",
+     "spiller_id": "7442",
+     "bemaerkning": ""
+    }
+   ],
+   "udskiftninger": [
+    {
+     "minut": "46'",
+     "ind": "Andersen Alberte Vingum",
+     "ind_id": "8130",
+     "ud": "Østergaard Maja Bay",
+     "ud_id": "7699"
+    },
+    {
+     "minut": "46'",
+     "ind": "Andersen Sara Gedsted Thrige",
+     "ind_id": "6945",
+     "ud": "Thøgersen Frederikke",
+     "ud_id": "6852"
+    },
+    {
+     "minut": "46'",
+     "ind": "Ballisager Stine",
+     "ind_id": "6704",
+     "ud": "Boye Simone",
+     "ud_id": "5986"
+    },
+    {
+     "minut": "46'",
+     "ind": "Svendsen Selma",
+     "ind_id": "7730",
+     "ud": "Vendelbo Sofie",
+     "ud_id": "8063"
+    },
+    {
+     "minut": "46'",
+     "ind": "Thomsen Janni",
+     "ind_id": "7561",
+     "ud": "Vangsgaard Amalie",
+     "ud_id": "6941"
+    },
+    {
+     "minut": "46'",
+     "ind": "Snerle Emma",
+     "ind_id": "7720",
+     "ud": "Møller Holdt Olivia",
+     "ud_id": "7708"
+    },
+    {
+     "minut": "46'",
+     "ind": "Hesselholt Sanvig Pernille Marie",
+     "ind_id": "8203",
+     "ud": "Bredgaard Sofie",
+     "ud_id": "7827"
+    },
+    {
+     "minut": "46'",
+     "ind": "Gejl Jensen Mille",
+     "ind_id": "7442",
+     "ud": "Kühl Kathrine Møller",
+     "ud_id": "7947"
+    },
+    {
+     "minut": "46'",
+     "ind": "Møller Caroline",
+     "ind_id": "7309",
+     "ud": "Walter Anna Christine",
+     "ud_id": "8111"
+    },
+    {
+     "minut": "46'",
+     "ind": "Kramer Cornelia",
+     "ind_id": "7828",
+     "ud": "Harder Pernille",
+     "ud_id": "5991"
+    },
+    {
+     "minut": "88'",
+     "ind": "Pedersen Emilie Fink",
+     "ind_id": "8329",
+     "ud": "Hesselholt Sanvig Pernille Marie",
+     "ud_id": "8203"
+    }
+   ],
+   "dommere": [
+    {
+     "navn": "Perez Priscila",
+     "id": "11156",
+     "nation": "Mexico",
+     "rolle": "Dommer"
+    },
+    {
+     "navn": "Moreira Kimberly",
+     "id": "6467",
+     "nation": "Costa Rica",
+     "rolle": "1. linjedommer"
+    },
+    {
+     "navn": "Gutierrez Elva",
+     "id": "11158",
+     "nation": "Mexico",
+     "rolle": "2. linjedommer"
+    },
+    {
+     "navn": "Wilkinson Shandor",
+     "id": "11159",
+     "nation": "St. Kitts & Nevis",
+     "rolle": "4. dommer"
+    }
+   ],
+   "startopstilling": {
+    "Danmark": [
+     {
+      "name": "Østergaard Maja Bay",
+      "id": "7699",
+      "captain": false
+     },
+     {
+      "name": "Boye Simone",
+      "id": "5986",
+      "captain": false
+     },
+     {
+      "name": "Vendelbo Sofie",
+      "id": "8063",
+      "captain": false
+     },
+     {
+      "name": "Thøgersen Frederikke",
+      "id": "6852",
+      "captain": false
+     },
+     {
+      "name": "Moesgaard Carli Scheuer",
+      "id": "8571",
+      "captain": false
+     },
+     {
+      "name": "Kühl Kathrine Møller",
+      "id": "7947",
+      "captain": false
+     },
+     {
+      "name": "Møller Holdt Olivia",
+      "id": "7708",
+      "captain": false
+     },
+     {
+      "name": "Bredgaard Sofie",
+      "id": "7827",
+      "captain": false
+     },
+     {
+      "name": "Walter Anna Christine",
+      "id": "8111",
+      "captain": false
+     },
+     {
+      "name": "Vangsgaard Amalie",
+      "id": "6941",
+      "captain": false
+     },
+     {
+      "name": "Harder Pernille",
+      "id": "5991",
+      "captain": true
+     }
+    ]
+   },
+   "ikke_benyttet": {
+    "?": [
+     {
+      "name": "Thisgaard Freja R.",
+      "id": "7887",
+      "captain": false
+     },
+     {
+      "name": "Svava Sofie",
+      "id": "7537",
+      "captain": false
+     }
+    ]
+   }
   }
  },
  {
   "id": "10185",
   "date": "12-10-2026",
-  "score": "",
+  "score": "4 - 3",
   "opponent": "Canada",
   "opponent_id": "310",
   "venue": "BMO Field",
@@ -305345,7 +305552,7 @@
   "date_sort": "2026-10-12-10185",
   "detaljer": {
    "id": "10185",
-   "titel": "Canada - Danmark",
+   "titel": "Canada - Danmark 3 - 4",
    "info": {
     "Landskampnr": "539",
     "Kamp": "A-Landshold (Kvinder) - Testkamp",
@@ -305371,6 +305578,7 @@
       "id": "310"
      }
     ],
+    "Tilskuere": "11112",
     "Afgørelse": "Ordinær spilletid",
     "Træner": [
      {
@@ -305385,12 +305593,253 @@
      }
     ]
    },
-   "maal": [],
-   "kort": [],
-   "udskiftninger": [],
-   "dommere": [],
-   "startopstilling": {},
-   "ikke_benyttet": {}
+   "maal": [
+    {
+     "minut": "10'",
+     "stilling": "0 - 1",
+     "spiller": "D. Pridham",
+     "spiller_id": null,
+     "bemaerkning": "",
+     "selvmaal": false
+    },
+    {
+     "minut": "23'",
+     "stilling": "1 - 1",
+     "spiller": "Olivia Møller Holdt",
+     "spiller_id": "7708",
+     "bemaerkning": "",
+     "selvmaal": false
+    },
+    {
+     "minut": "27'",
+     "stilling": "2 - 1",
+     "spiller": "Pernille Harder",
+     "spiller_id": "5991",
+     "bemaerkning": "",
+     "selvmaal": false
+    },
+    {
+     "minut": "32'",
+     "stilling": "3 - 1",
+     "spiller": "Olivia Møller Holdt",
+     "spiller_id": "7708",
+     "bemaerkning": "",
+     "selvmaal": false
+    },
+    {
+     "minut": "49'",
+     "stilling": "3 - 2",
+     "spiller": "E. Viens",
+     "spiller_id": null,
+     "bemaerkning": "",
+     "selvmaal": false
+    },
+    {
+     "minut": "62'",
+     "stilling": "4 - 2",
+     "spiller": "Janni Thomsen",
+     "spiller_id": "7561",
+     "bemaerkning": "",
+     "selvmaal": false
+    },
+    {
+     "minut": "71'",
+     "stilling": "4 - 3",
+     "spiller": "O. Smith",
+     "spiller_id": null,
+     "bemaerkning": "",
+     "selvmaal": false
+    }
+   ],
+   "kort": [
+    {
+     "type": "Advarsel",
+     "minut": "36'",
+     "spiller": "Sofie Bredgaard",
+     "spiller_id": "7827",
+     "bemaerkning": ""
+    },
+    {
+     "type": "Advarsel",
+     "minut": "87'",
+     "spiller": "Janni Thomsen",
+     "spiller_id": "7561",
+     "bemaerkning": ""
+    },
+    {
+     "type": "Advarsel",
+     "minut": "90'",
+     "spiller": "E. Regan",
+     "spiller_id": null,
+     "bemaerkning": "+1"
+    },
+    {
+     "type": "Advarsel",
+     "minut": "90'",
+     "spiller": "Caroline Møller",
+     "spiller_id": "7309",
+     "bemaerkning": "+4"
+    }
+   ],
+   "udskiftninger": [
+    {
+     "minut": "69'",
+     "ind": "Gejl Jensen Mille",
+     "ind_id": "7442",
+     "ud": "Kühl Kathrine Møller",
+     "ud_id": "7947"
+    },
+    {
+     "minut": "69'",
+     "ind": "Møller Caroline",
+     "ind_id": "7309",
+     "ud": "Harder Pernille",
+     "ud_id": "5991"
+    },
+    {
+     "minut": "80'",
+     "ind": "Thøgersen Frederikke",
+     "ind_id": "6852",
+     "ud": "Møller Holdt Olivia",
+     "ud_id": "7708"
+    },
+    {
+     "minut": "80'",
+     "ind": "Walter Anna Christine",
+     "ind_id": "8111",
+     "ud": "Vangsgaard Amalie",
+     "ud_id": "6941"
+    }
+   ],
+   "dommere": [
+    {
+     "navn": "Stockman Saphire",
+     "id": "11160",
+     "nation": "Costa Rica",
+     "rolle": "Dommer"
+    },
+    {
+     "navn": "Jimenez Gabriela",
+     "id": "11161",
+     "nation": "Costa Rica",
+     "rolle": "1. linjedommer"
+    },
+    {
+     "navn": "Isaacs Denisha",
+     "id": "11163",
+     "nation": "Guyana",
+     "rolle": "2. linjedommer"
+    },
+    {
+     "navn": "Chesky Danielle",
+     "id": "11162",
+     "nation": "USA",
+     "rolle": "4. dommer"
+    }
+   ],
+   "startopstilling": {
+    "Danmark": [
+     {
+      "name": "Thisgaard Freja R.",
+      "id": "7887",
+      "captain": false
+     },
+     {
+      "name": "Andersen Sara Gedsted Thrige",
+      "id": "6945",
+      "captain": false
+     },
+     {
+      "name": "Ballisager Stine",
+      "id": "6704",
+      "captain": false
+     },
+     {
+      "name": "Boye Simone",
+      "id": "5986",
+      "captain": false
+     },
+     {
+      "name": "Svava Sofie",
+      "id": "7537",
+      "captain": false
+     },
+     {
+      "name": "Thomsen Janni",
+      "id": "7561",
+      "captain": false
+     },
+     {
+      "name": "Kühl Kathrine Møller",
+      "id": "7947",
+      "captain": false
+     },
+     {
+      "name": "Møller Holdt Olivia",
+      "id": "7708",
+      "captain": false
+     },
+     {
+      "name": "Bredgaard Sofie",
+      "id": "7827",
+      "captain": false
+     },
+     {
+      "name": "Vangsgaard Amalie",
+      "id": "6941",
+      "captain": false
+     },
+     {
+      "name": "Harder Pernille",
+      "id": "5991",
+      "captain": true
+     }
+    ]
+   },
+   "ikke_benyttet": {
+    "?": [
+     {
+      "name": "Østergaard Maja Bay",
+      "id": "7699",
+      "captain": false
+     },
+     {
+      "name": "Andersen Alberte Vingum",
+      "id": "8130",
+      "captain": false
+     },
+     {
+      "name": "Vendelbo Sofie",
+      "id": "8063",
+      "captain": false
+     },
+     {
+      "name": "Svendsen Selma",
+      "id": "7730",
+      "captain": false
+     },
+     {
+      "name": "Moesgaard Carli Scheuer",
+      "id": "8571",
+      "captain": false
+     },
+     {
+      "name": "Snerle Emma",
+      "id": "7720",
+      "captain": false
+     },
+     {
+      "name": "Hesselholt Sanvig Pernille Marie",
+      "id": "8203",
+      "captain": false
+     },
+     {
+      "name": "Pedersen Emilie Fink",
+      "id": "8329",
+      "captain": false
+     }
+    ]
+   }
   }
  },
  {
