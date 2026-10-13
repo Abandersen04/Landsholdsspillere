@@ -65588,5 +65588,165 @@
     "klub_id": "3710"
   ,
     "_manual_fields": ["latitude", "longitude"]
+  },
+  {
+    "playerLabel": "Selma Svendsen",
+    "wikipediaURL_da": "https://da.wikipedia.org/wiki/Selma_Svendsen",
+    "wikipediaURL_en": "https://en.wikipedia.org/wiki/Selma_Svendsen",
+    "birthPlaceLabel": "Kongens Lyngby",
+    "lat": "55.77",
+    "lon": "12.5",
+    "dbuID": "7730",
+    "birthday_dbu": "21-06-2001",
+    "n_matches": "1",
+    "n_goals": "0",
+    "image": null,
+    "gender": "kvinde",
+    "klubnavn": "Lundtofte Boldklub",
+    "latitude": "55.798331",
+    "longitude": "12.524479",
+    "klub_logo": "logos/klub_1145.png",
+    "klub_website": "https://www.dbu.dk/resultater/klub/1145/klubinfo",
+    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1145/klubinfo",
+    "region": "Region Hovedstaden",
+    "allClubs": [
+      {
+        "klub_id": null,
+        "klubnavn": "Lundtofte Boldklub",
+        "latitude": 55.798331,
+        "longitude": 12.524479,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_1145.png"
+      }
+    ],
+    "years_played": [
+      2026
+    ]
+  },
+  {
+    "playerLabel": "Sofie Vendelbo",
+    "wikipediaURL_da": null,
+    "wikipediaURL_en": "https://en.wikipedia.org/wiki/Sofie_Vendelbo",
+    "birthPlaceLabel": "Silkeborg",
+    "lat": "56.184061",
+    "lon": "9.575509",
+    "dbuID": "8063",
+    "birthday_dbu": "09-02-2000",
+    "n_matches": "1",
+    "n_goals": "0",
+    "image": null,
+    "gender": "kvinde",
+    "klubnavn": "Vildbjerg SF",
+    "latitude": "56.195465",
+    "longitude": "8.769028",
+    "klub_logo": "logos/klub_380.png",
+    "klub_website": "https://www.dbu.dk/resultater/klub/380/klubinfo",
+    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/380/klubinfo",
+    "region": "Region Midtjylland",
+    "allClubs": [
+      {
+        "klub_id": "380",
+        "klubnavn": "Vildbjerg SF",
+        "latitude": 56.1955,
+        "longitude": 8.769,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_380.png"
+      }
+    ],
+    "years_played": [
+      2026
+    ]
+  },
+  {
+    "playerLabel": "Pernille Marie Hesselholt Sanvig",
+    "wikipediaURL_da": null,
+    "wikipediaURL_en": "https://en.wikipedia.org/wiki/Pernille_Sanvig",
+    "birthPlaceLabel": "Kolding",
+    "lat": "55.490833333",
+    "lon": "9.472222222",
+    "dbuID": "8203",
+    "birthday_dbu": "26-11-2005",
+    "n_matches": "1",
+    "n_goals": "0",
+    "image": null,
+    "gender": "kvinde",
+    "klubnavn": "Kolding IF",
+    "latitude": "55.4936",
+    "longitude": "9.4597",
+    "klub_logo": "logos/klub_567.png",
+    "klub_website": "http://www.kif-fodbold.dk/",
+    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/567/klubinfo",
+    "region": "Region Syddanmark",
+    "allClubs": [
+      {
+        "klub_id": null,
+        "klubnavn": "Kolding IF",
+        "latitude": 55.4936,
+        "longitude": 9.4597,
+        "is_earliest": true,
+        "klub_logo": "logos/klub_567.png"
+      }
+    ],
+    "years_played": [
+      2026
+    ]
+  },
+  {
+    "playerLabel": "Emilie Fink Pedersen",
+    "wikipediaURL_da": "https://da.wikipedia.org/wiki/Emilie_Fink",
+    "wikipediaURL_en": null,
+    "birthPlaceLabel": "Skive",
+    "lat": "56.57",
+    "lon": "9.0244",
+    "dbuID": "8329",
+    "birthday_dbu": "30-09-2004",
+    "n_matches": "1",
+    "n_goals": "0",
+    "image": null,
+    "gender": "kvinde",
+    "klubnavn": "Spøttrup Motion & Sport",
+    "latitude": "56.602581",
+    "longitude": "8.885196",
+    "klub_logo": null,
+    "klub_website": "http://www.spottrupms.dk",
+    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/201/klubinfo",
+    "region": "Region Midtjylland",
+    "allClubs": [
+      {
+        "klub_id": "201",
+        "klubnavn": "Spøttrup Motion & Sport",
+        "latitude": 56.602581,
+        "longitude": 8.885196,
+        "is_earliest": true,
+        "klub_logo": null
+      }
+    ],
+    "years_played": [
+      2026
+    ]
+  },
+  {
+    "playerLabel": "Carli Scheuer Moesgaard",
+    "wikipediaURL_da": null,
+    "wikipediaURL_en": null,
+    "birthPlaceLabel": null,
+    "lat": null,
+    "lon": null,
+    "dbuID": "8571",
+    "birthday_dbu": "14-05-2007",
+    "n_matches": "1",
+    "n_goals": "0",
+    "image": null,
+    "gender": "kvinde",
+    "klubnavn": null,
+    "latitude": null,
+    "longitude": null,
+    "klub_logo": null,
+    "klub_website": null,
+    "klub_dbu_url": null,
+    "region": null,
+    "years_played": [
+      2026
+    ]
   }
 ]

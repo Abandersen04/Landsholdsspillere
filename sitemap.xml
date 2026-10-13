@@ -9596,7 +9596,7 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/klub/vildbjerg-sf/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -12146,7 +12146,7 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/by/kongens-lyngby/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -12986,13 +12986,13 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/by/skive/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://landsholdskortet.dk/by/kolding/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -13154,7 +13154,7 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/by/silkeborg/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -52060,7 +52060,7 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/klub/kolding-if/</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -52084,7 +52084,7 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/klub/lundtofte-boldklub/</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -52465,5 +52465,41 @@
     <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://landsholdskortet.dk/spiller/selma-svendsen-7730/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://landsholdskortet.dk/spiller/sofie-vendelbo-8063/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://landsholdskortet.dk/spiller/pernille-marie-hesselholt-sanvig-8203/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://landsholdskortet.dk/spiller/emilie-fink-pedersen-8329/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://landsholdskortet.dk/spiller/carli-scheuer-moesgaard-8571/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://landsholdskortet.dk/klub/spoettrup-motion-sport/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
