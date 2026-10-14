@@ -26,6 +26,7 @@ def main():
     find_debut_kamp = ns["find_debut_kamp"]
     parse_sted = ns["parse_sted"]
     kamptype_kort = ns["kamptype_kort"]
+    format_date = ns["format_date"]
 
     sys.path.insert(0, ".")
     from kampe_adapter import load_kampe_dbu
@@ -59,14 +60,21 @@ def main():
         m = re.match(r"\d{2}-\d{2}-(\d{4})", bday)
         if m:
             foedselsaar = int(m.group(1))
+        foedselsdag = format_date(bday) if bday else None
+
+        klubber = [cl.get("klubnavn") for cl in (p.get("allClubs") or []) if cl.get("klubnavn")]
+        if not klubber and p.get("klubnavn"):
+            klubber = [p["klubnavn"]]
 
         quiz_players[pid] = {
             "navn": navn,
             "slug": f"{slugify(navn)}-{pid}",
             "gender": p.get("gender") or "mand",
             "foedselsaar": foedselsaar,
+            "foedselsdag": foedselsdag,
             "foedested": p.get("birthPlaceLabel") or None,
             "klub": p.get("klubnavn") or None,
+            "klubber": klubber,
             "kampe": kampe_n,
             "maal": int(p.get("n_goals") or 0),
             "debut": debut,
