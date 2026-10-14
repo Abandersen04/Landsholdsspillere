@@ -98,6 +98,10 @@ def main():
         sted_raw = det.get("info", {}).get("Sted") or []
         sted_str = ", ".join(x.get("text", "") for x in sted_raw if isinstance(x, dict) and x.get("text"))
         sted = parse_sted(sted_str, mod)
+        # Hjemme/ude: landet i "Sted" er altid kampens værtsland (DBU's egen rækkefølge),
+        # så "Danmark" der = hjemmekamp. Neutral bane (fx slutrunder) tæller som "ude".
+        land = sted_raw[-1].get("text") if sted_raw and isinstance(sted_raw[-1], dict) else None
+        hjemme = bool(land) and land.strip().lower() == "danmark"
 
         score = None
         if r.get("score"):
@@ -105,6 +109,11 @@ def main():
             if len(parts) == 2 and all(x.isdigit() for x in parts):
                 score = [int(parts[0]), int(parts[1])]
 
+        # NB: DBU's "stilling"-felt pr. mål bruger ikke en konsekvent rækkefølge
+        # (nogle kampe Danmark-først, andre modstander-først, uafhængigt af om
+        # kampen er hjemme/ude) og målene står ikke altid i kronologisk
+        # rækkefølge. Det kan ikke normaliseres pålideligt, så det bruges
+        # bevidst IKKE i quizzen — kun minuttal, som er pålideligt.
         goals = []
         for g in det.get("maal", []):
             if g.get("selvmaal") or not g.get("spiller_id"):
@@ -114,10 +123,9 @@ def main():
             goals.append({
                 "min": (g.get("minut") or "").rstrip("'") or None,
                 "pid": g["spiller_id"],
-                "stilling": g.get("stilling") or None,
             })
 
-        entry = {"y": yyyy, "opp": mod, "kt": kt, "sted": sted, "gender": kon, "p": sorted(played)}
+        entry = {"y": yyyy, "opp": mod, "kt": kt, "sted": sted, "gender": kon, "hjemme": hjemme, "p": sorted(played)}
         if score:
             entry["score"] = score
         if goals:
