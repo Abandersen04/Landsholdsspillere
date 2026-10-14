@@ -485,14 +485,6 @@
         "longitude": -2.1253,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/500px-Wolverhampton_Wanderers_FC_crest.svg.png"
-      },
-      {
-        "klub_id": null,
-        "klubnavn": "Q388746",
-        "latitude": 55.5782,
-        "longitude": 9.7286,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_3713.png"
       }
     ],
     "years_played": [
