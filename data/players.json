@@ -66341,5 +66341,137 @@
       "longitude",
       "allClubs"
     ]
+  },
+  {
+    "playerLabel": "Mads Bidstrup",
+    "wikipediaURL_da": "https://da.wikipedia.org/wiki/Mads_Bidstrup",
+    "wikipediaURL_en": "https://en.wikipedia.org/wiki/Mads_Bidstrup",
+    "birthPlaceLabel": "Køge",
+    "lat": "55.45",
+    "lon": "12.183333333",
+    "dbuID": "7756",
+    "birthday_dbu": "25-02-2001",
+    "n_matches": "1",
+    "n_goals": "0",
+    "image": null,
+    "gender": "mand",
+    "klubnavn": "Herfølge Boldklub",
+    "latitude": "55.45",
+    "longitude": "12.1833",
+    "klub_logo": "https://upload.wikimedia.org/wikipedia/en/0/0c/Herf%C3%B8lge_BK.png",
+    "klub_website": "https://www.dbu.dk/resultater/klub/1066/klubinfo",
+    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1066/klubinfo",
+    "region": "Region Sjælland",
+    "allClubs": [
+      {
+        "klub_id": null,
+        "klubnavn": "Herfølge Boldklub",
+        "latitude": 55.45,
+        "longitude": 12.1833,
+        "is_earliest": true,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/0/0c/Herf%C3%B8lge_BK.png"
+      },
+      {
+        "klub_id": "3700",
+        "klubnavn": "Brøndby IF",
+        "latitude": 55.6491,
+        "longitude": 12.4176,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_3700.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "FC København",
+        "latitude": 55.7036,
+        "longitude": 12.5718,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "RB Leipzig",
+        "latitude": 51.3406,
+        "longitude": 12.3747,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/RB_Leipzig_2014_logo.svg/500px-RB_Leipzig_2014_logo.svg.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "Olympique Lyon",
+        "latitude": 45.7675,
+        "longitude": 4.835,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Olympique_Lyonnais_logo.svg/330px-Olympique_Lyonnais_logo.svg.png"
+      }
+    ],
+    "years_played": [
+      2026
+    ]
+  },
+  {
+    "playerLabel": "Thomas Jørgensen",
+    "wikipediaURL_da": "https://da.wikipedia.org/wiki/Thomas_Jørgensen",
+    "wikipediaURL_en": "https://en.wikipedia.org/wiki/Thomas_Jørgensen_(footballer)",
+    "birthPlaceLabel": null,
+    "lat": null,
+    "lon": null,
+    "dbuID": "8449",
+    "birthday_dbu": "30-09-2005",
+    "n_matches": "1",
+    "n_goals": "0",
+    "image": null,
+    "gender": "mand",
+    "klubnavn": "Herfølge Boldklub",
+    "latitude": "55.45",
+    "longitude": "12.1833",
+    "klub_logo": "https://upload.wikimedia.org/wikipedia/en/0/0c/Herf%C3%B8lge_BK.png",
+    "klub_website": "https://www.dbu.dk/resultater/klub/1066/klubinfo",
+    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1066/klubinfo",
+    "region": "Region Sjælland",
+    "allClubs": [
+      {
+        "klub_id": null,
+        "klubnavn": "Herfølge Boldklub",
+        "latitude": 55.45,
+        "longitude": 12.1833,
+        "is_earliest": true,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/0/0c/Herf%C3%B8lge_BK.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "FC København",
+        "latitude": 55.7036,
+        "longitude": 12.5718,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/FC_Copenhagen_logo.svg/330px-FC_Copenhagen_logo.svg.png"
+      },
+      {
+        "klub_id": "3716",
+        "klubnavn": "Hvidovre Idrætsforening",
+        "latitude": 55.6313,
+        "longitude": 12.4828,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_3716.png"
+      },
+      {
+        "klub_id": "376",
+        "klubnavn": "Viborg FF",
+        "latitude": 56.461,
+        "longitude": 9.3891,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_376.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "Toulouse FC",
+        "latitude": 43.6044,
+        "longitude": 1.4433,
+        "is_earliest": false,
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Toulouse_FC_2018_logo.svg/330px-Toulouse_FC_2018_logo.svg.png"
+      }
+    ],
+    "years_played": [
+      2026
+    ]
   }
 ]

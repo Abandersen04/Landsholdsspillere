@@ -67,6 +67,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://landsholdskortet.dk/spiller/mads-bidstrup-7756/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://landsholdskortet.dk/spiller/thomas-joergensen-8449/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://landsholdskortet.dk/spiller/miklos-molnar-1244/</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -7274,7 +7286,7 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/klub/herfoelge-boldklub/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -12482,7 +12494,7 @@
   </url>
   <url>
     <loc>https://landsholdskortet.dk/by/koege/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
