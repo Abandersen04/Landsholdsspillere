@@ -3544,14 +3544,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Glostrup F.K.",
-        "latitude": 55.6667,
-        "longitude": 12.4,
-        "is_earliest": false,
-        "klub_logo": null
-      },
-      {
-        "klub_id": null,
         "klubnavn": "AS Cannes",
         "latitude": 43.5525,
         "longitude": 7.0214,
@@ -23198,14 +23190,6 @@
       },
       {
         "klub_id": null,
-        "klubnavn": "Glostrup F.K.",
-        "latitude": 55.6667,
-        "longitude": 12.4,
-        "is_earliest": false,
-        "klub_logo": null
-      },
-      {
-        "klub_id": null,
         "klubnavn": "NEC Nijmegen",
         "latitude": 51.8475,
         "longitude": 5.8625,
@@ -26857,12 +26841,12 @@
         "klub_logo": "logos/klub_3718.png"
       },
       {
-        "klub_id": "558",
-        "klubnavn": "IFSK",
+        "klub_id": "427",
+        "klubnavn": "Fuglebakken KFUM Århus",
         "latitude": 56.1723,
         "longitude": 10.1762,
         "is_earliest": false,
-        "klub_logo": "https://file.dbu.dk/images/club/558/IFSK.png"
+        "klub_logo": "logos/klub_427.png"
       }
     ],
     "years_played": [
@@ -34308,10 +34292,10 @@
       {
         "klub_id": null,
         "klubnavn": "Málaga CF",
-        "latitude": 36.7341,
-        "longitude": -4.4264,
+        "latitude": 36.7167,
+        "longitude": -4.4167,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/8/83/CD_M%C3%A1laga.gif"
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/M%C3%A1laga_CF.svg/330px-M%C3%A1laga_CF.svg.png"
       },
       {
         "klub_id": null,
@@ -34990,7 +34974,7 @@
         "latitude": 55.8692,
         "longitude": 12.318,
         "is_earliest": false,
-        "klub_logo": "logos/klub_1141.jpg"
+        "klub_logo": "https://file.dbu.dk/images/club/1141/Aller%C3%B8d_Fodbold_Klub.png"
       },
       {
         "klub_id": "4164",
@@ -47356,10 +47340,10 @@
       {
         "klub_id": null,
         "klubnavn": "Málaga CF",
-        "latitude": 36.7341,
-        "longitude": -4.4264,
+        "latitude": 36.7167,
+        "longitude": -4.4167,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/8/83/CD_M%C3%A1laga.gif"
+        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/M%C3%A1laga_CF.svg/330px-M%C3%A1laga_CF.svg.png"
       },
       {
         "klub_id": null,
@@ -51345,7 +51329,7 @@
     "klubnavn": "Allerød Fodbold Klub",
     "latitude": "55.8692207678045",
     "longitude": "12.3180422262648",
-    "klub_logo": "logos/klub_1141.jpg",
+    "klub_logo": "https://file.dbu.dk/images/club/1141/Aller%C3%B8d_Fodbold_Klub.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/1141/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1141/klubinfo",
     "region": "Region Hovedstaden",
@@ -51356,7 +51340,7 @@
         "latitude": 55.8692,
         "longitude": 12.318,
         "is_earliest": true,
-        "klub_logo": "logos/klub_1141.jpg"
+        "klub_logo": "https://file.dbu.dk/images/club/1141/Aller%C3%B8d_Fodbold_Klub.png"
       },
       {
         "klub_id": "1229",
@@ -51535,7 +51519,7 @@
     "n_goals": "3",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ebreichsdorf%20vs.%20Austria%20Wien%20%28Cup%29%202017-07-14%20%28078%29%20%28cropped%29.jpg",
     "gender": "mand",
-    "klubnavn": "B. Frem",
+    "klubnavn": "Boldklubben Frem Sakskøbing",
     "latitude": "54.793922",
     "longitude": "11.644393",
     "klub_logo": "logos/klub_1654.png",
@@ -51553,7 +51537,7 @@
       },
       {
         "klub_id": "1654",
-        "klubnavn": "B. Frem",
+        "klubnavn": "Boldklubben Frem Sakskøbing",
         "latitude": 54.7939,
         "longitude": 11.6444,
         "is_earliest": true,
