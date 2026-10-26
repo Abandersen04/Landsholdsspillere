@@ -19510,7 +19510,7 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": null,
@@ -19532,6 +19532,9 @@
     "years_played": [
       1968,
       1969
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -20811,34 +20814,37 @@
         "klub_logo": "logos/klub_420.png"
       },
       {
-        "klub_id": "566",
-        "klubnavn": "Kolding B",
-        "latitude": 55.4722,
-        "longitude": 9.4671,
-        "is_earliest": false,
-        "klub_logo": "logos/klub_566.png"
-      },
-      {
         "klub_id": "567",
         "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
-        "klub_id": null,
+        "klub_id": "675",
         "klubnavn": "KÍ Klaksvík",
         "latitude": 62.2239,
         "longitude": -6.5786,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/82/K%C3%8D_Klaksv%C3%ADk_logo.svg/250px-K%C3%8D_Klaksv%C3%ADk_logo.svg.png"
+      },
+      {
+        "klub_id": null,
+        "klubnavn": "Tørring IF",
+        "latitude": 55.861281,
+        "longitude": 9.483076,
+        "is_earliest": false,
+        "klub_logo": "https://www.toerring-if.dk/wp-content/uploads/2024/04/favicon.png"
       }
     ],
     "years_played": [
       1970,
       1971,
       1972
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -22112,7 +22118,7 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": null,
@@ -22125,6 +22131,9 @@
     ],
     "years_played": [
       1971
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -23494,7 +23503,7 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": "90005",
@@ -23542,7 +23551,10 @@
       1974,
       1980
     ],
-    "klub_id": "3246"
+    "klub_id": "3246",
+    "_manual_fields": [
+      "allClubs"
+    ]
   },
   {
     "playerLabel": "Tommy Hansen",
@@ -23557,21 +23569,21 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Vejle Boldklub",
-    "latitude": "55.714215",
-    "longitude": "9.5561",
-    "klub_logo": "logos/klub_3718.png",
-    "klub_website": "https://www.dbu.dk/resultater/klub/3718/klubinfo",
-    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3718/klubinfo",
+    "klubnavn": "Vejle FC",
+    "latitude": "55.7142",
+    "longitude": "9.5198",
+    "klub_logo": "logos/klub_685.png",
+    "klub_website": "https://www.dbu.dk/resultater/klub/685/klubinfo",
+    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/685/klubinfo",
     "region": "Region Syddanmark",
     "allClubs": [
       {
-        "klub_id": "3718",
-        "klubnavn": "Vejle Boldklub",
+        "klub_id": "685",
+        "klubnavn": "Vejle FC",
         "latitude": 55.7142,
-        "longitude": 9.5561,
+        "longitude": 9.5198,
         "is_earliest": true,
-        "klub_logo": "logos/klub_3718.png"
+        "klub_logo": "logos/klub_685.png"
       },
       {
         "klub_id": null,
@@ -23580,11 +23592,26 @@
         "longitude": 4.3822,
         "is_earliest": false,
         "klub_logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Koninklijke_Beerschot_Voetbal_en_Atletiek_Vereniging_logo.png"
+      },
+      {
+        "klub_id": "3718",
+        "klubnavn": "Vejle Boldklub",
+        "latitude": 55.7142,
+        "longitude": 9.5561,
+        "is_earliest": false,
+        "klub_logo": "logos/klub_3718.png"
       }
     ],
     "years_played": [
       1973,
       1975
+    ],
+    "klub_id": "685",
+    "_manual_fields": [
+      "klubnavn",
+      "latitude",
+      "longitude",
+      "allClubs"
     ]
   },
   {
@@ -28267,7 +28294,7 @@
     "klubnavn": "Kolding IF",
     "latitude": "55.4936",
     "longitude": "9.4597",
-    "klub_logo": "logos/klub_567.png",
+    "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/567/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/567/klubinfo",
     "region": "Region Syddanmark",
@@ -28278,7 +28305,7 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": true,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": null,
@@ -28331,6 +28358,13 @@
       1988,
       1989,
       1990
+    ],
+    "_manual_fields": [
+      "klubnavn",
+      "latitude",
+      "longitude",
+      "klub_logo",
+      "allClubs"
     ]
   },
   {
@@ -28848,7 +28882,7 @@
     "klubnavn": "Kolding IF",
     "latitude": "55.4936",
     "longitude": "9.4597",
-    "klub_logo": "logos/klub_567.png",
+    "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/567/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/567/klubinfo",
     "region": "Region Syddanmark",
@@ -28867,7 +28901,7 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": true,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": "610",
@@ -28888,6 +28922,13 @@
     ],
     "years_played": [
       1983
+    ],
+    "_manual_fields": [
+      "klubnavn",
+      "latitude",
+      "longitude",
+      "klub_logo",
+      "allClubs"
     ]
   },
   {
@@ -29081,7 +29122,7 @@
     "klubnavn": "Kolding IF",
     "latitude": "55.4936",
     "longitude": "9.4597",
-    "klub_logo": "logos/klub_567.png",
+    "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/567/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/567/klubinfo",
     "region": "Region Syddanmark",
@@ -29092,7 +29133,7 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": true,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": "785",
@@ -29105,6 +29146,13 @@
     ],
     "years_played": [
       1983
+    ],
+    "_manual_fields": [
+      "klubnavn",
+      "latitude",
+      "longitude",
+      "klub_logo",
+      "allClubs"
     ]
   },
   {
@@ -30079,7 +30127,7 @@
     "klubnavn": "Kolding IF",
     "latitude": "55.4936",
     "longitude": "9.4597",
-    "klub_logo": "logos/klub_567.png",
+    "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/567/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/567/klubinfo",
     "region": "Region Syddanmark",
@@ -30114,7 +30162,7 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": true,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": null,
@@ -30157,7 +30205,11 @@
       1993
     ],
     "_manual_fields": [
-      "allClubs"
+      "allClubs",
+      "klubnavn",
+      "latitude",
+      "longitude",
+      "klub_logo"
     ]
   },
   {
@@ -31269,21 +31321,21 @@
     "n_goals": "0",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Steen%20Thychosen%2020120329%20%281%29.jpg",
     "gender": "mand",
-    "klubnavn": "Vejle Boldklub",
-    "latitude": "55.714215",
-    "longitude": "9.5561",
-    "klub_logo": "logos/klub_3718.png",
-    "klub_website": "https://www.dbu.dk/resultater/klub/3718/klubinfo",
-    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/3718/klubinfo",
+    "klubnavn": "Vejle FC",
+    "latitude": "55.7142",
+    "longitude": "9.5198",
+    "klub_logo": "logos/klub_685.png",
+    "klub_website": "https://www.dbu.dk/resultater/klub/685/klubinfo",
+    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/685/klubinfo",
     "region": "Region Syddanmark",
     "allClubs": [
       {
-        "klub_id": "3718",
-        "klubnavn": "Vejle Boldklub",
+        "klub_id": "685",
+        "klubnavn": "Vejle FC",
         "latitude": 55.7142,
-        "longitude": 9.5561,
+        "longitude": 9.5198,
         "is_earliest": true,
-        "klub_logo": "logos/klub_3718.png"
+        "klub_logo": "logos/klub_685.png"
       },
       {
         "klub_id": null,
@@ -31321,6 +31373,13 @@
     "years_played": [
       1984,
       1986
+    ],
+    "klub_id": "685",
+    "_manual_fields": [
+      "klubnavn",
+      "latitude",
+      "longitude",
+      "allClubs"
     ]
   },
   {
@@ -39778,7 +39837,7 @@
     "klubnavn": "Kolding IF",
     "latitude": "55.4936",
     "longitude": "9.4597",
-    "klub_logo": "logos/klub_567.png",
+    "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png",
     "klub_website": "http://www.kif-fodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/567/klubinfo",
     "region": "Region Syddanmark",
@@ -39787,7 +39846,9 @@
     ],
     "_manual_fields": [
       "latitude",
-      "longitude"
+      "longitude",
+      "klubnavn",
+      "klub_logo"
     ]
   },
   {
@@ -44966,7 +45027,7 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": "785",
@@ -45064,6 +45125,9 @@
       2012,
       2013,
       2014
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -47893,11 +47957,11 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "KoldingQ",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": null,
@@ -47957,6 +48021,9 @@
       2016,
       2017,
       2018
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -48348,7 +48415,7 @@
     "klubnavn": "Kolding IF",
     "latitude": "55.4936",
     "longitude": "9.4597",
-    "klub_logo": "logos/klub_567.png",
+    "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/567/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/567/klubinfo",
     "region": "Region Syddanmark",
@@ -48367,7 +48434,7 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": true,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": null,
@@ -48412,6 +48479,13 @@
     ],
     "years_played": [
       2016
+    ],
+    "_manual_fields": [
+      "klubnavn",
+      "latitude",
+      "longitude",
+      "klub_logo",
+      "allClubs"
     ]
   },
   {
@@ -48923,11 +48997,11 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "KoldingQ",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": "808",
@@ -48951,7 +49025,7 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/8/86/KoldingIFBadge.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": null,
@@ -49049,11 +49123,11 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "KoldingQ",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": "808",
@@ -49068,6 +49142,9 @@
       2011,
       2012,
       2015
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -56538,11 +56615,11 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "KoldingQ",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": "692",
@@ -57321,11 +57398,11 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "KoldingQ",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": null,
@@ -57341,7 +57418,7 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/8/86/KoldingIFBadge.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": null,
@@ -57634,17 +57711,20 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "KoldingQ",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       }
     ],
     "years_played": [
       2013,
       2014,
       2015
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -59538,11 +59618,11 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "KoldingQ",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": "899",
@@ -59585,6 +59665,9 @@
       2024,
       2025,
       2026
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -60512,11 +60595,11 @@
     "allClubs": [
       {
         "klub_id": "567",
-        "klubnavn": "KoldingQ",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": "808",
@@ -60540,6 +60623,9 @@
       2021,
       2022,
       2023
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -60643,11 +60729,11 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "KoldingQ",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": null,
@@ -60655,7 +60741,7 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/8/86/KoldingIFBadge.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": null,
@@ -61032,7 +61118,7 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": null,
@@ -61996,10 +62082,10 @@
     "n_goals": "1",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/NC%20Courage%20vs%20Portland%20Thorns%20%28Apr%202024%29%20056%20%28Obaze%29.jpg",
     "gender": "kvinde",
-    "klubnavn": "KoldingQ",
+    "klubnavn": "Kolding IF",
     "latitude": "55.4936",
     "longitude": "9.4597",
-    "klub_logo": "logos/klub_567.png",
+    "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png",
     "klub_website": "https://www.dbu.dk/resultater/klub/567/klubinfo",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/567/klubinfo",
     "region": "Region Syddanmark",
@@ -62014,11 +62100,11 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "KoldingQ",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": true,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": null,
@@ -62043,6 +62129,13 @@
       2024,
       2025,
       2026
+    ],
+    "_manual_fields": [
+      "klubnavn",
+      "latitude",
+      "longitude",
+      "klub_logo",
+      "allClubs"
     ]
   },
   {
@@ -63356,7 +63449,7 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/8/86/KoldingIFBadge.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       }
     ],
     "years_played": [
@@ -63622,11 +63715,11 @@
       },
       {
         "klub_id": "567",
-        "klubnavn": "KoldingQ",
+        "klubnavn": "Kolding IF",
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": false,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       },
       {
         "klub_id": null,
@@ -63641,6 +63734,9 @@
       2021,
       2025,
       2026
+    ],
+    "_manual_fields": [
+      "allClubs"
     ]
   },
   {
@@ -66200,7 +66296,7 @@
     "klubnavn": "Kolding IF",
     "latitude": "55.4936",
     "longitude": "9.4597",
-    "klub_logo": "logos/klub_567.png",
+    "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png",
     "klub_website": "http://www.kif-fodbold.dk/",
     "klub_dbu_url": "https://www.dbu.dk/resultater/klub/567/klubinfo",
     "region": "Region Syddanmark",
@@ -66211,11 +66307,18 @@
         "latitude": 55.4936,
         "longitude": 9.4597,
         "is_earliest": true,
-        "klub_logo": "logos/klub_567.png"
+        "klub_logo": "https://file.dbu.dk/images/club/5202/Kolding_IF_Women.png"
       }
     ],
     "years_played": [
       2026
+    ],
+    "_manual_fields": [
+      "klubnavn",
+      "latitude",
+      "longitude",
+      "klub_logo",
+      "allClubs"
     ]
   },
   {
