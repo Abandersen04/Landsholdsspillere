@@ -23286,9 +23286,9 @@
     "playerLabel": "Torben Hansen",
     "wikipediaURL_da": null,
     "wikipediaURL_en": "https://en.wikipedia.org/wiki/Torben_Hansen",
-    "birthPlaceLabel": "Skamstrup Sogn",
-    "lat": "55.62083333",
-    "lon": "11.48861111",
+    "birthPlaceLabel": "Tveje Merløse",
+    "lat": "55.693196",
+    "lon": "11.693987",
     "dbuID": "3542",
     "birthday_dbu": "27-10-1951",
     "n_matches": "1",
@@ -23326,10 +23326,24 @@
         "longitude": 11.5604,
         "is_earliest": true,
         "klub_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCoKsVyfAqY6d1YBHZnqHtFLL8nV_uHdGh2g&s"
+      },
+      {
+        "klub_id": "1159",
+        "klubnavn": "Mørkøv IF",
+        "latitude": 55.642488,
+        "longitude": 11.504081,
+        "is_earliest": false,
+        "klub_logo": null
       }
     ],
     "years_played": [
       1973
+    ],
+    "_manual_fields": [
+      "birthPlaceLabel",
+      "lat",
+      "lon",
+      "allClubs"
     ]
   },
   {
