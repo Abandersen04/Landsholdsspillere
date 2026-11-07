@@ -71,6 +71,18 @@
                   border: 1px solid #ddd; background: #fff; font-size: 13px;
                   cursor: pointer; font-family: inherit; color: #555; }
     .expand-btn:hover { background: #f5f5f5; }
+
+    /* Touch-mål: min. 44px høje knapper/selects på mobil */
+    @media (max-width: 768px) {
+      .gf-btn,
+      .period-select,
+      .expand-btn {
+        min-height: 44px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        box-sizing: border-box;
+      }
+    }
   </style>
 </head>
 <body>
