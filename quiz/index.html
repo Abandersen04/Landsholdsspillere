@@ -130,6 +130,15 @@
     .quiz-option:disabled { cursor: default; }
     .quiz-option.correct { background: #e7f7ec; border-color: #1a7d3a; color: #1a7d3a; font-weight: 600; }
     .quiz-option.wrong { background: #fdeceb; border-color: #b3261e; color: #b3261e; }
+
+    /* Inputs/selects: min. 16px forhindrer iOS' auto-zoom ved fokus */
+    @media (max-width: 768px) {
+      .search-wrap input,
+      .guess-row input[type=text],
+      .period-select {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>

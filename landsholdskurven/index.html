@@ -68,6 +68,14 @@
     .legend { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px; font-size: 13px; color: #666; }
     .legend-item { display: flex; align-items: center; gap: 6px; }
     .legend-line { width: 24px; height: 3px; border-radius: 2px; }
+
+    /* Inputs/selects: min. 16px forhindrer iOS' auto-zoom ved fokus */
+    @media (max-width: 768px) {
+      .search-wrap input,
+      .period-select {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
