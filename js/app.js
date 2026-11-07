@@ -1348,12 +1348,18 @@ function createMarker(group, mapType, birthLevel, perCapita) {
 }
 
 // ===== Mobile Popup Panel =====
+let currentPopupGroup = null;
+let currentPopupMapType = null;
+
 function openMobilePopup(group, mapType) {
   const panel   = document.getElementById('mobile-popup-panel');
   const overlay = document.getElementById('mobile-popup-overlay');
   const content = document.getElementById('mobile-popup-content');
   if (!panel) return;
 
+  currentPopupGroup = group;
+  currentPopupMapType = mapType;
+  panel.classList.remove('expanded');
   content.innerHTML = buildPopupHtml(group, mapType);
   overlay.classList.add('open');
   panel.classList.add('open');
@@ -1368,12 +1374,30 @@ function openMobilePopup(group, mapType) {
 }
 
 function closeMobilePopup() {
-  document.getElementById('mobile-popup-panel')?.classList.remove('open');
+  document.getElementById('mobile-popup-panel')?.classList.remove('open', 'expanded');
   document.getElementById('mobile-popup-overlay')?.classList.remove('open');
 }
 
+// Udvider bundpanelet til fuld højde og viser alle spillere + et filterfelt
+function expandMobilePopup() {
+  const panel = document.getElementById('mobile-popup-panel');
+  const content = document.getElementById('mobile-popup-content');
+  if (!panel || !currentPopupGroup) return;
+  panel.classList.add('expanded');
+  content.innerHTML = buildPopupHtml(currentPopupGroup, currentPopupMapType, { expanded: true });
+  document.getElementById('popup-filter-input')?.focus();
+}
+
+function filterPopupPlayers(query) {
+  const q = normalize(query);
+  document.querySelectorAll('#mobile-popup-content .popup-player').forEach(el => {
+    el.style.display = !q || el.dataset.name.includes(q) ? '' : 'none';
+  });
+}
+
 // ===== Popup HTML =====
-function buildPopupHtml(group, mapType) {
+function buildPopupHtml(group, mapType, opts) {
+  const { expanded = false } = opts || {};
   const { locName, players } = group;
 
   // Header
@@ -1405,7 +1429,7 @@ function buildPopupHtml(group, mapType) {
 
   // Players list
   const isMobile = window.innerWidth <= 768;
-  const maxVisible = isMobile ? 10 : players.length;
+  const maxVisible = (isMobile && !expanded) ? 25 : players.length;
   const visiblePlayers = players.slice(0, maxVisible);
   const hiddenCount = players.length - visiblePlayers.length;
 
@@ -1429,7 +1453,7 @@ function buildPopupHtml(group, mapType) {
 
 
     return `
-      <div class="popup-player">
+      <div class="popup-player" data-name="${escapeHtml(normalize(p.playerLabel))}">
         ${imgHtml}
         <div class="popup-player-info">
           <div class="popup-player-name"><a href="/spiller/${slugify(p.playerLabel)}-${p.dbuID}/" style="color:#C0392B;text-decoration:none;font-weight:inherit;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${escapeHtml(p.playerLabel)}<svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="flex-shrink:0;opacity:.7"><path d="M3 9L9 3M9 3H5M9 3V7" stroke="#C0392B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
@@ -1440,10 +1464,19 @@ function buildPopupHtml(group, mapType) {
       </div>`;
   }).join('');
 
+  const filterHtml = expanded
+    ? `<div class="popup-filter-wrap"><input type="text" id="popup-filter-input" class="popup-filter-input" placeholder="Filtrér spillere..." oninput="filterPopupPlayers(this.value)"></div>`
+    : '';
+
+  const showAllHtml = (hiddenCount > 0 && !expanded)
+    ? `<button type="button" class="popup-show-all-btn" onclick="expandMobilePopup()">Vis alle (${players.length})</button>`
+    : '';
+
   return `
     <div class="popup-wrapper">
       ${headerHtml}
-      <div class="popup-players">${playersHtml}${hiddenCount > 0 ? `<div style="padding:8px 12px;color:#888;font-size:13px;text-align:center">... og ${hiddenCount} flere spillere</div>` : ''}</div>
+      ${filterHtml}
+      <div class="popup-players">${playersHtml}${showAllHtml}</div>
     </div>`;
 }
 

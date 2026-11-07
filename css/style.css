@@ -1474,6 +1474,53 @@ html, body {
   transform: translateY(0);
 }
 
+/* "Vis alle" udvider panelet til næsten fuld skærmhøjde */
+.mobile-popup-panel.expanded {
+  max-height: 92vh;
+}
+.mobile-popup-panel.expanded .popup-players {
+  max-height: none;
+}
+
+.popup-show-all-btn {
+  display: block;
+  width: calc(100% - 32px);
+  margin: 8px 16px 4px;
+  padding: 12px;
+  min-height: 44px;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius);
+  background: var(--gray-50);
+  color: var(--gray-700);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+.popup-show-all-btn:hover {
+  background: var(--red-light);
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.popup-filter-wrap {
+  padding: 10px 16px 4px;
+  flex-shrink: 0;
+}
+.popup-filter-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px; /* undgår iOS auto-zoom */
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius);
+  font-family: inherit;
+}
+.popup-filter-input:focus {
+  outline: none;
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.1);
+}
+
 /* Handle-row smelter sammen med popup-header baggrund */
 .mobile-popup-handle-row {
   display: flex;
