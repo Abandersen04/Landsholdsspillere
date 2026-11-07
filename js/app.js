@@ -107,8 +107,16 @@ function initSidebar() {
   const close = document.getElementById('sidebar-close');
   const handle = document.getElementById('sidebar-drag-handle');
 
-  const openSheet = () => sidebar.classList.add('open');
-  const closeSheet = () => sidebar.classList.remove('open');
+  // Skjul "Indlæser logoer…"-boblen, mens bundsheetet er åbent på mobil,
+  // så den ikke lægger sig oven i filter-sliderne.
+  const openSheet = () => {
+    sidebar.classList.add('open');
+    document.getElementById('logo-loading-indicator')?.classList.add('hidden-behind-sheet');
+  };
+  const closeSheet = () => {
+    sidebar.classList.remove('open');
+    document.getElementById('logo-loading-indicator')?.classList.remove('hidden-behind-sheet');
+  };
 
   toggle.addEventListener('click', () => {
     if (window.innerWidth <= 768) {
