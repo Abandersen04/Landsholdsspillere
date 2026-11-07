@@ -1366,6 +1366,19 @@ html, body {
   }
 }
 
+/* Korte liggende mobilskærme (fx 640×360): zoom-knapperne (top-right) og
+   attributionsboksen (bottom-right) kan ende tæt nok på hinanden til at
+   overlappe. Flyt attribution til sit eget hjørne nederst til venstre. */
+@media (max-width: 768px) and (max-height: 420px) {
+  .leaflet-control-attribution {
+    position: fixed;
+    left: 4px;
+    right: auto;
+    bottom: 4px;
+    max-width: 140px;
+  }
+}
+
 /* ===== Choropleth Legend ===== */
 .choropleth-legend {
   background: white;
