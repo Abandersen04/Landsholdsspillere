@@ -1414,7 +1414,8 @@ html, body {
   transition: opacity 0.15s;
   z-index: 9999;
 }
-.info-tooltip:hover::after {
+.info-tooltip:hover::after,
+.info-tooltip.tooltip-open::after {
   opacity: 1;
 }
 

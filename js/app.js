@@ -21,9 +21,25 @@ document.addEventListener('DOMContentLoaded', async () => {
   initSidebar();
   initControls();
   initMissingPanel();
+  initInfoTooltips();
   await loadData();
   updateMap();
 });
+
+// ===== Info-tooltips (touch-support) =====
+// .info-tooltip's forklaringstekst vises normalt kun via CSS :hover, som ikke
+// virker på touch-enheder. Et klik/tap toggler samme visning via en klasse.
+function initInfoTooltips() {
+  document.addEventListener('click', e => {
+    const tip = e.target.closest('.info-tooltip');
+    document.querySelectorAll('.info-tooltip.tooltip-open').forEach(el => {
+      if (el !== tip) el.classList.remove('tooltip-open');
+    });
+    if (tip) {
+      tip.classList.toggle('tooltip-open');
+    }
+  });
+}
 
 // ===== Normalize helper (æøå → ae/oe/aa) =====
 function slugify(s) {
