@@ -288,10 +288,10 @@
     </aside>
 
     <!-- Missing players modal -->
-    <div id="missing-modal" class="modal-overlay">
+    <div id="missing-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="missing-modal-title">
       <div class="modal-content">
         <div class="modal-header">
-          <h2>Spillere med manglende data</h2>
+          <h2 id="missing-modal-title">Spillere med manglende data</h2>
           <button id="missing-close" class="modal-close">&times;</button>
         </div>
         <div class="missing-controls">
@@ -331,10 +331,10 @@
     </div>
 
     <!-- Om kortet modal -->
-    <div id="om-modal" class="modal-overlay">
+    <div id="om-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="om-modal-title">
       <div class="modal-content modal-content--narrow">
         <div class="modal-header">
-          <h2>Om Landsholdskortet</h2>
+          <h2 id="om-modal-title">Om Landsholdskortet</h2>
           <button id="om-close" class="modal-close">&times;</button>
         </div>
         <div class="modal-body om-body">

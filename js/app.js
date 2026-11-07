@@ -22,9 +22,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   initControls();
   initMissingPanel();
   initInfoTooltips();
+  initModalEscapeClose();
   await loadData();
   updateMap();
 });
+
+// Luk åben modal (manglende-data / Om) med Escape-tasten
+function initModalEscapeClose() {
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    document.querySelectorAll('.modal-overlay.open').forEach(m => m.classList.remove('open'));
+  });
+}
 
 // ===== Info-tooltips (touch-support) =====
 // .info-tooltip's forklaringstekst vises normalt kun via CSS :hover, som ikke
