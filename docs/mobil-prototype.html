@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Landsholdskortet — mobil-prototype</title>
+<style>
+  :root {
+    --red: #C8102E;
+    --red-dark: #a00d25;
+    --red-light: #fef2f2;
+    --ink: #1a1a1a;
+    --ink-2: #555;
+    --ink-3: #999;
+    --line: #eee;
+    --bg: #f4f4f4;
+  }
+  * , *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
+    background: #2a2a2a;
+    color: var(--ink);
+  }
+  /* Udenfor telefon-rammen: kun synligt på desktop, hjælper med at vise at det her er en mobil-prototype */
+  .desktop-note {
+    display: none;
+    text-align: center;
+    color: #ccc;
+    font-size: 13px;
+    padding: 10px 16px 0;
+  }
+  .phone {
+    max-width: 430px;
+    margin: 0 auto;
+    height: 100dvh;
+    background: var(--bg);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 40px rgba(0,0,0,.5);
+  }
+  @media (min-width: 431px) {
+    body { padding: 24px 0; }
+    .phone { height: min(900px, 94dvh); border-radius: 28px; }
+    .desktop-note { display: block; }
+  }
+
+  /* ===== Top bar ===== */
+  .topbar {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+    z-index: 20;
+  }
+  .search-wrap {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg);
+    border-radius: 10px;
+    padding: 0 12px;
+    height: 40px;
+  }
+  .search-wrap input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+    font-family: inherit;
+    color: var(--ink);
+  }
+  .icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--ink-2);
+    cursor: pointer;
+  }
+  .icon-btn.active-filters {
+    background: var(--red-light);
+    color: var(--red);
+    position: relative;
+  }
+  .filter-badge {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    background: var(--red);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    min-width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3px;
+  }
+
+  /* ===== Screens ===== */
+  .screens { flex: 1; position: relative; overflow: hidden; }
+  .screen {
+    position: absolute;
+    inset: 0;
+    display: none;
+    flex-direction: column;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .screen.active { display: flex; }
+
+  /* ===== Kort-screen ===== */
+  #screen-kort { overflow: hidden; }
+  .map-wrap {
+    position: relative;
+    flex: 1;
+    background: #d9e8f2;
+    overflow: hidden;
+  }
+  .map-wrap svg.dk-outline {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .dk-outline path {
+    fill: #eef1ea;
+    stroke: #c7cdbf;
+    stroke-width: 1;
+  }
+  .cluster {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: var(--red);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    cursor: pointer;
+    font-size: 11px;
+    letter-spacing: .02em;
+  }
+  .cluster .badge {
+    position: absolute;
+    bottom: -4px;
+    right: -6px;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 1px 4px;
+    border: 1.5px solid #fff;
+  }
+  /* Små klynger: bare et rødt punkt med tallet i, ingen separat badge (ikke plads) */
+  .cluster.cluster-small {
+    border-width: 1.5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  }
+  .map-hint {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255,255,255,.95);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    color: var(--ink-2);
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    white-space: nowrap;
+  }
+  .map-stats {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: rgba(255,255,255,.95);
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 11px;
+    color: var(--ink-2);
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  }
+  .map-stats b { color: var(--red); }
+
+  /* ===== Bottom sheet (klynge / filtre) ===== */
+  .sheet-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.32);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s;
+    z-index: 30;
+  }
+  .sheet-overlay.open { opacity: 1; pointer-events: auto; }
+  .sheet {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    background: #fff;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -6px 24px rgba(0,0,0,.2);
+    transform: translateY(100%);
+    transition: transform .25s cubic-bezier(.32,.72,0,1);
+    z-index: 31;
+    max-height: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  .sheet.open { transform: translateY(0); }
+  .sheet.expanded { max-height: 92%; }
+  .sheet-handle {
+    display: flex;
+    justify-content: center;
+    padding: 9px 0 6px;
+    flex-shrink: 0;
+  }
+  .sheet-handle .pill { width: 36px; height: 4px; border-radius: 2px; background: #ddd; }
+  .sheet-header {
+    padding: 2px 16px 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .sheet-header .avatar {
+    width: 44px; height: 44px; border-radius: 10px;
+    background: var(--red); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 13px; flex-shrink: 0;
+  }
+  .sheet-header .name { font-weight: 700; font-size: 16px; }
+  .sheet-header .sub { font-size: 12px; color: var(--ink-3); }
+  .sheet-body { overflow-y: auto; padding-bottom: 10px; }
+
+  .filter-field {
+    margin: 10px 16px;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    width: calc(100% - 32px);
+    flex-shrink: 0;
+  }
+
+  .player-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 16px;
+    border-bottom: 1px solid #f5f5f5;
+  }
+  .player-row .av {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--bg); color: var(--ink-2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 700; flex-shrink: 0;
+  }
+  .player-row .pname { font-weight: 600; font-size: 14px; color: var(--ink); }
+  .player-row .pmeta { font-size: 11px; color: var(--ink-3); }
+  .player-row .pstat { margin-left: auto; text-align: right; font-size: 12px; color: var(--ink-2); white-space: nowrap; }
+  .player-row .pstat b { color: var(--ink); font-size: 14px; }
+
+  .show-all-btn {
+    display: block;
+    width: calc(100% - 32px);
+    margin: 10px 16px 4px;
+    padding: 11px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: var(--bg);
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--ink-2);
+    font-family: inherit;
+  }
+
+  /* Filter-sheet indhold */
+  .filter-section { padding: 12px 16px; }
+  .filter-label { font-size: 11px; font-weight: 700; color: var(--ink-3); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 8px; }
+  .pill-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+  .pill-opt {
+    padding: 7px 14px; border-radius: 20px; border: 1px solid #ddd;
+    background: #fff; font-size: 13px; color: var(--ink-2); cursor: pointer;
+  }
+  .pill-opt.active { background: var(--red); border-color: var(--red); color: #fff; }
+
+  /* ===== Rekorder-screen ===== */
+  .page-head { padding: 18px 16px 10px; background: #fff; }
+  .page-head h1 { font-size: 22px; }
+  .page-head p { font-size: 13px; color: var(--ink-2); margin-top: 4px; }
+
+  .chip-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 12px 16px 14px;
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+  }
+  .chip {
+    padding: 7px 13px;
+    border-radius: 18px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--ink-2);
+    white-space: nowrap;
+    cursor: pointer;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+  }
+  .chip.active { background: var(--red); border-color: var(--red); color: #fff; }
+
+  .stat-list-head {
+    display: flex;
+    padding: 8px 16px;
+    font-size: 10.5px;
+    font-weight: 700;
+    color: var(--ink-3);
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    border-bottom: 1px solid var(--line);
+    background: #fafafa;
+  }
+  .stat-row {
+    display: flex;
+    align-items: center;
+    padding: 9px 16px;
+    border-bottom: 1px solid #f5f5f5;
+    background: #fff;
+  }
+  .stat-row .rank { width: 24px; color: var(--ink-3); font-size: 13px; flex-shrink: 0; }
+  .stat-row .nm { flex: 1; font-size: 14px; font-weight: 600; color: var(--red-dark); }
+  .stat-row .nm span { display: block; font-size: 11px; font-weight: 400; color: var(--ink-3); }
+  .stat-row .v1 { width: 48px; text-align: right; font-weight: 700; font-size: 14px; }
+  .stat-row .v2 { width: 56px; text-align: right; font-size: 12px; color: var(--ink-3); }
+
+  /* ===== Simpelt placeholder for Kurven/Quiz ===== */
+  .placeholder {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px 30px;
+    text-align: center;
+    color: var(--ink-3);
+  }
+  .placeholder .big { font-size: 40px; }
+  .placeholder h2 { color: var(--ink); font-size: 17px; }
+  .placeholder p { font-size: 13px; line-height: 1.5; }
+
+  /* ===== Bundnavigation ===== */
+  .bottom-nav {
+    flex-shrink: 0;
+    display: flex;
+    background: #fff;
+    border-top: 1px solid var(--line);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    z-index: 25;
+  }
+  .nav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 9px 0 8px;
+    border: none;
+    background: none;
+    color: var(--ink-3);
+    font-size: 10.5px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .nav-item.active { color: var(--red); }
+  .nav-item svg { width: 21px; height: 21px; }
+
+  /* ===== Annotations (forklarer hvad der er ændret) ===== */
+  .callout {
+    position: absolute;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.4;
+    padding: 6px 9px;
+    border-radius: 6px;
+    max-width: 150px;
+    z-index: 40;
+    pointer-events: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,.3);
+  }
+</style>
+</head>
+<body>
+
+<div class="desktop-note">Mobil-prototype — bedst set på en telefon, eller i browserens mobil-emulering (390×844 el. lign.)</div>
+
+<div class="phone">
+
+  <!-- ===== Top bar (fælles) ===== -->
+  <div class="topbar">
+    <div class="search-wrap">
+      <svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="#999" stroke-width="2"/><path d="M15 15l-3.5-3.5" stroke="#999" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="text" placeholder="Søg spiller eller klub...">
+    </div>
+    <button class="icon-btn active-filters" id="filter-btn" onclick="openFilterSheet()">
+      <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M3 5h14M6 10h8M9 15h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="filter-badge">2</span>
+    </button>
+  </div>
+
+  <div class="screens">
+
+    <!-- ===== Screen: Kort ===== -->
+    <section class="screen active" id="screen-kort">
+      <div class="map-wrap" id="map-wrap">
+        <svg class="dk-outline" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid meet">
+          <g id="dk-paths">
+            <path d="M 77.1,173.4 L 76.3,194.3 L 75.6,181.7 L 65.3,180.1 L 62.5,188.4 L 69.0,167.0 L 52.4,158.5 L 52.7,169.5 L 47.0,190.2 L 37.5,199.1 L 38.1,194.8 L 21.9,188.9 L 17.8,180.5 L 17.8,173.0 L 18.1,167.2 L 13.4,215.4 L 14.0,208.5 L 22.2,224.8 L 15.0,222.8 L 12.6,218.0 L 12.7,273.0 L 18.4,259.3 L 25.5,281.2 L 25.9,289.0 L 20.0,290.8 L 17.1,293.2 L 22.4,303.8 L 34.7,300.8 L 50.3,296.3 L 65.0,291.9 L 73.6,280.4 L 83.0,291.0 L 88.8,305.9 L 93.2,309.7 L 112.0,319.2 L 116.3,300.1 L 107.1,295.8 L 119.6,293.8 L 124.1,297.2 L 126.1,287.3 L 127.1,269.4 L 125.3,249.9 L 131.6,237.1 L 135.7,229.8 L 138.9,236.6 L 135.2,242.2 L 141.0,247.5 L 145.7,239.2 L 148.8,249.2 L 150.2,250.7 L 158.1,230.2 L 162.9,211.8 L 151.7,193.6 L 144.9,195.6 L 125.8,191.5 L 120.4,204.8 L 125.4,194.6 L 132.7,176.1 L 122.3,172.5 L 111.2,183.7 L 94.9,186.1 L 88.5,175.1 L 84.2,177.7 L 77.1,173.4 Z" />
+              <path d="M 214.0,312.8 L 210.3,324.3 L 210.6,322.5 L 208.3,315.4 L 205.3,315.2 L 206.9,309.2 L 199.7,306.3 L 206.5,299.6 L 203.3,285.9 L 208.8,280.4 L 183.3,275.0 L 194.8,283.6 L 195.2,290.8 L 186.5,297.1 L 183.6,310.4 L 179.0,311.3 L 164.1,310.7 L 170.8,321.5 L 170.9,323.9 L 173.0,329.9 L 174.6,343.1 L 176.3,348.8 L 175.1,368.5 L 174.3,373.1 L 178.1,373.2 L 173.9,374.6 L 182.7,385.5 L 180.4,387.1 L 180.5,392.9 L 180.9,393.9 L 184.8,392.2 L 188.3,394.2 L 189.4,393.2 L 196.6,395.1 L 207.0,394.0 L 208.9,401.7 L 205.9,404.4 L 208.2,411.1 L 202.4,412.6 L 215.9,423.0 L 228.1,418.0 L 226.9,411.1 L 229.5,405.0 L 223.8,405.6 L 225.7,397.2 L 226.6,396.7 L 229.3,391.7 L 242.9,384.6 L 236.9,363.5 L 231.1,355.1 L 231.6,350.0 L 232.4,346.2 L 240.2,334.4 L 233.3,330.4 L 229.2,323.6 L 232.8,313.4 L 225.5,306.4 L 226.2,316.9 L 225.7,320.6 L 225.0,326.0 L 221.3,322.3 L 223.1,319.9 L 220.2,321.0 L 217.7,321.6 L 214.0,312.8 Z" />
+              <path d="M 81.8,289.1 L 73.6,280.4 L 69.4,287.4 L 62.9,295.8 L 52.5,289.1 L 44.0,299.8 L 34.7,300.8 L 29.7,305.3 L 21.0,303.8 L 15.7,299.8 L 15.5,343.5 L 18.8,340.4 L 25.1,345.4 L 28.6,352.3 L 29.9,354.5 L 32.6,355.3 L 42.0,374.8 L 35.1,383.6 L 41.2,384.0 L 41.6,389.9 L 36.9,399.4 L 34.5,392.3 L 31.6,402.4 L 30.9,409.1 L 39.0,402.0 L 41.5,425.7 L 49.0,438.0 L 72.9,447.2 L 79.9,448.8 L 87.0,443.3 L 92.1,437.3 L 94.9,437.5 L 94.6,442.9 L 100.6,446.3 L 101.6,438.0 L 94.8,422.8 L 83.4,419.9 L 82.6,417.9 L 83.5,417.6 L 85.6,406.5 L 84.6,405.1 L 93.3,395.7 L 93.3,395.3 L 97.1,389.6 L 95.0,392.1 L 96.8,389.9 L 93.4,381.1 L 87.5,385.8 L 94.3,379.6 L 93.1,370.0 L 92.4,359.2 L 90.3,349.6 L 90.3,346.2 L 92.4,347.0 L 100.9,340.1 L 99.5,329.3 L 94.1,319.4 L 95.8,316.7 L 91.6,310.6 L 90.8,307.3 L 87.1,301.6 L 83.0,291.0 L 81.8,289.1 Z" />
+              <path d="M 145.4,331.4 L 146.0,332.8 L 146.8,337.5 L 145.5,335.9 L 145.4,336.0 L 147.1,345.5 L 146.6,349.1 L 144.1,352.1 L 142.2,353.1 L 138.8,357.8 L 137.1,353.5 L 134.9,359.5 L 133.5,361.2 L 137.1,352.6 L 139.4,349.0 L 138.6,344.4 L 141.2,342.6 L 138.0,338.8 L 129.1,330.4 L 130.2,335.9 L 128.4,332.8 L 124.2,335.0 L 117.5,338.0 L 117.5,338.0 L 109.9,347.0 L 101.7,342.1 L 97.0,345.8 L 98.6,349.8 L 101.4,353.1 L 102.8,355.9 L 98.5,352.4 L 104.1,360.2 L 104.8,365.9 L 106.0,370.9 L 106.7,371.5 L 107.2,383.7 L 108.4,387.7 L 107.6,386.4 L 108.9,388.7 L 112.4,398.6 L 113.2,398.8 L 113.2,396.1 L 114.4,396.4 L 120.5,398.7 L 122.8,404.4 L 120.0,405.7 L 118.5,407.3 L 122.0,411.7 L 124.1,414.2 L 124.6,409.5 L 126.2,409.4 L 133.3,414.8 L 138.7,417.3 L 146.4,414.8 L 151.3,414.5 L 154.8,407.1 L 156.7,396.5 L 155.7,379.9 L 155.4,378.5 L 156.0,378.1 L 157.6,379.7 L 158.3,378.5 L 151.5,360.8 L 147.7,357.8 L 142.6,356.7 L 146.7,356.5 L 149.1,354.9 L 151.6,346.6 L 145.7,330.9 L 146.4,331.9 L 145.4,331.4 Z" />
+              <path d="M 142.4,89.1 L 141.7,74.3 L 142.1,72.9 L 141.7,59.3 L 143.0,58.0 L 142.5,57.0 L 143.5,58.4 L 142.4,54.0 L 140.4,49.5 L 140.3,48.4 L 140.5,48.5 L 136.3,35.2 L 144.3,15.6 L 144.8,15.5 L 145.4,15.4 L 146.1,15.0 L 143.3,11.4 L 119.9,34.6 L 112.1,33.5 L 111.0,32.9 L 102.4,51.3 L 90.1,86.1 L 69.6,102.3 L 52.5,105.4 L 38.4,103.9 L 38.4,103.9 L 38.1,105.2 L 37.7,104.4 L 27.0,127.9 L 18.1,163.8 L 18.9,166.4 L 19.1,165.7 L 19.4,168.1 L 19.8,156.4 L 27.8,172.6 L 28.5,170.9 L 34.4,168.1 L 33.1,165.9 L 33.3,165.7 L 31.7,157.6 L 34.7,150.6 L 39.9,141.6 L 41.4,132.5 L 46.5,131.2 L 50.4,124.6 L 53.9,124.4 L 54.4,126.2 L 55.0,125.5 L 61.1,119.7 L 67.0,116.9 L 68.5,118.6 L 75.1,123.0 L 75.9,121.9 L 81.3,118.9 L 84.3,117.0 L 92.6,115.6 L 93.4,110.3 L 94.7,112.4 L 101.0,110.5 L 101.5,107.2 L 111.0,114.4 L 115.5,111.6 L 127.2,125.1 L 133.4,115.5 L 133.9,113.0 L 134.9,105.4 L 136.0,101.0 L 140.5,92.8 L 142.4,89.1 Z" />
+              <path d="M 247.8,331.3 L 247.4,329.7 L 247.9,328.1 L 249.1,328.1 L 249.7,327.1 L 250.3,326.5 L 249.9,326.6 L 250.1,325.3 L 250.7,325.5 L 251.1,324.0 L 251.8,322.7 L 252.9,319.3 L 252.8,318.1 L 252.4,317.6 L 253.1,317.2 L 252.7,316.6 L 253.2,316.3 L 254.3,314.7 L 253.0,314.8 L 253.1,315.5 L 252.5,316.9 L 252.3,316.3 L 252.4,315.7 L 252.3,314.6 L 252.1,314.2 L 253.1,309.4 L 252.5,307.3 L 251.4,296.5 L 250.0,291.2 L 250.1,290.5 L 250.0,290.4 L 249.7,290.1 L 249.0,284.2 L 248.8,282.4 L 249.6,280.4 L 252.6,271.7 L 253.8,268.2 L 253.9,268.1 L 253.4,267.0 L 253.6,266.9 L 247.4,259.7 L 243.5,259.3 L 237.5,254.6 L 230.3,257.1 L 212.9,276.9 L 212.1,279.2 L 212.3,279.7 L 213.6,282.4 L 217.2,280.8 L 220.5,279.0 L 221.3,278.3 L 221.3,279.5 L 221.9,281.4 L 223.2,288.4 L 223.2,294.7 L 223.5,298.5 L 224.0,299.2 L 224.6,304.4 L 226.5,307.2 L 228.8,310.1 L 231.8,310.8 L 232.8,313.4 L 232.1,320.4 L 229.7,321.2 L 228.8,323.5 L 229.5,325.6 L 229.6,328.4 L 232.2,330.9 L 233.7,331.5 L 235.5,330.2 L 237.2,331.8 L 240.2,334.4 L 242.9,331.6 L 246.7,333.9 L 247.8,331.3 Z" />
+              <path d="M 123.8,170.5 L 121.6,167.5 L 119.4,168.7 L 116.5,169.4 L 115.1,172.3 L 112.7,174.7 L 110.6,176.0 L 102.7,177.5 L 110.6,174.1 L 111.4,173.3 L 114.1,170.2 L 117.3,168.3 L 118.8,168.1 L 121.1,165.1 L 122.3,166.9 L 124.5,166.0 L 131.2,166.9 L 128.2,152.9 L 127.4,139.1 L 127.8,137.2 L 129.0,129.9 L 129.9,125.4 L 125.9,126.2 L 119.5,119.1 L 116.3,116.0 L 114.7,111.6 L 111.2,115.1 L 106.5,114.8 L 101.5,115.2 L 95.7,121.4 L 93.8,124.9 L 90.7,128.8 L 89.4,132.6 L 90.1,129.8 L 90.1,127.3 L 89.5,123.0 L 75.6,123.2 L 72.1,130.5 L 69.4,135.1 L 68.7,139.4 L 70.5,142.1 L 68.8,152.2 L 69.7,158.3 L 72.4,159.2 L 71.7,165.7 L 68.4,170.8 L 72.2,170.0 L 76.9,172.3 L 79.3,173.8 L 80.9,175.2 L 84.2,177.7 L 84.6,173.8 L 86.2,171.9 L 88.1,171.3 L 88.8,173.7 L 88.5,175.1 L 90.4,177.2 L 90.0,177.9 L 95.7,178.9 L 94.2,184.6 L 94.9,186.1 L 98.7,186.4 L 100.0,189.9 L 105.1,189.9 L 107.4,187.1 L 111.2,183.7 L 116.2,182.6 L 120.1,177.7 L 121.0,176.3 L 122.2,174.0 L 122.3,172.5 L 123.8,170.5 Z" />
+              <path d="M 177.0,429.6 L 174.0,430.9 L 172.7,431.7 L 172.7,432.5 L 168.5,436.7 L 168.8,441.9 L 169.0,443.2 L 169.5,443.6 L 170.7,445.4 L 171.2,448.5 L 171.7,449.3 L 172.4,448.6 L 174.4,449.6 L 173.1,450.1 L 171.6,452.1 L 171.3,452.8 L 169.1,451.9 L 167.8,451.5 L 167.0,454.1 L 165.1,453.1 L 165.0,448.9 L 166.3,449.5 L 164.6,449.5 L 167.4,459.5 L 180.5,467.6 L 185.5,476.2 L 185.6,475.7 L 187.0,477.9 L 187.2,477.8 L 188.7,478.6 L 194.1,484.7 L 195.6,484.3 L 191.7,482.2 L 196.6,476.1 L 197.2,474.9 L 198.8,474.1 L 200.9,474.3 L 203.0,474.5 L 205.9,475.5 L 206.4,475.0 L 210.4,477.5 L 211.8,476.1 L 212.1,473.2 L 213.2,470.8 L 210.7,467.6 L 210.6,467.6 L 210.8,465.4 L 211.0,464.2 L 210.8,463.6 L 212.5,464.8 L 213.0,460.4 L 213.3,459.7 L 212.8,457.8 L 210.5,454.7 L 209.0,452.8 L 208.9,449.1 L 207.1,443.0 L 202.4,438.6 L 201.8,440.5 L 202.0,445.0 L 197.3,446.0 L 198.9,449.2 L 199.6,451.5 L 196.8,449.4 L 193.5,448.1 L 192.1,447.8 L 192.0,444.3 L 189.9,444.2 L 186.4,439.1 L 186.4,436.3 L 182.3,431.4 L 177.0,429.6 Z" />
+              <path d="M 56.4,125.5 L 56.2,125.4 L 56.4,126.3 L 55.5,126.9 L 55.4,128.5 L 54.3,130.5 L 52.7,130.5 L 52.2,129.6 L 51.8,131.5 L 50.7,133.4 L 50.4,136.2 L 50.0,137.5 L 46.7,138.4 L 45.7,139.8 L 42.1,139.5 L 40.1,140.4 L 40.7,141.3 L 40.6,141.9 L 40.9,144.5 L 40.0,147.3 L 40.9,147.3 L 40.9,148.0 L 40.4,148.5 L 39.5,148.0 L 38.8,149.7 L 41.7,150.6 L 41.9,152.2 L 39.5,154.4 L 37.6,153.7 L 37.0,153.9 L 36.3,155.3 L 35.7,154.5 L 35.2,155.0 L 36.1,159.4 L 33.5,161.2 L 33.1,162.4 L 33.3,163.5 L 33.1,164.7 L 35.1,162.1 L 36.3,163.3 L 37.0,164.7 L 35.8,165.2 L 36.3,167.5 L 36.3,167.7 L 36.0,168.2 L 37.8,166.9 L 37.3,165.6 L 37.9,164.9 L 37.2,164.7 L 37.0,164.9 L 37.0,164.1 L 37.3,164.2 L 37.0,163.8 L 37.2,163.5 L 37.9,163.5 L 38.2,164.7 L 38.0,165.5 L 38.4,165.8 L 39.6,165.0 L 39.8,165.5 L 39.0,165.9 L 38.9,167.1 L 40.2,169.2 L 39.9,170.6 L 40.2,169.7 L 40.4,170.1 L 40.1,171.2 L 40.6,172.9 L 43.9,170.8 L 45.3,171.3 L 47.7,169.0 L 47.3,167.7 L 47.7,166.6 L 49.0,164.1 L 50.7,162.2 L 50.6,161.1 L 51.2,160.2 L 50.9,158.6 L 51.4,157.0 L 52.5,155.8 L 52.5,155.2 L 51.9,155.1 L 52.0,154.3 L 52.9,153.9 L 53.2,155.6 L 53.2,153.0 L 51.4,148.6 L 51.1,145.2 L 50.5,143.5 L 50.6,142.7 L 51.4,141.2 L 51.4,140.3 L 52.2,140.0 L 52.5,140.4 L 52.3,141.1 L 52.9,141.8 L 52.9,141.7 L 52.8,141.6 L 52.9,141.4 L 52.5,141.0 L 53.7,140.9 L 53.8,143.1 L 53.4,143.8 L 53.6,144.0 L 53.9,143.5 L 54.8,137.0 L 55.7,135.3 L 54.8,131.4 L 54.9,129.9 L 55.7,128.5 L 55.9,126.8 L 56.4,126.4 L 56.5,126.1 L 56.4,125.5 Z" />
+              <path d="M 99.7,411.1 L 97.3,412.1 L 95.6,413.8 L 94.8,415.4 L 94.1,415.9 L 94.0,417.1 L 94.3,417.9 L 96.5,418.5 L 96.8,418.4 L 96.6,418.0 L 97.1,417.0 L 97.6,417.0 L 97.2,417.8 L 97.8,417.8 L 98.3,419.0 L 97.6,419.0 L 97.6,418.2 L 97.1,418.0 L 96.6,418.9 L 95.3,419.3 L 95.1,420.1 L 97.3,422.7 L 102.2,422.1 L 102.4,423.0 L 101.4,423.7 L 101.4,424.4 L 102.9,424.3 L 101.8,425.0 L 101.6,425.6 L 101.8,426.2 L 103.9,426.8 L 105.3,428.5 L 105.4,428.1 L 105.9,428.2 L 105.5,428.3 L 105.7,428.8 L 105.5,429.0 L 104.9,428.9 L 104.4,430.2 L 105.7,430.8 L 104.6,431.5 L 105.5,432.4 L 106.6,432.3 L 104.8,433.5 L 104.7,434.1 L 103.9,433.7 L 104.3,433.1 L 102.2,428.4 L 101.3,428.2 L 100.5,426.3 L 100.5,426.4 L 100.5,426.4 L 100.4,426.6 L 100.0,427.1 L 100.5,428.0 L 100.7,433.6 L 101.0,434.7 L 101.0,435.9 L 101.7,436.4 L 101.9,437.1 L 101.7,437.8 L 102.5,439.1 L 102.2,439.1 L 102.4,439.3 L 102.4,439.3 L 102.5,439.1 L 102.6,439.1 L 103.3,439.8 L 103.8,439.8 L 104.4,440.4 L 107.0,438.9 L 107.5,437.9 L 107.3,437.7 L 108.1,437.6 L 112.4,442.0 L 113.3,444.7 L 112.9,445.4 L 111.9,443.6 L 111.0,443.5 L 110.8,442.6 L 108.9,441.2 L 108.0,439.2 L 106.3,442.1 L 107.4,444.0 L 108.5,444.1 L 110.7,445.8 L 112.8,445.9 L 114.5,443.0 L 116.9,442.8 L 117.2,442.2 L 116.9,439.6 L 116.2,438.0 L 115.8,436.0 L 115.9,433.7 L 115.8,433.7 L 115.7,434.0 L 114.8,431.5 L 113.6,427.0 L 112.7,425.3 L 112.8,424.7 L 112.6,425.0 L 112.8,424.4 L 112.3,424.6 L 111.5,422.7 L 110.3,421.3 L 108.1,420.8 L 106.9,419.7 L 105.5,416.7 L 104.2,415.5 L 103.5,413.9 L 101.1,411.7 L 99.7,411.1 Z" />
+              <path d="M 211.3,428.5 L 211.1,428.8 L 211.5,429.7 L 211.4,430.9 L 210.7,433.0 L 210.0,433.3 L 209.2,430.8 L 208.2,429.6 L 208.6,429.7 L 208.4,429.5 L 207.5,429.5 L 206.9,429.7 L 206.3,431.2 L 206.7,431.7 L 206.5,432.4 L 205.7,432.1 L 204.9,433.9 L 207.1,434.5 L 207.6,436.6 L 206.9,438.4 L 206.8,439.6 L 207.6,441.6 L 207.2,443.2 L 207.7,444.6 L 207.6,445.5 L 209.1,445.7 L 210.3,447.3 L 210.0,448.5 L 210.7,448.9 L 210.7,449.6 L 209.7,452.3 L 210.6,454.0 L 211.6,454.3 L 211.9,455.7 L 213.5,458.0 L 213.2,458.1 L 213.6,459.9 L 214.5,461.7 L 214.0,462.6 L 213.7,464.8 L 215.9,466.1 L 215.3,468.2 L 214.1,470.5 L 214.1,472.0 L 213.5,475.3 L 213.9,477.1 L 216.2,483.5 L 216.5,485.5 L 216.4,486.7 L 216.6,486.8 L 216.3,487.7 L 219.1,490.0 L 219.3,487.6 L 218.6,475.5 L 218.7,472.9 L 219.3,469.4 L 221.6,465.2 L 222.8,460.3 L 224.3,457.0 L 225.2,455.2 L 226.9,453.8 L 227.5,452.6 L 227.8,450.5 L 229.2,449.5 L 229.6,448.5 L 229.0,446.6 L 227.5,443.7 L 227.1,440.7 L 224.6,439.8 L 223.8,440.5 L 220.7,439.3 L 219.9,438.1 L 220.0,437.5 L 219.5,434.5 L 219.7,433.8 L 218.9,432.9 L 217.1,433.4 L 216.7,432.7 L 216.6,435.3 L 216.2,435.1 L 216.4,436.2 L 215.5,436.1 L 214.7,435.4 L 214.7,434.0 L 213.9,432.8 L 214.3,432.2 L 213.6,431.3 L 213.8,430.7 L 213.4,430.5 L 213.4,430.2 L 213.5,430.0 L 213.1,430.5 L 212.8,429.6 L 212.2,430.0 L 211.3,428.5 Z" />
+              <path d="M 375.0,388.1 L 372.2,385.7 L 371.2,382.1 L 369.7,380.2 L 369.5,378.8 L 368.3,380.4 L 368.3,381.4 L 368.6,381.9 L 368.3,383.4 L 367.5,386.3 L 367.2,386.8 L 367.0,386.7 L 367.0,387.0 L 367.2,386.9 L 365.9,391.8 L 365.6,394.2 L 365.7,395.1 L 365.5,395.3 L 365.6,395.4 L 365.7,395.3 L 365.7,396.0 L 365.4,395.4 L 365.9,398.4 L 365.9,403.9 L 365.5,405.4 L 365.7,406.5 L 365.5,407.6 L 364.7,408.3 L 364.5,409.5 L 365.2,408.7 L 365.4,409.4 L 364.5,409.7 L 365.2,410.5 L 364.7,410.3 L 364.9,410.7 L 365.1,410.8 L 365.6,410.4 L 365.9,411.3 L 366.7,411.7 L 367.9,414.1 L 369.6,415.9 L 370.8,415.7 L 372.6,417.6 L 374.3,418.0 L 379.7,423.2 L 385.7,425.7 L 388.1,421.5 L 387.9,420.6 L 388.2,419.7 L 387.5,417.9 L 388.3,416.8 L 388.5,415.2 L 389.0,415.1 L 389.2,414.0 L 388.9,414.2 L 388.9,415.1 L 388.9,413.8 L 389.1,414.0 L 389.0,413.4 L 390.0,411.6 L 389.8,410.3 L 390.0,410.0 L 389.6,409.1 L 389.4,408.0 L 389.6,407.7 L 389.3,406.7 L 389.5,405.6 L 390.0,405.2 L 389.9,403.7 L 389.4,403.6 L 389.4,402.6 L 389.1,402.8 L 389.0,402.0 L 387.9,402.2 L 386.4,401.1 L 383.8,397.8 L 382.7,397.2 L 381.0,394.6 L 380.8,393.0 L 380.0,391.4 L 378.4,392.1 L 377.4,390.7 L 375.4,389.4 L 375.0,388.1 L 375.0,388.1 Z" />
+              <path d="M 163.8,399.0 L 161.7,402.9 L 161.6,405.1 L 160.4,408.4 L 159.6,414.6 L 158.9,416.9 L 158.9,418.3 L 157.9,420.2 L 156.8,424.5 L 155.7,426.4 L 154.7,426.3 L 154.0,427.4 L 152.3,430.5 L 152.0,431.9 L 151.6,431.8 L 151.9,432.1 L 151.1,433.0 L 149.6,437.2 L 149.9,439.1 L 150.2,438.6 L 150.8,439.2 L 151.3,437.7 L 151.3,439.1 L 151.9,439.5 L 151.6,439.8 L 151.8,440.4 L 151.7,441.2 L 152.4,442.1 L 151.5,442.5 L 151.2,442.1 L 151.4,441.8 L 151.1,441.8 L 151.3,442.2 L 151.1,443.2 L 150.2,442.4 L 150.5,442.3 L 150.5,441.4 L 150.2,442.3 L 150.0,441.3 L 149.5,441.4 L 149.0,446.1 L 149.3,446.6 L 149.3,446.6 L 149.3,446.6 L 149.3,446.6 L 149.3,446.7 L 149.2,446.7 L 149.1,446.8 L 148.9,446.8 L 148.7,446.9 L 148.1,449.2 L 145.4,447.9 L 145.7,449.2 L 147.5,451.2 L 148.6,453.8 L 148.8,456.8 L 149.7,460.3 L 149.2,461.4 L 149.4,462.3 L 149.2,462.8 L 150.2,465.2 L 151.8,464.7 L 152.9,462.2 L 155.1,449.3 L 157.1,440.7 L 157.2,438.0 L 157.7,436.3 L 157.9,434.0 L 158.2,433.9 L 158.0,433.9 L 159.5,428.4 L 161.4,424.4 L 161.5,422.0 L 163.6,411.3 L 164.7,401.7 L 164.6,400.0 L 163.8,399.0 Z" />
+              <path d="M 247.8,331.4 L 248.2,331.5 L 248.0,332.3 L 248.1,334.2 L 249.1,337.2 L 249.8,337.7 L 250.9,337.2 L 250.9,337.2 L 250.6,337.4 L 250.5,337.4 L 250.9,339.5 L 252.4,340.3 L 254.6,337.0 L 256.4,336.1 L 257.3,334.5 L 256.9,334.4 L 256.9,334.4 L 257.2,334.3 L 256.8,334.1 L 256.6,332.7 L 257.2,332.0 L 257.2,329.0 L 255.8,328.5 L 255.8,327.3 L 255.4,327.0 L 255.7,327.1 L 255.6,326.9 L 255.5,326.8 L 255.4,326.6 L 255.6,326.4 L 255.1,325.9 L 254.8,323.8 L 254.5,323.8 L 254.7,323.8 L 254.5,322.9 L 254.8,323.5 L 255.1,323.4 L 255.2,323.0 L 255.1,323.4 L 255.3,322.9 L 254.8,322.9 L 255.3,322.9 L 255.5,322.1 L 255.0,321.6 L 254.6,322.1 L 255.0,321.4 L 254.8,320.7 L 254.2,321.4 L 254.7,322.7 L 254.5,322.9 L 254.0,321.5 L 254.8,320.3 L 253.6,320.4 L 254.2,320.0 L 254.5,318.9 L 253.3,318.9 L 253.4,320.9 L 253.1,320.2 L 253.1,320.9 L 253.4,320.9 L 253.3,322.0 L 253.0,322.3 L 253.3,321.8 L 252.8,321.5 L 252.7,321.7 L 252.9,322.0 L 252.0,322.6 L 251.2,324.3 L 250.4,327.3 L 248.3,331.4 L 247.8,331.3 L 247.8,331.4 Z" />
+              <path d="M 219.7,314.0 L 220.2,312.4 L 220.5,313.8 L 221.1,313.3 L 221.1,315.1 L 221.4,315.6 L 222.6,313.8 L 223.6,313.4 L 224.0,314.0 L 224.2,313.3 L 223.9,311.0 L 224.1,310.5 L 223.6,310.0 L 224.3,308.5 L 223.5,306.2 L 223.9,303.9 L 223.0,303.8 L 222.8,302.7 L 223.5,302.0 L 222.9,301.5 L 222.6,300.5 L 222.6,299.3 L 223.2,298.5 L 223.0,298.6 L 222.6,299.1 L 222.5,297.3 L 222.8,297.0 L 222.5,297.2 L 222.3,295.7 L 220.8,294.7 L 220.5,293.9 L 220.7,291.0 L 222.4,288.2 L 222.1,288.3 L 221.9,287.2 L 220.9,286.1 L 219.8,286.4 L 218.8,284.0 L 215.6,282.7 L 215.4,285.7 L 217.0,289.8 L 216.9,291.3 L 217.1,292.1 L 217.7,292.7 L 218.5,295.8 L 217.7,300.0 L 216.9,300.9 L 216.0,300.4 L 214.1,301.4 L 214.2,303.3 L 213.3,304.2 L 213.1,309.0 L 212.8,310.1 L 212.4,310.1 L 213.0,310.7 L 213.0,313.1 L 214.0,312.8 L 215.6,313.8 L 216.4,313.0 L 216.5,311.7 L 217.2,311.6 L 218.4,313.3 L 219.7,314.0 Z" />
+              <path d="M 234.9,414.7 L 233.3,416.3 L 233.1,417.3 L 233.5,418.2 L 234.3,417.8 L 234.7,418.4 L 235.4,419.9 L 235.0,420.6 L 235.4,420.0 L 235.9,421.4 L 235.8,420.7 L 236.0,420.6 L 236.0,421.7 L 235.2,423.9 L 235.7,425.3 L 235.6,426.0 L 236.0,426.5 L 236.8,425.0 L 237.5,426.1 L 239.7,425.8 L 237.4,426.9 L 236.3,429.0 L 235.4,429.6 L 235.0,429.3 L 236.0,426.6 L 235.6,426.2 L 231.8,428.7 L 231.3,426.6 L 229.7,425.7 L 230.5,428.5 L 229.4,428.0 L 227.2,430.0 L 227.7,431.7 L 228.6,432.3 L 227.1,433.8 L 226.7,435.3 L 226.6,436.2 L 227.3,437.4 L 226.0,437.9 L 226.7,438.7 L 228.6,438.7 L 228.3,438.8 L 228.3,439.4 L 227.4,438.9 L 228.4,441.6 L 231.1,441.8 L 231.9,441.3 L 233.1,439.4 L 233.8,437.1 L 235.9,432.9 L 238.9,429.6 L 240.8,428.9 L 243.7,429.5 L 248.0,432.2 L 249.5,432.0 L 250.3,430.0 L 250.0,426.6 L 248.7,422.5 L 245.5,420.3 L 237.4,419.4 L 236.1,418.3 L 235.3,415.4 L 234.9,414.7 Z" />
+              <path d="M 145.1,282.7 L 144.0,279.2 L 143.5,273.0 L 141.4,276.5 L 141.4,279.1 L 142.1,282.9 L 143.3,282.7 L 144.2,283.5 L 145.2,285.3 L 145.6,287.4 L 145.2,291.1 L 144.7,293.1 L 144.1,293.7 L 142.8,293.6 L 141.8,295.6 L 141.6,299.9 L 141.9,304.0 L 141.7,304.1 L 142.2,306.7 L 142.9,308.1 L 146.7,308.8 L 147.9,303.9 L 147.9,302.5 L 148.2,302.3 L 147.7,301.5 L 147.8,300.9 L 147.7,301.2 L 147.6,301.0 L 147.8,300.9 L 147.6,300.1 L 147.8,297.8 L 148.7,294.5 L 149.9,292.8 L 149.7,291.4 L 150.3,289.3 L 150.4,288.0 L 149.6,284.7 L 149.4,285.5 L 149.7,285.6 L 149.5,285.8 L 149.7,285.8 L 149.8,287.1 L 150.3,288.2 L 150.3,289.3 L 149.9,290.2 L 149.8,290.9 L 148.9,291.7 L 147.9,292.3 L 147.5,291.9 L 147.0,290.6 L 147.2,290.0 L 146.5,289.6 L 146.1,287.3 L 146.5,286.5 L 147.0,286.8 L 147.1,285.6 L 147.8,286.8 L 148.0,286.8 L 147.7,285.8 L 148.4,285.9 L 146.2,284.4 L 145.1,282.7 Z" />
+              <path d="M 124.5,428.0 L 124.4,428.7 L 124.7,430.0 L 126.3,432.7 L 126.6,435.9 L 128.9,440.5 L 130.6,442.2 L 133.4,448.2 L 135.8,451.3 L 136.5,451.0 L 136.9,449.0 L 138.0,447.9 L 141.5,447.2 L 142.2,446.7 L 141.4,445.3 L 141.7,446.6 L 141.7,446.1 L 142.1,446.5 L 141.3,447.1 L 141.4,445.3 L 141.2,444.6 L 138.7,440.7 L 137.9,440.5 L 138.7,439.7 L 137.5,439.9 L 137.5,440.3 L 138.1,440.8 L 139.5,444.0 L 138.2,442.5 L 138.0,443.7 L 138.0,443.2 L 137.6,443.0 L 137.9,443.8 L 137.4,444.4 L 136.8,443.9 L 135.9,442.1 L 135.6,440.0 L 135.1,439.3 L 135.6,438.4 L 134.6,436.6 L 134.3,436.7 L 135.2,437.9 L 135.2,438.6 L 133.9,441.0 L 133.3,441.1 L 132.9,439.5 L 131.5,438.8 L 130.8,436.4 L 128.8,433.1 L 127.2,432.5 L 125.5,429.7 L 125.3,428.4 L 124.5,428.0 Z" />
+              <path d="M 147.3,415.4 L 146.7,415.4 L 146.9,415.8 L 145.9,416.9 L 145.4,418.1 L 144.3,419.1 L 144.2,418.7 L 144.1,419.8 L 142.6,421.0 L 142.0,422.4 L 140.9,422.7 L 141.2,423.9 L 141.8,424.3 L 141.5,424.8 L 141.6,427.1 L 142.9,429.4 L 142.9,430.9 L 143.9,430.9 L 143.2,431.5 L 143.1,432.3 L 144.0,431.4 L 145.0,431.6 L 144.3,430.5 L 144.7,430.4 L 146.7,431.5 L 147.4,429.4 L 148.2,428.5 L 148.6,428.9 L 148.2,428.4 L 148.4,427.9 L 150.3,427.8 L 150.2,425.9 L 150.5,424.2 L 149.4,424.5 L 149.2,426.0 L 148.5,427.0 L 147.2,426.4 L 146.9,425.4 L 146.8,425.2 L 147.1,424.2 L 147.2,424.4 L 147.0,424.6 L 147.4,424.6 L 147.6,424.0 L 148.2,420.7 L 148.8,419.9 L 148.6,418.6 L 147.6,418.2 L 147.9,416.9 L 147.4,416.4 L 147.5,415.7 L 147.3,415.4 Z" />
+              <path d="M 262.0,322.7 L 261.2,323.6 L 260.4,323.4 L 260.7,324.0 L 260.2,325.0 L 260.3,325.1 L 260.4,325.0 L 260.4,325.8 L 260.3,326.0 L 259.8,325.8 L 260.2,326.2 L 260.5,326.2 L 260.0,327.1 L 260.3,327.4 L 260.0,327.6 L 260.2,328.0 L 260.0,328.6 L 260.3,328.7 L 260.1,329.4 L 260.6,329.3 L 260.6,330.2 L 260.3,329.9 L 260.4,330.3 L 260.5,330.3 L 260.5,330.6 L 261.1,330.3 L 261.6,332.5 L 262.6,332.6 L 262.9,331.7 L 263.2,332.2 L 263.3,331.7 L 262.7,331.4 L 263.0,330.4 L 262.5,329.4 L 262.5,329.3 L 262.5,329.3 L 262.7,329.1 L 262.7,327.6 L 262.5,327.3 L 262.3,323.4 L 262.0,322.7 Z" />
+              <path d="M 174.9,73.7 L 172.8,75.2 L 168.6,75.1 L 167.5,77.0 L 165.6,77.0 L 162.9,78.2 L 162.9,78.7 L 162.8,78.2 L 162.1,80.9 L 160.2,83.1 L 160.1,84.3 L 162.3,86.4 L 163.0,86.0 L 164.3,86.6 L 164.2,87.6 L 165.3,87.9 L 165.2,88.4 L 165.8,90.6 L 166.6,89.9 L 166.8,90.1 L 166.6,90.5 L 167.3,90.4 L 170.3,87.7 L 171.7,84.8 L 172.1,81.2 L 171.0,80.5 L 171.7,79.2 L 174.9,77.8 L 176.2,78.2 L 177.0,76.6 L 176.8,77.8 L 177.5,78.9 L 177.0,80.2 L 177.5,80.0 L 177.7,74.6 L 174.9,73.7 Z" />
+              <path d="M 27.8,172.6 L 28.9,173.4 L 32.5,179.1 L 33.1,182.5 L 34.5,186.1 L 35.9,186.4 L 34.5,185.1 L 34.9,183.7 L 37.6,183.1 L 37.9,182.5 L 38.1,179.6 L 37.9,177.5 L 38.1,177.3 L 37.5,176.9 L 36.7,175.0 L 37.0,174.1 L 37.2,172.2 L 37.8,171.1 L 37.4,170.1 L 37.5,169.2 L 37.0,170.4 L 36.0,170.0 L 36.2,169.8 L 36.0,170.0 L 35.7,170.7 L 35.0,170.7 L 33.2,173.2 L 32.0,172.4 L 31.6,171.1 L 32.1,170.8 L 31.3,170.4 L 29.9,171.1 L 28.9,172.6 L 27.8,171.8 L 27.8,172.6 Z" />
+              <path d="M 16.3,300.8 L 15.5,299.7 L 15.4,296.9 L 16.7,293.8 L 15.7,292.3 L 16.0,291.0 L 15.3,288.2 L 15.5,287.7 L 15.1,287.5 L 15.5,286.7 L 15.4,286.1 L 15.2,286.4 L 15.2,285.9 L 15.4,286.0 L 15.5,284.7 L 15.1,284.2 L 15.2,282.4 L 14.9,281.5 L 15.3,281.8 L 15.3,280.9 L 14.5,280.0 L 13.9,277.3 L 14.0,276.7 L 13.3,275.0 L 13.3,273.7 L 12.6,273.2 L 11.9,273.8 L 12.1,273.9 L 12.5,273.9 L 12.9,275.2 L 13.7,280.7 L 14.5,293.6 L 15.3,301.1 L 16.3,300.8 Z" />
+              <path d="M 27.1,352.9 L 26.8,352.5 L 24.9,354.8 L 25.5,352.9 L 25.2,352.9 L 23.9,354.8 L 23.7,356.4 L 26.2,361.2 L 28.9,370.6 L 30.3,372.4 L 31.7,372.6 L 31.4,372.2 L 32.1,370.1 L 31.5,370.2 L 31.2,367.0 L 30.1,364.6 L 31.1,362.7 L 30.4,359.5 L 30.5,358.7 L 29.7,357.9 L 29.1,358.4 L 28.8,359.8 L 28.2,359.3 L 27.8,358.1 L 28.1,357.1 L 27.9,356.6 L 28.1,353.7 L 27.1,352.9 Z" />
+              <path d="M 61.8,146.1 L 57.5,147.4 L 57.1,148.2 L 57.8,148.8 L 58.6,151.4 L 60.3,153.7 L 60.3,152.7 L 61.0,152.5 L 61.0,151.4 L 61.6,149.6 L 61.7,149.7 L 61.6,150.5 L 61.6,150.5 L 61.9,150.1 L 62.3,150.0 L 62.7,150.5 L 63.7,149.5 L 63.9,148.8 L 63.1,148.6 L 62.9,147.6 L 64.2,146.3 L 61.8,146.1 Z" />
+          </g>
+        </svg>
+        <div class="map-hint">Tryk på en klynge</div>
+        <div id="cluster-layer"></div>
+        <div class="map-stats"><b>1.151</b> spillere · <b>846</b> klubber</div>
+      </div>
+    </section>
+
+    <!-- ===== Screen: Rekorder ===== -->
+    <section class="screen" id="screen-rekorder">
+      <div class="page-head">
+        <h1>Rekordlister</h1>
+        <p>Rekorder og statistik for alle danske A-landsholdsspillere</p>
+      </div>
+      <div class="chip-wrap" id="rekorder-chips">
+        <button class="chip active" data-tab="maal">Flest mål</button>
+        <button class="chip" data-tab="kampe">Flest kampe</button>
+        <button class="chip" data-tab="snit">Bedste målsnit</button>
+        <button class="chip" data-tab="sejr">Sejrsprocent</button>
+        <button class="chip" data-tab="turneringer">EM/VM-slutrunder</button>
+        <button class="chip" data-tab="saesoner">Flest sæsoner</button>
+        <button class="chip" data-tab="par">Kampe sammen</button>
+        <button class="chip" data-tab="klubber">Barndomsklubber</button>
+        <button class="chip" data-tab="kommuner">Kommuner</button>
+      </div>
+      <div class="stat-list-head">
+        <div style="width:24px">#</div>
+        <div style="flex:1">Spiller</div>
+        <div style="width:48px;text-align:right">Mål</div>
+        <div style="width:56px;text-align:right">Kampe</div>
+      </div>
+      <div id="stat-rows"></div>
+    </section>
+
+    <!-- ===== Screen: Kurven ===== -->
+    <section class="screen" id="screen-kurven">
+      <div class="placeholder">
+        <div class="big">📈</div>
+        <h2>Landsholdskurven</h2>
+        <p>Uændret i denne prototype — fokus her er på Kort og Rekorder. Bundnavigationen virker, så du kan se hvordan den samlede struktur hænger sammen.</p>
+      </div>
+    </section>
+
+    <!-- ===== Screen: Quiz ===== -->
+    <section class="screen" id="screen-quiz">
+      <div class="placeholder">
+        <div class="big">❓</div>
+        <h2>Quiz</h2>
+        <p>Uændret i denne prototype — se Kort og Rekorder for de nye idéer (klyngede markører, bundnavigation, faner der ikke scroller væk).</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ===== Bundnavigation ===== -->
+  <nav class="bottom-nav">
+    <button class="nav-item active" data-screen="kort">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M10 2.5c-3 3-3 6.5-3 8.5s1.5 3.5 3 6.5c1.5-3 3-4.5 3-6.5s0-5.5-3-8.5z" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="9" r="1.6" stroke="currentColor" stroke-width="1.3"/></svg>
+      Kort
+    </button>
+    <button class="nav-item" data-screen="rekorder">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M4 16V9M10 16V4M16 16v-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      Rekorder
+    </button>
+    <button class="nav-item" data-screen="kurven">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M3 14l4-5 3 3 6-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Kurven
+    </button>
+    <button class="nav-item" data-screen="quiz">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M7 7a3 3 0 115 2.2c-.9.6-1.5 1.1-1.5 2.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="10.5" cy="15" r="0.9" fill="currentColor"/></svg>
+      Quiz
+    </button>
+  </nav>
+
+  <!-- ===== Bottom sheets ===== -->
+  <div class="sheet-overlay" id="sheet-overlay" onclick="closeSheet()"></div>
+
+  <div class="sheet" id="cluster-sheet">
+    <div class="sheet-handle"><div class="pill"></div></div>
+    <div class="sheet-header">
+      <div class="avatar" id="cs-avatar">FCK</div>
+      <div>
+        <div class="name" id="cs-name">København</div>
+        <div class="sub" id="cs-sub">187 spillere</div>
+      </div>
+    </div>
+    <div class="sheet-body" id="cs-body"></div>
+  </div>
+
+  <div class="sheet" id="filter-sheet">
+    <div class="sheet-handle"><div class="pill"></div></div>
+    <div class="sheet-header" style="border-bottom:none">
+      <div class="name">Filtre</div>
+    </div>
+    <div class="sheet-body">
+      <div class="filter-section">
+        <div class="filter-label">Vis</div>
+        <div class="pill-row">
+          <div class="pill-opt active">Alle klubber</div>
+          <div class="pill-opt">Barndomsklub</div>
+          <div class="pill-opt">Fødested</div>
+        </div>
+        <div class="filter-label">Køn</div>
+        <div class="pill-row">
+          <div class="pill-opt active">Alle</div>
+          <div class="pill-opt">Mænd</div>
+          <div class="pill-opt">Kvinder</div>
+        </div>
+        <div class="filter-label">Fødselsår: 1870–2010</div>
+        <div class="pill-row"><div style="width:100%;height:4px;background:var(--red);border-radius:2px;margin-bottom:16px"></div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ---- Klynge-data: REELT beregnet ud fra data/players.json (samme gruppering
+// som "Alle klubber" i js/app.js, grid-klynget i ca. 22x22 km celler).
+// 420 unikke danske klub-pins → 106 klynger. Ikke live-forbundet til siden,
+// men tallene/spillerne er ægte, ikke opdigtede eksempler.
+const clusters = [{"x": 246.3, "y": 317.3, "club": "Brøndby IF", "abbr": "BIF", "n": 668, "clubs": 88, "players": [{"name": "Sanne Troelsgaard Nielsen", "matches": 197, "goals": 57}, {"name": "Katrine Veje", "matches": 171, "goals": 9}, {"name": "Theresa Eslund", "matches": 133, "goals": 5}, {"name": "Line Røddik", "matches": 132, "goals": 13}, {"name": "Peter Schmeichel", "matches": 129, "goals": 1}, {"name": "Dennis Rommedahl", "matches": 126, "goals": 21}, {"name": "Cathrine Paaske Sørensen", "matches": 121, "goals": 36}, {"name": "Anne Dot Eggers Nielsen", "matches": 118, "goals": 26}, {"name": "Nanna Christiansen", "matches": 112, "goals": 12}, {"name": "Lene Jensen", "matches": 109, "goals": 26}, {"name": "Michael Laudrup", "matches": 104, "goals": 37}, {"name": "Pierre-Emile Højbjerg", "matches": 101, "goals": 11}, {"name": "Simone Boye Sørensen", "matches": 100, "goals": 5}, {"name": "Julie Rydahl Bukh", "matches": 91, "goals": 10}, {"name": "Lars Olsen", "matches": 84, "goals": 4}, {"name": "Stina Lykke Petersen", "matches": 83, "goals": 0}, {"name": "Brian Laudrup", "matches": 82, "goals": 21}, {"name": "Andreas Christensen", "matches": 81, "goals": 4}, {"name": "Stine Larsen", "matches": 80, "goals": 22}, {"name": "Gitte Andersen", "matches": 79, "goals": 1}, {"name": "Kim Vilfort", "matches": 77, "goals": 14}, {"name": "Mia Brogaard", "matches": 76, "goals": 5}, {"name": "Daniel Agger", "matches": 75, "goals": 12}, {"name": "John \"Faxe\" Jensen", "matches": 69, "goals": 4}, {"name": "Tine Cederkvist", "matches": 68, "goals": 0}, {"name": "Christina Ørntoft", "matches": 67, "goals": 1}, {"name": "Ebbe Sand", "matches": 66, "goals": 22}, {"name": "Sofie Svava", "matches": 66, "goals": 5}, {"name": "Marc Rieper", "matches": 61, "goals": 2}, {"name": "Michael Krohn-Dehli", "matches": 59, "goals": 6}, {"name": "Jannik Vestergaard", "matches": 59, "goals": 3}, {"name": "Jes Høgh", "matches": 57, "goals": 1}, {"name": "Bettina Falk", "matches": 56, "goals": 0}, {"name": "Helle Bjerregaard", "matches": 56, "goals": 0}, {"name": "Kent Nielsen", "matches": 54, "goals": 3}, {"name": "Jens Stryger Larsen", "matches": 54, "goals": 3}, {"name": "Rikke Læntver Sevecke", "matches": 54, "goals": 5}, {"name": "Nicoline Sørensen", "matches": 54, "goals": 8}, {"name": "Maiken Pape", "matches": 48, "goals": 23}, {"name": "Thomas Kahlenberg", "matches": 47, "goals": 5}]}, {"x": 134.3, "y": 364.3, "club": "Odense Boldklub", "abbr": "OB", "n": 172, "clubs": 20, "players": [{"name": "Katrine Veje", "matches": 171, "goals": 9}, {"name": "Christian Eriksen", "matches": 151, "goals": 46}, {"name": "Merete Pedersen", "matches": 136, "goals": 65}, {"name": "Thomas Helveg", "matches": 108, "goals": 2}, {"name": "Lene Terp", "matches": 105, "goals": 4}, {"name": "Thomas Sørensen", "matches": 101, "goals": 0}, {"name": "Gitte Krogh", "matches": 90, "goals": 46}, {"name": "Stina Lykke Petersen", "matches": 83, "goals": 0}, {"name": "Lars Jacobsen", "matches": 81, "goals": 1}, {"name": "Heidi Johansen", "matches": 80, "goals": 0}, {"name": "Brian Steen Nielsen", "matches": 66, "goals": 3}, {"name": "Lotte Bagge", "matches": 63, "goals": 6}, {"name": "Rikke Holm", "matches": 60, "goals": 9}, {"name": "Annie Gam-Pedersen", "matches": 56, "goals": 15}, {"name": "Annette Thychosen", "matches": 46, "goals": 13}, {"name": "Allan Nielsen", "matches": 44, "goals": 7}, {"name": "Michael Schjønberg", "matches": 44, "goals": 3}, {"name": "Stig Tøfting", "matches": 41, "goals": 2}, {"name": "Ole Rasmussen", "matches": 41, "goals": 1}, {"name": "Janne Rasmussen", "matches": 40, "goals": 11}, {"name": "Nadia Kjældgaard", "matches": 36, "goals": 3}, {"name": "Lars Elstrup", "matches": 34, "goals": 13}, {"name": "Hanne Nissen", "matches": 29, "goals": 10}, {"name": "Maja Kildemoes", "matches": 27, "goals": 1}, {"name": "Michael Silberbauer", "matches": 25, "goals": 1}, {"name": "Karoline S. Nielsen", "matches": 24, "goals": 5}, {"name": "Carl Bertelsen", "matches": 20, "goals": 9}, {"name": "Kai Johansen", "matches": 20, "goals": 0}, {"name": "Marlene Kristensen", "matches": 20, "goals": 1}, {"name": "Mogens Therkildsen", "matches": 19, "goals": 0}, {"name": "Kim Christofte", "matches": 19, "goals": 1}, {"name": "Holger Seebach", "matches": 17, "goals": 9}, {"name": "John Eriksen", "matches": 17, "goals": 6}, {"name": "Kasper Bøgelund", "matches": 17, "goals": 0}, {"name": "Marie Herping", "matches": 17, "goals": 0}, {"name": "Allan Hansen", "matches": 16, "goals": 3}, {"name": "Jørgen Leschly Sørensen", "matches": 14, "goals": 8}, {"name": "Julie Hauge Andersson", "matches": 14, "goals": 2}, {"name": "Johnny Anker Hansen", "matches": 12, "goals": 0}, {"name": "Søren Andersen", "matches": 12, "goals": 0}]}, {"x": 123.7, "y": 250.9, "club": "AGF", "abbr": "AGF", "n": 134, "clubs": 16, "players": [{"name": "Martin Jørgensen", "matches": 102, "goals": 12}, {"name": "John Sivebæk", "matches": 87, "goals": 1}, {"name": "Brian Steen Nielsen", "matches": 66, "goals": 3}, {"name": "Flemming Povlsen", "matches": 62, "goals": 21}, {"name": "Marc Rieper", "matches": 61, "goals": 2}, {"name": "Henning Enoksen", "matches": 54, "goals": 29}, {"name": "Kent Nielsen", "matches": 54, "goals": 3}, {"name": "Jørgen Olesen", "matches": 42, "goals": 2}, {"name": "Stig Tøfting", "matches": 41, "goals": 2}, {"name": "Troels Rasmussen", "matches": 35, "goals": 0}, {"name": "Jakob Poulsen", "matches": 35, "goals": 2}, {"name": "Jan Bartram", "matches": 32, "goals": 5}, {"name": "Henry From", "matches": 31, "goals": 0}, {"name": "Aage Rou Jensen", "matches": 30, "goals": 11}, {"name": "Lars Bastrup", "matches": 30, "goals": 10}, {"name": "Henrik Dalsgaard", "matches": 26, "goals": 1}, {"name": "Jacob Laursen", "matches": 25, "goals": 0}, {"name": "Hans Christian Nielsen", "matches": 25, "goals": 0}, {"name": "Henning Jensen", "matches": 21, "goals": 9}, {"name": "Viktor Fischer", "matches": 21, "goals": 3}, {"name": "Claus Thomsen", "matches": 20, "goals": 0}, {"name": "Bjørn Kristensen", "matches": 20, "goals": 2}, {"name": "Leon Andreasen", "matches": 20, "goals": 3}, {"name": "Søren Larsen", "matches": 20, "goals": 11}, {"name": "Per Frimann", "matches": 17, "goals": 1}, {"name": "Johnny Mølby", "matches": 16, "goals": 0}, {"name": "Torben Piechnik", "matches": 15, "goals": 0}, {"name": "Morten \"Duncan\" Rasmussen", "matches": 13, "goals": 4}, {"name": "Søren Andersen", "matches": 12, "goals": 0}, {"name": "Frank Pingel", "matches": 11, "goals": 5}, {"name": "Søren Vadstrup Jensen", "matches": 11, "goals": 0}, {"name": "Lasse Vibe", "matches": 11, "goals": 1}, {"name": "Lars Lundkvist", "matches": 10, "goals": 1}, {"name": "Morten Donnerup", "matches": 10, "goals": 1}, {"name": "Albert Grønbæk Erlykke", "matches": 10, "goals": 1}, {"name": "John Amdisen", "matches": 9, "goals": 0}, {"name": "Frank Olsen", "matches": 9, "goals": 0}, {"name": "Henrik Risom", "matches": 9, "goals": 0}, {"name": "Sarah Dyrehauge", "matches": 9, "goals": 2}, {"name": "Knud Børge Overgaard", "matches": 8, "goals": 0}]}, {"x": 93.3, "y": 310.4, "club": "Vejle Boldklub", "abbr": "VB", "n": 118, "clubs": 17, "players": [{"name": "Katrine Veje", "matches": 171, "goals": 9}, {"name": "Merete Pedersen", "matches": 136, "goals": 65}, {"name": "Anne Dot Eggers Nielsen", "matches": 118, "goals": 26}, {"name": "Lene Terp", "matches": 105, "goals": 4}, {"name": "Thomas Sørensen", "matches": 101, "goals": 0}, {"name": "Julie Rydahl Bukh", "matches": 91, "goals": 10}, {"name": "John Sivebæk", "matches": 87, "goals": 1}, {"name": "Preben Elkjær", "matches": 69, "goals": 38}, {"name": "Brian Steen Nielsen", "matches": 66, "goals": 3}, {"name": "Thomas Gravesen", "matches": 66, "goals": 5}, {"name": "Allan Simonsen", "matches": 55, "goals": 20}, {"name": "Henning Enoksen", "matches": 54, "goals": 29}, {"name": "Annette Thychosen", "matches": 46, "goals": 13}, {"name": "Johnny Terney Hansen", "matches": 45, "goals": 3}, {"name": "Karen Holmgaard", "matches": 38, "goals": 3}, {"name": "Ulrik le Fevre", "matches": 37, "goals": 7}, {"name": "Nadia Kjældgaard", "matches": 36, "goals": 3}, {"name": "Troels Rasmussen", "matches": 35, "goals": 0}, {"name": "Poul Jensen", "matches": 32, "goals": 0}, {"name": "Kristine Pedersen", "matches": 31, "goals": 7}, {"name": "Sara Holmgaard", "matches": 31, "goals": 4}, {"name": "John Lauridsen", "matches": 27, "goals": 3}, {"name": "Peter Ankersen", "matches": 27, "goals": 1}, {"name": "Bent Christensen Arensøe", "matches": 26, "goals": 8}, {"name": "Jacob Laursen", "matches": 25, "goals": 0}, {"name": "Brian Priske", "matches": 24, "goals": 0}, {"name": "Helle Nielsen", "matches": 20, "goals": 1}, {"name": "John Larsen", "matches": 19, "goals": 1}, {"name": "Tommy Troelsen", "matches": 16, "goals": 5}, {"name": "Kenneth Brylle Larsen", "matches": 16, "goals": 2}, {"name": "Johnny Mølby", "matches": 16, "goals": 0}, {"name": "Leif Sørensen", "matches": 15, "goals": 3}, {"name": "Ulla Knudsen", "matches": 14, "goals": 0}, {"name": "Lise Søndergaard", "matches": 14, "goals": 1}, {"name": "Rasmus Würtz", "matches": 12, "goals": 0}, {"name": "Sine Hovesen", "matches": 12, "goals": 1}, {"name": "Jesper Christiansen", "matches": 11, "goals": 0}, {"name": "Sandra Jørgensen", "matches": 11, "goals": 0}, {"name": "Jørgen Markussen", "matches": 10, "goals": 1}, {"name": "Morten Donnerup", "matches": 10, "goals": 1}]}, {"x": 232.6, "y": 350.3, "club": "Køge Boldklub", "abbr": "KB", "n": 81, "clubs": 11, "players": [{"name": "Jon Dahl Tomasson", "matches": 112, "goals": 52}, {"name": "Lars Olsen", "matches": 84, "goals": 4}, {"name": "Erik Pondal Jensen", "matches": 20, "goals": 0}, {"name": "Søren Larsen", "matches": 20, "goals": 11}, {"name": "Jørgen Kristensen", "matches": 19, "goals": 3}, {"name": "Poul Erik Petersen", "matches": 15, "goals": 6}, {"name": "Keld Pedersen", "matches": 15, "goals": 3}, {"name": "Edvin Hansen", "matches": 14, "goals": 3}, {"name": "Børge Bastholm Larsen", "matches": 11, "goals": 0}, {"name": "Karl Hansen", "matches": 11, "goals": 0}, {"name": "Anja Thorsen Duckert", "matches": 11, "goals": 0}, {"name": "Peter Poulsen", "matches": 9, "goals": 0}, {"name": "Hilmar Staalgaard", "matches": 7, "goals": 2}, {"name": "Martin Retov", "matches": 6, "goals": 0}, {"name": "Knud Ove Sørensen", "matches": 5, "goals": 1}, {"name": "Torben Frank", "matches": 5, "goals": 0}, {"name": "Henning Elting", "matches": 4, "goals": 0}, {"name": "John Kramer", "matches": 4, "goals": 2}, {"name": "Peter Skov-Jensen", "matches": 4, "goals": 0}, {"name": "Claus Larsen", "matches": 3, "goals": 0}, {"name": "Egon Rasmussen", "matches": 2, "goals": 2}, {"name": "Arne Rastad", "matches": 2, "goals": 0}, {"name": "Kurt Jørgensen", "matches": 2, "goals": 0}, {"name": "Erik Rasmussen", "matches": 2, "goals": 0}, {"name": "Frede Jensen", "matches": 1, "goals": 0}, {"name": "Leif Petersen", "matches": 1, "goals": 0}, {"name": "Hans Andersen", "matches": 1, "goals": 0}, {"name": "Christian Offenberg", "matches": 1, "goals": 0}, {"name": "Nadia Nadim", "matches": 108, "goals": 38}, {"name": "Simone Boye Sørensen", "matches": 100, "goals": 5}, {"name": "Stina Lykke Petersen", "matches": 83, "goals": 0}, {"name": "Mille Gejl", "matches": 47, "goals": 7}, {"name": "Rikke Marie Madsen", "matches": 33, "goals": 1}, {"name": "Mie Leth Karshøj", "matches": 26, "goals": 0}, {"name": "Alexander Bah", "matches": 23, "goals": 1}, {"name": "Emma Færge", "matches": 20, "goals": 1}, {"name": "Isabella Bryld Obaze", "matches": 16, "goals": 1}, {"name": "Cecilie Fløe", "matches": 10, "goals": 2}, {"name": "Steven Lustü", "matches": 9, "goals": 0}, {"name": "Martin Vingaard", "matches": 9, "goals": 1}]}, {"x": 113.7, "y": 53.0, "club": "Fortuna Hjørring", "abbr": "FH", "n": 72, "clubs": 4, "players": [{"name": "Johanna Rasmussen", "matches": 153, "goals": 41}, {"name": "Cathrine Paaske Sørensen", "matches": 121, "goals": 36}, {"name": "Nadia Nadim", "matches": 108, "goals": 38}, {"name": "Mariann Gajhede", "matches": 107, "goals": 6}, {"name": "Frederikke Thøgersen", "matches": 98, "goals": 3}, {"name": "Janni Arnth Jensen", "matches": 93, "goals": 2}, {"name": "Julie Rydahl Bukh", "matches": 91, "goals": 10}, {"name": "Sofie Junge Pedersen", "matches": 89, "goals": 7}, {"name": "Heidi Johansen", "matches": 80, "goals": 0}, {"name": "Helle Jensen", "matches": 77, "goals": 38}, {"name": "Christina Petersen", "matches": 70, "goals": 10}, {"name": "Line S. Jensen", "matches": 66, "goals": 2}, {"name": "Dorthe Larsen", "matches": 65, "goals": 0}, {"name": "Lotte Bagge", "matches": 63, "goals": 6}, {"name": "Janne Madsen", "matches": 61, "goals": 4}, {"name": "Helle Bjerregaard", "matches": 56, "goals": 0}, {"name": "Signe Bruun", "matches": 55, "goals": 25}, {"name": "Amalie Vangsgaard", "matches": 49, "goals": 14}, {"name": "Emma Snerle", "matches": 49, "goals": 3}, {"name": "Birgit Christensen", "matches": 48, "goals": 8}, {"name": "Christina Bonde", "matches": 46, "goals": 9}, {"name": "Janne Rasmussen", "matches": 40, "goals": 11}, {"name": "Marianne Jensen", "matches": 40, "goals": 5}, {"name": "Lise Overgaard Munk", "matches": 39, "goals": 5}, {"name": "Karen Holmgaard", "matches": 38, "goals": 3}, {"name": "Camilla Sand Andersen", "matches": 33, "goals": 8}, {"name": "Lene Madsen", "matches": 32, "goals": 10}, {"name": "Sara Thrige", "matches": 32, "goals": 2}, {"name": "Pernille Obel", "matches": 31, "goals": 8}, {"name": "Kristine Pedersen", "matches": 31, "goals": 7}, {"name": "Sara Holmgaard", "matches": 31, "goals": 4}, {"name": "Hanne Sand Christensen", "matches": 29, "goals": 0}, {"name": "Luna Gevitz", "matches": 25, "goals": 0}, {"name": "Karoline S. Nielsen", "matches": 24, "goals": 5}, {"name": "Caroline Møller Hansen", "matches": 22, "goals": 0}, {"name": "Marie Herping", "matches": 17, "goals": 0}, {"name": "Ulla Christensen", "matches": 15, "goals": 0}, {"name": "Jette Andersen", "matches": 15, "goals": 1}, {"name": "Julie Hauge Andersson", "matches": 14, "goals": 2}, {"name": "Karina Christensen", "matches": 14, "goals": 1}]}, {"x": 112.1, "y": 118.5, "club": "AaB", "abbr": "AaB", "n": 69, "clubs": 12, "players": [{"name": "Jesper Grønkjær", "matches": 80, "goals": 5}, {"name": "Joakim Mæhle", "matches": 63, "goals": 12}, {"name": "Henning Munk Jensen", "matches": 62, "goals": 1}, {"name": "Jes Høgh", "matches": 57, "goals": 1}, {"name": "Kjeld Thorst", "matches": 26, "goals": 6}, {"name": "Henrik Dalsgaard", "matches": 26, "goals": 1}, {"name": "Michael Silberbauer", "matches": 25, "goals": 1}, {"name": "Brian Priske", "matches": 24, "goals": 0}, {"name": "Peter Møller", "matches": 20, "goals": 5}, {"name": "Bjørn Kristensen", "matches": 20, "goals": 2}, {"name": "Mikkel Beck", "matches": 19, "goals": 3}, {"name": "Ove Flindt Bjerg", "matches": 18, "goals": 1}, {"name": "Kasper Bøgelund", "matches": 17, "goals": 0}, {"name": "Johnny Mølby", "matches": 16, "goals": 0}, {"name": "Peter Rasmussen", "matches": 13, "goals": 2}, {"name": "Morten \"Duncan\" Rasmussen", "matches": 13, "goals": 4}, {"name": "Rasmus Würtz", "matches": 12, "goals": 0}, {"name": "Søren Andersen", "matches": 12, "goals": 0}, {"name": "Kaj Paulsen", "matches": 11, "goals": 0}, {"name": "Thomas Enevoldsen", "matches": 11, "goals": 1}, {"name": "Egon Johansen", "matches": 10, "goals": 0}, {"name": "Jens Steffensen", "matches": 9, "goals": 1}, {"name": "Casper Sloth", "matches": 8, "goals": 0}, {"name": "Jores Okore", "matches": 8, "goals": 0}, {"name": "Kasper Kusk", "matches": 8, "goals": 0}, {"name": "Kasper Høgh", "matches": 8, "goals": 1}, {"name": "Lucas Andersen", "matches": 7, "goals": 0}, {"name": "Cornelia Kramer", "matches": 7, "goals": 1}, {"name": "Søren Frederiksen", "matches": 6, "goals": 1}, {"name": "Ole Tobiasen", "matches": 6, "goals": 1}, {"name": "Line Geltzer Johansen", "matches": 6, "goals": 0}, {"name": "Erik Bo Andersen", "matches": 6, "goals": 0}, {"name": "Arne Marinus Toft", "matches": 5, "goals": 1}, {"name": "Flemming Nielsen", "matches": 5, "goals": 0}, {"name": "Michael Jakobsen", "matches": 5, "goals": 0}, {"name": "Svend Sanvig", "matches": 4, "goals": 0}, {"name": "Ernst Nielsen", "matches": 4, "goals": 0}, {"name": "Alfred Hansen", "matches": 4, "goals": 0}, {"name": "Orla Brixler", "matches": 4, "goals": 0}, {"name": "Jakob Ahlmann Nielsen", "matches": 3, "goals": 0}]}, {"x": 29.4, "y": 350.1, "club": "Esbjerg fB", "abbr": "EfB", "n": 60, "clubs": 5, "players": [{"name": "Jens Jørn Bertelsen", "matches": 69, "goals": 2}, {"name": "Martin Braithwaite", "matches": 69, "goals": 10}, {"name": "Allan Nielsen", "matches": 44, "goals": 7}, {"name": "Michael Schjønberg", "matches": 44, "goals": 3}, {"name": "Jens Jørgen Hansen", "matches": 39, "goals": 0}, {"name": "Jens Peder Hansen", "matches": 38, "goals": 18}, {"name": "Jakob Poulsen", "matches": 35, "goals": 2}, {"name": "Eigil Nielsen", "matches": 28, "goals": 0}, {"name": "John Lauridsen", "matches": 27, "goals": 3}, {"name": "Peter Ankersen", "matches": 27, "goals": 1}, {"name": "Ole Kjær", "matches": 26, "goals": 0}, {"name": "Niki Zimling", "matches": 24, "goals": 1}, {"name": "Jens Petersen", "matches": 21, "goals": 1}, {"name": "John Madsen", "matches": 20, "goals": 0}, {"name": "Carl Bertelsen", "matches": 20, "goals": 9}, {"name": "Ole Kirketerp Madsen", "matches": 18, "goals": 0}, {"name": "Erik Terkelsen", "matches": 17, "goals": 0}, {"name": "Hans Viggo Jensen", "matches": 15, "goals": 1}, {"name": "Erik Gaardhøje", "matches": 14, "goals": 0}, {"name": "Egon Jensen", "matches": 12, "goals": 4}, {"name": "Johnny Anker Hansen", "matches": 12, "goals": 0}, {"name": "Børge Enemark", "matches": 11, "goals": 0}, {"name": "Jan Kristiansen", "matches": 11, "goals": 0}, {"name": "Frederik Rønnow", "matches": 10, "goals": 0}, {"name": "Ove Hansen", "matches": 9, "goals": 0}, {"name": "Martin Vingaard", "matches": 9, "goals": 1}, {"name": "Anders Dreyer", "matches": 9, "goals": 3}, {"name": "Viggo Jensen", "matches": 8, "goals": 0}, {"name": "Jonas Knudsen", "matches": 7, "goals": 0}, {"name": "Anders Møller Christensen", "matches": 6, "goals": 0}, {"name": "Philip Billing", "matches": 6, "goals": 0}, {"name": "Jørgen Iversen", "matches": 5, "goals": 1}, {"name": "Søren Andersen", "matches": 5, "goals": 0}, {"name": "Hans Jørgen Christiansen", "matches": 5, "goals": 0}, {"name": "Michael Jakobsen", "matches": 5, "goals": 0}, {"name": "Jesper Kristensen", "matches": 4, "goals": 0}, {"name": "Knud Pedersen", "matches": 4, "goals": 0}, {"name": "Leif Hansen", "matches": 4, "goals": 0}, {"name": "Peter Skov-Jensen", "matches": 4, "goals": 0}, {"name": "Leon Jessen", "matches": 4, "goals": 0}]}, {"x": 54.5, "y": 254.1, "club": "FC Midtjylland", "abbr": "FCM", "n": 51, "clubs": 9, "players": [{"name": "Sanne Troelsgaard Nielsen", "matches": 197, "goals": 57}, {"name": "Simon Kjær", "matches": 132, "goals": 5}, {"name": "Martin Braithwaite", "matches": 69, "goals": 10}, {"name": "Joachim Christian Andersen", "matches": 55, "goals": 2}, {"name": "Rasmus Nissen", "matches": 38, "goals": 2}, {"name": "Jakob Poulsen", "matches": 35, "goals": 2}, {"name": "Simon Poulsen", "matches": 31, "goals": 0}, {"name": "Henrik Dalsgaard", "matches": 26, "goals": 1}, {"name": "Pione Sisto", "matches": 26, "goals": 1}, {"name": "Brian Priske", "matches": 24, "goals": 0}, {"name": "Viktor Fischer", "matches": 21, "goals": 3}, {"name": "Gustav Isaksen", "matches": 19, "goals": 7}, {"name": "Morten \"Duncan\" Rasmussen", "matches": 13, "goals": 4}, {"name": "Lasse Vibe", "matches": 11, "goals": 1}, {"name": "Anders Dreyer", "matches": 9, "goals": 3}, {"name": "Thomas Røll Larsen", "matches": 8, "goals": 1}, {"name": "Morten Skoubo", "matches": 6, "goals": 1}, {"name": "Jonas Borring", "matches": 6, "goals": 1}, {"name": "Philip Billing", "matches": 6, "goals": 0}, {"name": "Dennis Sørensen", "matches": 5, "goals": 0}, {"name": "Erik Sviatchenko", "matches": 5, "goals": 1}, {"name": "Martin Albrechtsen", "matches": 4, "goals": 0}, {"name": "Peter Skov-Jensen", "matches": 4, "goals": 0}, {"name": "Leon Jessen", "matches": 4, "goals": 0}, {"name": "Mikkel Thygesen", "matches": 3, "goals": 0}, {"name": "Jakob Ahlmann Nielsen", "matches": 3, "goals": 0}, {"name": "Christopher Poulsen", "matches": 2, "goals": 0}, {"name": "Jesper Juelsgård Kristensen", "matches": 2, "goals": 0}, {"name": "Kian Hansen", "matches": 2, "goals": 0}, {"name": "Bo Hansen", "matches": 1, "goals": 0}, {"name": "Thomas Frandsen", "matches": 1, "goals": 0}, {"name": "Danny Olsen", "matches": 1, "goals": 0}, {"name": "Jonas Lössl", "matches": 1, "goals": 0}, {"name": "Mikael Uhre", "matches": 1, "goals": 0}, {"name": "Steffen Højer", "matches": 1, "goals": 0}, {"name": "Sofie Vendelbo", "matches": 1, "goals": 0}, {"name": "Jens Risager", "matches": 13, "goals": 0}, {"name": "Iver Schriver", "matches": 5, "goals": 6}, {"name": "Max Rasmussen", "matches": 5, "goals": 0}, {"name": "Johnny Hansen", "matches": 2, "goals": 0}]}, {"x": 82.4, "y": 351.1, "club": "Kolding IF", "abbr": "KIF", "n": 43, "clubs": 7, "players": [{"name": "Sanne Troelsgaard Nielsen", "matches": 197, "goals": 57}, {"name": "Stina Lykke Petersen", "matches": 83, "goals": 0}, {"name": "Mille Gejl", "matches": 47, "goals": 7}, {"name": "Jan Mølby", "matches": 33, "goals": 2}, {"name": "Sara Thrige", "matches": 32, "goals": 2}, {"name": "Lene Christensen", "matches": 31, "goals": 0}, {"name": "Niki Zimling", "matches": 24, "goals": 1}, {"name": "Emma Færge", "matches": 20, "goals": 1}, {"name": "Knud Engedal", "matches": 17, "goals": 0}, {"name": "Johnny Mølby", "matches": 16, "goals": 0}, {"name": "Isabella Bryld Obaze", "matches": 16, "goals": 1}, {"name": "Jørgen Markussen", "matches": 10, "goals": 1}, {"name": "Cecilie Fløe", "matches": 10, "goals": 2}, {"name": "Sarah Dyrehauge", "matches": 9, "goals": 2}, {"name": "Lotte Troelsgaard Nielsen", "matches": 8, "goals": 0}, {"name": "Ole Skouboe", "matches": 6, "goals": 0}, {"name": "Sif Rykær", "matches": 6, "goals": 0}, {"name": "Iver Schriver", "matches": 5, "goals": 6}, {"name": "Leif Hansen", "matches": 4, "goals": 0}, {"name": "Alan Hansen", "matches": 2, "goals": 0}, {"name": "Laura Worsøe", "matches": 2, "goals": 0}, {"name": "Linda Nissen", "matches": 1, "goals": 0}, {"name": "Jonas Lössl", "matches": 1, "goals": 0}, {"name": "Sarah Katrine Thygesen", "matches": 1, "goals": 0}, {"name": "Pernille Marie Hesselholt Sanvig", "matches": 1, "goals": 0}, {"name": "Lene Terp", "matches": 105, "goals": 4}, {"name": "Lone Smidt Nielsen", "matches": 57, "goals": 22}, {"name": "Annette Mogensen", "matches": 45, "goals": 8}, {"name": "Gitte Hansen", "matches": 34, "goals": 0}, {"name": "Vibeke Mortensen", "matches": 26, "goals": 2}, {"name": "Mikkel Beck", "matches": 19, "goals": 3}, {"name": "Anette Frederiksen", "matches": 9, "goals": 7}, {"name": "Tina Jensen", "matches": 5, "goals": 1}, {"name": "Anders Lindegaard", "matches": 5, "goals": 0}, {"name": "Merete Hrenczuk", "matches": 2, "goals": 0}, {"name": "Dorthe Andersen", "matches": 2, "goals": 0}, {"name": "Carsten Pedersen", "matches": 1, "goals": 0}, {"name": "Ulla Bastrup", "matches": 1, "goals": 0}, {"name": "Thorvald Schultz", "matches": 3, "goals": 0}, {"name": "Per Madsen", "matches": 3, "goals": 0}]}, {"x": 253.7, "y": 325.8, "club": "Boldklubben Fremad Amager", "abbr": "FA", "n": 40, "clubs": 9, "players": [{"name": "Søren Lerby", "matches": 67, "goals": 10}, {"name": "Frank Arnesen", "matches": 52, "goals": 14}, {"name": "Ivan Nielsen", "matches": 51, "goals": 0}, {"name": "Andreas Cornelius", "matches": 44, "goals": 9}, {"name": "Henrik Andersen", "matches": 30, "goals": 2}, {"name": "Niki Zimling", "matches": 24, "goals": 1}, {"name": "Alf Olsen", "matches": 19, "goals": 8}, {"name": "Miklos Molnar", "matches": 18, "goals": 2}, {"name": "Peter Nielsen", "matches": 10, "goals": 1}, {"name": "Otto Larsen", "matches": 10, "goals": 0}, {"name": "Morten Nordstrand", "matches": 8, "goals": 3}, {"name": "Mads Junker", "matches": 7, "goals": 1}, {"name": "Ole Tobiasen", "matches": 6, "goals": 1}, {"name": "Bernhard Vilhelm Andersen", "matches": 5, "goals": 1}, {"name": "Knud Kastrup", "matches": 5, "goals": 0}, {"name": "Oskar Theisen", "matches": 5, "goals": 3}, {"name": "Kai Frandsen", "matches": 5, "goals": 1}, {"name": "Martin Bernburg", "matches": 4, "goals": 1}, {"name": "Ivan Lykke", "matches": 2, "goals": 0}, {"name": "Ole Rasmussen", "matches": 2, "goals": 0}, {"name": "Michael Lumb", "matches": 2, "goals": 0}, {"name": "Henning Frandsen", "matches": 1, "goals": 0}, {"name": "Poul Mathiasen", "matches": 1, "goals": 0}, {"name": "Johnny Jacobsen", "matches": 1, "goals": 0}, {"name": "Alex Nielsen", "matches": 1, "goals": 0}, {"name": "Rajko Lekic", "matches": 1, "goals": 0}, {"name": "Pauli Jørgensen", "matches": 47, "goals": 44}, {"name": "Michael Jakobsen", "matches": 5, "goals": 0}, {"name": "Jan Heintze", "matches": 86, "goals": 4}, {"name": "Kenneth Perez", "matches": 24, "goals": 2}, {"name": "Adam Fogt", "matches": 1, "goals": 0}, {"name": "Christina Bonde", "matches": 46, "goals": 9}, {"name": "Anna Walter", "matches": 5, "goals": 0}, {"name": "Inge Mikkelsen", "matches": 2, "goals": 0}, {"name": "Laura Worsøe", "matches": 2, "goals": 0}, {"name": "Fridtjof Steen", "matches": 3, "goals": 0}, {"name": "Karl Vilhelmsen", "matches": 1, "goals": 1}, {"name": "Kresten Bjerre", "matches": 22, "goals": 12}, {"name": "Filip Jørgensen", "matches": 4, "goals": 0}, {"name": "August Lindgren", "matches": 4, "goals": 3}]}, {"x": 127.4, "y": 231.4, "club": "HEI Aarhus", "abbr": "HEI", "n": 40, "clubs": 8, "players": [{"name": "Katrine S. Pedersen", "matches": 210, "goals": 9}, {"name": "Anne Dot Eggers Nielsen", "matches": 118, "goals": 26}, {"name": "Lene Jensen", "matches": 109, "goals": 26}, {"name": "Gitte Krogh", "matches": 90, "goals": 46}, {"name": "Lisbet Kolding", "matches": 66, "goals": 7}, {"name": "Irene Stelling", "matches": 63, "goals": 2}, {"name": "Rikke Holm", "matches": 60, "goals": 9}, {"name": "Annie Gam-Pedersen", "matches": 56, "goals": 15}, {"name": "Mette Jokumsen", "matches": 44, "goals": 10}, {"name": "Kamma Flæng", "matches": 43, "goals": 9}, {"name": "Dorte Dalum Jensen", "matches": 41, "goals": 1}, {"name": "Marianne Jensen", "matches": 40, "goals": 5}, {"name": "Nadia Kjældgaard", "matches": 36, "goals": 3}, {"name": "Charlotte Nielsen-Mann", "matches": 28, "goals": 3}, {"name": "Susan Mackensie", "matches": 27, "goals": 6}, {"name": "Marianne Riis", "matches": 27, "goals": 0}, {"name": "Marianne Jacobsen", "matches": 25, "goals": 1}, {"name": "Annette Laursen", "matches": 23, "goals": 0}, {"name": "Helle Rotbøll", "matches": 15, "goals": 4}, {"name": "Ulla Knudsen", "matches": 14, "goals": 0}, {"name": "Lise Søndergaard", "matches": 14, "goals": 1}, {"name": "Tina Rasmussen", "matches": 9, "goals": 0}, {"name": "Linda Thomsen", "matches": 7, "goals": 0}, {"name": "Sus Mogensen", "matches": 7, "goals": 0}, {"name": "Bettina Allentoft", "matches": 4, "goals": 0}, {"name": "Lisbeth Pedersen", "matches": 4, "goals": 0}, {"name": "Anette Rehmeier", "matches": 2, "goals": 0}, {"name": "Charlotte Petersen", "matches": 1, "goals": 0}, {"name": "Linette Sørensen", "matches": 1, "goals": 0}, {"name": "Maja Juliussen", "matches": 1, "goals": 1}, {"name": "Mette Nielsen", "matches": 22, "goals": 0}, {"name": "Kasper Høgh", "matches": 8, "goals": 1}, {"name": "Leif Raaby Pedersen", "matches": 1, "goals": 0}, {"name": "Martin Jørgensen", "matches": 102, "goals": 12}, {"name": "Mads Jørgensen", "matches": 1, "goals": 0}, {"name": "Carsten Brandenborg", "matches": 1, "goals": 0}, {"name": "William Kvist", "matches": 81, "goals": 2}, {"name": "Signe Bruun", "matches": 55, "goals": 25}, {"name": "Erik Bo Andersen", "matches": 6, "goals": 0}, {"name": "Morten Bisgaard", "matches": 8, "goals": 1}]}, {"x": 112.5, "y": 205.8, "club": "Randers FC", "abbr": "RFC", "n": 38, "clubs": 7, "players": [{"name": "Stig Tøfting", "matches": 41, "goals": 2}, {"name": "Lars Elstrup", "matches": 34, "goals": 13}, {"name": "Michael Gravgaard", "matches": 18, "goals": 5}, {"name": "Kasper Høgh", "matches": 8, "goals": 1}, {"name": "Morten Bisgaard", "matches": 8, "goals": 1}, {"name": "Marc Nygaard", "matches": 7, "goals": 0}, {"name": "Mikkel Beckmann", "matches": 7, "goals": 0}, {"name": "Kasper Lorentzen", "matches": 6, "goals": 1}, {"name": "Jonas Borring", "matches": 6, "goals": 1}, {"name": "Erik Bo Andersen", "matches": 6, "goals": 0}, {"name": "Chris Sørensen", "matches": 5, "goals": 0}, {"name": "Lars Jakobsen", "matches": 4, "goals": 1}, {"name": "Mikkel Thygesen", "matches": 3, "goals": 0}, {"name": "Johnny Thomsen", "matches": 3, "goals": 0}, {"name": "Allan K. Jepsen", "matches": 2, "goals": 0}, {"name": "Søren Berg", "matches": 2, "goals": 0}, {"name": "Carsten Fredgaard", "matches": 1, "goals": 0}, {"name": "Jonas Kamper", "matches": 1, "goals": 0}, {"name": "Esben Hansen", "matches": 1, "goals": 0}, {"name": "Bashkim Kadrii", "matches": 1, "goals": 0}, {"name": "Kevin Conboy", "matches": 1, "goals": 0}, {"name": "Per Røntved", "matches": 75, "goals": 11}, {"name": "Jørgen Rasmussen", "matches": 29, "goals": 0}, {"name": "Helge Vonsyld", "matches": 10, "goals": 0}, {"name": "Lars Lundkvist", "matches": 10, "goals": 1}, {"name": "Poul Bilde", "matches": 8, "goals": 0}, {"name": "René Møller", "matches": 5, "goals": 1}, {"name": "Erik Sørensen", "matches": 2, "goals": 0}, {"name": "Steen Danielsen", "matches": 2, "goals": 0}, {"name": "Alan Hansen", "matches": 2, "goals": 0}, {"name": "Thomas Gaardsøe", "matches": 2, "goals": 1}, {"name": "Carsten Brandenborg", "matches": 1, "goals": 0}, {"name": "Leif Raaby Pedersen", "matches": 1, "goals": 0}, {"name": "Martin Laursen", "matches": 53, "goals": 2}, {"name": "Henrik Pedersen", "matches": 3, "goals": 0}, {"name": "Leon Andreasen", "matches": 20, "goals": 3}, {"name": "Stine Ballisager Pedersen", "matches": 83, "goals": 4}, {"name": "Signe Bruun", "matches": 55, "goals": 25}]}, {"x": 80.1, "y": 207.9, "club": "Viborg FF", "abbr": "VFF", "n": 38, "clubs": 12, "players": [{"name": "Julie Rydahl Bukh", "matches": 91, "goals": 10}, {"name": "Henrik Dalsgaard", "matches": 26, "goals": 1}, {"name": "Michael Gravgaard", "matches": 18, "goals": 5}, {"name": "Jakob Kjeldbjerg", "matches": 14, "goals": 1}, {"name": "Peter Rasmussen", "matches": 13, "goals": 2}, {"name": "Jesper Christiansen", "matches": 11, "goals": 0}, {"name": "Lukas Lerager", "matches": 10, "goals": 1}, {"name": "Thomas Røll Larsen", "matches": 8, "goals": 1}, {"name": "Morten Bisgaard", "matches": 8, "goals": 1}, {"name": "Søren Frederiksen", "matches": 6, "goals": 1}, {"name": "Hans Erfurt", "matches": 2, "goals": 0}, {"name": "Asbjørn Sennels", "matches": 2, "goals": 0}, {"name": "Christopher Poulsen", "matches": 2, "goals": 0}, {"name": "Anton Gaaei", "matches": 2, "goals": 0}, {"name": "Jan Lauridsen", "matches": 1, "goals": 0}, {"name": "Carsten Dethlefsen", "matches": 1, "goals": 0}, {"name": "Heine Fernandez", "matches": 1, "goals": 0}, {"name": "Thomas Frandsen", "matches": 1, "goals": 0}, {"name": "Jonas Kamper", "matches": 1, "goals": 0}, {"name": "Steffen Højer", "matches": 1, "goals": 0}, {"name": "Thomas Jørgensen", "matches": 1, "goals": 0}, {"name": "Pernille Harder", "matches": 175, "goals": 87}, {"name": "Nadia Nadim", "matches": 108, "goals": 38}, {"name": "Stine Ballisager Pedersen", "matches": 83, "goals": 4}, {"name": "Janni Thomsen", "matches": 59, "goals": 12}, {"name": "Sara Thrige", "matches": 32, "goals": 2}, {"name": "Freja Thisgaard", "matches": 10, "goals": 0}, {"name": "Line Geltzer Johansen", "matches": 6, "goals": 0}, {"name": "Tenna Kappel", "matches": 5, "goals": 0}, {"name": "Simone Hagelskjær", "matches": 2, "goals": 0}, {"name": "Ida Karstoft", "matches": 2, "goals": 0}, {"name": "Laura Frank", "matches": 2, "goals": 0}, {"name": "Maria Lindblad Christensen", "matches": 1, "goals": 0}, {"name": "Katrine Svane", "matches": 1, "goals": 0}, {"name": "Lars Bastrup", "matches": 30, "goals": 10}, {"name": "Erik Sviatchenko", "matches": 5, "goals": 1}, {"name": "Knud Engedal", "matches": 17, "goals": 0}, {"name": "Åse Refsgård", "matches": 1, "goals": 0}]}, {"x": 243.3, "y": 274.7, "club": "Hillerød IF", "abbr": "HIF", "n": 35, "clubs": 10, "players": [{"name": "Cathrine Paaske Sørensen", "matches": 121, "goals": 36}, {"name": "Louise Hansen", "matches": 98, "goals": 5}, {"name": "Tine Cederkvist", "matches": 68, "goals": 0}, {"name": "Kathrine Kühl", "matches": 59, "goals": 3}, {"name": "Bettina Falk", "matches": 56, "goals": 0}, {"name": "Nadia Kjældgaard", "matches": 36, "goals": 3}, {"name": "Jeanne Axelsen", "matches": 35, "goals": 4}, {"name": "Pernille Obel", "matches": 31, "goals": 8}, {"name": "Morten Wieghorst", "matches": 30, "goals": 3}, {"name": "Sofie Bredgaard", "matches": 28, "goals": 3}, {"name": "Torben Nielsen", "matches": 26, "goals": 0}, {"name": "Mitzi Møller", "matches": 22, "goals": 1}, {"name": "Finn Wiberg", "matches": 14, "goals": 5}, {"name": "Christina Hansen", "matches": 10, "goals": 2}, {"name": "Anja Møller", "matches": 7, "goals": 0}, {"name": "Pernille Munch", "matches": 2, "goals": 0}, {"name": "Christopher Jakobsen", "matches": 1, "goals": 0}, {"name": "Preben Arentoft", "matches": 9, "goals": 0}, {"name": "Tobias Mikkelsen", "matches": 8, "goals": 1}, {"name": "Casper Sloth", "matches": 8, "goals": 0}, {"name": "Brian Chrøis", "matches": 7, "goals": 1}, {"name": "Mads Junker", "matches": 7, "goals": 1}, {"name": "Thomas Kristensen", "matches": 7, "goals": 0}, {"name": "Brian Jensen", "matches": 6, "goals": 0}, {"name": "Erik Rasmussen", "matches": 2, "goals": 0}, {"name": "John Larsen", "matches": 19, "goals": 1}, {"name": "Andreas Bjelland", "matches": 29, "goals": 2}, {"name": "Poul Andersen", "matches": 16, "goals": 0}, {"name": "Christina Ørntoft", "matches": 67, "goals": 1}, {"name": "Christian Nørgaard", "matches": 41, "goals": 2}, {"name": "Victor Nelsson", "matches": 18, "goals": 0}, {"name": "Jacob Bruun Larsen", "matches": 8, "goals": 1}, {"name": "Andreas Skov Olsen", "matches": 41, "goals": 8}, {"name": "Signe Andersen", "matches": 25, "goals": 0}, {"name": "Jesper Bech", "matches": 2, "goals": 0}]}, {"x": 91.9, "y": 247.1, "club": "Silkeborg IF", "abbr": "SIF", "n": 30, "clubs": 6, "players": [{"name": "Lene Jensen", "matches": 109, "goals": 26}, {"name": "Kasper Dolberg", "matches": 56, "goals": 12}, {"name": "Henning Enoksen", "matches": 54, "goals": 29}, {"name": "Martin Laursen", "matches": 53, "goals": 2}, {"name": "Lars Bastrup", "matches": 30, "goals": 10}, {"name": "Jacob Laursen", "matches": 25, "goals": 0}, {"name": "Jakob Kjeldbjerg", "matches": 14, "goals": 1}, {"name": "Robert Skov", "matches": 14, "goals": 7}, {"name": "Johnny Anker Hansen", "matches": 12, "goals": 0}, {"name": "Søren Andersen", "matches": 12, "goals": 0}, {"name": "Morten Bruun", "matches": 11, "goals": 0}, {"name": "Henrik Risom", "matches": 9, "goals": 0}, {"name": "Steven Lustü", "matches": 9, "goals": 0}, {"name": "Thomas Røll Larsen", "matches": 8, "goals": 1}, {"name": "Casper Sloth", "matches": 8, "goals": 0}, {"name": "Kasper Kusk", "matches": 8, "goals": 0}, {"name": "Søren Frederiksen", "matches": 6, "goals": 1}, {"name": "Peter Kjær", "matches": 4, "goals": 0}, {"name": "Keld Bordinggaard", "matches": 4, "goals": 0}, {"name": "Henrik Pedersen", "matches": 3, "goals": 0}, {"name": "Hans Erfurt", "matches": 2, "goals": 0}, {"name": "Michael Larsen", "matches": 2, "goals": 0}, {"name": "Christopher Poulsen", "matches": 2, "goals": 0}, {"name": "Jesper Bech", "matches": 2, "goals": 0}, {"name": "Nicklas Helenius", "matches": 2, "goals": 0}, {"name": "Brian Skaarup", "matches": 1, "goals": 0}, {"name": "Heine Fernandez", "matches": 1, "goals": 0}, {"name": "Rajko Lekic", "matches": 1, "goals": 0}, {"name": "Nicolai Vallys", "matches": 1, "goals": 0}, {"name": "Luna Gevitz", "matches": 25, "goals": 0}]}, {"x": 273.6, "y": 335.1, "club": "FC Rosengård", "abbr": "FCR", "n": 30, "clubs": 4, "players": [{"name": "Sanne Troelsgaard Nielsen", "matches": 197, "goals": 57}, {"name": "Katrine Veje", "matches": 171, "goals": 9}, {"name": "Line Røddik", "matches": 132, "goals": 13}, {"name": "Simone Boye Sørensen", "matches": 100, "goals": 5}, {"name": "Frederikke Thøgersen", "matches": 98, "goals": 3}, {"name": "Sofie Junge Pedersen", "matches": 89, "goals": 7}, {"name": "Tine Cederkvist", "matches": 68, "goals": 0}, {"name": "Christina Ørntoft", "matches": 67, "goals": 1}, {"name": "Sofie Svava", "matches": 66, "goals": 5}, {"name": "Nicoline Sørensen", "matches": 54, "goals": 8}, {"name": "Nanna Johansen", "matches": 28, "goals": 3}, {"name": "Sofie Bredgaard", "matches": 28, "goals": 3}, {"name": "Mie Leth Karshøj", "matches": 26, "goals": 0}, {"name": "Isabella Bryld Obaze", "matches": 16, "goals": 1}, {"name": "Olivia Holdt", "matches": 14, "goals": 4}, {"name": "Nina Frausing Pedersen", "matches": 7, "goals": 0}, {"name": "Karina Sefron", "matches": 71, "goals": 0}, {"name": "Bonny Madsen", "matches": 70, "goals": 3}, {"name": "Brian Steen Nielsen", "matches": 66, "goals": 3}, {"name": "Jens Stryger Larsen", "matches": 54, "goals": 3}, {"name": "John Steen Olsen", "matches": 17, "goals": 3}, {"name": "Kathrine Larsen", "matches": 8, "goals": 0}, {"name": "Mike Jensen", "matches": 7, "goals": 0}, {"name": "Jonas Knudsen", "matches": 7, "goals": 0}, {"name": "Anders Christiansen", "matches": 5, "goals": 0}, {"name": "Henrik Agerbeck", "matches": 4, "goals": 0}, {"name": "Filip Jørgensen", "matches": 4, "goals": 0}, {"name": "Søren Rieks", "matches": 3, "goals": 1}, {"name": "Jesper Bech", "matches": 2, "goals": 0}, {"name": "Lasse Nielsen", "matches": 1, "goals": 0}]}, {"x": 206.4, "y": 389.1, "club": "Næstved BK", "abbr": "NÆS", "n": 29, "clubs": 7, "players": [{"name": "Ivan Nielsen", "matches": 51, "goals": 0}, {"name": "Jesper Olsen", "matches": 43, "goals": 5}, {"name": "Ole Rasmussen", "matches": 41, "goals": 1}, {"name": "Heino Hansen", "matches": 31, "goals": 5}, {"name": "Ole Kjær", "matches": 26, "goals": 0}, {"name": "Jørgen Hansen", "matches": 23, "goals": 3}, {"name": "Jørgen Kristensen", "matches": 19, "goals": 3}, {"name": "Allan Hansen", "matches": 16, "goals": 3}, {"name": "Keld Bak", "matches": 14, "goals": 3}, {"name": "Steven Lustü", "matches": 9, "goals": 0}, {"name": "Jan Ingemann Sørensen", "matches": 7, "goals": 0}, {"name": "Erik Dyreborg", "matches": 6, "goals": 8}, {"name": "Mogens Hansen", "matches": 5, "goals": 1}, {"name": "Svend Erik Christensen", "matches": 4, "goals": 1}, {"name": "Kurt Jørgensen", "matches": 2, "goals": 0}, {"name": "Jørgen Juul Jensen", "matches": 1, "goals": 0}, {"name": "Lotte Bagge", "matches": 63, "goals": 6}, {"name": "Claus Jensen", "matches": 47, "goals": 8}, {"name": "Mark Strudal", "matches": 9, "goals": 3}, {"name": "Anders Møller Christensen", "matches": 6, "goals": 0}, {"name": "Simon Makienok Christoffersen", "matches": 6, "goals": 0}, {"name": "Bent Dideriksen", "matches": 2, "goals": 0}, {"name": "John Povelsen", "matches": 1, "goals": 0}, {"name": "Michael Birkedal", "matches": 1, "goals": 0}, {"name": "Benny Nielsen", "matches": 1, "goals": 0}, {"name": "Frank Løndal", "matches": 1, "goals": 0}, {"name": "Kim Brodersen", "matches": 1, "goals": 0}, {"name": "Irene Stelling", "matches": 63, "goals": 2}, {"name": "Ditte Larsen", "matches": 12, "goals": 1}]}, {"x": 214.5, "y": 323.7, "club": "FC Roskilde", "abbr": "ROS", "n": 27, "clubs": 6, "players": [{"name": "Peter Madsen", "matches": 13, "goals": 3}, {"name": "Jesper Christiansen", "matches": 11, "goals": 0}, {"name": "Jan Kristiansen", "matches": 11, "goals": 0}, {"name": "Mark Strudal", "matches": 9, "goals": 3}, {"name": "Christian Gytkjær", "matches": 9, "goals": 5}, {"name": "Anders Møller Christensen", "matches": 6, "goals": 0}, {"name": "Kaj Christiansen", "matches": 5, "goals": 6}, {"name": "Mikkel Thygesen", "matches": 3, "goals": 0}, {"name": "Jesper Bech", "matches": 2, "goals": 0}, {"name": "Frederik Sørensen", "matches": 1, "goals": 0}, {"name": "Rajko Lekic", "matches": 1, "goals": 0}, {"name": "Oskar Højbye", "matches": 1, "goals": 0}, {"name": "Nicolai Vallys", "matches": 1, "goals": 0}, {"name": "Christian Poulsen", "matches": 92, "goals": 6}, {"name": "Flemming Mortensen", "matches": 16, "goals": 0}, {"name": "Benno Larsen", "matches": 16, "goals": 0}, {"name": "Niels Tune Hansen", "matches": 15, "goals": 1}, {"name": "Jørgen Jørgensen", "matches": 9, "goals": 1}, {"name": "Nicolai Stokholm", "matches": 8, "goals": 0}, {"name": "Allan Hansen", "matches": 3, "goals": 0}, {"name": "Kurt Jørgensen", "matches": 2, "goals": 0}, {"name": "Michael Lumb", "matches": 2, "goals": 0}, {"name": "Morten Frendrup", "matches": 2, "goals": 0}, {"name": "Torben Hansen", "matches": 1, "goals": 0}, {"name": "Lene Hansen", "matches": 5, "goals": 0}, {"name": "Katrine Svane", "matches": 1, "goals": 0}, {"name": "Simone Boye Sørensen", "matches": 100, "goals": 5}]}, {"x": 214.2, "y": 455.5, "club": "Nykøbing Falster Boldklub af 1901", "abbr": "NFA", "n": 26, "clubs": 9, "players": [{"name": "Johanna Rasmussen", "matches": 153, "goals": 41}, {"name": "Morten Olsen", "matches": 102, "goals": 4}, {"name": "Rikke Læntver Sevecke", "matches": 54, "goals": 5}, {"name": "Claus Jensen", "matches": 47, "goals": 8}, {"name": "Bjarne Goldbæk", "matches": 28, "goals": 0}, {"name": "Hans Ewald Hansen", "matches": 18, "goals": 1}, {"name": "Erik Nielsen", "matches": 10, "goals": 0}, {"name": "Jan Ingemann Sørensen", "matches": 7, "goals": 0}, {"name": "Svend Aage Eriksen", "matches": 5, "goals": 3}, {"name": "John Kramer", "matches": 4, "goals": 2}, {"name": "Søren Larsen", "matches": 4, "goals": 0}, {"name": "Gert Jørgensen", "matches": 4, "goals": 2}, {"name": "Henrik Skouboe", "matches": 3, "goals": 0}, {"name": "Valdemar Hansen", "matches": 2, "goals": 0}, {"name": "Ivan Lykke", "matches": 2, "goals": 0}, {"name": "Richard J. Rasmussen", "matches": 1, "goals": 0}, {"name": "Martin Kristensen", "matches": 1, "goals": 0}, {"name": "Knud Petersen", "matches": 1, "goals": 0}, {"name": "Esben Hansen", "matches": 1, "goals": 0}, {"name": "Cathrine Paaske Sørensen", "matches": 121, "goals": 36}, {"name": "Jens Stryger Larsen", "matches": 54, "goals": 3}, {"name": "Ditte Larsen", "matches": 12, "goals": 1}, {"name": "Linette Sørensen", "matches": 1, "goals": 0}, {"name": "Jonas Kamper", "matches": 1, "goals": 0}, {"name": "Kim Christensen", "matches": 1, "goals": 0}, {"name": "Steven Lustü", "matches": 9, "goals": 0}]}, {"x": 100.3, "y": 343.8, "club": "Middelfart G&BK", "abbr": "MG", "n": 24, "clubs": 8, "players": [{"name": "Katrine Veje", "matches": 171, "goals": 9}, {"name": "Christian Eriksen", "matches": 151, "goals": 46}, {"name": "Cecilie Fløe", "matches": 10, "goals": 2}, {"name": "Bent Outzen", "matches": 6, "goals": 1}, {"name": "Knud Herbert Sørensen", "matches": 3, "goals": 0}, {"name": "Rasmus Falk Jensen", "matches": 2, "goals": 0}, {"name": "Christian Bannis", "matches": 1, "goals": 0}, {"name": "Jacob Laursen", "matches": 25, "goals": 0}, {"name": "Hjalte Bo Nørregaard", "matches": 4, "goals": 0}, {"name": "Brian Rasmussen", "matches": 3, "goals": 0}, {"name": "Johnny Thomsen", "matches": 3, "goals": 0}, {"name": "Jesper Juelsgård Kristensen", "matches": 2, "goals": 0}, {"name": "Kristian Pedersen", "matches": 1, "goals": 0}, {"name": "Thomas Sørensen", "matches": 101, "goals": 0}, {"name": "Christoffer Haagh", "matches": 1, "goals": 0}, {"name": "Bent Wolmar", "matches": 6, "goals": 0}, {"name": "Peter Kjær", "matches": 4, "goals": 0}, {"name": "Thorvald Schultz", "matches": 3, "goals": 0}, {"name": "Carsten Pedersen", "matches": 1, "goals": 0}, {"name": "Ole Bjørnmose", "matches": 16, "goals": 2}, {"name": "Frank Olsen", "matches": 9, "goals": 0}, {"name": "Poul Andersen", "matches": 3, "goals": 0}, {"name": "Anders Fønss", "matches": 1, "goals": 0}]}, {"x": 85.3, "y": 388.5, "club": "Sønderjyske Fodbold", "abbr": "SØN", "n": 23, "clubs": 5, "players": [{"name": "Daniel Jensen", "matches": 52, "goals": 3}, {"name": "Cecilie Sandvej", "matches": 36, "goals": 1}, {"name": "Simon Poulsen", "matches": 31, "goals": 0}, {"name": "Niki Zimling", "matches": 24, "goals": 1}, {"name": "Alexander Bah", "matches": 23, "goals": 1}, {"name": "Carl Bertelsen", "matches": 20, "goals": 9}, {"name": "Helle Nielsen", "matches": 20, "goals": 1}, {"name": "Lasse Vibe", "matches": 11, "goals": 1}, {"name": "Sif Rykær", "matches": 6, "goals": 0}, {"name": "Johnny Thomsen", "matches": 3, "goals": 0}, {"name": "Johan Absalonsen", "matches": 2, "goals": 1}, {"name": "Mia-Maria Kjærsgaard-Andersen", "matches": 2, "goals": 0}, {"name": "Carsten Dethlefsen", "matches": 1, "goals": 0}, {"name": "Peter Nymann Mikkelsen", "matches": 1, "goals": 0}, {"name": "Nicolaj Thomsen", "matches": 1, "goals": 0}, {"name": "Mikael Uhre", "matches": 1, "goals": 0}, {"name": "Anders Fønss", "matches": 1, "goals": 0}, {"name": "Sanne Troelsgaard Nielsen", "matches": 197, "goals": 57}, {"name": "Lene Christensen", "matches": 31, "goals": 0}, {"name": "Morten Bruun", "matches": 11, "goals": 0}, {"name": "Tove Larsen", "matches": 1, "goals": 0}, {"name": "Lene Terp", "matches": 105, "goals": 4}, {"name": "Pernille Munch", "matches": 2, "goals": 0}]}, {"x": 68.5, "y": 258.0, "club": "Ikast FS Fodbold", "abbr": "IF", "n": 22, "clubs": 5, "players": [{"name": "Lars Bastrup", "matches": 30, "goals": 10}, {"name": "Torben Piechnik", "matches": 15, "goals": 0}, {"name": "Henning Boel", "matches": 15, "goals": 0}, {"name": "Olivia Holdt", "matches": 14, "goals": 4}, {"name": "Jens Risager", "matches": 13, "goals": 0}, {"name": "Mogens Krogh", "matches": 10, "goals": 0}, {"name": "Jens Steffensen", "matches": 9, "goals": 1}, {"name": "Per Steffensen", "matches": 6, "goals": 0}, {"name": "Morten Skoubo", "matches": 6, "goals": 1}, {"name": "Leon Jessen", "matches": 4, "goals": 0}, {"name": "Torben Christensen", "matches": 3, "goals": 0}, {"name": "Kristian Mosegaard", "matches": 2, "goals": 0}, {"name": "Michael Birkedal", "matches": 1, "goals": 0}, {"name": "Rasmus Nissen", "matches": 38, "goals": 2}, {"name": "Ejner Eg Rahbek", "matches": 10, "goals": 0}, {"name": "Ole Fritsen", "matches": 6, "goals": 3}, {"name": "Ernst Nielsen", "matches": 4, "goals": 0}, {"name": "Karen Holmgaard", "matches": 38, "goals": 3}, {"name": "Sara Holmgaard", "matches": 31, "goals": 4}, {"name": "Christopher Poulsen", "matches": 2, "goals": 0}, {"name": "Pernille Harder", "matches": 175, "goals": 87}, {"name": "Sofie Vendelbo", "matches": 1, "goals": 0}]}, {"x": 147.9, "y": 406.5, "club": "SfB", "abbr": "SFB", "n": 21, "clubs": 6, "players": [{"name": "Thomas Sørensen", "matches": 101, "goals": 0}, {"name": "Jan Michaelsen", "matches": 19, "goals": 1}, {"name": "John Eriksen", "matches": 17, "goals": 6}, {"name": "Erik Lykke Sørensen", "matches": 15, "goals": 0}, {"name": "Børge Bastholm Larsen", "matches": 11, "goals": 0}, {"name": "Allan Michaelsen", "matches": 8, "goals": 1}, {"name": "Mogens Haastrup", "matches": 2, "goals": 0}, {"name": "Christian Bannis", "matches": 1, "goals": 0}, {"name": "Mads Priisholm Bertelsen", "matches": 1, "goals": 0}, {"name": "Dorte Slabiak", "matches": 14, "goals": 0}, {"name": "Ann Andreasen", "matches": 12, "goals": 2}, {"name": "Bente Jensen", "matches": 7, "goals": 1}, {"name": "Linda Pedersen", "matches": 1, "goals": 0}, {"name": "Marianne Pedersen", "matches": 1, "goals": 0}, {"name": "Svend Erik Christensen", "matches": 4, "goals": 1}, {"name": "Søren Skov", "matches": 3, "goals": 0}, {"name": "Lars Lunde", "matches": 3, "goals": 0}, {"name": "Kasper Schmeichel", "matches": 120, "goals": 0}, {"name": "Selma Svendsen", "matches": 1, "goals": 0}, {"name": "Mads Junker", "matches": 7, "goals": 1}, {"name": "Ingrid Hansen", "matches": 2, "goals": 0}]}, {"x": 185.4, "y": 360.2, "club": "Slagelse B&I", "abbr": "SBI", "n": 17, "clubs": 4, "players": [{"name": "Heino Hansen", "matches": 31, "goals": 5}, {"name": "Flemming Mortensen", "matches": 16, "goals": 0}, {"name": "Jan Kristiansen", "matches": 11, "goals": 0}, {"name": "Lasse Vibe", "matches": 11, "goals": 1}, {"name": "Dennis Sørensen", "matches": 5, "goals": 0}, {"name": "Peter Johansson", "matches": 3, "goals": 1}, {"name": "Allan Hansen", "matches": 3, "goals": 0}, {"name": "Valdemar Hansen", "matches": 2, "goals": 0}, {"name": "Søren Berg", "matches": 2, "goals": 0}, {"name": "Michael Lumb", "matches": 2, "goals": 0}, {"name": "Michael Birkedal", "matches": 1, "goals": 0}, {"name": "Anders Randrup", "matches": 1, "goals": 0}, {"name": "Peter Nymann Mikkelsen", "matches": 1, "goals": 0}, {"name": "Anders Hunsballe", "matches": 1, "goals": 0}, {"name": "Julie Trustrup Jensen", "matches": 21, "goals": 0}, {"name": "Louise Kristiansen", "matches": 12, "goals": 0}, {"name": "Mathias Jensen", "matches": 32, "goals": 1}]}, {"x": 40.6, "y": 218.8, "club": "Holstebro Boldklub", "abbr": "HOL", "n": 14, "clubs": 3, "players": [{"name": "Kristen Nygaard Kristensen", "matches": 36, "goals": 11}, {"name": "Jakob Kjeldbjerg", "matches": 14, "goals": 1}, {"name": "Jens Risager", "matches": 13, "goals": 0}, {"name": "Morten Skoubo", "matches": 6, "goals": 1}, {"name": "Oluf Skjelmose", "matches": 3, "goals": 0}, {"name": "Kai Nielsen", "matches": 1, "goals": 0}, {"name": "Hartvig Møller", "matches": 1, "goals": 0}, {"name": "Bo Hansen", "matches": 1, "goals": 0}, {"name": "Mette Jokumsen", "matches": 44, "goals": 10}, {"name": "Lene Madsen", "matches": 32, "goals": 10}, {"name": "Sine Hovesen", "matches": 12, "goals": 1}, {"name": "Britt Ebbesen Mortensen", "matches": 10, "goals": 0}, {"name": "Mia Bak Pedersen", "matches": 3, "goals": 0}, {"name": "Iver Schriver", "matches": 5, "goals": 6}]}, {"x": 213.0, "y": 354.6, "club": "Ringsted Pigefodbold", "abbr": "RP", "n": 14, "clubs": 5, "players": [{"name": "Susanne Niemann", "matches": 31, "goals": 11}, {"name": "Gitte Christensen", "matches": 12, "goals": 1}, {"name": "Anja Thorsen Duckert", "matches": 11, "goals": 0}, {"name": "Jeanette Jensen", "matches": 8, "goals": 0}, {"name": "Jeanette Toftdahl", "matches": 5, "goals": 1}, {"name": "Gitte Husemoen", "matches": 1, "goals": 0}, {"name": "Jesper Christiansen", "matches": 11, "goals": 0}, {"name": "Christina Jensen", "matches": 11, "goals": 0}, {"name": "Pia Andersen", "matches": 5, "goals": 0}, {"name": "John Jørgensen", "matches": 3, "goals": 0}, {"name": "Kristian Pedersen", "matches": 1, "goals": 0}, {"name": "Sofus Johansen", "matches": 8, "goals": 0}, {"name": "Stine Larsen", "matches": 80, "goals": 22}, {"name": "Erik Nielsen", "matches": 6, "goals": 1}]}, {"x": 132.6, "y": 384.2, "club": "Aarslev BK", "abbr": "AAR", "n": 14, "clubs": 9, "players": [{"name": "Stina Lykke Petersen", "matches": 83, "goals": 0}, {"name": "Alexander Bah", "matches": 23, "goals": 1}, {"name": "Jonas Borring", "matches": 6, "goals": 1}, {"name": "Kirsten Damgård", "matches": 1, "goals": 0}, {"name": "Birgitte Frederiksen", "matches": 9, "goals": 5}, {"name": "Eigil Misser", "matches": 2, "goals": 0}, {"name": "Jørgen Rasmussen", "matches": 1, "goals": 1}, {"name": "Johan Absalonsen", "matches": 2, "goals": 1}, {"name": "Thomas Helveg", "matches": 108, "goals": 2}, {"name": "Martin Vingaard", "matches": 9, "goals": 1}, {"name": "Mogens Therkildsen", "matches": 19, "goals": 0}, {"name": "Allan Hansen", "matches": 16, "goals": 3}, {"name": "Morten Hjulmand", "matches": 31, "goals": 1}, {"name": "Mads Priisholm Bertelsen", "matches": 1, "goals": 0}]}, {"x": 67.8, "y": 188.4, "club": "Skive IK", "abbr": "SKI", "n": 12, "clubs": 5, "players": [{"name": "Jan Bartram", "matches": 32, "goals": 5}, {"name": "Rasmus Würtz", "matches": 12, "goals": 0}, {"name": "Thorvald Schultz", "matches": 3, "goals": 0}, {"name": "Valdemar Kendzior", "matches": 2, "goals": 3}, {"name": "Jesper Juelsgård Kristensen", "matches": 2, "goals": 0}, {"name": "Thomas Frandsen", "matches": 1, "goals": 0}, {"name": "Mikael Uhre", "matches": 1, "goals": 0}, {"name": "Kasper Kempel", "matches": 1, "goals": 0}, {"name": "Henrik Dalsgaard", "matches": 26, "goals": 1}, {"name": "Heine Fernandez", "matches": 1, "goals": 0}, {"name": "Steffen Højer", "matches": 1, "goals": 0}, {"name": "Emilie Fink Pedersen", "matches": 1, "goals": 0}]}, {"x": 30.1, "y": 326.3, "club": "Varde IF", "abbr": "VAR", "n": 12, "clubs": 4, "players": [{"name": "Janni Arnth Jensen", "matches": 93, "goals": 2}, {"name": "Rikke Holm", "matches": 60, "goals": 9}, {"name": "Mille Gejl", "matches": 47, "goals": 7}, {"name": "Rikke Marie Madsen", "matches": 33, "goals": 1}, {"name": "Hanne Nissen", "matches": 29, "goals": 10}, {"name": "Jens Petersen", "matches": 21, "goals": 1}, {"name": "Katrine Abel", "matches": 17, "goals": 0}, {"name": "Mette Bjerg", "matches": 6, "goals": 0}, {"name": "Marianne Pedersen", "matches": 6, "goals": 0}, {"name": "Hans Henrik Andreasen", "matches": 1, "goals": 0}, {"name": "Sandra Schuldt Jensen", "matches": 1, "goals": 0}, {"name": "Camilla Mogensen", "matches": 2, "goals": 0}]}, {"x": 134.9, "y": 56.0, "club": "Frederikshavn fI", "abbr": "FF", "n": 11, "clubs": 3, "players": [{"name": "Henning Munk Jensen", "matches": 62, "goals": 1}, {"name": "Lise Overgaard Munk", "matches": 39, "goals": 5}, {"name": "Harald Nielsen", "matches": 14, "goals": 15}, {"name": "Morten Nordstrand", "matches": 8, "goals": 3}, {"name": "Søren Frederiksen", "matches": 6, "goals": 1}, {"name": "Frank Nielsen", "matches": 4, "goals": 0}, {"name": "Peter Nymann Mikkelsen", "matches": 1, "goals": 0}, {"name": "Nicolaj Thomsen", "matches": 1, "goals": 0}, {"name": "Mogens Krogh", "matches": 10, "goals": 0}, {"name": "Torben Christensen", "matches": 3, "goals": 0}, {"name": "Christopher Poulsen", "matches": 2, "goals": 0}]}, {"x": 105.8, "y": 96.9, "club": "Brønderslev IF", "abbr": "BRØ", "n": 11, "clubs": 8, "players": [{"name": "Svend Sanvig", "matches": 4, "goals": 0}, {"name": "Jakob Ahlmann Nielsen", "matches": 3, "goals": 0}, {"name": "Egon Knudsen", "matches": 2, "goals": 0}, {"name": "Verner Nielsen", "matches": 26, "goals": 0}, {"name": "Henning Jensen", "matches": 21, "goals": 9}, {"name": "Ove Flindt Bjerg", "matches": 18, "goals": 1}, {"name": "Jens Steffensen", "matches": 9, "goals": 1}, {"name": "Thomas Augustinussen", "matches": 2, "goals": 0}, {"name": "Christina Petersen", "matches": 70, "goals": 10}, {"name": "Hanne Sand Christensen", "matches": 29, "goals": 0}, {"name": "Amalie Vangsgaard", "matches": 49, "goals": 14}]}, {"x": 47.9, "y": 376.1, "club": "Ribe BK", "abbr": "RIB", "n": 11, "clubs": 2, "players": [{"name": "Fridel Riggelsen", "matches": 33, "goals": 1}, {"name": "Anne Grete Holst", "matches": 27, "goals": 7}, {"name": "Britta Ehmsen", "matches": 23, "goals": 4}, {"name": "Maren Barsballe", "matches": 20, "goals": 2}, {"name": "Lene Pedersen", "matches": 9, "goals": 0}, {"name": "Anette Frederiksen", "matches": 9, "goals": 7}, {"name": "Anders Dreyer", "matches": 9, "goals": 3}, {"name": "Birte Kjems", "matches": 6, "goals": 0}, {"name": "Lise Olesen", "matches": 5, "goals": 0}, {"name": "Grete Kragh", "matches": 2, "goals": 0}, {"name": "Viggo Jensen", "matches": 8, "goals": 0}]}, {"x": 217.8, "y": 15.7, "club": "BK Häcken", "abbr": "HÄC", "n": 10, "clubs": 3, "players": [{"name": "Stine Larsen", "matches": 80, "goals": 22}, {"name": "Mille Gejl", "matches": 47, "goals": 7}, {"name": "Stig Tøfting", "matches": 41, "goals": 2}, {"name": "Luna Gevitz", "matches": 25, "goals": 0}, {"name": "Line Geltzer Johansen", "matches": 6, "goals": 0}, {"name": "Jóhanna Fossdalsá", "matches": 5, "goals": 0}, {"name": "Lasse Vibe", "matches": 11, "goals": 1}, {"name": "Søren Rieks", "matches": 3, "goals": 1}, {"name": "Kim Christensen", "matches": 1, "goals": 0}, {"name": "Benno Larsen", "matches": 16, "goals": 0}]}, {"x": 46.9, "y": 137.3, "club": "Thisted FC", "abbr": "THI", "n": 9, "clubs": 4, "players": [{"name": "Frederikke Thøgersen", "matches": 98, "goals": 3}, {"name": "Jesper Grønkjær", "matches": 80, "goals": 5}, {"name": "Maja Bay Østergaard", "matches": 22, "goals": 0}, {"name": "Mia Bak Pedersen", "matches": 3, "goals": 0}, {"name": "Ida Karstoft", "matches": 2, "goals": 0}, {"name": "Emilie Fink Pedersen", "matches": 1, "goals": 0}, {"name": "Henning Enoksen", "matches": 54, "goals": 29}, {"name": "Tommy Troelsen", "matches": 16, "goals": 5}, {"name": "Kaj Kvistgaard Poulsen", "matches": 5, "goals": 1}]}, {"x": 259.4, "y": 267.0, "club": "Helsingborgs IF", "abbr": "HEL", "n": 8, "clubs": 1, "players": [{"name": "Torben Nielsen", "matches": 26, "goals": 0}, {"name": "Birger Pedersen", "matches": 14, "goals": 1}, {"name": "Tobias Mikkelsen", "matches": 8, "goals": 1}, {"name": "Kaj Hansen", "matches": 7, "goals": 0}, {"name": "Erik Dyreborg", "matches": 6, "goals": 8}, {"name": "Ole Skouboe", "matches": 6, "goals": 0}, {"name": "Anders Lindegaard", "matches": 5, "goals": 0}, {"name": "Anders Randrup", "matches": 1, "goals": 0}]}, {"x": 180.5, "y": 320.8, "club": "Kalundborg GB", "abbr": "KG", "n": 8, "clubs": 6, "players": [{"name": "Mathias Jensen", "matches": 32, "goals": 1}, {"name": "Heino Hansen", "matches": 31, "goals": 5}, {"name": "Claus Nielsen", "matches": 14, "goals": 7}, {"name": "Thomas Frandsen", "matches": 1, "goals": 0}, {"name": "Susanne Niemann", "matches": 31, "goals": 11}, {"name": "Torben Hansen", "matches": 1, "goals": 0}, {"name": "Christian Poulsen", "matches": 92, "goals": 6}, {"name": "Nadia Kjældgaard", "matches": 36, "goals": 3}]}, {"x": 77.8, "y": 309.0, "club": "Jelling fS", "abbr": "JF", "n": 7, "clubs": 7, "players": [{"name": "Merete Pedersen", "matches": 136, "goals": 65}, {"name": "Lise Søndergaard", "matches": 14, "goals": 1}, {"name": "Anne Juul Ulnitz", "matches": 6, "goals": 0}, {"name": "Janne Madsen", "matches": 61, "goals": 4}, {"name": "Helle Nielsen", "matches": 20, "goals": 1}, {"name": "Jørgen Markussen", "matches": 10, "goals": 1}, {"name": "Gitte Pedersen", "matches": 3, "goals": 0}]}, {"x": 105.8, "y": 179.6, "club": "Hobro IK", "abbr": "HOB", "n": 7, "clubs": 4, "players": [{"name": "Caroline Møller Hansen", "matches": 22, "goals": 0}, {"name": "Thomas Enevoldsen", "matches": 11, "goals": 1}, {"name": "Kasper Høgh", "matches": 8, "goals": 1}, {"name": "Danny Olsen", "matches": 1, "goals": 0}, {"name": "Arne Marinus Toft", "matches": 5, "goals": 1}, {"name": "Leif Raaby Pedersen", "matches": 1, "goals": 0}, {"name": "Thomas Gaardsøe", "matches": 2, "goals": 1}]}, {"x": 121.1, "y": 183.2, "club": "Hadsund B", "abbr": "HB", "n": 6, "clubs": 5, "players": [{"name": "Ebbe Sand", "matches": 66, "goals": 22}, {"name": "Dorte Dalum Jensen", "matches": 41, "goals": 1}, {"name": "Lars Elstrup", "matches": 34, "goals": 13}, {"name": "Kamma Flæng", "matches": 43, "goals": 9}, {"name": "Michael Gravgaard", "matches": 18, "goals": 5}, {"name": "Chris Sørensen", "matches": 5, "goals": 0}]}, {"x": 46.0, "y": 309.2, "club": "Grindsted GIF", "abbr": "GG", "n": 6, "clubs": 5, "players": [{"name": "Mille Gejl", "matches": 47, "goals": 7}, {"name": "Kian Hansen", "matches": 2, "goals": 0}, {"name": "Mikael Uhre", "matches": 1, "goals": 0}, {"name": "Poul Andersen", "matches": 16, "goals": 0}, {"name": "Jan Kristiansen", "matches": 11, "goals": 0}, {"name": "Jakob Poulsen", "matches": 35, "goals": 2}]}, {"x": 78.3, "y": 146.9, "club": "Farsø/Ullits IK", "abbr": "FU", "n": 5, "clubs": 5, "players": [{"name": "Per Krøldrup", "matches": 33, "goals": 0}, {"name": "Sara Thrige", "matches": 32, "goals": 2}, {"name": "Egon Knudsen", "matches": 2, "goals": 0}, {"name": "Kjeld Thorst", "matches": 26, "goals": 6}, {"name": "Line S. Jensen", "matches": 66, "goals": 2}]}, {"x": 48.0, "y": 174.1, "club": "Roslev IK", "abbr": "ROS", "n": 5, "clubs": 5, "players": [{"name": "Henning Enoksen", "matches": 54, "goals": 29}, {"name": "Gustav Isaksen", "matches": 19, "goals": 7}, {"name": "Morten Skoubo", "matches": 6, "goals": 1}, {"name": "Linda Brogaard Damgaard", "matches": 6, "goals": 0}, {"name": "Emilie Fink Pedersen", "matches": 1, "goals": 0}]}, {"x": 179.6, "y": 450.6, "club": "Nakskov Boldklub", "abbr": "NAK", "n": 4, "clubs": 2, "players": [{"name": "Jette Hansen", "matches": 33, "goals": 2}, {"name": "Kurt \"Røde\" Hansen", "matches": 7, "goals": 1}, {"name": "Trine Falck", "matches": 1, "goals": 0}, {"name": "Poul \"Rassi\" Rasmussen", "matches": 5, "goals": 3}]}, {"x": 77.5, "y": 421.7, "club": "Aabenraa BK", "abbr": "AAB", "n": 4, "clubs": 2, "players": [{"name": "Alan Hansen", "matches": 2, "goals": 0}, {"name": "Kim Brodersen", "matches": 1, "goals": 0}, {"name": "Carsten Dethlefsen", "matches": 1, "goals": 0}, {"name": "Thomas Røll Larsen", "matches": 8, "goals": 1}]}, {"x": 102.3, "y": 436.4, "club": "Sønderborg Boldklub", "abbr": "SØN", "n": 4, "clubs": 4, "players": [{"name": "Heidi Johansen", "matches": 80, "goals": 0}, {"name": "Anne Grete Holst", "matches": 27, "goals": 7}, {"name": "Marian Petz", "matches": 7, "goals": 0}, {"name": "Simon Poulsen", "matches": 31, "goals": 0}]}, {"x": 118.3, "y": 140.0, "club": "RKG Fodbold", "abbr": "RKG", "n": 3, "clubs": 3, "players": [{"name": "Hans Christensen", "matches": 1, "goals": 0}, {"name": "Camilla Sand Andersen", "matches": 33, "goals": 8}, {"name": "Chris Sørensen", "matches": 5, "goals": 0}]}, {"x": 366.7, "y": 405.5, "club": "Knudsker IF", "abbr": "KNU", "n": 3, "clubs": 2, "players": [{"name": "Anja Thorsen Duckert", "matches": 11, "goals": 0}, {"name": "Pernille Munch", "matches": 2, "goals": 0}, {"name": "Hans Colberg", "matches": 4, "goals": 0}]}, {"x": 151.7, "y": 225.2, "club": "Grenaa IF", "abbr": "GRE", "n": 3, "clubs": 3, "players": [{"name": "Bent Sørensen", "matches": 6, "goals": 3}, {"name": "Lars Jakobsen", "matches": 4, "goals": 1}, {"name": "Bettina Allentoft", "matches": 4, "goals": 0}]}, {"x": 219.2, "y": 277.7, "club": "Frederiksværk Fodbold Klub", "abbr": "FRE", "n": 3, "clubs": 3, "players": [{"name": "Benny Nielsen", "matches": 28, "goals": 7}, {"name": "Sofie Bredgaard", "matches": 28, "goals": 3}, {"name": "Morten Nordstrand", "matches": 8, "goals": 3}]}, {"x": 44.4, "y": 355.6, "club": "Bramming B", "abbr": "BB", "n": 3, "clubs": 2, "players": [{"name": "John Lauridsen", "matches": 27, "goals": 3}, {"name": "Anders Dreyer", "matches": 9, "goals": 3}, {"name": "Carina Johansen", "matches": 7, "goals": 0}]}, {"x": 271.4, "y": 15.3, "club": "IF Elfsborg", "abbr": "ELF", "n": 3, "clubs": 1, "players": [{"name": "Jesper Christiansen", "matches": 11, "goals": 0}, {"name": "Mikkel Beckmann", "matches": 7, "goals": 0}, {"name": "Anders Randrup", "matches": 1, "goals": 0}]}, {"x": 309.7, "y": 223.1, "club": "Vittsjö GIK", "abbr": "VG", "n": 3, "clubs": 1, "players": [{"name": "Sofie Junge Pedersen", "matches": 89, "goals": 7}, {"name": "Mie Leth Karshøj", "matches": 26, "goals": 0}, {"name": "Cecilie Breil Kramer", "matches": 11, "goals": 0}]}, {"x": 130.1, "y": 90.8, "club": "Dronninglund IF", "abbr": "DRO", "n": 3, "clubs": 3, "players": [{"name": "Emma Snerle", "matches": 49, "goals": 3}, {"name": "Joakim Mæhle", "matches": 63, "goals": 12}, {"name": "Cornelia Kramer", "matches": 7, "goals": 1}]}, {"x": 228.1, "y": 388.2, "club": "Faxe BK", "abbr": "FAX", "n": 2, "clubs": 2, "players": [{"name": "Jesper Olsen", "matches": 43, "goals": 5}, {"name": "Anders Møller Christensen", "matches": 6, "goals": 0}]}, {"x": 183.8, "y": 384.2, "club": "Skælskør Boldklub og Idrætsforening", "abbr": "SO", "n": 2, "clubs": 1, "players": [{"name": "Lisbet Kolding", "matches": 66, "goals": 7}, {"name": "Erik Rasmussen", "matches": 2, "goals": 0}]}, {"x": 20.7, "y": 190.8, "club": "Lemvig GF", "abbr": "LEM", "n": 2, "clubs": 2, "players": [{"name": "Morten Skoubo", "matches": 6, "goals": 1}, {"name": "Ida Karstoft", "matches": 2, "goals": 0}]}, {"x": 335.4, "y": 270.7, "club": "Kristianstads DFF", "abbr": "KD", "n": 2, "clubs": 1, "players": [{"name": "Johanna Rasmussen", "matches": 153, "goals": 41}, {"name": "Stina Lykke Petersen", "matches": 83, "goals": 0}]}, {"x": 143.9, "y": 15.1, "club": "Skagen IK", "abbr": "SKA", "n": 2, "clubs": 1, "players": [{"name": "Mariann Gajhede", "matches": 107, "goals": 6}, {"name": "Nicolaj Thomsen", "matches": 1, "goals": 0}]}, {"x": 371.0, "y": 139.8, "club": "Växjö DFF", "abbr": "VD", "n": 2, "clubs": 1, "players": [{"name": "Maja Bay Østergaard", "matches": 22, "goals": 0}, {"name": "Emilie Henriksen", "matches": 2, "goals": 0}]}, {"x": 108.5, "y": 384.0, "club": "Assens FC", "abbr": "ASS", "n": 1, "clubs": 1, "players": [{"name": "Thomas Sørensen", "matches": 101, "goals": 0}]}, {"x": 27.6, "y": 151.8, "club": "Bedsted IF", "abbr": "BED", "n": 1, "clubs": 1, "players": [{"name": "Poul Andersen", "matches": 16, "goals": 0}]}, {"x": 85.9, "y": 110.6, "club": "Skovsgaard B", "abbr": "SB", "n": 1, "clubs": 1, "players": [{"name": "Kjeld Thorst", "matches": 26, "goals": 6}]}, {"x": 203.2, "y": 464.5, "club": "Døllefjelde Musse IF", "abbr": "DM", "n": 1, "clubs": 1, "players": [{"name": "Valdemar Hansen", "matches": 2, "goals": 0}]}, {"x": 174.2, "y": 459.6, "club": "Rudbjerg FB", "abbr": "RF", "n": 1, "clubs": 1, "players": [{"name": "Cathrine Paaske Sørensen", "matches": 121, "goals": 36}]}, {"x": 148.8, "y": 356.9, "club": "Kerteminde BK", "abbr": "KER", "n": 1, "clubs": 1, "players": [{"name": "Oliver Christensen", "matches": 1, "goals": 0}]}, {"x": 266.7, "y": 172.1, "club": "Halmstads BK", "abbr": "HAL", "n": 1, "clubs": 1, "players": [{"name": "Mads Roerslev", "matches": 1, "goals": 0}]}];
+
+function initials(name) {
+  return name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase();
+}
+
+// ---- Tegn klynger ----
+// Store klynger: klub-forkortelse + "+N"-badge (logo i den rigtige version).
+// Små klynger (få spillere): kun selve tallet - der er ikke plads til to ting,
+// og det er samme mønster som Leaflet.markercluster bruger for små grupper.
+const layer = document.getElementById('cluster-layer');
+clusters.forEach((c, i) => {
+  const size = Math.max(16, Math.min(68, Math.round(Math.sqrt(c.n) * 2.9)));
+  const el = document.createElement('div');
+  el.className = 'cluster';
+  el.style.left = (c.x / 400 * 100) + '%';
+  el.style.top = (c.y / 500 * 100) + '%';
+  el.style.width = size + 'px';
+  el.style.height = size + 'px';
+  if (size < 30) {
+    el.classList.add('cluster-small');
+    el.style.fontSize = '11px';
+    el.textContent = c.n;
+  } else {
+    el.style.fontSize = (size > 50 ? 12 : 10) + 'px';
+    el.innerHTML = `${c.abbr}<span class="badge">+${c.n}</span>`;
+  }
+  el.onclick = () => openClusterSheet(c, i);
+  layer.appendChild(el);
+});
+
+// ---- Cluster-sheet ----
+let currentCluster = null;
+
+function openClusterSheet(c) {
+  currentCluster = c;
+  document.getElementById('cs-avatar').textContent = c.abbr;
+  document.getElementById('cs-name').textContent = c.club;
+  document.getElementById('cs-sub').textContent = `${c.n} spillere · ${c.clubs} klubber i klyngen`;
+  renderClusterBody(false);
+  document.getElementById('cluster-sheet').classList.remove('expanded');
+  showSheet('cluster-sheet');
+}
+
+function renderClusterBody(expanded) {
+  const body = document.getElementById('cs-body');
+  const list = currentCluster.players;
+  const cap = expanded ? list.length : Math.min(6, list.length);
+  let html = '';
+  if (expanded) {
+    html += `<input class="filter-field" placeholder="Filtrér spillere..." oninput="filterClusterPlayers(this.value)">`;
+  }
+  html += `<div id="cs-player-rows">`;
+  list.slice(0, cap).forEach(p => {
+    html += playerRowHtml(p);
+  });
+  html += `</div>`;
+  if (!expanded && list.length > cap) {
+    html += `<button class="show-all-btn" onclick="renderClusterBody(true); document.getElementById('cluster-sheet').classList.add('expanded')">Vis alle (${list.length})</button>`;
+  }
+  body.innerHTML = html;
+}
+
+function playerRowHtml(p) {
+  return `<div class="player-row" data-name="${p.name.toLowerCase()}">
+    <div class="av">${initials(p.name)}</div>
+    <div>
+      <div class="pname">${p.name}</div>
+    </div>
+    <div class="pstat"><b>${p.matches}</b> kampe<br>${p.goals} mål</div>
+  </div>`;
+}
+
+function filterClusterPlayers(q) {
+  q = q.toLowerCase();
+  document.querySelectorAll('#cs-player-rows .player-row').forEach(r => {
+    r.style.display = r.dataset.name.includes(q) ? '' : 'none';
+  });
+}
+
+// ---- Filter-sheet ----
+function openFilterSheet() {
+  showSheet('filter-sheet');
+}
+
+document.querySelectorAll('#filter-sheet .pill-opt').forEach(el => {
+  el.addEventListener('click', () => {
+    const row = el.parentElement;
+    row.querySelectorAll('.pill-opt').forEach(p => p.classList.remove('active'));
+    el.classList.add('active');
+  });
+});
+
+// ---- Generisk sheet-styring ----
+function showSheet(id) {
+  document.querySelectorAll('.sheet').forEach(s => s.classList.remove('open'));
+  document.getElementById(id).classList.add('open');
+  document.getElementById('sheet-overlay').classList.add('open');
+}
+function closeSheet() {
+  document.querySelectorAll('.sheet').forEach(s => s.classList.remove('open', 'expanded'));
+  document.getElementById('sheet-overlay').classList.remove('open');
+}
+
+// ---- Bundnavigation ----
+document.querySelectorAll('.nav-item').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.getElementById('screen-' + btn.dataset.screen).classList.add('active');
+    closeSheet();
+  });
+});
+
+// ---- Rekorder: faner (ombrydes, ingen vandret scroll) ----
+const statData = {
+  maal:  { v1: 'Mål', v2: 'Kampe', rows: [['Pernille Harder', 87, 175], ['Merete Pedersen', 65, 136], ['Poul Nielsen', 52, 38], ['Jon Dahl Tomasson', 52, 112], ['Christian Eriksen', 46, 151]] },
+  kampe: { v1: 'Kampe', v2: 'Mål', rows: [['Christian Eriksen', 151, 46], ['Peter Schmeichel', 129, 0], ['Thomas Helveg', 108, 1], ['Morten Olsen', 102, 1], ['Michael Laudrup', 104, 13]] },
+  snit:  { v1: 'Snit', v2: 'Kampe', rows: [['Poul Nielsen', '1.37', 38], ['Pernille Harder', '0.50', 175], ['Preben Elkjær', '0.26', 69]] },
+  sejr:  { v1: '%', v2: 'Kampe', rows: [['Kasper Schmeichel', '68%', 90], ['Simon Kjær', '65%', 132], ['Christian Eriksen', '63%', 151]] },
+  turneringer: { v1: 'Antal', v2: 'Kampe', rows: [['Morten Olsen', 4, 102], ['Michael Laudrup', 3, 104], ['Peter Schmeichel', 3, 129]] },
+  saesoner: { v1: 'Sæsoner', v2: 'Kampe', rows: [['Peter Schmeichel', 11, 129], ['Morten Olsen', 15, 102]] },
+  par: { v1: 'Kampe', v2: '—', rows: [['Laudrup / Laudrup', 61, 0], ['Schmeichel / Helveg', 70, 0]] },
+  klubber: { v1: 'Spillere', v2: '—', rows: [['Kjøbenhavns Boldklub', 92, 0], ['AGF', 64, 0], ['Odense Boldklub', 52, 0]] },
+  kommuner: { v1: 'Spillere', v2: '—', rows: [['København', 270, 0], ['Odense', 78, 0], ['Aarhus', 77, 0]] },
+};
+
+function renderStatTab(tab) {
+  const d = statData[tab] || statData.maal;
+  document.querySelector('.stat-list-head').innerHTML =
+    `<div style="width:24px">#</div><div style="flex:1">Spiller</div>` +
+    `<div style="width:48px;text-align:right">${d.v1}</div>` +
+    `<div style="width:56px;text-align:right">${d.v2}</div>`;
+  const rowsEl = document.getElementById('stat-rows');
+  rowsEl.innerHTML = d.rows.map((r, i) => `
+    <div class="stat-row">
+      <div class="rank">${i+1}</div>
+      <div class="nm">${r[0]}</div>
+      <div class="v1">${r[1]}</div>
+      <div class="v2">${r[2]}</div>
+    </div>`).join('');
+}
+
+document.querySelectorAll('#rekorder-chips .chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('#rekorder-chips .chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    renderStatTab(chip.dataset.tab);
+  });
+});
+
+renderStatTab('maal');
+</script>
+</body>
+</html>

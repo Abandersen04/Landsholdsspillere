@@ -36,10 +36,13 @@
 
   <!-- Leaflet CSS (self-hosted) -->
   <link rel="stylesheet" href="/css/vendor/leaflet.css">
+  <link rel="stylesheet" href="/css/vendor/MarkerCluster.css">
+  <link rel="stylesheet" href="/css/vendor/MarkerCluster.Default.css">
 
 
   <!-- Preload critical scripts -->
   <link rel="preload" href="/js/vendor/leaflet.js" as="script">
+  <link rel="preload" href="/js/vendor/leaflet.markercluster.js" as="script">
   <link rel="preload" href="/js/app.js" as="script">
 
   <!-- Self-hosted Inter font -->
@@ -103,6 +106,7 @@
 
       <div class="sidebar-header">
         <h1>Landsholdskortet</h1>
+        <button id="sidebar-close" class="sidebar-close" aria-label="Luk filtre">&times;</button>
       </div>
 
       <nav class="sidebar-nav">
@@ -110,7 +114,7 @@
         <a href="/rekordlister/" class="sidebar-nav-item">Rekorder</a>
         <a href="/landsholdskurven/" class="sidebar-nav-item">Kurven</a>
         <a href="/quiz/" class="sidebar-nav-item">Quiz</a>
-        <button id="om-btn" class="sidebar-nav-item">Om</button>
+        <button id="om-btn" class="sidebar-nav-item sidebar-nav-keep">Om</button>
       </nav>
       <a href="/worldmap/" class="worldmap-nav-link">
         <svg width="13" height="13" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;margin-right:5px;opacity:.85">
@@ -399,8 +403,33 @@
     <span>Indsend rettelse/feedback</span>
   </a>
 
+  <!-- Mobil bundnavigation -->
+  <nav class="bottom-nav-mobile" aria-label="Mobilnavigation">
+    <a href="/" class="bn-item active">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M10 2.5c-3 3-3 6.5-3 8.5s1.5 3.5 3 6.5c1.5-3 3-4.5 3-6.5s0-5.5-3-8.5z" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="9" r="1.6" stroke="currentColor" stroke-width="1.3"/></svg>
+      Kort
+    </a>
+    <a href="/rekordlister/" class="bn-item">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M4 16V9M10 16V4M16 16v-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      Rekorder
+    </a>
+    <a href="/landsholdskurven/" class="bn-item">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M3 14l4-5 3 3 6-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Kurven
+    </a>
+    <a href="/quiz/" class="bn-item">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M7 7a3 3 0 115 2.2c-.9.6-1.5 1.1-1.5 2.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="10.5" cy="15" r="0.9" fill="currentColor"/></svg>
+      Quiz
+    </a>
+    <a href="/worldmap/" class="bn-item bn-item-world">
+      <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M10 2c-2.5 2-2.5 14 0 16M10 2c2.5 2 2.5 14 0 16M2.2 7h15.6M2.2 13h15.6" stroke="currentColor" stroke-width="1.3"/></svg>
+      World
+    </a>
+  </nav>
+
   <!-- Leaflet JS (self-hosted) -->
   <script defer src="/js/vendor/leaflet.js"></script>
+  <script defer src="/js/vendor/leaflet.markercluster.js"></script>
 
 
   <!-- App JS -->

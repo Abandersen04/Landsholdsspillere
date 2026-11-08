@@ -27,6 +27,7 @@
   --transition: 0.2s ease;
   --bottomsheet-peek: 88px;
   --bottomsheet-height: 70vh;
+  --bottomnav-height: 0px; /* sættes til 54px under 768px, se mobil-blokken */
 }
 
 html, body {
@@ -56,7 +57,10 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  z-index: 1000;
+  /* Skal være højere end Leaflets egne kontroller (.leaflet-top/.leaflet-bottom
+     har z-index:1000 i leaflet.css) - ellers vinder DOM-rækkefølgen ved uafgjort
+     z-index, og attribution/zoom-knapper maler sig ovenpå det åbne filterpanel. */
+  z-index: 1200;
   transition: transform 0.3s ease;
 }
 
@@ -900,10 +904,12 @@ html, body {
     display: none;
   }
 
-  /* Sidebar becomes bottomsheet */
+  /* Sidebar becomes bottomsheet - fuldstændig skjult som udgangspunkt (ingen
+     "peek"), så den kun kommer frem når man trykker på filter-knappen øverst
+     til højre. Den må ikke forstyrre kortet, når den er lukket. */
   .sidebar {
     position: fixed;
-    bottom: 0;
+    bottom: var(--bottomnav-height);
     left: 0;
     right: 0;
     width: 100%;
@@ -913,16 +919,27 @@ html, body {
     border-right: none;
     border-top: 1px solid var(--gray-200);
     border-radius: 16px 16px 0 0;
-    transform: translateY(calc(var(--bottomsheet-height) - var(--bottomsheet-peek)));
+    /* translateY(100%) alene er panelets EGEN højde - men "bottom" er
+       bottomnav-height (54px), ikke 0, så der ellers blev en 54px synlig
+       stribe tilbage øverst i det "lukkede" panel (samme faldgrube som
+       .mobile-popup-panel). Læg bottomnav-height oveni for reelt at skjule det. */
+    transform: translateY(calc(100% + var(--bottomnav-height)));
     transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1);
     box-shadow: 0 -4px 24px rgba(0,0,0,0.12);
     padding: 0 20px 24px;
-    /* push down when map is tapped */
+    pointer-events: none;
     will-change: transform;
   }
 
   .sidebar.open {
     transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  /* De 4 sider er allerede ét tryk væk via bundnavigationen - vis kun "Om"
+     i filterpanelets nav-række på mobil, resten er redundant. */
+  .sidebar-nav > *:not(.sidebar-nav-keep) {
+    display: none;
   }
 
   /* Show drag handle on mobile */
@@ -945,9 +962,12 @@ html, body {
 
   .map-container {
     width: 100vw;
-    /* Push map down below mobile search bar */
+    /* Push map down below mobile search bar, and keep it clear of the
+       bottom navigation bar. padding-top tæller allerede med i height pga.
+       border-box, så den skal IKKE trækkes fra igen her - ellers mangler der
+       64px nederst (et 64px hvidt mellemrum over bundnavigationen). */
     padding-top: 64px;
-    height: calc(100vh - 64px);
+    height: calc(100vh - var(--bottomnav-height));
   }
 
   /* The leaflet map fills the map-container */
@@ -955,9 +975,9 @@ html, body {
     height: 100%;
   }
 
-  /* Correction FAB: above bottomsheet peek area */
+  /* Correction FAB: above bottom nav (filterpanelet er skjult som udgangspunkt) */
   .correction-fab {
-    bottom: calc(var(--bottomsheet-peek) + 12px);
+    bottom: calc(var(--bottomnav-height) + 12px);
     right: 12px;
     padding: 11px;
     border-radius: 50%;
@@ -967,9 +987,9 @@ html, body {
     display: none;
   }
 
-  /* Logo loading indicator: above bottomsheet peek area */
+  /* Logo loading indicator: above bottom nav */
   .logo-loading-indicator {
-    bottom: calc(var(--bottomsheet-peek) + 12px);
+    bottom: calc(var(--bottomnav-height) + 12px);
     left: 12px;
     font-size: 12px;
     padding: 7px 12px;
@@ -1334,10 +1354,13 @@ html, body {
   bottom: 60px;
 }
 
-/* On mobile, push controls above bottomsheet peek */
+/* On mobile, push controls above the bottom nav. Filterpanelet er skjult som
+   udgangspunkt (se .sidebar ovenfor), så attribution/zoom skal bare holde sig
+   inde i kortets eget nederste højre hjørne - ingen grund til position:fixed
+   til viewporten længere. */
 @media (max-width: 768px) {
   .leaflet-bottom.leaflet-right {
-    bottom: calc(var(--bottomsheet-peek) + 4px);
+    bottom: calc(var(--bottomnav-height) + 4px);
     right: 4px;
     left: auto;
     max-width: calc(100vw - 8px);
@@ -1348,21 +1371,64 @@ html, body {
     right: 8px;
   }
 
-  /* Pin attribution to bottom-right, prevent it from floating */
+  /* Altid lille og i kortets eget hjørne - aldrig hen over filtre/indstillinger */
   .leaflet-control-attribution {
-    max-width: 200px;
+    max-width: 180px;
     font-size: 9px !important;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    float: none !important;
-    display: block;
-    clear: both;
   }
 
   /* Reduce transition weight on low-end devices */
   .sidebar {
     transition: transform 0.25s ease-out;
+  }
+
+  :root {
+    --bottomnav-height: 54px;
+  }
+}
+
+/* ===== Mobil bundnavigation (Kort / Rekorder / Kurven / Quiz) =====
+   Erstatter den tidligere FILTRE-only adgang til de andre sider - de er nu
+   altid ét tryk væk, uden at skulle åbne filterpanelet først. */
+.bottom-nav-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .bottom-nav-mobile {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--bottomnav-height);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    background: #fff;
+    border-top: 1px solid var(--gray-200);
+    z-index: 1100;
+  }
+  .bn-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-size: 10.5px;
+    font-weight: 600;
+    color: var(--gray-400);
+    text-decoration: none;
+    font-family: inherit;
+  }
+  .bn-item svg { width: 20px; height: 20px; flex-shrink: 0; }
+  .bn-item.active { color: var(--red); }
+
+  /* World map er et separat site - markeret i blåt så det ikke forveksles
+     med de 4 andre sider på landsholdskortet.dk */
+  .bn-item-world {
+    color: #1B3A6B;
   }
 }
 
@@ -1374,7 +1440,7 @@ html, body {
     position: fixed;
     left: 4px;
     right: auto;
-    bottom: 4px;
+    bottom: calc(var(--bottomnav-height) + 4px);
     max-width: 140px;
   }
 }
@@ -1475,7 +1541,7 @@ html, body {
 
 .mobile-popup-panel {
   position: fixed;
-  bottom: 0;
+  bottom: var(--bottomnav-height);
   left: 0;
   right: 0;
   background: #fff;
@@ -1485,12 +1551,18 @@ html, body {
   max-height: 72vh;
   display: flex;
   flex-direction: column;
-  transform: translateY(100%);
+  /* translateY(100%) alene flytter panelet ned til sin egen højde - men da
+     "bottom" nu er bottomnav-height i stedet for 0, lander toppen af det
+     "lukkede" panel præcis ovenpå bundnavigationen og blokerer klik der.
+     Læg bottomnav-height oveni, så det lukkede panel reelt er under skærmen. */
+  transform: translateY(calc(100% + var(--bottomnav-height)));
   transition: transform 0.28s cubic-bezier(0.32,0.72,0,1);
   will-change: transform;
+  pointer-events: none;
 }
 .mobile-popup-panel.open {
   transform: translateY(0);
+  pointer-events: auto;
 }
 
 /* "Vis alle" udvider panelet til næsten fuld skærmhøjde */

@@ -112,12 +112,13 @@
 
       <div class="sidebar-header">
         <h1><a href="/">Landsholdskortet</a></h1>
+        <button id="sidebar-close" class="sidebar-close" aria-label="Close filters">&times;</button>
       </div>
 
       <nav class="sidebar-nav">
         <a href="/" class="sidebar-nav-item">Denmark</a>
         <span class="sidebar-nav-item active" id="nav-verden">World</span>
-        <a href="/worldmap/toplists/" class="sidebar-nav-item">Top lists</a>
+        <a href="/worldmap/toplists/" class="sidebar-nav-item sidebar-nav-keep">Top lists</a>
       </nav>
 
       <div class="stats-row">
@@ -257,7 +258,9 @@
       </div>
     </aside>
 
-    <main id="map" style="flex:1;height:100vh"></main>
+    <main class="map-container">
+      <div id="map"></div>
+    </main>
   </div>
 
   <!-- Loading overlay -->
@@ -280,6 +283,29 @@
     <div class="mobile-popup-handle"></div>
     <div id="mobile-popup-content"></div>
   </div>
+
+  <nav class="bottom-nav-mobile" aria-label="Mobile navigation">
+    <a href="/" class="bn-item">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M10 2.5c-3 3-3 6.5-3 8.5s1.5 3.5 3 6.5c1.5-3 3-4.5 3-6.5s0-5.5-3-8.5z" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="9" r="1.6" stroke="currentColor" stroke-width="1.3"/></svg>
+      Kort
+    </a>
+    <a href="/rekordlister/" class="bn-item">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M4 16V9M10 16V4M16 16v-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      Rekorder
+    </a>
+    <a href="/landsholdskurven/" class="bn-item">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M3 14l4-5 3 3 6-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Kurven
+    </a>
+    <a href="/quiz/" class="bn-item">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M7 7a3 3 0 115 2.2c-.9.6-1.5 1.1-1.5 2.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="10.5" cy="15" r="0.9" fill="currentColor"/></svg>
+      Quiz
+    </a>
+    <a href="/worldmap/" class="bn-item bn-item-world active">
+      <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M10 2c-2.5 2-2.5 14 0 16M10 2c2.5 2 2.5 14 0 16M2.2 7h15.6M2.2 13h15.6" stroke="currentColor" stroke-width="1.3"/></svg>
+      World
+    </a>
+  </nav>
 
   <script src="/js/vendor/leaflet.js"></script>
 <script src="/js/vendor/leaflet.markercluster.js"></script>

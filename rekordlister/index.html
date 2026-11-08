@@ -83,6 +83,67 @@
         padding-bottom: 11px;
         box-sizing: border-box;
       }
+
+      /* Faner ombrydes i stedet for at scrolle vandret - den vandrette
+         scroll + sticky-positionering føltes "bevægelig"/ustabil at ramme
+         med fingeren. Wrapper de samme knapper i et stabilt grid i stedet. */
+      .nav-tabs {
+        position: static;
+        overflow-x: visible;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 12px 16px;
+      }
+      .nav-tab {
+        padding: 9px 14px;
+        border: 1px solid #ddd;
+        border-radius: 18px;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 0;
+        min-height: 36px;
+        display: flex;
+        align-items: center;
+      }
+      .nav-tab.active {
+        background: #C8102E;
+        color: #fff;
+        border-color: #C8102E;
+      }
+      body { padding-bottom: 54px; }
+
+      /* "Tilbage til Landsholdskortet" er redundant på mobil - Kort findes
+         allerede i bundnavigationen. */
+      .topbar { display: none; }
+    }
+
+    /* ===== Mobil bundnavigation (Kort / Rekorder / Kurven / Quiz) ===== */
+    .bottom-nav-mobile { display: none; }
+    @media (max-width: 768px) {
+      .bottom-nav-mobile {
+        display: flex;
+        position: fixed;
+        left: 0; right: 0; bottom: 0;
+        height: 54px;
+        padding-bottom: env(safe-area-inset-bottom, 0);
+        background: #fff;
+        border-top: 1px solid #eee;
+        z-index: 1100;
+      }
+      .bn-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        font-size: 10.5px;
+        font-weight: 600;
+        color: #999;
+        text-decoration: none;
+        font-family: inherit;
+      }
+      .bn-item svg { width: 20px; height: 20px; flex-shrink: 0; }
+      .bn-item.active { color: #C8102E; }
     }
   </style>
 </head>
@@ -963,5 +1024,25 @@ function expandTable(btn) {
 
 loadFromHash();
 </script>
+
+<!-- Mobil bundnavigation -->
+<nav class="bottom-nav-mobile" aria-label="Mobilnavigation">
+  <a href="/" class="bn-item">
+    <svg viewBox="0 0 20 20" fill="none"><path d="M10 2.5c-3 3-3 6.5-3 8.5s1.5 3.5 3 6.5c1.5-3 3-4.5 3-6.5s0-5.5-3-8.5z" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="9" r="1.6" stroke="currentColor" stroke-width="1.3"/></svg>
+    Kort
+  </a>
+  <a href="/rekordlister/" class="bn-item active">
+    <svg viewBox="0 0 20 20" fill="none"><path d="M4 16V9M10 16V4M16 16v-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    Rekorder
+  </a>
+  <a href="/landsholdskurven/" class="bn-item">
+    <svg viewBox="0 0 20 20" fill="none"><path d="M3 14l4-5 3 3 6-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Kurven
+  </a>
+  <a href="/quiz/" class="bn-item">
+    <svg viewBox="0 0 20 20" fill="none"><path d="M7 7a3 3 0 115 2.2c-.9.6-1.5 1.1-1.5 2.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="10.5" cy="15" r="0.9" fill="currentColor"/></svg>
+    Quiz
+  </a>
+</nav>
 </body>
 </html>

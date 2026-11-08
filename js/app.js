@@ -2,6 +2,7 @@
 let allPlayers = [];
 let map;
 let markersLayer;
+let clubClusterLayer; // klynget visning af klub-/logo-markører ("Alle klubber" + "Barndomsklub: Klubber")
 let geoLayer = null;       // Choropleth GeoJSON layer
 let legendControl = null;  // Leaflet legend control
 let kommunerGeo = null;    // Raw GeoJSON for kommuner
@@ -73,18 +74,37 @@ function toTitleCase(str) {
   });
 }
 
+// Danmarks omtrentlige udstrækning (inkl. Bornholm) - bruges til startvisning
+// Bornholm (ca. 14.7-15.1 længdegrad) er bevidst udeladt af standardudsnittet:
+// at medtage den gør boksen kunstigt bred og skubber hele kortet østpå ind i
+// Sverige. Øen er stadig tilgængelig ved at panorere/zoome ud.
+const DK_BOUNDS = L.latLngBounds([[54.4, 7.9], [57.85, 12.9]]);
+
 // ===== Map Setup =====
 function initMap() {
   const isMobile = window.innerWidth <= 768;
 
   map = L.map('map', {
     zoomControl: false,
+    zoomSnap: 0.25,
     minZoom: 2,
     maxZoom: 18,
     tap: true,
     tapTolerance: 15,
     scrollWheelZoom: !isMobile
-  }).setView([56, 10.5], 7);
+  });
+  map.fitBounds(DK_BOUNDS, { padding: [4, 4] });
+  // fitBounds "contain"-logikken efterlader meget luft foroven/forneden på
+  // smalle/høje skærme (portræt-mobil), fordi Danmark er bredere end højt -
+  // zoom en anelse ind der, så landet fylder rammen bedre. En hel zoom-level
+  // (faktor 2x) skar Jylland og det meste af Sjælland af, så korrektionen er
+  // lille og i brøkdele af et niveau (kræver zoomSnap: 0.25 ovenfor).
+  const mapSize = map.getSize();
+  const aspectRatio = mapSize.y / mapSize.x;
+  if (aspectRatio > 1.1) {
+    const extraZoom = Math.min(0.4, (aspectRatio - 1) * 0.35);
+    map.setZoom(map.getZoom() + extraZoom, { animate: false });
+  }
 
   L.control.zoom({ position: 'topright' }).addTo(map);
 
@@ -93,11 +113,62 @@ function initMap() {
     maxZoom: 19
   }).addTo(map);
 
-  // Alle pins vises samtidigt (ingen clustering)
+  // Fødested/kommune/region-pins: ingen clustering (få nok i forvejen)
   markersLayer = L.layerGroup();
   map.addLayer(markersLayer);
 
+  // Klub-/logo-markører ("Alle klubber", "Barndomsklub: Klubber"): klynges,
+  // så der ikke vises hundredvis af overlappende logoer samtidig. Hver
+  // klynge viser logoet for klubben med flest spillere i klyngen + et
+  // "+N"-badge for det samlede spillerantal.
+  clubClusterLayer = L.markerClusterGroup({
+    maxClusterRadius: (zoom) => (zoom <= 7 ? 35 : zoom <= 10 ? 25 : 18),
+    disableClusteringAtZoom: 13,
+    spiderfyOnMaxZoom: true,
+    showCoverageOnHover: false,
+    zoomToBoundsOnClick: true,
+    iconCreateFunction: buildClusterIcon
+  });
+
   map.on('moveend zoomend', upgradeVisibleLogos);
+}
+
+// ===== Klynge-ikon (klubben med flest spillere i klyngen) =====
+// Viser bevidst INTET samlet tal - et "+N"-badge ville se ud som om den
+// viste klub (fx FC Midtjylland) selv havde N spillere, når tallet reelt
+// er summen af alle klubber i klyngen.
+function buildClusterIcon(cluster) {
+  const children = cluster.getAllChildMarkers();
+  let total = 0;
+  let best = null;
+  for (const m of children) {
+    const count = m.options.pCount || 0;
+    total += count;
+    if (!best || count > best.options.pCount) best = m;
+  }
+  const size = Math.max(30, Math.min(64, Math.round(Math.sqrt(total) * 4.5)));
+  const logoUrl = best && best.options.logoUrl;
+  const label = (best && best.options.locName) || '';
+  const fontSize = size > 48 ? 12 : 10;
+
+  const inner = logoUrl
+    ? `<img src="${escapeHtml(logoUrl)}" alt="" style="width:100%;height:100%;object-fit:contain;border-radius:50%;background:#fff" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+       <span style="display:none;width:100%;height:100%;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:${fontSize}px">${escapeHtml(initialsFor(label))}</span>`
+    : `<span style="display:flex;width:100%;height:100%;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:${fontSize}px">${escapeHtml(initialsFor(label))}</span>`;
+
+  return L.divIcon({
+    className: '',
+    html: `<div style="width:${size}px;height:${size}px;border-radius:50%;background:#C8102E;border:2px solid #fff;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,.35)">${inner}</div>`,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2]
+  });
+}
+
+function initialsFor(name) {
+  const words = (name || '').replace(/[^\p{L}0-9 ]/gu, '').split(/\s+/).filter(Boolean);
+  if (!words.length) return '';
+  if (words.length === 1) return words[0].slice(0, 3).toUpperCase();
+  return words.slice(0, 3).map(w => w[0]).join('').toUpperCase();
 }
 
 // ===== Sidebar / Bottomsheet =====
@@ -127,13 +198,26 @@ function initSidebar() {
   });
 
   const mobileToggle = document.getElementById('sidebar-toggle-mobile');
-  if (mobileToggle) mobileToggle.addEventListener('click', openSheet);
+  if (mobileToggle) mobileToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (sidebar.classList.contains('open')) {
+      closeSheet();
+    } else {
+      openSheet();
+    }
+  });
 
-  if (close) close.addEventListener('click', closeSheet);
+  if (close) close.addEventListener('click', (e) => {
+    e.stopPropagation();
+    closeSheet();
+  });
 
-  // Tap on drag handle or peek area (when closed) → open
+  // Tap on drag handle → toggle open/closed. stopPropagation er nødvendig,
+  // ellers bobler klikket op til sidebar's egen "tryk for at åbne"-listener
+  // nedenfor, som straks åbner den igen, lige efter closeSheet() lukkede den.
   if (handle) {
-    handle.addEventListener('click', () => {
+    handle.addEventListener('click', (e) => {
+      e.stopPropagation();
       if (!sidebar.classList.contains('open')) {
         openSheet();
       } else {
@@ -643,15 +727,27 @@ async function updateMap() {
   document.getElementById('player-count').textContent = players.length;
   document.getElementById('pin-count').textContent = groups.length;
 
+  // Klynget visning (klub-logoer): kun på mobil - "Alle klubber" og
+  // "Barndomsklub: Klubber". På desktop er der nok skærmplads til at vise
+  // alle logoer enkeltvis, som før.
+  const isMobileViewport = window.innerWidth <= 768;
+  const useClusterLayer = isMobileViewport && (mapType === 'all_clubs' || (mapType === 'club' && clubLevel === 'klub'));
+
   // Choropleth-mode: brug GeoJSON-lag i stedet for pins
   if (mapType === 'birth' && (birthLevel === 'kommune' || birthLevel === 'region')) {
     markersLayer.clearLayers();
+    clubClusterLayer.clearLayers();
+    if (map.hasLayer(clubClusterLayer)) map.removeLayer(clubClusterLayer);
+    if (!map.hasLayer(markersLayer)) map.addLayer(markersLayer);
     const geoData = birthLevel === 'kommune' ? kommunerGeo : regionerGeo;
     buildChoropleth(groups, geoData, 'navn', perCapita);
     return;
   }
   if (mapType === 'club' && (clubLevel === 'kommune' || clubLevel === 'region')) {
     markersLayer.clearLayers();
+    clubClusterLayer.clearLayers();
+    if (map.hasLayer(clubClusterLayer)) map.removeLayer(clubClusterLayer);
+    if (!map.hasLayer(markersLayer)) map.addLayer(markersLayer);
     const geoData = clubLevel === 'kommune' ? kommunerGeo : regionerGeo;
     buildChoropleth(groups, geoData, 'navn', perCapita);
     return;
@@ -661,15 +757,26 @@ async function updateMap() {
   if (geoLayer) { map.removeLayer(geoLayer); geoLayer = null; }
   if (legendControl) { map.removeControl(legendControl); legendControl = null; }
 
-  // Clear and rebuild markers
+  // Skift til det rigtige markør-lag (klynget vs. fladt)
+  const activeLayer = useClusterLayer ? clubClusterLayer : markersLayer;
+  const inactiveLayer = useClusterLayer ? markersLayer : clubClusterLayer;
+  if (map.hasLayer(inactiveLayer)) map.removeLayer(inactiveLayer);
+  if (!map.hasLayer(activeLayer)) map.addLayer(activeLayer);
+
   markersLayer.clearLayers();
+  clubClusterLayer.clearLayers();
   pendingLogoMarkers = [];
 
   const bounds = [];
   groups.forEach(group => {
     const marker = createMarker(group, mapType, birthLevel, perCapita);
     if (marker) {
-      markersLayer.addLayer(marker);
+      if (useClusterLayer) {
+        marker.options.pCount = group.players.length;
+        marker.options.logoUrl = group.klub_logo;
+        marker.options.locName = group.locName;
+      }
+      activeLayer.addLayer(marker);
       bounds.push([group.lat, group.lng]);
     }
   });
@@ -718,6 +825,12 @@ function upgradeVisibleLogos() {
       stillPending.push(entry);
       continue;
     }
+    // Marker sidder skjult inde i en klynge lige nu (ikke sit eget ikon i
+    // DOM'en) - spring upgrade over, indtil brugeren zoomer ind på den.
+    if (!entry.marker._icon) {
+      stillPending.push(entry);
+      continue;
+    }
     loadClubLogo(entry);
   }
 
@@ -754,7 +867,11 @@ function loadClubLogo(entry) {
 function updateLogoLoadingIndicator() {
   const el = document.getElementById('logo-loading-indicator');
   if (!el) return;
-  const remaining = pendingLogoMarkers.length + activeLogoLoads;
+  // Tæl kun markører der reelt venter på at blive vist individuelt lige nu
+  // (har et synligt ikon) - markører der sidder skjult inde i en klynge
+  // venter bevidst og skal ikke få tælleren til at se "fastlåst" ud.
+  const visiblePending = pendingLogoMarkers.filter(entry => entry.marker._icon).length;
+  const remaining = visiblePending + activeLogoLoads;
   if (remaining > 0) {
     document.getElementById('logo-loading-text').textContent =
       `Indlæser logoer… (${remaining})`;

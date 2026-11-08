@@ -1,0 +1,27 @@
+{
+  "name": "landsholdsspillere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abandersen04/Landsholdsspillere.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Abandersen04/Landsholdsspillere/issues"
+  },
+  "homepage": "https://github.com/Abandersen04/Landsholdsspillere#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0"
+  }
+}

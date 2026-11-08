@@ -166,6 +166,7 @@ function initMap() {
 function initSidebar() {
   const sidebar = document.getElementById('sidebar');
   const toggle = document.getElementById('sidebar-toggle');
+  const close = document.getElementById('sidebar-close');
   const handle = document.getElementById('sidebar-drag-handle');
   const mobileToggle = document.getElementById('sidebar-toggle-mobile');
 
@@ -176,8 +177,16 @@ function initSidebar() {
     if (window.innerWidth <= 768) openSheet();
     else sidebar.classList.toggle('open');
   });
-  if (mobileToggle) mobileToggle.addEventListener('click', openSheet);
-  if (handle) handle.addEventListener('click', () => {
+  if (mobileToggle) mobileToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    sidebar.classList.contains('open') ? closeSheet() : openSheet();
+  });
+  if (close) close.addEventListener('click', (e) => {
+    e.stopPropagation();
+    closeSheet();
+  });
+  if (handle) handle.addEventListener('click', (e) => {
+    e.stopPropagation();
     sidebar.classList.contains('open') ? closeSheet() : openSheet();
   });
 
