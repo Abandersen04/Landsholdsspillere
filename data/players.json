@@ -66456,21 +66456,21 @@
     "n_goals": "0",
     "image": null,
     "gender": "mand",
-    "klubnavn": "Herfølge Boldklub",
-    "latitude": "55.45",
-    "longitude": "12.1833",
-    "klub_logo": "https://upload.wikimedia.org/wikipedia/en/0/0c/Herf%C3%B8lge_BK.png",
-    "klub_website": "https://www.dbu.dk/resultater/klub/1066/klubinfo",
-    "klub_dbu_url": "https://www.dbu.dk/resultater/klub/1066/klubinfo",
+    "klubnavn": "Rishøj Boldklub",
+    "latitude": "55.485975",
+    "longitude": "12.169336",
+    "klub_logo": "https://agf-statistik.dk/logo/rishoj.gif",
+    "klub_website": null,
+    "klub_dbu_url": null,
     "region": "Region Sjælland",
     "allClubs": [
       {
         "klub_id": null,
-        "klubnavn": "Herfølge Boldklub",
-        "latitude": 55.45,
-        "longitude": 12.1833,
+        "klubnavn": "Rishøj Boldklub",
+        "latitude": 55.485975,
+        "longitude": 12.169336,
         "is_earliest": true,
-        "klub_logo": "https://upload.wikimedia.org/wikipedia/en/0/0c/Herf%C3%B8lge_BK.png"
+        "klub_logo": "https://agf-statistik.dk/logo/rishoj.gif"
       },
       {
         "klub_id": "3700",
@@ -66507,6 +66507,12 @@
     ],
     "years_played": [
       2026
+    ],
+    "_manual_fields": [
+      "allClubs",
+      "klubnavn",
+      "latitude",
+      "longitude"
     ]
   },
   {
